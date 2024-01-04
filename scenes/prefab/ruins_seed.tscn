@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://cg3i0hgp7nvy2"]
 
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="1"]
-[ext_resource type="PackedScene" uid="uid://cjh5l26fe0hfj" path="res://asset/entity/seed/seed.blend" id="2"]
+[ext_resource type="PackedScene" path="res://asset/entity/seed/seed.blend.scn" id="2"]
 [ext_resource type="Texture2D" uid="uid://dn70rg7oj8p0o" path="res://asset/effect/sparkle/sparkle.png" id="3"]
 [ext_resource type="Script" path="res://scripts/grabbable.gd" id="4"]
 [ext_resource type="Script" path="res://res_inputprompt.gd" id="5"]

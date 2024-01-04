@@ -8,7 +8,7 @@
 [ext_resource type="Environment" path="res://asset/environment/env_bg.tres" id="6"]
 [ext_resource type="CameraAttributesPractical" path="res://asset/environment/cap_bg.tres" id="7"]
 [ext_resource type="Script" path="res://scripts/background_cam.gd" id="8"]
-[ext_resource type="PackedScene" uid="uid://bnq5213wveh88" path="res://asset/level/test/test_water.blend" id="9"]
+[ext_resource type="PackedScene" path="res://asset/level/test/test_water.blend.scn" id="9"]
 [ext_resource type="Script" path="res://scripts/terrain.gd" id="10"]
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="11"]
 [ext_resource type="Script" path="res://scripts/water.gd" id="12"]

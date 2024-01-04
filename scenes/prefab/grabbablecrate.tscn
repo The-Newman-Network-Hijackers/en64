@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="2"]
 [ext_resource type="Script" path="res://scripts/grabbable.gd" id="3"]
 [ext_resource type="Script" path="res://res_inputprompt.gd" id="4"]
-[ext_resource type="PackedScene" uid="uid://c4j6uku1up34s" path="res://asset/entity/crate/box.blend" id="5"]
+[ext_resource type="PackedScene" path="res://asset/entity/crate/box.blend.scn" id="5"]
 [ext_resource type="Material" path="res://asset/entity/crate/metal/mat/vtx_metal_crate_glove.tres" id="6"]
 [ext_resource type="Texture2D" uid="uid://d02kh3i2h0ttw" path="res://asset/effect/wood/wood_chunks.png" id="7"]
 [ext_resource type="Material" path="res://asset/effect/dust/mat/vtx_dust.tres" id="8"]
