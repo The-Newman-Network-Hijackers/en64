@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bp7qj4mcupx8u"
+path="res://.godot/imported/pickup_small.wav-339fdbd4cdcb6d9679a42e4ba7db0fdc.sample"
+
+[deps]
+
+source_file="res://audio/sfx/pickup_small.wav"
+dest_files=PackedStringArray("res://.godot/imported/pickup_small.wav-339fdbd4cdcb6d9679a42e4ba7db0fdc.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://be74ukevsr4o6"
+path="res://.godot/imported/plane_padded_centered.blend-98ce22a2eb95625ba78456d5902ad031.scn"
+
+[deps]
+
+source_file="res://asset/effect/grass/mesh/plane_padded_centered.blend"
+dest_files=PackedStringArray("res://.godot/imported/plane_padded_centered.blend-98ce22a2eb95625ba78456d5902ad031.scn")
+
+[params]
+
+dummy_value_ignore_me=0

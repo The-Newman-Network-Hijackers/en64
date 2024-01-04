@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b1710s4w3h6d8"
+path="res://.godot/imported/cap.png-af4db6ccf957ff0c3987e26f5d112e20.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/accessory/head/icon/cap.png"
+dest_files=PackedStringArray("res://.godot/imported/cap.png-af4db6ccf957ff0c3987e26f5d112e20.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

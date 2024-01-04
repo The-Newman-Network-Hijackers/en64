@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dhcpc2aexv5db"
+path="res://.godot/imported/land_thud.wav-d698725610a953bed6dc78dc17ba7003.sample"
+
+[deps]
+
+source_file="res://audio/sfx/land_thud.wav"
+dest_files=PackedStringArray("res://.godot/imported/land_thud.wav-d698725610a953bed6dc78dc17ba7003.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

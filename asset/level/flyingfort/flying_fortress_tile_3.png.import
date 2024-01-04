@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://1nhiboq4q3e2"
+path="res://.godot/imported/flying_fortress_tile_3.png-90b058d0c299082f099a70d1a0b2cf44.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://asset/level/flyingfort/flying_fortress_tile_3.png"
+dest_files=PackedStringArray("res://.godot/imported/flying_fortress_tile_3.png-90b058d0c299082f099a70d1a0b2cf44.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

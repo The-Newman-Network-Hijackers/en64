@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ba47y3lejh75o"
+path="res://.godot/imported/health_0007.png-e5ccc0aeb61d594d718196b13e507b2e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/lifebar/tex/health_0007.png"
+dest_files=PackedStringArray("res://.godot/imported/health_0007.png-e5ccc0aeb61d594d718196b13e507b2e.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

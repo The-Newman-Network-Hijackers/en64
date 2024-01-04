@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bhpiwb8428ofu"
+path="res://.godot/imported/stem_2.png-e4a10f11eeda94e9caffa71374aa9c2f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/grass/stem_2.png"
+dest_files=PackedStringArray("res://.godot/imported/stem_2.png-e4a10f11eeda94e9caffa71374aa9c2f.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

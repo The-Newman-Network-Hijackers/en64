@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://blpfll064lepi"
+path="res://.godot/imported/flower_prince_mean.dialogue-d40df846eda4a2fe29fa366ca606835c.tres"
+
+[deps]
+
+source_file="res://data/dialogue/flower_prince_mean.dialogue"
+dest_files=PackedStringArray("res://.godot/imported/flower_prince_mean.dialogue-d40df846eda4a2fe29fa366ca606835c.tres")
+
+[params]
+
+dummy_value_ignore_me=0

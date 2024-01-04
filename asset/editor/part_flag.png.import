@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cfh24cun4gny8"
+path="res://.godot/imported/part_flag.png-5fae24c32a8cb619930aa1aa17c3d03e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/editor/part_flag.png"
+dest_files=PackedStringArray("res://.godot/imported/part_flag.png-5fae24c32a8cb619930aa1aa17c3d03e.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

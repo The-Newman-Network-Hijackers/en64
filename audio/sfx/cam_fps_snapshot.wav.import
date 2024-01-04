@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://crqecaqdpjb7d"
+path="res://.godot/imported/cam_fps_snapshot.wav-3e6791b900148c57dfa42c3156cdbecd.sample"
+
+[deps]
+
+source_file="res://audio/sfx/cam_fps_snapshot.wav"
+dest_files=PackedStringArray("res://.godot/imported/cam_fps_snapshot.wav-3e6791b900148c57dfa42c3156cdbecd.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ShardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_prop.gd" id="1"]
+
+[resource]
+script = ExtResource( "1" )
+shard_name = "The Fungus Among Us"
+shard_location = "History Channel (Tower)"
+shard_description = "This shard accompanies two fungi in a cell, sharing stories with one another."
+shard_hint = "As you push onward, be vigilant and dont forget about the prisoners!"

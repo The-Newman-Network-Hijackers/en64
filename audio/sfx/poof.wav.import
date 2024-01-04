@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cy12igpc3p1rf"
+path="res://.godot/imported/poof.wav-305162d7fb59cab04589e85b3989db23.sample"
+
+[deps]
+
+source_file="res://audio/sfx/poof.wav"
+dest_files=PackedStringArray("res://.godot/imported/poof.wav-305162d7fb59cab04589e85b3989db23.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

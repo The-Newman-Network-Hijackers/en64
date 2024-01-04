@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bkjs2jiqaauev"
+path="res://.godot/imported/P1_VMtl019.png-a5c872de43cb8e28bbd07944de4a2a0a.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/level/flyingfort/textures/P1_VMtl019.png"
+dest_files=PackedStringArray("res://.godot/imported/P1_VMtl019.png-a5c872de43cb8e28bbd07944de4a2a0a.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cn2wmpt43va65"
+path="res://.godot/imported/pole.blend-14cac91a2fc8d2ffda27f19923fa5564.scn"
+
+[deps]
+
+source_file="res://asset/entity/pole/pole.blend"
+dest_files=PackedStringArray("res://.godot/imported/pole.blend-14cac91a2fc8d2ffda27f19923fa5564.scn")
+
+[params]
+
+dummy_value_ignore_me=0

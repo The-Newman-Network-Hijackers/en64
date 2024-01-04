@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cnjv8ldkwbegn"
+path="res://.godot/imported/ui_type2.wav-6e0233d365565d4346dfcb1b97e26a76.sample"
+
+[deps]
+
+source_file="res://audio/sfx/ui_type2.wav"
+dest_files=PackedStringArray("res://.godot/imported/ui_type2.wav-6e0233d365565d4346dfcb1b97e26a76.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

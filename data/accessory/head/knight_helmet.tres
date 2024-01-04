@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="AccessoryData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_accessory.gd" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://ncl2kyplfb5l" path="res://asset/accessory/head/mesh/knight_helmet.res" id="2"]
+[ext_resource type="Material" uid="uid://jjau773g26pj" path="res://asset/accessory/body/mat/vtx_metal_primary.tres" id="3"]
+[ext_resource type="Material" uid="uid://bxjh2csyh32mb" path="res://asset/accessory/head/mat/vtx_kh_wave.tres" id="4"]
+[ext_resource type="Texture2D" uid="uid://s5ta4sj56nns" path="res://asset/accessory/head/icon/knight_helmet.png" id="5"]
+
+[resource]
+script = ExtResource( "1" )
+type = 1
+model = ExtResource( "2" )
+offset = Vector3(0, 1.5, 0)
+primary_material = ExtResource( "3" )
+primary_surface = 0
+secondary_material = ExtResource( "4" )
+secondary_surface = 1
+name = "Knight Helmet"
+description = "Worn by only the greatest of warriors!"
+icon = ExtResource( "5" )
+icon_modulation = Color(1, 1, 1, 1)

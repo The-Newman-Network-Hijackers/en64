@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://foo0c1qa5qhv"
+path="res://.godot/imported/mustache.blend-a0e6dcbed06872c6cff24704b9b25adf.scn"
+
+[deps]
+
+source_file="res://asset/accessory/face/mustache.blend"
+dest_files=PackedStringArray("res://.godot/imported/mustache.blend-a0e6dcbed06872c6cff24704b9b25adf.scn")
+
+[params]
+
+dummy_value_ignore_me=0

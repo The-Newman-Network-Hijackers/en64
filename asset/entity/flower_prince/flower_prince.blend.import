@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bjuhnoq715csy"
+path="res://.godot/imported/flower_prince.blend-e579940be8c28166ec63a080ed5e93a9.scn"
+
+[deps]
+
+source_file="res://asset/entity/flower_prince/flower_prince.blend"
+dest_files=PackedStringArray("res://.godot/imported/flower_prince.blend-e579940be8c28166ec63a080ed5e93a9.scn")
+
+[params]
+
+dummy_value_ignore_me=0

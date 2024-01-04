@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b4ig8y7v603oe"
+path="res://.godot/imported/fpd.png-4895fc3854103990c89d1f0fdd6bcd38.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/credits/fpd.png"
+dest_files=PackedStringArray("res://.godot/imported/fpd.png-4895fc3854103990c89d1f0fdd6bcd38.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

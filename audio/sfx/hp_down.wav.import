@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dpby4pcoocpnx"
+path="res://.godot/imported/hp_down.wav-abee4b38f91fd8378442871a5da87572.sample"
+
+[deps]
+
+source_file="res://audio/sfx/hp_down.wav"
+dest_files=PackedStringArray("res://.godot/imported/hp_down.wav-abee4b38f91fd8378442871a5da87572.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

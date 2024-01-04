@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Material" uid="uid://b0rkcabokstao" path="res://asset/effect/dust/mat/vtx_dust.tres" id="1"]
+
+[sub_resource type="Curve" id="1"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.577586, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.0359552), 0.0, 0.0, 0, 0]
+point_count = 3
+script = null
+
+[sub_resource type="CurveTexture" id="2"]
+curve = SubResource( "1" )
+script = null
+
+[sub_resource type="ParticleProcessMaterial" id="3"]
+direction = Vector3(0, 1, 0)
+spread = 180.0
+initial_velocity_min = 26.8
+initial_velocity_max = 31.7
+gravity = Vector3(0, 0, 0)
+damping_min = 39.616
+damping_max = 41.171
+scale_min = 5.0
+scale_max = 6.0
+scale_curve = SubResource( "2" )
+anim_speed_min = 0.8
+anim_speed_max = 1.0
+script = null
+
+[sub_resource type="QuadMesh" id="4"]
+script = null
+
+[node name="respawn" type="GPUParticles3D"]
+material_override = ExtResource( "1" )
+emitting = false
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource( "3" )
+draw_pass_1 = SubResource( "4" )

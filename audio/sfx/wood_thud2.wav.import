@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dn02xt2vueyde"
+path="res://.godot/imported/wood_thud2.wav-f50b802687de6a4f9d251baaeb7869ae.sample"
+
+[deps]
+
+source_file="res://audio/sfx/wood_thud2.wav"
+dest_files=PackedStringArray("res://.godot/imported/wood_thud2.wav-f50b802687de6a4f9d251baaeb7869ae.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b8xd6x5p88nq6"
+path="res://.godot/imported/sunflower.png-c1dbd57a481ad40a288115b9462d31a3.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/accessory/head/icon/sunflower.png"
+dest_files=PackedStringArray("res://.godot/imported/sunflower.png-c1dbd57a481ad40a288115b9462d31a3.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

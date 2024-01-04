@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://hecieckhjbsx"
+path="res://.godot/imported/T_G_Key_Dark.png-769959e890ebff6d04df0f90322d8e2c.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_G_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_G_Key_Dark.png-769959e890ebff6d04df0f90322d8e2c.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

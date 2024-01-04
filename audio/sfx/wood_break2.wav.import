@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://6j6avthc5uou"
+path="res://.godot/imported/wood_break2.wav-0887bf8583f220e95f83098ee7b996b7.sample"
+
+[deps]
+
+source_file="res://audio/sfx/wood_break2.wav"
+dest_files=PackedStringArray("res://.godot/imported/wood_break2.wav-0887bf8583f220e95f83098ee7b996b7.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

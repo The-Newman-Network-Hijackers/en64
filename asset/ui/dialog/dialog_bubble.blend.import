@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bouftepx5qm0j"
+path="res://.godot/imported/dialog_bubble.blend-51b77a6fbeaccd513c33639a6ef80c78.scn"
+
+[deps]
+
+source_file="res://asset/ui/dialog/dialog_bubble.blend"
+dest_files=PackedStringArray("res://.godot/imported/dialog_bubble.blend-51b77a6fbeaccd513c33639a6ef80c78.scn")
+
+[params]
+
+dummy_value_ignore_me=0

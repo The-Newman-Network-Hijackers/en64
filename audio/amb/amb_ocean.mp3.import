@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://k77er7vt67da"
+path="res://.godot/imported/amb_ocean.mp3-222e29a98b04b2f90fc0a492084434f8.mp3str"
+
+[deps]
+
+source_file="res://audio/amb/amb_ocean.mp3"
+dest_files=PackedStringArray("res://.godot/imported/amb_ocean.mp3-222e29a98b04b2f90fc0a492084434f8.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

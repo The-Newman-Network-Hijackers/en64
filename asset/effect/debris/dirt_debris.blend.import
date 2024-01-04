@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://en30n0fgux61"
+path="res://.godot/imported/dirt_debris.blend-eea74437053dbd838e2544c479d2dbef.scn"
+
+[deps]
+
+source_file="res://asset/effect/debris/dirt_debris.blend"
+dest_files=PackedStringArray("res://.godot/imported/dirt_debris.blend-eea74437053dbd838e2544c479d2dbef.scn")
+
+[params]
+
+dummy_value_ignore_me=0

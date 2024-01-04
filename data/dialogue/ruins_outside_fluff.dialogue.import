@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://bt52bd41i1v3t"
+path="res://.godot/imported/ruins_outside_fluff.dialogue-ba5e0bae7b8730e0457b42e7c5a5d902.tres"
+
+[deps]
+
+source_file="res://data/dialogue/ruins_outside_fluff.dialogue"
+dest_files=PackedStringArray("res://.godot/imported/ruins_outside_fluff.dialogue-ba5e0bae7b8730e0457b42e7c5a5d902.tres")
+
+[params]
+
+dummy_value_ignore_me=0

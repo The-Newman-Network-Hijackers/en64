@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dky1b53c0acew"
+path="res://.godot/imported/hexagon.png-f3378057bbcf449ae0a1715e3ed0c7a2.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/hexagon.png"
+dest_files=PackedStringArray("res://.godot/imported/hexagon.png-f3378057bbcf449ae0a1715e3ed0c7a2.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

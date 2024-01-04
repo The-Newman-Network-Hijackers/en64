@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b1wi04ki8tl2c"
+path="res://.godot/imported/glove.png-6dbc3e78a66ec2c080ee9793960172eb.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/equip/glove.png"
+dest_files=PackedStringArray("res://.godot/imported/glove.png-6dbc3e78a66ec2c080ee9793960172eb.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

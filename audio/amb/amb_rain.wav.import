@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b226mfv0cv4in"
+path="res://.godot/imported/amb_rain.wav-a77b6bfadc6f61302d02dab0c8079a56.sample"
+
+[deps]
+
+source_file="res://audio/amb/amb_rain.wav"
+dest_files=PackedStringArray("res://.godot/imported/amb_rain.wav-a77b6bfadc6f61302d02dab0c8079a56.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bqqsvrmgfkqwr"
+path="res://.godot/imported/mushroom.png-1d8e19ad1a3327b0c059dfa345ae47c8.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/accessory/head/icon/mushroom.png"
+dest_files=PackedStringArray("res://.godot/imported/mushroom.png-1d8e19ad1a3327b0c059dfa345ae47c8.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

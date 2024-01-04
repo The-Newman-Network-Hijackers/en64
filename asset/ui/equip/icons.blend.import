@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://v6a5rgh5itdp"
+path="res://.godot/imported/icons.blend-c12b29375202378961ebb972effe50ec.scn"
+
+[deps]
+
+source_file="res://asset/ui/equip/icons.blend"
+dest_files=PackedStringArray("res://.godot/imported/icons.blend-c12b29375202378961ebb972effe50ec.scn")
+
+[params]
+
+dummy_value_ignore_me=0

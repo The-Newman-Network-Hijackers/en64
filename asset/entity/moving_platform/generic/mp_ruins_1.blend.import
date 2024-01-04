@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://eo1iy1qhadq4"
+path="res://.godot/imported/mp_ruins_1.blend-db10ffdc418313b543c323d87e573e1c.scn"
+
+[deps]
+
+source_file="res://asset/entity/moving_platform/generic/mp_ruins_1.blend"
+dest_files=PackedStringArray("res://.godot/imported/mp_ruins_1.blend-db10ffdc418313b543c323d87e573e1c.scn")
+
+[params]
+
+dummy_value_ignore_me=0

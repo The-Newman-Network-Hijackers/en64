@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dg5r3vt384hcc"
+path="res://.godot/imported/metal_thud.wav-48d6a09e5c768800dc9650e3a8b4b2d5.sample"
+
+[deps]
+
+source_file="res://audio/sfx/metal_thud.wav"
+dest_files=PackedStringArray("res://.godot/imported/metal_thud.wav-48d6a09e5c768800dc9650e3a8b4b2d5.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

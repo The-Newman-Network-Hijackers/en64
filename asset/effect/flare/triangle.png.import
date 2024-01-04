@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bk7d2h75cn2fc"
+path="res://.godot/imported/triangle.png-e8b952142f7ebc3b901e71bbc2e22407.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/triangle.png"
+dest_files=PackedStringArray("res://.godot/imported/triangle.png-e8b952142f7ebc3b901e71bbc2e22407.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

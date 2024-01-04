@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_kl3qn"]
+
+[resource]
+script = ExtResource("1_kl3qn")
+titles = {
+"tutorial_jump": "3"
+}
+character_names = PackedStringArray()
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "tutorial_jump",
+"type": "title"
+},
+"3": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "5",
+"tags": PackedStringArray(),
+"text": "Press",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Press",
+"type": "dialogue"
+},
+"5": {
+"id": "5",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+metadata/dialogue_manager_version = "2.25.0"

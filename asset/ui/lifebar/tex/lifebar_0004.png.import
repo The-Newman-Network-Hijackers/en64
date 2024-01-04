@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cns78lopit8wt"
+path="res://.godot/imported/lifebar_0004.png-cdbd2b23ecc5dba88bdd2a263813628b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/lifebar/tex/lifebar_0004.png"
+dest_files=PackedStringArray("res://.godot/imported/lifebar_0004.png-cdbd2b23ecc5dba88bdd2a263813628b.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

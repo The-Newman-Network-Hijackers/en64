@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cwmdyu0g48mlk"
+path="res://.godot/imported/throw_bounce_2.wav-79899f1d5b42fbd8f133eab069d84cae.sample"
+
+[deps]
+
+source_file="res://audio/sfx/throw_bounce_2.wav"
+dest_files=PackedStringArray("res://.godot/imported/throw_bounce_2.wav-79899f1d5b42fbd8f133eab069d84cae.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

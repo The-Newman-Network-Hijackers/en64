@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/event_tree.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/event_move.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/event_cam.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/event_talk.gd" id="4"]
+
+[node name="et_npc_stationary" type="Node"]
+script = ExtResource( "1" )
+player_handler = 2
+
+[node name="event_move" type="Node" parent="."]
+script = ExtResource( "2" )
+wait_for_tween = false
+move_time = 0.5
+trans = 1
+animation_move = &"move"
+animation_done = &"idle"
+
+[node name="cam_in" type="Node" parent="."]
+script = ExtResource( "3" )
+duration = 0.5
+cutscene_bars = true
+do_interpolate = true
+int_length = 0.75
+int_ease = 2
+
+[node name="dialog" type="Node" parent="."]
+script = ExtResource( "4" )
+
+[node name="cam_out" type="Node" parent="."]
+script = ExtResource( "3" )
+duration = 0.5
+do_interpolate = true
+int_ease = 2

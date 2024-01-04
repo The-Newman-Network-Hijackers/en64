@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bfv1sc8hnumdb"
+path="res://.godot/imported/cut_a_3.wav-b21c5e138c26f50655497d6e9c727bd4.sample"
+
+[deps]
+
+source_file="res://audio/sfx/cut_a_3.wav"
+dest_files=PackedStringArray("res://.godot/imported/cut_a_3.wav-b21c5e138c26f50655497d6e9c727bd4.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dj4mfp0dntp01"
+path="res://.godot/imported/positive_chime.wav-8008af59595e3c095e0d65ed67c64727.sample"
+
+[deps]
+
+source_file="res://audio/sfx/positive_chime.wav"
+dest_files=PackedStringArray("res://.godot/imported/positive_chime.wav-8008af59595e3c095e0d65ed67c64727.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

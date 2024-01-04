@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://2i57heu2u7us"
+path="res://.godot/imported/tunel.png-4defebeb41eba69c634ce02cdb5e0284.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/tunel.png"
+dest_files=PackedStringArray("res://.godot/imported/tunel.png-4defebeb41eba69c634ce02cdb5e0284.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

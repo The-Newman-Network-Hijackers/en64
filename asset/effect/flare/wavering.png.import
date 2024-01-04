@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ctlufgjad4no"
+path="res://.godot/imported/wavering.png-d5593d2fb363da4e7b315db96294e0ca.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/wavering.png"
+dest_files=PackedStringArray("res://.godot/imported/wavering.png-d5593d2fb363da4e7b315db96294e0ca.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

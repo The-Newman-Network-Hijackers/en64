@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://djpc5t0s3bwiy"
+path="res://.godot/imported/logo_demo.blend-a1d6604e41dbd2a2f62d9fe1ac228c80.scn"
+
+[deps]
+
+source_file="res://asset/ui/title/logo_demo.blend"
+dest_files=PackedStringArray("res://.godot/imported/logo_demo.blend-a1d6604e41dbd2a2f62d9fe1ac228c80.scn")
+
+[params]
+
+dummy_value_ignore_me=0

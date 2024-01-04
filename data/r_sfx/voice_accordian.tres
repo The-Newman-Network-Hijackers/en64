@@ -1,0 +1,15 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=4 format=3]
+
+[ext_resource type="AudioStream" uid="uid://co61hk62r6ir1" path="res://audio/sfx/talk/accordian_1.wav" id="1"]
+[ext_resource type="AudioStream" uid="uid://c2qe223pou8fd" path="res://audio/sfx/talk/accordian_2.wav" id="2"]
+[ext_resource type="AudioStream" uid="uid://biw4jkt271ap7" path="res://audio/sfx/talk/accordian_3.wav" id="3"]
+
+[resource]
+streams_count = 3
+stream_0/stream = ExtResource( "1" )
+stream_0/weight = 1.0
+stream_1/stream = ExtResource( "2" )
+stream_1/weight = 1.0
+stream_2/stream = ExtResource( "3" )
+stream_2/weight = 1.0
+script = null

@@ -1,0 +1,15 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://ofcarenwa3k0"
+path="res://.godot/imported/Loosey Sans.otf-b39cb708cea844406abdf0252a661ae4.fontdata"
+
+[deps]
+
+source_file="res://asset/ui/Loosey Sans.otf"
+dest_files=PackedStringArray("res://.godot/imported/Loosey Sans.otf-b39cb708cea844406abdf0252a661ae4.fontdata")
+
+[params]
+
+dummy_value_ignore_me=0

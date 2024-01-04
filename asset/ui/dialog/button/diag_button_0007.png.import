@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://pbm6g8vbk4yo"
+path="res://.godot/imported/diag_button_0007.png-92bc81a840f9f98528cad1006d476293.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/dialog/button/diag_button_0007.png"
+dest_files=PackedStringArray("res://.godot/imported/diag_button_0007.png-92bc81a840f9f98528cad1006d476293.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

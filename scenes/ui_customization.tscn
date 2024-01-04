@@ -1,0 +1,1057 @@
+[gd_scene load_steps=65 format=3 uid="uid://4staqst3vq8x"]
+
+[ext_resource type="Script" path="res://scripts/ui_customization.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cd6tl80icokm5" path="res://asset/accessory/studio/studio.blend" id="2"]
+[ext_resource type="PackedScene" uid="uid://cqvlh5yr2rl6u" path="res://asset/newman/newman.blend" id="3"]
+[ext_resource type="Script" path="res://scripts/shadow.gd" id="4"]
+[ext_resource type="Script" path="res://scripts/player_visual_managergd.gd" id="5"]
+[ext_resource type="Material" path="res://asset/newman/mat/vtx_body.tres" id="6"]
+[ext_resource type="Theme" uid="uid://drsa2rro5tihp" path="res://asset/ui/generic_ui_theme.tres" id="7"]
+[ext_resource type="FontFile" uid="uid://dk3bac3jmalne" path="res://asset/ui/Basic Comical Regular NC.ttf" id="8"]
+[ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="9"]
+[ext_resource type="Texture2D" uid="uid://cfh24cun4gny8" path="res://asset/editor/part_flag.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://bqa1gfne7xu7g" path="res://asset/accessory/selected.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://en2vu416p7gm" path="res://asset/accessory/hover.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://b1710s4w3h6d8" path="res://asset/accessory/head/icon/cap.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://snebnebt72rj" path="res://asset/ui/color_pick/0.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://btuwbahbubf15" path="res://asset/ui/color_pick/1.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dscxlsvvkrhrm" path="res://asset/ui/color_pick/2.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://b6tt867oigem3" path="res://asset/ui/color_pick/3.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://s4gorokupk4c" path="res://asset/ui/color_pick/4.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://brhxc1asnko8t" path="res://asset/ui/color_pick/5.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://claum8rur8y6c" path="res://asset/ui/color_pick/6.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://g16v6rwcvklv" path="res://asset/ui/color_pick/7.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://cvkjy5fchjowy" path="res://asset/ui/color_pick/8.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://dv5i70vtvmh7h" path="res://asset/ui/color_pick/9.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://c5qvkwggcaj1t" path="res://asset/ui/color_pick/10.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://ctu5480aiepma" path="res://asset/ui/color_pick/11.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://cx6jisirugqq" path="res://asset/ui/color_pick/12.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://qwfls1davw6a" path="res://asset/ui/color_pick/13.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://rx7kplqkwtgc" path="res://asset/ui/color_pick/14.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://mm1xdyhk2by1" path="res://asset/ui/costume/save_costume.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://k234236yt5yo" path="res://asset/ui/costume/edit_costume.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://xxtkkwnf63e" path="res://asset/ui/costume/delete_costume.png" id="31"]
+[ext_resource type="Shader" path="res://asset/shader/n64_lit_nocull.gdshader" id="32"]
+[ext_resource type="Shader" path="res://asset/shader/n64_lit.gdshader" id="33"]
+
+[sub_resource type="Environment" id="1"]
+background_color = Color(1, 1, 1, 1)
+background_energy_multiplier = 0.0
+ambient_light_source = 2
+ambient_light_color = Color(0.298039, 0.298039, 0.443137, 1)
+
+[sub_resource type="World3D" id="2"]
+environment = SubResource("1")
+
+[sub_resource type="BoxShape3D" id="3"]
+size = Vector3(20, 1, 20)
+
+[sub_resource type="StyleBoxFlat" id="4"]
+content_margin_left = 8.0
+content_margin_right = 6.0
+bg_color = Color(0.175781, 0.175781, 0.175781, 1)
+border_width_top = 2
+
+[sub_resource type="StyleBoxFlat" id="5"]
+content_margin_left = 8.0
+content_margin_right = 6.0
+bg_color = Color(0.133333, 0.133333, 0.133333, 1)
+
+[sub_resource type="StyleBoxFlat" id="6"]
+content_margin_left = 8.0
+content_margin_right = 6.0
+bg_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StyleBoxFlat" id="7"]
+bg_color = Color(0.175781, 0.175781, 0.175781, 1)
+
+[sub_resource type="AtlasTexture" id="8"]
+atlas = ExtResource("10")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="9"]
+load_path = "res://.godot/imported/part_flag.png-5fae24c32a8cb619930aa1aa17c3d03e.ctex"
+
+[sub_resource type="AtlasTexture" id="10"]
+atlas = SubResource("9")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="11"]
+atlas = SubResource("9")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="StyleBoxFlat" id="12"]
+bg_color = Color(0.128906, 0.128906, 0.128906, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxTexture" id="13"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("11")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(0.101961, 0.101961, 0.101961, 0)
+
+[sub_resource type="StyleBoxEmpty" id="14"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+
+[sub_resource type="StyleBoxTexture" id="15"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+texture = ExtResource("11")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(0.6, 0.6, 0.6, 0.505882)
+
+[sub_resource type="StyleBoxTexture" id="16"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("12")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(0.364706, 0.611765, 0.913725, 1)
+draw_center = false
+
+[sub_resource type="ButtonGroup" id="17"]
+allow_unpress = true
+
+[sub_resource type="GDScript" id="18"]
+resource_name = "ui_customization_entry"
+script/source = "# ui_customization_entry.gd
+extends Button
+
+'''
+Instanced as part of the UI Customization menu
+'''
+
+## Emitted when entry is selected (go figure)
+signal entry_selected(node : Button)
+signal entry_focused(node : Button)
+
+## The data associated with the entry.
+var data
+
+func _ready() -> void:
+	# Connect signal
+	pressed.connect(func(): entry_selected.emit(self))
+	focus_entered.connect(func(): entry_focused.emit(self))
+	mouse_entered.connect(func(): grab_focus())
+"
+
+[sub_resource type="LabelSettings" id="19"]
+font = ExtResource("9")
+font_size = 24
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.243137)
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="LabelSettings" id="20"]
+line_spacing = -2.0
+font_size = 18
+font_color = Color(0.627451, 0.627451, 0.627451, 1)
+shadow_color = Color(0, 0, 0, 0.415686)
+
+[sub_resource type="LabelSettings" id="21"]
+line_spacing = 1.0
+font = ExtResource("8")
+font_color = Color(0.643137, 0.643137, 0.643137, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.243137)
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="GDScript" id="22"]
+resource_name = "costume_entry"
+script/source = "# costume_entry.gd
+extends HBoxContainer
+
+'''
+Holds information about costume
+'''
+
+## ID associated with this costume entry
+var id : int = 0
+## Reference to [PlayerVisualManager].
+var pvm : PlayerVisualManager
+
+# SIGNAL
+#-------------------------------------------------------------------------------
+
+## Equips costume associated with this entry.
+func _costume_equip() -> void:
+	pvm.equip_costume(id)
+	pvm.load_outfit()
+
+## Brings up edit window.
+func _costume_edit() -> void:
+	owner.show_window(id)
+
+## Deletes this costume entry.
+func _costume_delete() -> void:
+	pvm.remove_costume(id)
+	owner.tb_gen.generate_thumbnails()
+	
+"
+
+[sub_resource type="PlaceholderTexture2D" id="23"]
+size = Vector2(64, 64)
+
+[sub_resource type="LabelSettings" id="24"]
+line_spacing = 1.0
+font = ExtResource("8")
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.243137)
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="ShaderMaterial" id="25"]
+render_priority = 0
+shader = ExtResource("32")
+shader_parameter/modulate_color = Color(1, 1, 1, 1)
+shader_parameter/normal_scale = null
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="26"]
+render_priority = 0
+shader = ExtResource("33")
+shader_parameter/modulate_color = Color(0.619608, 0.909804, 0.603922, 1)
+shader_parameter/normal_scale = null
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="27"]
+render_priority = 0
+shader = ExtResource("33")
+shader_parameter/modulate_color = Color(0.619608, 0.909804, 0.603922, 1)
+shader_parameter/normal_scale = null
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+
+[sub_resource type="GDScript" id="28"]
+resource_name = "thumbnail_gen"
+script/source = "# thumbnail_gen.gd
+extends Node
+
+'''
+Generates costume thumbnails. 
+'''
+
+## Emitted when generation is complete.
+signal generation_complete(thumbnails : Array[Texture2D])
+## Emitted when generation is beginning.
+signal generation_began()
+
+## Reference to real [PlayerVisualManager]
+@onready var real_pvm : PlayerVisualManager = %visual_manager
+## Reference to viewport [PlayerVisualManager]
+@onready var vp_pvm : PlayerVisualManager = owner.get_node(\"render/visual_manager\")
+## Reference to render VP
+@onready var vp_render : Viewport = owner.get_node(\"render\")
+
+func _ready() -> void:
+	# Wait for owner to be ready
+	await owner.ready
+	
+	# Begin generating thumbnails
+	generate_thumbnails()
+
+# FUNCTION
+#-------------------------------------------------------------------------------
+
+## Generates thumbnails.
+func generate_thumbnails() -> void:
+	# Declare variables
+	var _tex : Array[Texture2D] = []
+	var _pdat : PlayerData = real_pvm.player_data.duplicate()
+	var costumes : Dictionary = _pdat.costumes
+	
+	# Set player data
+	vp_pvm.player_data = _pdat
+	
+	# Begin iterating
+	generation_began.emit()
+	for costume in costumes.values():
+		if not costume is Dictionary:
+			continue
+		
+		# Put costume on player
+		for key in _pdat.accessories.keys():
+			_pdat.accessories[key] = costume[\"outfit\"][key]
+		vp_pvm.load_outfit()
+		
+		# Wait for render
+		await RenderingServer.frame_post_draw
+		
+		# Render to image
+		var image = vp_render.get_texture().get_image()
+		var texture = ImageTexture.create_from_image(image)
+		_tex.append(texture)
+	
+	# We're finished, send data
+	generation_complete.emit(_tex)
+"
+
+[sub_resource type="ViewportTexture" id="29"]
+viewport_path = NodePath("render")
+
+[sub_resource type="PlaceholderTexture2D" id="30"]
+
+[sub_resource type="LabelSettings" id="31"]
+line_spacing = 1.0
+font = ExtResource("8")
+font_color = Color(0.643137, 0.643137, 0.643137, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.243137)
+shadow_offset = Vector2(2, 2)
+
+[node name="ui_customization" type="HBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+script = ExtResource("1")
+
+[node name="view" type="SubViewportContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+stretch = true
+
+[node name="viewport" type="SubViewport" parent="view"]
+own_world_3d = true
+world_3d = SubResource("2")
+transparent_bg = true
+handle_input_locally = false
+msaa_3d = 3
+screen_space_aa = 1
+mesh_lod_threshold = 0.0
+audio_listener_enable_3d = true
+positional_shadow_atlas_quad_0 = 3
+positional_shadow_atlas_quad_1 = 3
+positional_shadow_atlas_quad_3 = 3
+size = Vector2i(2, 2)
+render_target_update_mode = 4
+
+[node name="studio" parent="view/viewport" instance=ExtResource("2")]
+
+[node name="newman" parent="view/viewport" instance=ExtResource("3")]
+transform = Transform3D(0.92, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="skeleton" parent="view/viewport/newman/newman" index="1"]
+bones/2/rotation = Quaternion(0.0436194, 1.19096e-07, -5.19984e-09, 0.999048)
+bones/3/position = Vector3(-0.659299, -0.225522, 1.70829)
+bones/4/scale = Vector3(0, 0, 0)
+bones/5/position = Vector3(-1.60982e-15, 2.7, 1.49012e-08)
+bones/5/rotation = Quaternion(-5.58794e-09, -1.20113e-07, 7.90727e-11, 1)
+bones/6/position = Vector3(0.815063, -0.147192, -1.3964)
+
+[node name="head_accessory" type="BoneAttachment3D" parent="view/viewport/newman/newman/skeleton" index="3"]
+transform = Transform3D(1, 2.06214e-08, -2.71427e-09, -2.07795e-08, 0.996195, -0.0871558, 9.06681e-10, 0.0871558, 0.996195, 5.61049e-08, 4.38973, 0.235321)
+bone_name = "head"
+bone_idx = 5
+
+[node name="face_accessory" type="BoneAttachment3D" parent="view/viewport/newman/newman/skeleton" index="4"]
+transform = Transform3D(1, 2.06214e-08, -2.71427e-09, -2.07795e-08, 0.996195, -0.0871558, 9.06681e-10, 0.0871558, 0.996195, 5.61049e-08, 4.38973, 0.235321)
+bone_name = "head"
+bone_idx = 5
+
+[node name="body_group" type="Node3D" parent="view/viewport/newman/newman/skeleton" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="face" parent="view/viewport/newman/newman/skeleton" index="6"]
+cast_shadow = 0
+
+[node name="camera" parent="view/viewport/newman/newman/skeleton" index="8"]
+visible = false
+
+[node name="AnimationPlayer" parent="view/viewport/newman" index="1"]
+autoplay = "idle"
+speed_scale = 0.72
+
+[node name="shadow" type="RayCast3D" parent="view/viewport/newman"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("4")
+size = 4.0
+
+[node name="visual_manager" type="Node" parent="view/viewport"]
+unique_name_in_owner = true
+script = ExtResource("5")
+bone_head = NodePath("../newman/newman/skeleton/head_accessory")
+bone_face = NodePath("../newman/newman/skeleton/face_accessory")
+skeleton = NodePath("../newman/newman/skeleton")
+mesh_skin = NodePath("../newman/newman/skeleton/skin")
+mesh_body = NodePath("../newman/newman/skeleton/body")
+mesh_face = NodePath("../newman/newman/skeleton/face")
+material_body = ExtResource("6")
+
+[node name="camera" type="Camera3D" parent="view/viewport"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 3, 0)
+top_level = true
+current = true
+fov = 70.0
+size = 6.9
+
+[node name="cam_pos" type="Node" parent="view/viewport"]
+unique_name_in_owner = true
+
+[node name="skin" type="Marker3D" parent="view/viewport/cam_pos"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 3.5, 0)
+top_level = true
+
+[node name="head" type="Marker3D" parent="view/viewport/cam_pos"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5, 5, 0)
+top_level = true
+
+[node name="body" type="Marker3D" parent="view/viewport/cam_pos"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5, 3, 0)
+top_level = true
+
+[node name="face" type="Marker3D" parent="view/viewport/cam_pos"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 5, 0)
+top_level = true
+
+[node name="lighting" type="DirectionalLight3D" parent="view/viewport"]
+transform = Transform3D(0.582123, -0.43927, 0.684233, 0, 0.841511, 0.54024, -0.813101, -0.314486, 0.489863, 6.138, 8.748, 4)
+layers = 3
+light_color = Color(0.909804, 0.866667, 0.819608, 1)
+light_energy = 2.0
+shadow_bias = 0.315
+shadow_transmittance_bias = 16.0
+shadow_blur = 2.429
+directional_shadow_mode = 0
+
+[node name="floor" type="StaticBody3D" parent="view/viewport"]
+
+[node name="col" type="CollisionShape3D" parent="view/viewport/floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("3")
+
+[node name="ui" type="MarginContainer" parent="view/viewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="back" type="Button" parent="view/viewport/ui"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+focus_neighbor_left = NodePath("../../../../tabs")
+focus_neighbor_right = NodePath("../../../../tabs")
+focus_next = NodePath("../../../../tabs")
+theme = ExtResource("7")
+theme_override_font_sizes/font_size = 18
+text = "  Back "
+
+[node name="tabs" type="TabContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_neighbor_left = NodePath("../view/viewport/ui/back")
+theme_override_fonts/font = ExtResource("8")
+theme_override_styles/tab_selected = SubResource("4")
+theme_override_styles/tab_hovered = SubResource("5")
+theme_override_styles/tab_unselected = SubResource("6")
+theme_override_styles/panel = SubResource("7")
+
+[node name="Accessory" type="Panel" parent="tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.7
+theme_override_styles/panel = SubResource("7")
+
+[node name="margin" type="MarginContainer" parent="tabs/Accessory"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="v_sort" type="VBoxContainer" parent="tabs/Accessory/margin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_constants/separation = 8
+
+[node name="category" type="OptionButton" parent="tabs/Accessory/margin/v_sort"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_left = NodePath("../../../..")
+focus_previous = NodePath("../../../../../view/viewport/ui/back")
+theme = ExtResource("7")
+theme_override_constants/h_separation = 6
+theme_override_fonts/font = ExtResource("9")
+item_count = 3
+selected = 0
+popup/item_0/text = "Head"
+popup/item_0/icon = SubResource("8")
+popup/item_0/id = 0
+popup/item_1/text = "Face"
+popup/item_1/icon = SubResource("10")
+popup/item_1/id = 1
+popup/item_2/text = "Torso"
+popup/item_2/icon = SubResource("11")
+popup/item_2/id = 2
+
+[node name="scoll" type="ScrollContainer" parent="tabs/Accessory/margin/v_sort"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("12")
+follow_focus = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="margin" type="MarginContainer" parent="tabs/Accessory/margin/v_sort/scoll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="items" type="HFlowContainer" parent="tabs/Accessory/margin/v_sort/scoll/margin"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 2
+
+[node name="entry" type="Button" parent="tabs/Accessory/margin/v_sort/scoll/margin/items"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/normal = SubResource("13")
+theme_override_styles/hover = SubResource("14")
+theme_override_styles/pressed = SubResource("15")
+theme_override_styles/focus = SubResource("16")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("17")
+icon = ExtResource("13")
+clip_text = true
+icon_alignment = 1
+expand_icon = true
+script = SubResource("18")
+
+[node name="name" type="Label" parent="tabs/Accessory/margin/v_sort"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+size_flags_stretch_ratio = 0.25
+theme = ExtResource("7")
+theme_override_fonts/font = ExtResource("9")
+text = "Cool Accessory"
+label_settings = SubResource("19")
+autowrap_mode = 3
+
+[node name="description" type="Label" parent="tabs/Accessory/margin/v_sort"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+theme = ExtResource("7")
+text = "This is the default description."
+label_settings = SubResource("20")
+autowrap_mode = 3
+
+[node name="Palette" type="Panel" parent="tabs"]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("7")
+
+[node name="margin" type="MarginContainer" parent="tabs/Palette"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="v_sort" type="VBoxContainer" parent="tabs/Palette/margin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_constants/separation = 8
+
+[node name="l_color_1" type="Label" parent="tabs/Palette/margin/v_sort"]
+layout_mode = 2
+text = "Newman Color"
+label_settings = SubResource("19")
+horizontal_alignment = 1
+
+[node name="newman_color" type="ItemList" parent="tabs/Palette/margin/v_sort"]
+custom_minimum_size = Vector2(214, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_top = NodePath("../../../..")
+focus_neighbor_bottom = NodePath("../primary_color")
+theme = ExtResource("7")
+theme_override_colors/guide_color = Color(0.176349, 0.176349, 0.176349, 1)
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 1
+allow_search = false
+auto_height = true
+item_count = 15
+max_columns = 8
+same_column_width = true
+fixed_column_width = 22
+item_0/text = ""
+item_0/icon = ExtResource("14")
+item_1/text = ""
+item_1/icon = ExtResource("15")
+item_2/text = ""
+item_2/icon = ExtResource("16")
+item_3/text = ""
+item_3/icon = ExtResource("17")
+item_4/text = ""
+item_4/icon = ExtResource("18")
+item_5/text = ""
+item_5/icon = ExtResource("19")
+item_6/text = ""
+item_6/icon = ExtResource("20")
+item_7/text = ""
+item_7/icon = ExtResource("21")
+item_8/text = ""
+item_8/icon = ExtResource("22")
+item_9/text = ""
+item_9/icon = ExtResource("23")
+item_10/text = ""
+item_10/icon = ExtResource("24")
+item_11/text = ""
+item_11/icon = ExtResource("25")
+item_12/text = ""
+item_12/icon = ExtResource("26")
+item_13/text = ""
+item_13/icon = ExtResource("27")
+item_14/text = ""
+item_14/icon = ExtResource("28")
+
+[node name="l_color_2" type="Label" parent="tabs/Palette/margin/v_sort"]
+layout_mode = 2
+text = "Primary Color"
+label_settings = SubResource("19")
+horizontal_alignment = 1
+
+[node name="primary_color" type="ItemList" parent="tabs/Palette/margin/v_sort"]
+custom_minimum_size = Vector2(214, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("7")
+theme_override_colors/guide_color = Color(0.176349, 0.176349, 0.176349, 1)
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 1
+allow_search = false
+auto_height = true
+item_count = 15
+max_columns = 8
+same_column_width = true
+fixed_column_width = 22
+item_0/text = ""
+item_0/icon = ExtResource("14")
+item_1/text = ""
+item_1/icon = ExtResource("15")
+item_2/text = ""
+item_2/icon = ExtResource("16")
+item_3/text = ""
+item_3/icon = ExtResource("17")
+item_4/text = ""
+item_4/icon = ExtResource("18")
+item_5/text = ""
+item_5/icon = ExtResource("19")
+item_6/text = ""
+item_6/icon = ExtResource("20")
+item_7/text = ""
+item_7/icon = ExtResource("21")
+item_8/text = ""
+item_8/icon = ExtResource("22")
+item_9/text = ""
+item_9/icon = ExtResource("23")
+item_10/text = ""
+item_10/icon = ExtResource("24")
+item_11/text = ""
+item_11/icon = ExtResource("25")
+item_12/text = ""
+item_12/icon = ExtResource("26")
+item_13/text = ""
+item_13/icon = ExtResource("27")
+item_14/text = ""
+item_14/icon = ExtResource("28")
+
+[node name="l_color_3" type="Label" parent="tabs/Palette/margin/v_sort"]
+layout_mode = 2
+text = "Secondary Color"
+label_settings = SubResource("19")
+horizontal_alignment = 1
+
+[node name="secondary_color" type="ItemList" parent="tabs/Palette/margin/v_sort"]
+custom_minimum_size = Vector2(214, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("7")
+theme_override_colors/guide_color = Color(0.176349, 0.176349, 0.176349, 1)
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 1
+allow_search = false
+auto_height = true
+item_count = 15
+max_columns = 8
+same_column_width = true
+fixed_column_width = 22
+item_0/text = ""
+item_0/icon = ExtResource("14")
+item_1/text = ""
+item_1/icon = ExtResource("15")
+item_2/text = ""
+item_2/icon = ExtResource("16")
+item_3/text = ""
+item_3/icon = ExtResource("17")
+item_4/text = ""
+item_4/icon = ExtResource("18")
+item_5/text = ""
+item_5/icon = ExtResource("19")
+item_6/text = ""
+item_6/icon = ExtResource("20")
+item_7/text = ""
+item_7/icon = ExtResource("21")
+item_8/text = ""
+item_8/icon = ExtResource("22")
+item_9/text = ""
+item_9/icon = ExtResource("23")
+item_10/text = ""
+item_10/icon = ExtResource("24")
+item_11/text = ""
+item_11/icon = ExtResource("25")
+item_12/text = ""
+item_12/icon = ExtResource("26")
+item_13/text = ""
+item_13/icon = ExtResource("27")
+item_14/text = ""
+item_14/icon = ExtResource("28")
+
+[node name="about" type="Label" parent="tabs/Palette/margin/v_sort"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 10
+text = "Define Newman's color palette by double clicking on your preferred colors. Some accessories will be colored based on the primary and secondary color, the availability of which is indicated by an RGB wheel icon."
+label_settings = SubResource("21")
+autowrap_mode = 3
+
+[node name="Costumes" type="Panel" parent="tabs"]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("7")
+
+[node name="margin" type="MarginContainer" parent="tabs/Costumes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="v_sort" type="VBoxContainer" parent="tabs/Costumes/margin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_constants/separation = 8
+
+[node name="options" type="HBoxContainer" parent="tabs/Costumes/margin/v_sort"]
+layout_mode = 2
+
+[node name="save" type="Button" parent="tabs/Costumes/margin/v_sort/options"]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "Saves current costume"
+theme = ExtResource("7")
+icon = ExtResource("29")
+
+[node name="costume_name" type="LineEdit" parent="tabs/Costumes/margin/v_sort/options"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("7")
+theme_override_font_sizes/font_size = 18
+placeholder_text = " Costume Name"
+max_length = 20
+
+[node name="scroll_container" type="ScrollContainer" parent="tabs/Costumes/margin/v_sort"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("12")
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="margin_container" type="MarginContainer" parent="tabs/Costumes/margin/v_sort/scroll_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="costume_entries" type="VBoxContainer" parent="tabs/Costumes/margin/v_sort/scroll_container/margin_container"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="costume_entry" type="HBoxContainer" parent="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 2
+script = SubResource("22")
+
+[node name="costume" type="Button" parent="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry"]
+custom_minimum_size = Vector2(0, 66)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("7")
+text = "Some kind of costume"
+icon = SubResource("23")
+alignment = 0
+expand_icon = true
+
+[node name="vsort" type="VBoxContainer" parent="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 2
+
+[node name="edit" type="Button" parent="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry/vsort"]
+layout_mode = 2
+size_flags_vertical = 0
+tooltip_text = "Edit the name of this costume"
+theme = ExtResource("7")
+icon = ExtResource("30")
+
+[node name="delete" type="Button" parent="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry/vsort"]
+layout_mode = 2
+size_flags_vertical = 0
+tooltip_text = "Deletes this costume"
+theme = ExtResource("7")
+icon = ExtResource("31")
+
+[node name="costume_count" type="Label" parent="tabs/Costumes/margin/v_sort"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Slots : 0 / 24"
+label_settings = SubResource("24")
+horizontal_alignment = 2
+autowrap_mode = 3
+
+[node name="about" type="Label" parent="tabs/Costumes/margin/v_sort"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 8
+text = "You can make copies of your Newman's current costume or load an already saved costume in this menu."
+label_settings = SubResource("21")
+autowrap_mode = 3
+
+[node name="render" type="SubViewport" parent="."]
+own_world_3d = true
+world_3d = SubResource("2")
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+render_target_update_mode = 4
+
+[node name="camera" type="Camera3D" parent="render"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 3, 0)
+top_level = true
+cull_mask = 1048574
+current = true
+fov = 50.0
+size = 6.9
+
+[node name="newman" parent="render" instance=ExtResource("3")]
+transform = Transform3D(0.92, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="body" parent="render/newman/newman/skeleton" index="2"]
+surface_material_override/0 = SubResource("25")
+
+[node name="head_accessory" type="BoneAttachment3D" parent="render/newman/newman/skeleton" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.4, 0)
+bone_name = "head"
+bone_idx = 5
+
+[node name="face_accessory" type="BoneAttachment3D" parent="render/newman/newman/skeleton" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.4, 0)
+bone_name = "head"
+bone_idx = 5
+
+[node name="body_group" type="Node3D" parent="render/newman/newman/skeleton" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="face" parent="render/newman/newman/skeleton" index="6"]
+cast_shadow = 0
+
+[node name="skin" parent="render/newman/newman/skeleton" index="7"]
+surface_material_override/0 = SubResource("26")
+
+[node name="camera" parent="render/newman/newman/skeleton" index="8"]
+visible = false
+
+[node name="AnimationPlayer" parent="render/newman" index="1"]
+autoplay = "none"
+speed_scale = 0.72
+
+[node name="visual_manager" type="Node" parent="render"]
+script = ExtResource("5")
+bone_head = NodePath("../newman/newman/skeleton/head_accessory")
+bone_face = NodePath("../newman/newman/skeleton/face_accessory")
+skeleton = NodePath("../newman/newman/skeleton")
+mesh_skin = NodePath("../newman/newman/skeleton/skin")
+mesh_body = NodePath("../newman/newman/skeleton/body")
+mesh_face = NodePath("../newman/newman/skeleton/face")
+material_body = SubResource("27")
+material_acc_primary = SubResource("25")
+
+[node name="lighting" type="OmniLight3D" parent="render"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.04267, 7.55782, 3.78036)
+layers = 3
+light_color = Color(0.909804, 0.866667, 0.819608, 1)
+light_energy = 3.0
+shadow_enabled = true
+shadow_bias = 0.315
+shadow_transmittance_bias = 16.0
+shadow_blur = 2.429
+omni_range = 20.6981
+omni_attenuation = 0.517632
+
+[node name="thumbnail_gen" type="Node" parent="."]
+script = SubResource("28")
+
+[node name="debug" type="Node" parent="."]
+
+[node name="debug_vp" type="TextureRect" parent="debug"]
+visible = false
+offset_left = 575.0
+offset_right = 639.0
+offset_bottom = 64.0
+texture = SubResource("29")
+
+[node name="debug_save" type="TextureRect" parent="debug"]
+unique_name_in_owner = true
+visible = false
+offset_left = 575.0
+offset_top = 64.0
+offset_right = 639.0
+offset_bottom = 128.0
+texture = SubResource("30")
+
+[node name="rename_window" type="Window" parent="debug"]
+title = "Change Costume Name"
+initial_position = 1
+size = Vector2i(400, 100)
+visible = false
+transient = true
+exclusive = true
+unresizable = true
+theme = ExtResource("7")
+
+[node name="margin" type="MarginContainer" parent="debug/rename_window"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 8
+
+[node name="sort" type="VBoxContainer" parent="debug/rename_window/margin"]
+layout_mode = 2
+
+[node name="prompt" type="Label" parent="debug/rename_window/margin/sort"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 8
+text = "Change costume \" \" to..."
+label_settings = SubResource("31")
+autowrap_mode = 3
+
+[node name="name_input" type="LineEdit" parent="debug/rename_window/margin/sort"]
+layout_mode = 2
+placeholder_text = "New Costume Name"
+max_length = 20
+
+[node name="sort" type="HBoxContainer" parent="debug/rename_window/margin/sort"]
+layout_mode = 2
+
+[node name="cancel" type="Button" parent="debug/rename_window/margin/sort/sort"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Cancel"
+
+[node name="accept" type="Button" parent="debug/rename_window/margin/sort/sort"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Accept"
+
+[connection signal="tab_changed" from="tabs" to="." method="_tab_changed"]
+[connection signal="item_selected" from="tabs/Accessory/margin/v_sort/category" to="." method="category_item_selected"]
+[connection signal="item_activated" from="tabs/Palette/margin/v_sort/newman_color" to="." method="_newman_color_item_selected"]
+[connection signal="item_activated" from="tabs/Palette/margin/v_sort/primary_color" to="." method="_primary_color_item_selected"]
+[connection signal="item_activated" from="tabs/Palette/margin/v_sort/secondary_color" to="." method="_secondary_color_item_selected"]
+[connection signal="pressed" from="tabs/Costumes/margin/v_sort/options/save" to="." method="save_costume"]
+[connection signal="pressed" from="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry/costume" to="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry" method="_costume_equip"]
+[connection signal="pressed" from="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry/vsort/edit" to="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry" method="_costume_edit"]
+[connection signal="pressed" from="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry/vsort/delete" to="tabs/Costumes/margin/v_sort/scroll_container/margin_container/costume_entries/costume_entry" method="_costume_delete"]
+[connection signal="generation_complete" from="thumbnail_gen" to="." method="create_costume_list"]
+[connection signal="close_requested" from="debug/rename_window" to="." method="close_window"]
+[connection signal="text_changed" from="debug/rename_window/margin/sort/name_input" to="." method="name_input_changed"]
+[connection signal="pressed" from="debug/rename_window/margin/sort/sort/cancel" to="." method="close_window"]
+[connection signal="pressed" from="debug/rename_window/margin/sort/sort/accept" to="." method="name_changed"]
+
+[editable path="view/viewport/newman"]
+[editable path="render/newman"]

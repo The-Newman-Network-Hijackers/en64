@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://b8pc5o0bonnxd"
+path="res://.godot/imported/stone_debris.blend-04c5479b6a9cc6949286a406a35e575a.scn"
+
+[deps]
+
+source_file="res://asset/effect/debris/stone_debris.blend"
+dest_files=PackedStringArray("res://.godot/imported/stone_debris.blend-04c5479b6a9cc6949286a406a35e575a.scn")
+
+[params]
+
+dummy_value_ignore_me=0

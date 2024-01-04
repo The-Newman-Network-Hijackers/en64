@@ -1,0 +1,539 @@
+[gd_scene load_steps=40 format=3 uid="uid://dogr370k43n1s"]
+
+[ext_resource type="Script" path="res://scripts/crate.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/cluster_spawner.gd" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/bouncing_jack.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/debris_crate.tscn" id="4"]
+[ext_resource type="Script" path="res://scripts/enabler_reciever.gd" id="5"]
+[ext_resource type="Script" path="res://scripts/state_machine.gd" id="6"]
+[ext_resource type="Script" path="res://scripts/hurtbox.gd" id="7"]
+[ext_resource type="PackedScene" uid="uid://c4j6uku1up34s" path="res://asset/entity/crate/box.blend" id="8"]
+[ext_resource type="Material" path="res://asset/entity/crate/wooden/mat/wood_crate_1.tres" id="9"]
+[ext_resource type="Material" path="res://asset/effect/dust/mat/vtx_dust.tres" id="10"]
+[ext_resource type="AudioStream" uid="uid://uh5lnkko6twf" path="res://audio/sfx/wood_damage.wav" id="11"]
+[ext_resource type="AudioStream" uid="uid://gw40glndaeu0" path="res://audio/sfx/wood_damage2.wav" id="12"]
+[ext_resource type="AudioStream" uid="uid://dw1dqs3wvlx1w" path="res://audio/sfx/wood_break.wav" id="13"]
+[ext_resource type="AudioStream" uid="uid://6j6avthc5uou" path="res://audio/sfx/wood_break2.wav" id="14"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_frpfg"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="GDScript" id="2"]
+resource_name = "entity_crate"
+script/source = "# entity_crate.gd
+extends Entity
+
+'''
+Crate entity overrides
+'''
+
+"
+
+[sub_resource type="GDScript" id="3"]
+resource_name = "crate_idle"
+script/source = "# crate_idle.gd
+extends State
+
+'''
+Crate idle state
+'''
+
+@onready var crate := owner.get_node(\"crate\") as Entity
+
+func _ready() -> void:
+	# Connect signal
+	crate.hurtbox_node.damaged.connect(_hurtbox_damaged.bind())
+	crate.hurtbox_node.died.connect(_hurtbox_killed.bind())
+
+func _state_physics_process(delta : float) -> void:
+	if !crate.floor_raycast.is_colliding() || !crate.is_on_floor():
+		crate.update_movement(delta)
+
+func _exit() -> void:
+	# Disconnect signal
+	crate.hurtbox_node.damaged.disconnect(_hurtbox_damaged.bind())
+	crate.hurtbox_node.died.disconnect(_hurtbox_killed.bind())
+
+# FUNCTION
+#-------------------------------------------------------------------------------
+
+func _hurtbox_damaged(_value : int, _junk := {}) -> void:
+	crate.set_anim(\"damaged\")
+
+func _hurtbox_killed(_value : int, _junk := {}) -> void:
+	state_machine.transition_state(\"broken\")
+"
+
+[sub_resource type="GDScript" id="4"]
+resource_name = "crate_broken"
+script/source = "# crate_broken.gd
+extends State
+
+'''
+Crate broken state
+'''
+
+@onready var crate := owner.get_node(\"crate\") as Entity
+
+func _enter(_msg := {}) -> void:
+	crate.set_anim(\"destroyed\")
+"
+
+[sub_resource type="Curve" id="7"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.365591, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="8"]
+curve = SubResource("7")
+
+[sub_resource type="Curve" id="5"]
+_data = [Vector2(0, 1), 0.0, 3.32432, 0, 0, Vector2(0.290323, 1), -1.93347, -1.93347, 0, 0, Vector2(1, 0.506757), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="6"]
+curve = SubResource("5")
+
+[sub_resource type="ParticleProcessMaterial" id="9"]
+direction = Vector3(0, 1, 0)
+spread = 180.0
+initial_velocity_min = 4.0
+initial_velocity_max = 6.0
+gravity = Vector3(0, 0, 0)
+radial_accel_min = 11.0
+radial_accel_max = 17.0
+damping_min = 2.175
+damping_max = 2.175
+scale_max = 2.0
+scale_curve = SubResource("6")
+alpha_curve = SubResource("8")
+anim_speed_min = 1.0
+anim_speed_max = 1.4
+
+[sub_resource type="QuadMesh" id="10"]
+size = Vector2(3, 3)
+
+[sub_resource type="AudioStreamRandomizer" id="11"]
+random_pitch = 1.05
+streams_count = 2
+stream_0/stream = ExtResource("11")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("12")
+stream_1/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="12"]
+random_pitch = 1.05
+streams_count = 2
+stream_0/stream = ExtResource("13")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("14")
+stream_1/weight = 1.0
+
+[sub_resource type="Animation" id="13"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("crate/vis:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("crate/vis:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("crate/sfx/hit:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("crate/vis/Cube:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("crate/col:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("crate/sfx/destroy:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="14"]
+resource_name = "damaged"
+length = 0.6
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("crate/vis:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.5, 0, 0), Vector3(0, 0, 0), Vector3(-0.5, 0, 0), Vector3(0, 0, 0), Vector3(0.5, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("crate/vis:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("crate/sfx/hit:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="15"]
+resource_name = "destroyed"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("crate/vis/Cube:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("crate/col:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("crate/vis/particle/dust")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"restart"
+}]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("crate/sfx/destroy:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("enabler_reciever")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("./crate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("crate/vis:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "method"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("jspawn")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"spawn"
+}]
+}
+tracks/8/type = "method"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("chunks")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"spawn"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="16"]
+_data = {
+"RESET": SubResource("13"),
+"damaged": SubResource("14"),
+"destroyed": SubResource("15")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="17"]
+animation = &"RESET"
+
+[sub_resource type="AnimationNodeAnimation" id="18"]
+animation = &"damaged"
+
+[sub_resource type="AnimationNodeAnimation" id="19"]
+animation = &"destroyed"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="20"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="21"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="22"]
+xfade_time = 0.1
+priority = 2
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="23"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="24"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="25"]
+states/End/position = Vector2(826, 100)
+states/RESET/node = SubResource("17")
+states/RESET/position = Vector2(321, 100)
+states/Start/position = Vector2(178, 100)
+states/damaged/node = SubResource("18")
+states/damaged/position = Vector2(484, 100)
+states/destroyed/node = SubResource("19")
+states/destroyed/position = Vector2(654, 100)
+transitions = ["Start", "RESET", SubResource("20"), "RESET", "damaged", SubResource("21"), "damaged", "RESET", SubResource("22"), "damaged", "destroyed", SubResource("23"), "destroyed", "End", SubResource("24")]
+graph_offset = Vector2(128, -54)
+
+[node name="crate" type="Node3D"]
+script = ExtResource("1")
+size = Vector3(4, 4, 4)
+
+[node name="jspawn" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+script = ExtResource("2")
+scene = ExtResource("3")
+spawn_count = 0
+delay_per_spawn = 0.1
+fs_variance = Vector2(5, 12.5)
+yv_variance = Vector2(55, 65)
+one_shot = true
+
+[node name="chunks" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+script = ExtResource("2")
+scene = ExtResource("4")
+spawn_count = 2
+fs_variance = Vector2(35, 60)
+yv_variance = Vector2(40, 90)
+one_shot = true
+
+[node name="enabler_reciever" type="Area3D" parent="."]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0)
+script = ExtResource("5")
+target = NodePath("..")
+
+[node name="col" type="CollisionShape3D" parent="enabler_reciever"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5625, 0)
+visible = false
+shape = SubResource("BoxShape3D_frpfg")
+
+[node name="crate" type="CharacterBody3D" parent="."]
+collision_layer = 5
+collision_mask = 5
+input_ray_pickable = false
+slide_on_ceiling = false
+floor_stop_on_slope = false
+script = SubResource("2")
+e_name = "Crate"
+hurtbox_node = NodePath("hbox")
+visual_node = NodePath("vis")
+floor_raycast = NodePath("floor")
+anim_tree = NodePath("anim_tree")
+terminal_velocity = 80.0
+
+[node name="crate_fsm" type="Node" parent="crate" node_paths=PackedStringArray("initial_state")]
+script = ExtResource("6")
+initial_state = NodePath("idle")
+
+[node name="idle" type="Node" parent="crate/crate_fsm"]
+script = SubResource("3")
+
+[node name="broken" type="Node" parent="crate/crate_fsm"]
+script = SubResource("4")
+
+[node name="hbox" type="Area3D" parent="crate"]
+script = ExtResource("7")
+inv_time = 0.3
+scope = 4
+
+[node name="col" type="CollisionShape3D" parent="crate/hbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_frpfg")
+
+[node name="vis" parent="crate" instance=ExtResource("8")]
+
+[node name="Cube" parent="crate/vis" index="0"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 4, 0)
+layers = 5
+material_override = ExtResource("9")
+
+[node name="particle" type="Node3D" parent="crate/vis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="dust" type="GPUParticles3D" parent="crate/vis/particle"]
+material_override = ExtResource("10")
+cast_shadow = 0
+emitting = false
+lifetime = 1.5
+one_shot = true
+speed_scale = 1.5
+explosiveness = 1.0
+visibility_aabb = AABB(-36.9484, -22.9961, -31.3639, 73.5459, 39.3282, 69.0008)
+process_material = SubResource("9")
+draw_pass_1 = SubResource("10")
+
+[node name="sfx" type="Node3D" parent="crate"]
+
+[node name="hit" type="AudioStreamPlayer3D" parent="crate/sfx"]
+stream = SubResource("11")
+unit_size = 60.0
+max_db = 0.0
+bus = &"Sound"
+
+[node name="destroy" type="AudioStreamPlayer3D" parent="crate/sfx"]
+stream = SubResource("12")
+unit_size = 60.0
+max_db = 0.0
+bus = &"Sound"
+
+[node name="col" type="CollisionShape3D" parent="crate"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_frpfg")
+
+[node name="floor" type="RayCast3D" parent="crate"]
+target_position = Vector3(0, -2.5, 0)
+hit_from_inside = true
+
+[node name="anim_tree" type="AnimationTree" parent="crate"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("16")
+}
+tree_root = SubResource("25")
+anim_player = NodePath("../anim")
+
+[node name="anim" type="AnimationPlayer" parent="crate"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("16")
+}
+
+[editable path="crate/vis"]

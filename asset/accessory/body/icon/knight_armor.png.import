@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://tdbt2jruihuq"
+path="res://.godot/imported/knight_armor.png-e8b694f5b53ca0dd3cc8a5882c48bf3a.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/accessory/body/icon/knight_armor.png"
+dest_files=PackedStringArray("res://.godot/imported/knight_armor.png-e8b694f5b53ca0dd3cc8a5882c48bf3a.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://btue53jsuu2xf"
+path="res://.godot/imported/cage.blend-5d472f6c87abf8663fafc0e5979f8bdb.scn"
+
+[deps]
+
+source_file="res://asset/entity/cage/cage.blend"
+dest_files=PackedStringArray("res://.godot/imported/cage.blend-5d472f6c87abf8663fafc0e5979f8bdb.scn")
+
+[params]
+
+dummy_value_ignore_me=0

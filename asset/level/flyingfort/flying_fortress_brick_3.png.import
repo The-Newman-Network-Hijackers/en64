@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c78j4uo26tf2k"
+path="res://.godot/imported/flying_fortress_brick_3.png-1f1c827869faaa21d8e9b6d85811c800.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://asset/level/flyingfort/flying_fortress_brick_3.png"
+dest_files=PackedStringArray("res://.godot/imported/flying_fortress_brick_3.png-1f1c827869faaa21d8e9b6d85811c800.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

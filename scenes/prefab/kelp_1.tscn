@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" uid="uid://dqr2cciohgudg" path="res://asset/entity/kelp/kelp_1.blend" id="1"]
+[ext_resource type="Shader" path="res://asset/shader/n64_lit_nocull.gdshader" id="2"]
+
+[sub_resource type="GDScript" id="1"]
+resource_name = "kelp_primer"
+script/source = "# kelp_primer.gd
+extends Node3D
+
+'''
+Small script that randomizes animation time
+'''
+
+func _ready() -> void:
+	# Get animation node
+	var anim := $kelp_1/AnimationPlayer as AnimationPlayer
+	
+	# Play and randomize
+	anim.play(\"wave\")
+	anim.seek(randf() * 2.5, true)
+"
+
+[sub_resource type="ShaderMaterial" id="2"]
+render_priority = 0
+next_pass = null
+shader = ExtResource( "2" )
+shader_parameter/modulate_color = Color(1, 1, 1, 1)
+shader_parameter/normal_scale = null
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/albedoTex = null
+shader_parameter/texture_normal = null
+script = null
+
+[node name="kelp_1" type="Node3D"]
+script = SubResource( "1" )
+
+[node name="kelp_1" parent="." instance=ExtResource( "1" )]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="Skeleton3D" parent="kelp_1/arm_kelp" index="0"]
+bones/0/rotation = Quaternion(0, 0, 0.0871558, 0.996195)
+bones/1/rotation = Quaternion(0, 0, -0.173648, 0.984808)
+bones/2/rotation = Quaternion(0, 0, 0.173648, 0.984808)
+bones/3/rotation = Quaternion(0, 0, -0.21644, 0.976296)
+
+[node name="kelp" parent="kelp_1/arm_kelp/Skeleton3D" index="0"]
+surface_material_override/0 = SubResource( "2" )
+
+[node name="AnimationPlayer" parent="kelp_1" index="1"]
+autoplay = "wave"
+
+[editable path="kelp_1"]

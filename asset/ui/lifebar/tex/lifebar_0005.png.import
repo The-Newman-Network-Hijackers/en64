@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://6bb0yblwh1c4"
+path="res://.godot/imported/lifebar_0005.png-7e09100ff4d7492951b4f7c4160d976f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/lifebar/tex/lifebar_0005.png"
+dest_files=PackedStringArray("res://.godot/imported/lifebar_0005.png-7e09100ff4d7492951b4f7c4160d976f.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

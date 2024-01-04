@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b5ekvensla76"
+path="res://.godot/imported/explosion_1.wav-fb213bb17506ec2ee112121017677b0c.sample"
+
+[deps]
+
+source_file="res://audio/sfx/explosion_1.wav"
+dest_files=PackedStringArray("res://.godot/imported/explosion_1.wav-fb213bb17506ec2ee112121017677b0c.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

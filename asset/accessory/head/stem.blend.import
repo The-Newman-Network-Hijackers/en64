@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cfhm5weci0rb0"
+path="res://.godot/imported/stem.blend-b06dd2ceb5a82eae8e278724cad33e27.scn"
+
+[deps]
+
+source_file="res://asset/accessory/head/stem.blend"
+dest_files=PackedStringArray("res://.godot/imported/stem.blend-b06dd2ceb5a82eae8e278724cad33e27.scn")
+
+[params]
+
+dummy_value_ignore_me=0

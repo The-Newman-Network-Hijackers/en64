@@ -1,0 +1,263 @@
+[gd_scene load_steps=24 format=3]
+
+[ext_resource type="Script" path="res://scripts/prop.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://bffo6tj4v8ql2" path="res://asset/shard/shard.blend" id="2"]
+[ext_resource type="Shader" path="res://asset/shader/n64_lit_metal.gdshader" id="3"]
+[ext_resource type="Texture2D" uid="uid://dqeb02gbqh8r0" path="res://asset/level/generic/water_1.png" id="4"]
+[ext_resource type="Script" path="res://scripts/billboard.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://clfwdp8n8bqjk" path="res://asset/effect/starburst/1.png" id="6"]
+[ext_resource type="Material" uid="uid://cifn8hrjv0ffg" path="res://scenes/particle/ vtx_bubble.tres" id="7"]
+[ext_resource type="AudioStream" uid="uid://nsw3arsa0pc" path="res://audio/sfx/glisten.wav" id="8"]
+[ext_resource type="Script" path="res://scripts/shadow.gd" id="9"]
+[ext_resource type="Script" path="res://scripts/cluster_spawner.gd" id="10"]
+[ext_resource type="PackedScene" uid="uid://bovov0js6iw4e" path="res://scenes/prefab/bouncing_jack.tscn" id="11"]
+
+[sub_resource type="ShaderMaterial" id="1"]
+render_priority = 0
+next_pass = null
+shader = ExtResource( "3" )
+shader_parameter/modulate_color = Color(0.427451, 0.8, 0.407843, 1)
+shader_parameter/albedoTex = ExtResource( "4" )
+script = null
+
+[sub_resource type="Animation" id="2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../mesh:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+script = null
+
+[sub_resource type="Animation" id="3"]
+resource_name = "glow"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(1, 1, 1), Vector3(1.25, 1.25, 1.25), Vector3(1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../mesh:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 6.28319, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 6.28319)]
+}
+script = null
+
+[sub_resource type="Animation" id="4"]
+resource_name = "glow_nospin"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(1, 1, 1), Vector3(1.25, 1.25, 1.25), Vector3(1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 6.28319)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="5"]
+_data = {
+"RESET": SubResource( "2" ),
+"glow": SubResource( "3" ),
+"glow_nospin": SubResource( "4" )
+}
+script = null
+
+[sub_resource type="StandardMaterial3D" id="6"]
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource( "6" )
+disable_receive_shadows = true
+billboard_keep_scale = true
+script = null
+
+[sub_resource type="PlaneMesh" id="7"]
+orientation = 2
+script = null
+
+[sub_resource type="Curve" id="8"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.122449, 0.309143), 0.0, 0.0, 0, 0, Vector2(0.988338, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+script = null
+
+[sub_resource type="CurveTexture" id="9"]
+curve = SubResource( "8" )
+script = null
+
+[sub_resource type="ParticleProcessMaterial" id="10"]
+particle_flag_align_y = true
+particle_flag_rotate_y = true
+emission_shape = 2
+emission_sphere_radius = 2.0
+spread = 180.0
+radial_velocity_min = -10.0
+radial_velocity_max = -10.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource( "9" )
+scale_over_velocity_min = 17.3
+scale_over_velocity_max = 33.0
+script = null
+
+[sub_resource type="QuadMesh" id="11"]
+material = ExtResource( "7" )
+size = Vector2(2, 2)
+script = null
+
+[sub_resource type="SphereShape3D" id="12"]
+radius = 2.99788
+script = null
+
+[node name="shard" type="Area3D"]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+script = ExtResource( "1" )
+metadata/_edit_group_ = true
+
+[node name="visuals" type="Node3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="mesh" parent="visuals" instance=ExtResource( "2" )]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, -0.0704009, 0)
+
+[node name="shard" parent="visuals/mesh" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.108104)
+layers = 6
+surface_material_override/0 = SubResource( "1" )
+
+[node name="anim" type="AnimationPlayer" parent="visuals"]
+root_node = NodePath("../glow_pivot/glow")
+libraries = {
+"": SubResource( "5" )
+}
+autoplay = "glow"
+
+[node name="glow_pivot" type="Node3D" parent="visuals"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+script = ExtResource( "5" )
+
+[node name="glow" type="MeshInstance3D" parent="visuals/glow_pivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.941629)
+layers = 6
+material_override = SubResource( "6" )
+cast_shadow = 0
+mesh = SubResource( "7" )
+skeleton = NodePath("../../..")
+
+[node name="gpu_particles_3d" type="GPUParticles3D" parent="visuals"]
+draw_order = 3
+transform_align = 3
+process_material = SubResource( "10" )
+draw_pass_1 = SubResource( "11" )
+
+[node name="col" type="CollisionShape3D" parent="."]
+shape = SubResource( "12" )
+
+[node name="ambient" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.358438, -0.706884, -0.134318)
+stream = ExtResource( "8" )
+attenuation_model = 3
+volume_db = -4.0
+unit_size = 50.0
+max_db = -2.0
+autoplay = true
+max_distance = 120.0
+bus = &"Sound"
+
+[node name="shadow" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+hit_from_inside = true
+script = ExtResource( "9" )
+size = 7.5
+length = 200.0
+
+[node name="jacks" type="Node3D" parent="."]
+script = ExtResource( "10" )
+scene = ExtResource( "11" )
+spawn_count = 10
+delay_per_spawn = 0.2
+fs_variance = Vector2(10, 15)
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_body_entered"]
+
+[editable path="visuals/mesh"]

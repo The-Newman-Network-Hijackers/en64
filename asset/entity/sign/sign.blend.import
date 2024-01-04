@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://7hfkfh52rr0t"
+path="res://.godot/imported/sign.blend-0a5a75b4cd5e0adca4dbbd194ed8dc11.scn"
+
+[deps]
+
+source_file="res://asset/entity/sign/sign.blend"
+dest_files=PackedStringArray("res://.godot/imported/sign.blend-0a5a75b4cd5e0adca4dbbd194ed8dc11.scn")
+
+[params]
+
+dummy_value_ignore_me=0

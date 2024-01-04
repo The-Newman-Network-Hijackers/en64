@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bd2h5lt2avhej"
+path="res://.godot/imported/T_Asterisk_Key_Dark.png-677651232f82d1580a27755d653bd295.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_Asterisk_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_Asterisk_Key_Dark.png-677651232f82d1580a27755d653bd295.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

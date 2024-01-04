@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://asset/shader/n64_lit_nocull.gdshader" id="1"]
+[ext_resource type="Texture2D" uid="uid://cs81p8fut423j" path="res://asset/accessory/head/tex/beanie_tex.png" id="2"]
+
+[resource]
+render_priority = 0
+next_pass = null
+shader = ExtResource( "1" )
+shader_parameter/modulate_color = Color(1, 1, 1, 1)
+shader_parameter/normal_scale = null
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/albedoTex = ExtResource( "2" )
+shader_parameter/texture_normal = null
+script = null

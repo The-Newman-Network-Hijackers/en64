@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bcg4g07t3bd4h"
+path="res://.godot/imported/soda.blend-2c32a1dd33c1e2b196e7009ba62df786.scn"
+
+[deps]
+
+source_file="res://asset/entity/soda/soda.blend"
+dest_files=PackedStringArray("res://.godot/imported/soda.blend-2c32a1dd33c1e2b196e7009ba62df786.scn")
+
+[params]
+
+dummy_value_ignore_me=0

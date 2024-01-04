@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://xaxvf832w3ai"
+path="res://.godot/imported/hc_ruins_tower_arena.blend-ac431cc78c5a8ba1d6017322ebb37b79.scn"
+
+[deps]
+
+source_file="res://asset/level/history/hc_ruins_tower_arena.blend"
+dest_files=PackedStringArray("res://.godot/imported/hc_ruins_tower_arena.blend-ac431cc78c5a8ba1d6017322ebb37b79.scn")
+
+[params]
+
+dummy_value_ignore_me=0

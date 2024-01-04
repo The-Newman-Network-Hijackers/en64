@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="AccessoryData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_accessory.gd" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://dx8v5m5w0vgso" path="res://asset/accessory/head/mesh/propeller.res" id="2"]
+[ext_resource type="Material" uid="uid://4gqj30h7vwqw" path="res://asset/accessory/mat/vtx_acc_primary.tres" id="3"]
+[ext_resource type="Material" uid="uid://bxip48jxv17qq" path="res://asset/accessory/mat/vtx_acc_secondary.tres" id="4"]
+[ext_resource type="Texture2D" uid="uid://cn5l5gnkb3oyx" path="res://asset/accessory/head/icon/propeller.png" id="5"]
+
+[resource]
+script = ExtResource( "1" )
+type = 1
+model = ExtResource( "2" )
+offset = Vector3(0, 1.25, 0)
+primary_material = ExtResource( "3" )
+primary_surface = 0
+secondary_material = ExtResource( "4" )
+secondary_surface = 1
+name = "Propeller Hat"
+description = "Unfortunately, it does not help you jump any higher."
+icon = ExtResource( "5" )
+icon_modulation = Color(1, 1, 1, 1)

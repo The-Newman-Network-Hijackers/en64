@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dsad0ut44y6r0"
+path="res://.godot/imported/stone_thud2.wav-efbb809e9dac9333153ad3322397f8b7.sample"
+
+[deps]
+
+source_file="res://audio/sfx/stone_thud2.wav"
+dest_files=PackedStringArray("res://.godot/imported/stone_thud2.wav-efbb809e9dac9333153ad3322397f8b7.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

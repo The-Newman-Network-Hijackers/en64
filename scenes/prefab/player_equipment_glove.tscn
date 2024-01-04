@@ -1,0 +1,1195 @@
+[gd_scene load_steps=25 format=3 uid="uid://1lojq8s73c74"]
+
+[ext_resource type="Script" path="res://scripts/equipment_state_machine.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://bp7qj4mcupx8u" path="res://audio/sfx/pickup_small.wav" id="2"]
+[ext_resource type="AudioStream" uid="uid://dy31834mhk535" path="res://audio/sfx/pickup_big.wav" id="3"]
+[ext_resource type="Script" path="res://scripts/state.gd" id="4"]
+[ext_resource type="AudioStream" uid="uid://w20k3kvqphns" path="res://audio/sfx/throw_small_1.wav" id="5"]
+[ext_resource type="AudioStream" uid="uid://cwpfeuh0et7bx" path="res://audio/sfx/throw_small_2.wav" id="6"]
+[ext_resource type="AudioStream" uid="uid://df6w3tgeq58pv" path="res://audio/sfx/throw_large_1.wav" id="7"]
+[ext_resource type="AudioStream" uid="uid://hehm23hjfck8" path="res://audio/sfx/throw_large_2.wav" id="8"]
+
+[sub_resource type="GDScript" id="1"]
+resource_name = "glove_none"
+script/source = "# glove_none.gd
+extends State
+
+'''
+Glove => No state
+'''
+
+func _enter(_msg := {}) -> void:
+	# Reset variables
+	var p := state_machine.player as Player
+	p._equip_manager.can_switch_equipment = true
+	
+	# Determine if we need to force a detach
+	if _msg.has(\"force_detach\"):
+		force_detach()
+
+# SIGNAL FUNC
+#-------------------------------------------------------------------------------
+
+func _ready() -> void:
+	# Wait for parent
+	await get_parent().ready
+	
+	# Connect signal
+	var p := state_machine.player as Player
+	p._state_machine.transition.connect(player_transitioned.bind())
+
+func player_transitioned(state : String) -> void:
+	# Check if this isnt current state
+	if state_machine.state == self:
+		return
+	
+	# Check if state isnt just none state
+	if state == \"none\":
+		return
+	
+	force_detach()
+	
+func force_detach() -> void:
+	# Get node inside attachment and detach
+	var p := state_machine.player as Player
+	var node := p._hand_transform.get_node_or_null(p._hand_transform.remote_path)
+	p._hand_transform.remote_path = \"\"
+	p._hand_transform.force_update_cache()
+	
+	# Check if nodes even exist
+	if !is_instance_valid(p) || !is_instance_valid(node):
+		return
+	
+	var gr_ref := state_machine.temp_dat.get(\"gr_ref\", null) as Grabbable
+	var gr_ent := state_machine.temp_dat.get(\"gr_ent\", null) as Entity
+	gr_ref.thrown.emit()
+	
+	# Set transform
+	node.scale = Vector3.ONE
+	node.rotation = Vector3.ZERO
+	node.process_mode = Node.PROCESS_MODE_INHERIT
+	gr_ent.vis_rotation = p.vis_rotation
+	gr_ent.rotation = Vector3.ZERO
+	gr_ent.velocity.y = 50
+	gr_ent.forward_speed = 40
+	
+	# Set state
+	state_machine.transition_state(\"none\")
+"
+
+[sub_resource type="GDScript" id="2"]
+resource_name = "glove_interact_router"
+script/source = "# glove_interact_router.gd
+extends State
+
+'''
+Glove => Interact Router state
+'''
+
+const SMALL = 0
+const BIG = 1
+
+func _enter(_msg := {}) -> void:
+	# Get components from MSG
+	var state = _msg.get(\"state\", \"idle\")
+	var pickup_type = _msg.get(\"p_type\", null)
+	var pickup_node = _msg.get(\"p_node\", null)
+	var gr_ref := _msg.get(\"gr_ref\", null) as Grabbable
+	var gr_ent := _msg.get(\"gr_ent\", null) as Entity
+	
+	# Store references in tempdat
+	state_machine.temp_dat = {}
+	state_machine.temp_dat.merge({\"gr_ref\" : gr_ref})
+	state_machine.temp_dat.merge({\"gr_ent\" : gr_ent})
+	
+	# Check to see if player is in proper state
+	if not state in [\"idle\", \"move\"]:
+		state_machine.transition_state(\"none\")
+		return
+	
+	# Verify that data is not null
+	if pickup_type == null || pickup_node == null:
+		state_machine.transition_state(\"none\")
+		return
+	
+	# Set player state
+	var p = state_machine.player as Player
+	var eqm := p._equip_manager as PlayerEquipmentManager
+	eqm.can_switch_equipment = false
+	p._state_machine.transition_state(\"none\")
+	
+	# Set node positioning
+	p._hand_transform.remote_path = p._hand_transform.get_path_to(pickup_node)
+	pickup_node.scale = Vector3.ONE
+	pickup_node.position = Vector3.ZERO
+	gr_ent.position = Vector3.ZERO
+	
+	# Set state based on type
+	match pickup_type:
+		SMALL:
+			# Play SFX
+			var sfx_ps := $pickup_small
+			sfx_ps.global_position = p.global_position
+			sfx_ps.play()
+			
+			# Transition
+			state_machine.transition_state(\"idle_small\")
+		BIG:
+			# Play SFX
+			var sfx_pb := $pickup_big
+			sfx_pb.global_position = p.global_position
+			sfx_pb.play()
+			
+			# Transition
+			state_machine.transition_state(\"idle_big\")
+"
+
+[sub_resource type="GDScript" id="3"]
+resource_name = "glove_idle_small"
+script/source = "# glove_idle_small.gd
+extends State
+
+'''
+Glove => Idle Small Carry state
+'''
+
+func _enter(_msg := {}) -> void:
+	# Set player animation
+	var p := state_machine.player as Player
+	p.change_anim(\"glove_small_idle\")
+	
+	# Set variable
+	p.jumping = false
+	p.velocity.y = 0
+
+func _state_physics_process(delta : float) -> void:
+	# Update physics and visual
+	var p := state_machine.player as Player
+	p.update_control()
+	p.update_forward_speed(delta, 0, max(2, p.forward_speed * 2 / p.move_speed))
+	p.update_movement(delta)
+	p.update_visual(delta, 0.1)
+	
+	# Check for movement
+	var move_vec = p.get_movement()
+	if move_vec.length() > 0.1:
+		state_machine.transition_state(\"move_small\")
+
+	# Check for fall
+	if !p.is_on_floor():
+		state_machine.transition_state(\"airborne_small\")
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	var p := state_machine.player as Player
+	
+	# Check for jump
+	if event.is_action_pressed(\"jump\"):
+		p.get_node(\"sfx/jump\").play()
+		state_machine.transition_state(\"jump_small\")
+		return
+	
+	# Check for throw
+	if event.is_action_pressed(\"interact\"):
+		state_machine.transition_state(\"throw_small\")
+		return
+
+func _exit() -> void:
+	pass
+"
+
+[sub_resource type="GDScript" id="4"]
+resource_name = "glove_move_small"
+script/source = "# glove_move_small.gd
+extends State
+
+'''
+Glove => Move Small Carry state
+'''
+
+## Footstep timer
+@onready var f_timer : Timer = $step
+## Airborne timer
+@onready var a_timer : Timer = $airborne_timer
+
+func _enter(_msg := {}) -> void:
+	# Set animation
+	var p := state_machine.player as Player
+	p.change_anim(\"glove_small_move\")
+	
+	# Start timer
+	f_timer.start()
+
+func _state_physics_process(delta : float) -> void:
+	# Update physics and visual
+	var p := state_machine.player as Player
+	p.update_control()
+	p.update_movement(delta)
+	p.apply_floor_snap()
+	
+	# Check for slope
+	if p.angle_is_steep(p.floor_raycast.get_collision_normal()) && p.is_on_floor():
+		# Start applying slope physics
+		p.update_slope(delta, max(.1, p.forward_speed / p.move_speed))
+		p.apply_floor_snap()
+		
+		# Check if going down slope
+		var normal = p.floor_raycast.get_collision_normal()
+		var slope_dir = p.get_normal_direction(normal).normalized()
+		var slope_comp = p.visual_node.basis.z.dot(slope_dir) > 0.05
+		
+		if slope_comp:
+			# Start sliding
+			state_machine.transition_state(\"slide_small\")
+			return
+
+		# Check for speed difference
+		if p.forward_speed < 3:
+			# Start sliding
+			state_machine.transition_state(\"slide_small\")
+			return
+	else:
+		p.velocity -= p.velocity.project(p.floor_raycast.get_collision_normal())
+		p.update_forward_speed(delta, p.move_speed, clamp(p.move_speed / p.forward_speed, 1, 2))
+		p.apply_floor_snap()
+	p.update_visual(delta, 0.15)
+	
+	# Check for fall
+	if !p.is_on_floor() && a_timer.is_stopped():
+		a_timer.start()
+	elif p.is_on_floor() && !a_timer.is_stopped():
+		a_timer.stop()
+	
+	# Set animation
+	var anim_speed = p._anim_tree.get(\"parameters/glove_small_move/speed/scale\")
+	p._anim_tree.set(
+		\"parameters/glove_small_move/speed/scale\",
+		lerpf(
+			anim_speed,
+			clampf(
+				Vector2(p.velocity.x, p.velocity.z).length() / p.move_speed, 
+				0.8, 
+				1.5
+			),
+			0.1
+		) 
+	)
+	
+	# Update footstep speed 
+	f_timer.wait_time = min(.21 / anim_speed, .42)
+	
+	# Check for movement
+	if p.input_direction.length() < 0.1:
+		state_machine.transition_state(\"idle_small\")
+		return
+	
+	# Set particles
+	var p_move : GPUParticles3D = p._particle.get_node_or_null(\"move\") as GPUParticles3D
+	p_move.emitting = true if p.input_direction.length() > .6 else false
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	var p := state_machine.player as Player
+	
+	# Check for jump
+	if event.is_action_pressed(\"jump\"):
+		p.get_node(\"sfx/jump\").play()
+		state_machine.transition_state(\"jump_small\")
+		return
+	
+	# Check for throw
+	if event.is_action_pressed(\"interact\"):
+		state_machine.transition_state(\"throw_small\")
+		return
+
+func _exit() -> void:
+	# Disable particle
+	var p := state_machine.player as Player
+	var p_move : GPUParticles3D = p._particle.get_node_or_null(\"move\")
+	p_move.emitting = false
+	
+	# Disable timer
+	f_timer.stop()
+
+func _step_timeout() -> void:
+	# Get sound from terrain
+	var p := state_machine.player as Player
+	var terrain = p.get_terrain_audio()
+	var sound = p.get_floor_sound(terrain)
+	
+	# Play sound effect
+	p.get_node(sound).play()
+
+func _airborne_timer_timeout() -> void:
+	# Transition
+	state_machine.transition_state(\"airborne_small\")
+
+"
+
+[sub_resource type="GDScript" id="5"]
+resource_name = "glove_slide_small"
+script/source = "# glove_slide_small.gd
+extends State
+
+'''
+Glove => Slide Small Carry state
+'''
+
+var going_up_slope = false
+
+func _enter(_msg := {}) -> void:
+	# Set animation
+	var p := state_machine.player as Player
+	p.set_anim(\"glove_small_slide\")
+	
+	# Set particles
+	var p_move : GPUParticles3D = p._particle.get_node_or_null(\"move\")
+	p_move.emitting = true
+	
+	# Start sound
+	p._sfx.get_node(\"slide/slide_loop\").play()
+
+func _state_physics_process(_delta : float):
+	# Update physics and visual
+	var p := state_machine.player as Player
+	p.update_movement(_delta)
+	p.apply_floor_snap()
+
+	if p.is_on_floor():
+		# Check if slope is too steep
+		var normal = p.floor_raycast.get_collision_normal()
+		var result = p.angle_is_steep(normal)
+
+		# Check p's input
+		var slope_dir = p.get_normal_direction(normal)
+		var slope_comp = p.visual_node.basis.z.dot(slope_dir) < 0.5
+		
+		# If slope is steep and p is going up slope, mark as going up slope
+		if result and p.visual_node.basis.z.dot(slope_dir) < 0:
+			going_up_slope = true
+		else:
+			going_up_slope = false
+		
+		# If slope is steep and p is going up slope, z
+		if result and slope_comp and p.forward_speed < 10:
+			#p.forward_speed = 5.0 if p.forward_speed < 5.0 else p.forward_speed
+			p.input_direction = Vector3(slope_dir.x, 0, slope_dir.z)
+			#p.vis_rotation.y = Vector2(slope_dir.x, slope_dir.z).rotated(-90).angle()
+			p.update_visual(_delta, 1)
+		else:
+			p.update_forward_speed(_delta, 0, max(.25, p.forward_speed / (p.move_speed * 1.5)))
+			p.update_visual(_delta, 0.05)
+			p.update_control()
+		
+		# Update slope
+		p.update_slope(_delta)
+	else:
+		p.update_control()
+		p.update_visual(_delta, 0.015)
+
+	# Update roll sfx
+	p._sfx.get_node(\"slide/slide_loop\").pitch_scale = lerp(
+		p._sfx.get_node(\"slide/slide_loop\").pitch_scale,
+		clampf(p.velocity.length() / p.move_speed * 2, 0.4, 1),
+		0.1
+	)
+	p._sfx.get_node(\"slide/slide_loop\").volume_db = lerp(
+		p._sfx.get_node(\"slide/slide_loop\").volume_db,
+		clampf(-40 / (p.velocity.length() * 4 / p.move_speed), -40, -2),
+		0.1
+	)
+	
+	# Check to see if p is touching wall
+	if p.is_on_wall() and p.is_on_floor() and p.forward_speed > 10:
+		# Compare dot product of p to normal
+		var result = (-Vector3.FORWARD.rotated(Vector3.UP, p.visual_node.rotation.y)).dot(p.get_wall_normal())
+		if result < -0.65:
+			state_machine.transition_state(\"throw_small\")
+			p._state_machine.transition_state(\"bonk\")
+			return
+	
+	# Check if off ground
+	if !p.is_on_floor():
+		state_machine.transition_state(\"airborne_small\")
+
+	# Check speed
+	if p.forward_speed <= p.move_speed * .75:
+		# If on slope, stop
+		if p.angle_is_steep(p.floor_raycast.get_collision_normal()):
+			return
+		
+		# If it is and p is trying to move, start moving
+		if p.get_movement().length() > 0.1:
+			state_machine.transition_state(\"move_small\")
+			return
+
+		# Otherwise, win!
+		state_machine.transition_state(\"idle_small\")
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	# Check for jump
+	if event.is_action_pressed(\"jump\"):
+		state_machine.transition_state(\"jump_small\", {\"slope\" : going_up_slope, \"turn\" : !going_up_slope})
+
+func _exit():
+	# Set particles
+	var p := state_machine.player as Player
+	var p_move : GPUParticles3D = p._particle.get_node_or_null(\"move\")
+	p_move.emitting = false
+	
+	# Stop sound
+	p._sfx.get_node(\"slide/slide_loop\").stop()
+	p._sfx.get_node(\"slide/slide_loop\").pitch_scale = 1.0
+	p._sfx.get_node(\"slide/slide_loop\").volume_db = -2
+	
+	# Set snapping
+	p.floor_snap_length = 1.0
+	
+	# Reset var
+	going_up_slope = false
+
+"
+
+[sub_resource type="GDScript" id="6"]
+resource_name = "glove_jump_small"
+script/source = "# glove_jump_small.gd
+extends State
+
+'''
+Glove => Jump Small Carry state
+'''
+
+func _enter(_msg := {}) -> void:
+	# Set floor snapping
+	var p := state_machine.player as Player
+	p.set_anim(\"glove_small_jump\")
+	p.floor_snap_length = 0.0
+	
+	# Get jump velocity and apply
+	var j_vel : float = _msg.get(\"velocity\", p.jump_velocity)
+	p.velocity.y = j_vel
+	p.jumping = true
+
+func _state_physics_process(delta : float) -> void:
+	var p := state_machine.player as Player
+	p.update_control()
+	p.update_movement(delta)
+	p.update_visual(delta, 0.05)
+	p.update_forward_speed(delta, max(p.move_speed, p.forward_speed), 0.7)
+	
+	# Check if player is on floor
+	if p.is_on_floor():
+		state_machine.transition_state(\"idle_small\")
+		return
+	
+	# Check if player has reached peak of jump
+	if p.velocity.y <= 0:
+		state_machine.transition_state(\"airborne_small\")
+		return
+	
+	# Check if player is touching a wall
+	if p.is_on_wall_only():
+		p.forward_speed = min(p.forward_speed, p.move_speed * 0.65)
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	# Check for letting go of jump
+	var p := state_machine.player as Player
+	if event.is_action_released(\"jump\"):
+		p.jumping = false
+		p.velocity.y = min(p.jump_height * 0.7, p.velocity.y)
+		state_machine.transition_state(\"airborne_small\")
+		
+	# Check for throw
+	if event.is_action_pressed(\"interact\"):
+		state_machine.transition_state(\"throw_small\")
+		return
+
+func _exit() -> void:
+	pass
+
+"
+
+[sub_resource type="GDScript" id="7"]
+resource_name = "glove_airborne_small"
+script/source = "# glove_airborne_small.gd
+extends State
+
+'''
+Glove => Airborne Small Carry script
+'''
+
+func _enter(_msg := {}) -> void:
+	# Set animation
+	var p := state_machine.player as Player
+	p.change_anim(\"glove_small_airborne\")
+	p.floor_snap_length = 1.0
+
+func _state_physics_process(delta : float) -> void:
+	var p := state_machine.player as Player
+	p.update_control()
+	p.update_movement(delta)
+	p.update_visual(delta, 0.05)
+	p.update_forward_speed(delta, max(p.move_speed, p.forward_speed), 0.5)
+	
+	# Check if player is on ground
+	if p.is_on_floor():
+		p.emit_jump_particle()
+		p.double_jumped = false
+		p.get_node(\"sfx/land\").play()
+		if p.forward_speed < 2:
+			state_machine.transition_state(\"idle_small\")
+		else:
+			state_machine.transition_state(\"move_small\")
+		return
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	# Check for throw
+	if event.is_action_pressed(\"interact\"):
+		state_machine.transition_state(\"throw_small\")
+		return
+
+func _exit() -> void:
+	pass
+"
+
+[sub_resource type="GDScript" id="8"]
+resource_name = "glove_throw_small"
+script/source = "# glove_throw_small.gd
+extends State
+
+'''
+Glove => Throw Small state
+'''
+
+## Throw timer
+@onready var t_time := $throw_timer as Timer
+
+func _enter(_msg := {}) -> void:
+	# Set animation
+	var p := state_machine.player as Player
+	p.set_anim(\"glove_small_throw\")
+	
+	# Play sound
+	var sfx_tb := $throw_small as AudioStreamPlayer3D
+	sfx_tb.global_position = p.global_position
+	sfx_tb.play()
+	
+	# Wait for throw anim delay
+	t_time.start()
+	await t_time.timeout
+	
+	# Get node inside attachment and detach
+	var node := p._hand_transform.get_node(p._hand_transform.remote_path)
+	var gr_ref := state_machine.temp_dat.get(\"gr_ref\", null) as Grabbable
+	var gr_ent := state_machine.temp_dat.get(\"gr_ent\", null) as Entity
+	p._hand_transform.remote_path = \"\"
+	gr_ref.thrown.emit()
+	
+	# Set transform
+	if is_instance_valid(node):
+		node.scale = Vector3.ONE
+		node.rotation = Vector3.ZERO
+		node.process_mode = Node.PROCESS_MODE_INHERIT
+	gr_ent.vis_rotation = p.vis_rotation
+	gr_ent.rotation = Vector3.ZERO
+	gr_ent.velocity.y = 50
+	gr_ent.forward_speed = 60
+	
+	# Wait for animation to fully finish
+	await p.anim_tree.animation_finished
+	
+	# Set states
+	if p.is_on_floor():				p._state_machine.transition_state(\"idle\")
+	else:							p._state_machine.transition_state(\"airborne\")
+	state_machine.transition_state(\"none\")
+	p._equip_manager.can_switch_equipment = true
+"
+
+[sub_resource type="AudioStreamRandomizer" id="9"]
+streams_count = 2
+stream_0/stream = ExtResource("5")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("6")
+stream_1/weight = 1.0
+
+[sub_resource type="GDScript" id="10"]
+resource_name = "glove_idle_big"
+script/source = "# glove_idle_big.gd
+extends State
+
+'''
+Glove => Idle Big Carry state
+'''
+
+func _enter(_msg := {}) -> void:
+	# Set player animation
+	var p := state_machine.player as Player
+	p.change_anim(\"glove_big_idle\")
+	
+	# Set variable
+	p.jumping = false
+	p.velocity.y = 0
+
+func _state_physics_process(delta : float) -> void:
+	# Update physics and visual
+	var p := state_machine.player as Player
+	p.update_control()
+	p.update_forward_speed(delta, 0, max(2, p.forward_speed * 2 / p.move_speed))
+	p.update_movement(delta)
+	p.update_visual(delta, 0.1)
+	
+	# Check for movement
+	var move_vec = p.get_movement()
+	if move_vec.length() > 0.1:
+		state_machine.transition_state(\"move_big\")
+
+	# Check for fall
+	if !p.is_on_floor():
+		state_machine.transition_state(\"airborne_big\")
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	var p := state_machine.player as Player
+	
+	# Check for jump
+	if event.is_action_pressed(\"jump\"):
+		p.get_node(\"sfx/jump\").play()
+		state_machine.transition_state(\"jump_big\")
+		return
+	
+	# Check for throw
+	if event.is_action_pressed(\"interact\"):
+		state_machine.transition_state(\"throw_big\")
+		return
+
+func _exit() -> void:
+	pass
+"
+
+[sub_resource type="GDScript" id="11"]
+resource_name = "glove_move_big"
+script/source = "# glove_move_big.gd
+extends State
+
+'''
+Glove => Move Big Carry state
+'''
+
+## Footstep timer
+@onready var f_timer : Timer = $step
+## Airborne timer
+@onready var a_timer : Timer = $airborne_timer
+
+func _enter(_msg := {}) -> void:
+	# Set animation
+	var p := state_machine.player as Player
+	p.change_anim(\"glove_big_move\")
+	
+	# Start timer
+	f_timer.start()
+
+func _state_physics_process(delta : float) -> void:
+	# Update physics and visual
+	var p := state_machine.player as Player
+	p.update_control()
+	p.update_movement(delta)
+	p.apply_floor_snap()
+	
+	# Check for slope
+	if p.angle_is_steep(p.floor_raycast.get_collision_normal()) && p.is_on_floor():
+		# Start applying slope physics
+		p.update_slope(delta, max(.1, p.forward_speed / p.move_speed))
+		p.apply_floor_snap()
+		
+		# Check if going down slope
+		var normal = p.floor_raycast.get_collision_normal()
+		var slope_dir = p.get_normal_direction(normal).normalized()
+		var slope_comp = p.visual_node.basis.z.dot(slope_dir) > 0.05
+		
+		if slope_comp:
+			# Start sliding
+			state_machine.transition_state(\"slide_big\")
+			return
+
+		# Check for speed difference
+		if p.forward_speed < 3:
+			# Start sliding
+			state_machine.transition_state(\"slide_big\")
+			return
+	else:
+		p.velocity -= p.velocity.project(p.floor_raycast.get_collision_normal())
+		p.update_forward_speed(delta, p.move_speed * .875, clamp(p.move_speed / p.forward_speed, 1, 2))
+		p.apply_floor_snap()
+	p.update_visual(delta, 0.15)
+	
+	# Check for fall
+	if !p.is_on_floor() && a_timer.is_stopped():
+		a_timer.start()
+	elif p.is_on_floor() && !a_timer.is_stopped():
+		a_timer.stop()
+	
+	# Set animation
+	var anim_speed = p._anim_tree.get(\"parameters/glove_big_move/speed/scale\")
+	p._anim_tree.set(
+		\"parameters/glove_big_move/speed/scale\",
+		lerpf(
+			anim_speed,
+			clampf(
+				Vector2(p.velocity.x, p.velocity.z).length() / p.move_speed, 
+				0.8, 
+				1.5
+			),
+			0.1
+		) 
+	)
+	
+	# Update footstep speed 
+	f_timer.wait_time = min(.40 / anim_speed, .80)
+	
+	# Check for movement
+	if p.input_direction.length() < 0.1:
+		state_machine.transition_state(\"idle_big\")
+		return
+	
+	# Set particles
+	var p_move : GPUParticles3D = p._particle.get_node_or_null(\"move\") as GPUParticles3D
+	p_move.amount_ratio = 0.5
+	p_move.emitting = true if p.input_direction.length() > .6 else false
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	var p := state_machine.player as Player
+	
+	# Check for jump
+	if event.is_action_pressed(\"jump\"):
+		p.get_node(\"sfx/jump\").play()
+		state_machine.transition_state(\"jump_big\")
+		return
+	
+	# Check for throw
+	if event.is_action_pressed(\"interact\"):
+		state_machine.transition_state(\"throw_big\")
+		return
+
+func _exit() -> void:
+	# Disable particle
+	var p := state_machine.player as Player
+	var p_move : GPUParticles3D = p._particle.get_node_or_null(\"move\")
+	p_move.amount_ratio = 1.0
+	p_move.emitting = false
+	
+	# Disable timer
+	f_timer.stop()
+
+func _step_timeout() -> void:
+	# Get sound from terrain
+	var p := state_machine.player as Player
+	var terrain = p.get_terrain_audio()
+	var sound = p.get_floor_sound(terrain)
+	
+	# Play sound effect
+	p.get_node(sound).play()
+
+func _airborne_timer_timeout() -> void:
+	# Transition
+	state_machine.transition_state(\"airborne_big\")
+"
+
+[sub_resource type="GDScript" id="12"]
+resource_name = "glove_slide_big"
+script/source = "# glove_slide_big.gd
+extends State
+
+'''
+Glove => Slide Big Carry state
+'''
+
+var going_up_slope = false
+
+func _enter(_msg := {}) -> void:
+	# Set animation
+	var p := state_machine.player as Player
+	p.set_anim(\"glove_big_slide\")
+	
+	# Set particles
+	var p_move : GPUParticles3D = p._particle.get_node_or_null(\"move\")
+	p_move.emitting = true
+	
+	# Start sound
+	p._sfx.get_node(\"slide/slide_loop\").play()
+
+func _state_physics_process(_delta : float):
+	# Update physics and visual
+	var p := state_machine.player as Player
+	p.update_movement(_delta)
+	p.apply_floor_snap()
+
+	if p.is_on_floor():
+		# Check if slope is too steep
+		var normal = p.floor_raycast.get_collision_normal()
+		var result = p.angle_is_steep(normal)
+
+		# Check p's input
+		var slope_dir = p.get_normal_direction(normal)
+		var slope_comp = p.visual_node.basis.z.dot(slope_dir) < 0.5
+		
+		# If slope is steep and p is going up slope, mark as going up slope
+		if result and p.visual_node.basis.z.dot(slope_dir) < 0:
+			going_up_slope = true
+		else:
+			going_up_slope = false
+		
+		# If slope is steep and p is going up slope, z
+		if result and slope_comp and p.forward_speed < 10:
+			#p.forward_speed = 5.0 if p.forward_speed < 5.0 else p.forward_speed
+			p.input_direction = Vector3(slope_dir.x, 0, slope_dir.z)
+			#p.vis_rotation.y = Vector2(slope_dir.x, slope_dir.z).rotated(-90).angle()
+			p.update_visual(_delta, 1)
+		else:
+			p.update_forward_speed(_delta, 0, max(.25, p.forward_speed / (p.move_speed * 1.5)))
+			p.update_visual(_delta, 0.05)
+			p.update_control()
+		
+		# Update slope
+		p.update_slope(_delta)
+	else:
+		p.update_control()
+		p.update_visual(_delta, 0.015)
+
+	# Update roll sfx
+	p._sfx.get_node(\"slide/slide_loop\").pitch_scale = lerp(
+		p._sfx.get_node(\"slide/slide_loop\").pitch_scale,
+		clampf(p.velocity.length() / p.move_speed * 2, 0.4, 1),
+		0.1
+	)
+	p._sfx.get_node(\"slide/slide_loop\").volume_db = lerp(
+		p._sfx.get_node(\"slide/slide_loop\").volume_db,
+		clampf(-40 / (p.velocity.length() * 4 / p.move_speed), -40, -2),
+		0.1
+	)
+	
+	# Check to see if p is touching wall
+	if p.is_on_wall() and p.is_on_floor() and p.forward_speed > 10:
+		# Compare dot product of p to normal
+		var result = (-Vector3.FORWARD.rotated(Vector3.UP, p.visual_node.rotation.y)).dot(p.get_wall_normal())
+		if result < -0.65:
+			state_machine.transition_state(\"throw_big\")
+			p._state_machine.transition_state(\"bonk\")
+			return
+	
+	# Check if off ground
+	if !p.is_on_floor():
+		state_machine.transition_state(\"airborne_big\")
+
+	# Check speed
+	if p.forward_speed <= p.move_speed * .75:
+		# If on slope, stop
+		if p.angle_is_steep(p.floor_raycast.get_collision_normal()):
+			return
+		
+		# If it is and p is trying to move, start moving
+		if p.get_movement().length() > 0.1:
+			state_machine.transition_state(\"move_big\")
+			return
+
+		# Otherwise, win!
+		state_machine.transition_state(\"idle_big\")
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	# Check for jump
+	if event.is_action_pressed(\"jump\"):
+		state_machine.transition_state(\"jump_big\", {\"slope\" : going_up_slope, \"turn\" : !going_up_slope})
+
+func _exit():
+	# Set particles
+	var p := state_machine.player as Player
+	var p_move : GPUParticles3D = p._particle.get_node_or_null(\"move\")
+	p_move.emitting = false
+	
+	# Stop sound
+	p._sfx.get_node(\"slide/slide_loop\").stop()
+	p._sfx.get_node(\"slide/slide_loop\").pitch_scale = 1.0
+	p._sfx.get_node(\"slide/slide_loop\").volume_db = -2
+	
+	# Set snapping
+	p.floor_snap_length = 1.0
+	
+	# Reset var
+	going_up_slope = false
+
+
+"
+
+[sub_resource type="GDScript" id="13"]
+resource_name = "glove_jump_big"
+script/source = "# glove_jump_big.gd
+extends State
+
+'''
+Glove => Jump Carry state
+'''
+
+func _enter(_msg := {}) -> void:
+	# Set floor snapping
+	var p := state_machine.player as Player
+	p.set_anim(\"glove_big_jump\")
+	p.floor_snap_length = 0.0
+	
+	# Get jump velocity and apply
+	var j_vel : float = _msg.get(\"velocity\", p.jump_velocity * .9)
+	p.velocity.y = j_vel
+	p.jumping = true
+
+func _state_physics_process(delta : float) -> void:
+	var p := state_machine.player as Player
+	p.update_control()
+	p.update_movement(delta)
+	p.update_visual(delta, 0.05)
+	p.update_forward_speed(delta, max(p.move_speed * .875, p.forward_speed), 0.5)
+	
+	# Check if player is on floor
+	if p.is_on_floor():
+		state_machine.transition_state(\"idle_big\")
+		return
+	
+	# Check if player has reached peak of jump
+	if p.velocity.y <= 0:
+		state_machine.transition_state(\"airborne_big\")
+		return
+	
+	# Check if player is touching a wall
+	if p.is_on_wall_only():
+		p.forward_speed = min(p.forward_speed, p.move_speed * 0.35)
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	# Check for letting go of jump
+	var p := state_machine.player as Player
+	if event.is_action_released(\"jump\"):
+		p.jumping = false
+		p.velocity.y = min(p.jump_height * 0.7, p.velocity.y)
+		state_machine.transition_state(\"airborne_big\")
+	
+	# Check for throw
+	if event.is_action_pressed(\"interact\"):
+		state_machine.transition_state(\"throw_big\")
+		return
+
+func _exit() -> void:
+	pass
+
+"
+
+[sub_resource type="GDScript" id="14"]
+resource_name = "glove_airborne_big"
+script/source = "# glove_airborne_big.gd
+extends State
+
+'''
+Glove => Airborne Carry state
+'''
+
+func _enter(_msg := {}) -> void:
+	# Set animation
+	var p := state_machine.player as Player
+	p.change_anim(\"glove_big_airborne\")
+	p.floor_snap_length = 1.0
+
+func _state_physics_process(delta : float) -> void:
+	var p := state_machine.player as Player
+	p.update_control()
+	p.update_movement(delta)
+	p.update_visual(delta, 0.05)
+	p.update_forward_speed(delta, max(p.move_speed * .875, p.forward_speed), 0.5)
+	
+	# Check if player is on ground
+	if p.is_on_floor():
+		p.emit_jump_particle()
+		p.double_jumped = false
+		p.get_node(\"sfx/land\").play()
+		if p.forward_speed < 2:
+			state_machine.transition_state(\"idle_big\")
+		else:
+			state_machine.transition_state(\"move_big\")
+		return
+
+func _state_unhandled_input(event : InputEvent) -> void:
+	# Check for throw
+	if event.is_action_pressed(\"interact\"):
+		state_machine.transition_state(\"throw_big\")
+		return
+
+func _exit() -> void:
+	pass
+"
+
+[sub_resource type="GDScript" id="15"]
+resource_name = "glove_throw_big"
+script/source = "# glove_throw_big.gd
+extends State
+
+'''
+Glove => Throw Big state
+'''
+
+## Throw timer
+@onready var t_time := $throw_timer as Timer
+
+func _enter(_msg := {}) -> void:
+	# Set animation
+	var p := state_machine.player as Player
+	p.set_anim(\"glove_big_throw\")
+	
+	# Play sound
+	var sfx_tb := $throw_big as AudioStreamPlayer3D
+	sfx_tb.global_position = p.global_position
+	sfx_tb.play()
+	
+	# Wait for throw anim delay
+	t_time.start()
+	await t_time.timeout
+	
+	# Get node inside attachment and detach
+	var node := p._hand_transform.get_node(p._hand_transform.remote_path)
+	var gr_ref := state_machine.temp_dat.get(\"gr_ref\", null) as Grabbable
+	var gr_ent := state_machine.temp_dat.get(\"gr_ent\", null) as Entity
+	p._hand_transform.remote_path = \"\"
+	gr_ref.thrown.emit()
+	
+	# Set transform
+	if is_instance_valid(node):
+		node.scale = Vector3.ONE
+		node.rotation = Vector3.ZERO
+		node.process_mode = Node.PROCESS_MODE_INHERIT
+	gr_ent.vis_rotation = p.vis_rotation
+	gr_ent.rotation = Vector3.ZERO
+	gr_ent.velocity.y = 50
+	gr_ent.forward_speed = 40
+	
+	# Wait for animation to fully finish
+	await p.anim_tree.animation_finished
+	
+	# Set states
+	if p.is_on_floor():				p._state_machine.transition_state(\"idle\")
+	else:							p._state_machine.transition_state(\"airborne\")
+	state_machine.transition_state(\"none\")
+	p._equip_manager.can_switch_equipment = true
+"
+
+[sub_resource type="AudioStreamRandomizer" id="16"]
+streams_count = 2
+stream_0/stream = ExtResource("7")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("8")
+stream_1/weight = 1.0
+
+[node name="glove" type="Node"]
+script = ExtResource("1")
+whitelist = 0
+initial_state = NodePath("none")
+
+[node name="none" type="Node" parent="."]
+script = SubResource("1")
+
+[node name="interact_router" type="Node" parent="."]
+script = SubResource("2")
+
+[node name="pickup_small" type="AudioStreamPlayer3D" parent="interact_router"]
+stream = ExtResource("2")
+attenuation_model = 3
+unit_size = 60.0
+max_db = -1.0
+max_distance = 60.0
+bus = &"Sound"
+
+[node name="pickup_big" type="AudioStreamPlayer3D" parent="interact_router"]
+stream = ExtResource("3")
+attenuation_model = 3
+unit_size = 60.0
+max_db = -1.0
+max_distance = 60.0
+bus = &"Sound"
+
+[node name="pickup_small" type="Node" parent="."]
+script = ExtResource("4")
+
+[node name="idle_small" type="Node" parent="."]
+script = SubResource("3")
+
+[node name="move_small" type="Node" parent="."]
+script = SubResource("4")
+
+[node name="step" type="Timer" parent="move_small"]
+wait_time = 0.24
+
+[node name="airborne_timer" type="Timer" parent="move_small"]
+process_callback = 0
+wait_time = 0.1
+one_shot = true
+
+[node name="slide_small" type="Node" parent="."]
+script = SubResource("5")
+
+[node name="jump_small" type="Node" parent="."]
+script = SubResource("6")
+
+[node name="airborne_small" type="Node" parent="."]
+script = SubResource("7")
+
+[node name="throw_small" type="Node" parent="."]
+script = SubResource("8")
+
+[node name="throw_timer" type="Timer" parent="throw_small"]
+process_callback = 0
+wait_time = 0.075
+one_shot = true
+
+[node name="throw_small" type="AudioStreamPlayer3D" parent="throw_small"]
+stream = SubResource("9")
+attenuation_model = 3
+unit_size = 60.0
+max_db = -1.0
+max_distance = 60.0
+bus = &"Sound"
+
+[node name="pickup_big" type="Node" parent="."]
+script = ExtResource("4")
+
+[node name="idle_big" type="Node" parent="."]
+script = SubResource("10")
+
+[node name="move_big" type="Node" parent="."]
+script = SubResource("11")
+
+[node name="step" type="Timer" parent="move_big"]
+wait_time = 0.4
+
+[node name="airborne_timer" type="Timer" parent="move_big"]
+process_callback = 0
+wait_time = 0.1
+one_shot = true
+
+[node name="slide_big" type="Node" parent="."]
+script = SubResource("12")
+
+[node name="jump_big" type="Node" parent="."]
+script = SubResource("13")
+
+[node name="airborne_big" type="Node" parent="."]
+script = SubResource("14")
+
+[node name="throw_big" type="Node" parent="."]
+script = SubResource("15")
+
+[node name="throw_timer" type="Timer" parent="throw_big"]
+process_callback = 0
+wait_time = 0.15
+one_shot = true
+
+[node name="throw_big" type="AudioStreamPlayer3D" parent="throw_big"]
+stream = SubResource("16")
+attenuation_model = 3
+unit_size = 60.0
+max_db = -1.0
+max_distance = 60.0
+bus = &"Sound"
+
+[connection signal="timeout" from="move_small/step" to="move_small" method="_step_timeout"]
+[connection signal="timeout" from="move_small/airborne_timer" to="move_small" method="_airborne_timer_timeout"]
+[connection signal="timeout" from="move_big/step" to="move_big" method="_step_timeout"]
+[connection signal="timeout" from="move_big/airborne_timer" to="move_big" method="_airborne_timer_timeout"]

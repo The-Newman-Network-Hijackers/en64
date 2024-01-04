@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bvsq7h4c72lw"
+path="res://.godot/imported/ruins_drum.mp3-177da038a461ca7c2dc9dbaa3290801e.mp3str"
+
+[deps]
+
+source_file="res://audio/stem/ruin/ruins_drum.mp3"
+dest_files=PackedStringArray("res://.godot/imported/ruins_drum.mp3-177da038a461ca7c2dc9dbaa3290801e.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

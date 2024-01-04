@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dkbo7vxet11mi"
+path="res://.godot/imported/corner_rec.png-a0f64a51fe4aa22629ba61ec56cc297d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/camera/fps/corner_rec.png"
+dest_files=PackedStringArray("res://.godot/imported/corner_rec.png-a0f64a51fe4aa22629ba61ec56cc297d.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

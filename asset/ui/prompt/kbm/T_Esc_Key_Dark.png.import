@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://2ctwmmpfjk0y"
+path="res://.godot/imported/T_Esc_Key_Dark.png-b3f3a9b0c7f33b6c83365211c0c714a5.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_Esc_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_Esc_Key_Dark.png-b3f3a9b0c7f33b6c83365211c0c714a5.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

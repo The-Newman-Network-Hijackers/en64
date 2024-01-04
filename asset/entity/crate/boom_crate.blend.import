@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://d1l0kmf1ldckn"
+path="res://.godot/imported/boom_crate.blend-68ee2e4a4d0de89a91deaaaca0ffd504.scn"
+
+[deps]
+
+source_file="res://asset/entity/crate/boom_crate.blend"
+dest_files=PackedStringArray("res://.godot/imported/boom_crate.blend-68ee2e4a4d0de89a91deaaaca0ffd504.scn")
+
+[params]
+
+dummy_value_ignore_me=0

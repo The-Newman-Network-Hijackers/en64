@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bqf1pp57dtu7u"
+path="res://.godot/imported/whistle_up.wav-89ead0c4f5b52c86c76593e64f96a422.sample"
+
+[deps]
+
+source_file="res://audio/sfx/whistle_up.wav"
+dest_files=PackedStringArray("res://.godot/imported/whistle_up.wav-89ead0c4f5b52c86c76593e64f96a422.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

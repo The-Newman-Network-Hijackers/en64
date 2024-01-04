@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_m6pga"]
+
+[resource]
+script = ExtResource("1_m6pga")
+titles = {
+"help_fungi": "3"
+}
+character_names = PackedStringArray("Sign")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "help_fungi",
+"type": "title"
+},
+"3": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"tags": PackedStringArray(),
+"text": "You'll find all kinds of fungi creatures around the premises.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You'll find all kinds of fungi creatures around the premises.",
+"type": "dialogue"
+},
+"4": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"tags": PackedStringArray(),
+"text": "The bigger fungi will bounce you high into the air when you step on their caps.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The bigger fungi will bounce you high into the air when you step on their caps.",
+"type": "dialogue"
+},
+"5": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"tags": PackedStringArray(),
+"text": "There are smaller fungi running around, some hostile and others docile.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There are smaller fungi running around, some hostile and others docile.",
+"type": "dialogue"
+},
+"6": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "8",
+"tags": PackedStringArray(),
+"text": "If you have a set of [b]gardening gloves[/b], you can carry them.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you have a set of [b]gardening gloves[/b], you can carry them.",
+"type": "dialogue"
+},
+"8": {
+"id": "8",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+metadata/dialogue_manager_version = "2.25.0"

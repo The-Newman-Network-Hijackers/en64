@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://4xh0rfarcuka"
+path="res://.godot/imported/cinder.png-0b4ba41b6d8b75922934ce5e2b22e5ca.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/credits/cinder.png"
+dest_files=PackedStringArray("res://.godot/imported/cinder.png-0b4ba41b6d8b75922934ce5e2b22e5ca.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

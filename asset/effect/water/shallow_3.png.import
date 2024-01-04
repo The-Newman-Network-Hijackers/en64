@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cwqcl6slfke2k"
+path="res://.godot/imported/shallow_3.png-9d29f9fa09fc2cbe756e82ed49d05cb5.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/water/shallow_3.png"
+dest_files=PackedStringArray("res://.godot/imported/shallow_3.png-9d29f9fa09fc2cbe756e82ed49d05cb5.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

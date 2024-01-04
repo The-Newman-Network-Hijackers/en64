@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://s2iljfgwar3i"
+path="res://.godot/imported/ruins_castle_fluff1.dialogue-a6ae6e54c3fa3fdf1c3978168425fe7a.tres"
+
+[deps]
+
+source_file="res://data/dialogue/ruins_castle_fluff1.dialogue"
+dest_files=PackedStringArray("res://.godot/imported/ruins_castle_fluff1.dialogue-a6ae6e54c3fa3fdf1c3978168425fe7a.tres")
+
+[params]
+
+dummy_value_ignore_me=0

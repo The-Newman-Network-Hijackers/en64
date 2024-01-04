@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://1djb27jxv2pg"
+path="res://.godot/imported/clapper.blend-0385f6dd204d752ce75bde96b576a58a.scn"
+
+[deps]
+
+source_file="res://asset/ui/clapper/mat/clapper.blend"
+dest_files=PackedStringArray("res://.godot/imported/clapper.blend-0385f6dd204d752ce75bde96b576a58a.scn")
+
+[params]
+
+dummy_value_ignore_me=0

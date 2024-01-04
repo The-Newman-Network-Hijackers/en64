@@ -1,0 +1,799 @@
+[gd_scene load_steps=21 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_options.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://bp8vxpvktfdkj" path="res://asset/ui/RobotoCondensed-Bold.ttf" id="2"]
+[ext_resource type="Theme" uid="uid://botsw3j2gbsx" path="res://asset/ui/generic_ui_theme.tres" id="3"]
+[ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="4"]
+[ext_resource type="Script" path="res://scripts/input_prompt_container.gd" id="5"]
+[ext_resource type="Script" path="res://res_inputprompt.gd" id="6"]
+
+[sub_resource type="LabelSettings" id="1"]
+font_color = Color(0.663, 0.663, 0.663, 1)
+script = null
+
+[sub_resource type="LabelSettings" id="2"]
+line_spacing = 0.0
+font = ExtResource( "4" )
+font_size = 20
+script = null
+
+[sub_resource type="LabelSettings" id="3"]
+line_spacing = 0.0
+script = null
+
+[sub_resource type="LabelSettings" id="4"]
+line_spacing = 0.0
+font = ExtResource( "4" )
+font_size = 20
+script = null
+
+[sub_resource type="Resource" id="5"]
+script = ExtResource( "6" )
+input = [&"up", &"left", &"down", &"right"]
+render_as_analog = true
+equip_icon = -1
+message = "Move"
+
+[sub_resource type="Resource" id="6"]
+script = ExtResource( "6" )
+input = [&"jump"]
+render_as_analog = false
+equip_icon = -1
+message = "Jump"
+
+[sub_resource type="Resource" id="7"]
+script = ExtResource( "6" )
+input = [&"interact"]
+render_as_analog = false
+equip_icon = -1
+message = "Attack/Interact"
+
+[sub_resource type="Resource" id="8"]
+script = ExtResource( "6" )
+input = [&"crouch"]
+render_as_analog = false
+equip_icon = -1
+message = "Crouch"
+
+[sub_resource type="Resource" id="9"]
+script = ExtResource( "6" )
+input = [&"camera_in"]
+render_as_analog = false
+equip_icon = -1
+message = "Equip Camera / Zoom In"
+
+[sub_resource type="Resource" id="10"]
+script = ExtResource( "6" )
+input = [&"crouch", &"interact"]
+render_as_analog = false
+equip_icon = -1
+message = "(Grounded) Roll"
+
+[sub_resource type="Resource" id="11"]
+script = ExtResource( "6" )
+input = [&"crouch"]
+render_as_analog = false
+equip_icon = -1
+message = "(Airborne) Ground-pound"
+
+[sub_resource type="Resource" id="12"]
+script = ExtResource( "6" )
+input = [&"crouch"]
+render_as_analog = false
+equip_icon = -1
+message = "(Hold + Ground-pound) Quick Roll"
+
+[sub_resource type="Resource" id="13"]
+script = ExtResource( "6" )
+input = [&"crouch"]
+render_as_analog = false
+equip_icon = -1
+message = "(Release + Ground-pound) Bounce"
+
+[sub_resource type="Resource" id="14"]
+script = ExtResource( "6" )
+input = [&"camera_out"]
+render_as_analog = false
+equip_icon = -1
+message = "Unequip Camera / Zoom Out"
+
+[node name="options_menu" type="VBoxContainer"]
+script = ExtResource( "1" )
+
+[node name="tabs" type="TabContainer" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(512, 300)
+layout_mode = 2
+tab_alignment = 1
+clip_tabs = false
+
+[node name="General" type="MarginContainer" parent="tabs"]
+visible = false
+layout_mode = 2
+focus_next = NodePath("v_sort/name_input/name")
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="v_sort" type="VBoxContainer" parent="tabs/General"]
+layout_mode = 2
+
+[node name="name_input" type="HBoxContainer" parent="tabs/General/v_sort"]
+visible = false
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/General/v_sort/name_input"]
+layout_mode = 2
+tooltip_text = "Your display name in multiplayer sessions."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "MP Name "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="name" type="LineEdit" parent="tabs/General/v_sort/name_input"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_fonts/font = ExtResource( "2" )
+placeholder_text = "Name"
+
+[node name="debug_draw_input" type="HBoxContainer" parent="tabs/General/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/General/v_sort/debug_draw_input"]
+layout_mode = 2
+tooltip_text = "Toggles debug information rendering."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Debug Draw"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="debug_draw" type="CheckBox" parent="tabs/General/v_sort/debug_draw_input"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+alignment = 2
+icon_alignment = 2
+
+[node name="clear_data_container" type="Control" parent="tabs/General/v_sort"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="clear_data" type="Button" parent="tabs/General/v_sort/clear_data_container"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 10
+theme_override_fonts/font = ExtResource( "2" )
+text = "Clear Player Data"
+
+[node name="cooldown" type="Timer" parent="tabs/General/v_sort/clear_data_container/clear_data"]
+wait_time = 3.0
+one_shot = true
+
+[node name="Video" type="MarginContainer" parent="tabs"]
+visible = false
+layout_mode = 2
+focus_next = NodePath("v_sort/resolution_input/resolution")
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="v_sort" type="VBoxContainer" parent="tabs/Video"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="resolution_input" type="HBoxContainer" parent="tabs/Video/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Video/v_sort/resolution_input"]
+layout_mode = 2
+tooltip_text = "The current resolution."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Resolution "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="resolution" type="OptionButton" parent="tabs/Video/v_sort/resolution_input"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(256, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_fonts/font = ExtResource( "2" )
+item_count = 4
+selected = 0
+popup/item_0/text = "x1 (640x480)"
+popup/item_0/id = 0
+popup/item_1/text = "Widescreen x1 (854x480)"
+popup/item_1/id = 1
+popup/item_2/text = "x2 (1280x960)"
+popup/item_2/id = 2
+popup/item_3/text = "Widescreen x2 (1708x960)"
+popup/item_3/id = 3
+
+[node name="vsync_input" type="HBoxContainer" parent="tabs/Video/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Video/v_sort/vsync_input"]
+layout_mode = 2
+tooltip_text = "Toggles V-Sync. Try toggling this if you are experiencing stuttering."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "V-Sync "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="vsync" type="CheckBox" parent="tabs/Video/v_sort/vsync_input"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+alignment = 2
+icon_alignment = 2
+
+[node name="fullscreen_input" type="HBoxContainer" parent="tabs/Video/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Video/v_sort/fullscreen_input"]
+layout_mode = 2
+tooltip_text = "Toggles fullscreen."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Fullscreen"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="fullscreen" type="CheckBox" parent="tabs/Video/v_sort/fullscreen_input"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+alignment = 2
+icon_alignment = 2
+
+[node name="extra_div" type="Label" parent="tabs/Video/v_sort"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 10
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Extra Video Settings"
+label_settings = SubResource( "1" )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="dithering_input" type="HBoxContainer" parent="tabs/Video/v_sort"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Video/v_sort/dithering_input"]
+layout_mode = 2
+tooltip_text = "Toggles screen dithering, authentic to oldschool video output."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Dithering"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="dithering" type="CheckBox" parent="tabs/Video/v_sort/dithering_input"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+alignment = 2
+icon_alignment = 2
+
+[node name="ntsc_input" type="HBoxContainer" parent="tabs/Video/v_sort"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Video/v_sort/ntsc_input"]
+layout_mode = 2
+tooltip_text = "Toggles NTSC decoding, authentic to oldschool video output.
+May make smaller elements less legible."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "NTSC"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ntsc" type="CheckBox" parent="tabs/Video/v_sort/ntsc_input"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+alignment = 2
+icon_alignment = 2
+
+[node name="Audio" type="MarginContainer" parent="tabs"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="v_sort" type="VBoxContainer" parent="tabs/Audio"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="music_volume" type="HBoxContainer" parent="tabs/Audio/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Audio/v_sort/music_volume"]
+layout_mode = 2
+tooltip_text = "The sensitivity of the camera."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Music Volume"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="music_volume" type="HSlider" parent="tabs/Audio/v_sort/music_volume"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(151, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 0.1
+scrollable = false
+
+[node name="music_volume_value" type="Label" parent="tabs/Audio/v_sort/music_volume"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 0)
+layout_mode = 2
+tooltip_text = "The sensitivity of the camera."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "100%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ambient_volume" type="HBoxContainer" parent="tabs/Audio/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Audio/v_sort/ambient_volume"]
+layout_mode = 2
+tooltip_text = "The sensitivity of the camera."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Ambient Volume"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ambient_volume" type="HSlider" parent="tabs/Audio/v_sort/ambient_volume"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(151, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 0.1
+scrollable = false
+
+[node name="ambient_volume_value" type="Label" parent="tabs/Audio/v_sort/ambient_volume"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 0)
+layout_mode = 2
+tooltip_text = "The sensitivity of the camera."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "100%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="sfx_volume" type="HBoxContainer" parent="tabs/Audio/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Audio/v_sort/sfx_volume"]
+layout_mode = 2
+tooltip_text = "The sensitivity of the camera."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "SFX Volume"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="sfx_volume" type="HSlider" parent="tabs/Audio/v_sort/sfx_volume"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(151, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 0.1
+scrollable = false
+
+[node name="sfx_volume_value" type="Label" parent="tabs/Audio/v_sort/sfx_volume"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 0)
+layout_mode = 2
+tooltip_text = "The sensitivity of the camera."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "100%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Input" type="MarginContainer" parent="tabs"]
+visible = false
+layout_mode = 2
+focus_next = NodePath("v_sort/input_preference_sort/input_preference")
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="v_sort" type="VBoxContainer" parent="tabs/Input"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="input_preference_sort" type="HBoxContainer" parent="tabs/Input/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Input/v_sort/input_preference_sort"]
+layout_mode = 2
+tooltip_text = "Determines what control method is preferred."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Input Preference"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="input_preference" type="OptionButton" parent="tabs/Input/v_sort/input_preference_sort"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(256, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_fonts/font = ExtResource( "2" )
+item_count = 3
+selected = 0
+popup/item_0/text = "Detect"
+popup/item_0/id = 0
+popup/item_1/text = "Keyboard and Mouse"
+popup/item_1/id = 1
+popup/item_2/text = "Gamepad"
+popup/item_2/id = 2
+
+[node name="camera_preference_sort" type="HBoxContainer" parent="tabs/Input/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Input/v_sort/camera_preference_sort"]
+layout_mode = 2
+tooltip_text = "The preferred camera control configuration.
+Follow + Manual - Camera follows behind player
+by default, manual mode can be toggled.
+Manual Only - Camera will only use manual
+control."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Camera Preference"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="camera_preference" type="OptionButton" parent="tabs/Input/v_sort/camera_preference_sort"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(256, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_fonts/font = ExtResource( "2" )
+item_count = 2
+selected = 0
+popup/item_0/text = "Automatic + Manual"
+popup/item_0/id = 0
+popup/item_1/text = "Manual Only"
+popup/item_1/id = 1
+
+[node name="camera_sensitivity_sort" type="HBoxContainer" parent="tabs/Input/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Input/v_sort/camera_sensitivity_sort"]
+layout_mode = 2
+tooltip_text = "The sensitivity of the camera."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Camera Sensitivity"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="camera_sensitivity" type="HSlider" parent="tabs/Input/v_sort/camera_sensitivity_sort"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(151, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+min_value = 0.1
+max_value = 1.0
+step = 0.05
+value = 0.1
+scrollable = false
+
+[node name="camera_sensitivity_value" type="Label" parent="tabs/Input/v_sort/camera_sensitivity_sort"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 0)
+layout_mode = 2
+tooltip_text = "The sensitivity of the camera."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "100%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="invert_x_input" type="HBoxContainer" parent="tabs/Input/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Input/v_sort/invert_x_input"]
+layout_mode = 2
+tooltip_text = "Toggles inverting camera controls on the X axis."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Invert Camera X"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="invert_x" type="CheckBox" parent="tabs/Input/v_sort/invert_x_input"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+alignment = 2
+icon_alignment = 2
+
+[node name="invert_y_input" type="HBoxContainer" parent="tabs/Input/v_sort"]
+layout_mode = 2
+
+[node name="label" type="Label" parent="tabs/Input/v_sort/invert_y_input"]
+layout_mode = 2
+tooltip_text = "Toggles inverting camera controls on the Y axis."
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme_override_fonts/font = ExtResource( "2" )
+text = "Invert Camera Y"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="invert_y" type="CheckBox" parent="tabs/Input/v_sort/invert_y_input"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 10
+alignment = 2
+icon_alignment = 2
+
+[node name="About" type="MarginContainer" parent="tabs"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="v_sort" type="VBoxContainer" parent="tabs/About"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="title" type="Label" parent="tabs/About/v_sort"]
+layout_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme = ExtResource( "3" )
+text = "Newman Network: Channel 64
+(Experiment Newman Release 1)"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="version" type="Label" parent="tabs/About/v_sort"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme = ExtResource( "3" )
+text = "version %s
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="controls" type="Label" parent="tabs/About/v_sort"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+theme = ExtResource( "3" )
+text = "CONTROLS"
+label_settings = SubResource( "4" )
+horizontal_alignment = 1
+
+[node name="scroll_container" type="ScrollContainer" parent="tabs/About/v_sort"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 0
+
+[node name="h_box_container" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+alignment = 1
+
+[node name="v_box_container" type="VBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="move" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "5" )]
+
+[node name="jump" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "6" )]
+
+[node name="twirl" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "7" )]
+
+[node name="crouch" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "8" )]
+
+[node name="zoom_in" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "9" )]
+
+[node name="v_box_container_2" type="VBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="ground_roll" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container_2"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "10" )]
+
+[node name="ground_pound" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container_2"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "11" )]
+
+[node name="quick_roll" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container_2"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "12" )]
+
+[node name="bounce" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container_2"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "13" )]
+
+[node name="zoom_out" type="HBoxContainer" parent="tabs/About/v_sort/scroll_container/h_box_container/v_box_container_2"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+script = ExtResource( "5" )
+initial_prompt = [SubResource( "14" )]
+
+[node name="option_back" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource( "2" )
+text = "Back"
+metadata/_edit_use_anchors_ = true
+
+[node name="clear_subwindow" type="Window" parent="."]
+unique_name_in_owner = true
+title = "Clear Player Data"
+initial_position = 2
+size = Vector2i(384, 142)
+visible = false
+transient = true
+exclusive = true
+unresizable = true
+theme = ExtResource( "3" )
+
+[node name="m" type="MarginContainer" parent="clear_subwindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="vsort" type="VBoxContainer" parent="clear_subwindow/m"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="warning" type="Label" parent="clear_subwindow/m/vsort"]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+text = "Are you sure you want to clear player data? This will erase all of your stats and reset your configuration settings to default. You cannot revert this change after it is made."
+autowrap_mode = 3
+
+[node name="buttons" type="HBoxContainer" parent="clear_subwindow/m/vsort"]
+layout_mode = 2
+
+[node name="decline" type="Button" parent="clear_subwindow/m/vsort/buttons"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme = ExtResource( "3" )
+text = " Cancel "
+
+[node name="accept" type="Button" parent="clear_subwindow/m/vsort/buttons"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme = ExtResource( "3" )
+text = " Accept "
+
+[connection signal="text_changed" from="tabs/General/v_sort/name_input/name" to="." method="_name_text_changed"]
+[connection signal="toggled" from="tabs/General/v_sort/debug_draw_input/debug_draw" to="." method="_debug_draw_toggled"]
+[connection signal="pressed" from="tabs/General/v_sort/clear_data_container/clear_data" to="." method="_clear_data_pressed"]
+[connection signal="item_selected" from="tabs/Video/v_sort/resolution_input/resolution" to="." method="_resolution_selected"]
+[connection signal="toggled" from="tabs/Video/v_sort/vsync_input/vsync" to="." method="_vsync_toggled"]
+[connection signal="toggled" from="tabs/Video/v_sort/fullscreen_input/fullscreen" to="." method="_fullscreen_toggled"]
+[connection signal="toggled" from="tabs/Video/v_sort/dithering_input/dithering" to="." method="_dithering_toggled"]
+[connection signal="toggled" from="tabs/Video/v_sort/ntsc_input/ntsc" to="." method="_ntsc_toggled"]
+[connection signal="value_changed" from="tabs/Audio/v_sort/music_volume/music_volume" to="." method="_on_music_volume_value_changed"]
+[connection signal="value_changed" from="tabs/Audio/v_sort/ambient_volume/ambient_volume" to="." method="_on_ambient_volume_value_changed"]
+[connection signal="value_changed" from="tabs/Audio/v_sort/sfx_volume/sfx_volume" to="." method="_on_sfx_volume_value_changed"]
+[connection signal="item_selected" from="tabs/Input/v_sort/input_preference_sort/input_preference" to="." method="_input_preference_item_selected"]
+[connection signal="item_selected" from="tabs/Input/v_sort/camera_preference_sort/camera_preference" to="." method="_camera_preference_selected"]
+[connection signal="value_changed" from="tabs/Input/v_sort/camera_sensitivity_sort/camera_sensitivity" to="." method="_camera_sensitivity_value_changed"]
+[connection signal="toggled" from="tabs/Input/v_sort/invert_x_input/invert_x" to="." method="_invert_x_toggled"]
+[connection signal="toggled" from="tabs/Input/v_sort/invert_y_input/invert_y" to="." method="_invert_y_toggled"]
+[connection signal="pressed" from="option_back" to="." method="_option_back_pressed"]
+[connection signal="pressed" from="clear_subwindow/m/vsort/buttons/decline" to="." method="_cpd_back"]
+[connection signal="pressed" from="clear_subwindow/m/vsort/buttons/accept" to="." method="_clear_subwindow_confirmed"]

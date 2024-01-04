@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://kkxod7rnwsjl"
+path="res://.godot/imported/x2.png-b423891c1175c9958dff7c07fdddd01e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/x2.png"
+dest_files=PackedStringArray("res://.godot/imported/x2.png-b423891c1175c9958dff7c07fdddd01e.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

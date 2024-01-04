@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AccessoryData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_accessory.gd" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://dmtogo12b5o5t" path="res://asset/accessory/head/mesh/fungus.res" id="2"]
+[ext_resource type="Material" uid="uid://4gqj30h7vwqw" path="res://asset/accessory/mat/vtx_acc_primary.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://bqqsvrmgfkqwr" path="res://asset/accessory/head/icon/mushroom.png" id="4"]
+
+[resource]
+script = ExtResource( "1" )
+type = 1
+model = ExtResource( "2" )
+offset = Vector3(0, 1.9, 0)
+primary_material = ExtResource( "3" )
+primary_surface = 0
+secondary_material = null
+secondary_surface = 1
+name = "Fungus Cap"
+description = "It is decreed that you shall recieve a Prop!"
+icon = ExtResource( "4" )
+icon_modulation = Color(1, 1, 1, 1)

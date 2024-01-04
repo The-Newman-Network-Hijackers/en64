@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://diad7idw20rwi"
+path="res://.godot/imported/rumbling.wav-b6d6d6ae7c2618780ba737518795089b.sample"
+
+[deps]
+
+source_file="res://audio/sfx/rumbling.wav"
+dest_files=PackedStringArray("res://.godot/imported/rumbling.wav-b6d6d6ae7c2618780ba737518795089b.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

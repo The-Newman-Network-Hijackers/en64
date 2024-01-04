@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2jkkffobn1fl"
+path="res://.godot/imported/ruins_bass.mp3-e7a142f29382f7b4be398b3b1b981c81.mp3str"
+
+[deps]
+
+source_file="res://audio/stem/ruin/ruins_bass.mp3"
+dest_files=PackedStringArray("res://.godot/imported/ruins_bass.mp3-e7a142f29382f7b4be398b3b1b981c81.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

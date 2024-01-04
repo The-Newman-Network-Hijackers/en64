@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cwbqyndcht7vt"
+path="res://.godot/imported/glasses.blend-edd4bff2ffc9dd9355c6b0ebf5f43250.scn"
+
+[deps]
+
+source_file="res://asset/accessory/face/glasses.blend"
+dest_files=PackedStringArray("res://.godot/imported/glasses.blend-edd4bff2ffc9dd9355c6b0ebf5f43250.scn")
+
+[params]
+
+dummy_value_ignore_me=0

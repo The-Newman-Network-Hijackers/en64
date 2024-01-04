@@ -1,0 +1,32 @@
+[gd_resource type="ShaderMaterial" load_steps=7 format=3 uid="uid://biqttxc3bn6n6"]
+
+[ext_resource type="Shader" path="res://asset/shader/n64_decor_wave.gdshader" id="1"]
+[ext_resource type="Texture2D" uid="uid://jemhaq5uleav" path="res://asset/effect/grass/flower_2_f1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://5pb40jel7547" path="res://asset/effect/grass/flower_2_f2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dkrhkfv1oxttv" path="res://asset/effect/grass/flower_2_f3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b8m1cxsnbta5" path="res://asset/effect/grass/flower_2_f4.png" id="5"]
+
+[sub_resource type="AnimatedTexture" id="1"]
+frames = 4
+frame_0/texture = ExtResource("2")
+frame_0/duration = 0.2
+frame_1/texture = ExtResource("3")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("4")
+frame_2/duration = 0.2
+frame_3/texture = ExtResource("5")
+frame_3/duration = 0.1
+
+[resource]
+render_priority = 0
+shader = ExtResource("1")
+shader_parameter/modulate_color = Color(1, 1, 1, 1)
+shader_parameter/uv_scale = Vector2(0.985, 0.985)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/wind_strength = 0.64
+shader_parameter/wind_speed = 1.5
+shader_parameter/billboard = false
+shader_parameter/y_billboard = true
+shader_parameter/alpha_scissor = 0.1
+shader_parameter/albedoTex = SubResource("1")

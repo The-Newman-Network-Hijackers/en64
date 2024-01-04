@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cnmyxy1vsgo2d"
+path="res://.godot/imported/knight_helmet.blend-748ed26409f0c4479d7b6d9d7c84245f.scn"
+
+[deps]
+
+source_file="res://asset/accessory/head/knight_helmet.blend"
+dest_files=PackedStringArray("res://.godot/imported/knight_helmet.blend-748ed26409f0c4479d7b6d9d7c84245f.scn")
+
+[params]
+
+dummy_value_ignore_me=0

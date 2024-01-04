@@ -1,0 +1,421 @@
+GDRE Tools v0.6.0
+Windows 10.0.19045, AMD Radeon RX 580 2048SP, opengl3
+Extracted 2420 files, no errors detected!
+USER WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:58)
+Recreated plugin config for dialogue_manager
+USER WARNING: Failed to find library for this platform for plugin dialogue_manager
+   at: ImportExporter::recreate_plugin_configs (modules\gdsdecomp\utility\import_exporter.cpp:648)
+Recreated plugin config for extra_export_hints
+USER WARNING: Failed to find library for this platform for plugin extra_export_hints
+   at: ImportExporter::recreate_plugin_configs (modules\gdsdecomp\utility\import_exporter.cpp:648)
+USER ERROR: Cannot get keys from nonexistent section "dependencies".
+   at: ConfigFile::get_section_keys (core\io\config_file.cpp:112)
+Did not rewrite import metadata for res://addons/dialogue_manager/assets/icon.svg
+Did not rewrite import metadata for res://addons/dialogue_manager/assets/update.svg
+USER WARNING: Export of models/imported scenes currently unimplemented
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:181)
+USER WARNING: Conversion for Resource of type PackedScene and format blend not implemented
+   at: ImportExporter::report_unsupported_resource (modules\gdsdecomp\utility\import_exporter.cpp:1052)
+Did not convert PackedScene resource res://.godot/imported/suit.blend-7f19d2c081207a2146f477d4e0075373.scn
+Did not convert PackedScene resource res://.godot/imported/glasses.blend-edd4bff2ffc9dd9355c6b0ebf5f43250.scn
+Did not convert PackedScene resource res://.godot/imported/mustache.blend-a0e6dcbed06872c6cff24704b9b25adf.scn
+Did not convert PackedScene resource res://.godot/imported/old_mustache.blend-ccd21c3ce250a0263a9e49c45f2c06f6.scn
+Did not convert PackedScene resource res://.godot/imported/sunflower_glasses.blend-a524e37da328e092414a4c7ab3e9ffab.scn
+Did not convert PackedScene resource res://.godot/imported/beanie.blend-86210dd3a286759b96da9554db79caf4.scn
+Did not convert PackedScene resource res://.godot/imported/cap.blend-85a2ed5f729e251ba6ef97c81daeb06f.scn
+Did not convert PackedScene resource res://.godot/imported/cowboy_hat.blend-77e0502bc3217a55f68be86776a88205.scn
+Did not convert PackedScene resource res://.godot/imported/fungus.blend-a077ef7745a168f44cb4c362641ad5c1.scn
+Did not convert PackedScene resource res://.godot/imported/knight_helmet.blend-748ed26409f0c4479d7b6d9d7c84245f.scn
+Did not convert PackedScene resource res://.godot/imported/propeller.blend-4210601ca56f47520847691e8c09fa42.scn
+Did not convert PackedScene resource res://.godot/imported/stem.blend-b06dd2ceb5a82eae8e278724cad33e27.scn
+Did not convert PackedScene resource res://.godot/imported/sunflower.blend-1321e286ab54e1f85af496255cf97cd9.scn
+Did not convert PackedScene resource res://.godot/imported/studio.blend-0e97d427205b26b45a37358d014f406f.scn
+Did not convert PackedScene resource res://.godot/imported/ice_cream.blend-d47e371dffede1421c129736d03d8aba.scn
+Did not convert PackedScene resource res://.godot/imported/star.blend-35e2e7a43646e5f21fea916c3acf9dc2.scn
+Did not rewrite import metadata for res://asset/editor/Consumable.svg
+Did not rewrite import metadata for res://asset/editor/DamageIndicator.svg
+Did not rewrite import metadata for res://asset/editor/DialogBox.svg
+Did not rewrite import metadata for res://asset/editor/DialogLink.svg
+Did not rewrite import metadata for res://asset/editor/DialogLinkItem.svg
+Did not rewrite import metadata for res://asset/editor/DialogLinkOperator.svg
+Did not rewrite import metadata for res://asset/editor/DialogLinkQuest.svg
+Did not rewrite import metadata for res://asset/editor/DialogLinkQuestion.svg
+Did not rewrite import metadata for res://asset/editor/Enemy.svg
+Did not rewrite import metadata for res://asset/editor/Event.svg
+Did not rewrite import metadata for res://asset/editor/EventTree.svg
+Did not rewrite import metadata for res://asset/editor/Friendly.svg
+Did not rewrite import metadata for res://asset/editor/Gun.svg
+Did not rewrite import metadata for res://asset/editor/LevelManager.svg
+Did not rewrite import metadata for res://asset/editor/LevelScript.svg
+Did not rewrite import metadata for res://asset/editor/Player.svg
+Did not rewrite import metadata for res://asset/editor/PlayerSpawn.svg
+Did not rewrite import metadata for res://asset/editor/SkillChip.svg
+Did not rewrite import metadata for res://asset/editor/Warp.svg
+Did not rewrite import metadata for res://asset/editor/WarpPoint.svg
+Did not rewrite import metadata for res://asset/editor/WarpTarget.svg
+Did not convert PackedScene resource res://.godot/imported/crate_debris.blend-2a48d9a331510eb70f422926064ded0e.scn
+Did not convert PackedScene resource res://.godot/imported/dirt_debris.blend-eea74437053dbd838e2544c479d2dbef.scn
+Did not convert PackedScene resource res://.godot/imported/stone_debris.blend-04c5479b6a9cc6949286a406a35e575a.scn
+Did not convert PackedScene resource res://.godot/imported/dust.blend-9623bc5b27b3260b3bbbcc3548a4af23.scn
+Did not convert PackedScene resource res://.godot/imported/plane_padded.blend-f0cb66af36dbf1ceb09ac0e2f41ce7b3.scn
+Did not convert PackedScene resource res://.godot/imported/plane_padded_centered.blend-98ce22a2eb95625ba78456d5902ad031.scn
+Did not convert PackedScene resource res://.godot/imported/star.blend-7df263869d8b87bb90e76f14f9c119c4.scn
+Did not convert PackedScene resource res://.godot/imported/bomb.blend-4c9ff26981e68bffd83d4b11a20fa01f.scn
+Did not convert PackedScene resource res://.godot/imported/bomb_texrend.blend-571cb59be0943f2a3a7a995463809d94.scn
+Did not convert PackedScene resource res://.godot/imported/cage.blend-5d472f6c87abf8663fafc0e5979f8bdb.scn
+Did not convert PackedScene resource res://.godot/imported/boom_crate.blend-68ee2e4a4d0de89a91deaaaca0ffd504.scn
+Did not convert PackedScene resource res://.godot/imported/box.blend-71b2ba4a28ba024f1da65b513bd2b2e5.scn
+Did not convert PackedScene resource res://.godot/imported/flower_prince.blend-e579940be8c28166ec63a080ed5e93a9.scn
+Did not convert PackedScene resource res://.godot/imported/kelp_1.blend-a20fc94df775a1acbd9c63a2e5dee447.scn
+Did not convert PackedScene resource res://.godot/imported/mp_ruins_1.blend-db10ffdc418313b543c323d87e573e1c.scn
+Did not convert PackedScene resource res://.godot/imported/pole.blend-14cac91a2fc8d2ffda27f19923fa5564.scn
+Did not convert PackedScene resource res://.godot/imported/seed.blend-00734a2e473bacebbb7d81ac08089481.scn
+Did not convert PackedScene resource res://.godot/imported/sign.blend-0a5a75b4cd5e0adca4dbbd194ed8dc11.scn
+Did not convert PackedScene resource res://.godot/imported/soda.blend-2c32a1dd33c1e2b196e7009ba62df786.scn
+Did not convert PackedScene resource res://.godot/imported/springboard.blend-08fde37c9f3952c76934bed6ea440b3d.scn
+Did not convert PackedScene resource res://.godot/imported/mushroom.blend-9c6fdc9f365a9711264069f9e0ba3d72.scn
+Did not convert PackedScene resource res://.godot/imported/tree.blend-ddcc9dca88ffdfe226de6321fcbb8f58.scn
+Did not convert PackedScene resource res://.godot/imported/jack.blend-3f19e98003f3ff4634733a8bfafb6b68.scn
+USER WARNING: Conversion for Resource of type PackedScene and format glb not implemented
+   at: ImportExporter::report_unsupported_resource (modules\gdsdecomp\utility\import_exporter.cpp:1052)
+Did not convert PackedScene resource res://.godot/imported/flying_fortress.glb-5d507ab1ba0f55fb0ea1b781b731a2f3.scn
+Did not convert PackedScene resource res://.godot/imported/hc_ruins_castle.blend-c919292d04403c8ee35650c3ce536a08.scn
+Did not convert PackedScene resource res://.godot/imported/hc_ruins_tower_arena.blend-ac431cc78c5a8ba1d6017322ebb37b79.scn
+Did not convert PackedScene resource res://.godot/imported/test_map1.blend-722179e4565bec7522d70f9c1deab0ff.scn
+Did not convert PackedScene resource res://.godot/imported/test_map2.blend-a899f9f83c2217466bdd88ce8c210158.scn
+Did not convert PackedScene resource res://.godot/imported/test_water.blend-3e07d3becf0ff6aa5dd71c6dbe749fef.scn
+Did not convert PackedScene resource res://.godot/imported/newman.blend-f50d86e951eab1211efc3531bef1861d.scn
+Did not convert PackedScene resource res://.godot/imported/shard.blend-3741f17803863fe775466ec9a52391ee.scn
+Did not convert PackedScene resource res://.godot/imported/camera.blend-5156dc4ffb1324b58bd2704e3a551d38.scn
+Did not convert PackedScene resource res://.godot/imported/clapper.blend-0385f6dd204d752ce75bde96b576a58a.scn
+Did not convert PackedScene resource res://.godot/imported/dialog_bubble.blend-51b77a6fbeaccd513c33639a6ef80c78.scn
+Did not convert PackedScene resource res://.godot/imported/icons.blend-c12b29375202378961ebb972effe50ec.scn
+Did not convert PackedScene resource res://.godot/imported/lifebar.blend-83b7056eba3ee92e59d24c89a01be964.scn
+Did not convert PackedScene resource res://.godot/imported/src_textures.blend-04f25fb9775ac923f265e395e24865e7.scn
+Did not convert PackedScene resource res://.godot/imported/scroll.blend-6bf595f9550055df2ae1d9121c2da156.scn
+Did not convert PackedScene resource res://.godot/imported/logo_demo.blend-a1d6604e41dbd2a2f62d9fe1ac228c80.scn
+Did not convert PackedScene resource res://.godot/imported/logo_horizontal.blend-6a066b667902aea5d66136e1c86e1456.scn
+Did not convert PackedScene resource res://.godot/imported/logo_horizontal_ingame.blend-c029f847ee92ca8b18a64a4a09a8ac3b.scn
+Did not convert PackedScene resource res://.godot/imported/logo_test_release.blend-1702cf4f2f32a3e5de785a142ace008a.scn
+Did not convert PackedScene resource res://.godot/imported/logo_vertical.blend-83d6f67f2fa8507238075574772bafbe.scn
+USER WARNING: Conversion for Resource of type Resource and format dialogue not implemented
+   at: ImportExporter::report_unsupported_resource (modules\gdsdecomp\utility\import_exporter.cpp:1052)
+Did not convert Resource resource res://.godot/imported/dummy.dialogue-a431bd1fc641f58810cd94cb11afbbb0.tres
+Did not convert Resource resource res://.godot/imported/flower_prince_intro.dialogue-c738744709281319a78f4d317529f47b.tres
+Did not convert Resource resource res://.godot/imported/flower_prince_mean.dialogue-d40df846eda4a2fe29fa366ca606835c.tres
+Did not convert Resource resource res://.godot/imported/fortress_fluff.dialogue-39716c08bd6663b4672963ad83872ca6.tres
+Did not convert Resource resource res://.godot/imported/help_fungi.dialogue-ffaa3d684d8532b5e4aea3a59e83234d.tres
+Did not convert Resource resource res://.godot/imported/introduction_1.dialogue-936a81b199faa271a9bcca10a6ce14d9.tres
+Did not convert Resource resource res://.godot/imported/ruins_castle_fluff1.dialogue-a6ae6e54c3fa3fdf1c3978168425fe7a.tres
+Did not convert Resource resource res://.godot/imported/ruins_outside_fluff.dialogue-ba5e0bae7b8730e0457b42e7c5a5d902.tres
+Did not convert Resource resource res://.godot/imported/tutorial_jump.dialogue-d008784d2ab1e639d25bca6fb472d1ba.tres
+Did not convert Resource resource res://.godot/imported/tutorial_move.dialogue-b0a633abc3818e2b80a1ddd50ec70ad6.tres
+Saved project config to C:/Users/HP/Downloads/Experiment Newman/Version 1 (Hotfix)/decompma/project.godot
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     0
+Failed scripts:                         0
+Imported resources for export session:  2420
+Successfully converted:                 1040
+Lossy:                                  156
+Rewrote metadata:                       0
+Non-importable conversions:             23
+Not converted:                          69
+Failed conversions:                     0
+-------------
+
+
+The following files were converted from an import that was stored lossy.
+You may lose fidelity when re-importing these files upon loading the project.
+res://.godot/imported/icon.svg-17eb5d3e2a3cfbe59852220758c5b7bd.ctex to res://.assets/addons/dialogue_manager/assets/icon.png
+res://.godot/imported/update.svg-f1628866ed4eb2e13e3b81f75443687e.ctex to res://.assets/addons/dialogue_manager/assets/update.png
+res://.godot/imported/Consumable.svg-1d9fd2354ebc72d127a2334590d9d2a4.ctex to res://.assets/asset/editor/Consumable.png
+res://.godot/imported/DamageIndicator.svg-5abc5d98af33a9c0150981370f833862.ctex to res://.assets/asset/editor/DamageIndicator.png
+res://.godot/imported/DialogBox.svg-c56e822e754ec90f78b3e0b3b68a1531.ctex to res://.assets/asset/editor/DialogBox.png
+res://.godot/imported/DialogLink.svg-5a14dd601f712afa4813a45d61ca58c6.ctex to res://.assets/asset/editor/DialogLink.png
+res://.godot/imported/DialogLinkItem.svg-a51b5778c2d75b6dd7bd4636dcc901ed.ctex to res://.assets/asset/editor/DialogLinkItem.png
+res://.godot/imported/DialogLinkOperator.svg-5775082624c1ab86570e334b3da28dc2.ctex to res://.assets/asset/editor/DialogLinkOperator.png
+res://.godot/imported/DialogLinkQuest.svg-01073d0162eaf60e8531bb5f662bd621.ctex to res://.assets/asset/editor/DialogLinkQuest.png
+res://.godot/imported/DialogLinkQuestion.svg-4c86a17c17ebdc81152480477fb2ed28.ctex to res://.assets/asset/editor/DialogLinkQuestion.png
+res://.godot/imported/Enemy.svg-69a59f78b618621770ec6afc59607550.s3tc.ctex to res://.assets/asset/editor/Enemy.png
+res://.godot/imported/Event.svg-c987ebe5efb1124daf0baa63c491457f.ctex to res://.assets/asset/editor/Event.png
+res://.godot/imported/EventTree.svg-7ec7376bcb2c368271fd7cdbd0f41308.ctex to res://.assets/asset/editor/EventTree.png
+res://.godot/imported/Friendly.svg-3dd75c34cd212c5cb4b8cc7277bfe326.ctex to res://.assets/asset/editor/Friendly.png
+res://.godot/imported/Gun.svg-cef4e1bf30f2fff1f796a0ed7c08c008.ctex to res://.assets/asset/editor/Gun.png
+res://.godot/imported/LevelManager.svg-0be514798f05f5de27c8ec7e2294b7ae.ctex to res://.assets/asset/editor/LevelManager.png
+res://.godot/imported/LevelScript.svg-cbb4f54b6c84c3dc717ceea9bb03e1c6.ctex to res://.assets/asset/editor/LevelScript.png
+res://.godot/imported/Player.svg-a0f3c4bbaf740598a77b8b6ecb5eb756.ctex to res://.assets/asset/editor/Player.png
+res://.godot/imported/PlayerSpawn.svg-4d044d5c502396e3b2213aac9de4de8e.ctex to res://.assets/asset/editor/PlayerSpawn.png
+res://.godot/imported/SkillChip.svg-38c1105dd8620077adb5910a7f623ac9.ctex to res://.assets/asset/editor/SkillChip.png
+res://.godot/imported/Warp.svg-95234bdb66768a141a91617ba92c19e8.ctex to res://.assets/asset/editor/Warp.png
+res://.godot/imported/WarpPoint.svg-982670fef3f7035832e8b1d4e26d62d0.ctex to res://.assets/asset/editor/WarpPoint.png
+res://.godot/imported/WarpTarget.svg-b297ba3f03dce24d23199d884484b952.ctex to res://.assets/asset/editor/WarpTarget.png
+res://.godot/imported/preview.jpg-f307c8e07cf5059c1dffbb10a8c67fb1.ctex to res://asset/effect/flare/preview.jpg
+res://.godot/imported/bars_1.jpg-598f4e9920da3c1ae01847c33575827c.s3tc.ctex to res://asset/level/generic/bars_1.jpg
+res://.godot/imported/vine_1.jpg-63b8ecfebeba2ddce423a0af82b2ab99.ctex to res://asset/level/generic/vine_1.jpg
+res://.godot/imported/grain.jpg-03515bf87b986bacba0fc9180940fbb0.ctex to res://asset/shader/grain.jpg
+res://.godot/imported/Basic Comical Regular NC.ttf-9ec5eb1a538536394b25e08d93adafe3.fontdata to res://asset/ui/Basic Comical Regular NC.ttf
+res://.godot/imported/LesPaul-a-Normal.otf-6b1a3a6400dfec23a8797c62ffeaf56a.fontdata to res://asset/ui/LesPaul-a-Normal.otf
+res://.godot/imported/Loosey Sans.otf-b39cb708cea844406abdf0252a661ae4.fontdata to res://asset/ui/Loosey Sans.otf
+res://.godot/imported/RobotoCondensed-Bold.ttf-0ed79306523c30398e008c145d53035e.fontdata to res://asset/ui/RobotoCondensed-Bold.ttf
+res://.godot/imported/RobotoCondensed-Light.ttf-dfbc32706ac923805ab7baf0adb47195.fontdata to res://asset/ui/RobotoCondensed-Light.ttf
+res://.godot/imported/Schoolwork-Regular.ttf-b269208718e58d55ecc394d1e04ae9c9.fontdata to res://asset/ui/Schoolwork-Regular.ttf
+res://.godot/imported/amb_birds.wav-afcac2baddfa4704da0ea4df039ea0ff.sample to res://audio/amb/amb_birds.wav
+res://.godot/imported/amb_fire.wav-de720225a20343457a8bf9d22e7535b0.sample to res://audio/amb/amb_fire.wav
+res://.godot/imported/amb_rain.wav-a77b6bfadc6f61302d02dab0c8079a56.sample to res://audio/amb/amb_rain.wav
+res://.godot/imported/beep.wav-2f7e36ed65aa001006d8a9bf66f2a47b.sample to res://audio/sfx/beep.wav
+res://.godot/imported/bomb_fuse.wav-957328d5aa0785c616c8a79c3d9da558.sample to res://audio/sfx/bomb_fuse.wav
+res://.godot/imported/bomb_lit.wav-3f896bafb978990d2c4a7d6ba61a9dc5.sample to res://audio/sfx/bomb_lit.wav
+res://.godot/imported/bomb_whistle.wav-55c249568fdcba756e38bf3db6e2ace5.sample to res://audio/sfx/bomb_whistle.wav
+res://.godot/imported/button_press.wav-07834688e2b6c6f904b37a1d6c72141a.sample to res://audio/sfx/button_press.wav
+res://.godot/imported/cam_fps_snapshot.wav-3e6791b900148c57dfa42c3156cdbecd.sample to res://audio/sfx/cam_fps_snapshot.wav
+res://.godot/imported/cam_fps_zoom.wav-5be3c60c938b35ac668bfb067c19b68f.sample to res://audio/sfx/cam_fps_zoom.wav
+res://.godot/imported/chain_loop.wav-3fd4a713ee8cf38830b055409389f7ac.sample to res://audio/sfx/chain_loop.wav
+res://.godot/imported/character_gross.wav-34e6ead8cbf9d09e8fe1f44d52c778ce.sample to res://audio/sfx/character_gross.wav
+res://.godot/imported/clapper.wav-4fefa8eb92086391329ca0b1fa59810a.sample to res://audio/sfx/clapper.wav
+res://.godot/imported/clink1.wav-27f570ef4e3b46e931fb685fb0238b52.sample to res://audio/sfx/clink1.wav
+res://.godot/imported/clink2.wav-bfe14fbfcd89afae65ebc73ed05dd902.sample to res://audio/sfx/clink2.wav
+res://.godot/imported/collect_jack.wav-df1efeb6be87a3dae1df619cfda4c8df.sample to res://audio/sfx/collect_jack.wav
+res://.godot/imported/cut_a_1.wav-56f8e7076089b16cd3894af5e85887d6.sample to res://audio/sfx/cut_a_1.wav
+res://.godot/imported/cut_a_2.wav-affa9cabd8570283bdb4e0788e94d4e4.sample to res://audio/sfx/cut_a_2.wav
+res://.godot/imported/cut_a_3.wav-b21c5e138c26f50655497d6e9c727bd4.sample to res://audio/sfx/cut_a_3.wav
+res://.godot/imported/cut_a_4.wav-ca23fb691dcd4b4c3b60560344bcf2f5.sample to res://audio/sfx/cut_a_4.wav
+res://.godot/imported/cut_a_5.wav-c0b656f3f7663c5cd342a1211eacd58c.sample to res://audio/sfx/cut_a_5.wav
+res://.godot/imported/cut_a_6.wav-89f15f66732c95732a8b24de4756276d.sample to res://audio/sfx/cut_a_6.wav
+res://.godot/imported/debris.wav-efd1918c2921bcc188fb86edd00f9e76.sample to res://audio/sfx/debris.wav
+res://.godot/imported/explosion_1.wav-fb213bb17506ec2ee112121017677b0c.sample to res://audio/sfx/explosion_1.wav
+res://.godot/imported/explosion_2.wav-e2f7e865348342901b9cc082e3124431.sample to res://audio/sfx/explosion_2.wav
+res://.godot/imported/fallen_down.wav-a74324b0e74a3a48c1a3038f87da4672.sample to res://audio/sfx/fallen_down.wav
+res://.godot/imported/flower_hurt.wav-8a4b1672044661cdef3bd437da0b4ba2.sample to res://audio/sfx/flower_hurt.wav
+res://.godot/imported/gate_close.wav-89dc966eb32f0cea4fc0a0fee1047a6c.sample to res://audio/sfx/gate_close.wav
+res://.godot/imported/gate_squeak_1.wav-c0d624264a8d3ea64ed971f08aecb961.sample to res://audio/sfx/gate_squeak_1.wav
+res://.godot/imported/gate_squeak_2.wav-e7d8595f3d6be1fa9d76a8c4436f8ec2.sample to res://audio/sfx/gate_squeak_2.wav
+res://.godot/imported/glisten.wav-0dcfd1d13c0c7491bc34933373e63da5.sample to res://audio/sfx/glisten.wav
+res://.godot/imported/hp_down.wav-abee4b38f91fd8378442871a5da87572.sample to res://audio/sfx/hp_down.wav
+res://.godot/imported/hp_up.wav-07d719ed71ebee1d1823fd1a98e03a94.sample to res://audio/sfx/hp_up.wav
+res://.godot/imported/jump.wav-ca4ccb66e678679518a9b9888fc39709.sample to res://audio/sfx/jump.wav
+res://.godot/imported/jump_2.wav-0823f75b31adbf47c792e7af39bbebe6.sample to res://audio/sfx/jump_2.wav
+res://.godot/imported/jump_3.wav-be84c268f0d96467bf3e0c9e75943e3c.sample to res://audio/sfx/jump_3.wav
+res://.godot/imported/land_thud.wav-d698725610a953bed6dc78dc17ba7003.sample to res://audio/sfx/land_thud.wav
+res://.godot/imported/low_health.wav-dbdfe227ea04b877b7b515e642b03d79.sample to res://audio/sfx/low_health.wav
+res://.godot/imported/mallet_slam.wav-8e748f9d61c25dfcdabdadcd487bad0f.sample to res://audio/sfx/mallet_slam.wav
+res://.godot/imported/metal_thud.wav-48d6a09e5c768800dc9650e3a8b4b2d5.sample to res://audio/sfx/metal_thud.wav
+res://.godot/imported/metal_wobble.wav-d18398c8e81a06128d098f732eb9c8d3.sample to res://audio/sfx/metal_wobble.wav
+res://.godot/imported/orchit.wav-27dee640612c41d4fba1ae670fb9a3ae.sample to res://audio/sfx/orchit.wav
+res://.godot/imported/pickup_big.wav-b4675a51176508c0593d5a0376db0d13.sample to res://audio/sfx/pickup_big.wav
+res://.godot/imported/pickup_small.wav-339fdbd4cdcb6d9679a42e4ba7db0fdc.sample to res://audio/sfx/pickup_small.wav
+res://.godot/imported/poof.wav-305162d7fb59cab04589e85b3989db23.sample to res://audio/sfx/poof.wav
+res://.godot/imported/positive_chime.wav-8008af59595e3c095e0d65ed67c64727.sample to res://audio/sfx/positive_chime.wav
+res://.godot/imported/prop_found.wav-ae6d52d5efe5f5d11add403094e1bf59.sample to res://audio/sfx/prop_found.wav
+res://.godot/imported/punch.wav-042111155c494a198ff07459a57c90d4.sample to res://audio/sfx/punch.wav
+res://.godot/imported/punch_1.wav-fe630ffd8bf5b89118e0c9bcdd494a2e.sample to res://audio/sfx/punch_1.wav
+res://.godot/imported/punch_2.wav-240739aea82809470e5c6c5d221b0be8.sample to res://audio/sfx/punch_2.wav
+res://.godot/imported/punch_3.wav-68e3e1041ce631ba004c5b62852998b3.sample to res://audio/sfx/punch_3.wav
+res://.godot/imported/ricochet.wav-c5ef48aa6e8f7b75c974b3cfc81f9b1c.sample to res://audio/sfx/ricochet.wav
+res://.godot/imported/ricochet_hit1.wav-e661b17d7c2cb9fe047933b6d5a04d1d.sample to res://audio/sfx/ricochet_hit1.wav
+res://.godot/imported/ricochet_hit2.wav-b10049f2cc13eb7c83e6811e471d82bf.sample to res://audio/sfx/ricochet_hit2.wav
+res://.godot/imported/rolling.wav-e01c97186c772d50d6926e992def4885.sample to res://audio/sfx/rolling.wav
+res://.godot/imported/rumbling.wav-b6d6d6ae7c2618780ba737518795089b.sample to res://audio/sfx/rumbling.wav
+res://.godot/imported/rummage.wav-7ea85b30e92656cc3ca9de229a822cc2.sample to res://audio/sfx/rummage.wav
+res://.godot/imported/s_crunch_1.wav-3c04565ffda3eb2d2f03e184a283b1cb.sample to res://audio/sfx/s_crunch_1.wav
+res://.godot/imported/s_crunch_2.wav-113886364aa44744bfb2c1e68db94bb8.sample to res://audio/sfx/s_crunch_2.wav
+res://.godot/imported/s_crunch_3.wav-58f32a6eaa42a1a1da33ac172e3730ae.sample to res://audio/sfx/s_crunch_3.wav
+res://.godot/imported/s_generic_1.wav-8d8eaf04f7db2b152398062d77a7656e.sample to res://audio/sfx/s_generic_1.wav
+res://.godot/imported/s_generic_2.wav-8f03938b435596204c5e191231522ae8.sample to res://audio/sfx/s_generic_2.wav
+res://.godot/imported/s_generic_3.wav-e25b36bb2ff21e3a481336f9ef4047bd.sample to res://audio/sfx/s_generic_3.wav
+res://.godot/imported/s_soft_1.wav-58568de82719e434cc136e35a41186ee.sample to res://audio/sfx/s_soft_1.wav
+res://.godot/imported/s_soft_2.wav-9fed810215a57f4393632956087b037d.sample to res://audio/sfx/s_soft_2.wav
+res://.godot/imported/s_soft_3.wav-35eef84d068e9ee746074242ddf3cfee.sample to res://audio/sfx/s_soft_3.wav
+res://.godot/imported/s_wet_1.wav-87c4731fba95bc86789dbacde36893fc.sample to res://audio/sfx/s_wet_1.wav
+res://.godot/imported/s_wet_2.wav-762c18be4f9ffcdcd2ad6896390ea655.sample to res://audio/sfx/s_wet_2.wav
+res://.godot/imported/s_wet_3.wav-b67a702cae5c2918711e99266052ac8a.sample to res://audio/sfx/s_wet_3.wav
+res://.godot/imported/sharp_sheathe.wav-3a5fdd0ddc9372b636af87e57f1b2057.sample to res://audio/sfx/sharp_sheathe.wav
+res://.godot/imported/skid.wav-0f0a6586bd72aee0cb7fb913b2c6edb0.sample to res://audio/sfx/skid.wav
+res://.godot/imported/skid_scrape.wav-cfbac46bc579f74b783b9148e16d5a1a.sample to res://audio/sfx/skid_scrape.wav
+res://.godot/imported/skid_scrape_2.wav-c2d5a03f7b9282dac89fb75fb97dda5b.sample to res://audio/sfx/skid_scrape_2.wav
+res://.godot/imported/skid_scrape_3.wav-6937e50ab359165593b3888516d97390.sample to res://audio/sfx/skid_scrape_3.wav
+res://.godot/imported/skid_slide.ogg-ddd89b997275199c599f191d9782ba57.oggvorbisstr to res://audio/sfx/skid_slide.ogg
+res://.godot/imported/skid_slide_end.wav-bf02deb11b347b78cbf623f47de45609.sample to res://audio/sfx/skid_slide_end.wav
+res://.godot/imported/soda_heal.wav-8f0c7c7b6c379e3b5965c1877656ab08.sample to res://audio/sfx/soda_heal.wav
+res://.godot/imported/spit.wav-21cf2b21b14d431b9ad67c499d36f50f.sample to res://audio/sfx/spit.wav
+res://.godot/imported/stone_thud1.wav-c37f557cbca7588d1182e3bf08398f8c.sample to res://audio/sfx/stone_thud1.wav
+res://.godot/imported/stone_thud2.wav-efbb809e9dac9333153ad3322397f8b7.sample to res://audio/sfx/stone_thud2.wav
+res://.godot/imported/stretch.wav-48a63f46f1995e7117a055015ba3c049.sample to res://audio/sfx/stretch.wav
+res://.godot/imported/switch_equip.wav-7fd6b886383ddbe9628a0086ca23269d.sample to res://audio/sfx/switch_equip.wav
+res://.godot/imported/accordian_1.wav-0fc8fc9bbb67dec1a48e97e68c7ebedb.sample to res://audio/sfx/talk/accordian_1.wav
+res://.godot/imported/accordian_2.wav-282caae8554e734f8772a89e8f1a0344.sample to res://audio/sfx/talk/accordian_2.wav
+res://.godot/imported/accordian_3.wav-c00e70c01f280493ce8ee000e95a2ddb.sample to res://audio/sfx/talk/accordian_3.wav
+res://.godot/imported/throw_bounce_1.wav-5371c7a064ef65f89ce081bea8cc98a9.sample to res://audio/sfx/throw_bounce_1.wav
+res://.godot/imported/throw_bounce_2.wav-79899f1d5b42fbd8f133eab069d84cae.sample to res://audio/sfx/throw_bounce_2.wav
+res://.godot/imported/throw_large_1.wav-e43f891b0aac5cbc4348542c77f9c5a8.sample to res://audio/sfx/throw_large_1.wav
+res://.godot/imported/throw_large_2.wav-ad8382de94d99a9ce0f96e3321db9470.sample to res://audio/sfx/throw_large_2.wav
+res://.godot/imported/throw_small_1.wav-2967ba2aa821672eb7b3fb51f206e0c6.sample to res://audio/sfx/throw_small_1.wav
+res://.godot/imported/throw_small_2.wav-ac2f34ece95596145b020d2cb18559ca.sample to res://audio/sfx/throw_small_2.wav
+res://.godot/imported/thump_1.wav-a73443c7c846f0b6ed310193bcaf8fc6.sample to res://audio/sfx/thump_1.wav
+res://.godot/imported/thump_2.wav-bb482e74e3bfeec73952c04050f7cfe5.sample to res://audio/sfx/thump_2.wav
+res://.godot/imported/thump_3.wav-402b23447bdca55fea153603b46b7534.sample to res://audio/sfx/thump_3.wav
+res://.godot/imported/thump_wetdeep_1.wav-10e9fd85894e963f3f2a882bd4603641.sample to res://audio/sfx/thump_wetdeep_1.wav
+res://.godot/imported/thump_wetdeep_2.wav-4d34db7083055179657c9184a7d130ef.sample to res://audio/sfx/thump_wetdeep_2.wav
+res://.godot/imported/thump_wetshallow_1.wav-ecaefeb2efa229f2e267e9db3280448e.sample to res://audio/sfx/thump_wetshallow_1.wav
+res://.godot/imported/thump_wetshallow_2.wav-048e4092827c778a278aa564100bac97.sample to res://audio/sfx/thump_wetshallow_2.wav
+res://.godot/imported/trampoline_boing.wav-5a670d24d4de6413d06521d916415d1b.sample to res://audio/sfx/trampoline_boing.wav
+res://.godot/imported/twinkle_bounce.wav-ea3c61c56d3ef9d86e861732ebd2ca9e.sample to res://audio/sfx/twinkle_bounce.wav
+res://.godot/imported/ui_click.wav-6822f1c51fb857a25faeb9068f7692f4.sample to res://audio/sfx/ui_click.wav
+res://.godot/imported/ui_in.wav-e5c53e4ee0b74ec8327cc45e9f97b21a.sample to res://audio/sfx/ui_in.wav
+res://.godot/imported/ui_out.wav-12badb5908bc87f55e8153134accec98.sample to res://audio/sfx/ui_out.wav
+res://.godot/imported/ui_type1.wav-60411e56d2c20a6233a3bc16b489f2da.sample to res://audio/sfx/ui_type1.wav
+res://.godot/imported/ui_type2.wav-6e0233d365565d4346dfcb1b97e26a76.sample to res://audio/sfx/ui_type2.wav
+res://.godot/imported/ui_type3.wav-b199adb2508d0ccdb448922e046a1438.sample to res://audio/sfx/ui_type3.wav
+res://.godot/imported/underwater_move_1.wav-9ba0eabdf081ff7f1bda4bc8cda53778.sample to res://audio/sfx/underwater_move_1.wav
+res://.godot/imported/water_emerge_1.wav-aae2de929d7c08ac22524a7f4b051a5c.sample to res://audio/sfx/water_emerge_1.wav
+res://.godot/imported/water_emerge_2.wav-100a34f741eb652b9f929bd1e17b30c1.sample to res://audio/sfx/water_emerge_2.wav
+res://.godot/imported/wham.wav-04bbc96726e4d7393c88c750de98f2b6.sample to res://audio/sfx/wham.wav
+res://.godot/imported/whimsical.wav-4ee7c4d727178b2a5e173de6e585821a.sample to res://audio/sfx/whimsical.wav
+res://.godot/imported/whistle_down.wav-27dc1161eb3b0435b9d85de44cd1ee9a.sample to res://audio/sfx/whistle_down.wav
+res://.godot/imported/whistle_up.wav-89ead0c4f5b52c86c76593e64f96a422.sample to res://audio/sfx/whistle_up.wav
+res://.godot/imported/wood_break.wav-e824e8f9669d0b83a482d7da31d642f4.sample to res://audio/sfx/wood_break.wav
+res://.godot/imported/wood_break2.wav-0887bf8583f220e95f83098ee7b996b7.sample to res://audio/sfx/wood_break2.wav
+res://.godot/imported/wood_damage.wav-60edf403a6311c678a754a6fabcd39c9.sample to res://audio/sfx/wood_damage.wav
+res://.godot/imported/wood_damage2.wav-588d97ebb2b9e14fc1f02d4fcf762d55.sample to res://audio/sfx/wood_damage2.wav
+res://.godot/imported/wood_thud.wav-047b5ec732d2c3d7e5877c82f7eac2f2.sample to res://audio/sfx/wood_thud.wav
+res://.godot/imported/wood_thud2.wav-f50b802687de6a4f9d251baaeb7869ae.sample to res://audio/sfx/wood_thud2.wav
+res://.godot/imported/woosh.wav-43626529a4b1e4f6672dd8e7fa66bc84.sample to res://audio/sfx/woosh.wav
+res://.godot/imported/woosh_2.wav-42c879ce341eef909b77e825262c73f6.sample to res://audio/sfx/woosh_2.wav
+res://.godot/imported/woosh_3.wav-52d2602f2679263824c98dc6bffe6a3a.sample to res://audio/sfx/woosh_3.wav
+res://.godot/imported/zoom.wav-93d988035a942ba2051e7bde32d88599.sample to res://audio/sfx/zoom.wav
+------
+
+The following native plugins failed to have their libraries copied:
+dialogue_manager
+extra_export_hints
+------
+
+The following files were converted and saved to a non-original path, but did not have their import data rewritten.
+These files will not be re-imported when loading the project.
+res://.godot/imported/icon.svg-17eb5d3e2a3cfbe59852220758c5b7bd.ctex to res://.assets/addons/dialogue_manager/assets/icon.png
+res://.godot/imported/update.svg-f1628866ed4eb2e13e3b81f75443687e.ctex to res://.assets/addons/dialogue_manager/assets/update.png
+res://.godot/imported/Consumable.svg-1d9fd2354ebc72d127a2334590d9d2a4.ctex to res://.assets/asset/editor/Consumable.png
+res://.godot/imported/DamageIndicator.svg-5abc5d98af33a9c0150981370f833862.ctex to res://.assets/asset/editor/DamageIndicator.png
+res://.godot/imported/DialogBox.svg-c56e822e754ec90f78b3e0b3b68a1531.ctex to res://.assets/asset/editor/DialogBox.png
+res://.godot/imported/DialogLink.svg-5a14dd601f712afa4813a45d61ca58c6.ctex to res://.assets/asset/editor/DialogLink.png
+res://.godot/imported/DialogLinkItem.svg-a51b5778c2d75b6dd7bd4636dcc901ed.ctex to res://.assets/asset/editor/DialogLinkItem.png
+res://.godot/imported/DialogLinkOperator.svg-5775082624c1ab86570e334b3da28dc2.ctex to res://.assets/asset/editor/DialogLinkOperator.png
+res://.godot/imported/DialogLinkQuest.svg-01073d0162eaf60e8531bb5f662bd621.ctex to res://.assets/asset/editor/DialogLinkQuest.png
+res://.godot/imported/DialogLinkQuestion.svg-4c86a17c17ebdc81152480477fb2ed28.ctex to res://.assets/asset/editor/DialogLinkQuestion.png
+res://.godot/imported/Enemy.svg-69a59f78b618621770ec6afc59607550.s3tc.ctex to res://.assets/asset/editor/Enemy.png
+res://.godot/imported/Event.svg-c987ebe5efb1124daf0baa63c491457f.ctex to res://.assets/asset/editor/Event.png
+res://.godot/imported/EventTree.svg-7ec7376bcb2c368271fd7cdbd0f41308.ctex to res://.assets/asset/editor/EventTree.png
+res://.godot/imported/Friendly.svg-3dd75c34cd212c5cb4b8cc7277bfe326.ctex to res://.assets/asset/editor/Friendly.png
+res://.godot/imported/Gun.svg-cef4e1bf30f2fff1f796a0ed7c08c008.ctex to res://.assets/asset/editor/Gun.png
+res://.godot/imported/LevelManager.svg-0be514798f05f5de27c8ec7e2294b7ae.ctex to res://.assets/asset/editor/LevelManager.png
+res://.godot/imported/LevelScript.svg-cbb4f54b6c84c3dc717ceea9bb03e1c6.ctex to res://.assets/asset/editor/LevelScript.png
+res://.godot/imported/Player.svg-a0f3c4bbaf740598a77b8b6ecb5eb756.ctex to res://.assets/asset/editor/Player.png
+res://.godot/imported/PlayerSpawn.svg-4d044d5c502396e3b2213aac9de4de8e.ctex to res://.assets/asset/editor/PlayerSpawn.png
+res://.godot/imported/SkillChip.svg-38c1105dd8620077adb5910a7f623ac9.ctex to res://.assets/asset/editor/SkillChip.png
+res://.godot/imported/Warp.svg-95234bdb66768a141a91617ba92c19e8.ctex to res://.assets/asset/editor/Warp.png
+res://.godot/imported/WarpPoint.svg-982670fef3f7035832e8b1d4e26d62d0.ctex to res://.assets/asset/editor/WarpPoint.png
+res://.godot/imported/WarpTarget.svg-b297ba3f03dce24d23199d884484b952.ctex to res://.assets/asset/editor/WarpTarget.png
+------
+
+The following files were not converted because support has not been implemented yet:
+res://.godot/imported/suit.blend-7f19d2c081207a2146f477d4e0075373.scn
+res://.godot/imported/glasses.blend-edd4bff2ffc9dd9355c6b0ebf5f43250.scn
+res://.godot/imported/mustache.blend-a0e6dcbed06872c6cff24704b9b25adf.scn
+res://.godot/imported/old_mustache.blend-ccd21c3ce250a0263a9e49c45f2c06f6.scn
+res://.godot/imported/sunflower_glasses.blend-a524e37da328e092414a4c7ab3e9ffab.scn
+res://.godot/imported/beanie.blend-86210dd3a286759b96da9554db79caf4.scn
+res://.godot/imported/cap.blend-85a2ed5f729e251ba6ef97c81daeb06f.scn
+res://.godot/imported/cowboy_hat.blend-77e0502bc3217a55f68be86776a88205.scn
+res://.godot/imported/fungus.blend-a077ef7745a168f44cb4c362641ad5c1.scn
+res://.godot/imported/knight_helmet.blend-748ed26409f0c4479d7b6d9d7c84245f.scn
+res://.godot/imported/propeller.blend-4210601ca56f47520847691e8c09fa42.scn
+res://.godot/imported/stem.blend-b06dd2ceb5a82eae8e278724cad33e27.scn
+res://.godot/imported/sunflower.blend-1321e286ab54e1f85af496255cf97cd9.scn
+res://.godot/imported/studio.blend-0e97d427205b26b45a37358d014f406f.scn
+res://.godot/imported/ice_cream.blend-d47e371dffede1421c129736d03d8aba.scn
+res://.godot/imported/star.blend-35e2e7a43646e5f21fea916c3acf9dc2.scn
+res://.godot/imported/crate_debris.blend-2a48d9a331510eb70f422926064ded0e.scn
+res://.godot/imported/dirt_debris.blend-eea74437053dbd838e2544c479d2dbef.scn
+res://.godot/imported/stone_debris.blend-04c5479b6a9cc6949286a406a35e575a.scn
+res://.godot/imported/dust.blend-9623bc5b27b3260b3bbbcc3548a4af23.scn
+res://.godot/imported/plane_padded.blend-f0cb66af36dbf1ceb09ac0e2f41ce7b3.scn
+res://.godot/imported/plane_padded_centered.blend-98ce22a2eb95625ba78456d5902ad031.scn
+res://.godot/imported/star.blend-7df263869d8b87bb90e76f14f9c119c4.scn
+res://.godot/imported/bomb.blend-4c9ff26981e68bffd83d4b11a20fa01f.scn
+res://.godot/imported/bomb_texrend.blend-571cb59be0943f2a3a7a995463809d94.scn
+res://.godot/imported/cage.blend-5d472f6c87abf8663fafc0e5979f8bdb.scn
+res://.godot/imported/boom_crate.blend-68ee2e4a4d0de89a91deaaaca0ffd504.scn
+res://.godot/imported/box.blend-71b2ba4a28ba024f1da65b513bd2b2e5.scn
+res://.godot/imported/flower_prince.blend-e579940be8c28166ec63a080ed5e93a9.scn
+res://.godot/imported/kelp_1.blend-a20fc94df775a1acbd9c63a2e5dee447.scn
+res://.godot/imported/mp_ruins_1.blend-db10ffdc418313b543c323d87e573e1c.scn
+res://.godot/imported/pole.blend-14cac91a2fc8d2ffda27f19923fa5564.scn
+res://.godot/imported/seed.blend-00734a2e473bacebbb7d81ac08089481.scn
+res://.godot/imported/sign.blend-0a5a75b4cd5e0adca4dbbd194ed8dc11.scn
+res://.godot/imported/soda.blend-2c32a1dd33c1e2b196e7009ba62df786.scn
+res://.godot/imported/springboard.blend-08fde37c9f3952c76934bed6ea440b3d.scn
+res://.godot/imported/mushroom.blend-9c6fdc9f365a9711264069f9e0ba3d72.scn
+res://.godot/imported/tree.blend-ddcc9dca88ffdfe226de6321fcbb8f58.scn
+res://.godot/imported/jack.blend-3f19e98003f3ff4634733a8bfafb6b68.scn
+res://.godot/imported/flying_fortress.glb-5d507ab1ba0f55fb0ea1b781b731a2f3.scn
+res://.godot/imported/hc_ruins_castle.blend-c919292d04403c8ee35650c3ce536a08.scn
+res://.godot/imported/hc_ruins_tower_arena.blend-ac431cc78c5a8ba1d6017322ebb37b79.scn
+res://.godot/imported/test_map1.blend-722179e4565bec7522d70f9c1deab0ff.scn
+res://.godot/imported/test_map2.blend-a899f9f83c2217466bdd88ce8c210158.scn
+res://.godot/imported/test_water.blend-3e07d3becf0ff6aa5dd71c6dbe749fef.scn
+res://.godot/imported/newman.blend-f50d86e951eab1211efc3531bef1861d.scn
+res://.godot/imported/shard.blend-3741f17803863fe775466ec9a52391ee.scn
+res://.godot/imported/camera.blend-5156dc4ffb1324b58bd2704e3a551d38.scn
+res://.godot/imported/clapper.blend-0385f6dd204d752ce75bde96b576a58a.scn
+res://.godot/imported/dialog_bubble.blend-51b77a6fbeaccd513c33639a6ef80c78.scn
+res://.godot/imported/icons.blend-c12b29375202378961ebb972effe50ec.scn
+res://.godot/imported/lifebar.blend-83b7056eba3ee92e59d24c89a01be964.scn
+res://.godot/imported/src_textures.blend-04f25fb9775ac923f265e395e24865e7.scn
+res://.godot/imported/scroll.blend-6bf595f9550055df2ae1d9121c2da156.scn
+res://.godot/imported/logo_demo.blend-a1d6604e41dbd2a2f62d9fe1ac228c80.scn
+res://.godot/imported/logo_horizontal.blend-6a066b667902aea5d66136e1c86e1456.scn
+res://.godot/imported/logo_horizontal_ingame.blend-c029f847ee92ca8b18a64a4a09a8ac3b.scn
+res://.godot/imported/logo_test_release.blend-1702cf4f2f32a3e5de785a142ace008a.scn
+res://.godot/imported/logo_vertical.blend-83d6f67f2fa8507238075574772bafbe.scn
+res://.godot/imported/dummy.dialogue-a431bd1fc641f58810cd94cb11afbbb0.tres
+res://.godot/imported/flower_prince_intro.dialogue-c738744709281319a78f4d317529f47b.tres
+res://.godot/imported/flower_prince_mean.dialogue-d40df846eda4a2fe29fa366ca606835c.tres
+res://.godot/imported/fortress_fluff.dialogue-39716c08bd6663b4672963ad83872ca6.tres
+res://.godot/imported/help_fungi.dialogue-ffaa3d684d8532b5e4aea3a59e83234d.tres
+res://.godot/imported/introduction_1.dialogue-936a81b199faa271a9bcca10a6ce14d9.tres
+res://.godot/imported/ruins_castle_fluff1.dialogue-a6ae6e54c3fa3fdf1c3978168425fe7a.tres
+res://.godot/imported/ruins_outside_fluff.dialogue-ba5e0bae7b8730e0457b42e7c5a5d902.tres
+res://.godot/imported/tutorial_jump.dialogue-d008784d2ab1e639d25bca6fb472d1ba.tres
+res://.godot/imported/tutorial_move.dialogue-b0a633abc3818e2b80a1ddd50ec70ad6.tres
+
+
+
+---------------------------------IMPORTANT NOTES----------------------------------
+
+The following resource types were detected in the project that conversion is not implemented for yet:
+Type: PackedScene         	Format: blend
+Type: PackedScene         	Format: glb
+Type: Resource            	Format: dialogue
+See Export Report to see which resources were not exported.
+You will still be able to edit the project in the editor regardless.
+-------
+The following addons failed to have their libraries copied or plugin.cfg regenerated:
+- dialogue_manager
+- extra_export_hints
+You may encounter editor errors due to this.
+Tip: Try finding the plugin in the Godot Asset Library or Github.
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.2.1 to edit the project.
+Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
+If you find that you have many non-import errors upon opening the project 
+(i.e. scripts or shaders have many errors), use the original game's binary as the export template.
+
+*******************************************************************************
+

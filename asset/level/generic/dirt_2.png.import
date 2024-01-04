@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://byg8so7e1wx18"
+path="res://.godot/imported/dirt_2.png-2c80390fad78e4b91020cdbbf895173d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/level/generic/dirt_2.png"
+dest_files=PackedStringArray("res://.godot/imported/dirt_2.png-2c80390fad78e4b91020cdbbf895173d.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bevipth3tferk"
+path="res://.godot/imported/beep.wav-2f7e36ed65aa001006d8a9bf66f2a47b.sample"
+
+[deps]
+
+source_file="res://audio/sfx/beep.wav"
+dest_files=PackedStringArray("res://.godot/imported/beep.wav-2f7e36ed65aa001006d8a9bf66f2a47b.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

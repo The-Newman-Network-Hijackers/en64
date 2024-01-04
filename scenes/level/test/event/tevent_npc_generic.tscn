@@ -1,0 +1,141 @@
+[gd_scene load_steps=20 format=3 uid="uid://decguyo1xe48f"]
+
+[ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/subarea.gd" id="3"]
+[ext_resource type="Shader" path="res://asset/shader/n64_lit.gdshader" id="4"]
+[ext_resource type="Texture2D" uid="uid://ccjkkc6wvrhra" path="res://asset/level/generic/tile_3.png" id="5"]
+[ext_resource type="Script" path="res://scripts/warp_point.gd" id="6"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="7"]
+[ext_resource type="Script" path="res://res_inputprompt.gd" id="8"]
+[ext_resource type="PackedScene" uid="uid://7hfkfh52rr0t" path="res://asset/entity/sign/sign.blend" id="9"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/et_npc_stationary.tscn" id="10"]
+[ext_resource type="Resource" uid="uid://bxrct8axqyc8x" path="res://data/dialogue/dummy.dialogue" id="11"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+level_name = "tevent_npc_generic"
+level_desc = "Test of instanced EventTree"
+is_menu = false
+flags = {}
+
+[sub_resource type="ProceduralSkyMaterial" id="2"]
+sky_top_color = Color(0.380392, 0.305882, 0.737255, 1)
+sky_horizon_color = Color(0.556863, 0.737255, 0.898039, 1)
+sky_curve = 0.109806
+ground_bottom_color = Color(0.744301, 0.849874, 0.946492, 1)
+ground_horizon_color = Color(0.555326, 0.735623, 0.896689, 1)
+ground_curve = 0.259921
+sun_angle_max = 0.0
+use_debanding = false
+
+[sub_resource type="Sky" id="3"]
+sky_material = SubResource("2")
+
+[sub_resource type="Environment" id="4"]
+background_mode = 2
+sky = SubResource("3")
+ambient_light_source = 3
+ambient_light_sky_contribution = 0.31
+reflected_light_source = 2
+tonemap_mode = 2
+ssao_radius = 1.08
+ssao_intensity = 0.0
+ssao_sharpness = 0.89
+ssil_intensity = 0.0
+fog_light_color = Color(0.741176, 0.764706, 0.803922, 1)
+volumetric_fog_density = 0.0165
+volumetric_fog_albedo = Color(0.933594, 0.601563, 0.667969, 1)
+volumetric_fog_anisotropy = 0.9
+volumetric_fog_ambient_inject = 1.19
+adjustment_saturation = 8.0
+
+[sub_resource type="ShaderMaterial" id="5"]
+render_priority = 0
+shader = ExtResource("4")
+shader_parameter/modulate_color = Color(1, 1, 1, 1)
+shader_parameter/normal_scale = null
+shader_parameter/uv_scale = Vector2(10, 10)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/albedoTex = ExtResource("5")
+
+[sub_resource type="QuadMesh" id="6"]
+material = SubResource("5")
+size = Vector2(150, 150)
+orientation = 1
+
+[sub_resource type="Resource" id="7"]
+script = ExtResource("8")
+input = Array[StringName]([&"interact"])
+render_as_analog = false
+equip_icon = -1
+message = "to Interact"
+
+[sub_resource type="BoxShape3D" id="8"]
+size = Vector3(7.5, 17.5, 8)
+
+[node name="tevent_npc_generic" type="Node" node_paths=PackedStringArray("subareas")]
+script = ExtResource("1")
+data = SubResource("1")
+subareas = [NodePath("0")]
+
+[node name="0" type="Node3D" parent="."]
+script = ExtResource("3")
+
+[node name="sun" type="DirectionalLight3D" parent="0"]
+transform = Transform3D(0.890617, 0.214749, 0.400853, -0.210465, -0.58674, 0.781947, 0.403119, -0.780781, -0.477364, 4.7367, 3.0656, -1.46723)
+light_bake_mode = 1
+shadow_bias = 0.05
+shadow_normal_bias = 3.5
+directional_shadow_mode = 0
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 800.0
+
+[node name="environment" type="WorldEnvironment" parent="0"]
+environment = SubResource("4")
+
+[node name="level" type="Node" parent="0"]
+
+[node name="csg_box_3d" type="CSGMesh3D" parent="0/level"]
+use_collision = true
+collision_mask = 0
+mesh = SubResource("6")
+
+[node name="warp" type="Node" parent="0"]
+
+[node name="warp_point" type="Marker3D" parent="0/warp" groups=["Warp"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
+gizmo_extents = 2.5
+script = ExtResource("6")
+
+[node name="entity" type="Node" parent="0"]
+
+[node name="interactable" type="Area3D" parent="0/entity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 50)
+script = ExtResource("7")
+event_tree = NodePath("../../event/et_sign")
+event_priority = 1
+input_prompt = SubResource("7")
+
+[node name="col" type="CollisionShape3D" parent="0/entity/interactable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, -1.25, -6)
+shape = SubResource("8")
+
+[node name="sign" parent="0/entity/interactable" instance=ExtResource("9")]
+
+[node name="talk_cam" type="Camera3D" parent="0/entity/interactable"]
+transform = Transform3D(-0.79635, 0, -0.604835, 0, 1, 0, 0.604835, 0, -0.79635, -6.46135, 4.11433, -12.7395)
+
+[node name="event" type="Node" parent="0"]
+
+[node name="et_sign" parent="0/event" instance=ExtResource("10")]
+
+[node name="cam_in" parent="0/event/et_sign" index="1"]
+camera = NodePath("../../../entity/interactable/talk_cam")
+
+[node name="dialog" parent="0/event/et_sign" index="2"]
+dialog = ExtResource("11")
+title = "dummy"
+
+[editable path="0/event/et_sign"]

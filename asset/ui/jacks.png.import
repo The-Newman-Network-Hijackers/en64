@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cd0yjqrsc13ju"
+path="res://.godot/imported/jacks.png-35aa4510fde51bc9e60815b88085e862.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/jacks.png"
+dest_files=PackedStringArray("res://.godot/imported/jacks.png-35aa4510fde51bc9e60815b88085e862.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

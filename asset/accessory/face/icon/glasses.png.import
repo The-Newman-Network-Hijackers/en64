@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://modfqnb1pdjy"
+path="res://.godot/imported/glasses.png-80b82a7c0ae82759f35b8661fb63218e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/accessory/face/icon/glasses.png"
+dest_files=PackedStringArray("res://.godot/imported/glasses.png-80b82a7c0ae82759f35b8661fb63218e.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

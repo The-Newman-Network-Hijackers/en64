@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://de2tgby6eo63n"
+path="res://.godot/imported/punch_2.wav-240739aea82809470e5c6c5d221b0be8.sample"
+
+[deps]
+
+source_file="res://audio/sfx/punch_2.wav"
+dest_files=PackedStringArray("res://.godot/imported/punch_2.wav-240739aea82809470e5c6c5d221b0be8.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

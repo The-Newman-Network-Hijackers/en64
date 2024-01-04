@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ShardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_prop.gd" id="1"]
+
+[resource]
+script = ExtResource( "1" )
+shard_name = "10 Golden Jacks Atop The Fort"
+shard_location = "Flying Fortress"
+shard_description = "A wonderful reward for finding completing the set of Golden Jacks in the hidden Flying Fortress."
+shard_hint = "Stumble upon the hidden Flying Fortress and initiate the Golden Jack hunt within!"

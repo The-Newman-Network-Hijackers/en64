@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://vccdddj0gge1"]
+
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/warp_point.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/event_tree.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/event_warp.gd" id="4"]
+[ext_resource type="Material" uid="uid://rl4acufyku6b" path="res://asset/level/test/mat/checkerboard_red.tres" id="5"]
+
+[sub_resource type="BoxShape3D" id="1"]
+size = Vector3(5, 5, 5)
+
+[node name="teleporter" type="Area3D"]
+script = ExtResource("1")
+event_tree = NodePath("teleporter_event")
+
+[node name="target_position" type="Marker3D" parent="." groups=["Warp"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, 0)
+gizmo_extents = 2.5
+script = ExtResource("2")
+id = 0
+
+[node name="teleporter_event" type="Node" parent="."]
+script = ExtResource("3")
+
+[node name="teleport_to" type="Node" parent="teleporter_event"]
+script = ExtResource("4")
+target_id = 0
+
+[node name="visual" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+size = Vector3(5, 5, 5)
+material = ExtResource("5")
+
+[node name="collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("1")

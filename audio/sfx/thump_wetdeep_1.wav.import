@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7orj761oae82"
+path="res://.godot/imported/thump_wetdeep_1.wav-10e9fd85894e963f3f2a882bd4603641.sample"
+
+[deps]
+
+source_file="res://audio/sfx/thump_wetdeep_1.wav"
+dest_files=PackedStringArray("res://.godot/imported/thump_wetdeep_1.wav-10e9fd85894e963f3f2a882bd4603641.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

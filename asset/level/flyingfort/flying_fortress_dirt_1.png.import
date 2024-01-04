@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cctkmnompdnp8"
+path="res://.godot/imported/flying_fortress_dirt_1.png-3eeb0dfcdffb19141ef236d1a74ceccd.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://asset/level/flyingfort/flying_fortress_dirt_1.png"
+dest_files=PackedStringArray("res://.godot/imported/flying_fortress_dirt_1.png-3eeb0dfcdffb19141ef236d1a74ceccd.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

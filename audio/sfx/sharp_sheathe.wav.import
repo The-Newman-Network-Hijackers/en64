@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bnrik1koqn0a6"
+path="res://.godot/imported/sharp_sheathe.wav-3a5fdd0ddc9372b636af87e57f1b2057.sample"
+
+[deps]
+
+source_file="res://audio/sfx/sharp_sheathe.wav"
+dest_files=PackedStringArray("res://.godot/imported/sharp_sheathe.wav-3a5fdd0ddc9372b636af87e57f1b2057.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

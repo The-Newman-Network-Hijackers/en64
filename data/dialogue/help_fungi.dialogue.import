@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://deogoi8iu2tmw"
+path="res://.godot/imported/help_fungi.dialogue-ffaa3d684d8532b5e4aea3a59e83234d.tres"
+
+[deps]
+
+source_file="res://data/dialogue/help_fungi.dialogue"
+dest_files=PackedStringArray("res://.godot/imported/help_fungi.dialogue-ffaa3d684d8532b5e4aea3a59e83234d.tres")
+
+[params]
+
+dummy_value_ignore_me=0

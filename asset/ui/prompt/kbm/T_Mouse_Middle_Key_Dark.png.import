@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://kw4d78awt1x2"
+path="res://.godot/imported/T_Mouse_Middle_Key_Dark.png-a91330c893fc800f3dcbdd3a29b4f5a4.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_Mouse_Middle_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_Mouse_Middle_Key_Dark.png-a91330c893fc800f3dcbdd3a29b4f5a4.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

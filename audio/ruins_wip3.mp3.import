@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cubw5h7cpegby"
+path="res://.godot/imported/ruins_wip3.mp3-6bae2e6937eb6b1dcf87ea2b17962011.mp3str"
+
+[deps]
+
+source_file="res://audio/ruins_wip3.mp3"
+dest_files=PackedStringArray("res://.godot/imported/ruins_wip3.mp3-6bae2e6937eb6b1dcf87ea2b17962011.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

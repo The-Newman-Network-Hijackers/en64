@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ShardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_prop.gd" id="1"]
+
+[resource]
+script = ExtResource( "1" )
+shard_name = "Caged In Plain Sight"
+shard_location = "History Channel (Tower)"
+shard_description = "This Shard watches over the Ruins with the Prince, albeit not willingly..."
+shard_hint = "Locate and blow up the caged Shard on the outer Ruins Tower."

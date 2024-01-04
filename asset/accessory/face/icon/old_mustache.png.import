@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dc3uycgpgxdvb"
+path="res://.godot/imported/old_mustache.png-3c8df28e19b38fcc44fb1bf252cacc0d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/accessory/face/icon/old_mustache.png"
+dest_files=PackedStringArray("res://.godot/imported/old_mustache.png-3c8df28e19b38fcc44fb1bf252cacc0d.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

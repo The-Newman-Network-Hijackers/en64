@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://gw40glndaeu0"
+path="res://.godot/imported/wood_damage2.wav-588d97ebb2b9e14fc1f02d4fcf762d55.sample"
+
+[deps]
+
+source_file="res://audio/sfx/wood_damage2.wav"
+dest_files=PackedStringArray("res://.godot/imported/wood_damage2.wav-588d97ebb2b9e14fc1f02d4fcf762d55.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

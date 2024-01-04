@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ShardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_prop.gd" id="1"]
+
+[resource]
+script = ExtResource( "1" )
+shard_name = "Breaking and Entering"
+shard_location = "History Channel (Tower)"
+shard_description = "This Shard lives a slow life, looking over boxes and... well, theres not much more to it.	"
+shard_hint = "Stuck in storage, you wont be able to reach it through conventional means. Maybe theres another way inside?"

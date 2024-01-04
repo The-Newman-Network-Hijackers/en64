@@ -1,0 +1,291 @@
+[gd_scene load_steps=24 format=3]
+
+[ext_resource type="Script" path="res://scripts/entity.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/state_machine.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://24mxjfeo4mul" path="res://asset/effect/debris/tex/f_dirt/f_dirt_0000.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://crhjl07jgwm1n" path="res://asset/effect/debris/tex/f_dirt/f_dirt_0001.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://2nam2h4bkocw" path="res://asset/effect/debris/tex/f_dirt/f_dirt_0002.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://hoiy633assrj" path="res://asset/effect/debris/tex/f_dirt/f_dirt_0003.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dykclju7844tx" path="res://asset/effect/debris/tex/f_dirt/f_dirt_0004.png" id="7"]
+[ext_resource type="AudioStream" uid="uid://ji32o4tlwv3r" path="res://audio/sfx/stone_thud1.wav" id="8"]
+[ext_resource type="AudioStream" uid="uid://dsad0ut44y6r0" path="res://audio/sfx/stone_thud2.wav" id="9"]
+
+[sub_resource type="GDScript" id="1"]
+resource_name = "bj_bouncing"
+script/source = "# bj_bouncing.gd
+extends State
+
+'''
+Bouncing Jack => Bouncing state
+'''
+
+@onready var bj := owner as Entity
+
+# Last known y velocity
+var last_yvel : float = 0
+
+func _enter(_msg := {}) -> void:
+	# Resize debris a random amount
+	bj.visual_node.pixel_size = 0.115 + randf_range(-0.02, 0.04)
+	bj.visual_node.frame = randi_range(0, 4)
+
+func _state_physics_process(delta : float) -> void:
+	# Update physics
+	bj.update_movement(delta)
+
+	# Check if on wall
+	if bj.is_on_wall_only():
+		# Bounce from wall
+		var normal = bj.get_wall_normal().normalized()
+		var new_vel = bj.velocity.reflect(normal).normalized()
+		print(Vector2(new_vel.x, new_vel.z).angle())
+		bj.vis_rotation.y = Vector2(new_vel.x, new_vel.z).angle()
+		
+		# Play sound
+		play_sfx()
+		
+	# Check if on floor
+	if bj.is_on_floor():
+		# Stick to floor if vel is low enough
+		if last_yvel > -10.0:
+			state_machine.transition_state(\"idle\")
+			return
+		bj.forward_speed *= 0.7
+		bj.velocity.y = -last_yvel * 0.6
+		
+		# Play sound
+		play_sfx()
+		
+	# Set last yvel
+	last_yvel = bj.velocity.y
+	
+# FUNCTION
+#-------------------------------------------------------------------------------
+
+func play_sfx() -> void:
+	bj.get_node(\"sfx/thud\").play()
+"
+
+[sub_resource type="GDScript" id="2"]
+resource_name = "bj_idle"
+script/source = "# bj_idle.gd
+extends State
+
+'''
+Bouncing Jack => Idle state
+'''
+
+@onready var bj := owner as Entity
+@onready var timer := $despawn_timer as Timer
+
+func _enter(_msg := {}) -> void:
+	# Fire timer
+	timer.start()
+
+func _state_physics_process(delta : float) -> void:
+	# Update physics
+	bj.visual_node = bj.visual_node as AnimatedSprite3D
+	if !is_zero_approx(bj.forward_speed):
+		bj.update_movement(delta)
+		bj.forward_speed = bj.ease_value(bj.forward_speed, 0, bj.deacceleration, delta)
+	elif is_zero_approx(bj.forward_speed) && bj.visual_node.is_playing():
+		bj.visual_node.pause()
+	
+func _jack_collected() -> void:
+	timer.stop()
+	bj.queue_free()
+
+func _timer_timeout() -> void:
+	bj.set_anim(\"despawn\")
+"
+
+[sub_resource type="SpriteFrames" id="3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource( "3" )
+}, {
+"duration": 1.0,
+"texture": ExtResource( "4" )
+}, {
+"duration": 1.0,
+"texture": ExtResource( "5" )
+}, {
+"duration": 1.0,
+"texture": ExtResource( "6" )
+}, {
+"duration": 1.0,
+"texture": ExtResource( "7" )
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+script = null
+
+[sub_resource type="AudioStreamRandomizer" id="4"]
+playback_mode = 1
+random_pitch = 1.1
+streams_count = 2
+stream_0/stream = ExtResource( "8" )
+stream_0/weight = 1.0
+stream_1/stream = ExtResource( "9" )
+stream_1/weight = 1.0
+script = null
+
+[sub_resource type="Animation" id="5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("vis/sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+script = null
+
+[sub_resource type="Animation" id="6"]
+resource_name = "despawn"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("vis/sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="7"]
+_data = {
+"RESET": SubResource( "5" ),
+"despawn": SubResource( "6" )
+}
+script = null
+
+[sub_resource type="AnimationNodeAnimation" id="8"]
+animation = &"RESET"
+script = null
+
+[sub_resource type="AnimationNodeAnimation" id="9"]
+animation = &"despawn"
+script = null
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="10"]
+advance_mode = 2
+script = null
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="11"]
+script = null
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="12"]
+switch_mode = 2
+advance_mode = 2
+script = null
+
+[sub_resource type="AnimationNodeStateMachine" id="13"]
+states/End/node = null
+states/RESET/node = SubResource( "8" )
+states/RESET/position = Vector2(406, 100)
+states/Start/node = null
+states/despawn/node = SubResource( "9" )
+states/despawn/position = Vector2(621, 100)
+transitions = ["Start", "RESET", SubResource( "10" ), "RESET", "despawn", SubResource( "11" ), "despawn", "End", SubResource( "12" )]
+graph_offset = Vector2(43, -35)
+script = null
+
+[sub_resource type="CylinderShape3D" id="14"]
+height = 3.0
+radius = 2.0
+script = null
+
+[node name="debris_dirt" type="CharacterBody3D"]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource( "1" )
+visual_node = NodePath("vis/sprite")
+floor_raycast = NodePath("floor")
+anim_tree = NodePath("tree")
+deacceleration = 60.0
+jtt_peak = 0.45
+
+[node name="fsm" type="Node" parent="."]
+script = ExtResource( "2" )
+initial_state = NodePath("bouncing")
+
+[node name="bouncing" type="Node" parent="fsm"]
+script = SubResource( "1" )
+
+[node name="idle" type="Node" parent="fsm"]
+script = SubResource( "2" )
+
+[node name="despawn_timer" type="Timer" parent="fsm/idle"]
+
+[node name="vis" type="Node3D" parent="."]
+
+[node name="sprite" type="AnimatedSprite3D" parent="vis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09223, 0)
+pixel_size = 0.1045
+billboard = 1
+shaded = true
+double_sided = false
+texture_filter = 5
+sprite_frames = SubResource( "3" )
+autoplay = "default"
+frame_progress = 0.691532
+
+[node name="sfx" type="Node3D" parent="."]
+
+[node name="thud" type="AudioStreamPlayer3D" parent="sfx"]
+stream = SubResource( "4" )
+attenuation_model = 3
+volume_db = -5.0
+max_db = -2.0
+max_distance = 110.0
+bus = &"Sound"
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource( "7" )
+}
+
+[node name="tree" type="AnimationTree" parent="."]
+libraries = {
+"": SubResource( "7" )
+}
+tree_root = SubResource( "13" )
+anim_player = NodePath("../anim")
+
+[node name="floor" type="RayCast3D" parent="."]
+target_position = Vector3(0, -20, 0)
+debug_shape_thickness = 5
+
+[node name="col" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35, 0)
+shape = SubResource( "14" )
+
+[connection signal="timeout" from="fsm/idle/despawn_timer" to="fsm/idle" method="_timer_timeout"]

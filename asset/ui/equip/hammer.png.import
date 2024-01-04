@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dsnq3n0le7d55"
+path="res://.godot/imported/hammer.png-476b10542eb27547d2ae58b6cbfaa9b9.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/equip/hammer.png"
+dest_files=PackedStringArray("res://.godot/imported/hammer.png-476b10542eb27547d2ae58b6cbfaa9b9.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

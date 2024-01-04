@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://brk5o0p2y2cf0"
+path="res://.godot/imported/__auto_32.png-d945ba17396c10d5cb183b1bc4a9be8b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/level/flyingfort/textures/__auto_32.png"
+dest_files=PackedStringArray("res://.godot/imported/__auto_32.png-d945ba17396c10d5cb183b1bc4a9be8b.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

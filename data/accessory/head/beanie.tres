@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AccessoryData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_accessory.gd" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://dles2t6fpqqg3" path="res://asset/accessory/head/mesh/beanie.res" id="2"]
+[ext_resource type="Material" uid="uid://cshv6ck6tu0um" path="res://asset/accessory/head/material/vtx_beanie.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://cassaddaue3ga" path="res://asset/accessory/head/icon/beanie.png" id="4"]
+
+[resource]
+script = ExtResource( "1" )
+type = 1
+model = ExtResource( "2" )
+offset = Vector3(0, 1.5, 0)
+primary_material = ExtResource( "3" )
+primary_surface = 0
+secondary_material = null
+secondary_surface = 1
+name = "Beanie"
+description = "An urban spin on the adventuring atire!"
+icon = ExtResource( "4" )
+icon_modulation = Color(1, 1, 1, 1)

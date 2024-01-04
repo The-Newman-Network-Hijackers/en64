@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dqy65hbxxihsf"
+path="res://.godot/imported/T_NumLock_Key_Dark.png-a0820a8f7e207a8237ba3519911a0273.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_NumLock_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_NumLock_Key_Dark.png-a0820a8f7e207a8237ba3519911a0273.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

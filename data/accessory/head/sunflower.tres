@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="AccessoryData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_accessory.gd" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://cm45rk7qnt3tt" path="res://asset/accessory/head/mesh/sunflower.res" id="2"]
+[ext_resource type="Texture2D" uid="uid://b8xd6x5p88nq6" path="res://asset/accessory/head/icon/sunflower.png" id="3"]
+
+[resource]
+script = ExtResource( "1" )
+type = 1
+model = ExtResource( "2" )
+offset = Vector3(0, 1.25, 0)
+primary_material = null
+primary_surface = 0
+secondary_material = null
+secondary_surface = 1
+name = "Sunflower"
+description = "Eureka, new life!"
+icon = ExtResource( "3" )
+icon_modulation = Color(1, 1, 1, 1)

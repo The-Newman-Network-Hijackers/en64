@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ShardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_prop.gd" id="1"]
+
+[resource]
+script = ExtResource( "1" )
+shard_name = "The Hunt For 10 Golden Jacks"
+shard_location = "History Channel (Ruins)"
+shard_description = "A wonderful reward for finding completing the set of Golden Jacks in the History Channel."
+shard_hint = "Locate the bouncing rubber ball to initiate the Golden Jack hunt!"

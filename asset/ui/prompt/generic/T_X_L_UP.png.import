@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ehmcdd6xw5qj"
+path="res://.godot/imported/T_X_L_UP.png-cb0b974a17207af8d6a5b4904986fcf3.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/generic/T_X_L_UP.png"
+dest_files=PackedStringArray("res://.godot/imported/T_X_L_UP.png-cb0b974a17207af8d6a5b4904986fcf3.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,216 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_2173g"]
+
+[resource]
+script = ExtResource("1_2173g")
+titles = {
+"ruins_fluff1": "20",
+"ruins_fluff2": "29",
+"ruins_glove_tutorial": "3",
+"ruins_movement_tutorial": "11"
+}
+character_names = PackedStringArray("Sign")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "ruins_glove_tutorial",
+"type": "title"
+},
+"11": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"tags": PackedStringArray(),
+"text": "If you've ever wanted to go further, jump higher, and generally get around more efficiently--",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you've ever wanted to go further, jump higher, and generally get around more efficiently--",
+"type": "dialogue"
+},
+"12": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"tags": PackedStringArray(),
+"text": "Give your ground pound move a shot by pressing [b]LT[/b] on controller or [b]SHIFT[/b] on keyboard.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Give your ground pound move a shot by pressing [b]LT[/b] on controller or [b]SHIFT[/b] on keyboard.",
+"type": "dialogue"
+},
+"13": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"tags": PackedStringArray(),
+"text": "Holding down the ground pound button when you touch the floor will spin you forward at great speed. Use this on slopes for massive speed!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Holding down the ground pound button when you touch the floor will spin you forward at great speed. Use this on slopes for massive speed!",
+"type": "dialogue"
+},
+"14": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "16",
+"tags": PackedStringArray(),
+"text": "Good luck out there! 
+- Friendly Stranger",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Good luck out there! 
+- Friendly Stranger",
+"type": "dialogue"
+},
+"16": {
+"id": "16",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"18": {
+"id": "18",
+"next_id": "20",
+"text": "ruins_fluff1",
+"type": "title"
+},
+"20": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"tags": PackedStringArray(),
+"text": "Please don't break the crates! They're very expensive and take a lot of the budget away from, like, the rest of the palace.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Please don't break the crates! They're very expensive and take a lot of the budget away from, like, the rest of the palace.",
+"type": "dialogue"
+},
+"21": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"tags": PackedStringArray(),
+"text": "Especially that billiards room the prince is really insistent on being in full working order... and the budget for the large king-sized waterbed.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Especially that billiards room the prince is really insistent on being in full working order... and the budget for the large king-sized waterbed.",
+"type": "dialogue"
+},
+"22": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "22",
+"next_id": "23",
+"tags": PackedStringArray(),
+"text": "(ADDENDUM: We have no money left for the waterbed. He will be displeased. Terry will get a smaller one and we'll say it's for really small kings.)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "(ADDENDUM: We have no money left for the waterbed. He will be displeased. Terry will get a smaller one and we'll say it's for really small kings.)",
+"type": "dialogue"
+},
+"23": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "23",
+"next_id": "25",
+"tags": PackedStringArray(),
+"text": "Uh, thank you. 
+- Construction Crew",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Uh, thank you. 
+- Construction Crew",
+"type": "dialogue"
+},
+"25": {
+"id": "25",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"27": {
+"id": "27",
+"next_id": "29",
+"text": "ruins_fluff2",
+"type": "title"
+},
+"29": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "30",
+"tags": PackedStringArray(),
+"text": "So, like, whats the deal with this place anyway? The prince cant run nor jump, sooooo...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "So, like, whats the deal with this place anyway? The prince cant run nor jump, sooooo...",
+"type": "dialogue"
+},
+"3": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"tags": PackedStringArray(),
+"text": "If you see a glove print indicator when near an object, that means you can use your gloves to pick it up.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you see a glove print indicator when near an object, that means you can use your gloves to pick it up.",
+"type": "dialogue"
+},
+"30": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "30",
+"next_id": "32",
+"tags": PackedStringArray(),
+"text": "What do we know anyway, as long as the pay is good, [b]it's not our problem![/b]
+- Construction Crew",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What do we know anyway, as long as the pay is good, [b]it's not our problem![/b]
+- Construction Crew",
+"type": "dialogue"
+},
+"32": {
+"id": "32",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"4": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"tags": PackedStringArray(),
+"text": "To equip your gloves, use the [b]DPAD + LB[/b] on controller or the [b]number keys[/b] on keyboard.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "To equip your gloves, use the [b]DPAD + LB[/b] on controller or the [b]number keys[/b] on keyboard.",
+"type": "dialogue"
+},
+"5": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "7",
+"tags": PackedStringArray(),
+"text": "If you need to unequip, press in the direction of your current equipment. 
+- Friendly Stranger",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you need to unequip, press in the direction of your current equipment. 
+- Friendly Stranger",
+"type": "dialogue"
+},
+"7": {
+"id": "7",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"9": {
+"id": "9",
+"next_id": "11",
+"text": "ruins_movement_tutorial",
+"type": "title"
+}
+}
+metadata/dialogue_manager_version = "2.25.0"

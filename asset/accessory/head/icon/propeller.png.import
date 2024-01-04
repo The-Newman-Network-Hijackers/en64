@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cn5l5gnkb3oyx"
+path="res://.godot/imported/propeller.png-26dfd05d838fdc9a0af90c3a0a0c7456.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/accessory/head/icon/propeller.png"
+dest_files=PackedStringArray("res://.godot/imported/propeller.png-26dfd05d838fdc9a0af90c3a0a0c7456.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

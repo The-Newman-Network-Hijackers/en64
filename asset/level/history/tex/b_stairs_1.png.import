@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bjwga8qi0qdkw"
+path="res://.godot/imported/b_stairs_1.png-bc83c2cdf2938a05136a53cbdb36bca0.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/level/history/tex/b_stairs_1.png"
+dest_files=PackedStringArray("res://.godot/imported/b_stairs_1.png-bc83c2cdf2938a05136a53cbdb36bca0.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

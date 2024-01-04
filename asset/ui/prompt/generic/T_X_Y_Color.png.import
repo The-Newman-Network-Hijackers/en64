@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dosl6uaqd5x4t"
+path="res://.godot/imported/T_X_Y_Color.png-53abf75f4f5d0d240b4c35b96db8c65f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/generic/T_X_Y_Color.png"
+dest_files=PackedStringArray("res://.godot/imported/T_X_Y_Color.png-53abf75f4f5d0d240b4c35b96db8c65f.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

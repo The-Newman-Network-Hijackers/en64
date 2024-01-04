@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cn6dnu5uribdk"
+path="res://.godot/imported/collect_jack.wav-df1efeb6be87a3dae1df619cfda4c8df.sample"
+
+[deps]
+
+source_file="res://audio/sfx/collect_jack.wav"
+dest_files=PackedStringArray("res://.godot/imported/collect_jack.wav-df1efeb6be87a3dae1df619cfda4c8df.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

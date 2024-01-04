@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://sav220thwqb3"
+path="res://.godot/imported/crew.png-e554bd8699f95076c5c9f3823ac83326.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://crew.png"
+dest_files=PackedStringArray("res://.godot/imported/crew.png-e554bd8699f95076c5c9f3823ac83326.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

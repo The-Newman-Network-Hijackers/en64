@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "TreeShadow_f3d.003"
+transparency = 4
+cull_mode = 2
+metallic = 1.0
+script = null

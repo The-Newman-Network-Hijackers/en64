@@ -1,0 +1,215 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/level_selector.gd" id="1"]
+[ext_resource type="Theme" uid="uid://botsw3j2gbsx" path="res://asset/ui/generic_ui_theme.tres" id="2"]
+[ext_resource type="FontFile" uid="uid://dk3bac3jmalne" path="res://asset/ui/Basic Comical Regular NC.ttf" id="3"]
+[ext_resource type="Script" path="res://scripts/ls_level_preview.gd" id="4"]
+
+[sub_resource type="Animation" id="1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+script = null
+
+[sub_resource type="Animation" id="2"]
+resource_name = "move"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 6.28319, 0)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="3"]
+_data = {
+"RESET": SubResource( "1" ),
+"move": SubResource( "2" )
+}
+script = null
+
+[sub_resource type="LabelSettings" id="4"]
+line_spacing = 0.0
+font = ExtResource( "3" )
+font_size = 20
+shadow_color = Color(0, 0, 0, 0.34902)
+shadow_offset = Vector2(2, 2)
+script = null
+
+[sub_resource type="LabelSettings" id="5"]
+line_spacing = 0.0
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.666667)
+script = null
+
+[node name="level_selector" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+script = ExtResource( "1" )
+metadata/_edit_use_anchors_ = true
+
+[node name="panel" type="PanelContainer" parent="."]
+layout_mode = 2
+theme = ExtResource( "2" )
+
+[node name="margin" type="MarginContainer" parent="panel"]
+layout_mode = 2
+theme = ExtResource( "2" )
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="horiz_split" type="HSplitContainer" parent="panel/margin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="level_sort" type="VBoxContainer" parent="panel/margin/horiz_split"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="levels" type="Tree" parent="panel/margin/horiz_split/level_sort"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_previous = NodePath("../back")
+theme = ExtResource( "2" )
+scroll_horizontal_enabled = false
+
+[node name="back" type="Button" parent="panel/margin/horiz_split/level_sort"]
+layout_mode = 2
+focus_neighbor_right = NodePath("../../detail_sort/load")
+focus_previous = NodePath("../levels")
+theme = ExtResource( "2" )
+text = "Back"
+
+[node name="detail_sort" type="VBoxContainer" parent="panel/margin/horiz_split"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="preview" type="SubViewportContainer" parent="panel/margin/horiz_split/detail_sort"]
+layout_mode = 2
+size_flags_vertical = 3
+stretch = true
+
+[node name="vp_preview" type="SubViewport" parent="panel/margin/horiz_split/detail_sort/preview"]
+own_world_3d = true
+handle_input_locally = false
+size = Vector2i(280, 170)
+render_target_update_mode = 4
+
+[node name="anchor" type="Node3D" parent="panel/margin/horiz_split/detail_sort/preview/vp_preview"]
+process_mode = 3
+
+[node name="cam" type="Camera3D" parent="panel/margin/horiz_split/detail_sort/preview/vp_preview/anchor"]
+transform = Transform3D(1, 0, 0, 0, 0.911784, 0.410671, 0, -0.410671, 0.911784, 0, 19.6955, 41.9876)
+fov = 65.0
+
+[node name="anim" type="AnimationPlayer" parent="panel/margin/horiz_split/detail_sort/preview/vp_preview/anchor"]
+libraries = {
+"": SubResource( "3" )
+}
+autoplay = "move"
+speed_scale = 0.3
+
+[node name="overlay" type="CanvasLayer" parent="panel/margin/horiz_split/detail_sort/preview/vp_preview"]
+
+[node name="margin" type="MarginContainer" parent="panel/margin/horiz_split/detail_sort/preview/vp_preview/overlay"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_bottom = 4
+
+[node name="name" type="Label" parent="panel/margin/horiz_split/detail_sort/preview/vp_preview/overlay/margin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+text = "Level Name"
+label_settings = SubResource( "4" )
+vertical_alignment = 2
+
+[node name="info" type="RichTextLabel" parent="panel/margin/horiz_split/detail_sort"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource( "2" )
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.239216)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/line_separation = 0
+bbcode_enabled = true
+text = "[color=gray][font_size=20]Level Directory[/font_size][/color]
+~/levels/test/example_name.tscn
+
+[color=gray][font_size=20]Level Description[/font_size][/color]
+Generic test level."
+fit_content = true
+
+[node name="warning" type="Label" parent="panel/margin/horiz_split/detail_sort"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Select a level from the 
+tree to continue."
+label_settings = SubResource( "5" )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="area" type="OptionButton" parent="panel/margin/horiz_split/detail_sort"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../../level_sort/back")
+focus_previous = NodePath("../../level_sort/levels")
+theme = ExtResource( "2" )
+item_count = 1
+selected = 0
+popup/item_0/text = "Area 0"
+popup/item_0/id = 0
+
+[node name="load" type="Button" parent="panel/margin/horiz_split/detail_sort"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../../level_sort/back")
+focus_previous = NodePath("../../level_sort/levels")
+theme = ExtResource( "2" )
+text = "Load"
+
+[node name="ls_level_preview" type="Node" parent="."]
+process_thread_group = 2
+process_thread_group_order = 1
+process_thread_messages = 1
+script = ExtResource( "4" )
+
+[connection signal="item_selected" from="panel/margin/horiz_split/level_sort/levels" to="." method="_level_selected"]
+[connection signal="pressed" from="panel/margin/horiz_split/level_sort/back" to="." method="_back_pressed"]
+[connection signal="pressed" from="panel/margin/horiz_split/detail_sort/load" to="." method="_on_load_pressed"]

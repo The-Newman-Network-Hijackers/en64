@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ccedm241ohjfr"
+path="res://.godot/imported/gj_ball.png-fb7da6f82ee97da639ffe4a003ba3d0e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/entity/gj_ball/gj_ball.png"
+dest_files=PackedStringArray("res://.godot/imported/gj_ball.png-fb7da6f82ee97da639ffe4a003ba3d0e.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

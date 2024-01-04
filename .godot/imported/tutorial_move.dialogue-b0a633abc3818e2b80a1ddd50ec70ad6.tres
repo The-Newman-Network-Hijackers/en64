@@ -1,0 +1,265 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_14chl"]
+
+[resource]
+script = ExtResource("1_14chl")
+titles = {
+"tutorial": "3",
+"tutorial_crouch": "31",
+"tutorial_groundpound": "45",
+"tutorial_jump": "11",
+"tutorial_move": "5",
+"tutorial_roll": "38",
+"tutorial_spin": "26",
+"tutorial_walljump": "19"
+}
+character_names = PackedStringArray()
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "5",
+"text": "tutorial",
+"type": "title"
+},
+"11": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"tags": PackedStringArray(),
+"text": "Tap [[jump]] for a short hop.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tap [[jump]] for a short hop.",
+"type": "dialogue"
+},
+"12": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"tags": PackedStringArray(),
+"text": "Hold [[jump]] for a higher leap.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hold [[jump]] for a higher leap.",
+"type": "dialogue"
+},
+"13": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "15",
+"tags": PackedStringArray(),
+"text": "Press [[jump]] while airborne for a [b]double jump[/b].",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Press [[jump]] while airborne for a [b]double jump[/b].",
+"type": "dialogue"
+},
+"15": {
+"id": "15",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"17": {
+"id": "17",
+"next_id": "19",
+"text": "tutorial_walljump",
+"type": "title"
+},
+"19": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"tags": PackedStringArray(),
+"text": "Jump towards a wall to initiate a [b]wallslide[/b].",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Jump towards a wall to initiate a [b]wallslide[/b].",
+"type": "dialogue"
+},
+"20": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "22",
+"tags": PackedStringArray(),
+"text": "Press [[jump]] while wallsliding to perform a [b]walljump[/b].",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Press [[jump]] while wallsliding to perform a [b]walljump[/b].",
+"type": "dialogue"
+},
+"22": {
+"id": "22",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"24": {
+"id": "24",
+"next_id": "26",
+"text": "tutorial_spin",
+"type": "title"
+},
+"26": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"tags": PackedStringArray(),
+"text": "Press [[interact]] to do a [b]spin attack[/b].",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Press [[interact]] to do a [b]spin attack[/b].",
+"type": "dialogue"
+},
+"27": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "31",
+"tags": PackedStringArray(),
+"text": "You can spin attack while airborne to extend your airtime.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You can spin attack while airborne to extend your airtime.",
+"type": "dialogue"
+},
+"29": {
+"id": "29",
+"next_id": "31",
+"text": "tutorial_crouch",
+"type": "title"
+},
+"3": {
+"id": "3",
+"next_id": "5",
+"text": "tutorial_move",
+"type": "title"
+},
+"31": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "32",
+"tags": PackedStringArray(),
+"text": "Hold [[crouch]] to [b]crouch[/b].",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hold [[crouch]] to [b]crouch[/b].",
+"type": "dialogue"
+},
+"32": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "34",
+"tags": PackedStringArray(),
+"text": "Press [[up,left,down,right]] to waddle while crouching.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Press [[up,left,down,right]] to waddle while crouching.",
+"type": "dialogue"
+},
+"34": {
+"id": "34",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"36": {
+"id": "36",
+"next_id": "38",
+"text": "tutorial_roll",
+"type": "title"
+},
+"38": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "38",
+"next_id": "39",
+"tags": PackedStringArray(),
+"text": "While crouching, press [[interact]] to [b]roll[/b].",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "While crouching, press [[interact]] to [b]roll[/b].",
+"type": "dialogue"
+},
+"39": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "39",
+"next_id": "41",
+"tags": PackedStringArray(),
+"text": "Rolling effectiveness is dependent on terrain. Try rolling down slopes to build speed!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Rolling effectiveness is dependent on terrain. Try rolling down slopes to build speed!",
+"type": "dialogue"
+},
+"41": {
+"id": "41",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"43": {
+"id": "43",
+"next_id": "45",
+"text": "tutorial_groundpound",
+"type": "title"
+},
+"45": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "45",
+"next_id": "46",
+"tags": PackedStringArray(),
+"text": "While airborne, tap [[crouch]] to zoom towards the ground.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "While airborne, tap [[crouch]] to zoom towards the ground.",
+"type": "dialogue"
+},
+"46": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "46",
+"next_id": "48",
+"tags": PackedStringArray(),
+"text": "When [[crouch]] is still held when touching the ground, you'll roll forwards.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "When [[crouch]] is still held when touching the ground, you'll roll forwards.",
+"type": "dialogue"
+},
+"48": {
+"id": "48",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"5": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "7",
+"tags": PackedStringArray(),
+"text": "Press [[up,left,down,right]] to move in a direction.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Press [[up,left,down,right]] to move in a direction.",
+"type": "dialogue"
+},
+"50": {
+"id": "50",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"7": {
+"id": "7",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"9": {
+"id": "9",
+"next_id": "11",
+"text": "tutorial_jump",
+"type": "title"
+}
+}
+metadata/dialogue_manager_version = "2.25.0"

@@ -1,0 +1,165 @@
+[gd_scene load_steps=20 format=3 uid="uid://dhwiu4b1mb3ru"]
+
+[ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/subarea.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/background.gd" id="4"]
+[ext_resource type="Material" path="res://asset/level/skybox/mat/sm_blue.tres" id="5"]
+[ext_resource type="Environment" path="res://asset/environment/env_bg.tres" id="6"]
+[ext_resource type="CameraAttributesPractical" path="res://asset/environment/cap_bg.tres" id="7"]
+[ext_resource type="Script" path="res://scripts/background_cam.gd" id="8"]
+[ext_resource type="Shader" path="res://asset/shader/n64_lit.gdshader" id="9"]
+[ext_resource type="Texture2D" uid="uid://ccjkkc6wvrhra" path="res://asset/level/generic/tile_3.png" id="10"]
+[ext_resource type="Script" path="res://scripts/warp_point.gd" id="11"]
+[ext_resource type="PackedScene" uid="uid://b2okm8qw7p657" path="res://scenes/prefab/trampoline.tscn" id="12"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+level_name = "test_trampoline"
+level_desc = "Trampoline entity test"
+is_menu = false
+flags = {}
+
+[sub_resource type="ProceduralSkyMaterial" id="2"]
+sky_top_color = Color(0.380392, 0.305882, 0.737255, 1)
+sky_horizon_color = Color(0.556863, 0.737255, 0.898039, 1)
+sky_curve = 0.109806
+ground_bottom_color = Color(0.744301, 0.849874, 0.946492, 1)
+ground_horizon_color = Color(0.555326, 0.735623, 0.896689, 1)
+ground_curve = 0.259921
+sun_angle_max = 0.0
+use_debanding = false
+
+[sub_resource type="Sky" id="3"]
+sky_material = SubResource("2")
+
+[sub_resource type="Environment" id="4"]
+background_mode = 3
+background_canvas_max_layer = -127
+sky = SubResource("3")
+ambient_light_source = 3
+ambient_light_sky_contribution = 0.31
+reflected_light_source = 2
+tonemap_mode = 3
+tonemap_exposure = 1.2
+ssao_radius = 1.08
+ssao_intensity = 0.0
+ssao_sharpness = 0.89
+ssil_intensity = 0.0
+fog_light_color = Color(0.741176, 0.764706, 0.803922, 1)
+volumetric_fog_density = 0.0165
+volumetric_fog_albedo = Color(0.933594, 0.601563, 0.667969, 1)
+volumetric_fog_anisotropy = 0.9
+volumetric_fog_ambient_inject = 1.19
+adjustment_saturation = 8.0
+
+[sub_resource type="ArrayMesh" id="5"]
+_surfaces = [{
+"aabb": AABB(-2, -1, 0, 4, 2.00001, 1e-05),
+"attribute_data": PackedByteArray(0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 0, 192, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 0),
+"format": 34359738385,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray(0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0)
+}]
+
+[sub_resource type="ShaderMaterial" id="6"]
+render_priority = 0
+shader = ExtResource("9")
+shader_parameter/modulate_color = Color(1, 1, 1, 1)
+shader_parameter/normal_scale = null
+shader_parameter/uv_scale = Vector2(10, 10)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/albedoTex = ExtResource("10")
+
+[sub_resource type="QuadMesh" id="7"]
+material = SubResource("6")
+size = Vector2(150, 150)
+orientation = 1
+
+[node name="test_trampoline" type="Node" node_paths=PackedStringArray("subareas")]
+script = ExtResource("1")
+data = SubResource("1")
+subareas = [NodePath("0")]
+
+[node name="0" type="Node3D" parent="."]
+script = ExtResource("3")
+
+[node name="sun" type="DirectionalLight3D" parent="0"]
+transform = Transform3D(0.890617, 0.214749, 0.400853, -0.210465, -0.58674, 0.781947, 0.403119, -0.780781, -0.477364, 4.7367, 3.0656, -1.46723)
+light_bake_mode = 1
+shadow_bias = 0.05
+shadow_normal_bias = 3.5
+directional_shadow_mode = 0
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 800.0
+
+[node name="environment" type="WorldEnvironment" parent="0"]
+environment = SubResource("4")
+
+[node name="background" type="CanvasLayer" parent="0"]
+process_mode = 3
+layer = -128
+script = ExtResource("4")
+bg_material = ExtResource("5")
+
+[node name="@SubViewportContainer@156879" type="SubViewportContainer" parent="0/background"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+stretch = true
+
+[node name="@SubViewport@156880" type="SubViewport" parent="0/background/@SubViewportContainer@156879"]
+own_world_3d = true
+handle_input_locally = false
+msaa_3d = 2
+size = Vector2i(640, 480)
+render_target_update_mode = 4
+
+[node name="@MeshInstance3D@156881" type="MeshInstance3D" parent="0/background/@SubViewportContainer@156879/@SubViewport@156880"]
+material_overlay = ExtResource("5")
+mesh = SubResource("5")
+
+[node name="@Camera3D@156882" type="Camera3D" parent="0/background/@SubViewportContainer@156879/@SubViewport@156880"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
+environment = ExtResource("6")
+attributes = ExtResource("7")
+projection = 1
+size = 0.7
+script = ExtResource("8")
+
+[node name="level" type="Node" parent="0"]
+
+[node name="csg_box_3d" type="CSGMesh3D" parent="0/level"]
+use_collision = true
+collision_mask = 0
+mesh = SubResource("7")
+
+[node name="warp" type="Node" parent="0"]
+
+[node name="warp_point" type="Marker3D" parent="0/warp" groups=["Warp"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
+gizmo_extents = 2.5
+script = ExtResource("11")
+
+[node name="entity" type="Node" parent="0"]
+
+[node name="trampoline" parent="0/entity" instance=ExtResource("12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, -1.5, 35)
+type = 0
+
+[node name="trampoline_2" parent="0/entity" instance=ExtResource("12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 35)
+
+[node name="trampoline_3" parent="0/entity" instance=ExtResource("12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, -1.5, 35)
+type = 2
+
+[node name="sprite_3d" type="Sprite3D" parent="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 103.879, 12.2296, -14.3742)
+pixel_size = 0.047
+billboard = 2
+transparent = false
+double_sided = false

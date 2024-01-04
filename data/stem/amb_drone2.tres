@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MusicStem" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_music_stem.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://d3dxey1cnij52" path="res://audio/amb/amb_drone_2.mp3" id="2"]
+
+[resource]
+script = ExtResource( "1" )
+stream = ExtResource( "2" )
+pitch = 1.0
+volume = 0.0
+fade = Vector2(1, 2)
+channel = 1
+category = 0

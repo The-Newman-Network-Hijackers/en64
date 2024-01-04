@@ -1,0 +1,8 @@
+[gd_resource type="CameraAttributesPractical" format=3]
+
+[resource]
+dof_blur_near_enabled = true
+dof_blur_near_distance = 8192.0
+dof_blur_near_transition = -1.0
+dof_blur_amount = 0.05
+script = null

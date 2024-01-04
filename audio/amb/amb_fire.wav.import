@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bslbo8wh5qomk"
+path="res://.godot/imported/amb_fire.wav-de720225a20343457a8bf9d22e7535b0.sample"
+
+[deps]
+
+source_file="res://audio/amb/amb_fire.wav"
+dest_files=PackedStringArray("res://.godot/imported/amb_fire.wav-de720225a20343457a8bf9d22e7535b0.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

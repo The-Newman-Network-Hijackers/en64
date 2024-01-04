@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://wbg2schqnjhk"
+path="res://.godot/imported/health_border.png-214b97e569817e16b960c790508d7b49.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/health_border.png"
+dest_files=PackedStringArray("res://.godot/imported/health_border.png-214b97e569817e16b960c790508d7b49.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

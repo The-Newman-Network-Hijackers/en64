@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://db7l2modvdo5i"
+path="res://.godot/imported/lifebar.blend-83b7056eba3ee92e59d24c89a01be964.scn"
+
+[deps]
+
+source_file="res://asset/ui/lifebar/lifebar.blend"
+dest_files=PackedStringArray("res://.godot/imported/lifebar.blend-83b7056eba3ee92e59d24c89a01be964.scn")
+
+[params]
+
+dummy_value_ignore_me=0

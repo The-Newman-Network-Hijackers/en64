@@ -1,0 +1,15 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://o6jgtnahdyog"
+path="res://.godot/imported/skid_slide.ogg-ddd89b997275199c599f191d9782ba57.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/sfx/skid_slide.ogg"
+dest_files=PackedStringArray("res://.godot/imported/skid_slide.ogg-ddd89b997275199c599f191d9782ba57.oggvorbisstr")
+
+[params]
+
+dummy_value_ignore_me=0

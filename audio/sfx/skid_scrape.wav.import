@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cq3x8w1eso7gr"
+path="res://.godot/imported/skid_scrape.wav-cfbac46bc579f74b783b9148e16d5a1a.sample"
+
+[deps]
+
+source_file="res://audio/sfx/skid_scrape.wav"
+dest_files=PackedStringArray("res://.godot/imported/skid_scrape.wav-cfbac46bc579f74b783b9148e16d5a1a.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d3dgjg77adtrg"
+path="res://.godot/imported/eyes_dead.png-f563329e8ef98b8abce0e01ca059a8ad.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/newman/eyes_dead.png"
+dest_files=PackedStringArray("res://.godot/imported/eyes_dead.png-f563329e8ef98b8abce0e01ca059a8ad.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

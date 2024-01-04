@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://bxrct8axqyc8x"
+path="res://.godot/imported/dummy.dialogue-a431bd1fc641f58810cd94cb11afbbb0.tres"
+
+[deps]
+
+source_file="res://data/dialogue/dummy.dialogue"
+dest_files=PackedStringArray("res://.godot/imported/dummy.dialogue-a431bd1fc641f58810cd94cb11afbbb0.tres")
+
+[params]
+
+dummy_value_ignore_me=0

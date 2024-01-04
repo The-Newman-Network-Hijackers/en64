@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://86oa511i4cmc"
+path="res://.godot/imported/fungus.blend-a077ef7745a168f44cb4c362641ad5c1.scn"
+
+[deps]
+
+source_file="res://asset/accessory/head/fungus.blend"
+dest_files=PackedStringArray("res://.godot/imported/fungus.blend-a077ef7745a168f44cb4c362641ad5c1.scn")
+
+[params]
+
+dummy_value_ignore_me=0

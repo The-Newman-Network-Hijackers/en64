@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c5n4e722o82dc"
+path="res://.godot/imported/suit.blend-7f19d2c081207a2146f477d4e0075373.scn"
+
+[deps]
+
+source_file="res://asset/accessory/body/suit.blend"
+dest_files=PackedStringArray("res://.godot/imported/suit.blend-7f19d2c081207a2146f477d4e0075373.scn")
+
+[params]
+
+dummy_value_ignore_me=0

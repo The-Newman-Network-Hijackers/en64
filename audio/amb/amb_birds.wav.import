@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dxrxo0teh8dla"
+path="res://.godot/imported/amb_birds.wav-afcac2baddfa4704da0ea4df039ea0ff.sample"
+
+[deps]
+
+source_file="res://audio/amb/amb_birds.wav"
+dest_files=PackedStringArray("res://.godot/imported/amb_birds.wav-afcac2baddfa4704da0ea4df039ea0ff.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

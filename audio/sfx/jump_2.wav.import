@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://do6r3dal2ywfo"
+path="res://.godot/imported/jump_2.wav-0823f75b31adbf47c792e7af39bbebe6.sample"
+
+[deps]
+
+source_file="res://audio/sfx/jump_2.wav"
+dest_files=PackedStringArray("res://.godot/imported/jump_2.wav-0823f75b31adbf47c792e7af39bbebe6.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

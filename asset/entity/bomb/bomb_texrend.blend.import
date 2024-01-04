@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bfvcabotuwbgg"
+path="res://.godot/imported/bomb_texrend.blend-571cb59be0943f2a3a7a995463809d94.scn"
+
+[deps]
+
+source_file="res://asset/entity/bomb/bomb_texrend.blend"
+dest_files=PackedStringArray("res://.godot/imported/bomb_texrend.blend-571cb59be0943f2a3a7a995463809d94.scn")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://o7ryw4vvlnnh"
+path="res://.godot/imported/hc_ruins_castle.blend-c919292d04403c8ee35650c3ce536a08.scn"
+
+[deps]
+
+source_file="res://asset/level/history/hc_ruins_castle.blend"
+dest_files=PackedStringArray("res://.godot/imported/hc_ruins_castle.blend-c919292d04403c8ee35650c3ce536a08.scn")
+
+[params]
+
+dummy_value_ignore_me=0
