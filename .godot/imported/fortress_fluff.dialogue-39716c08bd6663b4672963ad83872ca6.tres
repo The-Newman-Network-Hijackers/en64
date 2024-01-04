@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_vveop"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_otkcj"]
 
 [resource]
-script = ExtResource("1_vveop")
+script = ExtResource("1_otkcj")
 using_states = PackedStringArray()
 titles = {}
 character_names = PackedStringArray("\"fortress_fluff_1\"", "\"1\"", "\"id\"", "\"next_id\"", "\"text\"", "\"type\"", "\"3\"", "\"character\"", "\"character_replacements\"", "\"tags\"", "\"text_replacements\"", "\"translation_key\"", "\"4\"", "\"5\"", "\"6\"", "\"8\"", "\"is_snippet\"")

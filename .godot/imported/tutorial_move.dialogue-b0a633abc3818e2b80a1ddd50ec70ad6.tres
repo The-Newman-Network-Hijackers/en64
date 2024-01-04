@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_1ecx2"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_rqe73"]
 
 [resource]
-script = ExtResource("1_1ecx2")
+script = ExtResource("1_rqe73")
 using_states = PackedStringArray()
 titles = {}
 character_names = PackedStringArray("\"tutorial\"", "\"tutorial_crouch\"", "\"tutorial_groundpound\"", "\"tutorial_jump\"", "\"tutorial_move\"", "\"tutorial_roll\"", "\"tutorial_spin\"", "\"tutorial_walljump\"", "\"1\"", "\"id\"", "\"next_id\"", "\"text\"", "\"type\"", "\"11\"", "\"character\"", "\"character_replacements\"", "\"tags\"", "\"text_replacements\"", "\"translation_key\"", "\"12\"", "\"13\"", "\"15\"", "\"is_snippet\"", "\"17\"", "\"19\"", "\"20\"", "\"22\"", "\"24\"", "\"26\"", "\"27\"", "\"29\"", "\"3\"", "\"31\"", "\"32\"", "\"34\"", "\"36\"", "\"38\"", "\"39\"", "\"41\"", "\"43\"", "\"45\"", "\"46\"", "\"48\"", "\"5\"", "\"50\"", "\"7\"", "\"9\"")

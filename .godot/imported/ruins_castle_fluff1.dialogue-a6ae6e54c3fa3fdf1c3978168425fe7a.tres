@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ml75o"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_eef8u"]
 
 [resource]
-script = ExtResource("1_ml75o")
+script = ExtResource("1_eef8u")
 using_states = PackedStringArray()
 titles = {}
 character_names = PackedStringArray("\"ruins_fluff1\"", "\"ruins_fluff2\"", "\"ruins_glove_tutorial\"", "\"ruins_movement_tutorial\"", "\"1\"", "\"id\"", "\"next_id\"", "\"text\"", "\"type\"", "\"11\"", "\"character\"", "\"character_replacements\"", "\"tags\"", "\"text_replacements\"", "\"translation_key\"", "\"12\"", "\"13\"", "\"14\"", "\"16\"", "\"is_snippet\"", "\"18\"", "\"20\"", "\"21\"", "\"22\"", "\"23\"", "\"25\"", "\"27\"", "\"29\"", "\"3\"", "\"30\"", "\"32\"", "\"4\"", "\"5\"", "\"7\"", "\"9\"")

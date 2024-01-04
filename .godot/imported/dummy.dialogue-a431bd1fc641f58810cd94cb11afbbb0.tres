@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_nxywk"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_kjmeo"]
 
 [resource]
-script = ExtResource("1_nxywk")
+script = ExtResource("1_kjmeo")
 using_states = PackedStringArray()
 titles = {}
 character_names = PackedStringArray("\"dummy\"", "\"dummy2\"", "\"1\"", "\"id\"", "\"next_id\"", "\"text\"", "\"type\"", "\"10\"", "\"character\"", "\"character_replacements\"", "\"tags\"", "\"text_replacements\"", "\"translation_key\"", "\"12\"", "\"is_snippet\"", "\"3\"", "\"4\"", "\"6\"", "\"8\"")
