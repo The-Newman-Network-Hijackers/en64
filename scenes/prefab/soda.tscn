@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://g6uukmnwd85i"]
 
 [ext_resource type="Script" path="res://scripts/soda.gd" id="1"]
-[ext_resource type="PackedScene" uid="uid://bcg4g07t3bd4h" path="res://asset/entity/soda/soda.blend" id="2"]
+[ext_resource type="PackedScene" path="res://asset/entity/soda/soda.blend.scn" id="2"]
 [ext_resource type="Texture2D" uid="uid://dn70rg7oj8p0o" path="res://asset/effect/sparkle/sparkle.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://ccpmqq7i3566a" path="res://asset/effect/splash/bubble.png" id="4"]
 [ext_resource type="AudioStream" uid="uid://bb41ybd17nb53" path="res://audio/sfx/soda_heal.wav" id="5"]

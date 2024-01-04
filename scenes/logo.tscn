@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c21anrqal5o76"]
 
-[ext_resource type="PackedScene" uid="uid://bq7rnef4g6paq" path="res://asset/ui/title/logo_horizontal_ingame.blend" id="1"]
+[ext_resource type="PackedScene" path="res://asset/ui/title/logo_horizontal_ingame.blend.scn" id="1"]
 
 [sub_resource type="Environment" id="1"]
 background_mode = 1
