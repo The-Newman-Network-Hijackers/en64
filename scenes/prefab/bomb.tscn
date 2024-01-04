@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3]
+[gd_scene load_steps=57 format=3 uid="uid://jennwsxj6p05"]
 
 [ext_resource type="Script" path="res://scripts/bomb.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/grabbable.gd" id="2"]
@@ -12,20 +12,19 @@
 [ext_resource type="AudioStream" uid="uid://b5ekvensla76" path="res://audio/sfx/explosion_1.wav" id="10"]
 [ext_resource type="AudioStream" uid="uid://yrykx20quxxd" path="res://audio/sfx/explosion_2.wav" id="11"]
 [ext_resource type="PackedScene" uid="uid://cy6ivbjoqluq" path="res://asset/entity/bomb/bomb.blend" id="12"]
-[ext_resource type="Material" uid="uid://cp4nr3pcfmiy5" path="res://asset/entity/bomb/mat/vtx_base.tres" id="13"]
-[ext_resource type="Material" uid="uid://b3gn305cbpcvt" path="res://asset/effect/spark/vtx_spark.tres" id="14"]
+[ext_resource type="Material" uid="uid://btypbvw2m85xk" path="res://asset/entity/bomb/mat/vtx_base.tres" id="13"]
+[ext_resource type="Material" path="res://asset/effect/spark/vtx_spark.tres" id="14"]
 [ext_resource type="Script" path="res://scripts/shadow.gd" id="15"]
-[ext_resource type="Material" uid="uid://b0rkcabokstao" path="res://asset/effect/dust/mat/vtx_dust.tres" id="16"]
+[ext_resource type="Material" path="res://asset/effect/dust/mat/vtx_dust.tres" id="16"]
 [ext_resource type="Texture2D" uid="uid://2rug74yexel0" path="res://asset/effect/dust/dust_cloud.png" id="17"]
 
 [sub_resource type="CylinderShape3D" id="1"]
 height = 2.61637
 radius = 1.66513
-script = null
 
 [sub_resource type="Resource" id="2"]
-script = ExtResource( "3" )
-input = [&"interact"]
+script = ExtResource("3")
+input = Array[StringName]([&"interact"])
 render_as_analog = false
 equip_icon = 0
 message = "to Interact"
@@ -33,12 +32,10 @@ message = "to Interact"
 [sub_resource type="CylinderShape3D" id="3"]
 height = 6.0
 radius = 4.0
-script = null
 
 [sub_resource type="CylinderShape3D" id="4"]
 height = 10.0
 radius = 6.5
-script = null
 
 [sub_resource type="GDScript" id="5"]
 resource_name = "bomb_idle"
@@ -230,11 +227,10 @@ func _exit() -> void:
 [sub_resource type="AudioStreamRandomizer" id="8"]
 random_pitch = 1.05
 streams_count = 2
-stream_0/stream = ExtResource( "10" )
+stream_0/stream = ExtResource("10")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "11" )
+stream_1/stream = ExtResource("11")
 stream_1/weight = 1.0
-script = null
 
 [sub_resource type="ParticleProcessMaterial" id="9"]
 gravity = Vector3(0, 0, 0)
@@ -243,7 +239,6 @@ scale_max = 0.25
 color = Color(1, 0.87451, 0.337255, 1)
 anim_speed_min = 1.0
 anim_speed_max = 1.0
-script = null
 
 [sub_resource type="ArrayMesh" id="10"]
 _surfaces = [{
@@ -257,7 +252,6 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 166, 11, 0, 0, 255, 255, 0, 0, 166, 11, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0)
 }]
 blend_shape_mode = 0
-script = null
 
 [sub_resource type="ArrayMesh" id="11"]
 resource_name = "plane_padded_centered_Plane"
@@ -267,15 +261,14 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 6,
 "index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
-"material": ExtResource( "14" ),
+"material": ExtResource("14"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 4,
 "vertex_data": PackedByteArray(0, 0, 0, 0, 166, 11, 255, 127, 255, 255, 0, 0, 166, 11, 255, 127, 0, 0, 255, 255, 0, 0, 255, 127, 255, 255, 255, 255, 0, 0, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource( "10" )
-script = null
+shadow_mesh = SubResource("10")
 
 [sub_resource type="Animation" id="12"]
 length = 0.001
@@ -411,7 +404,6 @@ tracks/10/keys = {
 "update": 1,
 "values": [false]
 }
-script = null
 
 [sub_resource type="Animation" id="13"]
 resource_name = "explode"
@@ -514,7 +506,6 @@ tracks/7/keys = {
 "update": 1,
 "values": [true]
 }
-script = null
 
 [sub_resource type="Animation" id="14"]
 resource_name = "fuming"
@@ -568,7 +559,6 @@ tracks/3/keys = {
 "update": 1,
 "values": [true, true]
 }
-script = null
 
 [sub_resource type="Animation" id="15"]
 resource_name = "idle"
@@ -609,85 +599,68 @@ tracks/2/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
 }
-script = null
 
 [sub_resource type="AnimationLibrary" id="16"]
 _data = {
-"RESET": SubResource( "12" ),
-"explode": SubResource( "13" ),
-"fuming": SubResource( "14" ),
-"idle": SubResource( "15" )
+"RESET": SubResource("12"),
+"explode": SubResource("13"),
+"fuming": SubResource("14"),
+"idle": SubResource("15")
 }
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="17"]
 animation = &"explode"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="18"]
 animation = &"fuming"
-script = null
 
 [sub_resource type="AnimationNodeTimeScale" id="19"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="20"]
 graph_offset = Vector2(-219.187, 66.7993)
-nodes/Animation/node = SubResource( "18" )
+nodes/Animation/node = SubResource("18")
 nodes/Animation/position = Vector2(-80, 120)
-nodes/speed/node = SubResource( "19" )
+nodes/speed/node = SubResource("19")
 nodes/speed/position = Vector2(100, 120)
 node_connections = [&"output", 0, &"speed", &"speed", 0, &"Animation"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="21"]
 animation = &"idle"
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="22"]
 advance_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="23"]
 xfade_time = 0.3
 reset = false
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="24"]
-script = null
 
 [sub_resource type="AnimationNodeStateMachine" id="25"]
-states/End/node = null
-states/Start/node = null
-states/explode/node = SubResource( "17" )
+states/explode/node = SubResource("17")
 states/explode/position = Vector2(693, 100)
-states/fuming/node = SubResource( "20" )
+states/fuming/node = SubResource("20")
 states/fuming/position = Vector2(507, 100)
-states/idle/node = SubResource( "21" )
+states/idle/node = SubResource("21")
 states/idle/position = Vector2(341, 100)
-transitions = ["Start", "idle", SubResource( "22" ), "idle", "fuming", SubResource( "23" ), "fuming", "explode", SubResource( "24" )]
+transitions = ["Start", "idle", SubResource("22"), "idle", "fuming", SubResource("23"), "fuming", "explode", SubResource("24")]
 graph_offset = Vector2(25, -69)
-script = null
-
-[sub_resource type="Curve" id="26"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.123563, 1), 0.0, 0.0, 0, 0, Vector2(0.247126, 0.488764), 0.0, 0.0, 0, 0, Vector2(0.508621, 0.474157), -0.0806847, -0.0806847, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
-point_count = 5
-script = null
-
-[sub_resource type="CurveTexture" id="27"]
-curve = SubResource( "26" )
-script = null
 
 [sub_resource type="Gradient" id="28"]
 interpolation_mode = 2
 offsets = PackedFloat32Array(0.0375, 0.384375, 0.69375)
 colors = PackedColorArray(0.905882, 0.101961, 0, 1, 1, 0.7, 0, 1, 0.419813, 0.419813, 0.419813, 1)
-script = null
 
 [sub_resource type="GradientTexture1D" id="29"]
-gradient = SubResource( "28" )
-script = null
+gradient = SubResource("28")
+
+[sub_resource type="Curve" id="26"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.123563, 1), 0.0, 0.0, 0, 0, Vector2(0.247126, 0.488764), 0.0, 0.0, 0, 0, Vector2(0.508621, 0.474157), -0.0806847, -0.0806847, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveTexture" id="27"]
+curve = SubResource("26")
 
 [sub_resource type="ParticleProcessMaterial" id="30"]
 direction = Vector3(0, 1, 0)
@@ -699,55 +672,46 @@ damping_min = 58.75
 damping_max = 66.34
 scale_min = 8.0
 scale_max = 10.0
-scale_curve = SubResource( "27" )
-color_ramp = SubResource( "29" )
+scale_curve = SubResource("27")
+color_ramp = SubResource("29")
 anim_speed_min = 0.8
 anim_speed_max = 1.0
-script = null
 
 [sub_resource type="QuadMesh" id="31"]
-script = null
 
 [sub_resource type="StandardMaterial3D" id="32"]
 transparency = 1
 shading_mode = 0
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource( "17" )
+albedo_texture = ExtResource("17")
 billboard_mode = 3
 billboard_keep_scale = true
 particles_anim_h_frames = 3
 particles_anim_v_frames = 4
 particles_anim_loop = false
-script = null
 
-[sub_resource type="Curve" id="33"]
-_data = [Vector2(0.00287356, 0), 0.0, 0.0, 0, 0, Vector2(0.781609, 0.810112), 1.67471, 1.67471, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
-point_count = 3
-script = null
+[sub_resource type="Curve" id="37"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.281609, 1), 0.0, 0.0, 0, 0, Vector2(0.79023, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
 
-[sub_resource type="CurveTexture" id="34"]
-curve = SubResource( "33" )
-script = null
+[sub_resource type="CurveTexture" id="38"]
+curve = SubResource("37")
 
 [sub_resource type="Gradient" id="35"]
 interpolation_mode = 2
 interpolation_color_space = 1
 offsets = PackedFloat32Array(0, 0.334375)
 colors = PackedColorArray(0.205117, 0.205117, 0.205117, 1, 0.0295066, 0.0295066, 0.0295066, 1)
-script = null
 
 [sub_resource type="GradientTexture1D" id="36"]
-gradient = SubResource( "35" )
-script = null
+gradient = SubResource("35")
 
-[sub_resource type="Curve" id="37"]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.281609, 1), 0.0, 0.0, 0, 0, Vector2(0.79023, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
-point_count = 4
-script = null
+[sub_resource type="Curve" id="33"]
+_data = [Vector2(0.00287356, 0), 0.0, 0.0, 0, 0, Vector2(0.781609, 0.810112), 1.67471, 1.67471, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
 
-[sub_resource type="CurveTexture" id="38"]
-curve = SubResource( "37" )
-script = null
+[sub_resource type="CurveTexture" id="34"]
+curve = SubResource("33")
 
 [sub_resource type="ParticleProcessMaterial" id="39"]
 direction = Vector3(0, 1, 0)
@@ -757,40 +721,35 @@ initial_velocity_max = 5.8
 gravity = Vector3(0, 16, 0)
 scale_min = 19.35
 scale_max = 22.15
-scale_curve = SubResource( "34" )
-color_ramp = SubResource( "36" )
-alpha_curve = SubResource( "38" )
+scale_curve = SubResource("34")
+color_ramp = SubResource("36")
+alpha_curve = SubResource("38")
 anim_speed_min = 0.4
 anim_speed_max = 0.75
-script = null
 
 [node name="bomb" type="CharacterBody3D"]
 collision_layer = 5
 collision_mask = 3
-script = ExtResource( "1" )
-hitbox = NodePath("hitbox")
+script = ExtResource("1")
 e_name = "Bomb"
-visual_node = NodePath("vis_bomb")
-floor_raycast = NodePath("floor")
-anim_tree = NodePath("tree")
 deacceleration = 45.0
 jtt_descent = 0.35
 
 [node name="col" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31338, 0)
-shape = SubResource( "1" )
+shape = SubResource("1")
 
-[node name="grabbable" type="Area3D" parent="."]
-script = ExtResource( "2" )
+[node name="grabbable" type="Area3D" parent="." node_paths=PackedStringArray("entity")]
+script = ExtResource("2")
 entity = NodePath("..")
-input_prompt = SubResource( "2" )
+input_prompt = SubResource("2")
 
 [node name="col" type="CollisionShape3D" parent="grabbable"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31338, 0)
-shape = SubResource( "3" )
+shape = SubResource("3")
 
 [node name="hitbox" type="Area3D" parent="."]
-script = ExtResource( "4" )
+script = ExtResource("4")
 damage = 2
 knockback = 40.0
 tag = "bomb"
@@ -798,31 +757,31 @@ scope = 7
 
 [node name="col" type="CollisionShape3D" parent="hitbox"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31338, 0)
-shape = SubResource( "4" )
+shape = SubResource("4")
 disabled = true
 
 [node name="fsm" type="Node" parent="."]
-script = ExtResource( "5" )
+script = ExtResource("5")
 initial_state = NodePath("idle")
 
 [node name="idle" type="Node" parent="fsm"]
-script = SubResource( "5" )
+script = SubResource("5")
 
 [node name="fuming" type="Node" parent="fsm"]
-script = SubResource( "6" )
+script = SubResource("6")
 
 [node name="fuse_time" type="Timer" parent="fsm/fuming"]
 process_callback = 0
 one_shot = true
 
 [node name="explode" type="Node" parent="fsm"]
-script = SubResource( "7" )
+script = SubResource("7")
 
 [node name="sfx" type="Node3D" parent="."]
 
 [node name="fuse" type="AudioStreamPlayer3D" parent="sfx"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0473962, 0)
-stream = ExtResource( "6" )
+stream = ExtResource("6")
 attenuation_model = 3
 volume_db = -4.0
 unit_size = 60.0
@@ -831,7 +790,7 @@ max_distance = 60.0
 bus = &"Sound"
 
 [node name="strike" type="AudioStreamPlayer3D" parent="sfx"]
-stream = ExtResource( "7" )
+stream = ExtResource("7")
 attenuation_model = 3
 volume_db = -2.0
 unit_size = 60.0
@@ -840,7 +799,7 @@ max_distance = 60.0
 bus = &"Sound"
 
 [node name="whistle" type="AudioStreamPlayer3D" parent="sfx"]
-stream = ExtResource( "8" )
+stream = ExtResource("8")
 attenuation_model = 3
 volume_db = -2.0
 unit_size = 90.0
@@ -850,7 +809,7 @@ max_distance = 90.0
 bus = &"Sound"
 
 [node name="beep" type="AudioStreamPlayer3D" parent="sfx"]
-stream = ExtResource( "9" )
+stream = ExtResource("9")
 attenuation_model = 3
 unit_size = 60.0
 max_db = -1.0
@@ -858,7 +817,7 @@ max_distance = 60.0
 bus = &"SoundIndoors"
 
 [node name="explosion" type="AudioStreamPlayer3D" parent="sfx"]
-stream = SubResource( "8" )
+stream = SubResource("8")
 attenuation_model = 3
 volume_db = -4.0
 unit_size = 60.0
@@ -867,10 +826,10 @@ pitch_scale = 1.8
 max_distance = 120.0
 bus = &"Sound"
 
-[node name="vis_bomb" parent="." instance=ExtResource( "12" )]
+[node name="vis_bomb" parent="." instance=ExtResource("12")]
 
 [node name="base" parent="vis_bomb" index="0"]
-surface_material_override/0 = ExtResource( "13" )
+surface_material_override/0 = ExtResource("13")
 
 [node name="spark" type="GPUParticles3D" parent="vis_bomb/stem" index="0"]
 transform = Transform3D(1, 0, 5.68434e-14, 0, 1, 0, -5.68434e-14, 0, 1, -0.558962, 0.679456, 9.99502e-08)
@@ -879,28 +838,28 @@ amount = 1
 lifetime = 0.3
 local_coords = true
 transform_align = 3
-process_material = SubResource( "9" )
-draw_pass_1 = SubResource( "11" )
+process_material = SubResource("9")
+draw_pass_1 = SubResource("11")
 
 [node name="anim" type="AnimationPlayer" parent="."]
 process_mode = 1
 libraries = {
-"": SubResource( "16" )
+"": SubResource("16")
 }
 autoplay = "idle"
 
 [node name="tree" type="AnimationTree" parent="."]
 process_mode = 1
 libraries = {
-"": SubResource( "16" )
+"": SubResource("16")
 }
-tree_root = SubResource( "25" )
+tree_root = SubResource("25")
 anim_player = NodePath("../anim")
 parameters/fuming/speed/scale = 1.0
 
 [node name="shadow" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-script = ExtResource( "15" )
+script = ExtResource("15")
 size = 4.0
 
 [node name="floor" type="RayCast3D" parent="."]
@@ -911,7 +870,7 @@ hit_from_inside = true
 
 [node name="explosion" type="GPUParticles3D" parent="particle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.941341, 0)
-material_override = ExtResource( "16" )
+material_override = ExtResource("16")
 emitting = false
 amount = 24
 lifetime = 0.7
@@ -919,12 +878,12 @@ one_shot = true
 explosiveness = 0.2
 visibility_aabb = AABB(-5.28901, -5.90607, -5.86529, 10.873, 12.2788, 11.8323)
 draw_order = 1
-process_material = SubResource( "30" )
-draw_pass_1 = SubResource( "31" )
+process_material = SubResource("30")
+draw_pass_1 = SubResource("31")
 
 [node name="smoke" type="GPUParticles3D" parent="particle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.941341, 0)
-material_override = SubResource( "32" )
+material_override = SubResource("32")
 emitting = false
 amount = 16
 lifetime = 1.1
@@ -933,8 +892,8 @@ preprocess = 0.2
 explosiveness = 0.25
 visibility_aabb = AABB(-5.28901, -5.90607, -5.86529, 10.873, 12.2788, 11.8323)
 draw_order = 2
-process_material = SubResource( "39" )
-draw_pass_1 = SubResource( "31" )
+process_material = SubResource("39")
+draw_pass_1 = SubResource("31")
 
 [connection signal="interacted_with" from="grabbable" to="fsm/idle" method="_grabbable_interacted_with"]
 [connection signal="interacted_with" from="grabbable" to="fsm/fuming" method="_grabbable_interacted_with"]

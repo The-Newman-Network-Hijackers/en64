@@ -1,12 +1,11 @@
-[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://btypbvw2m85xk"]
 
 [ext_resource type="Shader" path="res://asset/shader/n64_unlit_particle.gdshader" id="1"]
 [ext_resource type="Texture2D" uid="uid://bpwnvg1sar12h" path="res://asset/entity/bomb/tex/base.png" id="2"]
 
 [resource]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "1" )
+shader = ExtResource("1")
 shader_parameter/modulate_color = Color(1, 1, 1, 1)
 shader_parameter/uv_scale = Vector2(0.965, 1)
 shader_parameter/uv_offset = Vector2(0, 0)
@@ -14,5 +13,4 @@ shader_parameter/uv_pan_velocity = Vector2(0, 0)
 shader_parameter/billboard = true
 shader_parameter/y_billboard = false
 shader_parameter/alpha_scissor = 0.1
-shader_parameter/albedoTex = ExtResource( "2" )
-script = null
+shader_parameter/albedoTex = ExtResource("2")

@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://duag8qepuxjv0"]
 
 [ext_resource type="Script" path="res://scripts/seed_counter.gd" id="1"]
-[ext_resource type="Material" uid="uid://bi20xqgjch7tv" path="res://asset/effect/grass/vtxe_stem_1.tres" id="2"]
+[ext_resource type="Material" path="res://asset/effect/grass/vtxe_stem_1.tres" id="2"]
 [ext_resource type="ArrayMesh" uid="uid://bh2xugqoej5yj" path="res://asset/effect/grass/mesh/plane_padded.res" id="3"]
 [ext_resource type="AudioStream" uid="uid://cy12igpc3p1rf" path="res://audio/sfx/poof.wav" id="4"]
 
@@ -9,16 +9,16 @@
 collision_layer = 0
 collision_mask = 4
 monitorable = false
-script = ExtResource( "1" )
+script = ExtResource("1")
 
 [node name="stem" type="MeshInstance3D" parent="."]
 top_level = true
 visible = false
-material_override = ExtResource( "2" )
-mesh = ExtResource( "3" )
+material_override = ExtResource("2")
+mesh = ExtResource("3")
 
 [node name="poof" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( "4" )
+stream = ExtResource("4")
 volume_db = -3.0
 bus = &"Sound"
 
