@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://jennwsxj6p05"]
+[gd_scene load_steps=57 format=3 uid="uid://duubg1vruv72u"]
 
 [ext_resource type="Script" path="res://scripts/bomb.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/grabbable.gd" id="2"]
@@ -12,7 +12,7 @@
 [ext_resource type="AudioStream" uid="uid://b5ekvensla76" path="res://audio/sfx/explosion_1.wav" id="10"]
 [ext_resource type="AudioStream" uid="uid://yrykx20quxxd" path="res://audio/sfx/explosion_2.wav" id="11"]
 [ext_resource type="PackedScene" path="res://asset/entity/bomb/bomb.blend.scn" id="12"]
-[ext_resource type="Material" uid="uid://btypbvw2m85xk" path="res://asset/entity/bomb/mat/vtx_base.tres" id="13"]
+[ext_resource type="Material" uid="uid://chhwfvppclwrn" path="res://asset/entity/bomb/mat/vtx_base.tres" id="13"]
 [ext_resource type="Material" path="res://asset/effect/spark/vtx_spark.tres" id="14"]
 [ext_resource type="Script" path="res://scripts/shadow.gd" id="15"]
 [ext_resource type="Material" path="res://asset/effect/dust/mat/vtx_dust.tres" id="16"]
@@ -727,10 +727,11 @@ alpha_curve = SubResource("38")
 anim_speed_min = 0.4
 anim_speed_max = 0.75
 
-[node name="bomb" type="CharacterBody3D" node_paths=PackedStringArray("visual_node", "floor_raycast", "anim_tree")]
+[node name="bomb" type="CharacterBody3D" node_paths=PackedStringArray("hitbox", "visual_node", "floor_raycast", "anim_tree")]
 collision_layer = 5
 collision_mask = 3
 script = ExtResource("1")
+hitbox = NodePath("hitbox")
 e_name = "Bomb"
 visual_node = NodePath("vis_bomb")
 floor_raycast = NodePath("floor")
