@@ -1,5 +1,5 @@
 res://asset/environment/env_test.tres
-res://scenes/root.tscn
+res://scenes/level/vslice_demo/bonus/flying_fortress.tscn
 res://asset/ui/generic_ui_theme.tres
 res://asset/accessory/body/mesh/suit.res
 res://asset/environment/ruins_outside_env.tres
@@ -15,6 +15,7 @@ res://scenes/prefab/trampoline.tscn
 res://scenes/ui.tscn
 res://scenes/prefab/crate.tscn
 res://scenes/level/test/test_trampoline.tscn
+res://scenes/root.tscn
 res://scenes/level/vslice_demo/history/history_channel.tscn
 res://scenes/level/vslice_demo/history/area_hc_ruins_main.tscn
 res://scenes/prefab/tree.tscn
@@ -23,5 +24,5 @@ res://scenes/prefab/boom_crate.tscn
 res://scenes/prefab/cage.tscn
 res://scenes/prefab/soda.tscn
 res://scenes/prefab/golden_jack.tscn
-res://scenes/level/vslice_demo/bonus/flying_fortress.tscn
 res://scenes/prefab/gj_ball.tscn
+res://scenes/level/test/test_level_1.tscn
