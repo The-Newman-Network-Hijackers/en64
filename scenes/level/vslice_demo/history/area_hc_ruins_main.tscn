@@ -26,7 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://buaik6000vvym" path="res://asset/level/generic/dirt_wall.png" id="24"]
 [ext_resource type="Texture2D" uid="uid://cty6pxd7oqa3t" path="res://asset/level/generic/b_dirt_wall.png" id="25"]
 [ext_resource type="ArrayMesh" uid="uid://da7p125tywpha" path="res://asset/effect/grass/mesh/plane_padded_centered.res" id="26"]
-[ext_resource type="PackedScene" path="res://scenes/prefab/breakable_stone.tscn" id="27"]
+[ext_resource type="PackedScene" uid="uid://dfcwbloe4mmyl" path="res://scenes/prefab/breakable_stone.tscn" id="27"]
 [ext_resource type="ArrayMesh" uid="uid://cplw5t5dpncvi" path="res://asset/level/history/mesh/exterior_breakable_wall.res" id="28"]
 [ext_resource type="PackedScene" uid="uid://v3v3tnxf7wta" path="res://scenes/prefab/tree.tscn" id="29"]
 [ext_resource type="Texture2D" uid="uid://c35553dkk3ekt" path="res://asset/level/generic/creppy.png" id="30"]
@@ -38,7 +38,7 @@
 [ext_resource type="Script" path="res://scripts/golden_jack_manager.gd" id="36"]
 [ext_resource type="PackedScene" uid="uid://daikxntnhoinx" path="res://scenes/prefab/gj_ball.tscn" id="37"]
 [ext_resource type="PackedScene" uid="uid://bxyp51q2f0ytv" path="res://scenes/prefab/golden_jack.tscn" id="38"]
-[ext_resource type="PackedScene" path="res://scenes/prefab/ruins_seed.tscn" id="39"]
+[ext_resource type="PackedScene" uid="uid://cg3i0hgp7nvy2" path="res://scenes/prefab/ruins_seed.tscn" id="39"]
 [ext_resource type="Script" path="res://scripts/big_door.gd" id="40"]
 [ext_resource type="Material" path="res://asset/entity/bigdoor/wood_gate_1.tres" id="41"]
 [ext_resource type="AudioStream" path="res://data/r_sfx/rsfx_gate_squeak.tres" id="42"]
@@ -61,7 +61,7 @@
 [ext_resource type="PackedScene" uid="uid://bpaie5176rj8h" path="res://scenes/prefab/npc_sign.tscn" id="59"]
 [ext_resource type="Resource" uid="uid://cuj0usa0fsnqx" path="res://data/dialogue/ruins_outside_fluff.dialogue" id="60"]
 [ext_resource type="PackedScene" path="res://scenes/prefab/kelp_1.tscn" id="61"]
-[ext_resource type="PackedScene" path="res://scenes/prefab/ruins_seed_counter.tscn" id="62"]
+[ext_resource type="PackedScene" uid="uid://duag8qepuxjv0" path="res://scenes/prefab/ruins_seed_counter.tscn" id="62"]
 [ext_resource type="PackedScene" uid="uid://budaw7hon32vh" path="res://scenes/prefab/boom_crate.tscn" id="63"]
 [ext_resource type="PackedScene" path="res://scenes/prefab/shard.tscn" id="64"]
 [ext_resource type="Resource" path="res://data/props/history_channel/prop_fungi.tres" id="65"]
@@ -624,23 +624,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28805" parent="jack/js_1" instance=ExtResource("33")]
+[node name="@Area3D@39659" parent="jack/js_1" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, 2.38419e-07, -16.0695, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28806" parent="jack/js_1" instance=ExtResource("33")]
+[node name="@Area3D@39660" parent="jack/js_1" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, -2.38419e-07, -15.7279, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28807" parent="jack/js_1" instance=ExtResource("33")]
+[node name="@Area3D@39661" parent="jack/js_1" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, 0, -15.3864, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28808" parent="jack/js_1" instance=ExtResource("33")]
+[node name="@Area3D@39662" parent="jack/js_1" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, -2.38419e-07, -15.3538, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28809" parent="jack/js_1" instance=ExtResource("33")]
+[node name="@Area3D@39663" parent="jack/js_1" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, -2.38419e-07, -15.7974, 15)
 metadata/_edit_lock_ = true
 
@@ -652,23 +652,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28814" parent="jack/js_40" instance=ExtResource("33")]
+[node name="@Area3D@39668" parent="jack/js_40" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 0, -1.25798, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28815" parent="jack/js_40" instance=ExtResource("33")]
+[node name="@Area3D@39669" parent="jack/js_40" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 1.52588e-05, -1.23965, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28816" parent="jack/js_40" instance=ExtResource("33")]
+[node name="@Area3D@39670" parent="jack/js_40" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 0, -1.24376, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28817" parent="jack/js_40" instance=ExtResource("33")]
+[node name="@Area3D@39671" parent="jack/js_40" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 0, -1.24786, 7.49997)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28818" parent="jack/js_40" instance=ExtResource("33")]
+[node name="@Area3D@39672" parent="jack/js_40" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 1.52588e-05, -1.25195, 15)
 metadata/_edit_lock_ = true
 
@@ -680,23 +680,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28823" parent="jack/js_44" instance=ExtResource("33")]
+[node name="@Area3D@39677" parent="jack/js_44" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.93153, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28824" parent="jack/js_44" instance=ExtResource("33")]
+[node name="@Area3D@39678" parent="jack/js_44" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.76124, -7.50003)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28825" parent="jack/js_44" instance=ExtResource("33")]
+[node name="@Area3D@39679" parent="jack/js_44" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.59096, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28826" parent="jack/js_44" instance=ExtResource("33")]
+[node name="@Area3D@39680" parent="jack/js_44" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.42068, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28827" parent="jack/js_44" instance=ExtResource("33")]
+[node name="@Area3D@39681" parent="jack/js_44" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.25039, 15)
 metadata/_edit_lock_ = true
 
@@ -708,23 +708,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28832" parent="jack/js_41" instance=ExtResource("33")]
+[node name="@Area3D@39686" parent="jack/js_41" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -4.53746, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28833" parent="jack/js_41" instance=ExtResource("33")]
+[node name="@Area3D@39687" parent="jack/js_41" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -4.53329, -7.50003)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28834" parent="jack/js_41" instance=ExtResource("33")]
+[node name="@Area3D@39688" parent="jack/js_41" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.52911, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28835" parent="jack/js_41" instance=ExtResource("33")]
+[node name="@Area3D@39689" parent="jack/js_41" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.52495, 7.49997)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28836" parent="jack/js_41" instance=ExtResource("33")]
+[node name="@Area3D@39690" parent="jack/js_41" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -4.52077, 15)
 metadata/_edit_lock_ = true
 
@@ -736,23 +736,23 @@ spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28841" parent="jack/js_3" instance=ExtResource("33")]
+[node name="@Area3D@39695" parent="jack/js_3" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8147e-06, -14.3157, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28842" parent="jack/js_3" instance=ExtResource("33")]
+[node name="@Area3D@39696" parent="jack/js_3" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.0786, -7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28843" parent="jack/js_3" instance=ExtResource("33")]
+[node name="@Area3D@39697" parent="jack/js_3" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.8415, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28844" parent="jack/js_3" instance=ExtResource("33")]
+[node name="@Area3D@39698" parent="jack/js_3" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, -13.6044, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28845" parent="jack/js_3" instance=ExtResource("33")]
+[node name="@Area3D@39699" parent="jack/js_3" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.2782, 14)
 metadata/_edit_lock_ = true
 
@@ -764,23 +764,23 @@ spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28850" parent="jack/js_43" instance=ExtResource("33")]
+[node name="@Area3D@39704" parent="jack/js_43" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 1.52588e-05, -8.60284, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28851" parent="jack/js_43" instance=ExtResource("33")]
+[node name="@Area3D@39705" parent="jack/js_43" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.60284, -7.00002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28852" parent="jack/js_43" instance=ExtResource("33")]
+[node name="@Area3D@39706" parent="jack/js_43" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.60284, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28853" parent="jack/js_43" instance=ExtResource("33")]
+[node name="@Area3D@39707" parent="jack/js_43" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.60284, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28854" parent="jack/js_43" instance=ExtResource("33")]
+[node name="@Area3D@39708" parent="jack/js_43" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.60284, 14)
 metadata/_edit_lock_ = true
 
@@ -792,23 +792,23 @@ spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28859" parent="jack/js_5" instance=ExtResource("33")]
+[node name="@Area3D@39713" parent="jack/js_5" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.4244, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28860" parent="jack/js_5" instance=ExtResource("33")]
+[node name="@Area3D@39714" parent="jack/js_5" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.76842, -7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28861" parent="jack/js_5" instance=ExtResource("33")]
+[node name="@Area3D@39715" parent="jack/js_5" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.03882, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28862" parent="jack/js_5" instance=ExtResource("33")]
+[node name="@Area3D@39716" parent="jack/js_5" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.30922, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28863" parent="jack/js_5" instance=ExtResource("33")]
+[node name="@Area3D@39717" parent="jack/js_5" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.57963, 14)
 metadata/_edit_lock_ = true
 
@@ -820,23 +820,23 @@ spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28868" parent="jack/js_6" instance=ExtResource("33")]
+[node name="@Area3D@39722" parent="jack/js_6" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.34315, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28869" parent="jack/js_6" instance=ExtResource("33")]
+[node name="@Area3D@39723" parent="jack/js_6" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -4.88955, -7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28870" parent="jack/js_6" instance=ExtResource("33")]
+[node name="@Area3D@39724" parent="jack/js_6" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.43594, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28871" parent="jack/js_6" instance=ExtResource("33")]
+[node name="@Area3D@39725" parent="jack/js_6" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.74529, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28872" parent="jack/js_6" instance=ExtResource("33")]
+[node name="@Area3D@39726" parent="jack/js_6" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -3.0157, 14)
 metadata/_edit_lock_ = true
 
@@ -848,23 +848,23 @@ spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28877" parent="jack/js_17" instance=ExtResource("33")]
+[node name="@Area3D@39731" parent="jack/js_17" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.8022, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28878" parent="jack/js_17" instance=ExtResource("33")]
+[node name="@Area3D@39732" parent="jack/js_17" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.743, -7.00002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28879" parent="jack/js_17" instance=ExtResource("33")]
+[node name="@Area3D@39733" parent="jack/js_17" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.6837, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28880" parent="jack/js_17" instance=ExtResource("33")]
+[node name="@Area3D@39734" parent="jack/js_17" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.6244, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28881" parent="jack/js_17" instance=ExtResource("33")]
+[node name="@Area3D@39735" parent="jack/js_17" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.5652, 14)
 metadata/_edit_lock_ = true
 
@@ -876,23 +876,23 @@ spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28886" parent="jack/js_36" instance=ExtResource("33")]
+[node name="@Area3D@39740" parent="jack/js_36" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4193, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28887" parent="jack/js_36" instance=ExtResource("33")]
+[node name="@Area3D@39741" parent="jack/js_36" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4193, -7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28888" parent="jack/js_36" instance=ExtResource("33")]
+[node name="@Area3D@39742" parent="jack/js_36" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4193, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28889" parent="jack/js_36" instance=ExtResource("33")]
+[node name="@Area3D@39743" parent="jack/js_36" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4194, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28890" parent="jack/js_36" instance=ExtResource("33")]
+[node name="@Area3D@39744" parent="jack/js_36" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4194, 14)
 metadata/_edit_lock_ = true
 
@@ -906,35 +906,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28914" parent="jack/js_37" instance=ExtResource("33")]
+[node name="@Area3D@39768" parent="jack/js_37" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -7.07106, -36.639, -7.07106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28915" parent="jack/js_37" instance=ExtResource("33")]
+[node name="@Area3D@39769" parent="jack/js_37" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -10, -36.639, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28916" parent="jack/js_37" instance=ExtResource("33")]
+[node name="@Area3D@39770" parent="jack/js_37" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -7.07106, -36.639, 7.07106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28917" parent="jack/js_37" instance=ExtResource("33")]
+[node name="@Area3D@39771" parent="jack/js_37" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 0, -36.639, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28918" parent="jack/js_37" instance=ExtResource("33")]
+[node name="@Area3D@39772" parent="jack/js_37" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 7.07106, -36.639, 7.07108)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28919" parent="jack/js_37" instance=ExtResource("33")]
+[node name="@Area3D@39773" parent="jack/js_37" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 10, -36.6382, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28920" parent="jack/js_37" instance=ExtResource("33")]
+[node name="@Area3D@39774" parent="jack/js_37" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 7.07106, -36.6379, -7.07106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28921" parent="jack/js_37" instance=ExtResource("33")]
+[node name="@Area3D@39775" parent="jack/js_37" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 0, -36.639, -10)
 metadata/_edit_lock_ = true
 
@@ -948,35 +948,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28945" parent="jack/js_38" instance=ExtResource("33")]
+[node name="@Area3D@39799" parent="jack/js_38" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07108, -36.0937, -7.07104)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28946" parent="jack/js_38" instance=ExtResource("33")]
+[node name="@Area3D@39800" parent="jack/js_38" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, -36.0937, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28947" parent="jack/js_38" instance=ExtResource("33")]
+[node name="@Area3D@39801" parent="jack/js_38" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07106, -36.0937, 7.07106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28948" parent="jack/js_38" instance=ExtResource("33")]
+[node name="@Area3D@39802" parent="jack/js_38" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -36.0937, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28949" parent="jack/js_38" instance=ExtResource("33")]
+[node name="@Area3D@39803" parent="jack/js_38" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07108, -36.0937, 7.07108)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28950" parent="jack/js_38" instance=ExtResource("33")]
+[node name="@Area3D@39804" parent="jack/js_38" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -36.0927, 1.52588e-05)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28951" parent="jack/js_38" instance=ExtResource("33")]
+[node name="@Area3D@39805" parent="jack/js_38" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07106, -36.0924, -7.07104)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28952" parent="jack/js_38" instance=ExtResource("33")]
+[node name="@Area3D@39806" parent="jack/js_38" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -36.0937, -10)
 metadata/_edit_lock_ = true
 
@@ -990,27 +990,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28970" parent="jack/js_39" instance=ExtResource("33")]
+[node name="@Area3D@39824" parent="jack/js_39" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, -6.49519, -36.0937, -3.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28971" parent="jack/js_39" instance=ExtResource("33")]
+[node name="@Area3D@39825" parent="jack/js_39" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, -6.49519, -36.0937, 3.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28972" parent="jack/js_39" instance=ExtResource("33")]
+[node name="@Area3D@39826" parent="jack/js_39" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 1.52588e-05, -36.0937, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28973" parent="jack/js_39" instance=ExtResource("33")]
+[node name="@Area3D@39827" parent="jack/js_39" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 6.49518, -36.0937, 3.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28974" parent="jack/js_39" instance=ExtResource("33")]
+[node name="@Area3D@39828" parent="jack/js_39" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 6.49519, -36.0926, -3.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28975" parent="jack/js_39" instance=ExtResource("33")]
+[node name="@Area3D@39829" parent="jack/js_39" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, -1.52588e-05, -36.0937, -7.5)
 metadata/_edit_lock_ = true
 
@@ -1023,35 +1023,35 @@ spacing = 10.0
 count = 8
 metadata/_edit_group_ = true
 
-[node name="@Area3D@28991" parent="jack/js_18" instance=ExtResource("33")]
+[node name="@Area3D@39845" parent="jack/js_18" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28992" parent="jack/js_18" instance=ExtResource("33")]
+[node name="@Area3D@39846" parent="jack/js_18" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 4.37114e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28993" parent="jack/js_18" instance=ExtResource("33")]
+[node name="@Area3D@39847" parent="jack/js_18" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28994" parent="jack/js_18" instance=ExtResource("33")]
+[node name="@Area3D@39848" parent="jack/js_18" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.74228e-07, 0, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28995" parent="jack/js_18" instance=ExtResource("33")]
+[node name="@Area3D@39849" parent="jack/js_18" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28996" parent="jack/js_18" instance=ExtResource("33")]
+[node name="@Area3D@39850" parent="jack/js_18" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -1.19249e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28997" parent="jack/js_18" instance=ExtResource("33")]
+[node name="@Area3D@39851" parent="jack/js_18" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@28998" parent="jack/js_18" instance=ExtResource("33")]
+[node name="@Area3D@39852" parent="jack/js_18" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74846e-06, 0, -10)
 metadata/_edit_lock_ = true
 
@@ -1063,43 +1063,43 @@ spacing = 8.0
 count = 10
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29008" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39862" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -36)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29009" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39863" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -28)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29010" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39864" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29011" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39865" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29012" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39866" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29013" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39867" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29014" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39868" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29015" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39869" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29016" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39870" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29017" parent="jack/js_34" instance=ExtResource("33")]
+[node name="@Area3D@39871" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 36)
 metadata/_edit_lock_ = true
 
@@ -1113,30 +1113,30 @@ count = 7
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29038" parent="jack/js_35" instance=ExtResource("33")]
+[node name="@Area3D@39892" parent="jack/js_35" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29039" parent="jack/js_35" instance=ExtResource("33")]
+[node name="@Area3D@39893" parent="jack/js_35" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29040" parent="jack/js_35" instance=ExtResource("33")]
+[node name="@Area3D@39894" parent="jack/js_35" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29041" parent="jack/js_35" instance=ExtResource("33")]
+[node name="@Area3D@39895" parent="jack/js_35" instance=ExtResource("33")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29042" parent="jack/js_35" instance=ExtResource("33")]
+[node name="@Area3D@39896" parent="jack/js_35" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29043" parent="jack/js_35" instance=ExtResource("33")]
+[node name="@Area3D@39897" parent="jack/js_35" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29044" parent="jack/js_35" instance=ExtResource("33")]
+[node name="@Area3D@39898" parent="jack/js_35" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18, 0)
 metadata/_edit_lock_ = true
 
@@ -1150,35 +1150,35 @@ count = 8
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29068" parent="jack/js_30" instance=ExtResource("33")]
+[node name="@Area3D@39922" parent="jack/js_30" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 7.07107, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29069" parent="jack/js_30" instance=ExtResource("33")]
+[node name="@Area3D@39923" parent="jack/js_30" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -4.37114e-07, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29070" parent="jack/js_30" instance=ExtResource("33")]
+[node name="@Area3D@39924" parent="jack/js_30" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, -7.07107, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29071" parent="jack/js_30" instance=ExtResource("33")]
+[node name="@Area3D@39925" parent="jack/js_30" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.74228e-07, -10, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29072" parent="jack/js_30" instance=ExtResource("33")]
+[node name="@Area3D@39926" parent="jack/js_30" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, -7.07107, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29073" parent="jack/js_30" instance=ExtResource("33")]
+[node name="@Area3D@39927" parent="jack/js_30" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1.19249e-07, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29074" parent="jack/js_30" instance=ExtResource("33")]
+[node name="@Area3D@39928" parent="jack/js_30" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 7.07107, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29075" parent="jack/js_30" instance=ExtResource("33")]
+[node name="@Area3D@39929" parent="jack/js_30" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74846e-06, 10, 0)
 metadata/_edit_lock_ = true
 
@@ -1192,35 +1192,35 @@ count = 8
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29099" parent="jack/js_31" instance=ExtResource("33")]
+[node name="@Area3D@39953" parent="jack/js_31" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 7.07107, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29100" parent="jack/js_31" instance=ExtResource("33")]
+[node name="@Area3D@39954" parent="jack/js_31" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -4.37114e-07, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29101" parent="jack/js_31" instance=ExtResource("33")]
+[node name="@Area3D@39955" parent="jack/js_31" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, -7.07107, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29102" parent="jack/js_31" instance=ExtResource("33")]
+[node name="@Area3D@39956" parent="jack/js_31" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.74228e-07, -10, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29103" parent="jack/js_31" instance=ExtResource("33")]
+[node name="@Area3D@39957" parent="jack/js_31" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, -7.07107, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29104" parent="jack/js_31" instance=ExtResource("33")]
+[node name="@Area3D@39958" parent="jack/js_31" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1.19249e-07, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29105" parent="jack/js_31" instance=ExtResource("33")]
+[node name="@Area3D@39959" parent="jack/js_31" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 7.07107, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29106" parent="jack/js_31" instance=ExtResource("33")]
+[node name="@Area3D@39960" parent="jack/js_31" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74846e-06, 10, 0)
 metadata/_edit_lock_ = true
 
@@ -1232,23 +1232,23 @@ spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29111" parent="jack/js_7" instance=ExtResource("33")]
+[node name="@Area3D@39965" parent="jack/js_7" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.73794, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29112" parent="jack/js_7" instance=ExtResource("33")]
+[node name="@Area3D@39966" parent="jack/js_7" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.28433, -7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29113" parent="jack/js_7" instance=ExtResource("33")]
+[node name="@Area3D@39967" parent="jack/js_7" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.83073, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29114" parent="jack/js_7" instance=ExtResource("33")]
+[node name="@Area3D@39968" parent="jack/js_7" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -8.37712, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29115" parent="jack/js_7" instance=ExtResource("33")]
+[node name="@Area3D@39969" parent="jack/js_7" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.83781, 14)
 metadata/_edit_lock_ = true
 
@@ -1262,35 +1262,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29139" parent="jack/js_4" instance=ExtResource("33")]
+[node name="@Area3D@39993" parent="jack/js_4" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29140" parent="jack/js_4" instance=ExtResource("33")]
+[node name="@Area3D@39994" parent="jack/js_4" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 4.37114e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29141" parent="jack/js_4" instance=ExtResource("33")]
+[node name="@Area3D@39995" parent="jack/js_4" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29142" parent="jack/js_4" instance=ExtResource("33")]
+[node name="@Area3D@39996" parent="jack/js_4" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.74228e-07, 0, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29143" parent="jack/js_4" instance=ExtResource("33")]
+[node name="@Area3D@39997" parent="jack/js_4" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29144" parent="jack/js_4" instance=ExtResource("33")]
+[node name="@Area3D@39998" parent="jack/js_4" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -1.19249e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29145" parent="jack/js_4" instance=ExtResource("33")]
+[node name="@Area3D@39999" parent="jack/js_4" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29146" parent="jack/js_4" instance=ExtResource("33")]
+[node name="@Area3D@40000" parent="jack/js_4" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74846e-06, 0, -10)
 metadata/_edit_lock_ = true
 
@@ -1302,35 +1302,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29154" parent="jack/js_16" instance=ExtResource("33")]
+[node name="@Area3D@40008" parent="jack/js_16" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.3632, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29155" parent="jack/js_16" instance=ExtResource("33")]
+[node name="@Area3D@40009" parent="jack/js_16" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.2647, -12.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29156" parent="jack/js_16" instance=ExtResource("33")]
+[node name="@Area3D@40010" parent="jack/js_16" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.5297, -7.50002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29157" parent="jack/js_16" instance=ExtResource("33")]
+[node name="@Area3D@40011" parent="jack/js_16" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.81313, -2.50002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29158" parent="jack/js_16" instance=ExtResource("33")]
+[node name="@Area3D@40012" parent="jack/js_16" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.28738, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29159" parent="jack/js_16" instance=ExtResource("33")]
+[node name="@Area3D@40013" parent="jack/js_16" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.76163, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29160" parent="jack/js_16" instance=ExtResource("33")]
+[node name="@Area3D@40014" parent="jack/js_16" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.694, 12.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29161" parent="jack/js_16" instance=ExtResource("33")]
+[node name="@Area3D@40015" parent="jack/js_16" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.15185, 17.5)
 metadata/_edit_lock_ = true
 
@@ -1342,35 +1342,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29169" parent="jack/js_19" instance=ExtResource("33")]
+[node name="@Area3D@40023" parent="jack/js_19" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.0565, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29170" parent="jack/js_19" instance=ExtResource("33")]
+[node name="@Area3D@40024" parent="jack/js_19" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.007, -12.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29171" parent="jack/js_19" instance=ExtResource("33")]
+[node name="@Area3D@40025" parent="jack/js_19" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -9.36549, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29172" parent="jack/js_19" instance=ExtResource("33")]
+[node name="@Area3D@40026" parent="jack/js_19" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.83974, -2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29173" parent="jack/js_19" instance=ExtResource("33")]
+[node name="@Area3D@40027" parent="jack/js_19" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -8.31399, 2.50002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29174" parent="jack/js_19" instance=ExtResource("33")]
+[node name="@Area3D@40028" parent="jack/js_19" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.78824, 7.49998)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29175" parent="jack/js_19" instance=ExtResource("33")]
+[node name="@Area3D@40029" parent="jack/js_19" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.84287, 12.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29176" parent="jack/js_19" instance=ExtResource("33")]
+[node name="@Area3D@40030" parent="jack/js_19" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -8.37566, 17.5)
 metadata/_edit_lock_ = true
 
@@ -1382,35 +1382,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29184" parent="jack/js_20" instance=ExtResource("33")]
+[node name="@Area3D@40038" parent="jack/js_20" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.0427, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29185" parent="jack/js_20" instance=ExtResource("33")]
+[node name="@Area3D@40039" parent="jack/js_20" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.7636, -12.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29186" parent="jack/js_20" instance=ExtResource("33")]
+[node name="@Area3D@40040" parent="jack/js_20" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.0286, -7.50002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29187" parent="jack/js_20" instance=ExtResource("33")]
+[node name="@Area3D@40041" parent="jack/js_20" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.2936, -2.50002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29188" parent="jack/js_20" instance=ExtResource("33")]
+[node name="@Area3D@40042" parent="jack/js_20" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -10.5586, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29189" parent="jack/js_20" instance=ExtResource("33")]
+[node name="@Area3D@40043" parent="jack/js_20" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.91651, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29190" parent="jack/js_20" instance=ExtResource("33")]
+[node name="@Area3D@40044" parent="jack/js_20" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.59354, 12.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29191" parent="jack/js_20" instance=ExtResource("33")]
+[node name="@Area3D@40045" parent="jack/js_20" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.0514, 17.5)
 metadata/_edit_lock_ = true
 
@@ -1424,31 +1424,31 @@ count = 7
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29212" parent="jack/js_2" instance=ExtResource("33")]
+[node name="@Area3D@40066" parent="jack/js_2" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.81831, -48.5299, -6.23491)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29213" parent="jack/js_2" instance=ExtResource("33")]
+[node name="@Area3D@40067" parent="jack/js_2" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.74928, -49.6006, 2.2252)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29214" parent="jack/js_2" instance=ExtResource("33")]
+[node name="@Area3D@40068" parent="jack/js_2" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33884, -49.5927, 9.00967)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29215" parent="jack/js_2" instance=ExtResource("33")]
+[node name="@Area3D@40069" parent="jack/js_2" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33884, -48.4171, 9.00969)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29216" parent="jack/js_2" instance=ExtResource("33")]
+[node name="@Area3D@40070" parent="jack/js_2" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.74928, -46.8702, 2.22519)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29217" parent="jack/js_2" instance=ExtResource("33")]
+[node name="@Area3D@40071" parent="jack/js_2" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.81832, -46.2535, -6.23489)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29218" parent="jack/js_2" instance=ExtResource("33")]
+[node name="@Area3D@40072" parent="jack/js_2" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.62939e-06, -47.0403, -10)
 metadata/_edit_lock_ = true
 
@@ -1459,23 +1459,23 @@ script = ExtResource("32")
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="jack" parent="jack/js_8" instance=ExtResource("33")]
+[node name="@Area3D@40073" parent="jack/js_8" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.92329, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29219" parent="jack/js_8" instance=ExtResource("33")]
+[node name="@Area3D@40074" parent="jack/js_8" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.92329, -4.99998)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29220" parent="jack/js_8" instance=ExtResource("33")]
+[node name="@Area3D@40075" parent="jack/js_8" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.92329, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29221" parent="jack/js_8" instance=ExtResource("33")]
+[node name="@Area3D@40076" parent="jack/js_8" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.92329, 5.00002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29222" parent="jack/js_8" instance=ExtResource("33")]
+[node name="@Area3D@40077" parent="jack/js_8" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 1.52588e-05, -8.92329, 10)
 metadata/_edit_lock_ = true
 
@@ -1488,43 +1488,43 @@ count = 10
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29242" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40097" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -26.2738, -33.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29243" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40098" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -26.25)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29244" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40099" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -1.59927, -18.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29245" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40100" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -1.52588e-05, -7.03273, -11.25)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29246" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40101" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -12.4662, -3.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29247" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40102" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -17.8997, 3.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29248" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40103" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 1.52588e-05, -23.3331, 11.25)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29249" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40104" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -28.7666, 18.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29250" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40105" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.5074, 26.25)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29251" parent="jack/js_21" instance=ExtResource("33")]
+[node name="@Area3D@40106" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.5074, 33.75)
 metadata/_edit_lock_ = true
 
@@ -1538,31 +1538,31 @@ count = 7
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29272" parent="jack/js_9" instance=ExtResource("33")]
+[node name="@Area3D@40127" parent="jack/js_9" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8183, -19.3367, -6.23489)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29273" parent="jack/js_9" instance=ExtResource("33")]
+[node name="@Area3D@40128" parent="jack/js_9" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.74927, -19.2488, 2.2252)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29274" parent="jack/js_9" instance=ExtResource("33")]
+[node name="@Area3D@40129" parent="jack/js_9" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33884, -18.8273, 9.00969)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29275" parent="jack/js_9" instance=ExtResource("33")]
+[node name="@Area3D@40130" parent="jack/js_9" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33884, -18.3897, 9.00969)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29276" parent="jack/js_9" instance=ExtResource("33")]
+[node name="@Area3D@40131" parent="jack/js_9" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7493, -18.2654, 2.22522)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29277" parent="jack/js_9" instance=ExtResource("33")]
+[node name="@Area3D@40132" parent="jack/js_9" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.81833, -18.548, -6.23489)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29278" parent="jack/js_9" instance=ExtResource("33")]
+[node name="@Area3D@40133" parent="jack/js_9" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -19.0248, -10)
 metadata/_edit_lock_ = true
 
@@ -1575,22 +1575,22 @@ spacing = 7.0
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29288" parent="jack/js_25" instance=ExtResource("33")]
+[node name="@Area3D@40143" parent="jack/js_25" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29289" parent="jack/js_25" instance=ExtResource("33")]
+[node name="@Area3D@40144" parent="jack/js_25" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29290" parent="jack/js_25" instance=ExtResource("33")]
+[node name="@Area3D@40145" parent="jack/js_25" instance=ExtResource("33")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29291" parent="jack/js_25" instance=ExtResource("33")]
+[node name="@Area3D@40146" parent="jack/js_25" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29292" parent="jack/js_25" instance=ExtResource("33")]
+[node name="@Area3D@40147" parent="jack/js_25" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14, 0)
 metadata/_edit_lock_ = true
 
@@ -1604,14 +1604,14 @@ count = 3
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29301" parent="jack/js_26" instance=ExtResource("33")]
+[node name="@Area3D@40156" parent="jack/js_26" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29302" parent="jack/js_26" instance=ExtResource("33")]
+[node name="@Area3D@40157" parent="jack/js_26" instance=ExtResource("33")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29303" parent="jack/js_26" instance=ExtResource("33")]
+[node name="@Area3D@40158" parent="jack/js_26" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
 metadata/_edit_lock_ = true
 
@@ -1625,14 +1625,14 @@ count = 3
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29312" parent="jack/js_27" instance=ExtResource("33")]
+[node name="@Area3D@40167" parent="jack/js_27" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29313" parent="jack/js_27" instance=ExtResource("33")]
+[node name="@Area3D@40168" parent="jack/js_27" instance=ExtResource("33")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29314" parent="jack/js_27" instance=ExtResource("33")]
+[node name="@Area3D@40169" parent="jack/js_27" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
 metadata/_edit_lock_ = true
 
@@ -1646,27 +1646,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29332" parent="jack/js_23" instance=ExtResource("33")]
+[node name="@Area3D@40187" parent="jack/js_23" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.06219, -5.30754, -3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29333" parent="jack/js_23" instance=ExtResource("33")]
+[node name="@Area3D@40188" parent="jack/js_23" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.06219, -5.59706, 3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29334" parent="jack/js_23" instance=ExtResource("33")]
+[node name="@Area3D@40189" parent="jack/js_23" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.4974, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29335" parent="jack/js_23" instance=ExtResource("33")]
+[node name="@Area3D@40190" parent="jack/js_23" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.06219, -5.10821, 3.50001)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29336" parent="jack/js_23" instance=ExtResource("33")]
+[node name="@Area3D@40191" parent="jack/js_23" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.06218, -4.81869, -3.49999)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29337" parent="jack/js_23" instance=ExtResource("33")]
+[node name="@Area3D@40192" parent="jack/js_23" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.91835, -7.00001)
 metadata/_edit_lock_ = true
 
@@ -1680,27 +1680,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29355" parent="jack/js_10" instance=ExtResource("33")]
+[node name="@Area3D@40210" parent="jack/js_10" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.68079, -16.9018, -4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29356" parent="jack/js_10" instance=ExtResource("33")]
+[node name="@Area3D@40211" parent="jack/js_10" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.68079, -16.7035, 4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29357" parent="jack/js_10" instance=ExtResource("33")]
+[node name="@Area3D@40212" parent="jack/js_10" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.6787, 8.869)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29358" parent="jack/js_10" instance=ExtResource("33")]
+[node name="@Area3D@40213" parent="jack/js_10" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68079, -16.8371, 4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29359" parent="jack/js_10" instance=ExtResource("33")]
+[node name="@Area3D@40214" parent="jack/js_10" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68079, -16.9717, -4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29360" parent="jack/js_10" instance=ExtResource("33")]
+[node name="@Area3D@40215" parent="jack/js_10" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17.012, -8.869)
 metadata/_edit_lock_ = true
 
@@ -1714,27 +1714,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29378" parent="jack/js_11" instance=ExtResource("33")]
+[node name="@Area3D@40233" parent="jack/js_11" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.68079, -17.597, -4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29379" parent="jack/js_11" instance=ExtResource("33")]
+[node name="@Area3D@40234" parent="jack/js_11" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.68079, -17.9278, 4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29380" parent="jack/js_11" instance=ExtResource("33")]
+[node name="@Area3D@40235" parent="jack/js_11" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.1558, 8.869)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29381" parent="jack/js_11" instance=ExtResource("33")]
+[node name="@Area3D@40236" parent="jack/js_11" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68079, -18.0636, 4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29382" parent="jack/js_11" instance=ExtResource("33")]
+[node name="@Area3D@40237" parent="jack/js_11" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68079, -17.7649, -4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29383" parent="jack/js_11" instance=ExtResource("33")]
+[node name="@Area3D@40238" parent="jack/js_11" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17.5224, -8.869)
 metadata/_edit_lock_ = true
 
@@ -1747,35 +1747,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29399" parent="jack/js_13" instance=ExtResource("33")]
+[node name="@Area3D@40254" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -35.1512, -35)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29400" parent="jack/js_13" instance=ExtResource("33")]
+[node name="@Area3D@40255" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -34.8469, -25)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29401" parent="jack/js_13" instance=ExtResource("33")]
+[node name="@Area3D@40256" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -34.496, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29402" parent="jack/js_13" instance=ExtResource("33")]
+[node name="@Area3D@40257" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.1451, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29403" parent="jack/js_13" instance=ExtResource("33")]
+[node name="@Area3D@40258" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -33.9032, 5.00003)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29404" parent="jack/js_13" instance=ExtResource("33")]
+[node name="@Area3D@40259" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.0167, 15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29405" parent="jack/js_13" instance=ExtResource("33")]
+[node name="@Area3D@40260" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.0146, 25)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29406" parent="jack/js_13" instance=ExtResource("33")]
+[node name="@Area3D@40261" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.0099, 35)
 metadata/_edit_lock_ = true
 
@@ -1788,31 +1788,31 @@ count = 7
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29420" parent="jack/js_22" instance=ExtResource("33")]
+[node name="@Area3D@40275" parent="jack/js_22" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.73685, -23.106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29421" parent="jack/js_22" instance=ExtResource("33")]
+[node name="@Area3D@40276" parent="jack/js_22" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90735e-06, -10.1929, -15.404)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29422" parent="jack/js_22" instance=ExtResource("33")]
+[node name="@Area3D@40277" parent="jack/js_22" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.6489, -7.702)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29423" parent="jack/js_22" instance=ExtResource("33")]
+[node name="@Area3D@40278" parent="jack/js_22" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.105, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29424" parent="jack/js_22" instance=ExtResource("33")]
+[node name="@Area3D@40279" parent="jack/js_22" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -23.561, 7.702)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29425" parent="jack/js_22" instance=ExtResource("33")]
+[node name="@Area3D@40280" parent="jack/js_22" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -28.017, 15.404)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29426" parent="jack/js_22" instance=ExtResource("33")]
+[node name="@Area3D@40281" parent="jack/js_22" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90735e-06, -32.4731, 23.106)
 metadata/_edit_lock_ = true
 
@@ -1825,31 +1825,31 @@ count = 7
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29440" parent="jack/js_42" instance=ExtResource("33")]
+[node name="@Area3D@40295" parent="jack/js_42" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.441, -23.106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29441" parent="jack/js_42" instance=ExtResource("33")]
+[node name="@Area3D@40296" parent="jack/js_42" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.5788, -15.404)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29442" parent="jack/js_42" instance=ExtResource("33")]
+[node name="@Area3D@40297" parent="jack/js_42" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.7166, -7.70203)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29443" parent="jack/js_42" instance=ExtResource("33")]
+[node name="@Area3D@40298" parent="jack/js_42" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.8126, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29444" parent="jack/js_42" instance=ExtResource("33")]
+[node name="@Area3D@40299" parent="jack/js_42" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.8968, 7.70203)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29445" parent="jack/js_42" instance=ExtResource("33")]
+[node name="@Area3D@40300" parent="jack/js_42" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.9809, 15.404)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29446" parent="jack/js_42" instance=ExtResource("33")]
+[node name="@Area3D@40301" parent="jack/js_42" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -52.0326, 23.106)
 metadata/_edit_lock_ = true
 
@@ -1861,23 +1861,23 @@ spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29451" parent="jack/js_32" instance=ExtResource("33")]
+[node name="@Area3D@40306" parent="jack/js_32" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, -13.3385, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29452" parent="jack/js_32" instance=ExtResource("33")]
+[node name="@Area3D@40307" parent="jack/js_32" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, -13.3385, -7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29453" parent="jack/js_32" instance=ExtResource("33")]
+[node name="@Area3D@40308" parent="jack/js_32" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29454" parent="jack/js_32" instance=ExtResource("33")]
+[node name="@Area3D@40309" parent="jack/js_32" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29455" parent="jack/js_32" instance=ExtResource("33")]
+[node name="@Area3D@40310" parent="jack/js_32" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 14)
 metadata/_edit_lock_ = true
 
@@ -1889,23 +1889,23 @@ spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29460" parent="jack/js_33" instance=ExtResource("33")]
+[node name="@Area3D@40315" parent="jack/js_33" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29461" parent="jack/js_33" instance=ExtResource("33")]
+[node name="@Area3D@40316" parent="jack/js_33" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, -7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29462" parent="jack/js_33" instance=ExtResource("33")]
+[node name="@Area3D@40317" parent="jack/js_33" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29463" parent="jack/js_33" instance=ExtResource("33")]
+[node name="@Area3D@40318" parent="jack/js_33" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29464" parent="jack/js_33" instance=ExtResource("33")]
+[node name="@Area3D@40319" parent="jack/js_33" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.62939e-06, -13.3385, 14)
 metadata/_edit_lock_ = true
 
@@ -1918,27 +1918,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29476" parent="jack/js_14" instance=ExtResource("33")]
+[node name="@Area3D@40331" parent="jack/js_14" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29477" parent="jack/js_14" instance=ExtResource("33")]
+[node name="@Area3D@40332" parent="jack/js_14" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, -10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29478" parent="jack/js_14" instance=ExtResource("33")]
+[node name="@Area3D@40333" parent="jack/js_14" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, -3.50003)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29479" parent="jack/js_14" instance=ExtResource("33")]
+[node name="@Area3D@40334" parent="jack/js_14" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05176e-05, -6.90344, 3.49997)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29480" parent="jack/js_14" instance=ExtResource("33")]
+[node name="@Area3D@40335" parent="jack/js_14" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, 10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29481" parent="jack/js_14" instance=ExtResource("33")]
+[node name="@Area3D@40336" parent="jack/js_14" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, 17.5)
 metadata/_edit_lock_ = true
 
@@ -1951,27 +1951,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29493" parent="jack/js_24" instance=ExtResource("33")]
+[node name="@Area3D@40348" parent="jack/js_24" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.6564, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29494" parent="jack/js_24" instance=ExtResource("33")]
+[node name="@Area3D@40349" parent="jack/js_24" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.3267, -10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29495" parent="jack/js_24" instance=ExtResource("33")]
+[node name="@Area3D@40350" parent="jack/js_24" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.997, -3.50002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29496" parent="jack/js_24" instance=ExtResource("33")]
+[node name="@Area3D@40351" parent="jack/js_24" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.6674, 3.49999)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29497" parent="jack/js_24" instance=ExtResource("33")]
+[node name="@Area3D@40352" parent="jack/js_24" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.10352e-05, -14.2141, 10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29498" parent="jack/js_24" instance=ExtResource("33")]
+[node name="@Area3D@40353" parent="jack/js_24" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.10352e-05, -13.6104, 17.5)
 metadata/_edit_lock_ = true
 
@@ -1985,27 +1985,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29516" parent="jack/js_15" instance=ExtResource("33")]
+[node name="@Area3D@40371" parent="jack/js_15" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -8.66025, -31.1003, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29517" parent="jack/js_15" instance=ExtResource("33")]
+[node name="@Area3D@40372" parent="jack/js_15" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -8.66025, -31.3337, 5.00002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29518" parent="jack/js_15" instance=ExtResource("33")]
+[node name="@Area3D@40373" parent="jack/js_15" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -30.8817, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29519" parent="jack/js_15" instance=ExtResource("33")]
+[node name="@Area3D@40374" parent="jack/js_15" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 8.66025, -30.5408, 5.00002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29520" parent="jack/js_15" instance=ExtResource("33")]
+[node name="@Area3D@40375" parent="jack/js_15" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 8.66028, -31.0748, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29521" parent="jack/js_15" instance=ExtResource("33")]
+[node name="@Area3D@40376" parent="jack/js_15" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.0913, -10)
 metadata/_edit_lock_ = true
 
@@ -2019,27 +2019,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29539" parent="jack/js_28" instance=ExtResource("33")]
+[node name="@Area3D@40394" parent="jack/js_28" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -8.66025, -19.5727, -5.00001)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29540" parent="jack/js_28" instance=ExtResource("33")]
+[node name="@Area3D@40395" parent="jack/js_28" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -8.66025, -19.485, 5.00001)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29541" parent="jack/js_28" instance=ExtResource("33")]
+[node name="@Area3D@40396" parent="jack/js_28" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -19.313, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29542" parent="jack/js_28" instance=ExtResource("33")]
+[node name="@Area3D@40397" parent="jack/js_28" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 8.66025, -19.2176, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29543" parent="jack/js_28" instance=ExtResource("33")]
+[node name="@Area3D@40398" parent="jack/js_28" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 8.66028, -19.2975, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29544" parent="jack/js_28" instance=ExtResource("33")]
+[node name="@Area3D@40399" parent="jack/js_28" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -19.4794, -10)
 metadata/_edit_lock_ = true
 
@@ -2053,35 +2053,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@29568" parent="jack/js_29" instance=ExtResource("33")]
+[node name="@Area3D@40423" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -7.07108, -31.4747, -7.07109)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29569" parent="jack/js_29" instance=ExtResource("33")]
+[node name="@Area3D@40424" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -10, -31.4747, -1.52588e-05)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29570" parent="jack/js_29" instance=ExtResource("33")]
+[node name="@Area3D@40425" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -7.07108, -31.4747, 7.07104)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29571" parent="jack/js_29" instance=ExtResource("33")]
+[node name="@Area3D@40426" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.4747, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29572" parent="jack/js_29" instance=ExtResource("33")]
+[node name="@Area3D@40427" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 7.07104, -31.4747, 7.07106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29573" parent="jack/js_29" instance=ExtResource("33")]
+[node name="@Area3D@40428" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 10, -31.4747, -1.52588e-05)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29574" parent="jack/js_29" instance=ExtResource("33")]
+[node name="@Area3D@40429" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 7.07108, -31.4747, -7.07106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@29575" parent="jack/js_29" instance=ExtResource("33")]
+[node name="@Area3D@40430" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.4747, -10)
 metadata/_edit_lock_ = true
 
@@ -2579,9 +2579,10 @@ fade_delay = 0.25
 
 [node name="gj_done" parent="event" instance=ExtResource("77")]
 
-[node name="shard" parent="event/gj_done/spawn_shard" index="0"]
+[node name="shard" parent="event/gj_done/spawn_shard" index="0" node_paths=PackedStringArray("event_tree")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.8794, 36.765, 277.171)
 data = ExtResource("78")
+event_tree = NodePath("../..")
 
 [node name="origin" parent="event/gj_done/spawn_shard" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.028, 36.9737, 277.484)
@@ -2595,9 +2596,10 @@ transform = Transform3D(-0.898796, 0.13695, -0.416427, 0, 0.949948, 0.312409, 0.
 [node name="seed_done" parent="event" instance=ExtResource("77")]
 player_handler = 1
 
-[node name="shard" parent="event/seed_done/spawn_shard" index="0"]
+[node name="shard" parent="event/seed_done/spawn_shard" index="0" node_paths=PackedStringArray("event_tree")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.0527, 110.112, 106.64)
 data = ExtResource("79")
+event_tree = NodePath("../..")
 
 [node name="origin" parent="event/seed_done/spawn_shard" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.9041, 86.3205, 106.953)
