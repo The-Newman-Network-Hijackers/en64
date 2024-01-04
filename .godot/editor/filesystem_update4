@@ -24,3 +24,5 @@ res://scenes/level/vslice_demo/history/area_hc_ruins_arena.tscn
 res://scripts/button.gd
 res://scripts/event_shard.gd
 res://scenes/level/test/event/tevent_golden_jack.tscn
+res://scenes/prefab/bouncing_jack.tscn
+res://scenes/prefab/crate.tscn

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/crate.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/cluster_spawner.gd" id="2"]
-[ext_resource type="PackedScene" path="res://scenes/prefab/bouncing_jack.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://dygoh1b5o07av" path="res://scenes/prefab/bouncing_jack.tscn" id="3"]
 [ext_resource type="PackedScene" path="res://scenes/prefab/debris_crate.tscn" id="4"]
 [ext_resource type="Script" path="res://scripts/enabler_reciever.gd" id="5"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="6"]
@@ -15,7 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://dw1dqs3wvlx1w" path="res://audio/sfx/wood_break.wav" id="13"]
 [ext_resource type="AudioStream" uid="uid://6j6avthc5uou" path="res://audio/sfx/wood_break2.wav" id="14"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_2x81p"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_4t5ah"]
 size = Vector3(8, 8, 8)
 
 [sub_resource type="GDScript" id="2"]
@@ -443,7 +443,7 @@ target = NodePath("..")
 [node name="col" type="CollisionShape3D" parent="enabler_reciever"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5625, 0)
 visible = false
-shape = SubResource("BoxShape3D_2x81p")
+shape = SubResource("BoxShape3D_4t5ah")
 
 [node name="crate" type="CharacterBody3D" parent="." node_paths=PackedStringArray("hurtbox_node", "visual_node", "floor_raycast", "anim_tree")]
 collision_layer = 5
@@ -476,7 +476,7 @@ scope = 4
 
 [node name="col" type="CollisionShape3D" parent="crate/hbox"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
-shape = SubResource("BoxShape3D_2x81p")
+shape = SubResource("BoxShape3D_4t5ah")
 
 [node name="vis" parent="crate" instance=ExtResource("8")]
 
@@ -516,7 +516,7 @@ bus = &"Sound"
 
 [node name="col" type="CollisionShape3D" parent="crate"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
-shape = SubResource("BoxShape3D_2x81p")
+shape = SubResource("BoxShape3D_4t5ah")
 
 [node name="floor" type="RayCast3D" parent="crate"]
 target_position = Vector3(0, -2.5, 0)
