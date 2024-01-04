@@ -8,7 +8,7 @@
 [ext_resource type="Environment" uid="uid://qkqvav71a2j2" path="res://asset/environment/env_bg.tres" id="6"]
 [ext_resource type="CameraAttributesPractical" uid="uid://c6mnym7nlyfh8" path="res://asset/environment/cap_bg.tres" id="7"]
 [ext_resource type="Script" path="res://scripts/background_cam.gd" id="8"]
-[ext_resource type="PackedScene" uid="uid://o7ryw4vvlnnh" path="res://asset/level/history/hc_ruins_castle.blend" id="9"]
+[ext_resource type="PackedScene" path="res://asset/level/history/hc_ruins_castle.blend.scn" id="9"]
 [ext_resource type="Material" uid="uid://cdyi8rengs8f3" path="res://asset/level/history/vtx_tile_03.tres" id="10"]
 [ext_resource type="Material" uid="uid://c8xcq7tytxg01" path="res://asset/level/history/vtx_dirt.tres" id="11"]
 [ext_resource type="Material" uid="uid://cqmiy8358i0uc" path="res://asset/level/history/vtx_painting.tres" id="12"]

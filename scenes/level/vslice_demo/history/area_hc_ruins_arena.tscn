@@ -8,7 +8,7 @@
 [ext_resource type="Environment" path="res://asset/environment/env_bg.tres" id="6"]
 [ext_resource type="CameraAttributesPractical" path="res://asset/environment/cap_bg.tres" id="7"]
 [ext_resource type="Script" path="res://scripts/background_cam.gd" id="8"]
-[ext_resource type="PackedScene" uid="uid://xaxvf832w3ai" path="res://asset/level/history/hc_ruins_tower_arena.blend" id="9"]
+[ext_resource type="PackedScene" path="res://asset/level/history/hc_ruins_tower_arena.blend.scn" id="9"]
 [ext_resource type="PackedScene" uid="uid://daug435u4jxke" path="res://scenes/prefab/cage.tscn" id="10"]
 [ext_resource type="Script" path="res://scripts/moving_geo.gd" id="11"]
 [ext_resource type="AudioStream" uid="uid://x13yn5oy8jax" path="res://audio/sfx/chain_loop.wav" id="12"]

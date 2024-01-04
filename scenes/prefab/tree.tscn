@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://v3v3tnxf7wta"]
 
-[ext_resource type="PackedScene" uid="uid://c7htwlbvkw7fq" path="res://asset/entity/tree/tree.blend" id="1"]
+[ext_resource type="PackedScene" path="res://asset/entity/tree/tree.blend.scn" id="1"]
 [ext_resource type="Script" path="res://scripts/shadow.gd" id="2"]
 
 [sub_resource type="CylinderShape3D" id="1"]

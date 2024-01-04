@@ -1,7 +1,7 @@
 [gd_scene load_steps=74 format=3]
 
 [ext_resource type="Script" path="res://scripts/entity.gd" id="1"]
-[ext_resource type="PackedScene" uid="uid://bjuhnoq715csy" path="res://asset/entity/flower_prince/flower_prince.blend" id="2"]
+[ext_resource type="PackedScene" path="res://asset/entity/flower_prince/flower_prince.blend.scn" id="2"]
 [ext_resource type="Material" uid="uid://baailxh1p6j7u" path="res://asset/entity/flower_prince/mat/vtx_mouth_angry.tres" id="3"]
 [ext_resource type="Material" uid="uid://btyd1kxbs8f63" path="res://asset/entity/flower_prince/mat/vtx_eyes_angry.tres" id="4"]
 [ext_resource type="Material" uid="uid://cy8kqbygasw1e" path="res://asset/entity/flower_prince/mat/vtx_crown.tres" id="5"]

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/entity.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="2"]
-[ext_resource type="PackedScene" uid="uid://kqqlhv2dmb1g" path="res://asset/entity/springboard/springboard.blend" id="3"]
+[ext_resource type="PackedScene" path="res://asset/entity/springboard/springboard.blend.scn" id="3"]
 [ext_resource type="Shader" path="res://asset/shader/n64_lit_transparent_nocull.gdshader" id="4"]
 [ext_resource type="Texture2D" uid="uid://bgpw1hkq0hw62" path="res://asset/level/generic/grate_1.png" id="5"]
 [ext_resource type="Script" path="res://scripts/grabbable.gd" id="6"]

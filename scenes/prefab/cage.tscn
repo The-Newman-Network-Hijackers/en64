@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/cage.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/hurtbox.gd" id="2"]
-[ext_resource type="PackedScene" uid="uid://btue53jsuu2xf" path="res://asset/entity/cage/cage.blend" id="3"]
+[ext_resource type="PackedScene" path="res://asset/entity/cage/cage.blend.scn" id="3"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="4"]
 [ext_resource type="Script" path="res://scripts/cluster_spawner.gd" id="5"]
 [ext_resource type="PackedScene" path="res://scenes/prefab/debris_stone.tscn" id="6"]
