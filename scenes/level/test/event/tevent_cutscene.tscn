@@ -212,7 +212,7 @@ script = ExtResource("6")
 
 [node name="entity" type="Node" parent="0"]
 
-[node name="interactable" type="Area3D" parent="0/entity"]
+[node name="interactable" type="Area3D" parent="0/entity" node_paths=PackedStringArray("event_tree")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50)
 script = ExtResource("7")
 event_tree = NodePath("../../event/cutscene")
@@ -230,7 +230,7 @@ shape = SubResource("8")
 [node name="cutscene" type="Node" parent="0/event"]
 script = ExtResource("10")
 
-[node name="box_cam" type="Node" parent="0/event/cutscene"]
+[node name="box_cam" type="Node" parent="0/event/cutscene" node_paths=PackedStringArray("camera")]
 script = ExtResource("11")
 camera = NodePath("camera_3d")
 duration = 3.0

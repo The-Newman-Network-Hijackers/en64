@@ -1,32 +1,31 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=7 format=3 uid="uid://bpaie5176rj8h"]
 
 [ext_resource type="Script" path="res://scripts/interactable.gd" id="1"]
 [ext_resource type="Script" path="res://res_inputprompt.gd" id="2"]
-[ext_resource type="PackedScene" uid="uid://da3evp0bo75xq" path="res://scenes/prefab/et_npc_stationary.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/et_npc_stationary.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://7hfkfh52rr0t" path="res://asset/entity/sign/sign.blend" id="4"]
 
 [sub_resource type="Resource" id="1"]
-script = ExtResource( "2" )
-input = [&"interact"]
+script = ExtResource("2")
+input = Array[StringName]([&"interact"])
 render_as_analog = false
 equip_icon = -1
 message = "to Interact"
 
 [sub_resource type="BoxShape3D" id="2"]
 size = Vector3(7.57008, 7.91274, 9.91015)
-script = null
 
-[node name="sign" type="Area3D"]
-script = ExtResource( "1" )
+[node name="sign" type="Area3D" node_paths=PackedStringArray("event_tree")]
+script = ExtResource("1")
 event_tree = NodePath("et_npc_stationary_1")
 event_priority = 1
-input_prompt = SubResource( "1" )
+input_prompt = SubResource("1")
 
 [node name="col" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.07843, 0.15637, -0.0449228)
-shape = SubResource( "2" )
+shape = SubResource("2")
 
-[node name="et_npc_stationary_1" parent="." instance=ExtResource( "3" )]
+[node name="et_npc_stationary_1" parent="." instance=ExtResource("3")]
 
 [node name="event_move" parent="et_npc_stationary_1" index="0"]
 target = NodePath("../../event_move_target")
@@ -37,7 +36,7 @@ animation_done = &"cutscene_idle"
 [node name="cam_in" parent="et_npc_stationary_1" index="1"]
 camera = NodePath("../../s_cam")
 
-[node name="sign" parent="." instance=ExtResource( "4" )]
+[node name="sign" parent="." instance=ExtResource("4")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.0268099, -0.05118, 0)
 
 [node name="s_cam" type="Camera3D" parent="."]

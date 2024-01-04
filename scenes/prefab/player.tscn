@@ -1,7 +1,7 @@
 [gd_scene load_steps=324 format=3 uid="uid://7u8h5xolieg6"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1"]
-[ext_resource type="PackedScene" uid="uid://cqvlh5yr2rl6u" path="res://asset/newman/newman.blend" id="2"]
+[ext_resource type="PackedScene" path="res://asset/newman/newman.blend.scn" id="2"]
 [ext_resource type="Skin" path="res://asset/accessory/body/body_skin.tres" id="3"]
 [ext_resource type="Material" path="res://asset/newman/mat/face.tres" id="4"]
 [ext_resource type="Material" path="res://asset/newman/mat/vtx_body.tres" id="5"]
@@ -10140,25 +10140,25 @@ transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 
 transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.0624833, 1.37293, 1.73276)
 
 [node name="skeleton" parent="visual/newman" index="1"]
-bones/2/rotation = Quaternion(-0.00864078, 1.19205e-07, 1.03006e-09, 0.999963)
-bones/3/position = Vector3(0.128868, -0.214669, 1.73333)
+bones/2/rotation = Quaternion(0.0393873, 1.19117e-07, -4.69534e-09, 0.999224)
+bones/3/position = Vector3(-0.544774, -0.225321, 1.7311)
 bones/4/scale = Vector3(0, 0, 0)
-bones/5/position = Vector3(4.36836e-10, 2.65833, -0.00183223)
-bones/5/rotation = Quaternion(0.00678538, -1.20024e-07, 7.40883e-10, 0.999977)
-bones/6/position = Vector3(-0.233918, -0.147337, -1.76888)
+bones/5/position = Vector3(1.65847e-10, 2.68418, -0.000695614)
+bones/5/rotation = Quaternion(0.00257499, -1.19209e-07, 3.06962e-10, 0.999997)
+bones/6/position = Vector3(0.6299, -0.146101, -1.52157)
 
 [node name="head_accessory" type="BoneAttachment3D" parent="visual/newman/skeleton" index="0"]
-transform = Transform3D(1, -3.99529e-09, -1.61471e-09, 4.00125e-09, 0.999993, 0.0037109, 1.59987e-09, -0.0037109, 0.999993, -1.09525e-08, 4.3579, -0.0477704)
+transform = Transform3D(1, 1.87627e-08, -8.36451e-10, -1.87668e-08, 0.996479, -0.0838465, -7.39703e-10, 0.0838465, 0.996479, 5.03739e-08, 4.37591, 0.210588)
 bone_name = "head"
 bone_idx = 5
 
 [node name="face_accessory" type="BoneAttachment3D" parent="visual/newman/skeleton" index="1"]
-transform = Transform3D(1, -3.99529e-09, -1.61471e-09, 4.00125e-09, 0.999993, 0.0037109, 1.59987e-09, -0.0037109, 0.999993, -1.09525e-08, 4.3579, -0.0477704)
+transform = Transform3D(1, 1.87627e-08, -8.36451e-10, -1.87668e-08, 0.996479, -0.0838465, -7.39703e-10, 0.0838465, 0.996479, 5.03739e-08, 4.37591, 0.210588)
 bone_name = "head"
 bone_idx = 5
 
 [node name="item_follow" type="BoneAttachment3D" parent="visual/newman/skeleton" index="2"]
-transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.517538, 1.50546, 1.73695)
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.156103, 1.32929, 1.70722)
 bone_name = "r.handitem"
 bone_idx = 4
 

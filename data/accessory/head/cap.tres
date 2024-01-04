@@ -1,20 +1,19 @@
-[gd_resource type="Resource" script_class="AccessoryData" load_steps=5 format=3]
+[gd_resource type="Resource" script_class="AccessoryData" load_steps=5 format=3 uid="uid://crl0y5h4el3q2"]
 
 [ext_resource type="Script" path="res://scripts/res_accessory.gd" id="1"]
 [ext_resource type="ArrayMesh" uid="uid://c5dk2l2x7rxws" path="res://asset/accessory/head/mesh/cap.res" id="2"]
-[ext_resource type="Material" uid="uid://4gqj30h7vwqw" path="res://asset/accessory/mat/vtx_acc_primary.tres" id="3"]
+[ext_resource type="Material" path="res://asset/accessory/mat/vtx_acc_primary.tres" id="3"]
 [ext_resource type="Texture2D" uid="uid://b1710s4w3h6d8" path="res://asset/accessory/head/icon/cap.png" id="4"]
 
 [resource]
-script = ExtResource( "1" )
+script = ExtResource("1")
 type = 1
-model = ExtResource( "2" )
+model = ExtResource("2")
 offset = Vector3(0, 1, 0)
-primary_material = ExtResource( "3" )
+primary_material = ExtResource("3")
 primary_surface = 0
-secondary_material = null
 secondary_surface = 1
 name = "Adventure Cap"
 description = "Standard attire for aspiring explorers."
-icon = ExtResource( "4" )
+icon = ExtResource("4")
 icon_modulation = Color(1, 1, 1, 1)

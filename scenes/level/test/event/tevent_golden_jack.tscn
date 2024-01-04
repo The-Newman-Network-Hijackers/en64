@@ -12,8 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://ccjkkc6wvrhra" path="res://asset/level/generic/tile_3.png" id="10"]
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="11"]
 [ext_resource type="Script" path="res://scripts/golden_jack_manager.gd" id="12"]
-[ext_resource type="PackedScene" path="res://scenes/prefab/gj_ball.tscn" id="13"]
-[ext_resource type="PackedScene" path="res://scenes/prefab/golden_jack.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://daikxntnhoinx" path="res://scenes/prefab/gj_ball.tscn" id="13"]
+[ext_resource type="PackedScene" uid="uid://bxyp51q2f0ytv" path="res://scenes/prefab/golden_jack.tscn" id="14"]
 [ext_resource type="PackedScene" path="res://scenes/prefab/et_shard_sequence.tscn" id="15"]
 
 [sub_resource type="Resource" id="1"]
@@ -149,8 +149,9 @@ script = ExtResource("11")
 
 [node name="entity" type="Node" parent="0"]
 
-[node name="golden_jack_manager" type="Node3D" parent="0/entity"]
+[node name="golden_jack_manager" type="Node3D" parent="0/entity" node_paths=PackedStringArray("event_tree")]
 script = ExtResource("12")
+event_tree = NodePath("../../event/shard_sequence")
 
 [node name="gj_ball" parent="0/entity/golden_jack_manager" instance=ExtResource("13")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.415, 10, 0)

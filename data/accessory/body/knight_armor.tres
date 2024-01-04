@@ -1,21 +1,21 @@
-[gd_resource type="Resource" script_class="AccessoryData" load_steps=6 format=3]
+[gd_resource type="Resource" script_class="AccessoryData" load_steps=6 format=3 uid="uid://b4rdyp3pnqyd8"]
 
 [ext_resource type="Script" path="res://scripts/res_accessory.gd" id="1"]
 [ext_resource type="ArrayMesh" uid="uid://pqt0qk2g6ju5" path="res://asset/accessory/body/mesh/knight_armor.res" id="2"]
-[ext_resource type="Material" uid="uid://jjau773g26pj" path="res://asset/accessory/body/mat/vtx_metal_primary.tres" id="3"]
-[ext_resource type="Material" uid="uid://bxip48jxv17qq" path="res://asset/accessory/mat/vtx_acc_secondary.tres" id="4"]
+[ext_resource type="Material" path="res://asset/accessory/body/mat/vtx_metal_primary.tres" id="3"]
+[ext_resource type="Material" path="res://asset/accessory/mat/vtx_acc_secondary.tres" id="4"]
 [ext_resource type="Texture2D" uid="uid://tdbt2jruihuq" path="res://asset/accessory/body/icon/knight_armor.png" id="5"]
 
 [resource]
-script = ExtResource( "1" )
+script = ExtResource("1")
 type = 4
-model = ExtResource( "2" )
+model = ExtResource("2")
 offset = Vector3(0, 0, 0)
-primary_material = ExtResource( "3" )
+primary_material = ExtResource("3")
 primary_surface = 1
-secondary_material = ExtResource( "4" )
+secondary_material = ExtResource("4")
 secondary_surface = 2
 name = "Knight Armor"
 description = "A great knight needs great protection!"
-icon = ExtResource( "5" )
+icon = ExtResource("5")
 icon_modulation = Color(1, 1, 1, 1)
