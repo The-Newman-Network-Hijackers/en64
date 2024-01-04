@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_3okvl"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_0fl4v"]
 
 [resource]
-script = ExtResource("1_3okvl")
+script = ExtResource("1_0fl4v")
 using_states = PackedStringArray()
 titles = {}
 character_names = PackedStringArray("\"flower_prince_defeat_2_demo\"", "\"flower_prince_defeat_3_demo\"", "\"flower_prince_defeat_demo\"", "\"flower_prince_demo\"", "\"flower_prince_intro\"", "\"flower_prince_mean\"", "\"flower_prince_mean_demo\"", "\"flower_prince_regret\"", "\"flower_prince_rematch_demo\"", "\"1\"", "\"id\"", "\"next_id\"", "\"text\"", "\"type\"", "\"11\"", "\"13\"", "\"character\"", "\"character_replacements\"", "\"tags\"", "\"text_replacements\"", "\"translation_key\"", "\"14\"", "\"15\"", "\"16\"", "\"17\"", "\"19\"", "\"is_snippet\"", "\"21\"", "\"23\"", "\"24\"", "\"25\"", "\"26\"", "\"27\"", "\"28\"", "\"3\"", "\"30\"", "\"32\"", "\"34\"", "\"mutation\"", "\"expression\"", "\"function\"", "\"value\"", "\"35\"", "\"36\"", "\"37\"", "\"38\"", "\"4\"", "\"40\"", "\"42\"", "\"44\"", "\"45\"", "\"46\"", "\"47\"", "\"49\"", "\"5\"", "\"51\"", "\"53\"", "\"54\"", "\"56\"", "\"58\"", "\"6\"", "\"60\"", "\"61\"", "\"62\"", "\"64\"", "\"66\"", "\"68\"", "\"69\"", "\"7\"", "\"71\"", "\"73\"", "\"75\"", "\"76\"", "\"77\"", "\"78\"", "\"79\"", "\"81\"", "\"9\"")

@@ -45,8 +45,8 @@ var pressed : bool = false
 
 func _enter_tree() -> void:
 	# Load materials
-	b_base_material = load("uid://bhpwgl8gyvag8")
-	button_material = load("uid://cgcp1y28k1ref")
+	b_base_material = load("res://asset/entity/button/vtx_base.tres")
+	button_material = load("res://asset/entity/button/vtx_button.tres")
 
 func _ready() -> void:
 	generate_button()
