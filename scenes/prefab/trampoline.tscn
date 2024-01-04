@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/trampoline.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="2"]
-[ext_resource type="PackedScene" path="res://asset/entity/trampoline/mushroom.blend.scn" id="3"]
+[ext_resource type="PackedScene" uid="uid://belmpv7f02gbv" path="res://asset/entity/trampoline/mushroom.blend" id="3"]
 [ext_resource type="Material" path="res://asset/entity/trampoline/mat/vtx_face2.tres" id="4"]
 [ext_resource type="Material" path="res://asset/entity/trampoline/mat/vtx_cap2.tres" id="5"]
 [ext_resource type="Texture2D" uid="uid://dtfxspnedmoja" path="res://asset/effect/splash/bubble_hollow.png" id="6"]

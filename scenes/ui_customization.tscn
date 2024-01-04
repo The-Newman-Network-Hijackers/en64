@@ -1,7 +1,7 @@
 [gd_scene load_steps=65 format=3 uid="uid://4staqst3vq8x"]
 
 [ext_resource type="Script" path="res://scripts/ui_customization.gd" id="1"]
-[ext_resource type="PackedScene" path="res://asset/accessory/studio/studio.blend.scn" id="2"]
+[ext_resource type="PackedScene" uid="uid://cd6tl80icokm5" path="res://asset/accessory/studio/studio.blend" id="2"]
 [ext_resource type="PackedScene" path="res://asset/newman/newman.blend.scn" id="3"]
 [ext_resource type="Script" path="res://scripts/shadow.gd" id="4"]
 [ext_resource type="Script" path="res://scripts/player_visual_managergd.gd" id="5"]

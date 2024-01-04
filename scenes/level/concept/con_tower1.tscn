@@ -26,7 +26,7 @@
 [ext_resource type="Script" path="res://scripts/activation_group.gd" id="24"]
 [ext_resource type="Script" path="res://scripts/button.gd" id="25"]
 [ext_resource type="Script" path="res://scripts/moving_geo.gd" id="26"]
-[ext_resource type="PackedScene" path="res://asset/entity/moving_platform/generic/mp_ruins_1.blend.scn" id="27"]
+[ext_resource type="PackedScene" uid="uid://eo1iy1qhadq4" path="res://asset/entity/moving_platform/generic/mp_ruins_1.blend" id="27"]
 [ext_resource type="Material" path="res://asset/level/test/mat/vtx_rock_01.tres" id="28"]
 [ext_resource type="Material" path="res://asset/level/test/mat/vtx_rock_02.tres" id="29"]
 [ext_resource type="Material" path="res://asset/level/test/mat/vtx_brick_01.tres" id="30"]

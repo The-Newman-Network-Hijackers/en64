@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://scripts/enabler_reciever.gd" id="5"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="6"]
 [ext_resource type="Script" path="res://scripts/hurtbox.gd" id="7"]
-[ext_resource type="PackedScene" path="res://asset/entity/crate/box.blend.scn" id="8"]
+[ext_resource type="PackedScene" uid="uid://c4j6uku1up34s" path="res://asset/entity/crate/box.blend" id="8"]
 [ext_resource type="Material" path="res://asset/entity/crate/wooden/mat/wood_crate_1.tres" id="9"]
 [ext_resource type="Material" path="res://asset/effect/dust/mat/vtx_dust.tres" id="10"]
 [ext_resource type="AudioStream" uid="uid://uh5lnkko6twf" path="res://audio/sfx/wood_damage.wav" id="11"]

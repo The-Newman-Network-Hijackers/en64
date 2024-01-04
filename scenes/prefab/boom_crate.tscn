@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://budaw7hon32vh"]
 
-[ext_resource type="PackedScene" path="res://asset/entity/crate/boom_crate.blend.scn" id="1"]
+[ext_resource type="PackedScene" uid="uid://d1l0kmf1ldckn" path="res://asset/entity/crate/boom_crate.blend" id="1"]
 [ext_resource type="Material" path="res://asset/entity/crate/boom/mat/vtx_side.tres" id="2"]
 [ext_resource type="Material" path="res://asset/entity/crate/boom/mat/vtx_top.tres" id="3"]
 [ext_resource type="Material" path="res://asset/entity/crate/boom/mat/vtx_bottom.tres" id="4"]

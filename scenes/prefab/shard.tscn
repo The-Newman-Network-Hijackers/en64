@@ -1,7 +1,7 @@
 [gd_scene load_steps=24 format=3]
 
 [ext_resource type="Script" path="res://scripts/prop.gd" id="1"]
-[ext_resource type="PackedScene" path="res://asset/shard/shard.blend.scn" id="2"]
+[ext_resource type="PackedScene" uid="uid://bffo6tj4v8ql2" path="res://asset/shard/shard.blend" id="2"]
 [ext_resource type="Shader" path="res://asset/shader/n64_lit_metal.gdshader" id="3"]
 [ext_resource type="Texture2D" uid="uid://dqeb02gbqh8r0" path="res://asset/level/generic/water_1.png" id="4"]
 [ext_resource type="Script" path="res://scripts/billboard.gd" id="5"]

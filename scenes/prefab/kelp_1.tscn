@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="PackedScene" path="res://asset/entity/kelp/kelp_1.blend.scn" id="1"]
+[ext_resource type="PackedScene" uid="uid://dqr2cciohgudg" path="res://asset/entity/kelp/kelp_1.blend" id="1"]
 [ext_resource type="Shader" path="res://asset/shader/n64_lit_nocull.gdshader" id="2"]
 
 [sub_resource type="GDScript" id="1"]

@@ -30,7 +30,7 @@
 [ext_resource type="Material" path="res://asset/level/flyingfort/mat/vtx_ff_grate.tres" id="27"]
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="28"]
 [ext_resource type="PackedScene" uid="uid://v3v3tnxf7wta" path="res://scenes/prefab/tree.tscn" id="29"]
-[ext_resource type="PackedScene" path="res://asset/entity/pole/pole.blend.scn" id="30"]
+[ext_resource type="PackedScene" uid="uid://cn2wmpt43va65" path="res://asset/entity/pole/pole.blend" id="30"]
 [ext_resource type="PackedScene" uid="uid://dogr370k43n1s" path="res://scenes/prefab/crate.tscn" id="31"]
 [ext_resource type="Material" path="res://asset/entity/crate/wooden/mat/wood_crate_2.tres" id="32"]
 [ext_resource type="Script" path="res://scripts/moving_geo.gd" id="33"]

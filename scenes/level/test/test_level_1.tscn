@@ -9,7 +9,7 @@
 [ext_resource type="CameraAttributesPractical" path="res://asset/environment/cap_bg.tres" id="7"]
 [ext_resource type="Script" path="res://scripts/background_cam.gd" id="8"]
 [ext_resource type="AudioStream" uid="uid://dlnbey287rrgn" path="res://audio/bossanova.mp3" id="9"]
-[ext_resource type="PackedScene" path="res://asset/level/test/test_map1.blend.scn" id="10"]
+[ext_resource type="PackedScene" uid="uid://dgfcwqg12gc37" path="res://asset/level/test/test_map1.blend" id="10"]
 [ext_resource type="Script" path="res://scripts/terrain.gd" id="11"]
 [ext_resource type="FontVariation" path="res://asset/ui/schoolwork_modified.tres" id="12"]
 [ext_resource type="Script" path="res://scripts/moving_platform.gd" id="13"]
