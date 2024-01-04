@@ -395,12 +395,6 @@ size = 4.0
 [node name="visual_manager" type="Node" parent="view/viewport"]
 unique_name_in_owner = true
 script = ExtResource("5")
-bone_head = NodePath("../newman/newman/skeleton/head_accessory")
-bone_face = NodePath("../newman/newman/skeleton/face_accessory")
-skeleton = NodePath("../newman/newman/skeleton")
-mesh_skin = NodePath("../newman/newman/skeleton/skin")
-mesh_body = NodePath("../newman/newman/skeleton/body")
-mesh_face = NodePath("../newman/newman/skeleton/face")
 material_body = ExtResource("6")
 
 [node name="camera" type="Camera3D" parent="view/viewport"]
@@ -945,12 +939,6 @@ speed_scale = 0.72
 
 [node name="visual_manager" type="Node" parent="render"]
 script = ExtResource("5")
-bone_head = NodePath("../newman/newman/skeleton/head_accessory")
-bone_face = NodePath("../newman/newman/skeleton/face_accessory")
-skeleton = NodePath("../newman/newman/skeleton")
-mesh_skin = NodePath("../newman/newman/skeleton/skin")
-mesh_body = NodePath("../newman/newman/skeleton/body")
-mesh_face = NodePath("../newman/newman/skeleton/face")
 material_body = SubResource("27")
 material_acc_primary = SubResource("25")
 

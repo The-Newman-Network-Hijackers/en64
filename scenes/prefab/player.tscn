@@ -10140,25 +10140,25 @@ transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 
 transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.0624833, 1.37293, 1.73276)
 
 [node name="skeleton" parent="visual/newman" index="1"]
-bones/2/rotation = Quaternion(-0.0314471, 1.1915e-07, 3.74878e-09, 0.999506)
-bones/3/position = Vector3(0.371145, -0.191932, 1.54411)
+bones/2/rotation = Quaternion(0.04251, 1.19101e-07, -5.06759e-09, 0.999096)
+bones/3/position = Vector3(-0.605947, -0.225462, 1.71955)
 bones/4/scale = Vector3(0, 0, 0)
-bones/5/position = Vector3(3.46935e-10, 2.66691, -0.00145517)
-bones/5/rotation = Quaternion(0.00538808, -1.19208e-07, 6.42309e-10, 0.999986)
-bones/6/position = Vector3(-0.432829, -0.161786, -1.67582)
+bones/5/position = Vector3(8.19048e-11, 2.69219, -0.000343487)
+bones/5/rotation = Quaternion(0.00127141, -1.19209e-07, 1.51565e-10, 0.999999)
+bones/6/position = Vector3(0.727243, -0.146653, -1.45821)
 
 [node name="head_accessory" type="BoneAttachment3D" parent="visual/newman/skeleton" index="0"]
-transform = Transform3D(1, -1.49919e-08, -3.10038e-10, 1.49877e-08, 0.998642, 0.0521047, -4.7153e-10, -0.0521047, 0.998642, -3.99702e-08, 4.36154, -0.169102)
+transform = Transform3D(1, 2.02498e-08, -9.13289e-10, -2.0252e-08, 0.996167, -0.0874765, -8.6159e-10, 0.0874765, 0.996167, 5.45225e-08, 4.38249, 0.228341)
 bone_name = "head"
 bone_idx = 5
 
 [node name="face_accessory" type="BoneAttachment3D" parent="visual/newman/skeleton" index="1"]
-transform = Transform3D(1, -1.49919e-08, -3.10038e-10, 1.49877e-08, 0.998642, 0.0521047, -4.7153e-10, -0.0521047, 0.998642, -3.99702e-08, 4.36154, -0.169102)
+transform = Transform3D(1, 2.02498e-08, -9.13289e-10, -2.0252e-08, 0.996167, -0.0874765, -8.6159e-10, 0.0874765, 0.996167, 5.45225e-08, 4.38249, 0.228341)
 bone_name = "head"
 bone_idx = 5
 
 [node name="item_follow" type="BoneAttachment3D" parent="visual/newman/skeleton" index="2"]
-transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.759816, 1.59567, 1.55374)
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.217277, 1.31946, 1.69335)
 bone_name = "r.handitem"
 bone_idx = 4
 
@@ -10719,7 +10719,6 @@ bus = &"Sound"
 collision_mask = 5
 monitorable = false
 script = ExtResource("54")
-player_fsm = NodePath("../state_machine")
 
 [node name="collision_shape_3d" type="CollisionShape3D" parent="player_interaction_radius"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)

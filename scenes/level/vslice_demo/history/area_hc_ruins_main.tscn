@@ -1,71 +1,71 @@
-[gd_scene load_steps=113 format=3]
+[gd_scene load_steps=113 format=3 uid="uid://s36pxxirim7q"]
 
 [ext_resource type="Script" path="res://scripts/subarea.gd" id="1"]
-[ext_resource type="Resource" uid="uid://dvinp6m1q6kcy" path="res://data/stem/ruins/ruins_drum.tres" id="2"]
-[ext_resource type="Resource" uid="uid://dnjaj4ysw6ius" path="res://data/stem/ruins/ruins_bass.tres" id="3"]
-[ext_resource type="Resource" uid="uid://coxf4sc0g3os" path="res://data/stem/ruins/ruins_piano.tres" id="4"]
-[ext_resource type="Resource" uid="uid://gb0vnfu35x47" path="res://data/stem/ruins/ruins_flute.tres" id="5"]
-[ext_resource type="Resource" uid="uid://bhndi3kl1rtqj" path="res://data/stem/amb_birds.tres" id="6"]
-[ext_resource type="Environment" uid="uid://d2b4gqaogl2ab" path="res://asset/environment/ruins_outside_env.tres" id="7"]
+[ext_resource type="Resource" path="res://data/stem/ruins/ruins_drum.tres" id="2"]
+[ext_resource type="Resource" path="res://data/stem/ruins/ruins_bass.tres" id="3"]
+[ext_resource type="Resource" path="res://data/stem/ruins/ruins_piano.tres" id="4"]
+[ext_resource type="Resource" path="res://data/stem/ruins/ruins_flute.tres" id="5"]
+[ext_resource type="Resource" path="res://data/stem/amb_birds.tres" id="6"]
+[ext_resource type="Environment" uid="uid://bls5vkf3gyy8l" path="res://asset/environment/ruins_outside_env.tres" id="7"]
 [ext_resource type="Script" path="res://scripts/background.gd" id="8"]
-[ext_resource type="Material" uid="uid://qmpfo6uge8o0" path="res://asset/level/skybox/mat/sm_ruins.tres" id="9"]
-[ext_resource type="Environment" uid="uid://qkqvav71a2j2" path="res://asset/environment/env_bg.tres" id="10"]
-[ext_resource type="CameraAttributesPractical" uid="uid://c6mnym7nlyfh8" path="res://asset/environment/cap_bg.tres" id="11"]
+[ext_resource type="Material" path="res://asset/level/skybox/mat/sm_ruins.tres" id="9"]
+[ext_resource type="Environment" path="res://asset/environment/env_bg.tres" id="10"]
+[ext_resource type="CameraAttributesPractical" path="res://asset/environment/cap_bg.tres" id="11"]
 [ext_resource type="Script" path="res://scripts/background_cam.gd" id="12"]
 [ext_resource type="PackedScene" uid="uid://ba3h4qwdx3iye" path="res://asset/level/test/test_map2.blend" id="13"]
-[ext_resource type="Material" uid="uid://bpngqhdv3na5x" path="res://asset/level/test/mat/vtx_grass_01.tres" id="14"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_grass_01.tres" id="14"]
 [ext_resource type="Script" path="res://scripts/terrain.gd" id="15"]
-[ext_resource type="Material" uid="uid://qam2rbojnhud" path="res://asset/level/test/mat/vtx_rock_01.tres" id="16"]
-[ext_resource type="Material" uid="uid://fii0r7fmms4a" path="res://asset/level/test/mat/vtx_wood_02.tres" id="17"]
-[ext_resource type="Material" uid="uid://bvd36femhgdpo" path="res://asset/level/test/mat/vtx_brick_01.tres" id="18"]
-[ext_resource type="Material" uid="uid://33nphra42pbb" path="res://asset/level/test/mat/vtx_rock_03.tres" id="19"]
-[ext_resource type="Material" uid="uid://nflep85gekx1" path="res://asset/level/test/mat/vtx_wood_01.tres" id="20"]
-[ext_resource type="Material" uid="uid://cy6rmvpkyl6li" path="res://asset/level/test/mat/vtx_log_top.tres" id="21"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_rock_01.tres" id="16"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_wood_02.tres" id="17"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_brick_01.tres" id="18"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_rock_03.tres" id="19"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_wood_01.tres" id="20"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_log_top.tres" id="21"]
 [ext_resource type="Texture2D" uid="uid://2rug74yexel0" path="res://asset/effect/dust/dust_cloud.png" id="22"]
 [ext_resource type="Shader" path="res://asset/shader/n64_lit.gdshader" id="23"]
 [ext_resource type="Texture2D" uid="uid://buaik6000vvym" path="res://asset/level/generic/dirt_wall.png" id="24"]
 [ext_resource type="Texture2D" uid="uid://cty6pxd7oqa3t" path="res://asset/level/generic/b_dirt_wall.png" id="25"]
 [ext_resource type="ArrayMesh" uid="uid://da7p125tywpha" path="res://asset/effect/grass/mesh/plane_padded_centered.res" id="26"]
-[ext_resource type="PackedScene" uid="uid://b63f8sfuhouwd" path="res://scenes/prefab/breakable_stone.tscn" id="27"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/breakable_stone.tscn" id="27"]
 [ext_resource type="ArrayMesh" uid="uid://cplw5t5dpncvi" path="res://asset/level/history/mesh/exterior_breakable_wall.res" id="28"]
-[ext_resource type="PackedScene" uid="uid://c6kny6lqhsedf" path="res://scenes/prefab/tree.tscn" id="29"]
+[ext_resource type="PackedScene" uid="uid://v3v3tnxf7wta" path="res://scenes/prefab/tree.tscn" id="29"]
 [ext_resource type="Texture2D" uid="uid://c35553dkk3ekt" path="res://asset/level/generic/creppy.png" id="30"]
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="31"]
 [ext_resource type="Script" path="res://scripts/jack_spawner.gd" id="32"]
-[ext_resource type="PackedScene" uid="uid://c31y51bdp7t8a" path="res://scenes/prefab/jack.tscn" id="33"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/jack.tscn" id="33"]
 [ext_resource type="Script" path="res://scripts/activation_group.gd" id="34"]
 [ext_resource type="Script" path="res://scripts/button.gd" id="35"]
 [ext_resource type="Script" path="res://scripts/golden_jack_manager.gd" id="36"]
-[ext_resource type="PackedScene" uid="uid://cj272w3m7m5rv" path="res://scenes/prefab/gj_ball.tscn" id="37"]
-[ext_resource type="PackedScene" uid="uid://b4vj0acikax15" path="res://scenes/prefab/golden_jack.tscn" id="38"]
-[ext_resource type="PackedScene" uid="uid://hvyqc25bov7n" path="res://scenes/prefab/ruins_seed.tscn" id="39"]
+[ext_resource type="PackedScene" uid="uid://daikxntnhoinx" path="res://scenes/prefab/gj_ball.tscn" id="37"]
+[ext_resource type="PackedScene" uid="uid://bxyp51q2f0ytv" path="res://scenes/prefab/golden_jack.tscn" id="38"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/ruins_seed.tscn" id="39"]
 [ext_resource type="Script" path="res://scripts/big_door.gd" id="40"]
-[ext_resource type="Material" uid="uid://cngf4qshv1luk" path="res://asset/entity/bigdoor/wood_gate_1.tres" id="41"]
-[ext_resource type="AudioStream" uid="uid://cdjeo6jvg6061" path="res://data/r_sfx/rsfx_gate_squeak.tres" id="42"]
+[ext_resource type="Material" path="res://asset/entity/bigdoor/wood_gate_1.tres" id="41"]
+[ext_resource type="AudioStream" path="res://data/r_sfx/rsfx_gate_squeak.tres" id="42"]
 [ext_resource type="AudioStream" uid="uid://msqel4tvwcj6" path="res://audio/sfx/gate_close.wav" id="43"]
-[ext_resource type="Material" uid="uid://ct7pr5sht6vqo" path="res://asset/level/test/mat/vtx_bars.tres" id="44"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_bars.tres" id="44"]
 [ext_resource type="Shader" path="res://asset/shader/n64_decor_wave.gdshader" id="45"]
 [ext_resource type="Texture2D" uid="uid://bheohqjsxgr3v" path="res://asset/effect/grass/grass.png" id="46"]
 [ext_resource type="Script" path="res://scripts/decor_spawner.gd" id="47"]
 [ext_resource type="Texture2D" uid="uid://ihacfktwnhj" path="res://asset/effect/grass/grass_2.png" id="48"]
-[ext_resource type="Material" uid="uid://dvl40jm43s381" path="res://asset/effect/grass/vtxe_flower_1.tres" id="49"]
+[ext_resource type="Material" uid="uid://dnjmfsjkxqg2w" path="res://asset/effect/grass/vtxe_flower_1.tres" id="49"]
 [ext_resource type="Script" path="res://scripts/activator_zone.gd" id="50"]
-[ext_resource type="PackedScene" uid="uid://dbytemqro4gor" path="res://scenes/prefab/trampoline.tscn" id="51"]
+[ext_resource type="PackedScene" uid="uid://b2okm8qw7p657" path="res://scenes/prefab/trampoline.tscn" id="51"]
 [ext_resource type="Script" path="res://scripts/water.gd" id="52"]
-[ext_resource type="Material" uid="uid://kvxnq076td8h" path="res://asset/entity/water/water_1.tres" id="53"]
+[ext_resource type="Material" path="res://asset/entity/water/water_1.tres" id="53"]
 [ext_resource type="AudioStream" uid="uid://k77er7vt67da" path="res://audio/amb/amb_ocean.mp3" id="54"]
 [ext_resource type="Script" path="res://scripts/moving_geo.gd" id="55"]
 [ext_resource type="PackedScene" uid="uid://eo1iy1qhadq4" path="res://asset/entity/moving_platform/generic/mp_ruins_1.blend" id="56"]
-[ext_resource type="PackedScene" uid="uid://vqs6a3wr044f" path="res://scenes/prefab/crate.tscn" id="57"]
-[ext_resource type="Material" uid="uid://31fpgxjygtj8" path="res://asset/entity/crate/wooden/mat/wood_crate_2.tres" id="58"]
-[ext_resource type="PackedScene" uid="uid://khs5llcipcom" path="res://scenes/prefab/npc_sign.tscn" id="59"]
+[ext_resource type="PackedScene" uid="uid://dogr370k43n1s" path="res://scenes/prefab/crate.tscn" id="57"]
+[ext_resource type="Material" path="res://asset/entity/crate/wooden/mat/wood_crate_2.tres" id="58"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/npc_sign.tscn" id="59"]
 [ext_resource type="Resource" uid="uid://bt52bd41i1v3t" path="res://data/dialogue/ruins_outside_fluff.dialogue" id="60"]
-[ext_resource type="PackedScene" uid="uid://b8xl2c6p0va5x" path="res://scenes/prefab/kelp_1.tscn" id="61"]
-[ext_resource type="PackedScene" uid="uid://k3mtdbr5y2et" path="res://scenes/prefab/ruins_seed_counter.tscn" id="62"]
-[ext_resource type="PackedScene" uid="uid://dtftv2df2iv1b" path="res://scenes/prefab/boom_crate.tscn" id="63"]
-[ext_resource type="PackedScene" uid="uid://b488og5dpnbxn" path="res://scenes/prefab/shard.tscn" id="64"]
-[ext_resource type="Resource" uid="uid://dm177jrmwo8d1" path="res://data/props/history_channel/prop_fungi.tres" id="65"]
-[ext_resource type="Resource" uid="uid://cypnm7io11ahb" path="res://data/props/history_channel/prop_bomb1.tres" id="66"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/kelp_1.tscn" id="61"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/ruins_seed_counter.tscn" id="62"]
+[ext_resource type="PackedScene" uid="uid://budaw7hon32vh" path="res://scenes/prefab/boom_crate.tscn" id="63"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/shard.tscn" id="64"]
+[ext_resource type="Resource" path="res://data/props/history_channel/prop_fungi.tres" id="65"]
+[ext_resource type="Resource" path="res://data/props/history_channel/prop_bomb1.tres" id="66"]
 [ext_resource type="Script" path="res://scripts/entity_remover.gd" id="67"]
 [ext_resource type="Script" path="res://scripts/event_tree.gd" id="68"]
 [ext_resource type="Script" path="res://scripts/event_stem.gd" id="69"]
@@ -76,9 +76,9 @@
 [ext_resource type="Script" path="res://scripts/event_evoke.gd" id="74"]
 [ext_resource type="Script" path="res://scripts/res_evoke.gd" id="75"]
 [ext_resource type="Script" path="res://scripts/event_warp.gd" id="76"]
-[ext_resource type="PackedScene" uid="uid://csw0nqlx05ldy" path="res://scenes/prefab/et_shard_sequence.tscn" id="77"]
-[ext_resource type="Resource" uid="uid://cnpb0t4g6h8vy" path="res://data/props/history_channel/prop_gj_ruins.tres" id="78"]
-[ext_resource type="Resource" uid="uid://ns4v5f8qvncp" path="res://data/props/history_channel/prop_seed.tres" id="79"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/et_shard_sequence.tscn" id="77"]
+[ext_resource type="Resource" path="res://data/props/history_channel/prop_gj_ruins.tres" id="78"]
+[ext_resource type="Resource" path="res://data/props/history_channel/prop_seed.tres" id="79"]
 
 [sub_resource type="ArrayMesh" id="1"]
 _surfaces = [{
@@ -90,93 +90,78 @@ _surfaces = [{
 "vertex_count": 6,
 "vertex_data": PackedByteArray(0, 0, 0, 192, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 191, 0, 0, 0, 0)
 }]
-script = null
 
 [sub_resource type="StandardMaterial3D" id="2"]
 transparency = 4
 cull_mode = 2
 shading_mode = 0
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource( "22" )
+albedo_texture = ExtResource("22")
 billboard_keep_scale = true
-script = null
 
 [sub_resource type="ShaderMaterial" id="3"]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "23" )
+shader = ExtResource("23")
 shader_parameter/modulate_color = Color(1, 1, 1, 1)
 shader_parameter/normal_scale = 0.500001
 shader_parameter/uv_scale = Vector2(1, 1)
 shader_parameter/uv_offset = Vector2(0, 0)
 shader_parameter/uv_pan_velocity = Vector2(0, 0)
-shader_parameter/albedoTex = ExtResource( "24" )
-shader_parameter/texture_normal = ExtResource( "25" )
-script = null
+shader_parameter/albedoTex = ExtResource("24")
+shader_parameter/texture_normal = ExtResource("25")
 
 [sub_resource type="StandardMaterial3D" id="4"]
 transparency = 1
 shading_mode = 0
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource( "22" )
+albedo_texture = ExtResource("22")
 billboard_mode = 3
 billboard_keep_scale = true
 particles_anim_h_frames = 3
 particles_anim_v_frames = 4
 particles_anim_loop = false
-script = null
-
-[sub_resource type="Curve" id="5"]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
-point_count = 2
-script = null
-
-[sub_resource type="CurveTexture" id="6"]
-curve = SubResource( "5" )
-script = null
-
-[sub_resource type="Gradient" id="7"]
-offsets = PackedFloat32Array(0.208054, 0.879195)
-colors = PackedColorArray(0.0646965, 0.0646965, 0.0646965, 1, 0.419813, 0.419813, 0.419813, 1)
-script = null
-
-[sub_resource type="GradientTexture1D" id="8"]
-gradient = SubResource( "7" )
-script = null
 
 [sub_resource type="Curve" id="9"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.555215, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
-script = null
 
 [sub_resource type="CurveTexture" id="10"]
-curve = SubResource( "9" )
-script = null
+curve = SubResource("9")
+
+[sub_resource type="Gradient" id="7"]
+offsets = PackedFloat32Array(0.208054, 0.879195)
+colors = PackedColorArray(0.0646965, 0.0646965, 0.0646965, 1, 0.419813, 0.419813, 0.419813, 1)
+
+[sub_resource type="GradientTexture1D" id="8"]
+gradient = SubResource("7")
+
+[sub_resource type="Curve" id="5"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="6"]
+curve = SubResource("5")
 
 [sub_resource type="ParticleProcessMaterial" id="11"]
 gravity = Vector3(0, 20, 0)
 scale_min = 4.0
 scale_max = 6.0
-scale_curve = SubResource( "6" )
-color_ramp = SubResource( "8" )
-alpha_curve = SubResource( "10" )
+scale_curve = SubResource("6")
+color_ramp = SubResource("8")
+alpha_curve = SubResource("10")
 anim_speed_min = 0.2
 anim_speed_max = 0.4
 turbulence_influence_max = 1.0
-script = null
 
 [sub_resource type="BoxShape3D" id="12"]
 size = Vector3(26.9312, 25, 25)
-script = null
 
 [sub_resource type="ConcavePolygonShape3D" id="13"]
 data = PackedVector3Array(397.896, 169.83, -27.4454, 474.262, 125.648, -6.8965, 397.896, 169.83, -6.8965, 397.896, 169.83, -27.4454, 474.262, 125.648, -27.4454, 474.262, 125.648, -6.8965, 397.755, 169.83, -47.9111, 474.262, 125.648, -27.4454, 397.896, 169.83, -27.4454, 397.755, 169.83, -47.9111, 474.262, 125.648, -47.9111, 474.262, 125.648, -27.4454, -36.603, 132.079, -250.4, -29.0095, 164.018, -303.923, -6.2907, 164.018, -282.408, -36.603, 132.079, -250.4, -59.3218, 132.079, -271.915, -29.0095, 164.018, -303.923, 272.307, 212.605, 257.098, 308.505, 221.712, 290.474, 271.374, 212.605, 286.48, 272.307, 212.605, 257.098, 309.439, 220.873, 261.091, 308.505, 221.712, 290.474)
-script = null
 
 [sub_resource type="ShaderMaterial" id="14"]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "45" )
+shader = ExtResource("45")
 shader_parameter/modulate_color = Color(0.133333, 0.866667, 0.643137, 1)
 shader_parameter/uv_scale = Vector2(1, 1)
 shader_parameter/uv_offset = Vector2(0, 0.025)
@@ -186,27 +171,23 @@ shader_parameter/wind_speed = 0.8
 shader_parameter/billboard = false
 shader_parameter/y_billboard = true
 shader_parameter/alpha_scissor = 0.1
-shader_parameter/albedoTex = ExtResource( "46" )
-script = null
+shader_parameter/albedoTex = ExtResource("46")
 
 [sub_resource type="QuadMesh" id="15"]
 lightmap_size_hint = Vector2i(27, 27)
-material = SubResource( "14" )
+material = SubResource("14")
 size = Vector2(4, 4)
 center_offset = Vector3(0, 1.5, 0)
-script = null
 
 [sub_resource type="MultiMesh" id="16"]
 transform_format = 1
 instance_count = 40
-mesh = SubResource( "15" )
+mesh = SubResource("15")
 buffer = PackedFloat32Array(1, 0, 0, 448.726, 0, 1, 0, 99.3489, 0, 0, 1, -186.625, 1, 0, 0, 494.466, 0, 1, 0, 105.223, 0, 0, 1, -161.873, 1, 0, 0, 10.1656, 0, 1, 0, 40.6329, 0, 0, 1, -158.764, 1, 0, 0, -39.3214, 0, 1, 0, 97.6622, 0, 0, 1, 204.621, 1, 0, 0, 3.49994, 0, 1, 0, 58.822, 0, 0, 1, -251.635, 1, 0, 0, 311.596, 0, 1, 0, 183.018, 0, 0, 1, -94.8431, 1, 0, 0, 526.769, 0, 1, 0, 112.902, 0, 0, 1, 88.1462, 1, 0, 0, 339.909, 0, 1, 0, 183.018, 0, 0, 1, -9.30459, 1, 0, 0, 480.501, 0, 1, 0, 109.967, 0, 0, 1, -91.417, 1, 0, 0, -9.6071, 0, 1, 0, 42.6964, 0, 0, 1, -148.738, 1, 0, 0, 60.0379, 0, 1, 0, 32.5302, 0, 0, 1, -171.925, 1, 0, 0, 396.778, 0, 1, 0, 125.907, 0, 0, 1, -42.8499, 1, 0, 0, 286.408, 0, 1, 0, 89.7605, 0, 0, 1, -135.091, 1, 0, 0, 126.577, 0, 1, 0, 23.4025, 0, 0, 1, 199.769, 1, 0, 0, 497.898, 0, 1, 0, 111.151, 0, 0, 1, -55.7578, 1, 0, 0, 332.228, 0, 1, 0, 183.018, 0, 0, 1, 11.4464, 1, 0, 0, 393.485, 0, 1, 0, 86.5167, 0, 0, 1, 240.768, 1, 0, 0, 9.28708, 0, 1, 0, 44.9264, 0, 0, 1, -175.973, 1, 0, 0, 48.4943, 0, 1, 0, 43.386, 0, 0, 1, -198.577, 1, 0, 0, 75.498, 0, 1, 0, 19.5381, 0, 0, 1, 188.016, 1, 0, 0, 529.561, 0, 1, 0, 114.23, 0, 0, 1, -31.5712, 1, 0, 0, 430.014, 0, 1, 0, 150.407, 0, 0, 1, -269.081, 1, 0, 0, 448.942, 0, 1, 0, 127.827, 0, 0, 1, -75.9306, 1, 0, 0, 280.003, 0, 1, 0, 183.018, 0, 0, 1, -95.1121, 1, 0, 0, 299.894, 0, 1, 0, 193.515, 0, 0, 1, 264.865, 1, 0, 0, 377.79, 0, 1, 0, 84.1557, 0, 0, 1, 234.948, 1, 0, 0, 415.526, 0, 1, 0, 98.4822, 0, 0, 1, 74.1149, 1, 0, 0, 324.007, 0, 1, 0, 192.817, 0, 0, 1, 225.537, 1, 0, 0, 14.1955, 0, 1, 0, 1.10083, 0, 0, 1, 23.1922, 1, 0, 0, 190.523, 0, 1, 0, 35.5741, 0, 0, 1, 153.001, 1, 0, 0, 66.6943, 0, 1, 0, 2.68958, 0, 0, 1, 69.4682, 1, 0, 0, -129.816, 0, 1, 0, 97.6621, 0, 0, 1, 186.722, 1, 0, 0, 119.564, 0, 1, 0, 55.0671, 0, 0, 1, -248.793, 1, 0, 0, 532.973, 0, 1, 0, 114.214, 0, 0, 1, 36.8795, 1, 0, 0, 69.7548, 0, 1, 0, 2.02615, 0, 0, 1, 12.5357, 1, 0, 0, 84.7665, 0, 1, 0, 20.3176, 0, 0, 1, 169.777, 1, 0, 0, 387.081, 0, 1, 0, 84.3957, 0, 0, 1, 225.385, 1, 0, 0, 387.276, 0, 1, 0, 125.015, 0, 0, 1, -33.2031, 1, 0, 0, 492.69, 0, 1, 0, 106.802, 0, 0, 1, 46.6833, 1, 0, 0, 340.472, 0, 1, 0, 126.753, 0, 0, 1, -126.282)
-script = null
 
 [sub_resource type="ShaderMaterial" id="17"]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "45" )
+shader = ExtResource("45")
 shader_parameter/modulate_color = Color(0.133333, 0.866667, 0.643137, 1)
 shader_parameter/uv_scale = Vector2(1, 1)
 shader_parameter/uv_offset = Vector2(0, 0.025)
@@ -216,44 +197,37 @@ shader_parameter/wind_speed = 1.5
 shader_parameter/billboard = false
 shader_parameter/y_billboard = true
 shader_parameter/alpha_scissor = 0.1
-shader_parameter/albedoTex = ExtResource( "48" )
-script = null
+shader_parameter/albedoTex = ExtResource("48")
 
 [sub_resource type="QuadMesh" id="18"]
 lightmap_size_hint = Vector2i(27, 27)
-material = SubResource( "17" )
+material = SubResource("17")
 size = Vector2(4, 4)
 center_offset = Vector3(0, 1.5, 0)
-script = null
 
 [sub_resource type="MultiMesh" id="19"]
 transform_format = 1
 instance_count = 40
-mesh = SubResource( "18" )
+mesh = SubResource("18")
 buffer = PackedFloat32Array(1, 0, 0, -23.4925, 0, 1, 0, 97.6622, 0, 0, 1, 165.101, 1, 0, 0, -125.557, 0, 1, 0, 97.6621, 0, 0, 1, 189.103, 1, 0, 0, 71.4579, 0, 1, 0, 32.849, 0, 0, 1, -111.993, 1, 0, 0, 487.309, 0, 1, 0, 109.289, 0, 0, 1, -44.1677, 1, 0, 0, 59.2084, 0, 1, 0, 2.80667, 0, 0, 1, 22.7926, 1, 0, 0, -84.9291, 0, 1, 0, 59.3118, 0, 0, 1, -186.57, 1, 0, 0, 532.856, 0, 1, 0, 113.172, 0, 0, 1, 134.504, 1, 0, 0, 93.6083, 0, 1, 0, 24.2396, 0, 0, 1, 112.747, 1, 0, 0, -79.6143, 0, 1, 0, 106.702, 0, 0, 1, 270.597, 1, 0, 0, 514.818, 0, 1, 0, 110.721, 0, 0, 1, 89.9921, 1, 0, 0, 0.794701, 0, 1, 0, 29.8859, 0, 0, 1, 121.331, 1, 0, 0, 424.016, 0, 1, 0, 127.089, 0, 0, 1, -100.389, 1, 0, 0, 367.073, 0, 1, 0, 150.407, 0, 0, 1, -228.375, 1, 0, 0, -98.5718, 0, 1, 0, 103.816, 0, 0, 1, 248.194, 1, 0, 0, 502.454, 0, 1, 0, 110.455, 0, 0, 1, -12.8753, 1, 0, 0, -89.4387, 0, 1, 0, 97.6905, 0, 0, 1, 152.205, 1, 0, 0, 292.72, 0, 1, 0, 192.894, 0, 0, 1, 230.934, 1, 0, 0, 61.6182, 0, 1, 0, 2.13535, 0, 0, 1, -0.581043, 1, 0, 0, -69.0939, 0, 1, 0, 39.5453, 0, 0, 1, -67.6727, 1, 0, 0, 13.2218, 0, 1, 0, 25.8427, 0, 0, 1, -61.5463, 1, 0, 0, -91.7583, 0, 1, 0, 97.9768, 0, 0, 1, 135.444, 1, 0, 0, 381.565, 0, 1, 0, 127.158, 0, 0, 1, -89.054, 1, 0, 0, 34.9269, 0, 1, 0, 2.47601, 0, 0, 1, 42.1544, 1, 0, 0, -124.995, 0, 1, 0, 98.0112, 0, 0, 1, 163.69, 1, 0, 0, 449.918, 0, 1, 0, 150.407, 0, 0, 1, -209.704, 1, 0, 0, 34.5594, 0, 1, 0, 56.5288, 0, 0, 1, -234.596, 1, 0, 0, 141.901, 0, 1, 0, 29.5557, 0, 0, 1, 162.491, 1, 0, 0, 81.9846, 0, 1, 0, 20.4271, 0, 0, 1, 278.939, 1, 0, 0, 371.783, 0, 1, 0, 92.6904, 0, 0, 1, -194.521, 1, 0, 0, 376.004, 0, 1, 0, 150.407, 0, 0, 1, -268.541, 1, 0, 0, 163.061, 0, 1, 0, 32.0081, 0, 0, 1, 164.16, 1, 0, 0, 21.6919, 0, 1, 0, 64.5998, 0, 0, 1, 208.823, 1, 0, 0, 130.385, 0, 1, 0, 58.2562, 0, 0, 1, -262.436, 1, 0, 0, 315.9, 0, 1, 0, 183.018, 0, 0, 1, -85.1952, 1, 0, 0, 468.152, 0, 1, 0, 127.937, 0, 0, 1, -1.54628, 1, 0, 0, 525.54, 0, 1, 0, 111.297, 0, 0, 1, 136.405, 1, 0, 0, 6.65524, 0, 1, 0, 97.6621, 0, 0, 1, 241.683, 1, 0, 0, 348.123, 0, 1, 0, 82.4288, 0, 0, 1, 258.134, 1, 0, 0, 564.296, 0, 1, 0, 114.429, 0, 0, 1, 27.4431, 1, 0, 0, 7.09025, 0, 1, 0, 36.6057, 0, 0, 1, -138.555)
-script = null
 
 [sub_resource type="QuadMesh" id="20"]
 lightmap_size_hint = Vector2i(27, 27)
-material = ExtResource( "49" )
+material = ExtResource("49")
 size = Vector2(4, 4)
 center_offset = Vector3(0, 1.5, 0)
-script = null
 
 [sub_resource type="MultiMesh" id="21"]
 transform_format = 1
 instance_count = 20
-mesh = SubResource( "20" )
+mesh = SubResource("20")
 buffer = PackedFloat32Array(1, 0, 0, 483.662, 0, 1, 0, 105.054, 0, 0, 1, 69.7105, 1, 0, 0, 435.639, 0, 1, 0, 150.407, 0, 0, 1, -277.723, 1, 0, 0, 281.568, 0, 1, 0, 183.018, 0, 0, 1, 47.5656, 1, 0, 0, 398.195, 0, 1, 0, 124.967, 0, 0, 1, 17.6093, 1, 0, 0, 169.033, 0, 1, 0, 32.2997, 0, 0, 1, 178.567, 1, 0, 0, 74.4721, 0, 1, 0, 42.6996, 0, 0, 1, -212.516, 1, 0, 0, 63.502, 0, 1, 0, 2.74551, 0, 0, 1, 63.5432, 1, 0, 0, -51.6469, 0, 1, 0, 106.913, 0, 0, 1, 271.798, 1, 0, 0, 496, 0, 1, 0, 102.213, 0, 0, 1, 182.694, 1, 0, 0, -12.2513, 0, 1, 0, 25.3636, 0, 0, 1, 65.3635, 1, 0, 0, 95.5291, 0, 1, 0, 11.6871, 0, 0, 1, -48.2813, 1, 0, 0, 313.231, 0, 1, 0, 193.041, 0, 0, 1, 238.279, 1, 0, 0, 96.8655, 0, 1, 0, 33.8677, 0, 0, 1, -164.332, 1, 0, 0, 525.627, 0, 1, 0, 113.374, 0, 0, 1, -1.239, 1, 0, 0, 480.719, 0, 1, 0, 99.1348, 0, 0, 1, 167.778, 1, 0, 0, 287.895, 0, 1, 0, 192.856, 0, 0, 1, 229.026, 1, 0, 0, -40.4335, 0, 1, 0, 97.6621, 0, 0, 1, 152.248, 1, 0, 0, 105.333, 0, 1, 0, 38.3431, 0, 0, 1, -92.4535, 1, 0, 0, -15.8576, 0, 1, 0, 37.0601, 0, 0, 1, -118.63, 1, 0, 0, -1.38109, 0, 1, 0, 56.9554, 0, 0, 1, -226.549)
-script = null
 
 [sub_resource type="BoxShape3D" id="22"]
 size = Vector3(27, 30, 25)
-script = null
 
 [sub_resource type="BoxShape3D" id="23"]
 size = Vector3(10, 22, 25)
-script = null
 
 [sub_resource type="ArrayMesh" id="24"]
 _surfaces = [{
@@ -265,11 +239,9 @@ _surfaces = [{
 "vertex_count": 384,
 "vertex_data": PackedByteArray(0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 22, 67, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 67, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 67, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 195, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 195, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 195, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 195, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 22, 67, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 67, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 67, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 195, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 22, 195, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 195, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 150, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 22, 67, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 225, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 225, 66, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128)
 }]
-script = null
 
 [sub_resource type="BoxShape3D" id="25"]
 size = Vector3(250, 100, 300)
-script = null
 
 [sub_resource type="ArrayMesh" id="26"]
 _surfaces = [{
@@ -281,11 +253,9 @@ _surfaces = [{
 "vertex_count": 384,
 "vertex_data": PackedByteArray(0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 250, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 194, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 193, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 65, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 0, 250, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 122, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 250, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 0, 250, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 194, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 193, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 65, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 122, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 0, 250, 66, 0, 0, 250, 66, 0, 0, 0, 0, 0, 128, 187, 66, 0, 128, 187, 66, 0, 0, 0, 0, 0, 128, 187, 66, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128)
 }]
-script = null
 
 [sub_resource type="BoxShape3D" id="27"]
 size = Vector3(250, 100, 250)
-script = null
 
 [sub_resource type="Curve3D" id="28"]
 _data = {
@@ -293,34 +263,28 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
-script = null
 
 [sub_resource type="ConvexPolygonShape3D" id="29"]
 points = PackedVector3Array(-14.2692, -0.0649631, -14.1788, -14.2692, 6.50111, -14.1788, 14.2742, -0.0649631, -14.1788, -14.2692, -0.0649631, 14.1284, -14.2692, 6.50111, 14.1284, 14.2742, 6.50111, -14.1788, 14.2742, -0.0649631, 14.1284, 14.2742, 6.50111, 14.1284)
-script = null
 
 [sub_resource type="BoxShape3D" id="30"]
 size = Vector3(71, 4, 43)
-script = null
 
 [sub_resource type="BoxShape3D" id="31"]
 size = Vector3(229.757, 38, 324.143)
-script = null
 
 [sub_resource type="BoxShape3D" id="32"]
 size = Vector3(1500, 38, 1500)
-script = null
 
 [sub_resource type="Resource" id="33"]
-script = ExtResource( "75" )
+script = ExtResource("75")
 type = 0
 e_name = "open_door"
 e_args = []
 
 [node name="hc_ruins_main" type="Node3D"]
-script = ExtResource( "1" )
-music = [ExtResource( "2" ), ExtResource( "3" ), ExtResource( "4" ), ExtResource( "5" ), ExtResource( "6" )]
-environment = NodePath("environment")
+script = ExtResource("1")
+music = Array[Resource("res://scripts/res_music_stem.gd")]([ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6")])
 
 [node name="sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.315089, 0.898333, 0.306131, -0.169577, -0.26408, 0.949476, 0.933789, -0.351082, 0.069128, 25.9759, 130.574, -16.3882)
@@ -332,13 +296,13 @@ directional_shadow_blend_splits = true
 directional_shadow_max_distance = 800.0
 
 [node name="environment" type="WorldEnvironment" parent="."]
-environment = ExtResource( "7" )
+environment = ExtResource("7")
 
 [node name="background" type="CanvasLayer" parent="."]
 process_mode = 3
 layer = -128
-script = ExtResource( "8" )
-bg_material = ExtResource( "9" )
+script = ExtResource("8")
+bg_material = ExtResource("9")
 type = 1
 
 [node name="@SubViewportContainer@54623" type="SubViewportContainer" parent="background"]
@@ -355,273 +319,273 @@ size = Vector2i(640, 480)
 render_target_update_mode = 4
 
 [node name="@MeshInstance3D@54625" type="MeshInstance3D" parent="background/@SubViewportContainer@54623/@SubViewport@54624"]
-material_overlay = ExtResource( "9" )
-mesh = SubResource( "1" )
+material_overlay = ExtResource("9")
+mesh = SubResource("1")
 
 [node name="@Camera3D@54626" type="Camera3D" parent="background/@SubViewportContainer@54623/@SubViewport@54624"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
-environment = ExtResource( "10" )
-attributes = ExtResource( "11" )
+environment = ExtResource("10")
+attributes = ExtResource("11")
 projection = 1
 size = 0.7
-script = ExtResource( "12" )
+script = ExtResource("12")
 
 [node name="map" type="Node3D" parent="."]
 
-[node name="test_map2" parent="map" instance=ExtResource( "13" )]
+[node name="test_map2" parent="map" instance=ExtResource("13")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="grass" parent="map/test_map2" index="0"]
-surface_material_override/0 = ExtResource( "14" )
+surface_material_override/0 = ExtResource("14")
 
 [node name="StaticBody3D" parent="map/test_map2/grass" index="0"]
-script = ExtResource( "15" )
+script = ExtResource("15")
 audio_type = 1
 
 [node name="rock" parent="map/test_map2" index="1"]
-surface_material_override/0 = ExtResource( "16" )
-surface_material_override/2 = ExtResource( "17" )
-surface_material_override/3 = ExtResource( "18" )
-surface_material_override/4 = ExtResource( "19" )
+surface_material_override/0 = ExtResource("16")
+surface_material_override/2 = ExtResource("17")
+surface_material_override/3 = ExtResource("18")
+surface_material_override/4 = ExtResource("19")
 
 [node name="StaticBody3D" parent="map/test_map2/rock" index="0"]
-script = ExtResource( "15" )
+script = ExtResource("15")
 
 [node name="stump" parent="map/test_map2" index="2"]
-surface_material_override/0 = ExtResource( "20" )
-surface_material_override/1 = ExtResource( "21" )
+surface_material_override/0 = ExtResource("20")
+surface_material_override/1 = ExtResource("21")
 
 [node name="StaticBody3D" parent="map/test_map2/hills" index="0"]
-script = ExtResource( "15" )
+script = ExtResource("15")
 surface_type = 2
 audio_type = 1
 
 [node name="decor" parent="map/test_map2" index="5"]
-surface_material_override/2 = SubResource( "2" )
+surface_material_override/2 = SubResource("2")
 
 [node name="dirt" parent="map/test_map2" index="6"]
-surface_material_override/0 = SubResource( "3" )
+surface_material_override/0 = SubResource("3")
 
 [node name="smoke" type="GPUParticles3D" parent="map/test_map2/house" index="0"]
 transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, -5.39783, 66.7751, 1.20325)
-material_override = SubResource( "4" )
+material_override = SubResource("4")
 lifetime = 3.0
 visibility_aabb = AABB(-8, -7.99861, -8, 16, 106.999, 16)
 draw_order = 1
 transform_align = 3
-process_material = SubResource( "11" )
-draw_pass_1 = ExtResource( "26" )
+process_material = SubResource("11")
+draw_pass_1 = ExtResource("26")
 
 [node name="breakable_wall" parent="map/test_map2" index="11"]
 layers = 0
 
-[node name="breakable_stone" parent="map/test_map2/breakable_wall" index="0" instance=ExtResource( "27" )]
+[node name="breakable_stone" parent="map/test_map2/breakable_wall" index="0" instance=ExtResource("27")]
 vis_node = NodePath("vis")
 col_node = NodePath("col")
 
 [node name="col" type="CollisionShape3D" parent="map/test_map2/breakable_wall/breakable_stone/hurtbox" index="0"]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 11.4892, 0, -7.09344)
-shape = SubResource( "12" )
+shape = SubResource("12")
 
 [node name="stone_debris" parent="map/test_map2/breakable_wall/breakable_stone" index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2241, -0.195648, -5.89609)
 spawn_count = 6
 
 [node name="vis" type="MeshInstance3D" parent="map/test_map2/breakable_wall/breakable_stone"]
-mesh = ExtResource( "28" )
+mesh = ExtResource("28")
 
 [node name="col" type="CollisionShape3D" parent="map/test_map2/breakable_wall/breakable_stone"]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 11.4892, 0, -7.09344)
-shape = SubResource( "12" )
+shape = SubResource("12")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="map/test_map2/no_slip" index="0"]
-script = ExtResource( "15" )
+script = ExtResource("15")
 surface_type = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="map/test_map2/no_slip/StaticBody3D"]
-shape = SubResource( "13" )
+shape = SubResource("13")
 
-[node name="tree" parent="map" instance=ExtResource( "29" )]
+[node name="tree" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 130, 23.5, 15.5)
 
-[node name="tree_6" parent="map" instance=ExtResource( "29" )]
+[node name="tree_6" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.114086, 0, 1.30402, 0, 1.309, 0, -1.30402, 0, -0.114086, 152.5, 25.5, 31.5)
 
-[node name="tree_7" parent="map" instance=ExtResource( "29" )]
+[node name="tree_7" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.961722, 0, 0.80698, 0, 1.25544, 0, -0.80698, 0, -0.961722, 128, 22.5, 40.5)
 
-[node name="tree_40" parent="map" instance=ExtResource( "29" )]
+[node name="tree_40" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.194122, 0, 1.24034, 0, 1.25544, 0, -1.24034, 0, -0.194122, 125.738, 38.589, -106.412)
 
-[node name="tree_41" parent="map" instance=ExtResource( "29" )]
+[node name="tree_41" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.334421, 0, 1.35947, 0, 1.4, 0, -1.35947, 0, 0.334421, 115.017, 36.9976, -84.2782)
 
-[node name="tree_2" parent="map" instance=ExtResource( "29" )]
+[node name="tree_2" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.03459, 0, 0.724427, 0, 1.263, 0, -0.724427, 0, 1.03459, -55.0328, 25.4368, 55.827)
 
-[node name="tree_10" parent="map" instance=ExtResource( "29" )]
+[node name="tree_10" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.882368, 0, 0.903658, 0, 1.263, 0, -0.903658, 0, 0.882368, -56.653, 31.3867, -64.7487)
 
-[node name="tree_11" parent="map" instance=ExtResource( "29" )]
+[node name="tree_11" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.06063, 0, -0.17401, 0, 1.07481, 0, 0.17401, 0, 1.06063, -75.7413, 36.901, -49.9538)
 
-[node name="tree_12" parent="map" instance=ExtResource( "29" )]
+[node name="tree_12" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.06549, 0, 0.512397, 0, 1.18229, 0, -0.512397, 0, 1.06549, -78.7163, 42.1417, -73.8159)
 
-[node name="tree_3" parent="map" instance=ExtResource( "29" )]
+[node name="tree_3" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.57592, 0, 0.822498, 0, 1.00408, 0, -0.822498, 0, 0.57592, -36.8172, 21.6321, 57.7863)
 
-[node name="tree_5" parent="map" instance=ExtResource( "29" )]
+[node name="tree_5" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.20044, 0, 0.21167, 0, 1.21896, 0, -0.21167, 0, 1.20044, -12, 28.5, 91.5)
 
-[node name="tree_24" parent="map" instance=ExtResource( "29" )]
+[node name="tree_24" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.620537, 0, 1.04919, 0, 1.21896, 0, -1.04919, 0, 0.620537, -46.4282, 98.6244, 262.625)
 
-[node name="tree_31" parent="map" instance=ExtResource( "29" )]
+[node name="tree_31" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.02732, 0, -0.18929, 0, 1.04461, 0, 0.18929, 0, 1.02732, -66.8674, 98.3384, 256.968)
 
-[node name="tree_34" parent="map" instance=ExtResource( "29" )]
+[node name="tree_34" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.196873, 0, 1.38609, 0, 1.4, 0, -1.38609, 0, 0.196873, 110.607, 20.4272, 304.129)
 
-[node name="tree_59" parent="map" instance=ExtResource( "29" )]
+[node name="tree_59" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.168748, 0, 1.18808, 0, 1.2, 0, -1.18808, 0, 0.168748, 469.273, 93.974, 177.818)
 
-[node name="tree_60" parent="map" instance=ExtResource( "29" )]
+[node name="tree_60" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.05895, 0, 0.915771, 0, 1.4, 0, -0.915771, 0, 1.05895, 485.229, 93.974, 259.259)
 
-[node name="tree_61" parent="map" instance=ExtResource( "29" )]
+[node name="tree_61" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.907667, 0, 0.784946, 0, 1.2, 0, -0.784946, 0, 0.907667, 436.177, 89.3585, 273.781)
 
-[node name="tree_36" parent="map" instance=ExtResource( "29" )]
+[node name="tree_36" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.864968, 0, 0.858893, 0, 1.21896, 0, -0.858893, 0, 0.864968, 49.1369, 20.4272, 289.338)
 
-[node name="tree_35" parent="map" instance=ExtResource( "29" )]
+[node name="tree_35" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.02149, 0, 0.218578, 0, 1.04461, 0, -0.218578, 0, 1.02149, 89.56, 20.4272, 306.731)
 
-[node name="tree_25" parent="map" instance=ExtResource( "29" )]
+[node name="tree_25" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.9093, 0, 0.811809, 0, 1.21896, 0, -0.811809, 0, 0.9093, -1.43315, 20.102, 268.979)
 
-[node name="tree_4" parent="map" instance=ExtResource( "29" )]
+[node name="tree_4" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.205044, 0, 1.16286, 0, 1.1808, 0, -1.16286, 0, 0.205044, -29.6461, 26.4564, 75.3665)
 
-[node name="tree_22" parent="map" instance=ExtResource( "29" )]
+[node name="tree_22" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.80245, 0, -0.866234, 0, 1.1808, 0, 0.866234, 0, 0.80245, 246.367, 192.613, 285.466)
 
-[node name="tree_23" parent="map" instance=ExtResource( "29" )]
+[node name="tree_23" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.947377, 0, 0.27644, 0, 0.986886, 0, -0.27644, 0, 0.947377, 231.61, 192.642, 272.414)
 
-[node name="tree_8" parent="map" instance=ExtResource( "29" )]
+[node name="tree_8" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.759006, 0, 0.904548, 0, 1.1808, 0, -0.904548, 0, -0.759006, -95.2286, 96.6491, 76.9077)
 
-[node name="tree_21" parent="map" instance=ExtResource( "29" )]
+[node name="tree_21" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.759006, 0, 0.904548, 0, 1.1808, 0, -0.904548, 0, -0.759006, -115.314, 96.7684, 211.753)
 
-[node name="tree_9" parent="map" instance=ExtResource( "29" )]
+[node name="tree_9" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.57759, 0, 0.228711, 0, 1.59408, 0, -0.228711, 0, -1.57759, -71.1538, 95.3063, 77.5247)
 
-[node name="tree_13" parent="map" instance=ExtResource( "29" )]
+[node name="tree_13" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.940794, 0, -0.713584, 0, 1.1808, 0, 0.713584, 0, -0.940794, -90.9797, 49.48, -158.278)
 
-[node name="tree_14" parent="map" instance=ExtResource( "29" )]
+[node name="tree_14" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.12719, 0, -1.12719, 0, 1.59408, 0, 1.12719, 0, -1.12719, -85.793, 52.3036, -181.885)
 
-[node name="tree_37" parent="map" instance=ExtResource( "29" )]
+[node name="tree_37" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, -37.1596, 38.8546, -123.905)
 
-[node name="tree_38" parent="map" instance=ExtResource( "29" )]
+[node name="tree_38" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.569767, 0, -0.821806, 0, 1, 0, 0.821806, 0, -0.569767, 40.4383, 55.6913, -244.391)
 
-[node name="tree_39" parent="map" instance=ExtResource( "29" )]
+[node name="tree_39" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.683721, 0, -0.986167, 0, 1.2, 0, 0.986167, 0, -0.683721, 114.69, 2.18821, -3.38911)
 
-[node name="tree_42" parent="map" instance=ExtResource( "29" )]
+[node name="tree_42" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.033888, 0, -0.999426, 0, 1, 0, 0.999426, 0, -0.033888, 144.404, 21.2979, 236.765)
 
-[node name="tree_43" parent="map" instance=ExtResource( "29" )]
+[node name="tree_43" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.033888, 0, -0.999426, 0, 1, 0, 0.999426, 0, -0.033888, 35.3933, 26.2836, 117.937)
 
-[node name="tree_58" parent="map" instance=ExtResource( "29" )]
+[node name="tree_58" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.574009, 0, -1.10478, 0, 1.245, 0, 1.10478, 0, 0.574009, 163.433, 24.4291, 228.851)
 
-[node name="tree_44" parent="map" instance=ExtResource( "29" )]
+[node name="tree_44" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.033888, 0, -0.999426, 0, 1, 0, 0.999426, 0, -0.033888, 446.343, 126.954, 17.9856)
 
-[node name="tree_46" parent="map" instance=ExtResource( "29" )]
+[node name="tree_46" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.033888, 0, -0.999426, 0, 1, 0, 0.999426, 0, -0.033888, 440.877, 126.954, -62.6629)
 
-[node name="tree_53" parent="map" instance=ExtResource( "29" )]
+[node name="tree_53" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.033888, 0, -0.999426, 0, 1, 0, 0.999426, 0, -0.033888, 329.856, 181.601, -59.1892)
 
-[node name="tree_56" parent="map" instance=ExtResource( "29" )]
+[node name="tree_56" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.0406656, 0, -1.19931, 0, 1.2, 0, 1.19931, 0, -0.0406656, 237.819, 181.601, -70.8973)
 
-[node name="tree_57" parent="map" instance=ExtResource( "29" )]
+[node name="tree_57" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.806114, 0, -0.59176, 0, 1, 0, 0.59176, 0, -0.806114, 223.41, 181.601, -60.9042)
 
-[node name="tree_54" parent="map" instance=ExtResource( "29" )]
+[node name="tree_54" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.832525, 0, -0.553988, 0, 1, 0, 0.553988, 0, 0.832525, 330.401, 181.601, 2.28034)
 
-[node name="tree_55" parent="map" instance=ExtResource( "29" )]
+[node name="tree_55" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.832525, 0, -0.553988, 0, 1, 0, 0.553988, 0, 0.832525, 233.258, 181.601, 17.2887)
 
-[node name="tree_48" parent="map" instance=ExtResource( "29" )]
+[node name="tree_48" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.488774, 0, -0.872411, 0, 1, 0, 0.872411, 0, -0.488774, 411.984, 93.8975, -204.311)
 
-[node name="tree_45" parent="map" instance=ExtResource( "29" )]
+[node name="tree_45" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.19131, 0, -0.144164, 0, 1.2, 0, 0.144164, 0, 1.19131, 463.647, 126.954, 5.91971)
 
-[node name="tree_29" parent="map" instance=ExtResource( "29" )]
+[node name="tree_29" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.12719, 0, -1.12719, 0, 1.59408, 0, 1.12719, 0, -1.12719, 148.754, 41.3685, -119.296)
 
-[node name="tree_30" parent="map" instance=ExtResource( "29" )]
+[node name="tree_30" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.29906, 0, 0.385341, 0, 1.355, 0, -0.385341, 0, -1.29906, 80.5962, 60.645, -318.513)
 
-[node name="tree_15" parent="map" instance=ExtResource( "29" )]
+[node name="tree_15" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.05843, 0, -1.05843, 0, 1.49684, 0, 1.05843, 0, -1.05843, 275.872, 88.4584, -146.89)
 
-[node name="tree_47" parent="map" instance=ExtResource( "29" )]
+[node name="tree_47" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.05843, 0, -1.05843, 0, 1.49684, 0, 1.05843, 0, -1.05843, 387.068, 91.7019, -209.181)
 
-[node name="tree_26" parent="map" instance=ExtResource( "29" )]
+[node name="tree_26" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.05843, 0, -1.05843, 0, 1.49684, 0, 1.05843, 0, -1.05843, 318.443, 170.563, -311.259)
 
-[node name="tree_28" parent="map" instance=ExtResource( "29" )]
+[node name="tree_28" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.48424, 0, -0.193849, 0, 1.49684, 0, 0.193849, 0, -1.48424, 510.427, 134.441, -222.309)
 
-[node name="tree_32" parent="map" instance=ExtResource( "29" )]
+[node name="tree_32" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.648074, 0, -1.17758, 0, 1.34413, 0, 1.17758, 0, -0.648074, 504.257, 136.283, -248.151)
 
-[node name="tree_49" parent="map" instance=ExtResource( "29" )]
+[node name="tree_49" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.05352, 0, -1.06331, 0, 1.49684, 0, 1.06331, 0, -1.05352, 576.378, 114.431, -61.0711)
 
-[node name="tree_50" parent="map" instance=ExtResource( "29" )]
+[node name="tree_50" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.210224, 0, -1.32759, 0, 1.34413, 0, 1.32759, 0, 0.210224, 555.658, 114.353, -77.6999)
 
-[node name="tree_51" parent="map" instance=ExtResource( "29" )]
+[node name="tree_51" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.819617, 0, 1.25251, 0, 1.49684, 0, -1.25251, 0, -0.819617, 552.399, 114.431, 27.1954)
 
-[node name="tree_52" parent="map" instance=ExtResource( "29" )]
+[node name="tree_52" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.34221, 0, 0.0719141, 0, 1.34413, 0, -0.0719141, 0, -1.34221, 572.992, 114.353, 10.4079)
 
-[node name="tree_27" parent="map" instance=ExtResource( "29" )]
+[node name="tree_27" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-0.186633, 0, -1.36033, 0, 1.37307, 0, 1.36033, 0, -0.186633, 296.61, 166.86, -291.184)
 
-[node name="tree_16" parent="map" instance=ExtResource( "29" )]
+[node name="tree_16" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.3169, 0, -1.15127e-07, 0, 1.3169, 0, 1.15127e-07, 0, -1.3169, 327.39, 125.759, -117.724)
 
-[node name="tree_17" parent="map" instance=ExtResource( "29" )]
+[node name="tree_17" parent="map" instance=ExtResource("29")]
 transform = Transform3D(-1.07438, 0, 1.07438, 0, 1.51941, 0, -1.07438, 0, -1.07438, 299.827, 91.7109, -150.507)
 
-[node name="tree_18" parent="map" instance=ExtResource( "29" )]
+[node name="tree_18" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.22443, 0, -0.277397, 0, 1.25546, 0, 0.277397, 0, 1.22443, 120.264, 60.7158, -286.24)
 
-[node name="tree_33" parent="map" instance=ExtResource( "29" )]
+[node name="tree_33" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.22443, 0, -0.277397, 0, 1.25546, 0, 0.277397, 0, 1.22443, 276.479, 50.5317, -226.262)
 
-[node name="tree_19" parent="map" instance=ExtResource( "29" )]
+[node name="tree_19" parent="map" instance=ExtResource("29")]
 transform = Transform3D(1.49926, 0, 0.0471403, 0, 1.5, 0, -0.0471403, 0, 1.49926, 141.525, 61.2599, -293.543)
 
-[node name="tree_20" parent="map" instance=ExtResource( "29" )]
+[node name="tree_20" parent="map" instance=ExtResource("29")]
 transform = Transform3D(0.761562, 0, -1.13731, 0, 1.36874, 0, 1.13731, 0, 0.761562, 125.643, 63.2881, -311.461)
 
 [node name="sprite_3d" type="Sprite3D" parent="map"]
@@ -630,25 +594,21 @@ layers = 16
 pixel_size = 0.1305
 billboard = 1
 double_sided = false
-texture = ExtResource( "30" )
+texture = ExtResource("30")
 
 [node name="warp" type="Node3D" parent="."]
 metadata/_edit_lock_ = true
 
-[node name="-1" type="Marker3D" parent="warp" groups=[
-"Warp",
-]]
+[node name="-1" type="Marker3D" parent="warp" groups=["Warp"]]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.60531, 144.073, -3.39129)
 gizmo_extents = 2.5
-script = ExtResource( "31" )
+script = ExtResource("31")
 camera_type = 1
 
-[node name="1" type="Marker3D" parent="warp" groups=[
-"Warp",
-]]
+[node name="1" type="Marker3D" parent="warp" groups=["Warp"]]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 332.982, 183.079, -27.4761)
 gizmo_extents = 2.5
-script = ExtResource( "31" )
+script = ExtResource("31")
 id = 1
 transition = 2
 camera_type = 1
@@ -659,1612 +619,764 @@ metadata/_edit_lock_ = true
 [node name="js_1" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.0427124, 0, -0.999087, 0, 1, 0, 0.999087, 0, -0.0427124, 50.4669, 18, -1.41199)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43208" parent="jack/js_1" instance=ExtResource( "33" )]
+[node name="@Area3D@19999" parent="jack/js_1" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, 2.38419e-07, -16.0695, -15)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43209" parent="jack/js_1" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, -2.38419e-07, -15.7279, -7.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43210" parent="jack/js_1" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, 0, -15.3864, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43211" parent="jack/js_1" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, -2.38419e-07, -15.3538, 7.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43212" parent="jack/js_1" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, -2.38419e-07, -15.7974, 15)
 metadata/_edit_lock_ = true
 
 [node name="js_40" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.139605, 0, -0.990207, 0, 1, 0, 0.990207, 0, -0.139605, 331.842, 94.1546, -183.024)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43217" parent="jack/js_40" instance=ExtResource( "33" )]
+[node name="@Area3D@20008" parent="jack/js_40" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 0, -1.25798, -15)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43218" parent="jack/js_40" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 1.52588e-05, -1.23965, -7.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43219" parent="jack/js_40" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 0, -1.24376, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43220" parent="jack/js_40" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 0, -1.24786, 7.49997)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43221" parent="jack/js_40" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 1.52588e-05, -1.25195, 15)
 metadata/_edit_lock_ = true
 
 [node name="js_44" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.49997, 0, -0.866043, 0, 1, 0, 0.866043, 0, -0.49997, 431.548, 102.8, -146.166)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43226" parent="jack/js_44" instance=ExtResource( "33" )]
+[node name="@Area3D@20017" parent="jack/js_44" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.93153, -15)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43227" parent="jack/js_44" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.76124, -7.50003)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43228" parent="jack/js_44" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.59096, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43229" parent="jack/js_44" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.42068, 7.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43230" parent="jack/js_44" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.25039, 15)
 metadata/_edit_lock_ = true
 
 [node name="js_41" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.168971, 0, -0.985621, 0, 1, 0, 0.985621, 0, -0.168971, 380.929, 131.486, -103.361)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43235" parent="jack/js_41" instance=ExtResource( "33" )]
+[node name="@Area3D@20026" parent="jack/js_41" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -4.53746, -15)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43236" parent="jack/js_41" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -4.53329, -7.50003)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43237" parent="jack/js_41" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.52911, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43238" parent="jack/js_41" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.52495, 7.49997)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43239" parent="jack/js_41" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -4.52077, 15)
 metadata/_edit_lock_ = true
 
 [node name="js_3" type="Marker3D" parent="jack"]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 106.649, 39, 97.6677)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43244" parent="jack/js_3" instance=ExtResource( "33" )]
+[node name="@Area3D@20035" parent="jack/js_3" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8147e-06, -14.3157, -14)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43245" parent="jack/js_3" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.0786, -7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43246" parent="jack/js_3" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.8415, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43247" parent="jack/js_3" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, -13.6044, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43248" parent="jack/js_3" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.2782, 14)
 metadata/_edit_lock_ = true
 
 [node name="js_43" type="Marker3D" parent="jack"]
 transform = Transform3D(0.798078, 0, 0.602554, 0, 1, 0, -0.602554, 0, 0.798078, -22.479, 106.265, 207.702)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43253" parent="jack/js_43" instance=ExtResource( "33" )]
+[node name="@Area3D@20044" parent="jack/js_43" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 1.52588e-05, -8.60284, -14)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43254" parent="jack/js_43" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.60284, -7.00002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43255" parent="jack/js_43" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.60284, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43256" parent="jack/js_43" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.60284, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43257" parent="jack/js_43" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.60284, 14)
 metadata/_edit_lock_ = true
 
 [node name="js_5" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.524976, 0, 0.851116, 0, 1, 0, -0.851116, 0, -0.524976, 100, 64, 88.2717)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43262" parent="jack/js_5" instance=ExtResource( "33" )]
+[node name="@Area3D@20053" parent="jack/js_5" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.4244, -14)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43263" parent="jack/js_5" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.76842, -7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43264" parent="jack/js_5" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.03882, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43265" parent="jack/js_5" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.30922, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43266" parent="jack/js_5" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.57963, 14)
 metadata/_edit_lock_ = true
 
 [node name="js_6" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.524976, 0, 0.851116, 0, 1, 0, -0.851116, 0, -0.524976, 103.659, 64, 93.6676)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43271" parent="jack/js_6" instance=ExtResource( "33" )]
+[node name="@Area3D@20062" parent="jack/js_6" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.34315, -14)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43272" parent="jack/js_6" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -4.88955, -7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43273" parent="jack/js_6" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.43594, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43274" parent="jack/js_6" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.74529, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43275" parent="jack/js_6" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -3.0157, 14)
 metadata/_edit_lock_ = true
 
 [node name="js_17" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.996434, 0, -0.0843678, 0, 1, 0, 0.0843678, 0, -0.996434, 327.954, 64, 127.71)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43280" parent="jack/js_17" instance=ExtResource( "33" )]
+[node name="@Area3D@20071" parent="jack/js_17" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.8022, -14)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43281" parent="jack/js_17" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.743, -7.00002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43282" parent="jack/js_17" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.6837, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43283" parent="jack/js_17" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.6244, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43284" parent="jack/js_17" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -11.5652, 14)
 metadata/_edit_lock_ = true
 
 [node name="js_36" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.996434, 0, -0.0843678, 0, 1, 0, 0.0843678, 0, -0.996434, 327.869, 64, 190.379)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43289" parent="jack/js_36" instance=ExtResource( "33" )]
+[node name="@Area3D@20080" parent="jack/js_36" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4193, -14)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43290" parent="jack/js_36" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4193, -7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43291" parent="jack/js_36" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4193, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43292" parent="jack/js_36" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4194, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43293" parent="jack/js_36" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, -30.4194, 14)
 metadata/_edit_lock_ = true
 
 [node name="js_37" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.982291, 0, -0.187358, 0, 1, 0, 0.187358, 0, -0.982291, 221.433, 64, 149.679)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 10.0
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43317" parent="jack/js_37" instance=ExtResource( "33" )]
+[node name="@Area3D@20108" parent="jack/js_37" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -7.07106, -36.639, -7.07106)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43318" parent="jack/js_37" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -10, -36.639, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43319" parent="jack/js_37" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -7.07106, -36.639, 7.07106)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43320" parent="jack/js_37" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 0, -36.639, 10)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43321" parent="jack/js_37" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 7.07106, -36.639, 7.07108)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43322" parent="jack/js_37" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 10, -36.6382, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43323" parent="jack/js_37" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 7.07106, -36.6379, -7.07106)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43324" parent="jack/js_37" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 0, -36.639, -10)
 metadata/_edit_lock_ = true
 
 [node name="js_38" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.962259, 0, 0.272134, 0, 1, 0, -0.272134, 0, -0.962259, 213.326, 64, -163.212)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 10.0
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43348" parent="jack/js_38" instance=ExtResource( "33" )]
+[node name="@Area3D@20139" parent="jack/js_38" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07108, -36.0937, -7.07104)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43349" parent="jack/js_38" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, -36.0937, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43350" parent="jack/js_38" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07106, -36.0937, 7.07106)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43351" parent="jack/js_38" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -36.0937, 10)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43352" parent="jack/js_38" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07108, -36.0937, 7.07108)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43353" parent="jack/js_38" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -36.0927, 1.52588e-05)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43354" parent="jack/js_38" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07106, -36.0924, -7.07104)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43355" parent="jack/js_38" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -36.0937, -10)
 metadata/_edit_lock_ = true
 
 [node name="js_39" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.997057, 0, 0.0766551, 0, 1, 0, -0.0766551, 0, -0.997057, 164.674, 64, -165.617)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 7.5
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43373" parent="jack/js_39" instance=ExtResource( "33" )]
+[node name="@Area3D@20164" parent="jack/js_39" instance=ExtResource("33")]
 transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, -6.49519, -36.0937, -3.75)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43374" parent="jack/js_39" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, -6.49519, -36.0937, 3.75)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43375" parent="jack/js_39" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 1.52588e-05, -36.0937, 7.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43376" parent="jack/js_39" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 6.49518, -36.0937, 3.75)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43377" parent="jack/js_39" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 6.49519, -36.0926, -3.75)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43378" parent="jack/js_39" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, -1.52588e-05, -36.0937, -7.5)
 metadata/_edit_lock_ = true
 
 [node name="js_18" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.797548, 0, 0.603254, 0, 1, 0, -0.603254, 0, -0.797548, 261.253, -38.7757, 158.618)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 10.0
 count = 8
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43394" parent="jack/js_18" instance=ExtResource( "33" )]
+[node name="@Area3D@20185" parent="jack/js_18" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, -7.07107)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43395" parent="jack/js_18" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 4.37114e-07)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43396" parent="jack/js_18" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, 7.07107)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43397" parent="jack/js_18" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.74228e-07, 0, 10)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43398" parent="jack/js_18" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, 7.07107)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43399" parent="jack/js_18" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -1.19249e-07)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43400" parent="jack/js_18" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, -7.07107)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43401" parent="jack/js_18" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74846e-06, 0, -10)
 metadata/_edit_lock_ = true
 
 [node name="js_34" type="Marker3D" parent="jack"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 224.354, -24.3541, -16.3237)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 8.0
 count = 10
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43411" parent="jack/js_34" instance=ExtResource( "33" )]
+[node name="@Area3D@20202" parent="jack/js_34" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -36)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43412" parent="jack/js_34" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -28)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43413" parent="jack/js_34" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43414" parent="jack/js_34" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43415" parent="jack/js_34" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43416" parent="jack/js_34" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43417" parent="jack/js_34" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43418" parent="jack/js_34" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43419" parent="jack/js_34" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43420" parent="jack/js_34" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 36)
 metadata/_edit_lock_ = true
 
 [node name="js_35" type="Marker3D" parent="jack"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 303.616, -2.38012, -15.6832)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 1
 spacing = 6.0
 count = 7
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43441" parent="jack/js_35" instance=ExtResource( "33" )]
+[node name="@Area3D@20232" parent="jack/js_35" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43442" parent="jack/js_35" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43443" parent="jack/js_35" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43444" parent="jack/js_35" instance=ExtResource( "33" )]
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43445" parent="jack/js_35" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43446" parent="jack/js_35" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43447" parent="jack/js_35" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18, 0)
 metadata/_edit_lock_ = true
 
 [node name="js_30" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.999999, 0, -8.74227e-08, 0, 1, 0, 8.74227e-08, 0, -0.999999, 223.504, -23.4964, 70.247)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 3
 spacing = 10.0
 count = 8
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43471" parent="jack/js_30" instance=ExtResource( "33" )]
+[node name="@Area3D@20262" parent="jack/js_30" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 7.07107, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43472" parent="jack/js_30" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -4.37114e-07, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43473" parent="jack/js_30" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, -7.07107, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43474" parent="jack/js_30" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.74228e-07, -10, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43475" parent="jack/js_30" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, -7.07107, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43476" parent="jack/js_30" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1.19249e-07, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43477" parent="jack/js_30" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 7.07107, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43478" parent="jack/js_30" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74846e-06, 10, 0)
 metadata/_edit_lock_ = true
 
 [node name="js_31" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.999999, 0, -8.74227e-08, 0, 1, 0, 8.74227e-08, 0, -0.999999, 223.504, -23.4964, -107.041)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 3
 spacing = 10.0
 count = 8
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43502" parent="jack/js_31" instance=ExtResource( "33" )]
+[node name="@Area3D@20293" parent="jack/js_31" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 7.07107, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43503" parent="jack/js_31" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -4.37114e-07, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43504" parent="jack/js_31" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, -7.07107, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43505" parent="jack/js_31" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.74228e-07, -10, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43506" parent="jack/js_31" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, -7.07107, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43507" parent="jack/js_31" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1.19249e-07, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43508" parent="jack/js_31" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 7.07107, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43509" parent="jack/js_31" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74846e-06, 10, 0)
 metadata/_edit_lock_ = true
 
 [node name="js_7" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.524976, 0, 0.851116, 0, 1, 0, -0.851116, 0, -0.524976, 107.288, 68.5, 98.0639)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43514" parent="jack/js_7" instance=ExtResource( "33" )]
+[node name="@Area3D@20305" parent="jack/js_7" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.73794, -14)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43515" parent="jack/js_7" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.28433, -7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43516" parent="jack/js_7" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.83073, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43517" parent="jack/js_7" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -8.37712, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43518" parent="jack/js_7" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.83781, 14)
 metadata/_edit_lock_ = true
 
 [node name="js_4" type="Marker3D" parent="jack"]
 transform = Transform3D(0.99661, 0, 0.0822691, 0, 1, 0, -0.0822691, 0, 0.99661, -46.1578, 52.3559, 129.363)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 10.0
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43542" parent="jack/js_4" instance=ExtResource( "33" )]
+[node name="@Area3D@20333" parent="jack/js_4" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, -7.07107)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43543" parent="jack/js_4" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 4.37114e-07)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43544" parent="jack/js_4" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, 7.07107)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43545" parent="jack/js_4" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.74228e-07, 0, 10)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43546" parent="jack/js_4" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, 7.07107)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43547" parent="jack/js_4" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -1.19249e-07)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43548" parent="jack/js_4" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, -7.07107)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43549" parent="jack/js_4" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74846e-06, 0, -10)
 metadata/_edit_lock_ = true
 
 [node name="js_16" type="Marker3D" parent="jack"]
 transform = Transform3D(0.992333, 0, 0.123584, 0, 1, 0, -0.123584, 0, 0.992333, 180.082, 101.133, 157.626)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43557" parent="jack/js_16" instance=ExtResource( "33" )]
+[node name="@Area3D@20348" parent="jack/js_16" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.3632, -17.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43558" parent="jack/js_16" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.2647, -12.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43559" parent="jack/js_16" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.5297, -7.50002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43560" parent="jack/js_16" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.81313, -2.50002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43561" parent="jack/js_16" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.28738, 2.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43562" parent="jack/js_16" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.76163, 7.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43563" parent="jack/js_16" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.694, 12.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43564" parent="jack/js_16" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.15185, 17.5)
 metadata/_edit_lock_ = true
 
 [node name="js_19" type="Marker3D" parent="jack"]
 transform = Transform3D(0.992333, 0, 0.123584, 0, 1, 0, -0.123584, 0, 0.992333, 186.729, 101.133, 156.537)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43572" parent="jack/js_19" instance=ExtResource( "33" )]
+[node name="@Area3D@20363" parent="jack/js_19" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.0565, -17.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43573" parent="jack/js_19" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.007, -12.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43574" parent="jack/js_19" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -9.36549, -7.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43575" parent="jack/js_19" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.83974, -2.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43576" parent="jack/js_19" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -8.31399, 2.50002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43577" parent="jack/js_19" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.78824, 7.49998)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43578" parent="jack/js_19" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.84287, 12.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43579" parent="jack/js_19" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -8.37566, 17.5)
 metadata/_edit_lock_ = true
 
 [node name="js_20" type="Marker3D" parent="jack"]
 transform = Transform3D(0.992333, 0, 0.123584, 0, 1, 0, -0.123584, 0, 0.992333, 172.553, 101.133, 158.251)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43587" parent="jack/js_20" instance=ExtResource( "33" )]
+[node name="@Area3D@20378" parent="jack/js_20" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.0427, -17.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43588" parent="jack/js_20" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.7636, -12.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43589" parent="jack/js_20" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.0286, -7.50002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43590" parent="jack/js_20" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.2936, -2.50002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43591" parent="jack/js_20" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -10.5586, 2.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43592" parent="jack/js_20" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.91651, 7.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43593" parent="jack/js_20" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.59354, 12.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43594" parent="jack/js_20" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.0514, 17.5)
 metadata/_edit_lock_ = true
 
 [node name="js_2" type="Marker3D" parent="jack"]
 transform = Transform3D(0.996131, 0, -0.087886, 0, 1, 0, 0.087886, 0, 0.996131, 91.7819, 69, 174.344)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 10.0
 count = 7
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43615" parent="jack/js_2" instance=ExtResource( "33" )]
+[node name="@Area3D@20406" parent="jack/js_2" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.81831, -48.5299, -6.23491)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43616" parent="jack/js_2" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.74928, -49.6006, 2.2252)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43617" parent="jack/js_2" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33884, -49.5927, 9.00967)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43618" parent="jack/js_2" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33884, -48.4171, 9.00969)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43619" parent="jack/js_2" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.74928, -46.8702, 2.22519)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43620" parent="jack/js_2" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.81832, -46.2535, -6.23489)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43621" parent="jack/js_2" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.62939e-06, -47.0403, -10)
 metadata/_edit_lock_ = true
 
 [node name="js_8" type="Marker3D" parent="jack"]
 transform = Transform3D(0.734097, 0, -0.679044, 0, 1, 0, 0.679044, 0, 0.734097, -24.009, 76.316, -211.55)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="jack" parent="jack/js_8" instance=ExtResource( "33" )]
+[node name="jack" parent="jack/js_8" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.92329, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43622" parent="jack/js_8" instance=ExtResource( "33" )]
+[node name="@Area3D@20413" parent="jack/js_8" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.92329, -4.99998)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43623" parent="jack/js_8" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.92329, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43624" parent="jack/js_8" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -8.92329, 5.00002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43625" parent="jack/js_8" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 1.52588e-05, -8.92329, 10)
 metadata/_edit_lock_ = true
 
 [node name="js_21" type="Marker3D" parent="jack"]
 transform = Transform3D(0.734097, 0, -0.679044, 0, 1, 0, 0.679044, 0, 0.734097, -38.9378, 163.586, -278.334)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.5
 count = 10
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43645" parent="jack/js_21" instance=ExtResource( "33" )]
+[node name="@Area3D@20436" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -26.2738, -33.75)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43646" parent="jack/js_21" instance=ExtResource( "33" )]
+[node name="@Area3D@20437" parent="jack/js_21" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -26.25)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43647" parent="jack/js_21" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -1.59927, -18.75)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43648" parent="jack/js_21" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -1.52588e-05, -7.03273, -11.25)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43649" parent="jack/js_21" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -12.4662, -3.75)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43650" parent="jack/js_21" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -17.8997, 3.75)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43651" parent="jack/js_21" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 1.52588e-05, -23.3331, 11.25)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43652" parent="jack/js_21" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -28.7666, 18.75)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43653" parent="jack/js_21" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.5074, 26.25)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43654" parent="jack/js_21" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.5074, 33.75)
 metadata/_edit_lock_ = true
 
 [node name="js_9" type="Marker3D" parent="jack"]
 transform = Transform3D(0.463032, 0, -0.886341, 0, 1, 0, 0.886341, 0, 0.463032, 45.5179, 156.002, -309.647)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 10.0
 count = 7
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43675" parent="jack/js_9" instance=ExtResource( "33" )]
+[node name="@Area3D@20466" parent="jack/js_9" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8183, -19.3367, -6.23489)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43676" parent="jack/js_9" instance=ExtResource( "33" )]
+[node name="@Area3D@20467" parent="jack/js_9" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.74927, -19.2488, 2.2252)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43677" parent="jack/js_9" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33884, -18.8273, 9.00969)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43678" parent="jack/js_9" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33884, -18.3897, 9.00969)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43679" parent="jack/js_9" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7493, -18.2654, 2.22522)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43680" parent="jack/js_9" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.81833, -18.548, -6.23489)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43681" parent="jack/js_9" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -19.0248, -10)
 metadata/_edit_lock_ = true
 
 [node name="js_25" type="Marker3D" parent="jack"]
 transform = Transform3D(0.463032, 0, -0.886341, 0, 1, 0, 0.886341, 0, 0.463032, 276.91, 101.095, -196.426)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 1
 spacing = 7.0
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43691" parent="jack/js_25" instance=ExtResource( "33" )]
+[node name="@Area3D@20482" parent="jack/js_25" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43692" parent="jack/js_25" instance=ExtResource( "33" )]
+[node name="@Area3D@20483" parent="jack/js_25" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43693" parent="jack/js_25" instance=ExtResource( "33" )]
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43694" parent="jack/js_25" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43695" parent="jack/js_25" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14, 0)
 metadata/_edit_lock_ = true
 
 [node name="js_26" type="Marker3D" parent="jack"]
 transform = Transform3D(0.463032, 0, -0.886341, 0, 1, 0, 0.886341, 0, 0.463032, -4.14146, 62.6852, 166.82)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 1
 spacing = 7.0
 count = 3
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43704" parent="jack/js_26" instance=ExtResource( "33" )]
+[node name="@Area3D@20495" parent="jack/js_26" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43705" parent="jack/js_26" instance=ExtResource( "33" )]
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43706" parent="jack/js_26" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
+[node name="@Area3D@20496" parent="jack/js_26" instance=ExtResource("33")]
 metadata/_edit_lock_ = true
 
 [node name="js_27" type="Marker3D" parent="jack"]
 transform = Transform3D(-0.99911, 0, 0.0421731, 0, 1, 0, -0.0421731, 0, -0.99911, 11.4379, 95.3718, 259.457)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 1
 spacing = 7.0
 count = 3
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43715" parent="jack/js_27" instance=ExtResource( "33" )]
+[node name="@Area3D@20506" parent="jack/js_27" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43716" parent="jack/js_27" instance=ExtResource( "33" )]
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43717" parent="jack/js_27" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
+[node name="@Area3D@20507" parent="jack/js_27" instance=ExtResource("33")]
 metadata/_edit_lock_ = true
 
 [node name="js_23" type="Marker3D" parent="jack"]
 transform = Transform3D(0.463032, 0, -0.886341, 0, 1, 0, 0.886341, 0, 0.463032, 52.7101, 46.0658, -148.352)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 7.0
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43735" parent="jack/js_23" instance=ExtResource( "33" )]
+[node name="@Area3D@20526" parent="jack/js_23" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.06219, -5.30754, -3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43736" parent="jack/js_23" instance=ExtResource( "33" )]
+[node name="@Area3D@20527" parent="jack/js_23" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.06219, -5.59706, 3.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43737" parent="jack/js_23" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.4974, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43738" parent="jack/js_23" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.06219, -5.10821, 3.50001)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43739" parent="jack/js_23" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.06218, -4.81869, -3.49999)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43740" parent="jack/js_23" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.91835, -7.00001)
 metadata/_edit_lock_ = true
 
 [node name="js_10" type="Marker3D" parent="jack"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 408.936, 158.513, -66.7715)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 8.869
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43758" parent="jack/js_10" instance=ExtResource( "33" )]
+[node name="@Area3D@20549" parent="jack/js_10" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.68079, -16.9018, -4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43759" parent="jack/js_10" instance=ExtResource( "33" )]
+[node name="@Area3D@20550" parent="jack/js_10" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.68079, -16.7035, 4.4345)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43760" parent="jack/js_10" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.6787, 8.869)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43761" parent="jack/js_10" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68079, -16.8371, 4.4345)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43762" parent="jack/js_10" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68079, -16.9717, -4.4345)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43763" parent="jack/js_10" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17.012, -8.869)
 metadata/_edit_lock_ = true
 
 [node name="js_11" type="Marker3D" parent="jack"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 408.139, 158.513, 11.3894)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 8.869
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43781" parent="jack/js_11" instance=ExtResource( "33" )]
+[node name="@Area3D@20572" parent="jack/js_11" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.68079, -17.597, -4.4345)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43782" parent="jack/js_11" instance=ExtResource( "33" )]
+[node name="@Area3D@20573" parent="jack/js_11" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.68079, -17.9278, 4.4345)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43783" parent="jack/js_11" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.1558, 8.869)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43784" parent="jack/js_11" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68079, -18.0636, 4.4345)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43785" parent="jack/js_11" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68079, -17.7649, -4.4345)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43786" parent="jack/js_11" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17.5224, -8.869)
 metadata/_edit_lock_ = true
 
 [node name="js_13" type="Marker3D" parent="jack"]
 transform = Transform3D(0.265371, 0, -0.964146, 0, 1, 0, 0.964146, 0, 0.265371, 335.635, 134.222, 68.1596)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 10.0
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43802" parent="jack/js_13" instance=ExtResource( "33" )]
+[node name="@Area3D@20593" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -35.1512, -35)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43803" parent="jack/js_13" instance=ExtResource( "33" )]
+[node name="@Area3D@20594" parent="jack/js_13" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -34.8469, -25)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43804" parent="jack/js_13" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, -34.496, -15)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43805" parent="jack/js_13" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.1451, -5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43806" parent="jack/js_13" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -33.9032, 5.00003)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43807" parent="jack/js_13" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.0167, 15)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43808" parent="jack/js_13" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.0146, 25)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43809" parent="jack/js_13" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.0099, 35)
 metadata/_edit_lock_ = true
 
 [node name="js_22" type="Marker3D" parent="jack"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 429.593, 166.621, -29.0491)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.702
 count = 7
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43823" parent="jack/js_22" instance=ExtResource( "33" )]
+[node name="@Area3D@20614" parent="jack/js_22" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.73685, -23.106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43824" parent="jack/js_22" instance=ExtResource( "33" )]
+[node name="@Area3D@20615" parent="jack/js_22" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90735e-06, -10.1929, -15.404)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43825" parent="jack/js_22" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.6489, -7.702)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43826" parent="jack/js_22" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.105, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43827" parent="jack/js_22" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -23.561, 7.702)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43828" parent="jack/js_22" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -28.017, 15.404)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43829" parent="jack/js_22" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90735e-06, -32.4731, 23.106)
 metadata/_edit_lock_ = true
 
 [node name="js_42" type="Marker3D" parent="jack"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 610.606, 166.621, -29.0491)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.702
 count = 7
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43843" parent="jack/js_42" instance=ExtResource( "33" )]
+[node name="@Area3D@20634" parent="jack/js_42" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.441, -23.106)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43844" parent="jack/js_42" instance=ExtResource( "33" )]
+[node name="@Area3D@20635" parent="jack/js_42" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.5788, -15.404)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43845" parent="jack/js_42" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.7166, -7.70203)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43846" parent="jack/js_42" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.8126, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43847" parent="jack/js_42" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.8968, 7.70203)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43848" parent="jack/js_42" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.9809, 15.404)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43849" parent="jack/js_42" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -52.0326, 23.106)
 metadata/_edit_lock_ = true
 
 [node name="js_32" type="Marker3D" parent="jack"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 273.337, 196.357, 44.6875)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43854" parent="jack/js_32" instance=ExtResource( "33" )]
+[node name="@Area3D@20645" parent="jack/js_32" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, -13.3385, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43855" parent="jack/js_32" instance=ExtResource( "33" )]
+[node name="@Area3D@20646" parent="jack/js_32" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, -13.3385, -7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43856" parent="jack/js_32" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43857" parent="jack/js_32" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43858" parent="jack/js_32" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 14)
 metadata/_edit_lock_ = true
 
 [node name="js_33" type="Marker3D" parent="jack"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 273.337, 196.357, -97.4886)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43863" parent="jack/js_33" instance=ExtResource( "33" )]
+[node name="@Area3D@20654" parent="jack/js_33" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43864" parent="jack/js_33" instance=ExtResource( "33" )]
+[node name="@Area3D@20655" parent="jack/js_33" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, -7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43865" parent="jack/js_33" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 0)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43866" parent="jack/js_33" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.3385, 7)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43867" parent="jack/js_33" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.62939e-06, -13.3385, 14)
 metadata/_edit_lock_ = true
 
 [node name="js_14" type="Marker3D" parent="jack"]
 transform = Transform3D(0.633584, 0, -0.773675, 0, 1, 0, 0.773675, 0, 0.633584, 513.383, 176.139, 218.162)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43879" parent="jack/js_14" instance=ExtResource( "33" )]
+[node name="@Area3D@20670" parent="jack/js_14" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43880" parent="jack/js_14" instance=ExtResource( "33" )]
+[node name="@Area3D@20671" parent="jack/js_14" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, -10.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43881" parent="jack/js_14" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, -3.50003)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43882" parent="jack/js_14" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05176e-05, -6.90344, 3.49997)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43883" parent="jack/js_14" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, 10.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43884" parent="jack/js_14" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.90344, 17.5)
 metadata/_edit_lock_ = true
 
 [node name="js_24" type="Marker3D" parent="jack"]
 transform = Transform3D(0.977535, 0, -0.210779, 0, 1, 0, 0.210779, 0, 0.977535, 526.112, 146.929, 143.767)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 spacing = 7.0
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43896" parent="jack/js_24" instance=ExtResource( "33" )]
+[node name="@Area3D@20687" parent="jack/js_24" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.6564, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43897" parent="jack/js_24" instance=ExtResource( "33" )]
+[node name="@Area3D@20688" parent="jack/js_24" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.3267, -10.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43898" parent="jack/js_24" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.997, -3.50002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43899" parent="jack/js_24" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.6674, 3.49999)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43900" parent="jack/js_24" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.10352e-05, -14.2141, 10.5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43901" parent="jack/js_24" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.10352e-05, -13.6104, 17.5)
 metadata/_edit_lock_ = true
 
 [node name="js_15" type="Marker3D" parent="jack"]
 transform = Transform3D(0.518817, 0, -0.854885, 0, 1, 0, 0.854885, 0, 0.518817, 455.559, 212.496, 253.892)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 10.0
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43919" parent="jack/js_15" instance=ExtResource( "33" )]
+[node name="@Area3D@20710" parent="jack/js_15" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -8.66025, -31.1003, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43920" parent="jack/js_15" instance=ExtResource( "33" )]
+[node name="@Area3D@20711" parent="jack/js_15" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -8.66025, -31.3337, 5.00002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43921" parent="jack/js_15" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -30.8817, 10)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43922" parent="jack/js_15" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 8.66025, -30.5408, 5.00002)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43923" parent="jack/js_15" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 8.66028, -31.0748, -5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43924" parent="jack/js_15" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.0913, -10)
 metadata/_edit_lock_ = true
 
 [node name="js_28" type="Marker3D" parent="jack"]
 transform = Transform3D(0.518817, 0, -0.854885, 0, 1, 0, 0.854885, 0, 0.518817, 240.883, 212.496, 244.517)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 10.0
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43942" parent="jack/js_28" instance=ExtResource( "33" )]
+[node name="@Area3D@20733" parent="jack/js_28" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -8.66025, -19.5727, -5.00001)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43943" parent="jack/js_28" instance=ExtResource( "33" )]
+[node name="@Area3D@20734" parent="jack/js_28" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -8.66025, -19.485, 5.00001)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43944" parent="jack/js_28" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -19.313, 10)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43945" parent="jack/js_28" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 8.66025, -19.2176, 5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43946" parent="jack/js_28" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 8.66028, -19.2975, -5)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43947" parent="jack/js_28" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -19.4794, -10)
 metadata/_edit_lock_ = true
 
 [node name="js_29" type="Marker3D" parent="jack"]
 transform = Transform3D(0.518817, 0, -0.854885, 0, 1, 0, 0.854885, 0, 0.518817, 357.637, 271.458, 260.145)
 gizmo_extents = 5.0
-script = ExtResource( "32" )
+script = ExtResource("32")
 formation = 2
 spacing = 10.0
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@43971" parent="jack/js_29" instance=ExtResource( "33" )]
+[node name="@Area3D@20762" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -7.07108, -31.4747, -7.07109)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@43972" parent="jack/js_29" instance=ExtResource( "33" )]
+[node name="@Area3D@20763" parent="jack/js_29" instance=ExtResource("33")]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -10, -31.4747, -1.52588e-05)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43973" parent="jack/js_29" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -7.07108, -31.4747, 7.07104)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43974" parent="jack/js_29" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.4747, 10)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43975" parent="jack/js_29" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 7.07104, -31.4747, 7.07106)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43976" parent="jack/js_29" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 10, -31.4747, -1.52588e-05)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43977" parent="jack/js_29" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 7.07108, -31.4747, -7.07106)
-metadata/_edit_lock_ = true
-
-[node name="@Area3D@43978" parent="jack/js_29" instance=ExtResource( "33" )]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -31.4747, -10)
 metadata/_edit_lock_ = true
 
 [node name="entity" type="Node3D" parent="."]
 metadata/_edit_lock_ = true
 
 [node name="castle_button_group" type="Node3D" parent="entity"]
-script = ExtResource( "34" )
+script = ExtResource("34")
 event_tree = NodePath("../../event/cutscene_door_open")
 
 [node name="1" type="Node3D" parent="entity/castle_button_group"]
 transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 364.167, 192.578, 256.639)
-script = ExtResource( "35" )
+script = ExtResource("35")
 size = Vector2(8, 4)
 
 [node name="2" type="Node3D" parent="entity/castle_button_group"]
 transform = Transform3D(0.531842, 0, -0.846844, 0, 1, 0, 0.846844, 0, 0.531842, 421.126, 266.775, -256.225)
-script = ExtResource( "35" )
+script = ExtResource("35")
 size = Vector2(6, 3)
 
 [node name="3" type="Node3D" parent="entity/castle_button_group"]
 transform = Transform3D(0.638098, 0.00713111, -0.769921, -0.00307924, 0.999973, 0.00670985, 0.769948, -0.00191078, 0.638103, 10.8787, 164.088, -287.946)
-script = ExtResource( "35" )
+script = ExtResource("35")
 size = Vector2(6, 3)
 
 [node name="golden_jack_manager" type="Node3D" parent="entity"]
-script = ExtResource( "36" )
+script = ExtResource("36")
 event_tree = NodePath("../../event/gj_done")
 
-[node name="gj_ball" parent="entity/golden_jack_manager" instance=ExtResource( "37" )]
+[node name="gj_ball" parent="entity/golden_jack_manager" instance=ExtResource("37")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.0776, 36.3703, 277.421)
 
-[node name="j_0" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_0" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114.732, 126.632, 148.992)
 
-[node name="j_1" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_1" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.0265, 43.044, 1.30388)
 
-[node name="j_2" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_2" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.9456, 123.652, -213.37)
 
-[node name="j_3" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_3" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 223.483, -24.6668, -106.927)
 
-[node name="j_4" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_4" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 223.483, -24.6668, 70.1434)
 
-[node name="j_5" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_5" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 213.718, 28.0563, -162.684)
 
-[node name="j_6" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_6" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 357.749, 239.828, 259.819)
 
-[node name="j_7" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_7" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 361.632, 268.841, -257.984)
 
-[node name="j_8" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_8" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.5034, 137.619, -309.383)
 
-[node name="j_9" parent="entity/golden_jack_manager" instance=ExtResource( "38" )]
+[node name="j_9" parent="entity/golden_jack_manager" instance=ExtResource("38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 455.698, 181.13, 253.803)
 
 [node name="seeds" type="Node3D" parent="entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.76435, 0)
 
-[node name="s_1" parent="entity/seeds" instance=ExtResource( "39" )]
+[node name="s_1" parent="entity/seeds" instance=ExtResource("39")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358841, 24.3217, 105.039)
 
-[node name="s_2" parent="entity/seeds" instance=ExtResource( "39" )]
+[node name="s_2" parent="entity/seeds" instance=ExtResource("39")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 103.615, 29.3066, -156.644)
-visual_node = NodePath("../s_1/vis")
 
-[node name="s_3" parent="entity/seeds" instance=ExtResource( "39" )]
+[node name="s_3" parent="entity/seeds" instance=ExtResource("39")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1136, 59.1944, 244.786)
-visual_node = NodePath("../s_1/vis")
 
-[node name="s_4" parent="entity/seeds" instance=ExtResource( "39" )]
+[node name="s_4" parent="entity/seeds" instance=ExtResource("39")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.0901, 18.2726, -51.4218)
-visual_node = NodePath("../s_1/vis")
 
-[node name="s_5" parent="entity/seeds" instance=ExtResource( "39" )]
+[node name="s_5" parent="entity/seeds" instance=ExtResource("39")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.1362, 93.1943, 238.167)
-visual_node = NodePath("../s_1/vis")
 
 [node name="big_door" type="Node3D" parent="entity"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 325.497, 182.994, -28.6693)
-script = ExtResource( "40" )
+script = ExtResource("40")
 type = 1
 size = Vector2(27, 35)
 uv_fac = 6.25
-material = ExtResource( "41" )
+material = ExtResource("41")
 handles = true
 anim_length = 1.5
-stream_moving = ExtResource( "42" )
-stream_closed = ExtResource( "43" )
+stream_moving = ExtResource("42")
+stream_closed = ExtResource("43")
 close_delay = 1.4
 metadata/_edit_group_ = true
 
 [node name="big_door_2" type="Node3D" parent="entity"]
 transform = Transform3D(0.0106114, 0, 0.999944, 0, 1, 0, -0.999944, 0, 0.0106114, 259.9, -25.2456, -16.2621)
-script = ExtResource( "40" )
+script = ExtResource("40")
 size = Vector2(41, 36)
 uv_fac = 12.0
-material = ExtResource( "44" )
+material = ExtResource("44")
 anim_length = 1.5
-stream_moving = ExtResource( "42" )
-stream_closed = ExtResource( "43" )
+stream_moving = ExtResource("42")
+stream_closed = ExtResource("43")
 close_delay = 1.4
 metadata/_edit_group_ = true
 
 [node name="big_door_3" type="Node3D" parent="entity"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 669.273, 113.016, -28.0168)
-script = ExtResource( "40" )
+script = ExtResource("40")
 size = Vector2(41, 53)
 uv_fac = 16.0
-material = ExtResource( "44" )
+material = ExtResource("44")
 anim_length = 1.5
-stream_moving = ExtResource( "42" )
-stream_closed = ExtResource( "43" )
+stream_moving = ExtResource("42")
+stream_closed = ExtResource("43")
 close_delay = 1.4
 metadata/_edit_group_ = true
 
 [node name="grass_spawner" type="MultiMeshInstance3D" parent="entity"]
-multimesh = SubResource( "16" )
-script = ExtResource( "47" )
-target = NodePath("../../map/test_map2/grass/StaticBody3D")
-mesh = NodePath("../../map/test_map2/grass")
+multimesh = SubResource("16")
+script = ExtResource("47")
 count = 40
 seed = 334766389
 
 [node name="grass_spawner_2" type="MultiMeshInstance3D" parent="entity"]
-multimesh = SubResource( "19" )
-script = ExtResource( "47" )
-target = NodePath("../../map/test_map2/grass/StaticBody3D")
-mesh = NodePath("../../map/test_map2/grass")
+multimesh = SubResource("19")
+script = ExtResource("47")
 count = 40
 seed = 1242796667
 
 [node name="flower_spawner" type="MultiMeshInstance3D" parent="entity"]
-multimesh = SubResource( "21" )
-script = ExtResource( "47" )
-target = NodePath("../../map/test_map2/grass/StaticBody3D")
-mesh = NodePath("../../map/test_map2/grass")
+multimesh = SubResource("21")
+script = ExtResource("47")
 count = 20
 seed = 1893891098
 
@@ -2273,35 +1385,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 302.409, 197.999, -28.3383)
 collision_layer = 0
 collision_mask = 2
 monitorable = false
-script = ExtResource( "50" )
-event_tree = NodePath("../../event/warp_castle")
+script = ExtResource("50")
 one_shot = false
 size = Vector3(27, 30, 25)
 
 [node name="@CollisionShape3D@39134" type="CollisionShape3D" parent="entity/zone_warp_castle"]
-shape = SubResource( "22" )
+shape = SubResource("22")
 
 [node name="zone_warp_ff" type="Area3D" parent="entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 355.354, 49.1762, -15.3336)
 collision_layer = 0
 collision_mask = 2
 monitorable = false
-script = ExtResource( "50" )
-event_tree = NodePath("../../event/warp_ff")
+script = ExtResource("50")
 one_shot = false
 size = Vector3(10, 22, 25)
 
 [node name="@CollisionShape3D@25457" type="CollisionShape3D" parent="entity/zone_warp_ff"]
-shape = SubResource( "23" )
+shape = SubResource("23")
 
-[node name="trampoline" parent="entity" instance=ExtResource( "51" )]
+[node name="trampoline" parent="entity" instance=ExtResource("51")]
 transform = Transform3D(0.642788, 0, -0.766044, 0, 1, 0, 0.766044, 0, 0.642788, -4.12897, 27.8082, 166.8)
 
-[node name="trampoline_4" parent="entity" instance=ExtResource( "51" )]
+[node name="trampoline_4" parent="entity" instance=ExtResource("51")]
 transform = Transform3D(0.0976336, 0, 0.995222, 0, 1, 0, -0.995222, 0, 0.0976336, 276.165, 50.863, -196.452)
 type = 2
 
-[node name="trampoline_3" parent="entity" instance=ExtResource( "51" )]
+[node name="trampoline_3" parent="entity" instance=ExtResource("51")]
 transform = Transform3D(-0.63384, 0, -0.773465, 0, 1, 0, 0.773465, 0, -0.63384, 11.3499, 63.1092, 259.514)
 type = 0
 
@@ -2309,25 +1419,25 @@ type = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 304.885, 27.7029, 172.676)
 collision_layer = 8
 collision_mask = 2
-script = ExtResource( "52" )
+script = ExtResource("52")
 size = Vector3(250, 100, 300)
 detail = 8
-material = ExtResource( "53" )
+material = ExtResource("53")
 uv_fac = 12.0
 expose_nodes = true
 
 [node name="@MeshInstance3D@22899" type="MeshInstance3D" parent="entity/water"]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, -75)
 layers = 8
-material_override = ExtResource( "53" )
-mesh = SubResource( "24" )
+material_override = ExtResource("53")
+mesh = SubResource("24")
 
 [node name="@CollisionShape3D@22900" type="CollisionShape3D" parent="entity/water"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50, -75)
-shape = SubResource( "25" )
+shape = SubResource("25")
 
 [node name="@AudioStreamPlayer3D@22901" type="AudioStreamPlayer3D" parent="entity/water"]
-stream = ExtResource( "54" )
+stream = ExtResource("54")
 volume_db = -4.0
 unit_size = 275.0
 autoplay = true
@@ -2336,16 +1446,16 @@ bus = &"Ambiance"
 [node name="_MeshInstance3D_28800" type="MeshInstance3D" parent="entity/water"]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -54.4934, 0, -350)
 layers = 8
-material_override = ExtResource( "53" )
-mesh = SubResource( "26" )
+material_override = ExtResource("53")
+mesh = SubResource("26")
 
 [node name="_CollisionShape3D_28801" type="CollisionShape3D" parent="entity/water"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.4934, -50, -350)
-shape = SubResource( "27" )
+shape = SubResource("27")
 
 [node name="_AudioStreamPlayer3D_28802" type="AudioStreamPlayer3D" parent="entity/water"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.4934, 0, -350)
-stream = ExtResource( "54" )
+stream = ExtResource("54")
 volume_db = -4.0
 unit_size = 250.0
 autoplay = true
@@ -2353,12 +1463,12 @@ bus = &"Ambiance"
 
 [node name="moving_geo" type="Node3D" parent="entity"]
 transform = Transform3D(0.99993, 0, -0.0118331, 0, 1, 0, 0.0118331, 0, 0.99993, 361.92, 215.694, -302.547)
-script = ExtResource( "55" )
+script = ExtResource("55")
 time_idle = 2.0
 t_trans = 1
 
 [node name="path" type="Path3D" parent="entity/moving_geo"]
-curve = SubResource( "28" )
+curve = SubResource("28")
 
 [node name="path_follower" type="PathFollow3D" parent="entity/moving_geo/path"]
 rotation_mode = 0
@@ -2373,9 +1483,9 @@ update_scale = false
 transform = Transform3D(1.00001, 0, -4.65661e-09, 0, 1, 0, 4.65661e-09, 0, 1.00001, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="entity/moving_geo/geometry"]
-shape = SubResource( "29" )
+shape = SubResource("29")
 
-[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="entity/moving_geo/geometry" instance=ExtResource( "56" )]
+[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="entity/moving_geo/geometry" instance=ExtResource("56")]
 
 [node name="moving_platform" parent="entity/moving_geo/geometry/mp_ruins_1-db10ffdc418313b543c323d87e573e1c" index="0"]
 transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0)
@@ -2393,132 +1503,132 @@ max_db = 0.0
 max_distance = 100.0
 bus = &"Sound"
 
-[node name="crate" parent="entity" instance=ExtResource( "57" )]
+[node name="crate" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 387.965, 239.69, 250.745)
 jacks = 3
 size = Vector3(6, 6, 6)
 
-[node name="crate_3" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_3" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 339.762, 239.69, 232.159)
 jacks = 3
 size = Vector3(7, 7, 7)
 
-[node name="crate_8" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_8" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 214.869, 208.337, -33.1297)
 jacks = 3
 size = Vector3(7, 7, 7)
 process_physics = true
 
-[node name="crate_10" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_10" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 336.727, 29.3295, -38.5695)
 jacks = 3
 size = Vector3(7, 7, 7)
 
-[node name="crate_11" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_11" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 325.634, 29.3295, -41.7037)
 
-[node name="crate_12" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_12" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 313.748, 29.3295, 8.38337)
 
-[node name="crate_5" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_5" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(0.808442, 0, 0.588576, 0, 1, 0, -0.588576, 0, 0.808442, 502.14, 169.103, 203.107)
 jacks = 3
 size = Vector3(7, 7, 7)
 
-[node name="crate_6" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_6" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(0.808442, 0, 0.588576, 0, 1, 0, -0.588576, 0, 0.808442, 491.413, 168.983, 208.992)
 size = Vector3(5, 5, 5)
 
-[node name="crate_4" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_4" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 351.738, 239.69, 230.094)
 size = Vector3(5, 5, 5)
 
-[node name="crate_2" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_2" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 385.065, 239.69, 271.716)
-material = ExtResource( "58" )
+material = ExtResource("58")
 health = 3
 jacks = 5
 size = Vector3(9, 13, 15)
 
-[node name="crate_9" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_9" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 212.308, 182.633, -29.8784)
-material = ExtResource( "58" )
+material = ExtResource("58")
 health = 3
 jacks = 5
 size = Vector3(9, 13, 15)
 
-[node name="crate_7" parent="entity" instance=ExtResource( "57" )]
+[node name="crate_7" parent="entity" instance=ExtResource("57")]
 transform = Transform3D(0.596015, 0, -0.802974, 0, 1, 0, 0.802974, 0, 0.596015, 524.044, 168.892, 237.861)
-material = ExtResource( "58" )
+material = ExtResource("58")
 health = 3
 jacks = 5
 size = Vector3(9, 13, 15)
 
-[node name="sign" parent="entity" instance=ExtResource( "59" )]
+[node name="sign" parent="entity" instance=ExtResource("59")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -81.4829, 97.6787, 142.367)
 metadata/_edit_group_ = true
 
 [node name="dialog" parent="entity/sign/et_npc_stationary_1" index="2"]
-dialog = ExtResource( "60" )
+dialog = ExtResource("60")
 title = "garden"
 
-[node name="sign_2" parent="entity" instance=ExtResource( "59" )]
+[node name="sign_2" parent="entity" instance=ExtResource("59")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.635, 20.363, 266.495)
 metadata/_edit_group_ = true
 
 [node name="dialog" parent="entity/sign_2/et_npc_stationary_1" index="2"]
-dialog = ExtResource( "60" )
+dialog = ExtResource("60")
 title = "tutorial_2"
 
-[node name="sign_3" parent="entity" instance=ExtResource( "59" )]
+[node name="sign_3" parent="entity" instance=ExtResource("59")]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 107.106, 2.84973, -2.77822)
 metadata/_edit_group_ = true
 
 [node name="dialog" parent="entity/sign_3/et_npc_stationary_1" index="2"]
-dialog = ExtResource( "60" )
+dialog = ExtResource("60")
 title = "tutorial_1"
 
-[node name="kelp_1" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_1" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(0.468578, 0, -0.883422, 0, 1, 0, 0.883422, 0, 0.468578, 236.675, -68.0606, 143.515)
 
-[node name="kelp_9" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_9" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(0.698765, 0, -0.715351, 0, 1, 0, 0.715351, 0, 0.698765, 283.681, -68.0606, 165.812)
 
-[node name="kelp_2" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_2" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(0.707761, 0, -0.706452, 0, 1, 0, 0.706452, 0, 0.707761, 216.928, -60.3146, 124.9)
 
-[node name="kelp_3" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_3" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(-0.272767, 0, -0.96208, 0, 1, 0, 0.96208, 0, -0.272767, 240.818, -41.1828, 87.2034)
 
-[node name="kelp_4" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_4" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(0.0796598, 0, -0.996822, 0, 1, 0, 0.996822, 0, 0.0796598, 208.359, -50.2659, 72.273)
 
-[node name="kelp_5" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_5" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(-0.284316, 0, -0.95873, 0, 1, 0, 0.95873, 0, -0.284316, 245.189, -49.3481, -88.0741)
 
-[node name="kelp_10" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_10" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(0.715303, 0, -0.698815, 0, 1, 0, 0.698815, 0, 0.715303, 200.048, -60.4454, -41.5838)
 
-[node name="kelp_6" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_6" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(-0.207894, 0, -0.978151, 0, 1, 0, 0.978151, 0, -0.207894, 203.572, -44.6221, -120.708)
 
-[node name="kelp_7" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_7" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(0.350028, 0, -0.936739, 0, 1, 0, 0.936739, 0, 0.350028, 236.167, -43.5589, -145.685)
 
-[node name="kelp_8" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_8" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(-0.300506, 0, -0.95378, 0, 1, 0, 0.95378, 0, -0.300506, 157.326, -54.2837, -152.91)
 
-[node name="kelp_11" parent="entity" instance=ExtResource( "61" )]
+[node name="kelp_11" parent="entity" instance=ExtResource("61")]
 transform = Transform3D(0.653209, 0, -0.757177, 0, 1, 0, 0.757177, 0, 0.653209, 207.981, -55.7683, -219.482)
 
-[node name="seed_counter" parent="entity" instance=ExtResource( "62" )]
+[node name="seed_counter" parent="entity" instance=ExtResource("62")]
 transform = Transform3D(0.979078, 0, -0.203488, 0, 1, 0, 0.203488, 0, 0.979078, -78.7247, 97.8548, 107.947)
 event_tree = NodePath("../../event/seed_done")
 
 [node name="collision_shape_3d" type="CollisionShape3D" parent="entity/seed_counter"]
-shape = SubResource( "30" )
+shape = SubResource("30")
 
-[node name="boom_crate" parent="entity" instance=ExtResource( "63" )]
+[node name="boom_crate" parent="entity" instance=ExtResource("63")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 216.81, 183.117, -10.0299)
 
 [node name="respawner" parent="entity/boom_crate" index="2"]
@@ -2526,53 +1636,53 @@ parameters = {
 "fuse_time": 10.0
 }
 
-[node name="shard_secret" parent="entity" instance=ExtResource( "64" )]
+[node name="shard_secret" parent="entity" instance=ExtResource("64")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 329.603, 42.7688, -15.6619)
-data = ExtResource( "65" )
+data = ExtResource("65")
 
-[node name="shard_wall" parent="entity" instance=ExtResource( "64" )]
+[node name="shard_wall" parent="entity" instance=ExtResource("64")]
 transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 303.392, 115.618, 38.9015)
-data = ExtResource( "66" )
+data = ExtResource("66")
 
 [node name="entity_remover" type="Area3D" parent="entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 282.01, 0, -3.71571)
-script = ExtResource( "67" )
+script = ExtResource("67")
 
 [node name="collision_shape_3d" type="CollisionShape3D" parent="entity/entity_remover"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8786, 9.72723, 87.9287)
-shape = SubResource( "31" )
+shape = SubResource("31")
 
 [node name="collision_shape_3d_2" type="CollisionShape3D" parent="entity/entity_remover"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.7886, 9.72723, -220.855)
-shape = SubResource( "31" )
+shape = SubResource("31")
 
 [node name="collision_shape_3d_3" type="CollisionShape3D" parent="entity/entity_remover"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9391, -136.952, -26.4847)
-shape = SubResource( "32" )
+shape = SubResource("32")
 
 [node name="event" type="Node" parent="."]
 
 [node name="cutscene_door_open" type="Node" parent="event"]
-script = ExtResource( "68" )
+script = ExtResource("68")
 player_handler = 1
 
 [node name="fade_music" type="Node" parent="event/cutscene_door_open"]
-script = ExtResource( "69" )
+script = ExtResource("69")
 category = 1
 volume = -80.0
 time = 1.5
 
 [node name="jingle" type="Node" parent="event/cutscene_door_open"]
-script = ExtResource( "70" )
-stream = ExtResource( "71" )
+script = ExtResource("70")
+stream = ExtResource("71")
 volume = -2.0
 
 [node name="wait_1" type="Node" parent="event/cutscene_door_open"]
-script = ExtResource( "72" )
+script = ExtResource("72")
 time = 2.0
 
 [node name="cam_in" type="Node" parent="event/cutscene_door_open"]
-script = ExtResource( "73" )
+script = ExtResource("73")
 camera = NodePath("cam")
 duration = 0.75
 cutscene_bars = true
@@ -2584,34 +1694,34 @@ transform = Transform3D(-0.585222, -0.30821, 0.750015, 0.0206557, 0.918981, 0.39
 fov = 50.0
 
 [node name="open_door" type="Node" parent="event/cutscene_door_open"]
-script = ExtResource( "74" )
+script = ExtResource("74")
 node = NodePath("../../../entity/big_door")
-packets = [SubResource( "33" )]
+packets = Array[ExtResource("75")]([SubResource("33")])
 
 [node name="open_chamber" type="Node" parent="event/cutscene_door_open"]
-script = ExtResource( "74" )
+script = ExtResource("74")
 node = NodePath("../../../entity/big_door_2")
-packets = [SubResource( "33" )]
+packets = Array[ExtResource("75")]([SubResource("33")])
 
 [node name="wait_2" type="Node" parent="event/cutscene_door_open"]
-script = ExtResource( "72" )
+script = ExtResource("72")
 time = 3.0
 
 [node name="fade_music_in" type="Node" parent="event/cutscene_door_open"]
-script = ExtResource( "69" )
+script = ExtResource("69")
 category = 1
 
 [node name="cam_out" type="Node" parent="event/cutscene_door_open"]
-script = ExtResource( "73" )
+script = ExtResource("73")
 duration = 0.5
 do_interpolate = true
 
 [node name="warp_castle" type="Node" parent="event"]
-script = ExtResource( "68" )
+script = ExtResource("68")
 player_handler = 0
 
 [node name="camera" type="Node" parent="event/warp_castle"]
-script = ExtResource( "73" )
+script = ExtResource("73")
 camera = NodePath("cam")
 duration = 0.25
 do_interpolate = true
@@ -2622,18 +1732,18 @@ transform = Transform3D(-4.16308e-08, -0.304848, 0.952401, -1.33253e-08, 0.95240
 fov = 60.0
 
 [node name="warp" type="Node" parent="event/warp_castle"]
-script = ExtResource( "76" )
+script = ExtResource("76")
 type = 1
 do_pause = false
 target_area = 1
 fade_length = 1.0
 fade_delay = 0.25
 
-[node name="gj_done" parent="event" instance=ExtResource( "77" )]
+[node name="gj_done" parent="event" instance=ExtResource("77")]
 
 [node name="shard" parent="event/gj_done/spawn_shard" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.8794, 36.765, 277.171)
-data = ExtResource( "78" )
+data = ExtResource("78")
 
 [node name="origin" parent="event/gj_done/spawn_shard" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.028, 36.9737, 277.484)
@@ -2644,12 +1754,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.028, 36.9737, 277.484)
 [node name="follow" parent="event/gj_done/spawn_shard" index="3"]
 transform = Transform3D(-0.898796, 0.13695, -0.416427, 0, 0.949948, 0.312409, 0.438368, 0.280792, -0.853809, 70.5917, 43.2321, 246.286)
 
-[node name="seed_done" parent="event" instance=ExtResource( "77" )]
+[node name="seed_done" parent="event" instance=ExtResource("77")]
 player_handler = 1
 
 [node name="shard" parent="event/seed_done/spawn_shard" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.0527, 110.112, 106.64)
-data = ExtResource( "79" )
+data = ExtResource("79")
 
 [node name="origin" parent="event/seed_done/spawn_shard" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.9041, 86.3205, 106.953)
@@ -2661,11 +1771,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.9041, 110.32, 106.953)
 transform = Transform3D(0.930472, -0.109884, 0.349496, 0, 0.953961, 0.299932, -0.366363, -0.279078, 0.887634, -58.3637, 122.166, 161.64)
 
 [node name="warp_ff" type="Node" parent="event"]
-script = ExtResource( "68" )
+script = ExtResource("68")
 player_handler = 2
 
 [node name="event_warp" type="Node" parent="event/warp_ff"]
-script = ExtResource( "76" )
+script = ExtResource("76")
 target_scene = "res://scenes/level/vslice_demo/bonus/flying_fortress.tscn"
 fade_length = 0.75
 fade_delay = 1.0

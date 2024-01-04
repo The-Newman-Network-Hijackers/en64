@@ -1081,7 +1081,6 @@ stream_1/weight = 1.0
 [node name="glove" type="Node"]
 script = ExtResource("1")
 whitelist = 0
-initial_state = NodePath("none")
 
 [node name="none" type="Node" parent="."]
 script = SubResource("1")

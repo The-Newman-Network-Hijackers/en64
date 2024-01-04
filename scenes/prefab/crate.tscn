@@ -15,7 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://dw1dqs3wvlx1w" path="res://audio/sfx/wood_break.wav" id="13"]
 [ext_resource type="AudioStream" uid="uid://6j6avthc5uou" path="res://audio/sfx/wood_break2.wav" id="14"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_frpfg"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_2x81p"]
 size = Vector3(8, 8, 8)
 
 [sub_resource type="GDScript" id="2"]
@@ -443,9 +443,9 @@ target = NodePath("..")
 [node name="col" type="CollisionShape3D" parent="enabler_reciever"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5625, 0)
 visible = false
-shape = SubResource("BoxShape3D_frpfg")
+shape = SubResource("BoxShape3D_2x81p")
 
-[node name="crate" type="CharacterBody3D" parent="."]
+[node name="crate" type="CharacterBody3D" parent="." node_paths=PackedStringArray("hurtbox_node", "visual_node", "floor_raycast", "anim_tree")]
 collision_layer = 5
 collision_mask = 5
 input_ray_pickable = false
@@ -476,7 +476,7 @@ scope = 4
 
 [node name="col" type="CollisionShape3D" parent="crate/hbox"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
-shape = SubResource("BoxShape3D_frpfg")
+shape = SubResource("BoxShape3D_2x81p")
 
 [node name="vis" parent="crate" instance=ExtResource("8")]
 
@@ -516,7 +516,7 @@ bus = &"Sound"
 
 [node name="col" type="CollisionShape3D" parent="crate"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
-shape = SubResource("BoxShape3D_frpfg")
+shape = SubResource("BoxShape3D_2x81p")
 
 [node name="floor" type="RayCast3D" parent="crate"]
 target_position = Vector3(0, -2.5, 0)
