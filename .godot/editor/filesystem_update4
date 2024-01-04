@@ -1,5 +1,5 @@
 res://asset/environment/env_test.tres
-res://scenes/root.tscn
+res://scenes/prefab/crate.tscn
 res://asset/ui/generic_ui_theme.tres
 res://asset/accessory/body/mesh/suit.res
 res://asset/accessory/face/mesh/glasses.res
@@ -15,18 +15,12 @@ res://asset/accessory/head/mesh/propeller.res
 res://asset/accessory/head/mesh/stem.res
 res://asset/accessory/body/mesh/knight_armor.res
 res://asset/accessory/head/mesh/knight_helmet.res
-res://scenes/prefab/flower_boss.tscn
-res://scenes/level/vslice_demo/history/area_hc_ruins_castle.tscn
 res://asset/environment/ruins_outside_env.tres
 res://asset/effect/grass/vtxe_flower_1.tres
+res://scenes/root.tscn
+res://scenes/prefab/flower_boss.tscn
 res://scenes/level/vslice_demo/history/area_hc_ruins_main.tscn
 res://scenes/level/vslice_demo/history/area_hc_ruins_arena.tscn
-res://scripts/button.gd
-res://scripts/event_shard.gd
 res://scenes/level/test/event/tevent_golden_jack.tscn
 res://scenes/prefab/bouncing_jack.tscn
-res://scenes/prefab/crate.tscn
-res://scenes/particle/ppm_flame1.tres
-res://scenes/particle/ppm_flame2.tres
-res://asset/effect/grass/vtxe_flower_2.tres
 res://scenes/level/vslice_demo/bonus/flying_fortress.tscn
