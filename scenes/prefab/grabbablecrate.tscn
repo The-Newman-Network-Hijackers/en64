@@ -68,7 +68,7 @@ render_as_analog = false
 equip_icon = 0
 message = "to Interact"
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_r886j"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_2nwnf"]
 size = Vector3(12, 12, 12)
 
 [sub_resource type="StandardMaterial3D" id="6"]
@@ -157,10 +157,10 @@ stream_0/weight = 1.0
 stream_1/stream = ExtResource("10")
 stream_1/weight = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_tp0wu"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_67ptw"]
 size = Vector3(8, 8, 8)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_vaiac"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_rk8un"]
 size = Vector3(7.6, 7.6, 7.6)
 
 [sub_resource type="Animation" id="22"]
@@ -448,7 +448,7 @@ script = SubResource("2")
 [node name="picked_up" type="Node" parent="crate/crate_fsm"]
 script = SubResource("3")
 
-[node name="grabbable" type="Area3D" parent="crate"]
+[node name="grabbable" type="Area3D" parent="crate" node_paths=PackedStringArray("entity")]
 script = ExtResource("3")
 type = 1
 entity = NodePath("..")
@@ -456,7 +456,7 @@ input_prompt = SubResource("4")
 
 [node name="col" type="CollisionShape3D" parent="crate/grabbable"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
-shape = SubResource("BoxShape3D_r886j")
+shape = SubResource("BoxShape3D_2nwnf")
 
 [node name="vis" parent="crate" instance=ExtResource("5")]
 
@@ -504,14 +504,14 @@ bus = &"Sound"
 
 [node name="col" type="CollisionShape3D" parent="crate"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
-shape = SubResource("BoxShape3D_tp0wu")
+shape = SubResource("BoxShape3D_67ptw")
 
 [node name="floor" type="RayCast3D" parent="crate"]
 target_position = Vector3(0, -2.5, 0)
 hit_from_inside = true
 
 [node name="player" type="ShapeCast3D" parent="crate"]
-shape = SubResource("BoxShape3D_vaiac")
+shape = SubResource("BoxShape3D_rk8un")
 target_position = Vector3(0, 3.42, 0)
 collision_mask = 2
 

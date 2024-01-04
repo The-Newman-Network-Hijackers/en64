@@ -675,7 +675,7 @@ states/unpress/position = Vector2(532, 12)
 transitions = ["Start", "idle", SubResource("22"), "idle", "press", SubResource("23"), "press", "release", SubResource("24"), "release", "idle", SubResource("25"), "press", "unpress", SubResource("26"), "unpress", "idle", SubResource("27")]
 graph_offset = Vector2(29, -42)
 
-[node name="springboard" type="CharacterBody3D"]
+[node name="springboard" type="CharacterBody3D" node_paths=PackedStringArray("visual_node", "floor_raycast", "anim_tree")]
 collision_layer = 5
 script = ExtResource("1")
 e_name = "Springboard"

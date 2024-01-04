@@ -140,11 +140,12 @@ message = "to Interact"
 height = 10.0
 radius = 5.0
 
-[node name="seed" type="CharacterBody3D"]
+[node name="seed" type="CharacterBody3D" node_paths=PackedStringArray("visual_node")]
 collision_layer = 4
 script = SubResource("1")
 e_name = "Seed"
 respawn = true
+visual_node = NodePath("vis")
 
 [node name="fsm" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("1")

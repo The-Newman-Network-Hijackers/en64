@@ -98,8 +98,9 @@ shape = SubResource("2")
 
 [node name="cage" parent="." instance=ExtResource("3")]
 
-[node name="fsm" type="Node" parent="."]
+[node name="fsm" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("4")
+initial_state = NodePath("idle")
 
 [node name="idle" type="Node" parent="fsm"]
 script = SubResource("3")

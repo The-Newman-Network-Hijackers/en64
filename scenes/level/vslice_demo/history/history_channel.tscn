@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
 [ext_resource type="PackedScene" uid="uid://s36pxxirim7q" path="res://scenes/level/vslice_demo/history/area_hc_ruins_main.tscn" id="3"]
-[ext_resource type="PackedScene" path="res://scenes/level/vslice_demo/history/area_hc_ruins_castle.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://bnr8ej7hikk4n" path="res://scenes/level/vslice_demo/history/area_hc_ruins_castle.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://b53uvnmh565xm" path="res://scenes/level/vslice_demo/history/area_hc_ruins_arena.tscn" id="5"]
 
 [sub_resource type="Resource" id="1"]

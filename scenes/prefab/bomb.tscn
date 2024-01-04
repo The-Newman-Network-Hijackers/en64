@@ -727,11 +727,14 @@ alpha_curve = SubResource("38")
 anim_speed_min = 0.4
 anim_speed_max = 0.75
 
-[node name="bomb" type="CharacterBody3D"]
+[node name="bomb" type="CharacterBody3D" node_paths=PackedStringArray("visual_node", "floor_raycast", "anim_tree")]
 collision_layer = 5
 collision_mask = 3
 script = ExtResource("1")
 e_name = "Bomb"
+visual_node = NodePath("vis_bomb")
+floor_raycast = NodePath("floor")
+anim_tree = NodePath("tree")
 deacceleration = 45.0
 jtt_descent = 0.35
 
@@ -760,7 +763,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31338, 0)
 shape = SubResource("4")
 disabled = true
 
-[node name="fsm" type="Node" parent="."]
+[node name="fsm" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("5")
 initial_state = NodePath("idle")
 
