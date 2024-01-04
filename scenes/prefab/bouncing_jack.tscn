@@ -186,7 +186,7 @@ anim_tree = NodePath("tree")
 deacceleration = 60.0
 jtt_peak = 0.45
 
-[node name="fsm" type="Node" parent="."]
+[node name="fsm" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("2")
 initial_state = NodePath("bouncing")
 

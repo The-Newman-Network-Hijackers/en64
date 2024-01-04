@@ -21,6 +21,8 @@ const STREAM_BOUNCE = preload("res://audio/sfx/twinkle_bounce.wav")
 ## Camera that will look at the shard when spawning.
 @export var follow_cam : Camera3D
 
+
+
 ## Determines when to update look cam
 var update_look_cam := false
 ## Determines when to update follow cam
@@ -30,6 +32,7 @@ var player_cam : Camera3D
 
 func _ready() -> void:
 	# Disable shard, for now
+	print(shard)
 	shard.visible = false
 	shard.process_mode = Node.PROCESS_MODE_DISABLED
 
