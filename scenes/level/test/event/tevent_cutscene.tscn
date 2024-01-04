@@ -15,7 +15,7 @@
 [ext_resource type="FontFile" uid="uid://dk3bac3jmalne" path="res://asset/ui/Basic Comical Regular NC.ttf" id="13"]
 [ext_resource type="Script" path="res://scripts/event_wait.gd" id="14"]
 [ext_resource type="Script" path="res://scripts/event_talk.gd" id="15"]
-[ext_resource type="Resource" uid="uid://bxrct8axqyc8x" path="res://data/dialogue/dummy.dialogue" id="16"]
+[ext_resource type="Resource" path="res://data/dialogue/dummy.dialogue.tscn" id="16"]
 
 [sub_resource type="Resource" id="1"]
 script = ExtResource("2")

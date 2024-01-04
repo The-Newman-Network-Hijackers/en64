@@ -59,7 +59,7 @@
 [ext_resource type="PackedScene" uid="uid://dogr370k43n1s" path="res://scenes/prefab/crate.tscn" id="57"]
 [ext_resource type="Material" path="res://asset/entity/crate/wooden/mat/wood_crate_2.tres" id="58"]
 [ext_resource type="PackedScene" uid="uid://bpaie5176rj8h" path="res://scenes/prefab/npc_sign.tscn" id="59"]
-[ext_resource type="Resource" uid="uid://cuj0usa0fsnqx" path="res://data/dialogue/ruins_outside_fluff.dialogue" id="60"]
+[ext_resource type="Resource" path="res://data/dialogue/ruins_outside_fluff.dialogue.tscn" id="60"]
 [ext_resource type="PackedScene" path="res://scenes/prefab/kelp_1.tscn" id="61"]
 [ext_resource type="PackedScene" uid="uid://duag8qepuxjv0" path="res://scenes/prefab/ruins_seed_counter.tscn" id="62"]
 [ext_resource type="PackedScene" uid="uid://budaw7hon32vh" path="res://scenes/prefab/boom_crate.tscn" id="63"]

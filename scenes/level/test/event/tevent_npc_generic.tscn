@@ -10,7 +10,7 @@
 [ext_resource type="Script" path="res://res_inputprompt.gd" id="8"]
 [ext_resource type="PackedScene" path="res://asset/entity/sign/sign.blend.scn" id="9"]
 [ext_resource type="PackedScene" path="res://scenes/prefab/et_npc_stationary.tscn" id="10"]
-[ext_resource type="Resource" uid="uid://bxrct8axqyc8x" path="res://data/dialogue/dummy.dialogue" id="11"]
+[ext_resource type="Resource" path="res://data/dialogue/dummy.dialogue.tscn" id="11"]
 
 [sub_resource type="Resource" id="1"]
 script = ExtResource("2")
