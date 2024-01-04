@@ -1,70 +1,761 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_jcetp"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_vveop"]
 
 [resource]
-script = ExtResource("1_jcetp")
-titles = {
-"fortress_fluff_1": "3"
-}
-character_names = PackedStringArray("Sign")
-first_title = "3"
+script = ExtResource("1_vveop")
+using_states = PackedStringArray()
+titles = {}
+character_names = PackedStringArray("\"fortress_fluff_1\"", "\"1\"", "\"id\"", "\"next_id\"", "\"text\"", "\"type\"", "\"3\"", "\"character\"", "\"character_replacements\"", "\"tags\"", "\"text_replacements\"", "\"translation_key\"", "\"4\"", "\"5\"", "\"6\"", "\"8\"", "\"is_snippet\"")
+first_title = "1"
 lines = {
 "1": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "id": "1",
 "next_id": "3",
-"text": "fortress_fluff_1",
-"type": "title"
-},
-"3": {
-"character": "Sign",
-"character_replacements": Array[Dictionary]([]),
-"id": "3",
-"next_id": "4",
 "tags": PackedStringArray(),
-"text": "We recieved some orders to decomission this old fortress. Unfortunate, we know.",
+"text": "[gd_resource type=\"Resource\" script_class=\"DialogueResource\" load_steps=2 format=3]",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "We recieved some orders to decomission this old fortress. Unfortunate, we know.",
+"translation_key": "[gd_resource type=\"Resource\" script_class=\"DialogueResource\" load_steps=2 format=3]",
 "type": "dialogue"
 },
-"4": {
-"character": "Sign",
+"10": {
+"character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "4",
+"id": "10",
+"next_id": "11",
+"tags": PackedStringArray(),
+"text": "character_names = PackedStringArray(\"Sign\")",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "character_names = PackedStringArray(\"Sign\")",
+"type": "dialogue"
+},
+"11": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"tags": PackedStringArray(),
+"text": "first_title = \"3\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "first_title = \"3\"",
+"type": "dialogue"
+},
+"12": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"tags": PackedStringArray(),
+"text": "lines = {",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "lines = {",
+"type": "dialogue"
+},
+"13": {
+"character": "\"1\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"tags": PackedStringArray(),
+"text": "{",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "{",
+"type": "dialogue"
+},
+"14": {
+"character": "\"id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "15",
+"tags": PackedStringArray(),
+"text": "\"1\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"1\",",
+"type": "dialogue"
+},
+"15": {
+"character": "\"next_id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"tags": PackedStringArray(),
+"text": "\"3\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"3\",",
+"type": "dialogue"
+},
+"16": {
+"character": "\"text\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"tags": PackedStringArray(),
+"text": "\"fortress_fluff_1\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"fortress_fluff_1\",",
+"type": "dialogue"
+},
+"17": {
+"character": "\"type\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"tags": PackedStringArray(),
+"text": "\"title\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"title\"",
+"type": "dialogue"
+},
+"18": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"tags": PackedStringArray(),
+"text": "},",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "},",
+"type": "dialogue"
+},
+"19": {
+"character": "\"3\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"tags": PackedStringArray(),
+"text": "{",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "{",
+"type": "dialogue"
+},
+"20": {
+"character": "\"character\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"tags": PackedStringArray(),
+"text": "\"Sign\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Sign\",",
+"type": "dialogue"
+},
+"21": {
+"character": "\"character_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
+"type": "dialogue"
+},
+"22": {
+"character": "\"id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "22",
+"next_id": "23",
+"tags": PackedStringArray(),
+"text": "\"3\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"3\",",
+"type": "dialogue"
+},
+"23": {
+"character": "\"next_id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "23",
+"next_id": "24",
+"tags": PackedStringArray(),
+"text": "\"4\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"4\",",
+"type": "dialogue"
+},
+"24": {
+"character": "\"tags\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"tags": PackedStringArray(),
+"text": "PackedStringArray(),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "PackedStringArray(),",
+"type": "dialogue"
+},
+"25": {
+"character": "\"text\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "25",
+"next_id": "26",
+"tags": PackedStringArray(),
+"text": "\"We recieved some orders to decomission this old fortress. Unfortunate, we know.\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"We recieved some orders to decomission this old fortress. Unfortunate, we know.\",",
+"type": "dialogue"
+},
+"26": {
+"character": "\"text_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
+"type": "dialogue"
+},
+"27": {
+"character": "\"translation_key\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "28",
+"tags": PackedStringArray(),
+"text": "\"We recieved some orders to decomission this old fortress. Unfortunate, we know.\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"We recieved some orders to decomission this old fortress. Unfortunate, we know.\",",
+"type": "dialogue"
+},
+"28": {
+"character": "\"type\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "29",
+"tags": PackedStringArray(),
+"text": "\"dialogue\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"dialogue\"",
+"type": "dialogue"
+},
+"29": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "30",
+"tags": PackedStringArray(),
+"text": "},",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "},",
+"type": "dialogue"
+},
+"3": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
 "next_id": "5",
 "tags": PackedStringArray(),
-"text": "Apparently a sister organization needed to repurpose some of the materials from here for yet another tower...",
+"text": "[ext_resource type=\"Script\" path=\"res://addons/dialogue_manager/dialogue_resource.gd\" id=\"1_jcetp\"]",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Apparently a sister organization needed to repurpose some of the materials from here for yet another tower...",
+"translation_key": "[ext_resource type=\"Script\" path=\"res://addons/dialogue_manager/dialogue_resource.gd\" id=\"1_jcetp\"]",
+"type": "dialogue"
+},
+"30": {
+"character": "\"4\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "30",
+"next_id": "31",
+"tags": PackedStringArray(),
+"text": "{",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "{",
+"type": "dialogue"
+},
+"31": {
+"character": "\"character\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "32",
+"tags": PackedStringArray(),
+"text": "\"Sign\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Sign\",",
+"type": "dialogue"
+},
+"32": {
+"character": "\"character_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "33",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
+"type": "dialogue"
+},
+"33": {
+"character": "\"id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "33",
+"next_id": "34",
+"tags": PackedStringArray(),
+"text": "\"4\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"4\",",
+"type": "dialogue"
+},
+"34": {
+"character": "\"next_id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"tags": PackedStringArray(),
+"text": "\"5\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"5\",",
+"type": "dialogue"
+},
+"35": {
+"character": "\"tags\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "35",
+"next_id": "36",
+"tags": PackedStringArray(),
+"text": "PackedStringArray(),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "PackedStringArray(),",
+"type": "dialogue"
+},
+"36": {
+"character": "\"text\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "36",
+"next_id": "37",
+"tags": PackedStringArray(),
+"text": "\"Apparently a sister organization needed to repurpose some of the materials from here for yet another tower...\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Apparently a sister organization needed to repurpose some of the materials from here for yet another tower...\",",
+"type": "dialogue"
+},
+"37": {
+"character": "\"text_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "37",
+"next_id": "38",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
+"type": "dialogue"
+},
+"38": {
+"character": "\"translation_key\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "38",
+"next_id": "39",
+"tags": PackedStringArray(),
+"text": "\"Apparently a sister organization needed to repurpose some of the materials from here for yet another tower...\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Apparently a sister organization needed to repurpose some of the materials from here for yet another tower...\",",
+"type": "dialogue"
+},
+"39": {
+"character": "\"type\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "39",
+"next_id": "40",
+"tags": PackedStringArray(),
+"text": "\"dialogue\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"dialogue\"",
+"type": "dialogue"
+},
+"40": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "40",
+"next_id": "41",
+"tags": PackedStringArray(),
+"text": "},",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "},",
+"type": "dialogue"
+},
+"41": {
+"character": "\"5\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "41",
+"next_id": "42",
+"tags": PackedStringArray(),
+"text": "{",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "{",
+"type": "dialogue"
+},
+"42": {
+"character": "\"character\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "42",
+"next_id": "43",
+"tags": PackedStringArray(),
+"text": "\"Sign\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Sign\",",
+"type": "dialogue"
+},
+"43": {
+"character": "\"character_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "43",
+"next_id": "44",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
+"type": "dialogue"
+},
+"44": {
+"character": "\"id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "44",
+"next_id": "45",
+"tags": PackedStringArray(),
+"text": "\"5\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"5\",",
+"type": "dialogue"
+},
+"45": {
+"character": "\"next_id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "45",
+"next_id": "46",
+"tags": PackedStringArray(),
+"text": "\"6\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"6\",",
+"type": "dialogue"
+},
+"46": {
+"character": "\"tags\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "46",
+"next_id": "47",
+"tags": PackedStringArray(),
+"text": "PackedStringArray(),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "PackedStringArray(),",
+"type": "dialogue"
+},
+"47": {
+"character": "\"text\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "47",
+"next_id": "48",
+"tags": PackedStringArray(),
+"text": "\"Why is it always towers? They only ever build towers, and real hazardous ones at that.\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Why is it always towers? They only ever build towers, and real hazardous ones at that.\",",
+"type": "dialogue"
+},
+"48": {
+"character": "\"text_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "48",
+"next_id": "49",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
+"type": "dialogue"
+},
+"49": {
+"character": "\"translation_key\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "49",
+"next_id": "50",
+"tags": PackedStringArray(),
+"text": "\"Why is it always towers? They only ever build towers, and real hazardous ones at that.\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Why is it always towers? They only ever build towers, and real hazardous ones at that.\",",
 "type": "dialogue"
 },
 "5": {
-"character": "Sign",
+"character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "5",
 "next_id": "6",
 "tags": PackedStringArray(),
-"text": "Why is it always towers? They only ever build towers, and real hazardous ones at that.",
+"text": "[resource]",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Why is it always towers? They only ever build towers, and real hazardous ones at that.",
+"translation_key": "[resource]",
+"type": "dialogue"
+},
+"50": {
+"character": "\"type\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "50",
+"next_id": "51",
+"tags": PackedStringArray(),
+"text": "\"dialogue\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"dialogue\"",
+"type": "dialogue"
+},
+"51": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "51",
+"next_id": "52",
+"tags": PackedStringArray(),
+"text": "},",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "},",
+"type": "dialogue"
+},
+"52": {
+"character": "\"6\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "52",
+"next_id": "53",
+"tags": PackedStringArray(),
+"text": "{",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "{",
+"type": "dialogue"
+},
+"53": {
+"character": "\"character\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "53",
+"next_id": "54",
+"tags": PackedStringArray(),
+"text": "\"Sign\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Sign\",",
+"type": "dialogue"
+},
+"54": {
+"character": "\"character_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "54",
+"next_id": "55",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
+"type": "dialogue"
+},
+"55": {
+"character": "\"id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "55",
+"next_id": "56",
+"tags": PackedStringArray(),
+"text": "\"6\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"6\",",
+"type": "dialogue"
+},
+"56": {
+"character": "\"next_id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "56",
+"next_id": "57",
+"tags": PackedStringArray(),
+"text": "\"8\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"8\",",
+"type": "dialogue"
+},
+"57": {
+"character": "\"tags\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "57",
+"next_id": "58",
+"tags": PackedStringArray(),
+"text": "PackedStringArray(),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "PackedStringArray(),",
+"type": "dialogue"
+},
+"58": {
+"character": "\"text\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "58",
+"next_id": "59",
+"tags": PackedStringArray(),
+"text": "\"- Demolition Crew\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"- Demolition Crew\",",
+"type": "dialogue"
+},
+"59": {
+"character": "\"text_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "59",
+"next_id": "60",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
 "type": "dialogue"
 },
 "6": {
-"character": "Sign",
+"character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "6",
+"next_id": "7",
+"tags": PackedStringArray(),
+"text": "script = ExtResource(\"1_jcetp\")",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "script = ExtResource(\"1_jcetp\")",
+"type": "dialogue"
+},
+"60": {
+"character": "\"translation_key\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "60",
+"next_id": "61",
+"tags": PackedStringArray(),
+"text": "\"- Demolition Crew\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"- Demolition Crew\",",
+"type": "dialogue"
+},
+"61": {
+"character": "\"type\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "61",
+"next_id": "62",
+"tags": PackedStringArray(),
+"text": "\"dialogue\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"dialogue\"",
+"type": "dialogue"
+},
+"62": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "62",
+"next_id": "63",
+"tags": PackedStringArray(),
+"text": "},",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "},",
+"type": "dialogue"
+},
+"63": {
+"character": "\"8\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "63",
+"next_id": "64",
+"tags": PackedStringArray(),
+"text": "{",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "{",
+"type": "dialogue"
+},
+"64": {
+"character": "\"id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "64",
+"next_id": "65",
+"tags": PackedStringArray(),
+"text": "\"8\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"8\",",
+"type": "dialogue"
+},
+"65": {
+"character": "\"is_snippet\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "65",
+"next_id": "66",
+"tags": PackedStringArray(),
+"text": "false,",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "false,",
+"type": "dialogue"
+},
+"66": {
+"character": "\"next_id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "66",
+"next_id": "67",
+"tags": PackedStringArray(),
+"text": "\"end\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"end\",",
+"type": "dialogue"
+},
+"67": {
+"character": "\"type\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "67",
+"next_id": "68",
+"tags": PackedStringArray(),
+"text": "\"goto\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"goto\"",
+"type": "dialogue"
+},
+"68": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "68",
+"next_id": "69",
+"tags": PackedStringArray(),
+"text": "}",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "}",
+"type": "dialogue"
+},
+"69": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "69",
+"next_id": "70",
+"tags": PackedStringArray(),
+"text": "}",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "}",
+"type": "dialogue"
+},
+"7": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
 "next_id": "8",
 "tags": PackedStringArray(),
-"text": "- Demolition Crew",
+"text": "titles = {",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "- Demolition Crew",
+"translation_key": "titles = {",
+"type": "dialogue"
+},
+"70": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "70",
+"next_id": "",
+"tags": PackedStringArray(),
+"text": "metadata/dialogue_manager_version = \"2.25.0\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "metadata/dialogue_manager_version = \"2.25.0\"",
 "type": "dialogue"
 },
 "8": {
+"character": "\"fortress_fluff_1\"",
+"character_replacements": Array[Dictionary]([]),
 "id": "8",
-"is_snippet": false,
-"next_id": "end",
-"type": "goto"
+"next_id": "9",
+"tags": PackedStringArray(),
+"text": "\"3\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"3\"",
+"type": "dialogue"
+},
+"9": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"tags": PackedStringArray(),
+"text": "}",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "}",
+"type": "dialogue"
 }
 }
-metadata/dialogue_manager_version = "2.25.0"
+metadata/dialogue_manager_version = "2.31.0"

@@ -1,0 +1,561 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_tbpen"]
+
+[resource]
+script = ExtResource("1_tbpen")
+titles = {
+"flower_prince_defeat_2_demo": "68",
+"flower_prince_defeat_3_demo": "75",
+"flower_prince_defeat_demo": "60",
+"flower_prince_demo": "34",
+"flower_prince_intro": "3",
+"flower_prince_mean": "13",
+"flower_prince_mean_demo": "44",
+"flower_prince_regret": "23",
+"flower_prince_rematch_demo": "53"
+}
+character_names = PackedStringArray("Florian")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "flower_prince_intro",
+"type": "title"
+},
+"11": {
+"id": "11",
+"next_id": "13",
+"text": "flower_prince_mean",
+"type": "title"
+},
+"13": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"tags": PackedStringArray(),
+"text": "...and the gloves that you bring!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...and the gloves that you bring!",
+"type": "dialogue"
+},
+"14": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "15",
+"tags": PackedStringArray(),
+"text": "How dare you try to pluck me, the great prince of these lands?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "How dare you try to pluck me, the great prince of these lands?",
+"type": "dialogue"
+},
+"15": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"tags": PackedStringArray(),
+"text": "They dont elect pushovers, you know! How else do you think I took the throne?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "They dont elect pushovers, you know! How else do you think I took the throne?",
+"type": "dialogue"
+},
+"16": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"tags": PackedStringArray(),
+"text": "I may look nice, but I strike swift with great force! Especially for those who are a thorn in my side!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I may look nice, but I strike swift with great force! Especially for those who are a thorn in my side!",
+"type": "dialogue"
+},
+"17": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "19",
+"tags": PackedStringArray(),
+"text": "Lackeys! Hit it!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Lackeys! Hit it!",
+"type": "dialogue"
+},
+"19": {
+"id": "19",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"21": {
+"id": "21",
+"next_id": "23",
+"text": "flower_prince_regret",
+"type": "title"
+},
+"23": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "23",
+"next_id": "24",
+"tags": PackedStringArray(),
+"text": "Ack! What have I done?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ack! What have I done?",
+"type": "dialogue"
+},
+"24": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"tags": PackedStringArray(),
+"text": "Young one, you've seem to have beaten the devil out of me!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Young one, you've seem to have beaten the devil out of me!",
+"type": "dialogue"
+},
+"25": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "25",
+"next_id": "26",
+"tags": PackedStringArray(),
+"text": "Ough... What am I going to have to tell the missus...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ough... What am I going to have to tell the missus...",
+"type": "dialogue"
+},
+"26": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"tags": PackedStringArray(),
+"text": "...and the poor fungi people. I have to free them!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...and the poor fungi people. I have to free them!",
+"type": "dialogue"
+},
+"27": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "28",
+"tags": PackedStringArray(),
+"text": "Thank you for helping me come to my senses! I'll open up the cavern gate this instant!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Thank you for helping me come to my senses! I'll open up the cavern gate this instant!",
+"type": "dialogue"
+},
+"28": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "30",
+"tags": PackedStringArray(),
+"text": "Oh, and here. Take these, maybe you can find a use for them.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh, and here. Take these, maybe you can find a use for them.",
+"type": "dialogue"
+},
+"3": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"tags": PackedStringArray(),
+"text": "Hum dee doo... Young forest creature, listen here...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hum dee doo... Young forest creature, listen here...",
+"type": "dialogue"
+},
+"30": {
+"id": "30",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"32": {
+"id": "32",
+"next_id": "34",
+"text": "flower_prince_demo",
+"type": "title"
+},
+"34": {
+"id": "34",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "change_voice",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "35",
+"type": "mutation"
+},
+"35": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "35",
+"next_id": "36",
+"tags": PackedStringArray(),
+"text": "Dum de doo... Young forest creature...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dum de doo... Young forest creature...",
+"type": "dialogue"
+},
+"36": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "36",
+"next_id": "37",
+"tags": PackedStringArray(),
+"text": "You've got quite the gall showing up here!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You've got quite the gall showing up here!",
+"type": "dialogue"
+},
+"37": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "37",
+"next_id": "38",
+"tags": PackedStringArray(),
+"text": "That look in your eyes... The gloves in your hands...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "That look in your eyes... The gloves in your hands...",
+"type": "dialogue"
+},
+"38": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "38",
+"next_id": "40",
+"tags": PackedStringArray(),
+"text": "You must be here to pluck me, eh? Wouldn't be my first time.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You must be here to pluck me, eh? Wouldn't be my first time.",
+"type": "dialogue"
+},
+"4": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"tags": PackedStringArray(),
+"text": "Us flower and fungi creed are not all too different, you know?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Us flower and fungi creed are not all too different, you know?",
+"type": "dialogue"
+},
+"40": {
+"id": "40",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"42": {
+"id": "42",
+"next_id": "44",
+"text": "flower_prince_mean_demo",
+"type": "title"
+},
+"44": {
+"id": "44",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "change_voice",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "45",
+"type": "mutation"
+},
+"45": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "45",
+"next_id": "46",
+"tags": PackedStringArray(),
+"text": "Hahaha! Look at me now! You've really stepped on the wrong patch...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hahaha! Look at me now! You've really stepped on the wrong patch...",
+"type": "dialogue"
+},
+"46": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "46",
+"next_id": "47",
+"tags": PackedStringArray(),
+"text": "They dont elect pushovers, you know! How else do you think I took the throne?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "They dont elect pushovers, you know! How else do you think I took the throne?",
+"type": "dialogue"
+},
+"47": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "47",
+"next_id": "49",
+"tags": PackedStringArray(),
+"text": "I, the great Prince Florian, ruler of these ruined lands, will strike you down!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I, the great Prince Florian, ruler of these ruined lands, will strike you down!",
+"type": "dialogue"
+},
+"49": {
+"id": "49",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"5": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"tags": PackedStringArray(),
+"text": "The flowers, they watch, they observe. Talkative ones, though only when none other are around.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The flowers, they watch, they observe. Talkative ones, though only when none other are around.",
+"type": "dialogue"
+},
+"51": {
+"id": "51",
+"next_id": "53",
+"text": "flower_prince_rematch_demo",
+"type": "title"
+},
+"53": {
+"id": "53",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "change_voice",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "54",
+"type": "mutation"
+},
+"54": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "54",
+"next_id": "56",
+"tags": PackedStringArray(),
+"text": "You already know the drill. Hahaha!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You already know the drill. Hahaha!",
+"type": "dialogue"
+},
+"56": {
+"id": "56",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"58": {
+"id": "58",
+"next_id": "60",
+"text": "flower_prince_defeat_demo",
+"type": "title"
+},
+"6": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"tags": PackedStringArray(),
+"text": "The flowers speak to me, their leader... They tell me stories of travellers, fantasy I say.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The flowers speak to me, their leader... They tell me stories of travellers, fantasy I say.",
+"type": "dialogue"
+},
+"60": {
+"id": "60",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "change_voice",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "61",
+"type": "mutation"
+},
+"61": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "61",
+"next_id": "62",
+"tags": PackedStringArray(),
+"text": "No... NO! This can't be happening! How could you defeat a great prince like meeeee!?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No... NO! This can't be happening! How could you defeat a great prince like meeeee!?",
+"type": "dialogue"
+},
+"62": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "62",
+"next_id": "64",
+"tags": PackedStringArray(),
+"text": "I... I...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I... I...",
+"type": "dialogue"
+},
+"64": {
+"id": "64",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"66": {
+"id": "66",
+"next_id": "68",
+"text": "flower_prince_defeat_2_demo",
+"type": "title"
+},
+"68": {
+"id": "68",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "change_voice",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "69",
+"type": "mutation"
+},
+"69": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "69",
+"next_id": "71",
+"tags": PackedStringArray(),
+"text": "Oh. Dear. Gosh.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh. Dear. Gosh.",
+"type": "dialogue"
+},
+"7": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "9",
+"tags": PackedStringArray(),
+"text": "The flowers... they informed me of your arrival...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The flowers... they informed me of your arrival...",
+"type": "dialogue"
+},
+"71": {
+"id": "71",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"73": {
+"id": "73",
+"next_id": "75",
+"text": "flower_prince_defeat_3_demo",
+"type": "title"
+},
+"75": {
+"id": "75",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "change_voice",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "76",
+"type": "mutation"
+},
+"76": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "76",
+"next_id": "77",
+"tags": PackedStringArray(),
+"text": "...I feel a whole lot better now.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...I feel a whole lot better now.",
+"type": "dialogue"
+},
+"77": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "77",
+"next_id": "78",
+"tags": PackedStringArray(),
+"text": "Oh goodness, well, seems like thats the end of the demo!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh goodness, well, seems like thats the end of the demo!",
+"type": "dialogue"
+},
+"78": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "78",
+"next_id": "79",
+"tags": PackedStringArray(),
+"text": "Normally, this is where things would get even moooore interesting, but we had to stop somewhere!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Normally, this is where things would get even moooore interesting, but we had to stop somewhere!",
+"type": "dialogue"
+},
+"79": {
+"character": "Florian",
+"character_replacements": Array[Dictionary]([]),
+"id": "79",
+"next_id": "81",
+"tags": PackedStringArray(),
+"text": "Thank you for playing our wonderful demo. We hope you enjoyed!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Thank you for playing our wonderful demo. We hope you enjoyed!",
+"type": "dialogue"
+},
+"81": {
+"id": "81",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"9": {
+"id": "9",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+metadata/dialogue_manager_version = "2.25.0"

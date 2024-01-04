@@ -1,15 +1,15 @@
 [remap]
 
-importer="dialogue_manager_compiler_10"
+importer="dialogue_manager_compiler_11"
 type="Resource"
-uid="uid://54swe2tp45qx"
+uid="uid://dpnapunxqc5iv"
 path="res://.godot/imported/introduction_1.dialogue-936a81b199faa271a9bcca10a6ce14d9.tres"
 
 [deps]
 
 source_file="res://data/dialogue/introduction_1.dialogue"
-dest_files=PackedStringArray("res://.godot/imported/introduction_1.dialogue-936a81b199faa271a9bcca10a6ce14d9.tres")
+dest_files=["res://.godot/imported/introduction_1.dialogue-936a81b199faa271a9bcca10a6ce14d9.tres"]
 
 [params]
 
-dummy_value_ignore_me=0
+defaults=true

@@ -1,0 +1,177 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_cbb8p"]
+
+[resource]
+script = ExtResource("1_cbb8p")
+titles = {
+"demo_1": "27",
+"garden": "3",
+"tutorial_1": "10",
+"tutorial_2": "19"
+}
+character_names = PackedStringArray("Sign")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "garden",
+"type": "title"
+},
+"10": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"tags": PackedStringArray(),
+"text": "Welcome to Newman Network: Channel 64. A great tower is just up ahead...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Welcome to Newman Network: Channel 64. A great tower is just up ahead...",
+"type": "dialogue"
+},
+"11": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"tags": PackedStringArray(),
+"text": "Consider taking a look at the keybind page to familiarize yourself with what movement options are available.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Consider taking a look at the keybind page to familiarize yourself with what movement options are available.",
+"type": "dialogue"
+},
+"12": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"tags": PackedStringArray(),
+"text": "A great starting point on your journey is to find and ground pound the three buttons scattered around the premises",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "A great starting point on your journey is to find and ground pound the three buttons scattered around the premises",
+"type": "dialogue"
+},
+"13": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "15",
+"tags": PackedStringArray(),
+"text": "Good luck, stay curious, and have fun! 
+-Friendly Stranger",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Good luck, stay curious, and have fun! 
+-Friendly Stranger",
+"type": "dialogue"
+},
+"15": {
+"id": "15",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"17": {
+"id": "17",
+"next_id": "19",
+"text": "tutorial_2",
+"type": "title"
+},
+"19": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"tags": PackedStringArray(),
+"text": "When you see a rubber ball, dont be afraid to take it! It will initiate a [b]Golden Jack hunt[/b]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "When you see a rubber ball, dont be afraid to take it! It will initiate a [b]Golden Jack hunt[/b]!",
+"type": "dialogue"
+},
+"20": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"tags": PackedStringArray(),
+"text": "If you complete a set of 10 Golden Jacks, you'll be rewarded with a Shard!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you complete a set of 10 Golden Jacks, you'll be rewarded with a Shard!",
+"type": "dialogue"
+},
+"21": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "23",
+"tags": PackedStringArray(),
+"text": "Remember though, the Golden Jacks only reveal themselves once you have the rubber ball.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Remember though, the Golden Jacks only reveal themselves once you have the rubber ball.",
+"type": "dialogue"
+},
+"23": {
+"id": "23",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"25": {
+"id": "25",
+"next_id": "27",
+"text": "demo_1",
+"type": "title"
+},
+"27": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "29",
+"tags": PackedStringArray(),
+"text": "UNDER CONSTRUCTION!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "UNDER CONSTRUCTION!",
+"type": "dialogue"
+},
+"29": {
+"id": "29",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"tags": PackedStringArray(),
+"text": "FOR HIRE: In real need of a strong gardener! Will pay in rare gem!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "FOR HIRE: In real need of a strong gardener! Will pay in rare gem!",
+"type": "dialogue"
+},
+"4": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "6",
+"tags": PackedStringArray(),
+"text": "If you find any seeds out and about, throw them in my dirt patch would ya? [b]Five[/b] seeds should be plenty!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you find any seeds out and about, throw them in my dirt patch would ya? [b]Five[/b] seeds should be plenty!",
+"type": "dialogue"
+},
+"6": {
+"id": "6",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"8": {
+"id": "8",
+"next_id": "10",
+"text": "tutorial_1",
+"type": "title"
+}
+}
+metadata/dialogue_manager_version = "2.25.0"

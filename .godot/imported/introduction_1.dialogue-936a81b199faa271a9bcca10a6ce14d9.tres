@@ -1,11 +1,112 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_khysi"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_5ucy8"]
 
 [resource]
-script = ExtResource("1_khysi")
+script = ExtResource("1_5ucy8")
+using_states = PackedStringArray()
 titles = {}
 character_names = PackedStringArray()
-first_title = ""
-lines = {}
-metadata/dialogue_manager_version = "2.25.0"
+first_title = "1"
+lines = {
+"1": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "1",
+"next_id": "3",
+"tags": PackedStringArray(),
+"text": "[gd_resource type=\"Resource\" script_class=\"DialogueResource\" load_steps=2 format=3]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[gd_resource type=\"Resource\" script_class=\"DialogueResource\" load_steps=2 format=3]",
+"type": "dialogue"
+},
+"10": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"tags": PackedStringArray(),
+"text": "lines = {}",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "lines = {}",
+"type": "dialogue"
+},
+"11": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "",
+"tags": PackedStringArray(),
+"text": "metadata/dialogue_manager_version = \"2.25.0\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "metadata/dialogue_manager_version = \"2.25.0\"",
+"type": "dialogue"
+},
+"3": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "5",
+"tags": PackedStringArray(),
+"text": "[ext_resource type=\"Script\" path=\"res://addons/dialogue_manager/dialogue_resource.gd\" id=\"1_khysi\"]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[ext_resource type=\"Script\" path=\"res://addons/dialogue_manager/dialogue_resource.gd\" id=\"1_khysi\"]",
+"type": "dialogue"
+},
+"5": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"tags": PackedStringArray(),
+"text": "[resource]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[resource]",
+"type": "dialogue"
+},
+"6": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"tags": PackedStringArray(),
+"text": "script = ExtResource(\"1_khysi\")",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "script = ExtResource(\"1_khysi\")",
+"type": "dialogue"
+},
+"7": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"tags": PackedStringArray(),
+"text": "titles = {}",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "titles = {}",
+"type": "dialogue"
+},
+"8": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"tags": PackedStringArray(),
+"text": "character_names = PackedStringArray()",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "character_names = PackedStringArray()",
+"type": "dialogue"
+},
+"9": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"tags": PackedStringArray(),
+"text": "first_title = \"\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "first_title = \"\"",
+"type": "dialogue"
+}
+}
+metadata/dialogue_manager_version = "2.31.0"

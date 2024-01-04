@@ -1,15 +1,15 @@
 [remap]
 
-importer="dialogue_manager_compiler_10"
+importer="dialogue_manager_compiler_11"
 type="Resource"
-uid="uid://dn2b3brfui5qr"
+uid="uid://dl4u4b1xj5m8c"
 path="res://.godot/imported/tutorial_move.dialogue-b0a633abc3818e2b80a1ddd50ec70ad6.tres"
 
 [deps]
 
 source_file="res://data/dialogue/tutorial_move.dialogue"
-dest_files=PackedStringArray("res://.godot/imported/tutorial_move.dialogue-b0a633abc3818e2b80a1ddd50ec70ad6.tres")
+dest_files=["res://.godot/imported/tutorial_move.dialogue-b0a633abc3818e2b80a1ddd50ec70ad6.tres"]
 
 [params]
 
-dummy_value_ignore_me=0
+defaults=true

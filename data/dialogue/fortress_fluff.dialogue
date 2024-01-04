@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_jcetp"]
+
+[resource]
+script = ExtResource("1_jcetp")
+titles = {
+"fortress_fluff_1": "3"
+}
+character_names = PackedStringArray("Sign")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "fortress_fluff_1",
+"type": "title"
+},
+"3": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"tags": PackedStringArray(),
+"text": "We recieved some orders to decomission this old fortress. Unfortunate, we know.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "We recieved some orders to decomission this old fortress. Unfortunate, we know.",
+"type": "dialogue"
+},
+"4": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"tags": PackedStringArray(),
+"text": "Apparently a sister organization needed to repurpose some of the materials from here for yet another tower...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Apparently a sister organization needed to repurpose some of the materials from here for yet another tower...",
+"type": "dialogue"
+},
+"5": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"tags": PackedStringArray(),
+"text": "Why is it always towers? They only ever build towers, and real hazardous ones at that.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Why is it always towers? They only ever build towers, and real hazardous ones at that.",
+"type": "dialogue"
+},
+"6": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "8",
+"tags": PackedStringArray(),
+"text": "- Demolition Crew",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "- Demolition Crew",
+"type": "dialogue"
+},
+"8": {
+"id": "8",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+metadata/dialogue_manager_version = "2.25.0"

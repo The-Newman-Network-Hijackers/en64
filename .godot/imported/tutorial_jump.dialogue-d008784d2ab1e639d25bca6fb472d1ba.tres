@@ -1,20 +1,244 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_kl3qn"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_7m0x5"]
 
 [resource]
-script = ExtResource("1_kl3qn")
-titles = {
-"tutorial_jump": "3"
-}
-character_names = PackedStringArray()
-first_title = "3"
+script = ExtResource("1_7m0x5")
+using_states = PackedStringArray()
+titles = {}
+character_names = PackedStringArray("\"tutorial_jump\"", "\"1\"", "\"id\"", "\"next_id\"", "\"text\"", "\"type\"", "\"3\"", "\"character\"", "\"character_replacements\"", "\"tags\"", "\"text_replacements\"", "\"translation_key\"", "\"5\"", "\"is_snippet\"")
+first_title = "1"
 lines = {
 "1": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "id": "1",
 "next_id": "3",
-"text": "tutorial_jump",
-"type": "title"
+"tags": PackedStringArray(),
+"text": "[gd_resource type=\"Resource\" script_class=\"DialogueResource\" load_steps=2 format=3]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[gd_resource type=\"Resource\" script_class=\"DialogueResource\" load_steps=2 format=3]",
+"type": "dialogue"
+},
+"10": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"tags": PackedStringArray(),
+"text": "character_names = PackedStringArray()",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "character_names = PackedStringArray()",
+"type": "dialogue"
+},
+"11": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"tags": PackedStringArray(),
+"text": "first_title = \"3\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "first_title = \"3\"",
+"type": "dialogue"
+},
+"12": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"tags": PackedStringArray(),
+"text": "lines = {",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "lines = {",
+"type": "dialogue"
+},
+"13": {
+"character": "\"1\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"tags": PackedStringArray(),
+"text": "{",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "{",
+"type": "dialogue"
+},
+"14": {
+"character": "\"id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "15",
+"tags": PackedStringArray(),
+"text": "\"1\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"1\",",
+"type": "dialogue"
+},
+"15": {
+"character": "\"next_id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"tags": PackedStringArray(),
+"text": "\"3\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"3\",",
+"type": "dialogue"
+},
+"16": {
+"character": "\"text\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"tags": PackedStringArray(),
+"text": "\"tutorial_jump\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"tutorial_jump\",",
+"type": "dialogue"
+},
+"17": {
+"character": "\"type\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"tags": PackedStringArray(),
+"text": "\"title\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"title\"",
+"type": "dialogue"
+},
+"18": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"tags": PackedStringArray(),
+"text": "},",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "},",
+"type": "dialogue"
+},
+"19": {
+"character": "\"3\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"tags": PackedStringArray(),
+"text": "{",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "{",
+"type": "dialogue"
+},
+"20": {
+"character": "\"character\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"tags": PackedStringArray(),
+"text": "\"\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"\",",
+"type": "dialogue"
+},
+"21": {
+"character": "\"character_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
+"type": "dialogue"
+},
+"22": {
+"character": "\"id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "22",
+"next_id": "23",
+"tags": PackedStringArray(),
+"text": "\"3\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"3\",",
+"type": "dialogue"
+},
+"23": {
+"character": "\"next_id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "23",
+"next_id": "24",
+"tags": PackedStringArray(),
+"text": "\"5\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"5\",",
+"type": "dialogue"
+},
+"24": {
+"character": "\"tags\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"tags": PackedStringArray(),
+"text": "PackedStringArray(),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "PackedStringArray(),",
+"type": "dialogue"
+},
+"25": {
+"character": "\"text\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "25",
+"next_id": "26",
+"tags": PackedStringArray(),
+"text": "\"Press\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Press\",",
+"type": "dialogue"
+},
+"26": {
+"character": "\"text_replacements\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"tags": PackedStringArray(),
+"text": "Array[Dictionary]([]),",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Array[Dictionary]([]),",
+"type": "dialogue"
+},
+"27": {
+"character": "\"translation_key\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "28",
+"tags": PackedStringArray(),
+"text": "\"Press\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"Press\",",
+"type": "dialogue"
+},
+"28": {
+"character": "\"type\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "29",
+"tags": PackedStringArray(),
+"text": "\"dialogue\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"dialogue\"",
+"type": "dialogue"
+},
+"29": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "30",
+"tags": PackedStringArray(),
+"text": "},",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "},",
+"type": "dialogue"
 },
 "3": {
 "character": "",
@@ -22,16 +246,153 @@ lines = {
 "id": "3",
 "next_id": "5",
 "tags": PackedStringArray(),
-"text": "Press",
+"text": "[ext_resource type=\"Script\" path=\"res://addons/dialogue_manager/dialogue_resource.gd\" id=\"1_kl3qn\"]",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Press",
+"translation_key": "[ext_resource type=\"Script\" path=\"res://addons/dialogue_manager/dialogue_resource.gd\" id=\"1_kl3qn\"]",
+"type": "dialogue"
+},
+"30": {
+"character": "\"5\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "30",
+"next_id": "31",
+"tags": PackedStringArray(),
+"text": "{",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "{",
+"type": "dialogue"
+},
+"31": {
+"character": "\"id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "32",
+"tags": PackedStringArray(),
+"text": "\"5\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"5\",",
+"type": "dialogue"
+},
+"32": {
+"character": "\"is_snippet\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "33",
+"tags": PackedStringArray(),
+"text": "false,",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "false,",
+"type": "dialogue"
+},
+"33": {
+"character": "\"next_id\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "33",
+"next_id": "34",
+"tags": PackedStringArray(),
+"text": "\"end\",",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"end\",",
+"type": "dialogue"
+},
+"34": {
+"character": "\"type\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"tags": PackedStringArray(),
+"text": "\"goto\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"goto\"",
+"type": "dialogue"
+},
+"35": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "35",
+"next_id": "36",
+"tags": PackedStringArray(),
+"text": "}",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "}",
+"type": "dialogue"
+},
+"36": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "36",
+"next_id": "37",
+"tags": PackedStringArray(),
+"text": "}",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "}",
+"type": "dialogue"
+},
+"37": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "37",
+"next_id": "",
+"tags": PackedStringArray(),
+"text": "metadata/dialogue_manager_version = \"2.25.0\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "metadata/dialogue_manager_version = \"2.25.0\"",
 "type": "dialogue"
 },
 "5": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "id": "5",
-"is_snippet": false,
-"next_id": "end",
-"type": "goto"
+"next_id": "6",
+"tags": PackedStringArray(),
+"text": "[resource]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[resource]",
+"type": "dialogue"
+},
+"6": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"tags": PackedStringArray(),
+"text": "script = ExtResource(\"1_kl3qn\")",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "script = ExtResource(\"1_kl3qn\")",
+"type": "dialogue"
+},
+"7": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"tags": PackedStringArray(),
+"text": "titles = {",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "titles = {",
+"type": "dialogue"
+},
+"8": {
+"character": "\"tutorial_jump\"",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"tags": PackedStringArray(),
+"text": "\"3\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "\"3\"",
+"type": "dialogue"
+},
+"9": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"tags": PackedStringArray(),
+"text": "}",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "}",
+"type": "dialogue"
 }
 }
-metadata/dialogue_manager_version = "2.25.0"
+metadata/dialogue_manager_version = "2.31.0"

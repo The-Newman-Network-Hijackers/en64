@@ -1,15 +1,15 @@
 [remap]
 
-importer="dialogue_manager_compiler_10"
+importer="dialogue_manager_compiler_11"
 type="Resource"
-uid="uid://cesusc2phfqh8"
+uid="uid://bpkewmnbdmbxq"
 path="res://.godot/imported/fortress_fluff.dialogue-39716c08bd6663b4672963ad83872ca6.tres"
 
 [deps]
 
 source_file="res://data/dialogue/fortress_fluff.dialogue"
-dest_files=PackedStringArray("res://.godot/imported/fortress_fluff.dialogue-39716c08bd6663b4672963ad83872ca6.tres")
+dest_files=["res://.godot/imported/fortress_fluff.dialogue-39716c08bd6663b4672963ad83872ca6.tres"]
 
 [params]
 
-dummy_value_ignore_me=0
+defaults=true

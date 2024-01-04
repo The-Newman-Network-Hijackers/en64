@@ -224,6 +224,10 @@ equipment_modifier={
 ]
 }
 
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://data/dialogue/introduction_1.dialogue", "res://data/dialogue/flower_prince_mean.dialogue", "res://data/dialogue/tutorial_jump.dialogue", "res://data/dialogue/fortress_fluff.dialogue", "res://data/dialogue/dummy.dialogue", "res://data/dialogue/help_fungi.dialogue", "res://data/dialogue/ruins_outside_fluff.dialogue", "res://data/dialogue/ruins_castle_fluff1.dialogue", "res://data/dialogue/tutorial_move.dialogue", "res://data/dialogue/flower_prince_intro.dialogue")
+
 [layer_names]
 
 3d_render/layer_1="World"
