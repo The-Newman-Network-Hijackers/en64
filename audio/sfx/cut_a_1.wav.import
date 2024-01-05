@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://4qejbyuch6gx"
+path="res://.godot/imported/cut_a_1.wav-56f8e7076089b16cd3894af5e85887d6.sample"
+
+[deps]
+
+source_file="res://audio/sfx/cut_a_1.wav"
+dest_files=PackedStringArray("res://.godot/imported/cut_a_1.wav-56f8e7076089b16cd3894af5e85887d6.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

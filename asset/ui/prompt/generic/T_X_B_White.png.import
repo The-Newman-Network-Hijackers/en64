@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b60t2wfyakwil"
+path="res://.godot/imported/T_X_B_White.png-03f805617d6758a95609d4219a55486b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/generic/T_X_B_White.png"
+dest_files=PackedStringArray("res://.godot/imported/T_X_B_White.png-03f805617d6758a95609d4219a55486b.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

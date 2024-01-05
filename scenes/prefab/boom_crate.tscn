@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://asset/entity/crate/boom_crate.blend.scn" id="1"]
+[ext_resource type="Material" uid="uid://0ul4sn3xnnj5" path="res://asset/entity/crate/boom/mat/vtx_side.tres" id="2"]
+[ext_resource type="Material" uid="uid://dw657fu4frxnk" path="res://asset/entity/crate/boom/mat/vtx_top.tres" id="3"]
+[ext_resource type="Material" uid="uid://bhfrqvgyesml0" path="res://asset/entity/crate/boom/mat/vtx_bottom.tres" id="4"]
+[ext_resource type="Script" path="res://scripts/respawner.gd" id="5"]
+[ext_resource type="PackedScene" uid="uid://c8n3g03l1hokt" path="res://scenes/prefab/bomb.tscn" id="6"]
+
+[sub_resource type="BoxShape3D" id="1"]
+size = Vector3(9.5, 8, 9.5)
+script = null
+
+[node name="boom_crate" type="StaticBody3D"]
+
+[node name="vis" parent="." instance=ExtResource( "1" )]
+
+[node name="Cube" parent="vis" index="0"]
+layers = 4
+surface_material_override/0 = ExtResource( "2" )
+surface_material_override/1 = ExtResource( "3" )
+surface_material_override/2 = ExtResource( "4" )
+
+[node name="col" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource( "1" )
+
+[node name="respawner" type="Node3D" parent="."]
+script = ExtResource( "5" )
+spawn_scene = ExtResource( "6" )
+respawn_delay = 1.0
+parameters = {
+"fuse_time": 5.0
+}
+
+[node name="marker_3d" type="Marker3D" parent="respawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+
+[editable path="vis"]

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://24mxjfeo4mul"
+path="res://.godot/imported/f_dirt_0000.png-fde21488506aca75e1e8384894bef152.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/debris/tex/f_dirt/f_dirt_0000.png"
+dest_files=PackedStringArray("res://.godot/imported/f_dirt_0000.png-fde21488506aca75e1e8384894bef152.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

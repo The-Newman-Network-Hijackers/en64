@@ -1,0 +1,12 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3]
+
+[ext_resource type="AudioStream" uid="uid://21fxncc26w3k" path="res://audio/sfx/gate_squeak_1.wav" id="1"]
+[ext_resource type="AudioStream" uid="uid://d3xlvctvfn3q4" path="res://audio/sfx/gate_squeak_2.wav" id="2"]
+
+[resource]
+streams_count = 2
+stream_0/stream = ExtResource( "1" )
+stream_0/weight = 1.0
+stream_1/stream = ExtResource( "2" )
+stream_1/weight = 1.0
+script = null

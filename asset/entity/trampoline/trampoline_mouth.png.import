@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cyv82n3tvnavr"
+path.s3tc="res://.godot/imported/trampoline_mouth.png-189bfc6c648650127081979bf0be5bc0.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/entity/trampoline/trampoline_mouth.png"
+dest_files=PackedStringArray("res://.godot/imported/trampoline_mouth.png-189bfc6c648650127081979bf0be5bc0.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

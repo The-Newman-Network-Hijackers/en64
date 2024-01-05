@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwcv7fk1ant36"
+path="res://.godot/imported/title_theme.mp3-72a48d78b8a93d05bef31e0fc1a94c46.mp3str"
+
+[deps]
+
+source_file="res://audio/title_theme.mp3"
+dest_files=PackedStringArray("res://.godot/imported/title_theme.mp3-72a48d78b8a93d05bef31e0fc1a94c46.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

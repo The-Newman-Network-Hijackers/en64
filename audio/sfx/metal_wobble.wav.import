@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://m5mscwrlslei"
+path="res://.godot/imported/metal_wobble.wav-d18398c8e81a06128d098f732eb9c8d3.sample"
+
+[deps]
+
+source_file="res://audio/sfx/metal_wobble.wav"
+dest_files=PackedStringArray("res://.godot/imported/metal_wobble.wav-d18398c8e81a06128d098f732eb9c8d3.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

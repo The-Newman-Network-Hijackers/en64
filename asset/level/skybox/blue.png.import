@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://xct8cfd1qmmt"
+path.s3tc="res://.godot/imported/blue.png-9499cc8a91bd45fcf594ed5a8ce80f20.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/skybox/blue.png"
+dest_files=PackedStringArray("res://.godot/imported/blue.png-9499cc8a91bd45fcf594ed5a8ce80f20.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

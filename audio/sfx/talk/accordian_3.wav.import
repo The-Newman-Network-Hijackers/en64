@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://biw4jkt271ap7"
+path="res://.godot/imported/accordian_3.wav-c00e70c01f280493ce8ee000e95a2ddb.sample"
+
+[deps]
+
+source_file="res://audio/sfx/talk/accordian_3.wav"
+dest_files=PackedStringArray("res://.godot/imported/accordian_3.wav-c00e70c01f280493ce8ee000e95a2ddb.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b744qcaq6rmao"
+path="res://.godot/imported/T_Backspace_Alt_Key_Dark.png-1892aa119cd40602c6fd0da89f4021e3.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_Backspace_Alt_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_Backspace_Alt_Key_Dark.png-1892aa119cd40602c6fd0da89f4021e3.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

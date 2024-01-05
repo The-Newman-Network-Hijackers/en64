@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dupdo6ql2y7lt"
+path.s3tc="res://.godot/imported/wood_1.png-69df7ec561d5b4e7bece5f37066aced8.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/wood_1.png"
+dest_files=PackedStringArray("res://.godot/imported/wood_1.png-69df7ec561d5b4e7bece5f37066aced8.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

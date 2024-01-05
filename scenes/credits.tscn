@@ -1,0 +1,564 @@
+[gd_scene load_steps=20 format=3]
+
+[ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/subarea.gd" id="3"]
+[ext_resource type="Resource" uid="uid://bvclfuu0dv1l7" path="res://data/stem/station_piano.tres" id="4"]
+[ext_resource type="Script" path="res://scripts/credits.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://c3fgnafa8whu3" path="res://asset/ui/logo.png" id="6"]
+[ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="7"]
+[ext_resource type="FontFile" uid="uid://dk3bac3jmalne" path="res://asset/ui/Basic Comical Regular NC.ttf" id="8"]
+[ext_resource type="Texture2D" uid="uid://3bf5yhy5gumu" path="res://asset/ui/credits/godot.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://4xh0rfarcuka" path="res://asset/ui/credits/cinder.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b4ig8y7v603oe" path="res://asset/ui/credits/fpd.png" id="11"]
+[ext_resource type="Script" path="res://scripts/event_tree.gd" id="12"]
+[ext_resource type="Script" path="res://scripts/event_warp.gd" id="13"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource( "2" )
+level_name = "CREDITS"
+level_desc = ""
+is_menu = true
+flags = {}
+
+[sub_resource type="LabelSettings" id="2"]
+line_spacing = 0.0
+font = ExtResource( "7" )
+font_size = 24
+font_color = Color(0.611765, 0.611765, 0.611765, 1)
+script = null
+
+[sub_resource type="LabelSettings" id="3"]
+line_spacing = 0.0
+font = ExtResource( "8" )
+font_size = 20
+script = null
+
+[sub_resource type="Animation" id="4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("fade:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.0705882, 0.0509804, 0.0784314, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("scroll_container:scroll_vertical")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("scroll_container/v_box_container/desc2_2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("scroll_container/v_box_container/desc2_2:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["
+(c) 2023 - 2024
+
+
+
+
+"]
+}
+script = null
+
+[sub_resource type="Animation" id="5"]
+resource_name = "credits"
+length = 95.0
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("fade:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.0705882, 0.0509804, 0.0784314, 1), Color(0.0705882, 0.0509804, 0.0784314, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("scroll_container:scroll_vertical")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5, 86),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0, 0, 3238]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../exit")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(95),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"execute"
+}]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("scroll_container/v_box_container/desc2_2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(88, 89, 90),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("scroll_container/v_box_container/desc2_2:text")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 89),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["
+(c) 2023 - 2024
+
+
+
+
+", "
+Have you found all of the Shards?
+
+
+
+
+"]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="6"]
+_data = {
+"RESET": SubResource( "4" ),
+"credits": SubResource( "5" )
+}
+script = null
+
+[node name="credits" type="Node"]
+script = ExtResource( "1" )
+data = SubResource( "1" )
+subareas = [NodePath("0")]
+
+[node name="0" type="Node3D" parent="."]
+script = ExtResource( "3" )
+music = [ExtResource( "4" )]
+
+[node name="ui" type="CanvasLayer" parent="0"]
+script = ExtResource( "5" )
+
+[node name="container" type="PanelContainer" parent="0/ui"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="bg" type="ColorRect" parent="0/ui/container"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.0705882, 0.0509804, 0.0784314, 1)
+
+[node name="scroll_container" type="ScrollContainer" parent="0/ui/container"]
+custom_minimum_size = Vector2(640, 480)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+follow_focus = true
+vertical_scroll_mode = 3
+
+[node name="v_box_container" type="VBoxContainer" parent="0/ui/container/scroll_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_constants/separation = 8
+
+[node name="spacer" type="Control" parent="0/ui/container/scroll_container/v_box_container"]
+custom_minimum_size = Vector2(0, 133)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="logo" type="TextureRect" parent="0/ui/container/scroll_container/v_box_container"]
+texture_filter = 4
+custom_minimum_size = Vector2(0, 176)
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource( "6" )
+expand_mode = 1
+stretch_mode = 5
+
+[node name="text" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Development Team
+
+
+
+
+
+
+
+ "
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="directed" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Director"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="d_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Jefftastic
+
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="ass_directed" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Co-Directors"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="ad_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "deathlobotomy
+blamerobots
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="programming" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Programmer"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="p_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Jefftastic
+
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="composition" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Composers"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="c_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "blamerobots
+rockydan0
+
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="art" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Artists"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="a_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "deathlobotomy
+Jefftastic
+
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="modeler" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Modelers"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="m_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Jefftastic
+superdave
+
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="concept_art" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Concept Artists"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="ca_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "deathlobotomy
+superdave
+AlgoAwesome
+
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="writer" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Writers"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="w_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Jefftastic
+blamerobots
+deathlobotomy
+
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="playtester" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Playtesters"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="pl_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Future Primitive Digital 
+AbsoluteVendingMachine
+
+
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="special" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Special Thanks"
+label_settings = SubResource( "2" )
+horizontal_alignment = 1
+
+[node name="s_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "
+Future Primitive Friends and Family
+for supporting this journey
+
+Nathan Hoad
+for their amazing dialog plugin
+
+MenacingMecha
+for the base N64 shaders further built upon
+
+Coffee \"Valen\" Bat
+for lending musical talent on \"The Wonderful Newman\"
+
+ScreamingBrainStudios
+for some wonderful skybox textures, you guys rule
+
+Richard
+We are going to Rich's House
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="texture_rect" type="TextureRect" parent="0/ui/container/scroll_container/v_box_container"]
+texture_filter = 4
+custom_minimum_size = Vector2(0, 256)
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource( "9" )
+expand_mode = 1
+stretch_mode = 5
+
+[node name="desc1" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Created using the Godot Engine
+
+
+ "
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="texture_rect_2" type="TextureRect" parent="0/ui/container/scroll_container/v_box_container"]
+texture_filter = 4
+custom_minimum_size = Vector2(0, 166)
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource( "10" )
+expand_mode = 3
+stretch_mode = 5
+
+[node name="desc2" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Powered by gd-cinder framework
+
+
+
+
+
+
+
+"
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="texture_rect_3" type="TextureRect" parent="0/ui/container/scroll_container/v_box_container"]
+texture_filter = 4
+custom_minimum_size = Vector2(0, 223)
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource( "11" )
+expand_mode = 3
+stretch_mode = 5
+
+[node name="desc2_2" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "
+(c) 2023 - 2024
+
+
+
+
+"
+label_settings = SubResource( "3" )
+horizontal_alignment = 1
+
+[node name="fade" type="ColorRect" parent="0/ui/container"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.0705882, 0.0509804, 0.0784314, 1)
+
+[node name="anim" type="AnimationPlayer" parent="0/ui/container"]
+libraries = {
+"": SubResource( "6" )
+}
+autoplay = "credits"
+
+[node name="exit" type="Node" parent="0"]
+script = ExtResource( "12" )
+player_handler = 0
+
+[node name="warp" type="Node" parent="0/exit"]
+script = ExtResource( "13" )
+do_pause = false
+target_scene = "res://scenes/splash.tscn"
+fade_length = 1.0
+fade_delay = 0.5

@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://gghyfj1gh4bw"
+path.s3tc="res://.godot/imported/roof_1.png-3bebf218bfad03682f701423a06cfa41.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/roof_1.png"
+dest_files=PackedStringArray("res://.godot/imported/roof_1.png-3bebf218bfad03682f701423a06cfa41.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

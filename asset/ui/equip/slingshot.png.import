@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bj5ruh1hxvin4"
+path="res://.godot/imported/slingshot.png-97d61650323e727da1805ebce1853b9c.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/equip/slingshot.png"
+dest_files=PackedStringArray("res://.godot/imported/slingshot.png-97d61650323e727da1805ebce1853b9c.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

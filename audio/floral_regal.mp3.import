@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0t71emgqiim3"
+path="res://.godot/imported/floral_regal.mp3-7dc54fe7d8c70930c6805b6bb8367e52.mp3str"
+
+[deps]
+
+source_file="res://audio/floral_regal.mp3"
+dest_files=PackedStringArray("res://.godot/imported/floral_regal.mp3-7dc54fe7d8c70930c6805b6bb8367e52.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

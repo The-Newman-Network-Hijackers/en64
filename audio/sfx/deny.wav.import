@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cemskwsj3a2va"
+path="res://.godot/imported/deny.wav-34666cb6fb00a70c779d979f8ace7700.sample"
+
+[deps]
+
+source_file="res://audio/sfx/deny.wav"
+dest_files=PackedStringArray("res://.godot/imported/deny.wav-34666cb6fb00a70c779d979f8ace7700.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

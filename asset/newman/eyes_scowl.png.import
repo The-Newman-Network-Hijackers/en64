@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ross4lm8ngr2"
+path="res://.godot/imported/eyes_scowl.png-953daf9b356724c23488441f7a452153.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/newman/eyes_scowl.png"
+dest_files=PackedStringArray("res://.godot/imported/eyes_scowl.png-953daf9b356724c23488441f7a452153.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

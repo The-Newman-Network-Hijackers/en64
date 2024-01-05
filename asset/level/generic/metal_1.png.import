@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://33psn4aqj8jg"
+path.s3tc="res://.godot/imported/metal_1.png-b6b93fd77c8ede51be4462f7a3c0a71b.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/metal_1.png"
+dest_files=PackedStringArray("res://.godot/imported/metal_1.png-b6b93fd77c8ede51be4462f7a3c0a71b.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

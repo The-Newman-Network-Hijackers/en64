@@ -1,0 +1,15 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://botmn02ri5tm5"
+path="res://.godot/imported/Schoolwork-Regular.ttf-b269208718e58d55ecc394d1e04ae9c9.fontdata"
+
+[deps]
+
+source_file="res://asset/ui/Schoolwork-Regular.ttf"
+dest_files=PackedStringArray("res://.godot/imported/Schoolwork-Regular.ttf-b269208718e58d55ecc394d1e04ae9c9.fontdata")
+
+[params]
+
+dummy_value_ignore_me=0

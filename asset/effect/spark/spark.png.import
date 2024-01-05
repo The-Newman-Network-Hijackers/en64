@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dyemfsijlgkyl"
+path="res://.godot/imported/spark.png-91309d88ed67c34c4a0e87afcdb66542.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/spark/spark.png"
+dest_files=PackedStringArray("res://.godot/imported/spark.png-91309d88ed67c34c4a0e87afcdb66542.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

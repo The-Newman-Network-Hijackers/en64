@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cua0uv0qua6cw"
+path="res://.godot/imported/woosh_2.wav-42c879ce341eef909b77e825262c73f6.sample"
+
+[deps]
+
+source_file="res://audio/sfx/woosh_2.wav"
+dest_files=PackedStringArray("res://.godot/imported/woosh_2.wav-42c879ce341eef909b77e825262c73f6.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

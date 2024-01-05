@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_rgsnw"]
+
+[resource]
+script = ExtResource("1_rgsnw")
+titles = {
+"dummy": "3",
+"dummy2": "10"
+}
+character_names = PackedStringArray("Global")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "dummy",
+"type": "title"
+},
+"10": {
+"character": "Global",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "12",
+"tags": PackedStringArray(),
+"text": "Hey, you did it! Great job!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hey, you did it! Great job!",
+"type": "dialogue"
+},
+"12": {
+"id": "12",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "Global",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"tags": PackedStringArray(),
+"text": "Well, it's a dummy message-- me boy!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Well, it's a dummy message-- me boy!",
+"type": "dialogue"
+},
+"4": {
+"character": "Global",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "6",
+"tags": PackedStringArray(),
+"text": "Great for when you need it, horrible when you dont!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Great for when you need it, horrible when you dont!",
+"type": "dialogue"
+},
+"6": {
+"id": "6",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"8": {
+"id": "8",
+"next_id": "10",
+"text": "dummy2",
+"type": "title"
+}
+}
+metadata/dialogue_manager_version = "2.25.0"

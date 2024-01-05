@@ -1,0 +1,1432 @@
+[gd_scene load_steps=86 format=3]
+
+[ext_resource type="Script" path="res://scripts/subarea.gd" id="1"]
+[ext_resource type="Resource" uid="uid://dcjj1c18ip5wj" path="res://data/stem/amb_wind.tres" id="2"]
+[ext_resource type="Resource" uid="uid://dvinp6m1q6kcy" path="res://data/stem/ruins/ruins_drum.tres" id="3"]
+[ext_resource type="Script" path="res://scripts/background.gd" id="4"]
+[ext_resource type="Material" uid="uid://chr0rawbcv5ri" path="res://asset/level/skybox/mat/sm_feverish3.tres" id="5"]
+[ext_resource type="Environment" uid="uid://qkqvav71a2j2" path="res://asset/environment/env_bg.tres" id="6"]
+[ext_resource type="CameraAttributesPractical" uid="uid://c6mnym7nlyfh8" path="res://asset/environment/cap_bg.tres" id="7"]
+[ext_resource type="Script" path="res://scripts/background_cam.gd" id="8"]
+[ext_resource type="PackedScene" path="res://asset/level/history/hc_ruins_tower_arena.blend.scn" id="9"]
+[ext_resource type="PackedScene" uid="uid://bwy5ob6ct66yv" path="res://scenes/prefab/cage.tscn" id="10"]
+[ext_resource type="Script" path="res://scripts/moving_geo.gd" id="11"]
+[ext_resource type="AudioStream" uid="uid://x13yn5oy8jax" path="res://audio/sfx/chain_loop.wav" id="12"]
+[ext_resource type="AudioStream" uid="uid://dg5r3vt384hcc" path="res://audio/sfx/metal_thud.wav" id="13"]
+[ext_resource type="ArrayMesh" uid="uid://duennvd7f262n" path="res://asset/level/history/mesh/castle_moving_plat_05.tres" id="14"]
+[ext_resource type="Script" path="res://scripts/terrain.gd" id="15"]
+[ext_resource type="Script" path="res://scripts/warp_point.gd" id="16"]
+[ext_resource type="PackedScene" uid="uid://c6kny6lqhsedf" path="res://scenes/prefab/tree.tscn" id="17"]
+[ext_resource type="PackedScene" uid="uid://b8jo34da030tp" path="res://scenes/prefab/springboard.tscn" id="18"]
+[ext_resource type="PackedScene" uid="uid://cesfcr0jo6gj8" path="res://scenes/prefab/flower_boss.tscn" id="19"]
+[ext_resource type="PackedScene" uid="uid://dtftv2df2iv1b" path="res://scenes/prefab/boom_crate.tscn" id="20"]
+[ext_resource type="PackedScene" uid="uid://vqs6a3wr044f" path="res://scenes/prefab/crate.tscn" id="21"]
+[ext_resource type="Material" uid="uid://31fpgxjygtj8" path="res://asset/entity/crate/wooden/mat/wood_crate_2.tres" id="22"]
+[ext_resource type="Script" path="res://scripts/activator_zone.gd" id="23"]
+[ext_resource type="Shader" path="res://asset/shader/n64_decor_wave.gdshader" id="24"]
+[ext_resource type="Texture2D" uid="uid://bheohqjsxgr3v" path="res://asset/effect/grass/grass.png" id="25"]
+[ext_resource type="Script" path="res://scripts/decor_spawner.gd" id="26"]
+[ext_resource type="Texture2D" uid="uid://ihacfktwnhj" path="res://asset/effect/grass/grass_2.png" id="27"]
+[ext_resource type="Material" uid="uid://dvl40jm43s381" path="res://asset/effect/grass/vtxe_flower_1.tres" id="28"]
+[ext_resource type="Script" path="res://scripts/entity_remover.gd" id="29"]
+[ext_resource type="Script" path="res://scripts/death_plane.gd" id="30"]
+[ext_resource type="Script" path="res://scripts/jack_spawner.gd" id="31"]
+[ext_resource type="PackedScene" uid="uid://c31y51bdp7t8a" path="res://scenes/prefab/jack.tscn" id="32"]
+[ext_resource type="PackedScene" uid="uid://b488og5dpnbxn" path="res://scenes/prefab/shard.tscn" id="33"]
+[ext_resource type="Resource" uid="uid://2bv6vxhw21ah" path="res://data/props/history_channel/prop_caged.tres" id="34"]
+[ext_resource type="Script" path="res://scripts/event_tree.gd" id="35"]
+[ext_resource type="Script" path="res://scripts/event_cam.gd" id="36"]
+[ext_resource type="Script" path="res://scripts/event_warp.gd" id="37"]
+[ext_resource type="Script" path="res://scripts/event_music.gd" id="38"]
+[ext_resource type="Resource" uid="uid://bhndi3kl1rtqj" path="res://data/stem/amb_birds.tres" id="39"]
+[ext_resource type="Script" path="res://scripts/res_music_stem.gd" id="40"]
+[ext_resource type="AudioStream" uid="uid://d0t71emgqiim3" path="res://audio/floral_regal.mp3" id="41"]
+[ext_resource type="AudioStream" uid="uid://bvsq7h4c72lw" path="res://audio/stem/ruin/ruins_drum.mp3" id="42"]
+[ext_resource type="Script" path="res://scripts/event_talk.gd" id="43"]
+[ext_resource type="Resource" path="res://data/dialogue/flower_prince_intro.dialogue.tres" id="44"]
+[ext_resource type="Script" path="res://scripts/event_evoke.gd" id="45"]
+[ext_resource type="Script" path="res://scripts/res_evoke.gd" id="46"]
+[ext_resource type="Script" path="res://scripts/event_wait.gd" id="47"]
+[ext_resource type="AudioStream" uid="uid://ta7fucycokhn" path="res://audio/floral_fury.mp3" id="48"]
+[ext_resource type="Script" path="res://scripts/event_flag.gd" id="49"]
+[ext_resource type="Script" path="res://scripts/event_shard.gd" id="50"]
+
+[sub_resource type="ArrayMesh" id="1"]
+_surfaces = [{
+"aabb": AABB(-2, -1, 0, 4, 2.00001, 1e-05),
+"attribute_data": PackedByteArray(0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 0, 192, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 0),
+"format": 34359738385,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray(0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0)
+}]
+script = null
+
+[sub_resource type="ProceduralSkyMaterial" id="2"]
+sky_top_color = Color(0.380392, 0.305882, 0.737255, 1)
+sky_horizon_color = Color(0.556863, 0.737255, 0.898039, 1)
+sky_curve = 0.109806
+ground_bottom_color = Color(0.744301, 0.849874, 0.946492, 1)
+ground_horizon_color = Color(0.555326, 0.735623, 0.896689, 1)
+ground_curve = 0.259921
+sun_angle_max = 0.0
+use_debanding = false
+script = null
+
+[sub_resource type="Sky" id="3"]
+sky_material = SubResource( "2" )
+script = null
+
+[sub_resource type="Environment" id="4"]
+background_mode = 3
+background_canvas_max_layer = -127
+sky = SubResource( "3" )
+ambient_light_source = 3
+ambient_light_sky_contribution = 0.15
+reflected_light_source = 2
+tonemap_mode = 3
+tonemap_exposure = 0.65
+tonemap_white = 0.4
+ssao_radius = 1.08
+ssao_intensity = 0.0
+ssao_sharpness = 0.89
+ssil_intensity = 0.0
+fog_light_color = Color(0.741176, 0.764706, 0.803922, 1)
+volumetric_fog_density = 0.0165
+volumetric_fog_albedo = Color(0.933594, 0.601563, 0.667969, 1)
+volumetric_fog_anisotropy = 0.9
+volumetric_fog_ambient_inject = 1.19
+adjustment_saturation = 8.0
+script = null
+
+[sub_resource type="BoxShape3D" id="5"]
+size = Vector3(23, 4.775, 23.355)
+script = null
+
+[sub_resource type="Curve3D" id="6"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+script = null
+
+[sub_resource type="BoxShape3D" id="7"]
+size = Vector3(30, 18.63, 30.56)
+script = null
+
+[sub_resource type="Curve3D" id="8"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 45, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+script = null
+
+[sub_resource type="Curve3D" id="9"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 124, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+script = null
+
+[sub_resource type="BoxShape3D" id="10"]
+size = Vector3(45, 45, 45)
+script = null
+
+[sub_resource type="CylinderShape3D" id="11"]
+height = 200.0
+radius = 100.0
+script = null
+
+[sub_resource type="ShaderMaterial" id="12"]
+render_priority = 0
+next_pass = null
+shader = ExtResource( "24" )
+shader_parameter/modulate_color = Color(0.133333, 0.866667, 0.643137, 1)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0.025)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/wind_strength = 0.24
+shader_parameter/wind_speed = 0.8
+shader_parameter/billboard = false
+shader_parameter/y_billboard = true
+shader_parameter/alpha_scissor = 0.1
+shader_parameter/albedoTex = ExtResource( "25" )
+script = null
+
+[sub_resource type="QuadMesh" id="13"]
+lightmap_size_hint = Vector2i(27, 27)
+material = SubResource( "12" )
+size = Vector2(4, 4)
+center_offset = Vector3(0, 1.5, 0)
+script = null
+
+[sub_resource type="MultiMesh" id="14"]
+transform_format = 1
+instance_count = 10
+mesh = SubResource( "13" )
+buffer = PackedFloat32Array(1, 0, 0, -24.6736, 0, 1, 0, 295.366, 0, 0, 1, 5.81038, 1, 0, 0, 32.8003, 0, 1, 0, 295.366, 0, 0, 1, 9.07131, 1, 0, 0, 105.055, 0, 1, 0, 295.366, 0, 0, 1, 129.846, 1, 0, 0, -118.428, 0, 1, 0, 295.366, 0, 0, 1, 19.1132, 1, 0, 0, -49.1999, 0, 1, 0, 295.366, 0, 0, 1, 40.2995, 1, 0, 0, 108.97, 0, 1, 0, 295.366, 0, 0, 1, 132.501, 1, 0, 0, -21.6768, 0, 1, 0, 295.366, 0, 0, 1, 98.2246, 1, 0, 0, 59.3016, 0, 1, 0, 295.366, 0, 0, 1, 145.175, 1, 0, 0, -71.2421, 0, 1, 0, 295.366, 0, 0, 1, 103.165, 1, 0, 0, 75.8608, 0, 1, 0, 295.366, 0, 0, 1, 97.5052)
+script = null
+
+[sub_resource type="ShaderMaterial" id="15"]
+render_priority = 0
+next_pass = null
+shader = ExtResource( "24" )
+shader_parameter/modulate_color = Color(0.133333, 0.866667, 0.643137, 1)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0.025)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/wind_strength = 0.64
+shader_parameter/wind_speed = 1.5
+shader_parameter/billboard = false
+shader_parameter/y_billboard = true
+shader_parameter/alpha_scissor = 0.1
+shader_parameter/albedoTex = ExtResource( "27" )
+script = null
+
+[sub_resource type="QuadMesh" id="16"]
+lightmap_size_hint = Vector2i(27, 27)
+material = SubResource( "15" )
+size = Vector2(4, 4)
+center_offset = Vector3(0, 1.5, 0)
+script = null
+
+[sub_resource type="MultiMesh" id="17"]
+transform_format = 1
+instance_count = 10
+mesh = SubResource( "16" )
+buffer = PackedFloat32Array(1, 0, 0, -48.05, 0, 1, 0, 295.366, 0, 0, 1, 146.309, 1, 0, 0, -33.9576, 0, 1, 0, 295.366, 0, 0, 1, 188.395, 1, 0, 0, 43.1018, 0, 1, 0, 295.366, 0, 0, 1, 195.6, 1, 0, 0, -19.2898, 0, 1, 0, 295.366, 0, 0, 1, 10.4624, 1, 0, 0, 10.6695, 0, 1, 0, 295.366, 0, 0, 1, 125.506, 1, 0, 0, 28.3527, 0, 1, 0, 295.366, 0, 0, 1, 175.672, 1, 0, 0, -9.43238, 0, 1, 0, 295.366, 0, 0, 1, 205.238, 1, 0, 0, 25.336, 0, 1, 0, 295.366, 0, 0, 1, 30.107, 1, 0, 0, 17.1807, 0, 1, 0, 295.366, 0, 0, 1, 59.7454, 1, 0, 0, -38.0459, 0, 1, 0, 295.366, 0, 0, 1, 38.4016)
+script = null
+
+[sub_resource type="QuadMesh" id="18"]
+lightmap_size_hint = Vector2i(27, 27)
+material = ExtResource( "28" )
+size = Vector2(4, 4)
+center_offset = Vector3(0, 1.5, 0)
+script = null
+
+[sub_resource type="MultiMesh" id="19"]
+transform_format = 1
+instance_count = 4
+mesh = SubResource( "18" )
+buffer = PackedFloat32Array(1, 0, 0, -70.4745, 0, 1, 0, 295.366, 0, 0, 1, 182.795, 1, 0, 0, 70.4932, 0, 1, 0, 295.366, 0, 0, 1, -25.2283, 1, 0, 0, -133.258, 0, 1, 0, 295.366, 0, 0, 1, 66.8932, 1, 0, 0, 64.6285, 0, 1, 0, 295.366, 0, 0, 1, 159.987)
+script = null
+
+[sub_resource type="BoxShape3D" id="20"]
+size = Vector3(1000, 16, 1000)
+script = null
+
+[sub_resource type="Resource" id="21"]
+script = ExtResource( "40" )
+stream = ExtResource( "41" )
+tag = "regal"
+category = 1
+always_restart = true
+pitch = 1.0
+volume = -4.0
+fade = Vector2(0.5, 2)
+channel = 0
+
+[sub_resource type="Resource" id="22"]
+script = ExtResource( "40" )
+stream = ExtResource( "42" )
+tag = "ruins"
+category = 3
+always_restart = true
+pitch = 0.35
+volume = 0.0
+fade = Vector2(1, 2)
+channel = 0
+
+[sub_resource type="Resource" id="23"]
+script = ExtResource( "46" )
+type = 0
+e_name = "transition_state"
+e_args = ["intro_cutscene", {
+"step": 1
+}]
+
+[sub_resource type="Resource" id="24"]
+script = ExtResource( "46" )
+type = 0
+e_name = "transition_state"
+e_args = ["intro_cutscene", {
+"step": 2
+}]
+
+[sub_resource type="Resource" id="25"]
+script = ExtResource( "46" )
+type = 0
+e_name = "transition_state"
+e_args = ["intro_cutscene", {
+"step": 3
+}]
+
+[sub_resource type="Resource" id="26"]
+script = ExtResource( "46" )
+type = 0
+e_name = "transition_state"
+e_args = ["intro_cutscene", {
+"step": 4
+}]
+
+[sub_resource type="Resource" id="27"]
+script = ExtResource( "40" )
+stream = ExtResource( "48" )
+tag = ""
+category = 1
+always_restart = true
+pitch = 1.0
+volume = -4.0
+fade = Vector2(0.5, 2)
+channel = 0
+
+[sub_resource type="Resource" id="28"]
+script = ExtResource( "46" )
+type = 0
+e_name = "set_respawn"
+e_args = [1]
+
+[sub_resource type="Resource" id="29"]
+script = ExtResource( "46" )
+type = 0
+e_name = "set_disabled"
+e_args = [false]
+
+[sub_resource type="Resource" id="30"]
+script = ExtResource( "46" )
+type = 0
+e_name = "transition_state"
+e_args = ["outro_cutscene", {
+"step": 1
+}]
+
+[sub_resource type="Resource" id="31"]
+script = ExtResource( "46" )
+type = 0
+e_name = "transition_state"
+e_args = ["outro_cutscene", {
+"step": 2
+}]
+
+[sub_resource type="Resource" id="32"]
+script = ExtResource( "46" )
+type = 0
+e_name = "transition_state"
+e_args = ["outro_cutscene", {
+"step": 3
+}]
+
+[sub_resource type="Resource" id="33"]
+script = ExtResource( "46" )
+type = 0
+e_name = "transition_state"
+e_args = ["outro_cutscene", {
+"step": 4
+}]
+
+[sub_resource type="Resource" id="34"]
+script = ExtResource( "46" )
+type = 0
+e_name = "transition_state"
+e_args = ["outro_cutscene", {
+"step": 5
+}]
+
+[sub_resource type="Resource" id="35"]
+script = ExtResource( "46" )
+type = 0
+e_name = "set_disabled"
+e_args = [true]
+
+[node name="area_hc_ruins_arena" type="Node3D"]
+script = ExtResource( "1" )
+music = [ExtResource( "2" ), ExtResource( "3" )]
+reload_on_death = true
+environment = NodePath("environment")
+
+[node name="background" type="CanvasLayer" parent="."]
+process_mode = 3
+layer = -128
+script = ExtResource( "4" )
+bg_material = ExtResource( "5" )
+
+[node name="@SubViewportContainer@100571" type="SubViewportContainer" parent="background"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+stretch = true
+
+[node name="@SubViewport@100572" type="SubViewport" parent="background/@SubViewportContainer@100571"]
+own_world_3d = true
+handle_input_locally = false
+msaa_3d = 2
+size = Vector2i(640, 480)
+render_target_update_mode = 4
+
+[node name="@MeshInstance3D@100573" type="MeshInstance3D" parent="background/@SubViewportContainer@100571/@SubViewport@100572"]
+material_overlay = ExtResource( "5" )
+mesh = SubResource( "1" )
+
+[node name="@Camera3D@100574" type="Camera3D" parent="background/@SubViewportContainer@100571/@SubViewport@100572"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
+environment = ExtResource( "6" )
+attributes = ExtResource( "7" )
+projection = 1
+size = 0.7
+script = ExtResource( "8" )
+
+[node name="sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.339668, -0.526791, 0.779177, 0.0544988, 0.838063, 0.542845, -0.938965, -0.141923, 0.313373, 15.2367, 3.0656, -1.46723)
+light_color = Color(0.744991, 0.392279, 0.588174, 1)
+light_energy = 0.7
+light_bake_mode = 1
+shadow_bias = 0.05
+shadow_normal_bias = 3.5
+directional_shadow_mode = 0
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 800.0
+
+[node name="sun_2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.570811, 0.27684, -0.773004, -0.326016, 0.787637, 0.522821, 0.753584, 0.550443, -0.359337, 15.2367, 3.0656, -1.46723)
+light_color = Color(0.992172, 0.678553, 0.415717, 1)
+light_energy = 0.7
+light_bake_mode = 1
+shadow_bias = 0.05
+shadow_normal_bias = 3.5
+directional_shadow_mode = 0
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 800.0
+
+[node name="environment" type="WorldEnvironment" parent="."]
+environment = SubResource( "4" )
+
+[node name="map" type="Node3D" parent="."]
+
+[node name="hc_ruins_tower_arena" parent="map" instance=ExtResource( "9" )]
+
+[node name="moving_platform" parent="map/hc_ruins_tower_arena" index="0"]
+layers = 1
+
+[node name="body" type="StaticBody3D" parent="map/hc_ruins_tower_arena/moving_platform" index="0"]
+
+[node name="col" type="CollisionShape3D" parent="map/hc_ruins_tower_arena/moving_platform/body"]
+shape = SubResource( "5" )
+
+[node name="cage" parent="map/hc_ruins_tower_arena/cage" index="0" instance=ExtResource( "10" )]
+transform = Transform3D(1.11, 0, 0, 0, 1.11, 0, 0, 0, 1.11, 0, -3, 0)
+disabled_nodes = [NodePath("../../../../entity/springboard")]
+
+[node name="moving_geo" type="Node3D" parent="map/hc_ruins_tower_arena/moving_platform_004" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9, 0)
+script = ExtResource( "11" )
+stream_move = ExtResource( "12" )
+stream_stop = ExtResource( "13" )
+t_trans = 1
+t_ease = 0
+toggle_preview = true
+
+[node name="path" type="Path3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo"]
+curve = SubResource( "6" )
+
+[node name="path_follower" type="PathFollow3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo/path"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 47, 0)
+progress = 47.0
+rotation_mode = 0
+loop = false
+
+[node name="remote_transform" type="RemoteTransform3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo/path/path_follower"]
+remote_path = NodePath("../../../geometry")
+update_rotation = false
+update_scale = false
+
+[node name="geometry" type="AnimatableBody3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 47, 0)
+
+[node name="vis" type="MeshInstance3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo/geometry"]
+mesh = ExtResource( "14" )
+
+[node name="col" type="CollisionShape3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo/geometry"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
+shape = SubResource( "7" )
+
+[node name="sfx_move" type="AudioStreamPlayer3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo"]
+stream = ExtResource( "12" )
+volume_db = -4.0
+bus = &"Sound"
+
+[node name="sfx_stop" type="AudioStreamPlayer3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo"]
+stream = ExtResource( "13" )
+bus = &"Sound"
+
+[node name="moving_geo" type="Node3D" parent="map/hc_ruins_tower_arena/moving_platform_005" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.5, 0)
+script = ExtResource( "11" )
+stream_move = ExtResource( "12" )
+stream_stop = ExtResource( "13" )
+time_idle = 2.0
+t_trans = 1
+t_ease = 0
+toggle_preview = true
+
+[node name="path" type="Path3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo"]
+curve = SubResource( "8" )
+
+[node name="path_follower" type="PathFollow3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo/path"]
+rotation_mode = 0
+loop = false
+
+[node name="remote_transform" type="RemoteTransform3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo/path/path_follower"]
+remote_path = NodePath("../../../geometry")
+update_rotation = false
+update_scale = false
+
+[node name="geometry" type="AnimatableBody3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo"]
+
+[node name="vis" type="MeshInstance3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo/geometry"]
+mesh = ExtResource( "14" )
+
+[node name="col" type="CollisionShape3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo/geometry"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
+shape = SubResource( "7" )
+
+[node name="sfx_move" type="AudioStreamPlayer3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo"]
+stream = ExtResource( "12" )
+volume_db = -4.0
+bus = &"Sound"
+
+[node name="sfx_stop" type="AudioStreamPlayer3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo"]
+stream = ExtResource( "13" )
+bus = &"Sound"
+
+[node name="cage" parent="map/hc_ruins_tower_arena/cage_001" index="0" instance=ExtResource( "10" )]
+transform = Transform3D(1.11, 0, 0, 0, 1.11, 0, 0, 0, 1.11, 0, 0.5, 0)
+disabled_nodes = [NodePath("../../../../entity/springboard")]
+
+[node name="moving_geo" type="Node3D" parent="map/hc_ruins_tower_arena/moving_platform_006" index="0"]
+script = ExtResource( "11" )
+stream_move = ExtResource( "12" )
+stream_stop = ExtResource( "13" )
+time_to_end = 8.0
+t_trans = 1
+toggle_preview = true
+
+[node name="path" type="Path3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo"]
+curve = SubResource( "9" )
+
+[node name="path_follower" type="PathFollow3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo/path"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 26.3491, 0)
+progress = 26.3491
+rotation_mode = 0
+loop = false
+
+[node name="remote_transform" type="RemoteTransform3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo/path/path_follower"]
+remote_path = NodePath("../../../geometry")
+update_rotation = false
+update_scale = false
+
+[node name="geometry" type="AnimatableBody3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 26.3491, 0)
+
+[node name="vis" type="MeshInstance3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo/geometry"]
+mesh = ExtResource( "14" )
+
+[node name="col" type="CollisionShape3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo/geometry"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
+shape = SubResource( "7" )
+
+[node name="sfx_move" type="AudioStreamPlayer3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 78.5, 0)
+stream = ExtResource( "12" )
+volume_db = -4.0
+unit_size = 30.0
+pitch_scale = 0.6
+bus = &"Sound"
+
+[node name="sfx_stop" type="AudioStreamPlayer3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 78.5, 0)
+stream = ExtResource( "13" )
+unit_size = 30.0
+bus = &"Sound"
+
+[node name="StaticBody3D" parent="map/hc_ruins_tower_arena/grass" index="0"]
+script = ExtResource( "15" )
+surface_type = 1
+audio_type = 1
+
+[node name="CollisionShape3D" parent="map/hc_ruins_tower_arena/barrier/StaticBody3D" index="0"]
+disabled = true
+
+[node name="warp" type="Node3D" parent="."]
+
+[node name="-1" type="Marker3D" parent="warp" groups=[
+"Warp",
+]]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.5, -3.28738, -68.5)
+gizmo_extents = 2.5
+script = ExtResource( "16" )
+transition = 2
+camera_type = 1
+
+[node name="1" type="Marker3D" parent="warp" groups=[
+"Warp",
+]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 342.213, -117.5)
+gizmo_extents = 2.5
+script = ExtResource( "16" )
+id = 1
+
+[node name="entity" type="Node3D" parent="."]
+
+[node name="tree" type="Node3D" parent="entity"]
+metadata/_edit_lock_ = true
+
+[node name="tree" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(1.38135, 0, 0.50277, 0, 1.47, 0, -0.50277, 0, 1.38135, 55, 294.895, -45.5)
+
+[node name="tree_2" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(1.0782, 0, 0.6225, 0, 1.245, 0, -0.6225, 0, 1.0782, 76.5, 294.895, -34.5)
+
+[node name="tree_5" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(1.20539, 0, -0.562082, 0, 1.33, 0, 0.562082, 0, 1.20539, 98.5, 294.895, 16)
+
+[node name="tree_6" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(0.843157, 0, -1.20415, 0, 1.47, 0, 1.20415, 0, 0.843157, 133.902, 294.895, 67.4835)
+
+[node name="tree_7" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(0.880348, 0, -0.880348, 0, 1.245, 0, 0.880348, 0, 0.880348, 128.842, 294.895, 91.0979)
+
+[node name="tree_9" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(-1.38135, 0, -0.502769, 0, 1.47, 0, 0.502769, 0, -1.38135, -55.4025, 294.895, 196.833)
+
+[node name="tree_10" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(-1.0782, 0, -0.6225, 0, 1.245, 0, 0.6225, 0, -1.0782, -76.9025, 294.895, 185.833)
+
+[node name="tree_11" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(-1.20539, 0, 0.562082, 0, 1.33, 0, -0.562082, 0, -1.20539, -115.903, 294.895, 115.333)
+
+[node name="tree_12" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(-0.843157, 0, 1.20415, 0, 1.47, 0, -1.20415, 0, -0.843157, -134.305, 294.895, 83.8491)
+
+[node name="tree_13" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(-0.880348, 0, 0.880348, 0, 1.245, 0, -0.880348, 0, -0.880348, -129.244, 294.895, 60.2346)
+
+[node name="tree_8" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(-0.230952, 0, -1.30979, 0, 1.33, 0, 1.30979, 0, -0.230952, 71.2563, 294.895, 197.919)
+
+[node name="tree_3" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(-0.255263, 0, -1.44767, 0, 1.47, 0, 1.44767, 0, -0.255263, -54.6119, 294.895, -45.0598)
+
+[node name="tree_4" parent="entity/tree" instance=ExtResource( "17" )]
+transform = Transform3D(1.19209e-07, 0, -1.245, 0, 1.245, 0, 1.245, 0, 1.19209e-07, -74.8881, 294.895, -31.9402)
+
+[node name="springboard" parent="entity" instance=ExtResource( "18" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.75, 62.5, -100.65)
+
+[node name="flower_boss" parent="entity" instance=ExtResource( "19" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 295.5, 81)
+
+[node name="flower_prince" parent="entity/flower_boss" index="0"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="Skeleton3D" parent="entity/flower_boss/flower_prince/flower_armature" index="2"]
+bones/0/rotation = Quaternion(0, 0.707107, 0, 0.707107)
+bones/0/scale = Vector3(1.01973, 0.975337, 1.01973)
+bones/6/rotation = Quaternion(0.407473, 3.25791e-07, -3.22602e-07, 0.913217)
+bones/6/scale = Vector3(1.12418, 0.817499, 1.08886)
+bones/9/rotation = Quaternion(0.00815304, -0.00785113, 0.353516, 0.93536)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/rotation = Quaternion(0.0587667, -0.14268, 0.47884, 0.864235)
+bones/11/rotation = Quaternion(-0.0542538, -0.0371047, 0.453827, 0.888662)
+bones/12/rotation = Quaternion(0.00775533, 0.0159989, 0.416938, 0.908761)
+bones/12/scale = Vector3(1, 1, 1)
+bones/13/rotation = Quaternion(-0.120297, 0.0184694, 0.655264, 0.745531)
+bones/15/rotation = Quaternion(0.0929649, -0.123222, 0.438139, 0.885555)
+bones/16/rotation = Quaternion(0.00978697, 0.0103497, 0.693729, 0.720096)
+bones/18/rotation = Quaternion(0.330432, 0.0110525, 0.58414, 0.741265)
+bones/18/scale = Vector3(1, 1, 1)
+bones/19/rotation = Quaternion(-0.819773, -0.0061258, 0.0931476, 0.565029)
+bones/20/rotation = Quaternion(-3.37175e-07, 2.00972e-14, 0.707107, 0.707107)
+bones/22/rotation = Quaternion(0.407473, -3.40297e-07, 3.29056e-07, 0.913217)
+bones/22/scale = Vector3(1.12418, 0.817499, 1.08886)
+bones/25/rotation = Quaternion(0.0258174, -0.0297914, -0.432515, 0.900765)
+bones/26/rotation = Quaternion(0.0518565, 0.145334, -0.519735, 0.840276)
+bones/27/rotation = Quaternion(-0.0544616, 0.0367987, -0.458821, 0.886094)
+bones/28/rotation = Quaternion(-0.0321945, 0.0684422, -0.431783, 0.8988)
+bones/28/scale = Vector3(1, 1, 1)
+bones/29/rotation = Quaternion(-0.119131, -0.024911, -0.694402, 0.70922)
+bones/31/rotation = Quaternion(0.0864786, 0.136317, -0.439564, 0.883585)
+bones/31/scale = Vector3(1, 1, 1)
+bones/32/rotation = Quaternion(0.00984394, -0.0102936, -0.697808, 0.716143)
+bones/34/rotation = Quaternion(0.325065, -0.0080199, -0.586613, 0.741724)
+bones/34/scale = Vector3(1, 1, 1)
+bones/35/rotation = Quaternion(-0.812016, 0.00661634, -0.0906848, 0.57651)
+bones/36/rotation = Quaternion(2.24764e-08, -3.59651e-07, -0.707107, 0.707107)
+bones/37/position = Vector3(3.00228, 14.3038, 3.47522e-08)
+bones/37/rotation = Quaternion(0.617569, 0.346851, -0.607273, 0.359893)
+bones/37/scale = Vector3(1.14636, 0.804872, 1.0992)
+bones/38/position = Vector3(-3.00228, 14.3038, 3.90239e-08)
+bones/38/rotation = Quaternion(0.61757, -0.346851, 0.607273, 0.359892)
+bones/38/scale = Vector3(1.14636, 0.804872, 1.0992)
+bones/39/position = Vector3(6.39056, 9.47278, 0.129679)
+bones/39/rotation = Quaternion(0.204859, 0.0434182, -0.976253, 0.0554716)
+bones/39/scale = Vector3(1.14636, 0.804872, 1.0992)
+bones/40/position = Vector3(5.85293, 11.4906, 0.122692)
+bones/40/rotation = Quaternion(0.390384, 0.0495634, -0.911451, 0.120004)
+bones/40/scale = Vector3(1.14636, 0.804872, 1.0992)
+bones/41/position = Vector3(4.78631, 13.2724, 0.0479258)
+bones/41/rotation = Quaternion(0.54462, 0.135099, -0.79506, 0.230254)
+bones/41/scale = Vector3(1.14636, 0.804872, 1.0992)
+bones/42/position = Vector3(-6.39056, 9.47278, 0.129679)
+bones/42/rotation = Quaternion(0.204859, -0.0434181, 0.976253, 0.0554718)
+bones/42/scale = Vector3(1.14636, 0.804873, 1.0992)
+bones/43/position = Vector3(-5.85293, 11.4906, 0.122691)
+bones/43/rotation = Quaternion(0.390384, -0.0495635, 0.911451, 0.120004)
+bones/43/scale = Vector3(1.14636, 0.804872, 1.0992)
+bones/44/position = Vector3(-4.78631, 13.2724, 0.0479267)
+bones/44/rotation = Quaternion(0.54462, -0.135099, 0.79506, 0.230254)
+bones/44/scale = Vector3(1.14636, 0.804872, 1.0992)
+
+[node name="hand_attach" parent="entity/flower_boss/flower_prince/flower_armature/Skeleton3D" index="2"]
+transform = Transform3D(0.0862853, -1.01603, 0.00971327, -0.966491, -0.0810942, 0.102964, -0.106452, -0.0187341, -1.01399, 5.79958, 5.49697, -0.08414)
+
+[node name="head_attach" parent="entity/flower_boss/flower_prince/flower_armature/Skeleton3D" index="3"]
+transform = Transform3D(0, 0, 1.01973, 0, 0.975337, 0, -1.01973, 0, 0, 1.32052e-09, 16.0849, -0.0237348)
+
+[node name="fsm" parent="entity/flower_boss" index="3"]
+initial_state = NodePath("intro_cutscene")
+
+[node name="outro_cutscene" parent="entity/flower_boss/fsm" index="1"]
+event_tree = NodePath("../../../../events/fight_completed")
+
+[node name="shard_target" parent="entity/flower_boss" index="9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 311.5, -109.5)
+gizmo_extents = 4.55
+
+[node name="shard" parent="entity/flower_boss/shard" index="0"]
+event_tree = NodePath("../../../../events/roll_credits")
+
+[node name="boom_crate" parent="entity" instance=ExtResource( "20" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, -3.28738, -73.5)
+
+[node name="respawner" parent="entity/boom_crate" index="2"]
+parameters = {
+"fuse_time": 20.0
+}
+
+[node name="crate" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, -3.3, -75.8)
+material = ExtResource( "22" )
+health = 3
+jacks = 5
+size = Vector3(12, 11, 7)
+
+[node name="crate_2" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, -3.3, -75.8)
+jacks = 3
+size = Vector3(7, 7, 7)
+
+[node name="crate_3" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.5, -3.3, -87.8)
+size = Vector3(5, 5, 5)
+
+[node name="crate_4" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.25, 61.2, -76.05)
+jacks = 3
+size = Vector3(7, 7, 7)
+
+[node name="crate_6" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.25, 61.2, -125.05)
+jacks = 3
+size = Vector3(8, 8, 8)
+
+[node name="crate_5" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.75, 61.2, -73.55)
+size = Vector3(5, 5, 5)
+
+[node name="crate_7" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21.75, 77.3, -125.05)
+process_physics = true
+
+[node name="crate_8" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -52.25, 171.2, -125.05)
+jacks = 3
+size = Vector3(8, 8, 8)
+
+[node name="crate_9" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -54.25, 171.3, -138.023)
+size = Vector3(5, 5, 5)
+
+[node name="crate_10" parent="entity" instance=ExtResource( "21" )]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -49.25, 171.3, -80.523)
+size = Vector3(5, 5, 5)
+
+[node name="warp_exit" type="Area3D" parent="entity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, -20.909)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+script = ExtResource( "23" )
+event_tree = NodePath("../../events/warp_exit")
+one_shot = false
+size = Vector3(45, 45, 45)
+
+[node name="@CollisionShape3D@35337" type="CollisionShape3D" parent="entity/warp_exit"]
+shape = SubResource( "10" )
+
+[node name="flower_cutscene" type="Area3D" parent="entity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 299.5, 81.091)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+script = ExtResource( "23" )
+event_tree = NodePath("../../events/flower_cutscene")
+divert_trees = {
+"flower_rematch": NodePath("../../events/flower_rematch")
+}
+size = Vector3(82, 50, 56)
+
+[node name="@CollisionShape3D@140798" type="CollisionShape3D" parent="entity/flower_cutscene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 47.75, 0)
+shape = SubResource( "11" )
+
+[node name="grass_spawner" type="MultiMeshInstance3D" parent="entity"]
+multimesh = SubResource( "14" )
+script = ExtResource( "26" )
+target = NodePath("../../map/hc_ruins_tower_arena/grass/StaticBody3D")
+mesh = NodePath("../../map/hc_ruins_tower_arena/grass")
+count = 10
+seed = 76901461
+
+[node name="grass_spawner_2" type="MultiMeshInstance3D" parent="entity"]
+multimesh = SubResource( "17" )
+script = ExtResource( "26" )
+target = NodePath("../../map/hc_ruins_tower_arena/grass/StaticBody3D")
+mesh = NodePath("../../map/hc_ruins_tower_arena/grass")
+count = 10
+seed = 1242796667
+
+[node name="flower_spawner" type="MultiMeshInstance3D" parent="entity"]
+multimesh = SubResource( "19" )
+script = ExtResource( "26" )
+target = NodePath("../../map/hc_ruins_tower_arena/grass/StaticBody3D")
+mesh = NodePath("../../map/hc_ruins_tower_arena/grass")
+count = 4
+seed = 3951785740
+
+[node name="entity_remover" type="Area3D" parent="entity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -147, 0)
+script = ExtResource( "29" )
+
+[node name="collision_shape_3d" type="CollisionShape3D" parent="entity/entity_remover"]
+shape = SubResource( "20" )
+
+[node name="_CollisionShape3D_35337" type="CollisionShape3D" parent="entity/entity_remover"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 161.5, -29)
+shape = SubResource( "10" )
+
+[node name="death_plane" type="Area3D" parent="entity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -147, 0)
+script = ExtResource( "30" )
+
+[node name="collision_shape_3d" type="CollisionShape3D" parent="entity/death_plane"]
+shape = SubResource( "20" )
+
+[node name="jack" type="Node3D" parent="."]
+
+[node name="jack_spawner" type="Marker3D" parent="jack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -101)
+gizmo_extents = 5.0
+script = ExtResource( "31" )
+spacing = 7.5
+snap_to_floor = true
+metadata/_edit_group_ = true
+
+[node name="@Area3D@77677" parent="jack/jack_spawner" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, -15)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77678" parent="jack/jack_spawner" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, -7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77679" parent="jack/jack_spawner" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, 0)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77680" parent="jack/jack_spawner" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, 7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77681" parent="jack/jack_spawner" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, 15)
+metadata/_edit_lock_ = true
+
+[node name="jack_spawner_3" type="Marker3D" parent="jack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 69, -113)
+gizmo_extents = 5.0
+script = ExtResource( "31" )
+spacing = 7.5
+snap_to_floor = true
+metadata/_edit_group_ = true
+
+[node name="@Area3D@77686" parent="jack/jack_spawner_3" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, -15)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77687" parent="jack/jack_spawner_3" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, -7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77688" parent="jack/jack_spawner_3" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, 0)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77689" parent="jack/jack_spawner_3" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, 7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77690" parent="jack/jack_spawner_3" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, 15)
+metadata/_edit_lock_ = true
+
+[node name="jack_spawner_4" type="Marker3D" parent="jack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 144, -100)
+gizmo_extents = 5.0
+script = ExtResource( "31" )
+spacing = 7.5
+snap_to_floor = true
+metadata/_edit_group_ = true
+
+[node name="@Area3D@77695" parent="jack/jack_spawner_4" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, -15)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77696" parent="jack/jack_spawner_4" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, -7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77697" parent="jack/jack_spawner_4" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, 0)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77698" parent="jack/jack_spawner_4" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, 7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77699" parent="jack/jack_spawner_4" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, 15)
+metadata/_edit_lock_ = true
+
+[node name="jack_spawner_6" type="Marker3D" parent="jack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.5, 187.5, -128.5)
+gizmo_extents = 5.0
+script = ExtResource( "31" )
+spacing = 7.5
+snap_to_floor = true
+metadata/_edit_group_ = true
+
+[node name="@Area3D@77704" parent="jack/jack_spawner_6" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, -15)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77705" parent="jack/jack_spawner_6" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, -7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77706" parent="jack/jack_spawner_6" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, 0)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77707" parent="jack/jack_spawner_6" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, 7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77708" parent="jack/jack_spawner_6" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, 15)
+metadata/_edit_lock_ = true
+
+[node name="jack_spawner_7" type="Marker3D" parent="jack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 328, -76.5)
+gizmo_extents = 5.0
+script = ExtResource( "31" )
+spacing = 7.5
+snap_to_floor = true
+metadata/_edit_group_ = true
+
+[node name="@Area3D@77713" parent="jack/jack_spawner_7" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, -15)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77714" parent="jack/jack_spawner_7" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, -7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77715" parent="jack/jack_spawner_7" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, 0)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77716" parent="jack/jack_spawner_7" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, 7.5)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77717" parent="jack/jack_spawner_7" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, 15)
+metadata/_edit_lock_ = true
+
+[node name="jack_spawner_5" type="Marker3D" parent="jack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 154.5, -75)
+gizmo_extents = 5.0
+script = ExtResource( "31" )
+formation = 1
+spacing = 7.5
+shadows = false
+metadata/_edit_group_ = true
+
+[node name="@Area3D@77727" parent="jack/jack_spawner_5" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15, 0)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77728" parent="jack/jack_spawner_5" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.5, 0)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77729" parent="jack/jack_spawner_5" instance=ExtResource( "32" )]
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77730" parent="jack/jack_spawner_5" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, 0)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77731" parent="jack/jack_spawner_5" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 0)
+metadata/_edit_lock_ = true
+
+[node name="jack_spawner_2" type="Marker3D" parent="jack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 11, -100)
+gizmo_extents = 5.0
+script = ExtResource( "31" )
+formation = 2
+spacing = 10.0
+snap_to_floor = true
+metadata/_edit_group_ = true
+
+[node name="@Area3D@77741" parent="jack/jack_spawner_2" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.51057, -14.2874, -3.09017)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77742" parent="jack/jack_spawner_2" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.87785, -14.2874, 8.09017)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77743" parent="jack/jack_spawner_2" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.87785, -14.2874, 8.09017)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77744" parent="jack/jack_spawner_2" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.51057, -14.2874, -3.09017)
+metadata/_edit_lock_ = true
+
+[node name="@Area3D@77745" parent="jack/jack_spawner_2" instance=ExtResource( "32" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.2874, -10)
+metadata/_edit_lock_ = true
+
+[node name="shard" type="Node3D" parent="."]
+
+[node name="cage_shard" parent="shard" instance=ExtResource( "33" )]
+transform = Transform3D(-0.0871558, 0, 0.996195, 0, 1, 0, -0.996195, 0, -0.0871558, 40.75, 180, -88)
+data = ExtResource( "34" )
+
+[node name="events" type="Node3D" parent="."]
+
+[node name="warp_exit" type="Node" parent="events"]
+script = ExtResource( "35" )
+player_handler = 0
+
+[node name="camera" type="Node" parent="events/warp_exit"]
+script = ExtResource( "36" )
+camera = NodePath("cam")
+duration = 0.25
+do_interpolate = true
+int_length = 0.75
+
+[node name="cam" type="Camera3D" parent="events/warp_exit/camera"]
+transform = Transform3D(-0.999948, -0.000657785, 0.0101598, 0, 0.997911, 0.0646088, -0.010181, 0.0646055, -0.997859, 1.14197, 17.1499, -108.25)
+current = true
+fov = 60.0
+
+[node name="warp" type="Node" parent="events/warp_exit"]
+script = ExtResource( "37" )
+type = 1
+do_pause = false
+target_area = 1
+target_id = 1
+fade_length = 1.0
+fade_delay = 0.25
+
+[node name="fade_royal_in" type="Node" parent="events"]
+script = ExtResource( "35" )
+player_handler = 0
+
+[node name="event_music" type="Node" parent="events/fade_royal_in"]
+script = ExtResource( "38" )
+new_stems = [ExtResource( "39" ), ExtResource( "2" ), SubResource( "21" )]
+
+[node name="fade_royal_out" type="Node" parent="events"]
+script = ExtResource( "35" )
+player_handler = 0
+
+[node name="event_music" type="Node" parent="events/fade_royal_out"]
+script = ExtResource( "38" )
+new_stems = [ExtResource( "2" ), SubResource( "22" )]
+
+[node name="flower_cutscene" type="Node" parent="events"]
+script = ExtResource( "35" )
+
+[node name="camera" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "36" )
+camera = NodePath("cam")
+duration = 0.75
+cutscene_bars = true
+do_interpolate = true
+int_length = 1.0
+
+[node name="cam" type="Camera3D" parent="events/flower_cutscene/camera"]
+transform = Transform3D(-0.839078, 0.0823287, -0.537745, 0, 0.988483, 0.151337, 0.544011, 0.126983, -0.829414, -19.187, 318.634, 52.0684)
+fov = 60.0
+
+[node name="event_music" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "38" )
+new_stems = [ExtResource( "39" ), ExtResource( "2" ), SubResource( "21" )]
+
+[node name="flower_dialog_1" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "43" )
+dialog = ExtResource( "44" )
+title = "flower_prince_demo"
+
+[node name="flower_part1" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "23" )]
+
+[node name="zoom_abit" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "36" )
+camera = NodePath("cam")
+duration = 2.0
+do_interpolate = true
+int_length = 1.0
+lock_properties = 3
+
+[node name="cam" type="Camera3D" parent="events/flower_cutscene/zoom_abit"]
+transform = Transform3D(-0.839078, 0.0823287, -0.537745, 0, 0.988483, 0.151337, 0.544011, 0.126983, -0.829414, -19.187, 318.634, 52.0684)
+
+[node name="move" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "36" )
+camera = NodePath("cam")
+duration = 2.0
+do_interpolate = true
+int_length = 2.0
+lock_properties = 3
+
+[node name="cam" type="Camera3D" parent="events/flower_cutscene/move"]
+transform = Transform3D(-0.999901, -0.00642847, 0.0125061, 0, 0.889381, 0.457167, -0.0140616, 0.457121, -0.889293, 0.345463, 330.691, 35.2892)
+fov = 55.0
+
+[node name="flower_part2" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "24" )]
+
+[node name="wait" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "47" )
+
+[node name="flower_part3" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "25" )]
+
+[node name="tilt_up" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "36" )
+camera = NodePath("cam")
+duration = 1.25
+cutscene_bars = true
+do_interpolate = true
+int_length = 2.5
+
+[node name="cam" type="Camera3D" parent="events/flower_cutscene/tilt_up"]
+transform = Transform3D(-0.999902, -0.00482112, 0.0131034, 0, 0.938493, 0.345298, -0.0139622, 0.345264, -0.938402, 0.345, 327.636, 42.474)
+fov = 55.0
+
+[node name="flower_dialog_2" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "43" )
+dialog = ExtResource( "44" )
+title = "flower_prince_mean_demo"
+
+[node name="flower_part4" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "26" )]
+
+[node name="reset_cam" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "36" )
+int_length = 2.5
+
+[node name="boss_music" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "38" )
+new_stems = [ExtResource( "2" ), SubResource( "27" )]
+
+[node name="set_respawn" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "45" )
+node = NodePath("../../..")
+packets = [SubResource( "28" )]
+
+[node name="enable_barrier" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "45" )
+node = NodePath("../../../map/hc_ruins_tower_arena/barrier/StaticBody3D/CollisionShape3D")
+packets = [SubResource( "29" )]
+
+[node name="set_rematch" type="Node" parent="events/flower_cutscene"]
+script = ExtResource( "49" )
+flag_name = "flower_rematch"
+
+[node name="flower_rematch" type="Node" parent="events"]
+script = ExtResource( "35" )
+
+[node name="camera" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "36" )
+camera = NodePath("cam")
+duration = 0.75
+cutscene_bars = true
+do_interpolate = true
+int_length = 1.0
+
+[node name="cam" type="Camera3D" parent="events/flower_rematch/camera"]
+transform = Transform3D(-0.839078, 0.0823287, -0.537745, 0, 0.988483, 0.151337, 0.544011, 0.126983, -0.829414, -19.187, 318.634, 52.0684)
+fov = 60.0
+
+[node name="event_music" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "38" )
+new_stems = [ExtResource( "39" ), ExtResource( "2" ), SubResource( "21" )]
+
+[node name="flower_dialog_1" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "43" )
+dialog = ExtResource( "44" )
+title = "flower_prince_rematch_demo"
+
+[node name="flower_part1" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "23" )]
+
+[node name="zoom_abit" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "36" )
+camera = NodePath("../../flower_cutscene/zoom_abit/cam")
+duration = 2.0
+do_interpolate = true
+int_length = 1.0
+lock_properties = 3
+
+[node name="cam" type="Camera3D" parent="events/flower_rematch/zoom_abit"]
+transform = Transform3D(-0.839078, 0.0823287, -0.537745, 0, 0.988483, 0.151337, 0.544011, 0.126983, -0.829414, -19.187, 318.634, 52.0684)
+
+[node name="move" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "36" )
+camera = NodePath("../../flower_cutscene/move/cam")
+do_interpolate = true
+int_length = 1.0
+lock_properties = 3
+
+[node name="cam" type="Camera3D" parent="events/flower_rematch/move"]
+transform = Transform3D(-0.999901, -0.00642847, 0.0125061, 0, 0.889381, 0.457167, -0.0140616, 0.457121, -0.889293, 0.345463, 330.691, 35.2892)
+fov = 55.0
+
+[node name="flower_part2" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "24" )]
+
+[node name="wait" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "47" )
+
+[node name="flower_part3" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "25" )]
+
+[node name="tilt_up" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "36" )
+camera = NodePath("../../flower_cutscene/tilt_up/cam")
+do_interpolate = true
+int_length = 0.75
+
+[node name="cam" type="Camera3D" parent="events/flower_rematch/tilt_up"]
+transform = Transform3D(-0.999902, -0.00482112, 0.0131034, 0, 0.938493, 0.345298, -0.0139622, 0.345264, -0.938402, 0.345, 327.636, 42.474)
+fov = 55.0
+
+[node name="reset_cam" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "36" )
+duration = 0.75
+do_interpolate = true
+
+[node name="flower_part4" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "26" )]
+
+[node name="boss_music" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "38" )
+new_stems = [ExtResource( "2" ), SubResource( "27" )]
+
+[node name="enable_barrier" type="Node" parent="events/flower_rematch"]
+script = ExtResource( "45" )
+node = NodePath("../../../map/hc_ruins_tower_arena/barrier/StaticBody3D/CollisionShape3D")
+packets = [SubResource( "29" )]
+
+[node name="fight_completed" type="Node" parent="events"]
+script = ExtResource( "35" )
+
+[node name="camera" type="Node" parent="events/fight_completed"]
+script = ExtResource( "36" )
+camera = NodePath("../../../entity/flower_boss/flower_prince/flower_armature/static_cam_in")
+duration = 0.75
+cutscene_bars = true
+do_interpolate = true
+int_length = 1.0
+
+[node name="event_music" type="Node" parent="events/fight_completed"]
+script = ExtResource( "38" )
+new_stems = [ExtResource( "39" ), ExtResource( "2" )]
+
+[node name="flower_dialog_1" type="Node" parent="events/fight_completed"]
+script = ExtResource( "43" )
+dialog = ExtResource( "44" )
+title = "flower_prince_defeat_demo"
+
+[node name="flower_part1" type="Node" parent="events/fight_completed"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "30" )]
+
+[node name="wait" type="Node" parent="events/fight_completed"]
+script = ExtResource( "47" )
+time = 2.0
+
+[node name="flower_part2" type="Node" parent="events/fight_completed"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "31" )]
+
+[node name="wait_signal" type="Node" parent="events/fight_completed"]
+script = ExtResource( "47" )
+type = 1
+node = NodePath("../../../entity/flower_boss/fsm/throw")
+node_signal = &"shard_thrown"
+
+[node name="shard" type="Node" parent="events/fight_completed"]
+script = ExtResource( "50" )
+shard = NodePath("../../../entity/flower_boss/shard/shard")
+origin = NodePath("../../../entity/flower_boss/shard/shard/shard_origin")
+target = NodePath("target")
+follow_cam = NodePath("cam")
+
+[node name="cam" type="Camera3D" parent="events/fight_completed/shard"]
+transform = Transform3D(0.659866, 0.184954, -0.728264, 0, 0.969231, 0.246151, 0.751383, -0.162427, 0.639563, -38.5743, 329.886, -86.3763)
+fov = 65.0
+
+[node name="target" type="Marker3D" parent="events/fight_completed/shard"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 311.644, -109.621)
+gizmo_extents = 11.65
+
+[node name="wait_throw" type="Node" parent="events/fight_completed"]
+script = ExtResource( "47" )
+time = 2.0
+
+[node name="flower_part3" type="Node" parent="events/fight_completed"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "32" )]
+
+[node name="camera_2" type="Node" parent="events/fight_completed"]
+script = ExtResource( "36" )
+camera = NodePath("../../../entity/flower_boss/flower_prince/flower_armature/static_cam_out")
+duration = 2.0
+cutscene_bars = true
+do_interpolate = true
+int_length = 1.5
+lock_properties = 3
+
+[node name="flower_dialog_2" type="Node" parent="events/fight_completed"]
+script = ExtResource( "43" )
+dialog = ExtResource( "44" )
+title = "flower_prince_defeat_2_demo"
+
+[node name="flower_part4" type="Node" parent="events/fight_completed"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "33" )]
+
+[node name="wait_throw_2" type="Node" parent="events/fight_completed"]
+script = ExtResource( "47" )
+time = 0.75
+
+[node name="flower_dialog_3" type="Node" parent="events/fight_completed"]
+script = ExtResource( "43" )
+dialog = ExtResource( "44" )
+title = "flower_prince_defeat_3_demo"
+
+[node name="flower_part5" type="Node" parent="events/fight_completed"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "34" )]
+
+[node name="reset_cam" type="Node" parent="events/fight_completed"]
+script = ExtResource( "36" )
+duration = 0.75
+do_interpolate = true
+
+[node name="disable_barrier" type="Node" parent="events/fight_completed"]
+script = ExtResource( "45" )
+node = NodePath("../../../map/hc_ruins_tower_arena/barrier/StaticBody3D/CollisionShape3D")
+packets = [SubResource( "35" )]
+
+[node name="flower_debug" type="Node" parent="events"]
+script = ExtResource( "35" )
+player_handler = 0
+
+[node name="flower_part4" type="Node" parent="events/flower_debug"]
+script = ExtResource( "45" )
+node = NodePath("../../../entity/flower_boss/fsm")
+packets = [SubResource( "26" )]
+
+[node name="boss_music" type="Node" parent="events/flower_debug"]
+script = ExtResource( "38" )
+new_stems = [ExtResource( "2" ), SubResource( "27" )]
+
+[node name="set_respawn" type="Node" parent="events/flower_debug"]
+script = ExtResource( "45" )
+node = NodePath("../../..")
+packets = [SubResource( "28" )]
+
+[node name="enable_barrier" type="Node" parent="events/flower_debug"]
+script = ExtResource( "45" )
+node = NodePath("../../../map/hc_ruins_tower_arena/barrier/StaticBody3D/CollisionShape3D")
+packets = [SubResource( "29" )]
+
+[node name="roll_credits" type="Node" parent="events"]
+script = ExtResource( "35" )
+player_handler = 1
+
+[node name="event_warp" type="Node" parent="events/roll_credits"]
+script = ExtResource( "37" )
+target_scene = "res://scenes/credits.tscn"
+fade_length = 1.0
+fade_delay = 1.0
+
+[editable path="map/hc_ruins_tower_arena"]
+[editable path="entity/flower_boss"]
+[editable path="entity/flower_boss/flower_prince"]
+[editable path="entity/boom_crate"]
+[editable path="entity/boom_crate/vis"]

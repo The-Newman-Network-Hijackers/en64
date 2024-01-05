@@ -1,0 +1,395 @@
+[gd_scene load_steps=22 format=3]
+
+[ext_resource type="Script" path="res://scripts/textbox.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://chdkvuloanv4d" path="res://asset/ui/dialog/diag_box.png" id="2"]
+[ext_resource type="FontFile" uid="uid://dk3bac3jmalne" path="res://asset/ui/Basic Comical Regular NC.ttf" id="3"]
+[ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="4"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_label.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://d35gnm1k5t2a6" path="res://asset/ui/dialog/button/diag_button_atlas.png" id="6"]
+[ext_resource type="AudioStream" uid="uid://c2p5qqaubqox7" path="res://audio/sfx/ui_in.wav" id="7"]
+[ext_resource type="AudioStream" uid="uid://bmcnk2wilpyi" path="res://audio/sfx/ui_out.wav" id="8"]
+[ext_resource type="AudioStream" uid="uid://eivs3kwkrwom" path="res://audio/sfx/ui_click.wav" id="9"]
+[ext_resource type="AudioStream" uid="uid://cemykbi4gsblu" path="res://audio/sfx/ui_type1.wav" id="10"]
+[ext_resource type="AudioStream" uid="uid://cnjv8ldkwbegn" path="res://audio/sfx/ui_type2.wav" id="11"]
+[ext_resource type="AudioStream" uid="uid://yxc1hj6jgsm6" path="res://audio/sfx/ui_type3.wav" id="12"]
+
+[sub_resource type="StyleBoxTexture" id="1"]
+texture = ExtResource( "2" )
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+script = null
+
+[sub_resource type="StyleBoxTexture" id="2"]
+texture = ExtResource( "2" )
+texture_margin_left = 16.0
+texture_margin_top = 8.0
+texture_margin_right = 16.0
+texture_margin_bottom = 8.0
+script = null
+
+[sub_resource type="AtlasTexture" id="3"]
+atlas = ExtResource( "6" )
+region = Rect2(0, 0, 32, 32)
+script = null
+
+[sub_resource type="Animation" id="4"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("button:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("button:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(519, -16)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("button:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(32.0004, 32)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("button:texture:region")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 32, 32)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.001, 0.001)]
+}
+script = null
+
+[sub_resource type="Animation" id="5"]
+resource_name = "appear"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.25),
+"transitions": PackedFloat32Array(0.5, 2, 1),
+"update": 0,
+"values": [Vector2(0.05, 0.05), Vector2(1.05, 1.05), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("button:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+script = null
+
+[sub_resource type="Animation" id="6"]
+resource_name = "await"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("button:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("button:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(0.5, 0.5, 0.5),
+"update": 0,
+"values": [Vector2(251, -54), Vector2(251, -70), Vector2(251, -54)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("button:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.35, 0.5, 0.65, 0.8, 1),
+"transitions": PackedFloat32Array(0.5, 0.5, 0, 0.5, 0.5, 0, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.733, 1.1), Vector2(1, 1), Vector2(1, 1), Vector2(0.733, 1.1), Vector2(1, 1), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("button:texture:region")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.35, 0.65, 0.7, 0.8, 0.85, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 32, 32), Rect2(32, 0, 32, 32), Rect2(0, 32, 32, 32), Rect2(32, 32, 32, 32), Rect2(32, 32, 32, 32), Rect2(0, 32, 32, 32), Rect2(32, 0, 32, 32), Rect2(0, 0, 32, 32), Rect2(0, 0, 32, 32)]
+}
+script = null
+
+[sub_resource type="Animation" id="7"]
+resource_name = "none"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("button:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("button:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(519, -16)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("button:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(32.0004, 32)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("button:texture:region")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 32, 32)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="8"]
+_data = {
+"RESET": SubResource( "4" ),
+"appear": SubResource( "5" ),
+"await": SubResource( "6" ),
+"none": SubResource( "7" )
+}
+script = null
+
+[sub_resource type="AudioStreamRandomizer" id="9"]
+streams_count = 3
+stream_0/stream = ExtResource( "10" )
+stream_0/weight = 1.0
+stream_1/stream = ExtResource( "11" )
+stream_1/weight = 1.0
+stream_2/stream = ExtResource( "12" )
+stream_2/weight = 1.0
+script = null
+
+[node name="textbox" type="Control"]
+z_index = 100
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(0.001, 0.001)
+pivot_offset = Vector2(0, -75)
+size_flags_horizontal = 4
+size_flags_vertical = 8
+script = ExtResource( "1" )
+
+[node name="main_panel" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(592, 0)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -296.0
+offset_top = -140.0
+offset_right = 296.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(296, 64)
+size_flags_vertical = 8
+theme_override_styles/panel = SubResource( "1" )
+
+[node name="scroll_container" type="ScrollContainer" parent="main_panel"]
+unique_name_in_owner = true
+layout_mode = 2
+follow_focus = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="textbox_labels" type="VBoxContainer" parent="main_panel/scroll_container"]
+unique_name_in_owner = true
+clip_children = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="base_textbox_label" type="RichTextLabel" parent="main_panel/scroll_container/textbox_labels"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(528, 80)
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource( "3" )
+theme_override_fonts/bold_font = ExtResource( "4" )
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 23
+bbcode_enabled = true
+fit_content = true
+visible_characters_behavior = 1
+script = ExtResource( "5" )
+skip_action = "interact"
+seconds_per_step = 0.03
+pause_at_characters = ".?!,"
+
+[node name="name_panel" type="PanelContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -162.0
+offset_right = -248.0
+offset_bottom = -120.0
+grow_vertical = 2
+size_flags_vertical = 8
+theme_override_styles/panel = SubResource( "2" )
+
+[node name="textbox_name" type="RichTextLabel" parent="name_panel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource( "3" )
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+
+[node name="button" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 519.0
+offset_top = -16.0
+offset_right = 551.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(16, 16)
+size_flags_vertical = 8
+texture = SubResource( "3" )
+stretch_mode = 2
+
+[node name="textbox_anim" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource( "8" )
+}
+
+[node name="in" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( "7" )
+bus = &"Sound"
+
+[node name="out" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( "8" )
+bus = &"Sound"
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( "9" )
+bus = &"Sound"
+
+[node name="type" type="AudioStreamPlayer" parent="."]
+stream = SubResource( "9" )
+volume_db = -4.0
+max_polyphony = 2
+bus = &"SoundIndoors"

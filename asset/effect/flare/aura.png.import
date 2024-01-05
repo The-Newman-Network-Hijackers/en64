@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://v2p83xcxqrb0"
+path.s3tc="res://.godot/imported/aura.png-5aa6a2ab1187af4d3029ce87618a6bca.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/aura.png"
+dest_files=PackedStringArray("res://.godot/imported/aura.png-5aa6a2ab1187af4d3029ce87618a6bca.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

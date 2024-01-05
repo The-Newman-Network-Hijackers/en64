@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dqeb02gbqh8r0"
+path.s3tc="res://.godot/imported/water_1.png-dcb3d25ccb40da08de98ecfe6ab210f1.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/water_1.png"
+dest_files=PackedStringArray("res://.godot/imported/water_1.png-dcb3d25ccb40da08de98ecfe6ab210f1.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="FontFile" uid="uid://dk3bac3jmalne" path="res://asset/ui/Basic Comical Regular NC.ttf" id="1"]
+[ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="2"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_label.gd" id="3"]
+
+[node name="base_textbox_label" type="RichTextLabel"]
+visible = false
+custom_minimum_size = Vector2(528, 80)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource( "1" )
+theme_override_fonts/bold_font = ExtResource( "2" )
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 23
+bbcode_enabled = true
+fit_content = true
+script = ExtResource( "3" )
+pause_at_characters = ".,?!"

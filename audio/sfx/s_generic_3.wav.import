@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://7vjrvs15exhm"
+path="res://.godot/imported/s_generic_3.wav-e25b36bb2ff21e3a481336f9ef4047bd.sample"
+
+[deps]
+
+source_file="res://audio/sfx/s_generic_3.wav"
+dest_files=PackedStringArray("res://.godot/imported/s_generic_3.wav-e25b36bb2ff21e3a481336f9ef4047bd.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

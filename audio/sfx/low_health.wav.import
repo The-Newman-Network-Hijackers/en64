@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://2mv6wb4cfpqc"
+path="res://.godot/imported/low_health.wav-dbdfe227ea04b877b7b515e642b03d79.sample"
+
+[deps]
+
+source_file="res://audio/sfx/low_health.wav"
+dest_files=PackedStringArray("res://.godot/imported/low_health.wav-dbdfe227ea04b877b7b515e642b03d79.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

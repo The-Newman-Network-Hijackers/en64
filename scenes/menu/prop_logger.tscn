@@ -1,0 +1,185 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/prop_logger.gd" id="1"]
+[ext_resource type="Theme" uid="uid://botsw3j2gbsx" path="res://asset/ui/generic_ui_theme.tres" id="2"]
+[ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="3"]
+[ext_resource type="FontFile" uid="uid://dk3bac3jmalne" path="res://asset/ui/Basic Comical Regular NC.ttf" id="4"]
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0.175781, 0.175781, 0.175781, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+script = null
+
+[sub_resource type="Environment" id="2"]
+background_mode = 1
+background_color = Color(1, 1, 1, 1)
+background_energy_multiplier = 0.5
+script = null
+
+[sub_resource type="StyleBoxFlat" id="3"]
+bg_color = Color(0.175781, 0.175781, 0.175781, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+script = null
+
+[sub_resource type="LabelSettings" id="4"]
+line_spacing = 5.0
+font = ExtResource( "3" )
+font_size = 24
+shadow_color = Color(0, 0, 0, 0.396078)
+shadow_offset = Vector2(2, 2)
+script = null
+
+[sub_resource type="LabelSettings" id="5"]
+line_spacing = 5.0
+font = ExtResource( "4" )
+script = null
+
+[sub_resource type="LabelSettings" id="6"]
+line_spacing = 2.0
+font = ExtResource( "4" )
+font_color = Color(0.537255, 0.537255, 0.537255, 1)
+script = null
+
+[node name="prop_collection" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource( "1" )
+metadata/_edit_use_anchors_ = true
+
+[node name="list_panel" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource( "1" )
+
+[node name="margin" type="MarginContainer" parent="list_panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="prop_list" type="VBoxContainer" parent="list_panel/margin"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="sort" type="OptionButton" parent="list_panel/margin/prop_list"]
+layout_mode = 2
+theme = ExtResource( "2" )
+item_count = 3
+selected = 0
+popup/item_0/text = "All Shards"
+popup/item_0/id = 0
+popup/item_1/text = "Collected Shards"
+popup/item_1/id = 1
+popup/item_2/text = "Uncollected Shards"
+popup/item_2/id = 2
+
+[node name="scroll" type="ScrollContainer" parent="list_panel/margin/prop_list"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="list" type="ItemList" parent="list_panel/margin/prop_list/scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( "2" )
+item_count = 3
+item_0/text = "1.) ???"
+item_1/text = "2.) ???"
+item_2/text = "3.) ???"
+
+[node name="count" type="Label" parent="list_panel/margin/prop_list"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource( "2" )
+text = "Collected 0/0"
+horizontal_alignment = 3
+vertical_alignment = 2
+
+[node name="progress" type="Label" parent="list_panel/margin/prop_list"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource( "2" )
+text = "Overall 100%"
+horizontal_alignment = 3
+
+[node name="back" type="Button" parent="list_panel/margin/prop_list"]
+layout_mode = 2
+theme = ExtResource( "2" )
+text = "Back"
+
+[node name="prop_desc" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="prop_model" type="SubViewportContainer" parent="prop_desc"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.5
+stretch = true
+
+[node name="svp_prop" type="SubViewport" parent="prop_desc/prop_model"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(318, 285)
+render_target_update_mode = 4
+
+[node name="camera" type="Camera3D" parent="prop_desc/prop_model/svp_prop"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -10)
+environment = SubResource( "2" )
+fov = 60.0
+
+[node name="light" type="DirectionalLight3D" parent="prop_desc/prop_model/svp_prop"]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+light_energy = 1.5
+sky_mode = 1
+
+[node name="desc_panel" type="PanelContainer" parent="prop_desc"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource( "3" )
+
+[node name="margin" type="MarginContainer" parent="prop_desc/desc_panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="sort" type="VBoxContainer" parent="prop_desc/desc_panel/margin"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="prop_name" type="Label" parent="prop_desc/desc_panel/margin/sort"]
+unique_name_in_owner = true
+layout_mode = 2
+label_settings = SubResource( "4" )
+horizontal_alignment = 1
+
+[node name="prop_location" type="Label" parent="prop_desc/desc_panel/margin/sort"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 1
+label_settings = SubResource( "5" )
+horizontal_alignment = 1
+
+[node name="prop_description" type="Label" parent="prop_desc/desc_panel/margin/sort"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(302, 0)
+layout_mode = 2
+size_flags_vertical = 3
+label_settings = SubResource( "6" )
+autowrap_mode = 3
+
+[connection signal="item_selected" from="list_panel/margin/prop_list/sort" to="." method="_sort_item_selected"]
+[connection signal="item_selected" from="list_panel/margin/prop_list/scroll/list" to="." method="_list_item_selected"]

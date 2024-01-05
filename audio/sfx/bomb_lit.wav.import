@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c0olujlsooivk"
+path="res://.godot/imported/bomb_lit.wav-3f896bafb978990d2c4a7d6ba61a9dc5.sample"
+
+[deps]
+
+source_file="res://audio/sfx/bomb_lit.wav"
+dest_files=PackedStringArray("res://.godot/imported/bomb_lit.wav-3f896bafb978990d2c4a7d6ba61a9dc5.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

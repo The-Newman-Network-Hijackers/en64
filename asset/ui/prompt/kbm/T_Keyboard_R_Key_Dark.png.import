@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dcl8lbh5j10tv"
+path="res://.godot/imported/T_Keyboard_R_Key_Dark.png-88efd313ca10ad16c499d326d3914924.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_Keyboard_R_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_Keyboard_R_Key_Dark.png-88efd313ca10ad16c499d326d3914924.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

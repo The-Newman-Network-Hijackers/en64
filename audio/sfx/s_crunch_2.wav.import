@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://eiwbcepixtbd"
+path="res://.godot/imported/s_crunch_2.wav-113886364aa44744bfb2c1e68db94bb8.sample"
+
+[deps]
+
+source_file="res://audio/sfx/s_crunch_2.wav"
+dest_files=PackedStringArray("res://.godot/imported/s_crunch_2.wav-113886364aa44744bfb2c1e68db94bb8.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cgmn11sb8ejym"
+path.s3tc="res://.godot/imported/color.png-376527c40c9d391e055c82d38e36d0b7.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/accessory/color.png"
+dest_files=PackedStringArray("res://.godot/imported/color.png-376527c40c9d391e055c82d38e36d0b7.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

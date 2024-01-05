@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cwn3yhyse7xql"
+path.s3tc="res://.godot/imported/night_1.png-a1e575212f82a31eff8fd8dff8315980.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/skybox/night_1.png"
+dest_files=PackedStringArray("res://.godot/imported/night_1.png-a1e575212f82a31eff8fd8dff8315980.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

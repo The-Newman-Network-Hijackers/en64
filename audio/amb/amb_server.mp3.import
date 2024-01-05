@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cgeogojmg22de"
+path="res://.godot/imported/amb_server.mp3-2f52b2ce3357372d20a27854b398e1c6.mp3str"
+
+[deps]
+
+source_file="res://audio/amb/amb_server.mp3"
+dest_files=PackedStringArray("res://.godot/imported/amb_server.mp3-2f52b2ce3357372d20a27854b398e1c6.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

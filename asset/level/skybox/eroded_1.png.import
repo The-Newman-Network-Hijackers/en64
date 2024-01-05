@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://7t2xo1sfv0ci"
+path="res://.godot/imported/eroded_1.png-d8d71b246f83264d88b4b819acecacfb.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/level/skybox/eroded_1.png"
+dest_files=PackedStringArray("res://.godot/imported/eroded_1.png-d8d71b246f83264d88b4b819acecacfb.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

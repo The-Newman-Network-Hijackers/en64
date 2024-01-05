@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clwuya7p6j73f"
+path="res://.godot/imported/twinkle_bounce.wav-ea3c61c56d3ef9d86e861732ebd2ca9e.sample"
+
+[deps]
+
+source_file="res://audio/sfx/twinkle_bounce.wav"
+dest_files=PackedStringArray("res://.godot/imported/twinkle_bounce.wav-ea3c61c56d3ef9d86e861732ebd2ca9e.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

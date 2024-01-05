@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c2r6j3ncccfvj"
+path="res://.godot/imported/grain.jpg-03515bf87b986bacba0fc9180940fbb0.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/shader/grain.jpg"
+dest_files=PackedStringArray("res://.godot/imported/grain.jpg-03515bf87b986bacba0fc9180940fbb0.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

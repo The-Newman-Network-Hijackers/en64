@@ -1,0 +1,141 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/gj_ball.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/state_machine.gd" id="2"]
+[ext_resource type="Shader" path="res://asset/shader/n64_unlit_particle.gdshader" id="3"]
+[ext_resource type="Texture2D" uid="uid://ccedm241ohjfr" path="res://asset/entity/gj_ball/gj_ball.png" id="4"]
+[ext_resource type="Script" path="res://scripts/shadow.gd" id="5"]
+[ext_resource type="AudioStream" uid="uid://ebv6fhrcnwob" path="res://audio/sfx/throw_bounce_1.wav" id="6"]
+[ext_resource type="AudioStream" uid="uid://cwmdyu0g48mlk" path="res://audio/sfx/throw_bounce_2.wav" id="7"]
+
+[sub_resource type="GDScript" id="1"]
+resource_name = "gjball_bounce"
+script/source = "# gjball_bounce.gd
+extends State
+
+'''
+GJ_Ball => Bounce state
+'''
+
+@onready var stream_wonder := preload(\"res://audio/sfx/whimsical.wav\")
+@onready var gjb := owner as GJBall
+
+func _enter(_msg := {}) -> void:
+	pass
+
+func _state_physics_process(delta : float) -> void:
+	# Update self
+	gjb.update_movement(delta, false)
+	
+	# If on floor, bounce
+	if gjb.is_on_floor():
+		# Set velocity
+		gjb.velocity.y = max(gjb.velocity.y * -1, gjb.jump_velocity)
+		
+		# SFX
+		gjb.get_node(\"boing\").play()
+		
+		# Tween
+		var tw := create_tween()
+		tw.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+		tw.tween_property(gjb.visual_node, \"scale\", Vector3.ONE, 1.0).from(Vector3(1.75, 0.5, 1.75))
+
+func player_detected(body : Node3D) -> void:
+	# Verify
+	if not body is Player:
+		return
+	
+	# Push notification
+	var uim := get_tree().get_first_node_in_group(\"UIManager\") as UIManager
+	uim.push_notification(\"Golden Jack hunt initiated!\\nCollect 10 Golden Jacks for a shard!\")
+	
+	# Play sound
+	AudioManager.spawn_sound_stream(stream_wonder)
+	
+	# Die
+	gjb.queue_free()
+"
+
+[sub_resource type="SphereShape3D" id="2"]
+radius = 2.5
+script = null
+
+[sub_resource type="ShaderMaterial" id="3"]
+render_priority = 0
+next_pass = null
+shader = ExtResource( "3" )
+shader_parameter/modulate_color = Color(1, 1, 1, 1)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/billboard = false
+shader_parameter/y_billboard = true
+shader_parameter/alpha_scissor = 0.385
+shader_parameter/albedoTex = ExtResource( "4" )
+script = null
+
+[sub_resource type="SphereShape3D" id="4"]
+radius = 1.175
+script = null
+
+[sub_resource type="AudioStreamRandomizer" id="5"]
+random_pitch = 1.1
+streams_count = 2
+stream_0/stream = ExtResource( "6" )
+stream_0/weight = 1.0
+stream_1/stream = ExtResource( "7" )
+stream_1/weight = 1.0
+script = null
+
+[node name="gj_ball" type="CharacterBody3D"]
+script = ExtResource( "1" )
+e_name = "Golden Jack Ball"
+visual_node = NodePath("vis")
+jump_height = 8.0
+jtt_peak = 0.4
+jtt_descent = 0.4
+
+[node name="fsm" type="Node" parent="."]
+script = ExtResource( "2" )
+initial_state = NodePath("bounce")
+
+[node name="bounce" type="Node" parent="fsm"]
+script = SubResource( "1" )
+
+[node name="player_detector" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="col" type="CollisionShape3D" parent="player_detector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16287, 0)
+shape = SubResource( "2" )
+
+[node name="vis" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00189257, 0)
+layers = 4
+material_override = SubResource( "3" )
+offset = Vector2(0, 16)
+pixel_size = 0.1075
+billboard = 1
+double_sided = false
+alpha_cut = 2
+texture = ExtResource( "4" )
+
+[node name="col" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1951, 0)
+shape = SubResource( "4" )
+
+[node name="shadow" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+script = ExtResource( "5" )
+size = 4.0
+
+[node name="boing" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource( "5" )
+unit_size = 50.0
+max_db = 0.0
+max_distance = 100.0
+bus = &"Sound"
+
+[connection signal="body_entered" from="player_detector" to="fsm/bounce" method="player_detected"]

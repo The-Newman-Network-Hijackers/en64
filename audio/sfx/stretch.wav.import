@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bkufuwd1q1sk7"
+path="res://.godot/imported/stretch.wav-48a63f46f1995e7117a055015ba3c049.sample"
+
+[deps]
+
+source_file="res://audio/sfx/stretch.wav"
+dest_files=PackedStringArray("res://.godot/imported/stretch.wav-48a63f46f1995e7117a055015ba3c049.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

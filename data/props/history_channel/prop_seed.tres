@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ShardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_prop.gd" id="1"]
+
+[resource]
+script = ExtResource( "1" )
+shard_name = "Newman's Beautiful Garden"
+shard_location = "History Channel (Ruins)"
+shard_description = "As a wonderful garden grows, out comes this lovely Shard infused with great nutrients and kitchen grease!"
+shard_hint = "Find seeds scattered across the Ruins and throw them into the small garden patch!"

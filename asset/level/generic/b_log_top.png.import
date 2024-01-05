@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://jiejihvep6cj"
+path.s3tc="res://.godot/imported/b_log_top.png-a720e90a0250601e8e76790f3933d5ba.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/b_log_top.png"
+dest_files=PackedStringArray("res://.godot/imported/b_log_top.png-a720e90a0250601e8e76790f3933d5ba.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

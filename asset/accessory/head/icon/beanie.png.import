@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cassaddaue3ga"
+path="res://.godot/imported/beanie.png-97e13d0185ccaa76ce9b49ca97cd1064.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/accessory/head/icon/beanie.png"
+dest_files=PackedStringArray("res://.godot/imported/beanie.png-97e13d0185ccaa76ce9b49ca97cd1064.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

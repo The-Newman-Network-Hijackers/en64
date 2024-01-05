@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bo8p8efn3wopy"
+path="res://.godot/imported/T_X_Right_Stick_Click_Alt.png-ad0b554a75548c1c71d91cd9bcc67389.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/generic/T_X_Right_Stick_Click_Alt.png"
+dest_files=PackedStringArray("res://.godot/imported/T_X_Right_Stick_Click_Alt.png-ad0b554a75548c1c71d91cd9bcc67389.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

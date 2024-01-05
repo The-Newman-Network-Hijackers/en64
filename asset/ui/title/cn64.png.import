@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://chwgt7i4fmym7"
+path.s3tc="res://.godot/imported/cn64.png-767deeec25adb2b6dde37b2500c47da8.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/ui/title/cn64.png"
+dest_files=PackedStringArray("res://.godot/imported/cn64.png-767deeec25adb2b6dde37b2500c47da8.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

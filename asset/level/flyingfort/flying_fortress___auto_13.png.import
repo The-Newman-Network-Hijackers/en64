@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bq76q5o6dfdds"
+path="res://.godot/imported/flying_fortress___auto_13.png-0e69032704786ff6281eaf8db0f2cb6a.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://asset/level/flyingfort/flying_fortress___auto_13.png"
+dest_files=PackedStringArray("res://.godot/imported/flying_fortress___auto_13.png-0e69032704786ff6281eaf8db0f2cb6a.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

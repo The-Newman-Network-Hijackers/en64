@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dx0xl8toknl8k"
+path.s3tc="res://.godot/imported/sparkle.png-8c9e79ea27e06fbe4a8af45b34584fb8.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/sparkle.png"
+dest_files=PackedStringArray("res://.godot/imported/sparkle.png-8c9e79ea27e06fbe4a8af45b34584fb8.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

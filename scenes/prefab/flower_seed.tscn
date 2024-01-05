@@ -1,0 +1,309 @@
+[gd_scene load_steps=21 format=3]
+
+[ext_resource type="Script" path="res://scripts/entity.gd" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://nic3pj768f0s" path="res://asset/entity/flower_prince/mesh/mesh_seed.res" id="2"]
+[ext_resource type="AudioStream" uid="uid://crkggml3grcay" path="res://audio/sfx/ricochet_hit1.wav" id="3"]
+[ext_resource type="AudioStream" uid="uid://be0ug2gqh03g6" path="res://audio/sfx/ricochet_hit2.wav" id="4"]
+[ext_resource type="Script" path="res://scripts/state_machine.gd" id="5"]
+[ext_resource type="Script" path="res://scripts/state.gd" id="6"]
+[ext_resource type="Script" path="res://scripts/hitbox.gd" id="7"]
+
+[sub_resource type="AudioStreamRandomizer" id="1"]
+playback_mode = 1
+random_pitch = 1.05
+streams_count = 2
+stream_0/stream = ExtResource( "3" )
+stream_0/weight = 1.0
+stream_1/stream = ExtResource( "4" )
+stream_1/weight = 1.0
+script = null
+
+[sub_resource type="Animation" id="2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hitbox/col:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("vis:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("col:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("sfx/hit:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+script = null
+
+[sub_resource type="Animation" id="3"]
+resource_name = "hit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hitbox/col:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("vis:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("col:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("sfx/hit:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("hit")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"restart"
+}]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="4"]
+_data = {
+"RESET": SubResource( "2" ),
+"hit": SubResource( "3" )
+}
+script = null
+
+[sub_resource type="GDScript" id="5"]
+resource_name = "seed_shoot"
+script/source = "# seed_shoot.gd
+extends State
+
+'''
+Flower Seed => Shoot state
+'''
+
+@onready var s := owner as Entity
+@onready var lt := $lifetime as Timer
+
+func _enter(_msg := {}) -> void:
+	# Wait a frame
+	await get_tree().physics_frame
+	
+	# Get location of player
+	var p := get_tree().get_first_node_in_group(\"Player\") as Player
+	if !p: return
+	s.visual_node.look_at(p.global_position)
+	s.velocity = s.global_position.direction_to(p.global_position).normalized() * 160
+	lt.start()
+
+func _state_physics_process(delta : float) -> void:
+	# Update movement
+	s.move_and_slide()
+	
+	# Check for floor
+	if s.is_on_floor() || s.is_on_wall():
+		s.get_node(\"anim\").play(\"hit\")
+		state_machine.transition_state(\"none\")
+		return
+
+func _lifetime_timeout() -> void:
+	s.get_node(\"anim\").play(\"hit\")
+	state_machine.transition_state(\"none\")
+	return
+"
+
+[sub_resource type="SphereShape3D" id="6"]
+radius = 1.0
+script = null
+
+[sub_resource type="SphereShape3D" id="7"]
+radius = 4.0
+script = null
+
+[sub_resource type="Curve" id="8"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.477011, 1), -0.079424, -0.079424, 0, 0, Vector2(1, 0), -6.02401, 0.0, 0, 0]
+point_count = 3
+script = null
+
+[sub_resource type="CurveTexture" id="9"]
+curve = SubResource( "8" )
+script = null
+
+[sub_resource type="Curve" id="10"]
+max_value = 3.0
+_data = [Vector2(0, 0.98427), 0.0, 0.0, 0, 0, Vector2(1, 1.31292), 0.0, 0.0, 0, 0]
+point_count = 2
+script = null
+
+[sub_resource type="Curve" id="11"]
+max_value = 3.0
+_data = [Vector2(0, 1.44438), 0.0, 0.0, 0, 0, Vector2(1, 1.22528), 0.0, 0.0, 0, 0]
+point_count = 2
+script = null
+
+[sub_resource type="CurveXYZTexture" id="12"]
+curve_x = SubResource( "10" )
+curve_y = SubResource( "11" )
+curve_z = SubResource( "10" )
+script = null
+
+[sub_resource type="ParticleProcessMaterial" id="13"]
+angle_min = -720.0
+angle_max = 720.0
+direction = Vector3(0, 1, 0)
+initial_velocity_min = 53.03
+initial_velocity_max = 53.03
+gravity = Vector3(0, -79.46, 0)
+scale_curve = SubResource( "9" )
+scale_over_velocity_min = 19.35
+scale_over_velocity_max = 50.4
+scale_over_velocity_curve = SubResource( "12" )
+script = null
+
+[node name="flower_seed" type="CharacterBody3D"]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource( "1" )
+e_name = "Seed"
+visual_node = NodePath("vis")
+
+[node name="vis" type="Node3D" parent="."]
+
+[node name="mesh" type="MeshInstance3D" parent="vis"]
+transform = Transform3D(1, 0, 0, 0, -8.74228e-08, -1, 0, 2, -4.37114e-08, 0, 0, 0)
+mesh = ExtResource( "2" )
+skeleton = NodePath("../..")
+
+[node name="sfx" type="Node3D" parent="."]
+
+[node name="hit" type="AudioStreamPlayer3D" parent="sfx"]
+stream = SubResource( "1" )
+attenuation_model = 3
+max_db = 0.0
+pitch_scale = 1.53
+max_distance = 150.0
+bus = &"Sound"
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource( "4" )
+}
+
+[node name="fsm" type="Node" parent="."]
+script = ExtResource( "5" )
+initial_state = NodePath("shoot")
+
+[node name="none" type="Node" parent="fsm"]
+script = ExtResource( "6" )
+
+[node name="shoot" type="Node" parent="fsm"]
+script = SubResource( "5" )
+
+[node name="lifetime" type="Timer" parent="fsm/shoot"]
+process_callback = 0
+wait_time = 5.0
+
+[node name="col" type="CollisionShape3D" parent="."]
+shape = SubResource( "6" )
+
+[node name="hitbox" type="Area3D" parent="."]
+script = ExtResource( "7" )
+knockback = 30.0
+
+[node name="col" type="CollisionShape3D" parent="hitbox"]
+shape = SubResource( "7" )
+disabled = true
+
+[node name="hit" type="GPUParticles3D" parent="."]
+emitting = false
+amount = 1
+one_shot = true
+speed_scale = 1.3
+process_material = SubResource( "13" )
+draw_pass_1 = ExtResource( "2" )
+
+[connection signal="timeout" from="fsm/shoot/lifetime" to="fsm/shoot" method="_lifetime_timeout"]

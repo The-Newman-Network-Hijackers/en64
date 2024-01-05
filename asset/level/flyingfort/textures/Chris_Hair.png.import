@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://birph5210b8n2"
+path="res://.godot/imported/Chris_Hair.png-7ccf09a1cd48239bd5f7ab2bb99d5b07.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/level/flyingfort/textures/Chris_Hair.png"
+dest_files=PackedStringArray("res://.godot/imported/Chris_Hair.png-7ccf09a1cd48239bd5f7ab2bb99d5b07.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

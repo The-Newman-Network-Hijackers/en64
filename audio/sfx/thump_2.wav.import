@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dr8ixaiyjw034"
+path="res://.godot/imported/thump_2.wav-bb482e74e3bfeec73952c04050f7cfe5.sample"
+
+[deps]
+
+source_file="res://audio/sfx/thump_2.wav"
+dest_files=PackedStringArray("res://.godot/imported/thump_2.wav-bb482e74e3bfeec73952c04050f7cfe5.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

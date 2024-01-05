@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://crkggml3grcay"
+path="res://.godot/imported/ricochet_hit1.wav-e661b17d7c2cb9fe047933b6d5a04d1d.sample"
+
+[deps]
+
+source_file="res://audio/sfx/ricochet_hit1.wav"
+dest_files=PackedStringArray("res://.godot/imported/ricochet_hit1.wav-e661b17d7c2cb9fe047933b6d5a04d1d.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

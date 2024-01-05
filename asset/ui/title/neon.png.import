@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cfuwohvnhenyu"
+path.s3tc="res://.godot/imported/neon.png-312899c38d5ea77e28f824fdb335b39d.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/ui/title/neon.png"
+dest_files=PackedStringArray("res://.godot/imported/neon.png-312899c38d5ea77e28f824fdb335b39d.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

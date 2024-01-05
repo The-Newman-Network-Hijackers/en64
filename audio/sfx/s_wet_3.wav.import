@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d0m2du67sn15j"
+path="res://.godot/imported/s_wet_3.wav-b67a702cae5c2918711e99266052ac8a.sample"
+
+[deps]
+
+source_file="res://audio/sfx/s_wet_3.wav"
+dest_files=PackedStringArray("res://.godot/imported/s_wet_3.wav-b67a702cae5c2918711e99266052ac8a.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://wuxraf530cg5"
+path="res://.godot/imported/T_X_LB.png-af710a8a988c5f4c224a7843a7cb90e9.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/generic/T_X_LB.png"
+dest_files=PackedStringArray("res://.godot/imported/T_X_LB.png-af710a8a988c5f4c224a7843a7cb90e9.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

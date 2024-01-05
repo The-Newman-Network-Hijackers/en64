@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://y34jqxl2k1gp"
+path="res://.godot/imported/T_F9_Key_Dark.png-e85659e5958ca864990c1b3bb61c9f1b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_F9_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_F9_Key_Dark.png-e85659e5958ca864990c1b3bb61c9f1b.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

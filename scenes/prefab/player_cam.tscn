@@ -1,0 +1,447 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/pcam_springarm.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/state_machine.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/state.gd" id="3"]
+[ext_resource type="AudioStream" uid="uid://bn3sa7mf6jsm3" path="res://audio/sfx/cam_fps_zoom.wav" id="4"]
+[ext_resource type="AudioStream" uid="uid://crqecaqdpjb7d" path="res://audio/sfx/cam_fps_snapshot.wav" id="5"]
+
+[sub_resource type="BoxShape3D" id="1"]
+script = null
+
+[sub_resource type="GDScript" id="2"]
+resource_name = "camera_none"
+script/source = "# camera_none.gd
+extends State
+
+'''
+Camera => None state
+'''
+
+"
+
+[sub_resource type="GDScript" id="3"]
+resource_name = "cam_fixed"
+script/source = "# cam_fixed.gd
+extends State
+
+'''
+Camera => Fixed state
+'''
+
+@onready var s_a := owner as PCam_SpringArm
+@onready var camera := s_a.get_node(\"f_cam/player_cam\") as Camera3D
+
+func _enter(_msg := {}) -> void:
+	pass
+
+func _state_physics_process(delta : float) -> void:
+	# Get player and lookat
+	var player : Player = get_tree().get_first_node_in_group(\"Player\") as Player
+	var latn := $look_at_node as Node3D
+	
+	# Update look_at_node
+	latn.position = camera.position
+	latn.look_at(player.global_position)
+	
+	# Interpolate camera to look_at_node
+	camera.rotation.x = lerp_angle(camera.rotation.x, latn.rotation.x, 0.1)
+	camera.rotation.y = lerp_angle(camera.rotation.y, latn.rotation.y, 0.1)
+	camera.rotation.z = lerp_angle(camera.rotation.z, latn.rotation.z, 0.1)
+"
+
+[sub_resource type="GDScript" id="4"]
+resource_name = "cam_manual_analog"
+script/source = "# cam_manual_analog.gd
+extends State
+
+'''
+Camera => Manual Analog control state
+'''
+
+@onready var s_a := owner as PCam_SpringArm
+@onready var camera := s_a.get_node(\"f_cam/player_cam\")
+var p_delta : float = 0.0
+
+func _enter(_msg := {}) -> void:
+	pass
+
+func _state_process(delta : float) -> void:
+	# Check for manual input
+	var input_vec : Vector2 = Input.get_vector(
+		\"camera_left\",
+		\"camera_right\",
+		\"camera_down\",
+		\"camera_up\"
+	)
+
+	# Calculate target values
+	var cam_vec : Vector3 = Vector3(
+		-input_vec.x if s_a.invert_x else input_vec.x, 
+		0, 
+		-input_vec.y if s_a.invert_y else input_vec.y
+	)
+	s_a.target_rotation.x += cam_vec.z * (s_a.sensitivity * 250) * delta
+	s_a.target_rotation.y += cam_vec.x * (s_a.sensitivity * 250) * delta
+
+	# Clamp and wrap target values
+	s_a.target_rotation.x = clamp(s_a.target_rotation.x, -80.0, 30.0)
+	s_a.target_rotation.y = wrapf(s_a.target_rotation.y, -180.0, 180.0)
+	
+func _state_physics_process(delta : float) -> void:
+	# Declare variables
+	var hit_pos : Marker3D = s_a.get_node_or_null(\"hit_pos\")
+	var player : Player = get_tree().get_first_node_in_group(\"Player\") as Player
+
+	# Interpolate camera
+	camera.rotation.x = lerp_angle(camera.rotation.x, s_a.rotation.x, 0.25)
+	camera.rotation.y = lerp_angle(camera.rotation.y, s_a.rotation.y, 0.5)
+	camera.global_position = lerp(camera.global_position, hit_pos.global_position, 0.3)
+	
+	# Interpolate spring_arm rotation to target
+	s_a.rotation.x = lerp_angle(s_a.rotation.x, deg_to_rad(s_a.target_rotation.x), 0.5)
+	s_a.rotation.y = lerp_angle(s_a.rotation.y, deg_to_rad(s_a.target_rotation.y), 0.5)
+	
+	# Interpolate FOV based on player speed
+	var target_fov : float = abs(player.velocity.length() / 30.0)
+	camera.fov = lerpf(
+		camera.fov,
+		65.0 + min(target_fov, 25.0),
+		0.05
+	)
+	
+	# Set p_delta
+	p_delta = delta
+
+func _state_unhandled_input(event: InputEvent) -> void:
+	# Check for mouse movement
+	if event is InputEventMouseMotion:
+		# Rotate camera directly
+		s_a.target_rotation.x -= (-event.relative.y if s_a.invert_y else event.relative.y) * (s_a.sensitivity * 8) * p_delta
+		s_a.target_rotation.y -= (-event.relative.x if s_a.invert_x else event.relative.x) * (s_a.sensitivity * 8) * p_delta
+		
+		# Clamp and wrap target values
+		s_a.target_rotation.x = clamp(s_a.target_rotation.x, -80.0, 30.0)
+		s_a.target_rotation.y = wrapf(s_a.target_rotation.y, -180.0, 180.0)
+		
+		
+func _exit() -> void:
+	pass
+"
+
+[sub_resource type="GDScript" id="5"]
+resource_name = "cam_manual_fps"
+script/source = "# cam_manual_fps.gd
+extends State
+
+'''
+Camera manual first person control state
+'''
+
+@onready var s_a := owner as PCam_SpringArm
+@onready var camera := s_a.get_node(\"f_cam/player_cam\") as Camera3D
+
+## Zoom level of the camera.
+var zoom : int = 0
+## UI Manager reference
+var ui_m : UIManager
+
+var p_delta : float = 0.0
+
+func _enter(_msg := {}) -> void:
+	# Configure springarm
+	s_a.spring_length = 0
+	camera.set_cull_mask_value(2, false)
+	camera.set_cull_mask_value(5, true)
+	
+	# Configure UI
+	ui_m = get_tree().get_first_node_in_group(\"UIManager\") as UIManager
+	ui_m.toggle_visibility(false)
+	ui_m.toggle_cam_overlay(true)
+	ui_m.update_cam_overlay(1 + (0.5 * zoom))
+	
+	# Set zoom
+	zoom = 0
+
+func _state_process(delta : float) -> void:
+	# Check for manual input
+	var input_vec : Vector2 = Input.get_vector(
+		\"camera_left\",
+		\"camera_right\",
+		\"camera_down\",
+		\"camera_up\"
+	)
+
+	# Calculate target values
+	var cam_vec : Vector3 = Vector3(
+		-input_vec.x, 
+		0, 
+		input_vec.y
+	)
+	s_a.target_rotation.x += cam_vec.z * (s_a.sensitivity * 250) * delta
+	s_a.target_rotation.y += cam_vec.x * (s_a.sensitivity * 250) * delta
+
+	# Clamp and wrap target values
+	s_a.target_rotation.x = clamp(s_a.target_rotation.x, -80.0, 30.0)
+	s_a.target_rotation.y = wrapf(s_a.target_rotation.y, -180.0, 180.0)
+	
+func _state_physics_process(delta : float) -> void:
+	# Declare variables
+	var hit_pos : Marker3D = s_a.get_node_or_null(\"hit_pos\")
+	var player : Player = get_tree().get_first_node_in_group(\"Player\") as Player
+
+	# Interpolate camera
+	camera.rotation.x = lerp_angle(camera.rotation.x, s_a.rotation.x, 0.25)
+	camera.rotation.y = lerp_angle(camera.rotation.y, s_a.rotation.y, 0.5)
+	camera.global_position = lerp(camera.global_position, hit_pos.global_position, 0.3)
+	
+	# Interpolate spring_arm rotation to target
+	s_a.rotation.x = lerp_angle(s_a.rotation.x, deg_to_rad(s_a.target_rotation.x), 0.5)
+	s_a.rotation.y = lerp_angle(s_a.rotation.y, deg_to_rad(s_a.target_rotation.y), 0.5)
+	
+	# Interpolate zoom
+	camera.fov = lerpf(camera.fov, 65 - (20 * zoom), 0.05)
+	
+	# Set p_delta
+	p_delta = delta
+
+func _state_unhandled_input(event: InputEvent) -> void:
+	# Check for mouse movement
+	if event is InputEventMouseMotion:
+		# Rotate camera directly
+		s_a.target_rotation.x -= (event.relative.y) * (s_a.sensitivity * 8) * p_delta
+		s_a.target_rotation.y += (-event.relative.x) * (s_a.sensitivity * 8) * p_delta
+		
+		# Clamp and wrap target values
+		s_a.target_rotation.x = clamp(s_a.target_rotation.x, -80.0, 30.0)
+		s_a.target_rotation.y = wrapf(s_a.target_rotation.y, -180.0, 180.0)
+	
+	# Check for zoom in
+	if event.is_action_pressed(\"camera_in\"):
+		if zoom < 2:
+			s_a.get_node(\"sfx/zoom\").play()
+		zoom = min(zoom + 1, 2)
+		ui_m.update_cam_overlay(1 + (0.5 * zoom))
+	if event.is_action_pressed(\"camera_out\"):
+		if zoom > 0:
+			s_a.get_node(\"sfx/zoom\").play()
+		zoom = max(zoom - 1, 0)
+		ui_m.update_cam_overlay(1 + (0.5 * zoom))
+
+func _exit() -> void:
+	# Tween spring length
+	var tw := create_tween()
+	tw.set_trans(Tween.TRANS_SINE)
+	tw.set_ease(Tween.EASE_OUT)
+	tw.tween_property(s_a, \"spring_length\", s_a.target_length, 0.5)
+	tw.play()
+	
+	# Reset some stuff
+	camera.set_cull_mask_value(2, true)
+	camera.set_cull_mask_value(5, false)
+	ui_m.toggle_visibility(true)
+	ui_m.toggle_cam_overlay(false)
+"
+
+[sub_resource type="GDScript" id="6"]
+resource_name = "cam_debug"
+script/source = "# cam_debug.gd
+extends State
+
+'''
+Camera => Debug state
+'''
+
+const NORMAL_SPEED = 50.0
+const FAST_SPEED = 200.0
+
+@onready var s_a := owner as PCam_SpringArm
+@onready var camera := $debug_cam
+var p_delta : float = 0.0
+var target_rotation : Vector3
+var target_speed = NORMAL_SPEED
+
+func _enter(_msg := {}) -> void:
+	# Process state machine
+	s_a.process_mode = Node.PROCESS_MODE_ALWAYS
+	
+	# Disable level 
+	var lm = get_tree().get_first_node_in_group(\"LevelManager\") as LevelManager
+	var level = lm.level
+	level.process_mode = PROCESS_MODE_DISABLED
+	
+	# Toggle UI
+	var uim = get_tree().get_first_node_in_group(\"UIManager\") as UIManager
+	uim.toggle_visibility(false)
+	
+	# Set camera
+	camera.global_transform = get_tree().root.get_camera_3d().global_transform
+	camera.make_current()
+
+func _state_process(delta : float) -> void:
+	# Check for manual input
+	var input_vec : Vector2 = Input.get_vector(
+		\"camera_left\",
+		\"camera_right\",
+		\"camera_down\",
+		\"camera_up\"
+	)
+	var move_vec : Vector2 = Input.get_vector(
+		\"left\",
+		\"right\",
+		\"down\",
+		\"up\"
+	)
+	var move_y : float = Input.get_axis(
+		\"crouch\",
+		\"jump\"
+	)
+	
+	
+	# Calculate movement
+	var tar_move = Vector3(move_vec.x, move_y, -move_vec.y)
+	camera.get_camera_projection()
+	tar_move = tar_move.normalized() * (target_speed * delta)
+	camera.translate_object_local(tar_move)
+	
+	# Calculate target values
+	var cam_vec : Vector3 = Vector3(
+		-input_vec.x if s_a.invert_x else input_vec.x, 
+		0, 
+		-input_vec.y if s_a.invert_y else input_vec.y
+	)
+	target_rotation.x += cam_vec.z * (s_a.sensitivity * 250) * delta
+	target_rotation.y += cam_vec.x * (s_a.sensitivity * 250) * delta
+
+	# Clamp and wrap target values
+	target_rotation.x = clamp(target_rotation.x, -80.0, 80.0)
+	target_rotation.y = wrapf(target_rotation.y, -180.0, 180.0)
+	
+func _state_physics_process(delta : float) -> void:
+	# Declare variables
+	var hit_pos : Marker3D = s_a.get_node_or_null(\"hit_pos\")
+	var player : Player = get_tree().get_first_node_in_group(\"Player\") as Player
+
+	# Interpolate camera
+	camera.rotation.x = lerp_angle(camera.rotation.x, deg_to_rad(target_rotation.x), 0.1)
+	camera.rotation.y = lerp_angle(camera.rotation.y, deg_to_rad(target_rotation.y), 0.15)
+	
+	# Interpolate FOV based on player speed
+	var target_fov : float = abs(player.velocity.length() / 30.0)
+	camera.fov = lerpf(
+		camera.fov,
+		65.0 + min(target_fov, 25.0),
+		0.05
+	)
+	
+	# Set p_delta
+	p_delta = delta
+
+func _state_unhandled_input(event: InputEvent) -> void:
+	# Check for mouse movement
+	if event is InputEventMouseMotion:
+		# Rotate camera directly
+		target_rotation.x -= (event.relative.y) * (s_a.sensitivity * 6) * p_delta
+		target_rotation.y -= (event.relative.x) * (s_a.sensitivity * 6) * p_delta
+		
+		# Clamp and wrap target values
+		target_rotation.x = clamp(target_rotation.x, -80.0, 80.0)
+		target_rotation.y = wrapf(target_rotation.y, -180.0, 180.0)
+	
+	# Check for keyboard
+	if event is InputEventKey:
+		match event.keycode:
+			KEY_CTRL:
+				if event.is_pressed():
+					target_speed = FAST_SPEED
+					return
+				target_speed = NORMAL_SPEED
+		
+		
+func _exit() -> void:
+	# Process state machine
+	s_a.process_mode = Node.PROCESS_MODE_INHERIT
+	
+	# Enable level 
+	var lm = get_tree().get_first_node_in_group(\"LevelManager\") as LevelManager
+	var level = lm.level
+	level.process_mode = PROCESS_MODE_PAUSABLE
+	
+	# Toggle UI
+	var uim = get_tree().get_first_node_in_group(\"UIManager\") as UIManager
+	uim.toggle_visibility(true)
+	
+	# Revert camera
+	s_a.get_node(\"f_cam/player_cam\").make_current()
+"
+
+[node name="spring_arm" type="SpringArm3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+spring_length = 24.0
+margin = 0.5
+script = ExtResource( "1" )
+
+[node name="hit_pos" type="Marker3D" parent="."]
+
+[node name="f_cam" type="Node" parent="."]
+
+[node name="player_cam" type="Camera3D" parent="f_cam"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.6, 18)
+top_level = true
+cull_mask = 1048559
+doppler_tracking = 2
+current = true
+fov = 65.0
+
+[node name="cam_body" type="Area3D" parent="f_cam/player_cam"]
+collision_layer = 0
+collision_mask = 8
+monitorable = false
+
+[node name="col" type="CollisionShape3D" parent="f_cam/player_cam/cam_body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.360001)
+shape = SubResource( "1" )
+
+[node name="state_machine" type="Node" parent="."]
+script = ExtResource( "2" )
+initial_state = NodePath("manual_analog")
+
+[node name="none" type="Node" parent="state_machine"]
+script = SubResource( "2" )
+
+[node name="follow" type="Node" parent="state_machine"]
+script = ExtResource( "3" )
+
+[node name="fixed" type="Node" parent="state_machine"]
+script = SubResource( "3" )
+
+[node name="look_at_node" type="Node3D" parent="state_machine/fixed"]
+
+[node name="manual_analog" type="Node" parent="state_machine"]
+script = SubResource( "4" )
+
+[node name="manual_8dir" type="Node" parent="state_machine"]
+script = ExtResource( "3" )
+
+[node name="manual_fps" type="Node" parent="state_machine"]
+script = SubResource( "5" )
+
+[node name="debug" type="Node" parent="state_machine"]
+script = SubResource( "6" )
+
+[node name="debug_cam" type="Camera3D" parent="state_machine/debug"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.6, 18)
+top_level = true
+doppler_tracking = 2
+current = true
+fov = 65.0
+
+[node name="sfx" type="Node" parent="."]
+
+[node name="zoom" type="AudioStreamPlayer" parent="sfx"]
+stream = ExtResource( "4" )
+bus = &"Sound"
+
+[node name="snapshot" type="AudioStreamPlayer" parent="sfx"]
+stream = ExtResource( "5" )
+bus = &"Sound"

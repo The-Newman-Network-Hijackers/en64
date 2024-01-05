@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ShardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_prop.gd" id="1"]
+
+[resource]
+script = ExtResource( "1" )
+shard_name = "One Shelf Too High"
+shard_location = "History Channel (Tower)"
+shard_description = "This lonely Shard, lost in obscurity, awaits greedy explorers!"
+shard_hint = "While the caged mushroom may bounce you high, you're going to need to carry over something else that will bounce you higher!"

@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://asset/ui/title/logo_horizontal_ingame.blend.scn" id="1"]
+
+[sub_resource type="Environment" id="1"]
+background_mode = 1
+ambient_light_source = 2
+ambient_light_color = Color(0.607843, 0.607843, 0.607843, 1)
+ambient_light_energy = 0.2
+reflected_light_source = 1
+ssao_intensity = 4.55
+ssao_power = 1e-05
+ssao_detail = 5.0
+ssao_horizon = 0.0
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 1.06
+glow_strength = 0.69
+glow_bloom = 0.26
+glow_blend_mode = 1
+glow_map_strength = 0.7
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 0.2463
+fog_sky_affect = 0.0
+volumetric_fog_density = 0.1157
+volumetric_fog_albedo = Color(0, 0, 0, 1)
+script = null
+
+[node name="logo" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.643878, -0.661219, 0.384982, 0.321284, 0.690303, 0.648274, -0.694405, -0.29372, 0.65691, 0, 0, 0)
+
+[node name="DirectionalLight3D_2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.643878, -0.661219, 0.384982, 0.719764, 0.352767, -0.597909, 0.25954, 0.662076, 0.70306, 0, 0, 0)
+light_energy = 0.5
+
+[node name="world_environment" type="WorldEnvironment" parent="."]
+environment = SubResource( "1" )
+
+[node name="logo_horizontal_ingame" parent="." instance=ExtResource( "1" )]
+
+[node name="newman_network" parent="logo_horizontal_ingame" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, -1.13432, 0.965498, 0)
+
+[node name="arm_ball" parent="logo_horizontal_ingame" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0851, 1, 0)
+
+[node name="Skeleton3D" parent="logo_horizontal_ingame/arm_ball" index="0"]
+bones/0/position = Vector3(0, 5, 0)
+bones/0/scale = Vector3(0.9, 1.3, 1)
+bones/1/position = Vector3(0, 6, 0)
+
+[node name="Camera" parent="logo_horizontal_ingame" index="3"]
+size = 5.65
+
+[node name="AnimationPlayer" parent="logo_horizontal_ingame" index="4"]
+autoplay = "intro"
+
+[editable path="logo_horizontal_ingame"]

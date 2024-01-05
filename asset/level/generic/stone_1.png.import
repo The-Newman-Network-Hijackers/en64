@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dv8rle3anu06t"
+path.s3tc="res://.godot/imported/stone_1.png-febff629a25e570ed26af7d5a0f71bb0.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/stone_1.png"
+dest_files=PackedStringArray("res://.godot/imported/stone_1.png-febff629a25e570ed26af7d5a0f71bb0.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

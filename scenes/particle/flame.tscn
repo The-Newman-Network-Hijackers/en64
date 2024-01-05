@@ -1,0 +1,95 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Material" uid="uid://b0rkcabokstao" path="res://asset/effect/dust/mat/vtx_dust.tres" id="1"]
+[ext_resource type="Material" uid="uid://si17cugmnv0t" path="res://scenes/particle/ppm_flame1.tres" id="2"]
+[ext_resource type="AudioStream" uid="uid://bslbo8wh5qomk" path="res://audio/amb/amb_fire.wav" id="3"]
+[ext_resource type="Script" path="res://scripts/hitbox.gd" id="4"]
+
+[sub_resource type="QuadMesh" id="1"]
+size = Vector2(10, 10)
+script = null
+
+[sub_resource type="Animation" id="2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("light:omni_range")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [35.0]
+}
+script = null
+
+[sub_resource type="Animation" id="3"]
+resource_name = "light"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("light:omni_range")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [35.0, 31.0, 37.0, 35.0, 33.0, 35.0, 31.0, 37.0, 31.0, 35.0, 35.0]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="4"]
+_data = {
+"RESET": SubResource( "2" ),
+"light": SubResource( "3" )
+}
+script = null
+
+[sub_resource type="SphereShape3D" id="5"]
+radius = 3.49215
+script = null
+
+[node name="flame" type="Node3D"]
+
+[node name="particle" type="GPUParticles3D" parent="."]
+material_override = ExtResource( "1" )
+lifetime = 0.8
+preprocess = 1.0
+process_material = ExtResource( "2" )
+draw_pass_1 = SubResource( "1" )
+
+[node name="light" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+light_color = Color(0.945098, 0.490196, 0.0588235, 1)
+omni_range = 35.0
+omni_attenuation = 0.105112
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource( "4" )
+}
+autoplay = "light"
+speed_scale = 0.5
+
+[node name="ambiance" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( "3" )
+attenuation_model = 3
+volume_db = -4.0
+unit_size = 80.0
+max_db = 0.0
+autoplay = true
+max_distance = 100.0
+bus = &"Ambiance"
+
+[node name="hitbox" type="Area3D" parent="."]
+script = ExtResource( "4" )
+damage = 2
+tag = "fire"
+
+[node name="collision_shape_3d" type="CollisionShape3D" parent="hitbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.27279, 0)
+shape = SubResource( "5" )

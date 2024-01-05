@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://eivs3kwkrwom"
+path="res://.godot/imported/ui_click.wav-6822f1c51fb857a25faeb9068f7692f4.sample"
+
+[deps]
+
+source_file="res://audio/sfx/ui_click.wav"
+dest_files=PackedStringArray("res://.godot/imported/ui_click.wav-6822f1c51fb857a25faeb9068f7692f4.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

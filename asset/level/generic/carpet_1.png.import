@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://6t2h8muoti0d"
+path.s3tc="res://.godot/imported/carpet_1.png-4bfab6e581300f879bc1a5a4b6d9f1b4.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/carpet_1.png"
+dest_files=PackedStringArray("res://.godot/imported/carpet_1.png-4bfab6e581300f879bc1a5a4b6d9f1b4.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

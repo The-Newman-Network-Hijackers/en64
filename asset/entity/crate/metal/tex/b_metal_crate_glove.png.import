@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ctedxdhagjleu"
+path="res://.godot/imported/b_metal_crate_glove.png-a795762acc4b7b552ee53f8b9e139de0.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/entity/crate/metal/tex/b_metal_crate_glove.png"
+dest_files=PackedStringArray("res://.godot/imported/b_metal_crate_glove.png-a795762acc4b7b552ee53f8b9e139de0.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

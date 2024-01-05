@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://blx8k1usby3e4"
+path="res://.godot/imported/water_emerge_1.wav-aae2de929d7c08ac22524a7f4b051a5c.sample"
+
+[deps]
+
+source_file="res://audio/sfx/water_emerge_1.wav"
+dest_files=PackedStringArray("res://.godot/imported/water_emerge_1.wav-aae2de929d7c08ac22524a7f4b051a5c.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

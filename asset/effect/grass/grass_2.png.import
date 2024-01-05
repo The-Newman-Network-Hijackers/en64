@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ihacfktwnhj"
+path.s3tc="res://.godot/imported/grass_2.png-f2104cb05a80833d7a5722c496f63372.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/grass/grass_2.png"
+dest_files=PackedStringArray("res://.godot/imported/grass_2.png-f2104cb05a80833d7a5722c496f63372.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

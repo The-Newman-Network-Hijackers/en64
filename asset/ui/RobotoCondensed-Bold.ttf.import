@@ -1,0 +1,15 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://bp8vxpvktfdkj"
+path="res://.godot/imported/RobotoCondensed-Bold.ttf-0ed79306523c30398e008c145d53035e.fontdata"
+
+[deps]
+
+source_file="res://asset/ui/RobotoCondensed-Bold.ttf"
+dest_files=PackedStringArray("res://.godot/imported/RobotoCondensed-Bold.ttf-0ed79306523c30398e008c145d53035e.fontdata")
+
+[params]
+
+dummy_value_ignore_me=0

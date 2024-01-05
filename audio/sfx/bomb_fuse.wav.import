@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bcy15eovkrtad"
+path="res://.godot/imported/bomb_fuse.wav-957328d5aa0785c616c8a79c3d9da558.sample"
+
+[deps]
+
+source_file="res://audio/sfx/bomb_fuse.wav"
+dest_files=PackedStringArray("res://.godot/imported/bomb_fuse.wav-957328d5aa0785c616c8a79c3d9da558.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

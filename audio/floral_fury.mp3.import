@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ta7fucycokhn"
+path="res://.godot/imported/floral_fury.mp3-563f0c27d482aef66f54f039f0326873.mp3str"
+
+[deps]
+
+source_file="res://audio/floral_fury.mp3"
+dest_files=PackedStringArray("res://.godot/imported/floral_fury.mp3-563f0c27d482aef66f54f039f0326873.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://co2ex8tv84s17"
+path.s3tc="res://.godot/imported/shallow_1.png-829c6fa4499b1508d8c8436a914f3283.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/water/shallow_1.png"
+dest_files=PackedStringArray("res://.godot/imported/shallow_1.png-829c6fa4499b1508d8c8436a914f3283.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d21ce52g0tk73"
+path="res://.godot/imported/ray.png-f9be99301c7028afc8f8b9a3976f719f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/ray/ray.png"
+dest_files=PackedStringArray("res://.godot/imported/ray.png-f9be99301c7028afc8f8b9a3976f719f.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

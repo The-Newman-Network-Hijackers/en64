@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://5oof568aa1rl"
+path="res://.godot/imported/equipped.png-fe16321eedc7e3ee5e4e8aea00df4307.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/equip/equipped.png"
+dest_files=PackedStringArray("res://.godot/imported/equipped.png-fe16321eedc7e3ee5e4e8aea00df4307.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

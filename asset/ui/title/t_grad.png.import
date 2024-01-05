@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dgavvrlt5dqh0"
+path.s3tc="res://.godot/imported/t_grad.png-85ba062e23cd344737607a6ac79e7c29.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/ui/title/t_grad.png"
+dest_files=PackedStringArray("res://.godot/imported/t_grad.png-85ba062e23cd344737607a6ac79e7c29.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

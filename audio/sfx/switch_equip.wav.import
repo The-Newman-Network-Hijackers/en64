@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7bum77o5tc65"
+path="res://.godot/imported/switch_equip.wav-7fd6b886383ddbe9628a0086ca23269d.sample"
+
+[deps]
+
+source_file="res://audio/sfx/switch_equip.wav"
+dest_files=PackedStringArray("res://.godot/imported/switch_equip.wav-7fd6b886383ddbe9628a0086ca23269d.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

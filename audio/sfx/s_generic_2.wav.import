@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bybjoym6kcytk"
+path="res://.godot/imported/s_generic_2.wav-8f03938b435596204c5e191231522ae8.sample"
+
+[deps]
+
+source_file="res://audio/sfx/s_generic_2.wav"
+dest_files=PackedStringArray("res://.godot/imported/s_generic_2.wav-8f03938b435596204c5e191231522ae8.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

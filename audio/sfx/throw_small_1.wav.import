@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://w20k3kvqphns"
+path="res://.godot/imported/throw_small_1.wav-2967ba2aa821672eb7b3fb51f206e0c6.sample"
+
+[deps]
+
+source_file="res://audio/sfx/throw_small_1.wav"
+dest_files=PackedStringArray("res://.godot/imported/throw_small_1.wav-2967ba2aa821672eb7b3fb51f206e0c6.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

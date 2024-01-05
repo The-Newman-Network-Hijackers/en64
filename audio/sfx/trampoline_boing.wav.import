@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cur8iqy12pueh"
+path="res://.godot/imported/trampoline_boing.wav-5a670d24d4de6413d06521d916415d1b.sample"
+
+[deps]
+
+source_file="res://audio/sfx/trampoline_boing.wav"
+dest_files=PackedStringArray("res://.godot/imported/trampoline_boing.wav-5a670d24d4de6413d06521d916415d1b.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

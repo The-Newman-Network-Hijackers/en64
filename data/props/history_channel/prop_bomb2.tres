@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ShardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_prop.gd" id="1"]
+
+[resource]
+script = ExtResource( "1" )
+shard_name = "Demolition Job (#2)"
+shard_location = "History Channel (Tower)"
+shard_description = "And they said it would've been an easy job... Never the less, this Shard is very thankful!"
+shard_hint = "Use something with a lot of power to break open a cracked wall within the great Ruins Tower."

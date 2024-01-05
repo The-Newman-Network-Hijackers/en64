@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cjmscx1qlp2on"
+path="res://.godot/imported/clink2.wav-bfe14fbfcd89afae65ebc73ed05dd902.sample"
+
+[deps]
+
+source_file="res://audio/sfx/clink2.wav"
+dest_files=PackedStringArray("res://.godot/imported/clink2.wav-bfe14fbfcd89afae65ebc73ed05dd902.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

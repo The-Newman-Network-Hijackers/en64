@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://msqel4tvwcj6"
+path="res://.godot/imported/gate_close.wav-89dc966eb32f0cea4fc0a0fee1047a6c.sample"
+
+[deps]
+
+source_file="res://audio/sfx/gate_close.wav"
+dest_files=PackedStringArray("res://.godot/imported/gate_close.wav-89dc966eb32f0cea4fc0a0fee1047a6c.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

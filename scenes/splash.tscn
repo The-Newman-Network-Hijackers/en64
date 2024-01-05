@@ -1,0 +1,259 @@
+[gd_scene load_steps=20 format=3]
+
+[ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/subarea.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/res_music_stem.gd" id="4"]
+[ext_resource type="AudioStream" uid="uid://b4eawqq8osr4j" path="res://audio/amb/amb_drone.mp3" id="5"]
+[ext_resource type="Script" path="res://scripts/splash_manager.gd" id="6"]
+[ext_resource type="PackedScene" path="res://asset/ui/splash/scroll.blend.scn" id="7"]
+[ext_resource type="Texture2D" uid="uid://b4ig8y7v603oe" path="res://asset/ui/credits/fpd.png" id="8"]
+[ext_resource type="Theme" uid="uid://botsw3j2gbsx" path="res://asset/ui/generic_ui_theme.tres" id="9"]
+[ext_resource type="Script" path="res://scripts/event_tree.gd" id="10"]
+[ext_resource type="Script" path="res://scripts/event_warp.gd" id="11"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource( "2" )
+level_name = "SPLASH"
+level_desc = "SPLASH SCREEN"
+is_menu = true
+flags = {}
+
+[sub_resource type="Resource" id="2"]
+script = ExtResource( "4" )
+stream = ExtResource( "5" )
+tag = ""
+category = 0
+always_restart = false
+pitch = 1.0
+volume = -4.0
+fade = Vector2(0, 2)
+channel = 1
+
+[sub_resource type="Environment" id="3"]
+background_mode = 1
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+script = null
+
+[sub_resource type="World3D" id="4"]
+environment = SubResource( "3" )
+script = null
+
+[sub_resource type="LabelSettings" id="5"]
+shadow_color = Color(0, 0, 0, 0.501961)
+shadow_offset = Vector2(2, 2)
+script = null
+
+[sub_resource type="Animation" id="6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("splash_manager/center/logo:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("splash_manager/center/logo:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+script = null
+
+[sub_resource type="Animation" id="7"]
+resource_name = "splash"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("splash_manager/center/logo:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 2),
+"transitions": PackedFloat32Array(0, 0.435275, 0.5, 1),
+"update": 0,
+"values": [Vector2(3, 3), Vector2(3, 3), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("splash_manager/center/logo:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6, 1, 4, 4.5),
+"transitions": PackedFloat32Array(0, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="8"]
+_data = {
+"RESET": SubResource( "6" ),
+"splash": SubResource( "7" )
+}
+script = null
+
+[node name="splash" type="Node"]
+script = ExtResource( "1" )
+data = SubResource( "1" )
+subareas = [NodePath("0")]
+
+[node name="0" type="Node3D" parent="."]
+script = ExtResource( "3" )
+music = [SubResource( "2" )]
+
+[node name="splash_manager" type="Node" parent="0"]
+script = ExtResource( "6" )
+
+[node name="color_rect" type="SubViewportContainer" parent="0/splash_manager"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="viewport" type="SubViewport" parent="0/splash_manager/color_rect"]
+world_3d = SubResource( "4" )
+handle_input_locally = false
+size = Vector2i(640, 480)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="scroll" parent="0/splash_manager/color_rect/viewport" instance=ExtResource( "7" )]
+
+[node name="Camera" parent="0/splash_manager/color_rect/viewport/scroll" index="0"]
+size = 6.088
+
+[node name="center" type="Control" parent="0/splash_manager"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="logo" type="TextureRect" parent="0/splash_manager/center"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -307.0
+offset_top = -166.0
+offset_right = 307.0
+offset_bottom = 149.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(307, 166)
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture = ExtResource( "8" )
+expand_mode = 5
+stretch_mode = 5
+
+[node name="popup" type="Window" parent="0/splash_manager"]
+title = "Forewarning"
+initial_position = 1
+size = Vector2i(513, 175)
+visible = false
+transient = true
+exclusive = true
+unresizable = true
+theme = ExtResource( "9" )
+theme_override_constants/title_outline_size = 0
+theme_override_constants/title_height = 32
+theme_override_font_sizes/title_font_size = 18
+
+[node name="margin_container" type="MarginContainer" parent="0/splash_manager/popup"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="sort" type="VBoxContainer" parent="0/splash_manager/popup/margin_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="desc" type="Label" parent="0/splash_manager/popup/margin_container/sort"]
+layout_mode = 2
+text = "The following demo is an excerpt of a largely unfinished alpha build of Newman Network: Channel 64. While we at Future Primitive have made an attempt to make this experience as smooth as possible, please expect bugs and various shortcomings to potentially get in the way of gameplay.
+No content depicted here is finalized. 
+"
+label_settings = SubResource( "5" )
+autowrap_mode = 3
+
+[node name="sort" type="HBoxContainer" parent="0/splash_manager/popup/margin_container/sort"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="do_not_show" type="CheckBox" parent="0/splash_manager/popup/margin_container/sort/sort"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 10
+theme = ExtResource( "9" )
+theme_override_constants/h_separation = 8
+text = "Dont show this again "
+
+[node name="ok" type="Button" parent="0/splash_manager/popup/margin_container/sort/sort"]
+layout_mode = 2
+size_flags_horizontal = 10
+text = " I understand "
+
+[node name="anim" type="AnimationPlayer" parent="0/splash_manager"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource( "8" )
+}
+autoplay = "splash"
+
+[node name="demo_warp" type="Node" parent="0/splash_manager"]
+script = ExtResource( "10" )
+
+[node name="event_warp" type="Node" parent="0/splash_manager/demo_warp"]
+script = ExtResource( "11" )
+target_scene = "res://scenes/menu/demo_menu.tscn"
+fade_length = 0.8
+fade_delay = 0.5
+
+[node name="default_warp" type="Node" parent="0/splash_manager"]
+script = ExtResource( "10" )
+
+[node name="event_warp" type="Node" parent="0/splash_manager/default_warp"]
+script = ExtResource( "11" )
+target_scene = "res://scenes/menu/main_menu.tscn"
+fade_length = 0.8
+fade_delay = 0.5
+
+[connection signal="toggled" from="0/splash_manager/popup/margin_container/sort/sort/do_not_show" to="0/splash_manager" method="do_not_show_ticked"]
+[connection signal="pressed" from="0/splash_manager/popup/margin_container/sort/sort/ok" to="0/splash_manager" method="ok_pressed"]
+[connection signal="animation_finished" from="0/splash_manager/anim" to="0/splash_manager" method="_animation_finished"]
+
+[editable path="0/splash_manager/color_rect/viewport/scroll"]

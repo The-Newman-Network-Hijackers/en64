@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://lxv7kwvy176r"
+path="res://.godot/imported/T_Cursor_Key_Dark.png-b34bf62f1d8b7bd67836fbcc1f444247.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_Cursor_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_Cursor_Key_Dark.png-b34bf62f1d8b7bd67836fbcc1f444247.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

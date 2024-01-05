@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dkc85vqwm5rgt"
+path="res://.godot/imported/T_Mouse_Simple_Key_Dark.png-7a1e130aa31709f2011b444c4e0b6615.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_Mouse_Simple_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_Mouse_Simple_Key_Dark.png-7a1e130aa31709f2011b444c4e0b6615.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

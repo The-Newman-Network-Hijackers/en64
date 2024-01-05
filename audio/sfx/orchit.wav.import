@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bfuohqqjklk26"
+path="res://.godot/imported/orchit.wav-27dee640612c41d4fba1ae670fb9a3ae.sample"
+
+[deps]
+
+source_file="res://audio/sfx/orchit.wav"
+dest_files=PackedStringArray("res://.godot/imported/orchit.wav-27dee640612c41d4fba1ae670fb9a3ae.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

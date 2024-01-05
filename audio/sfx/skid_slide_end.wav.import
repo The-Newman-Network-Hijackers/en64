@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://be2v28y32lxd8"
+path="res://.godot/imported/skid_slide_end.wav-bf02deb11b347b78cbf623f47de45609.sample"
+
+[deps]
+
+source_file="res://audio/sfx/skid_slide_end.wav"
+dest_files=PackedStringArray("res://.godot/imported/skid_slide_end.wav-bf02deb11b347b78cbf623f47de45609.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

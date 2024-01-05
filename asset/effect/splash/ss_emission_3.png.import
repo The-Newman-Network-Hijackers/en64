@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dflys507smdjv"
+path.s3tc="res://.godot/imported/ss_emission_3.png-d4b356a116a270e67b0070feb1eb73fd.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/splash/ss_emission_3.png"
+dest_files=PackedStringArray("res://.godot/imported/ss_emission_3.png-d4b356a116a270e67b0070feb1eb73fd.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

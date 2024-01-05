@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3]
+
+[sub_resource type="CompressedTexture2D" id="1"]
+load_path = "res://.godot/imported/checkerboard.png-b96f77de66070fe48dc4b437e50983de.s3tc.ctex"
+script = null
+
+[resource]
+diffuse_mode = 2
+albedo_color = Color(0.941176, 0, 0, 1)
+albedo_texture = SubResource( "1" )
+metallic_specular = 0.0
+uv1_scale = Vector3(0.05, 0, 0.05)
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 2
+script = null

@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dwngec41dc0k5"
+path.s3tc="res://.godot/imported/b_brick_1.png-66508493f16e2ac45a49335b9d4a6f31.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/b_brick_1.png"
+dest_files=PackedStringArray("res://.godot/imported/b_brick_1.png-66508493f16e2ac45a49335b9d4a6f31.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

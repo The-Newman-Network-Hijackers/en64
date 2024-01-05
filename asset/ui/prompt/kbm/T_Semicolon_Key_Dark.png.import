@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bkhcieqwo7qld"
+path="res://.godot/imported/T_Semicolon_Key_Dark.png-e790b14004c9d4cd86699bcf05a1f186.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_Semicolon_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_Semicolon_Key_Dark.png-e790b14004c9d4cd86699bcf05a1f186.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

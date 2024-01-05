@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ShardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_prop.gd" id="1"]
+
+[resource]
+script = ExtResource( "1" )
+shard_name = "In Memorial"
+shard_location = "History Channel (Ruins)"
+shard_description = "This Shard gazes upon the former fungal prince of the Ruins..."
+shard_hint = "Dont rush into the Tower too fast! Be vigilant and look around after pressing all the buttons!"

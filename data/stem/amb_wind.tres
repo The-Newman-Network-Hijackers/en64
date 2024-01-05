@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MusicStem" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_music_stem.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://bukgllupjvmvw" path="res://audio/amb/amb_wind.mp3" id="2"]
+
+[resource]
+script = ExtResource( "1" )
+stream = ExtResource( "2" )
+tag = ""
+category = 0
+always_restart = false
+pitch = 1.0
+volume = -2.0
+fade = Vector2(2, 4)
+channel = 1

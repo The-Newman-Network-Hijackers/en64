@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://qwpwlshdcwya"
+path.s3tc="res://.godot/imported/wood_crate_01.png-16a82ba60f0cca966fb5df049ce47b0b.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/entity/crate/wooden/tex/wood_crate_01.png"
+dest_files=PackedStringArray("res://.godot/imported/wood_crate_01.png-16a82ba60f0cca966fb5df049ce47b0b.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dkrhkfv1oxttv"
+path="res://.godot/imported/flower_2_f3.png-8a80fd6c23852bc02bf77801e44a5e59.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/grass/flower_2_f3.png"
+dest_files=PackedStringArray("res://.godot/imported/flower_2_f3.png-8a80fd6c23852bc02bf77801e44a5e59.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

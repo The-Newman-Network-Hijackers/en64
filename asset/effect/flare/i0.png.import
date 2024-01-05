@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cppns0hmaumn4"
+path.s3tc="res://.godot/imported/i0.png-6fb3f089b4e1e63d5062676261060f16.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/i0.png"
+dest_files=PackedStringArray("res://.godot/imported/i0.png-6fb3f089b4e1e63d5062676261060f16.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://uphebx4xhnxl"
+path="res://.godot/imported/T_Mouse_Scroll_Down_Key_Dark.png-6f3cc6170018f65bb8a3b1b4d19c36a3.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_Mouse_Scroll_Down_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_Mouse_Scroll_Down_Key_Dark.png-6f3cc6170018f65bb8a3b1b4d19c36a3.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bukgllupjvmvw"
+path="res://.godot/imported/amb_wind.mp3-6b838cae1035fbacbee6ba55c6e5e8bb.mp3str"
+
+[deps]
+
+source_file="res://audio/amb/amb_wind.mp3"
+dest_files=PackedStringArray("res://.godot/imported/amb_wind.mp3-6b838cae1035fbacbee6ba55c6e5e8bb.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

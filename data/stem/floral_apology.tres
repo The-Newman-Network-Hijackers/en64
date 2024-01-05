@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MusicStem" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_music_stem.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://cmr4fioefv0w2" path="res://audio/floral_apology.mp3" id="2"]
+
+[resource]
+script = ExtResource( "1" )
+stream = ExtResource( "2" )
+pitch = 1.0
+volume = 2.0
+fade = Vector2(2, 1)
+channel = 0
+category = 0

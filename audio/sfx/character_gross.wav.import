@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://i8yaqv0q3xpj"
+path="res://.godot/imported/character_gross.wav-34e6ead8cbf9d09e8fe1f44d52c778ce.sample"
+
+[deps]
+
+source_file="res://audio/sfx/character_gross.wav"
+dest_files=PackedStringArray("res://.godot/imported/character_gross.wav-34e6ead8cbf9d09e8fe1f44d52c778ce.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

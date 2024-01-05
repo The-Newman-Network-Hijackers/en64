@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cbolojuqvjeva"
+path="res://.godot/imported/WarpPoint.png-c136ea98ff8ae0a8db171e4790d6c55b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/editor/WarpPoint.png"
+dest_files=PackedStringArray("res://.godot/imported/WarpPoint.png-c136ea98ff8ae0a8db171e4790d6c55b.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

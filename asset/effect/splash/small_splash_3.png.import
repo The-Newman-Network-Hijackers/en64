@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b50dnw15n6rrk"
+path.s3tc="res://.godot/imported/small_splash_3.png-af65f146a99e4224a2caac02dee34251.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/splash/small_splash_3.png"
+dest_files=PackedStringArray("res://.godot/imported/small_splash_3.png-af65f146a99e4224a2caac02dee34251.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

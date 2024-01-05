@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://fichj4c6xb4m"
+path="res://.godot/imported/x6.png-72a4195eb658e7502bd5dd4e0332fbc7.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/x6.png"
+dest_files=PackedStringArray("res://.godot/imported/x6.png-72a4195eb658e7502bd5dd4e0332fbc7.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cf3dihcno8x3v"
+path="res://.godot/imported/material_5.png-6fb70d859a232ca79a2c6b0efe4ff9c9.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/level/flyingfort/textures/material_5.png"
+dest_files=PackedStringArray("res://.godot/imported/material_5.png-6fb70d859a232ca79a2c6b0efe4ff9c9.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

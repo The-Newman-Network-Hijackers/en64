@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cr7lyggxceh23"
+path.s3tc="res://.godot/imported/trampoline_eyes_neutral.png-2e18647ea99a1c7129b16a99d28b1788.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/entity/trampoline/trampoline_eyes_neutral.png"
+dest_files=PackedStringArray("res://.godot/imported/trampoline_eyes_neutral.png-2e18647ea99a1c7129b16a99d28b1788.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cha4d0p0m6yuv"
+path="res://.godot/imported/eyes_neutral.png-327d5026bddf48f264df48f68e9ad28d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/newman/eyes_neutral.png"
+dest_files=PackedStringArray("res://.godot/imported/eyes_neutral.png-327d5026bddf48f264df48f68e9ad28d.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

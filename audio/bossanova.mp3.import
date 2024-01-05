@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dlnbey287rrgn"
+path="res://.godot/imported/bossanova.mp3-dceee0d0f5d7a03c813c6a9500cb9b62.mp3str"
+
+[deps]
+
+source_file="res://audio/bossanova.mp3"
+dest_files=PackedStringArray("res://.godot/imported/bossanova.mp3-dceee0d0f5d7a03c813c6a9500cb9b62.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

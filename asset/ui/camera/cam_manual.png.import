@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://havkr42jrmki"
+path="res://.godot/imported/cam_manual.png-e823ea0c1c1581944742bb51e20f2f9f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/camera/cam_manual.png"
+dest_files=PackedStringArray("res://.godot/imported/cam_manual.png-e823ea0c1c1581944742bb51e20f2f9f.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

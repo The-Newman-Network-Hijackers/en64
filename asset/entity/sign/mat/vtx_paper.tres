@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://asset/shader/n64_flag.gdshader" id="1"]
+
+[resource]
+render_priority = 0
+next_pass = null
+shader = ExtResource( "1" )
+shader_parameter/speed = 2.0
+shader_parameter/frequency = Vector3(0.85, 1.295, 0.035)
+shader_parameter/amplitude = Vector3(0.75, 0.11, 0.11)
+shader_parameter/inclination = -0.04
+shader_parameter/tex = null
+script = null

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bkqtbntq52ft0"
+path="res://.godot/imported/tunelring.png-070e0fb13fe20927f0b6c939aef4c347.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/tunelring.png"
+dest_files=PackedStringArray("res://.godot/imported/tunelring.png-070e0fb13fe20927f0b6c939aef4c347.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

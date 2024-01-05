@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "vtx"
+cull_mode = 2
+shading_mode = 2
+diffuse_mode = 1
+vertex_color_use_as_albedo = true
+metallic_specular = 0.0
+script = null

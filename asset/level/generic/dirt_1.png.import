@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d10lxev7j4vuy"
+path.s3tc="res://.godot/imported/dirt_1.png-1e32072037240a51f8ecfa8ffea22246.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/dirt_1.png"
+dest_files=PackedStringArray("res://.godot/imported/dirt_1.png-1e32072037240a51f8ecfa8ffea22246.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

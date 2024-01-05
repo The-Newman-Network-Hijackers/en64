@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bb41ybd17nb53"
+path="res://.godot/imported/soda_heal.wav-8f0c7c7b6c379e3b5965c1877656ab08.sample"
+
+[deps]
+
+source_file="res://audio/sfx/soda_heal.wav"
+dest_files=PackedStringArray("res://.godot/imported/soda_heal.wav-8f0c7c7b6c379e3b5965c1877656ab08.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

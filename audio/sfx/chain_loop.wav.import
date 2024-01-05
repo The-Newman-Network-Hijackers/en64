@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://x13yn5oy8jax"
+path="res://.godot/imported/chain_loop.wav-3fd4a713ee8cf38830b055409389f7ac.sample"
+
+[deps]
+
+source_file="res://audio/sfx/chain_loop.wav"
+dest_files=PackedStringArray("res://.godot/imported/chain_loop.wav-3fd4a713ee8cf38830b055409389f7ac.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

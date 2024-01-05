@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://do3t4vs0rdreu"
+path="res://.godot/imported/painting1.png-83952e7f3f18a233bfec038dc8bbe391.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/level/history/tex/painting1.png"
+dest_files=PackedStringArray("res://.godot/imported/painting1.png-83952e7f3f18a233bfec038dc8bbe391.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

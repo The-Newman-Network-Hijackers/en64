@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MusicStem" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_music_stem.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://b2jkkffobn1fl" path="res://audio/stem/ruin/ruins_bass.mp3" id="2"]
+
+[resource]
+script = ExtResource( "1" )
+stream = ExtResource( "2" )
+tag = "ruins"
+category = 2
+always_restart = false
+pitch = 1.0
+volume = -4.0
+fade = Vector2(1, 0.25)
+channel = 0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dqmm4swstodxf"
+path.s3tc="res://.godot/imported/pollen.png-44538943d9a68f1508d0d8d8d6d2448a.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/pollen.png"
+dest_files=PackedStringArray("res://.godot/imported/pollen.png-44538943d9a68f1508d0d8d8d6d2448a.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

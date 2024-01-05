@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="AccessoryData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/res_accessory.gd" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://bay6h60itxkrg" path="res://asset/accessory/body/mesh/suit.res" id="2"]
+[ext_resource type="Material" uid="uid://4gqj30h7vwqw" path="res://asset/accessory/mat/vtx_acc_primary.tres" id="3"]
+[ext_resource type="Material" uid="uid://bxip48jxv17qq" path="res://asset/accessory/mat/vtx_acc_secondary.tres" id="4"]
+[ext_resource type="Texture2D" uid="uid://bxxmp63gru0es" path="res://asset/accessory/body/icon/suit.png" id="5"]
+
+[resource]
+script = ExtResource( "1" )
+type = 4
+model = ExtResource( "2" )
+offset = Vector3(0, 0, 0)
+primary_material = ExtResource( "3" )
+primary_surface = 1
+secondary_material = ExtResource( "4" )
+secondary_surface = 2
+name = "Suit"
+description = "Lets get down to business!"
+icon = ExtResource( "5" )
+icon_modulation = Color(1, 1, 1, 1)

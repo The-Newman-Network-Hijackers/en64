@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://jve5h47tba7g"
+path="res://.godot/imported/f_crate_0001.png-f55f2005cfe1c920fbd0ae1a0bd83bab.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/debris/tex/f_crate/f_crate_0001.png"
+dest_files=PackedStringArray("res://.godot/imported/f_crate_0001.png-f55f2005cfe1c920fbd0ae1a0bd83bab.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

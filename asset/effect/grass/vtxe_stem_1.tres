@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://asset/shader/n64_decor_wave.gdshader" id="1"]
+[ext_resource type="Texture2D" uid="uid://ct4sdx4ok46gx" path="res://asset/effect/grass/stem_1.png" id="2"]
+
+[resource]
+render_priority = 0
+next_pass = null
+shader = ExtResource( "1" )
+shader_parameter/modulate_color = Color(1, 1, 1, 1)
+shader_parameter/uv_scale = Vector2(0.985, 0.985)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/wind_strength = 0.64
+shader_parameter/wind_speed = 1.5
+shader_parameter/billboard = false
+shader_parameter/y_billboard = true
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/albedoTex = ExtResource( "2" )
+script = null

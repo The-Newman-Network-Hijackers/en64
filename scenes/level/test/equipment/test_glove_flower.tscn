@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://b5s8ia7ebx0dl" path="res://scenes/level/test/equipment/area0_test_glove_flower.tscn" id="3"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource( "2" )
+level_name = "test_glove_flower"
+level_desc = "Flower Prince fight testing"
+is_menu = false
+flags = {}
+
+[node name="test_glove_flower" type="Node"]
+script = ExtResource( "1" )
+data = SubResource( "1" )
+subareas = [NodePath("0")]
+
+[node name="0" parent="." instance=ExtResource( "3" )]

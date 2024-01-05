@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvo3h0vb704yi"
+path="res://.godot/imported/station_piano.mp3-77e34d6ab83ac5214c9c4e647f08e8e7.mp3str"
+
+[deps]
+
+source_file="res://audio/station_piano.mp3"
+dest_files=PackedStringArray("res://.godot/imported/station_piano.mp3-77e34d6ab83ac5214c9c4e647f08e8e7.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

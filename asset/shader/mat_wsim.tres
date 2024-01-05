@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://asset/shader/water_sim.gdshader" id="1"]
+
+[resource]
+resource_local_to_scene = true
+render_priority = 0
+next_pass = null
+shader = ExtResource( "1" )
+shader_parameter/out_color = Color(0, 0.2, 1, 1)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/amount = 0.8
+shader_parameter/speed = 1.0
+shader_parameter/metallic = 0.6
+shader_parameter/specular = 0.5
+shader_parameter/roughness = 0.2
+shader_parameter/albedo_texture = null
+script = null

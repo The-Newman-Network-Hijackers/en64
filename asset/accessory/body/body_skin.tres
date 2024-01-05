@@ -1,0 +1,30 @@
+[gd_resource type="Skin" format=3]
+
+[resource]
+resource_name = "Skin"
+bind_count = 8
+bind/0/name = &"root"
+bind/0/bone = -1
+bind/0/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+bind/1/name = &"waist"
+bind/1/bone = -1
+bind/1/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+bind/2/name = &"torso"
+bind/2/bone = -1
+bind/2/pose = Transform3D(1, 0, -2.38419e-07, 0, 1, 0, 2.38419e-07, 0, 1, 0, -1.7, 0)
+bind/3/name = &"r.hand"
+bind/3/bone = -1
+bind/3/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.84217e-14, -1.5, -2)
+bind/4/name = &"head"
+bind/4/bone = -1
+bind/4/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.4, 0)
+bind/5/name = &"l.hand"
+bind/5/bone = -1
+bind/5/pose = Transform3D(1, 3.54356e-14, 1.38822e-14, -3.51715e-14, 0.999957, -0.00929226, -1.45383e-14, 0.00929226, 0.999957, -5.38108e-14, -1.51852, 1.98598)
+bind/6/name = &"foot.r"
+bind/6/bone = -1
+bind/6/pose = Transform3D(-4.96705e-08, -1, 1.25168e-07, 1, -1.19209e-07, 8.70406e-15, 6.21718e-15, 1.25168e-07, 1, -7.51011e-08, -5.22243e-15, -0.6)
+bind/7/name = &"foot.l"
+bind/7/bone = -1
+bind/7/pose = Transform3D(-4.96705e-08, -1, 1.25168e-07, 1, -1.19209e-07, 8.70406e-15, 6.21718e-15, 1.25168e-07, 1, 7.51011e-08, 5.22243e-15, 0.6)
+script = null

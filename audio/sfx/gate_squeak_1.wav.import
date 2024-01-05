@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://21fxncc26w3k"
+path="res://.godot/imported/gate_squeak_1.wav-c0d624264a8d3ea64ed971f08aecb961.sample"
+
+[deps]
+
+source_file="res://audio/sfx/gate_squeak_1.wav"
+dest_files=PackedStringArray("res://.godot/imported/gate_squeak_1.wav-c0d624264a8d3ea64ed971f08aecb961.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ogjhla55w4ve"
+path.s3tc="res://.godot/imported/f_jack0028.png-dca856df3d5ba6a8524aa0a4be0eeabd.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/jack/sprite/f_jack0028.png"
+dest_files=PackedStringArray("res://.godot/imported/f_jack0028.png-dca856df3d5ba6a8524aa0a4be0eeabd.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

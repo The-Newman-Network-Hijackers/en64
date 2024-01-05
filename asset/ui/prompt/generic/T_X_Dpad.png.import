@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b4wmhyti52oco"
+path="res://.godot/imported/T_X_Dpad.png-ee7c0c584b66fa1a35eec3e804620662.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/generic/T_X_Dpad.png"
+dest_files=PackedStringArray("res://.godot/imported/T_X_Dpad.png-ee7c0c584b66fa1a35eec3e804620662.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

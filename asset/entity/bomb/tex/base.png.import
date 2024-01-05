@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bpwnvg1sar12h"
+path="res://.godot/imported/base.png-f0d8b33ac01a2bb38d58bef2aa4e907f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/entity/bomb/tex/base.png"
+dest_files=PackedStringArray("res://.godot/imported/base.png-f0d8b33ac01a2bb38d58bef2aa4e907f.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

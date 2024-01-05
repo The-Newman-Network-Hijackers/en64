@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d01x7xxc1nfdm"
+path="res://.godot/imported/T_PageUp_Key_Dark.png-9a8b550c70ed35f232cb476c0b4f8429.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/prompt/kbm/T_PageUp_Key_Dark.png"
+dest_files=PackedStringArray("res://.godot/imported/T_PageUp_Key_Dark.png-9a8b550c70ed35f232cb476c0b4f8429.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

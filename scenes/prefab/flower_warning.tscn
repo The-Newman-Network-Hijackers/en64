@@ -1,0 +1,106 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="ArrayMesh" uid="uid://dxi1ken4h5v2p" path="res://asset/entity/flower_prince/mesh/mesh_warning.res" id="1"]
+[ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="2"]
+[ext_resource type="AudioStream" uid="uid://bevipth3tferk" path="res://audio/sfx/beep.wav" id="3"]
+
+[sub_resource type="Animation" id="1"]
+resource_name = "warn"
+length = 1.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("vis/exclaim:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, false, true, false, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("vis/warning:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sfx/warn_beep:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1, 0.3, 0.5, 0.7, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, true, true, true, true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="2"]
+_data = {
+"warn": SubResource( "1" )
+}
+script = null
+
+[node name="flower_warning" type="Node3D"]
+
+[node name="vis" type="Node3D" parent="."]
+
+[node name="warning" type="MeshInstance3D" parent="vis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+visible = false
+mesh = ExtResource( "1" )
+skeleton = NodePath("../..")
+
+[node name="exclaim" type="Label3D" parent="vis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 10, 0)
+visible = false
+pixel_size = 0.2
+billboard = 2
+modulate = Color(0.78, 0.1482, 0.1482, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "!"
+font = ExtResource( "2" )
+font_size = 64
+
+[node name="anim" type="AnimationPlayer" parent="vis"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource( "2" )
+}
+autoplay = "warn"
+
+[node name="sfx" type="Node3D" parent="."]
+
+[node name="warn_beep" type="AudioStreamPlayer3D" parent="sfx"]
+stream = ExtResource( "3" )
+attenuation_model = 3
+volume_db = -2.0
+unit_size = 100.0
+max_db = -2.0
+pitch_scale = 2.0
+max_distance = 120.0
+bus = &"SoundIndoors"

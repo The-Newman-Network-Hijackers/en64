@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3]
+
+[ext_resource type="Shader" path="res://asset/shader/water_sim.gdshader" id="1"]
+[ext_resource type="Shader" path="res://asset/shader/n64_lit_transparent.gdshader" id="2"]
+[ext_resource type="Texture2D" uid="uid://dqeb02gbqh8r0" path="res://asset/level/generic/water_1.png" id="3"]
+
+[sub_resource type="ShaderMaterial" id="1"]
+render_priority = 0
+next_pass = null
+shader = ExtResource( "1" )
+shader_parameter/out_color = Color(0, 0.2, 1, 1)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/amount = 0.8
+shader_parameter/speed = 0.0
+shader_parameter/metallic = 0.6
+shader_parameter/specular = 0.5
+shader_parameter/roughness = 0.2
+shader_parameter/albedo_texture = null
+script = null
+
+[resource]
+render_priority = 0
+next_pass = SubResource( "1" )
+shader = ExtResource( "2" )
+shader_parameter/modulate_color = Color(0, 0.529412, 0.658824, 0.568627)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0.025, 0.025)
+shader_parameter/albedoTex = ExtResource( "3" )
+script = null

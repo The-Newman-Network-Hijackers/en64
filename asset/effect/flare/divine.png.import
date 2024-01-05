@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://wtcdk2wapsna"
+path.s3tc="res://.godot/imported/divine.png-dbd8478c816ccc86c3026d6f1f53a20b.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/divine.png"
+dest_files=PackedStringArray("res://.godot/imported/divine.png-dbd8478c816ccc86c3026d6f1f53a20b.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

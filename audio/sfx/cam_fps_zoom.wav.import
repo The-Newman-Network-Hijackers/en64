@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bn3sa7mf6jsm3"
+path="res://.godot/imported/cam_fps_zoom.wav-5be3c60c938b35ac668bfb067c19b68f.sample"
+
+[deps]
+
+source_file="res://audio/sfx/cam_fps_zoom.wav"
+dest_files=PackedStringArray("res://.godot/imported/cam_fps_zoom.wav-5be3c60c938b35ac668bfb067c19b68f.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

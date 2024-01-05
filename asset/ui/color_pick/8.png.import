@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cvkjy5fchjowy"
+path="res://.godot/imported/8.png-ed8add03d9f8e06f4332b39b1b908b32.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/color_pick/8.png"
+dest_files=PackedStringArray("res://.godot/imported/8.png-ed8add03d9f8e06f4332b39b1b908b32.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://s5ta4sj56nns"
+path="res://.godot/imported/knight_helmet.png-08d0a5c7e331929a780c87c30514ab22.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/accessory/head/icon/knight_helmet.png"
+dest_files=PackedStringArray("res://.godot/imported/knight_helmet.png-08d0a5c7e331929a780c87c30514ab22.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

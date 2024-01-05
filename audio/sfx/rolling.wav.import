@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dxtxigwt35tym"
+path="res://.godot/imported/rolling.wav-e01c97186c772d50d6926e992def4885.sample"
+
+[deps]
+
+source_file="res://audio/sfx/rolling.wav"
+dest_files=PackedStringArray("res://.godot/imported/rolling.wav-e01c97186c772d50d6926e992def4885.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

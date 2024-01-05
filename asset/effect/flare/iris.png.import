@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cuqg3b2qmsqdt"
+path.s3tc="res://.godot/imported/iris.png-6381fb46eab00ecd8b7a319fdd5e687c.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/iris.png"
+dest_files=PackedStringArray("res://.godot/imported/iris.png-6381fb46eab00ecd8b7a319fdd5e687c.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

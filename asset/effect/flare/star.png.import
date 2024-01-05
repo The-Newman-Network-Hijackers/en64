@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dp30hk4tj6g2m"
+path="res://.godot/imported/star.png-acb21f04f29e405dc16a7812ecfed848.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/star.png"
+dest_files=PackedStringArray("res://.godot/imported/star.png-acb21f04f29e405dc16a7812ecfed848.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

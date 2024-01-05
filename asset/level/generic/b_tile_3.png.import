@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://1aqfbeaayotk"
+path.s3tc="res://.godot/imported/b_tile_3.png-a3cf183a87cfd1968206c88cddb6b457.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/generic/b_tile_3.png"
+dest_files=PackedStringArray("res://.godot/imported/b_tile_3.png-a3cf183a87cfd1968206c88cddb6b457.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

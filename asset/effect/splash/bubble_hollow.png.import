@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dtfxspnedmoja"
+path.s3tc="res://.godot/imported/bubble_hollow.png-327fce0cb180286bfbe39b749b75e1ba.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/splash/bubble_hollow.png"
+dest_files=PackedStringArray("res://.godot/imported/bubble_hollow.png-327fce0cb180286bfbe39b749b75e1ba.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

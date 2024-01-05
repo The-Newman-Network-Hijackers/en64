@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://k234236yt5yo"
+path="res://.godot/imported/edit_costume.png-2a180e6a9ee9cdb62ab7c617519968b7.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/costume/edit_costume.png"
+dest_files=PackedStringArray("res://.godot/imported/edit_costume.png-2a180e6a9ee9cdb62ab7c617519968b7.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

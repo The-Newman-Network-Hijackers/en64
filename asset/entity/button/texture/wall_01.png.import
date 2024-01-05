@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://deq6ysjfnbd68"
+path.s3tc="res://.godot/imported/wall_01.png-8eca08d7630f0c1769feba8f35ca3249.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/entity/button/texture/wall_01.png"
+dest_files=PackedStringArray("res://.godot/imported/wall_01.png-8eca08d7630f0c1769feba8f35ca3249.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

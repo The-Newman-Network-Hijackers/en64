@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dch5ybxxx3rp2"
+path="res://.godot/imported/things.png-e2dedbf1d6ecc3bdd50f75f8b041a539.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/ui/things.png"
+dest_files=PackedStringArray("res://.godot/imported/things.png-e2dedbf1d6ecc3bdd50f75f8b041a539.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

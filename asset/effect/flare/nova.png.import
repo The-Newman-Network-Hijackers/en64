@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d126t02pirio3"
+path.s3tc="res://.godot/imported/nova.png-665bab81a7173b62e726ffaa77880878.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/effect/flare/nova.png"
+dest_files=PackedStringArray("res://.godot/imported/nova.png-665bab81a7173b62e726ffaa77880878.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

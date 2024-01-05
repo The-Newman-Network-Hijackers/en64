@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3dxey1cnij52"
+path="res://.godot/imported/amb_drone_2.mp3-39d545d796a3caf45d937af7f4d30d24.mp3str"
+
+[deps]
+
+source_file="res://audio/amb/amb_drone_2.mp3"
+dest_files=PackedStringArray("res://.godot/imported/amb_drone_2.mp3-39d545d796a3caf45d937af7f4d30d24.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

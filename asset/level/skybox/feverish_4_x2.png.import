@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b2euqlv3enx"
+path.s3tc="res://.godot/imported/feverish_4_x2.png-3324a0054c26bf598aa66c3243007761.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://asset/level/skybox/feverish_4_x2.png"
+dest_files=PackedStringArray("res://.godot/imported/feverish_4_x2.png-3324a0054c26bf598aa66c3243007761.s3tc.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

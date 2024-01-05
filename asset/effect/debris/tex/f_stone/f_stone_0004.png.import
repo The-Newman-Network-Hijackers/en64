@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://i84gqo2n712n"
+path="res://.godot/imported/f_stone_0004.png-8ac7ca53d384b46ae7180d97b0579af8.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://asset/effect/debris/tex/f_stone/f_stone_0004.png"
+dest_files=PackedStringArray("res://.godot/imported/f_stone_0004.png-8ac7ca53d384b46ae7180d97b0579af8.ctex")
+
+[params]
+
+dummy_value_ignore_me=0
