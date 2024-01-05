@@ -21,7 +21,7 @@
 [ext_resource type="Resource" path="res://data/props/test_level/prop_star.tres" id="19"]
 [ext_resource type="Resource" path="res://data/props/test_level/prop_star2.tres" id="20"]
 [ext_resource type="Resource" path="res://data/props/test_level/prop_icecream.tres" id="21"]
-[ext_resource type="PackedScene" path="res://scenes/prefab/teleporter.tscn" id="22"]
+[ext_resource type="PackedScene" uid="uid://xlitjfpjy3d6" path="res://scenes/prefab/teleporter.tscn" id="22"]
 [ext_resource type="Script" path="res://res_inputprompt.gd" id="23"]
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="24"]
 
@@ -283,14 +283,14 @@ count = 3
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@42289" parent="0/map/jack_form1" instance=ExtResource("17")]
+[node name="@Area3D@56515" parent="0/map/jack_form1" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42290" parent="0/map/jack_form1" instance=ExtResource("17")]
+[node name="@Area3D@56516" parent="0/map/jack_form1" instance=ExtResource("17")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42291" parent="0/map/jack_form1" instance=ExtResource("17")]
+[node name="@Area3D@56517" parent="0/map/jack_form1" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
 metadata/_edit_lock_ = true
 
@@ -301,23 +301,23 @@ script = ExtResource("16")
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@42292" parent="0/map/jack_form2" instance=ExtResource("17")]
+[node name="jack" parent="0/map/jack_form2" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42293" parent="0/map/jack_form2" instance=ExtResource("17")]
+[node name="@Area3D@56518" parent="0/map/jack_form2" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42294" parent="0/map/jack_form2" instance=ExtResource("17")]
+[node name="@Area3D@56519" parent="0/map/jack_form2" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42295" parent="0/map/jack_form2" instance=ExtResource("17")]
+[node name="@Area3D@56520" parent="0/map/jack_form2" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42296" parent="0/map/jack_form2" instance=ExtResource("17")]
+[node name="@Area3D@56521" parent="0/map/jack_form2" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, 10)
 metadata/_edit_lock_ = true
 
@@ -329,27 +329,27 @@ formation = 2
 count = 6
 metadata/_edit_group_ = true
 
-[node name="@Area3D@42302" parent="0/map/jack_form3" instance=ExtResource("17")]
+[node name="@Area3D@56527" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33013, 0, -2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42303" parent="0/map/jack_form3" instance=ExtResource("17")]
+[node name="@Area3D@56528" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33013, 0, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42304" parent="0/map/jack_form3" instance=ExtResource("17")]
+[node name="@Area3D@56529" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.37114e-07, 0, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42305" parent="0/map/jack_form3" instance=ExtResource("17")]
+[node name="@Area3D@56530" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, 0, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42306" parent="0/map/jack_form3" instance=ExtResource("17")]
+[node name="@Area3D@56531" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, 0, -2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42307" parent="0/map/jack_form3" instance=ExtResource("17")]
+[node name="@Area3D@56532" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.74228e-07, 0, -5)
 metadata/_edit_lock_ = true
 
@@ -362,35 +362,35 @@ count = 8
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@42323" parent="0/map/jack_form4" instance=ExtResource("17")]
+[node name="@Area3D@56548" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.53553, 3.53553, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42324" parent="0/map/jack_form4" instance=ExtResource("17")]
+[node name="@Area3D@56549" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -2.18557e-07, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42325" parent="0/map/jack_form4" instance=ExtResource("17")]
+[node name="@Area3D@56550" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.53553, -3.53553, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42326" parent="0/map/jack_form4" instance=ExtResource("17")]
+[node name="@Area3D@56551" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37114e-07, -5, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42327" parent="0/map/jack_form4" instance=ExtResource("17")]
+[node name="@Area3D@56552" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.53553, -3.53553, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42328" parent="0/map/jack_form4" instance=ExtResource("17")]
+[node name="@Area3D@56553" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 5.96244e-08, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42329" parent="0/map/jack_form4" instance=ExtResource("17")]
+[node name="@Area3D@56554" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.53553, 3.53553, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42330" parent="0/map/jack_form4" instance=ExtResource("17")]
+[node name="@Area3D@56555" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.74228e-07, 5, 0)
 metadata/_edit_lock_ = true
 
@@ -403,27 +403,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@42342" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+[node name="@Area3D@56567" parent="0/map/jack_form_stf" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33013, -6.87483, -2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42343" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+[node name="@Area3D@56568" parent="0/map/jack_form_stf" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33013, -6.93183, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42344" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+[node name="@Area3D@56569" parent="0/map/jack_form_stf" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.64446, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42345" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+[node name="@Area3D@56570" parent="0/map/jack_form_stf" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, -6.93183, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42346" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+[node name="@Area3D@56571" parent="0/map/jack_form_stf" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, -6.87483, -2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@42347" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+[node name="@Area3D@56572" parent="0/map/jack_form_stf" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.58746, -5)
 metadata/_edit_lock_ = true
 
