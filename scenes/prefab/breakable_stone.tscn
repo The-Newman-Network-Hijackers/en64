@@ -83,7 +83,7 @@ max_health = 2
 tags = Array[String](["bomb"])
 scope = 1
 
-[node name="fsm" type="Node" parent="."]
+[node name="fsm" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("3")
 initial_state = NodePath("idle")
 

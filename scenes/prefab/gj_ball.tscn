@@ -82,7 +82,7 @@ stream_0/weight = 1.0
 stream_1/stream = ExtResource("7")
 stream_1/weight = 1.0
 
-[node name="gj_ball" type="CharacterBody3D"]
+[node name="gj_ball" type="CharacterBody3D" node_paths=PackedStringArray("visual_node")]
 script = ExtResource("1")
 e_name = "Golden Jack Ball"
 visual_node = NodePath("vis")
@@ -90,7 +90,7 @@ jump_height = 8.0
 jtt_peak = 0.4
 jtt_descent = 0.4
 
-[node name="fsm" type="Node" parent="."]
+[node name="fsm" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("2")
 initial_state = NodePath("bounce")
 

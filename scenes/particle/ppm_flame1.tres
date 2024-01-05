@@ -1,22 +1,18 @@
-[gd_resource type="ParticleProcessMaterial" load_steps=5 format=3]
-
-[sub_resource type="Curve" id="1"]
-_data = [Vector2(0, 1), 0.0, 1.8368, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
-point_count = 2
-script = null
-
-[sub_resource type="CurveTexture" id="2"]
-curve = SubResource( "1" )
-script = null
+[gd_resource type="ParticleProcessMaterial" load_steps=5 format=3 uid="uid://c8173307plyqu"]
 
 [sub_resource type="Gradient" id="3"]
 offsets = PackedFloat32Array(0, 0.281977, 0.607558)
 colors = PackedColorArray(0.67, 0.35845, 0.067, 1, 0.89, 0.2492, 0.0356, 1, 0.176419, 0.176419, 0.176419, 1)
-script = null
 
 [sub_resource type="GradientTexture1D" id="4"]
-gradient = SubResource( "3" )
-script = null
+gradient = SubResource("3")
+
+[sub_resource type="Curve" id="1"]
+_data = [Vector2(0, 1), 0.0, 1.8368, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="2"]
+curve = SubResource("1")
 
 [resource]
 emission_shape = 1
@@ -30,9 +26,8 @@ angular_velocity_max = 93.6
 gravity = Vector3(0, 10, 0)
 scale_min = 0.75
 scale_max = 1.15
-scale_curve = SubResource( "2" )
-color_ramp = SubResource( "4" )
+scale_curve = SubResource("2")
+color_ramp = SubResource("4")
 anim_speed_min = 0.7
 anim_speed_max = 1.0
 anim_offset_max = 0.2975
-script = null
