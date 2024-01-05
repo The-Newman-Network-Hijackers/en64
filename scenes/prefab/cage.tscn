@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=18 format=3 uid="uid://dwwk0qsdbvkex"]
-=======
-[gd_scene load_steps=18 format=3 uid="uid://c6v47xfsg8v7"]
->>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://scripts/cage.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/hurtbox.gd" id="2"]
