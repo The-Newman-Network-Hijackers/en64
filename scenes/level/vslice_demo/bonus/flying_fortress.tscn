@@ -1344,6 +1344,12 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.94
 dialog = ExtResource("42")
 title = "fortress_fluff_1"
 
+<<<<<<< Updated upstream
+=======
+[node name="s_cam" parent="0/entities/sign" index="3"]
+current = true
+
+>>>>>>> Stashed changes
 [node name="gate_buttons" type="Node3D" parent="0/entities" node_paths=PackedStringArray("event_tree")]
 script = ExtResource("43")
 event_tree = NodePath("../../events/open_gate")
