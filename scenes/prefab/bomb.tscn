@@ -721,7 +721,7 @@ alpha_curve = SubResource("38")
 anim_speed_min = 0.4
 anim_speed_max = 0.75
 
-[node name="bomb" type="CharacterBody3D" node_paths=PackedStringArray("visual_node", "floor_raycast", "anim_tree")]
+[node name="bomb" type="CharacterBody3D" node_paths=PackedStringArray("hitbox", "visual_node", "floor_raycast", "anim_tree")]
 collision_layer = 5
 collision_mask = 3
 script = ExtResource("1")
