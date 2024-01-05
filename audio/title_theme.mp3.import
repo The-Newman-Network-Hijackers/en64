@@ -8,8 +8,12 @@ path="res://.godot/imported/title_theme.mp3-72a48d78b8a93d05bef31e0fc1a94c46.mp3
 [deps]
 
 source_file="res://audio/title_theme.mp3"
-dest_files=PackedStringArray("res://.godot/imported/title_theme.mp3-72a48d78b8a93d05bef31e0fc1a94c46.mp3str")
+dest_files=["res://.godot/imported/title_theme.mp3-72a48d78b8a93d05bef31e0fc1a94c46.mp3str"]
 
 [params]
 
-dummy_value_ignore_me=0
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

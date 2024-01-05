@@ -3,16 +3,32 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf3dihcno8x3v"
-path="res://.godot/imported/material_5.png-6fb70d859a232ca79a2c6b0efe4ff9c9.ctex"
+path="res://.godot/imported/material_5.PNG-a89b3e325beab8a3e334a28543dba1cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/level/flyingfort/textures/material_5.png"
-dest_files=PackedStringArray("res://.godot/imported/material_5.png-6fb70d859a232ca79a2c6b0efe4ff9c9.ctex")
+source_file="res://asset/level/flyingfort/textures/material_5.PNG"
+dest_files=["res://.godot/imported/material_5.PNG-a89b3e325beab8a3e334a28543dba1cd.ctex"]
 
 [params]
 
-dummy_value_ignore_me=0
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

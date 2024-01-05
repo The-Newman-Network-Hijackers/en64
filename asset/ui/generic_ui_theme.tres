@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=8 format=3]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://jrc78hva5uah"]
 
 [ext_resource type="FontFile" uid="uid://dk3bac3jmalne" path="res://asset/ui/Basic Comical Regular NC.ttf" id="1"]
 
@@ -15,14 +15,11 @@ corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
-script = null
 
 [sub_resource type="StyleBoxEmpty" id="2"]
-script = null
 
 [sub_resource type="StyleBoxEmpty" id="3"]
 content_margin_left = 6.0
-script = null
 
 [sub_resource type="StyleBoxFlat" id="4"]
 content_margin_left = 4.0
@@ -35,7 +32,6 @@ corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
-script = null
 
 [sub_resource type="StyleBoxFlat" id="5"]
 content_margin_left = 0.0
@@ -48,7 +44,6 @@ corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
-script = null
 
 [sub_resource type="StyleBoxFlat" id="6"]
 content_margin_left = 0.0
@@ -61,15 +56,13 @@ corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
-script = null
 
 [resource]
-default_font = ExtResource( "1" )
+default_font = ExtResource("1")
 default_font_size = 16
-Button/styles/normal = SubResource( "1" )
-ItemList/styles/focus = SubResource( "2" )
-ItemList/styles/panel = SubResource( "3" )
-ItemList/styles/selected_focus = SubResource( "4" )
-Panel/styles/panel = SubResource( "5" )
-PanelContainer/styles/panel = SubResource( "6" )
-script = null
+Button/styles/normal = SubResource("1")
+ItemList/styles/focus = SubResource("2")
+ItemList/styles/panel = SubResource("3")
+ItemList/styles/selected_focus = SubResource("4")
+Panel/styles/panel = SubResource("5")
+PanelContainer/styles/panel = SubResource("6")

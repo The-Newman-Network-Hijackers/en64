@@ -8,9 +8,17 @@ path="res://.godot/imported/prop_found.wav-ae6d52d5efe5f5d11add403094e1bf59.samp
 [deps]
 
 source_file="res://audio/sfx/prop_found.wav"
-dest_files=PackedStringArray("res://.godot/imported/prop_found.wav-ae6d52d5efe5f5d11add403094e1bf59.sample")
+dest_files=["res://.godot/imported/prop_found.wav-ae6d52d5efe5f5d11add403094e1bf59.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

@@ -8,9 +8,17 @@ path="res://.godot/imported/whistle_down.wav-27dc1161eb3b0435b9d85de44cd1ee9a.sa
 [deps]
 
 source_file="res://audio/sfx/whistle_down.wav"
-dest_files=PackedStringArray("res://.godot/imported/whistle_down.wav-27dc1161eb3b0435b9d85de44cd1ee9a.sample")
+dest_files=["res://.godot/imported/whistle_down.wav-27dc1161eb3b0435b9d85de44cd1ee9a.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

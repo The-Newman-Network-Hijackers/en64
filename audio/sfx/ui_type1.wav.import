@@ -8,9 +8,17 @@ path="res://.godot/imported/ui_type1.wav-60411e56d2c20a6233a3bc16b489f2da.sample
 [deps]
 
 source_file="res://audio/sfx/ui_type1.wav"
-dest_files=PackedStringArray("res://.godot/imported/ui_type1.wav-60411e56d2c20a6233a3bc16b489f2da.sample")
+dest_files=["res://.godot/imported/ui_type1.wav-60411e56d2c20a6233a3bc16b489f2da.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

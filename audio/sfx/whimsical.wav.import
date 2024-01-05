@@ -8,9 +8,17 @@ path="res://.godot/imported/whimsical.wav-4ee7c4d727178b2a5e173de6e585821a.sampl
 [deps]
 
 source_file="res://audio/sfx/whimsical.wav"
-dest_files=PackedStringArray("res://.godot/imported/whimsical.wav-4ee7c4d727178b2a5e173de6e585821a.sample")
+dest_files=["res://.godot/imported/whimsical.wav-4ee7c4d727178b2a5e173de6e585821a.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

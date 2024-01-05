@@ -8,8 +8,12 @@ path="res://.godot/imported/amb_ocean.mp3-222e29a98b04b2f90fc0a492084434f8.mp3st
 [deps]
 
 source_file="res://audio/amb/amb_ocean.mp3"
-dest_files=PackedStringArray("res://.godot/imported/amb_ocean.mp3-222e29a98b04b2f90fc0a492084434f8.mp3str")
+dest_files=["res://.godot/imported/amb_ocean.mp3-222e29a98b04b2f90fc0a492084434f8.mp3str"]
 
 [params]
 
-dummy_value_ignore_me=0
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

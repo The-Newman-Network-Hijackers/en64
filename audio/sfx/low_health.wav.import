@@ -8,9 +8,17 @@ path="res://.godot/imported/low_health.wav-dbdfe227ea04b877b7b515e642b03d79.samp
 [deps]
 
 source_file="res://audio/sfx/low_health.wav"
-dest_files=PackedStringArray("res://.godot/imported/low_health.wav-dbdfe227ea04b877b7b515e642b03d79.sample")
+dest_files=["res://.godot/imported/low_health.wav-dbdfe227ea04b877b7b515e642b03d79.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

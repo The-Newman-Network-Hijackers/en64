@@ -8,8 +8,6 @@
 
 config_version=5
 
-_custom_features="forced_dd3d"
-
 [application]
 
 config/name="Newman Network: Channel 64"

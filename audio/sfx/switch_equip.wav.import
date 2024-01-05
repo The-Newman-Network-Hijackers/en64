@@ -8,9 +8,17 @@ path="res://.godot/imported/switch_equip.wav-7fd6b886383ddbe9628a0086ca23269d.sa
 [deps]
 
 source_file="res://audio/sfx/switch_equip.wav"
-dest_files=PackedStringArray("res://.godot/imported/switch_equip.wav-7fd6b886383ddbe9628a0086ca23269d.sample")
+dest_files=["res://.godot/imported/switch_equip.wav-7fd6b886383ddbe9628a0086ca23269d.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

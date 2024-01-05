@@ -8,9 +8,17 @@ path="res://.godot/imported/pickup_big.wav-b4675a51176508c0593d5a0376db0d13.samp
 [deps]
 
 source_file="res://audio/sfx/pickup_big.wav"
-dest_files=PackedStringArray("res://.godot/imported/pickup_big.wav-b4675a51176508c0593d5a0376db0d13.sample")
+dest_files=["res://.godot/imported/pickup_big.wav-b4675a51176508c0593d5a0376db0d13.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

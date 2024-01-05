@@ -8,8 +8,12 @@ path="res://.godot/imported/station_piano.mp3-77e34d6ab83ac5214c9c4e647f08e8e7.m
 [deps]
 
 source_file="res://audio/station_piano.mp3"
-dest_files=PackedStringArray("res://.godot/imported/station_piano.mp3-77e34d6ab83ac5214c9c4e647f08e8e7.mp3str")
+dest_files=["res://.godot/imported/station_piano.mp3-77e34d6ab83ac5214c9c4e647f08e8e7.mp3str"]
 
 [params]
 
-dummy_value_ignore_me=0
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

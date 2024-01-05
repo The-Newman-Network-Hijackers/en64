@@ -8,9 +8,17 @@ path="res://.godot/imported/thump_1.wav-a73443c7c846f0b6ed310193bcaf8fc6.sample"
 [deps]
 
 source_file="res://audio/sfx/thump_1.wav"
-dest_files=PackedStringArray("res://.godot/imported/thump_1.wav-a73443c7c846f0b6ed310193bcaf8fc6.sample")
+dest_files=["res://.godot/imported/thump_1.wav-a73443c7c846f0b6ed310193bcaf8fc6.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

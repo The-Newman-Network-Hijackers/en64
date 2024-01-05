@@ -8,8 +8,12 @@ path="res://.godot/imported/floral_regal.mp3-7dc54fe7d8c70930c6805b6bb8367e52.mp
 [deps]
 
 source_file="res://audio/floral_regal.mp3"
-dest_files=PackedStringArray("res://.godot/imported/floral_regal.mp3-7dc54fe7d8c70930c6805b6bb8367e52.mp3str")
+dest_files=["res://.godot/imported/floral_regal.mp3-7dc54fe7d8c70930c6805b6bb8367e52.mp3str"]
 
 [params]
 
-dummy_value_ignore_me=0
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

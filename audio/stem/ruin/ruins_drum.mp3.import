@@ -8,8 +8,12 @@ path="res://.godot/imported/ruins_drum.mp3-177da038a461ca7c2dc9dbaa3290801e.mp3s
 [deps]
 
 source_file="res://audio/stem/ruin/ruins_drum.mp3"
-dest_files=PackedStringArray("res://.godot/imported/ruins_drum.mp3-177da038a461ca7c2dc9dbaa3290801e.mp3str")
+dest_files=["res://.godot/imported/ruins_drum.mp3-177da038a461ca7c2dc9dbaa3290801e.mp3str"]
 
 [params]
 
-dummy_value_ignore_me=0
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

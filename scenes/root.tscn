@@ -1,28 +1,26 @@
-[gd_scene load_steps=19 format=3]
+[gd_scene load_steps=19 format=3 uid="uid://cv7w5nec53ssp"]
 
 [ext_resource type="Script" path="res://scripts/root.gd" id="1"]
-[ext_resource type="PackedScene" uid="uid://kan4aeauadlo" path="res://scenes/splash.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/splash.tscn" id="2"]
 [ext_resource type="Shader" path="res://asset/shader/dither.gdshader" id="3"]
 [ext_resource type="Shader" path="res://asset/shader/ntsc.gdshader" id="4"]
 [ext_resource type="Script" path="res://scripts/level_manager.gd" id="5"]
-[ext_resource type="PackedScene" uid="uid://p7ugvy8deejy" path="res://scenes/prefab/player.tscn" id="6"]
-[ext_resource type="PackedScene" uid="uid://ccqp6g34jkoqg" path="res://scenes/ui.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/player.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://scenes/ui.tscn" id="7"]
 [ext_resource type="Script" path="res://scripts/fade.gd" id="8"]
 [ext_resource type="Shader" path="res://asset/shader/circle_fade.gdshader" id="9"]
 [ext_resource type="AudioStream" uid="uid://dx84oyybr36tg" path="res://audio/sfx/whistle_down.wav" id="10"]
 [ext_resource type="AudioStream" uid="uid://bqf1pp57dtu7u" path="res://audio/sfx/whistle_up.wav" id="11"]
 
 [sub_resource type="ShaderMaterial" id="1"]
-shader = ExtResource( "3" )
+shader = ExtResource("3")
 shader_parameter/SCREEN_WIDTH = 640.0
 shader_parameter/COLOR_FACTOR = 24.0
 shader_parameter/DITHERING_STRENTH = 0.003
-script = null
 
 [sub_resource type="ShaderMaterial" id="2"]
-shader = ExtResource( "4" )
+shader = ExtResource("4")
 shader_parameter/SCREEN_SIZE = Vector2(640, 480)
-script = null
 
 [sub_resource type="Animation" id="3"]
 length = 0.001
@@ -62,7 +60,6 @@ tracks/2/keys = {
 "update": 0,
 "values": [0.0]
 }
-script = null
 
 [sub_resource type="Animation" id="4"]
 resource_name = "fade"
@@ -78,7 +75,6 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(0.0705882, 0.0509804, 0.0784314, 1), Color(0.0705882, 0.0509804, 0.0784314, 0)]
 }
-script = null
 
 [sub_resource type="Animation" id="5"]
 resource_name = "fade_circle"
@@ -106,25 +102,22 @@ tracks/1/keys = {
 "update": 0,
 "values": [0.0, 1.05]
 }
-script = null
 
 [sub_resource type="AnimationLibrary" id="6"]
 _data = {
-"RESET": SubResource( "3" ),
-"fade": SubResource( "4" ),
-"fade_circle": SubResource( "5" )
+"RESET": SubResource("3"),
+"fade": SubResource("4"),
+"fade_circle": SubResource("5")
 }
-script = null
 
 [sub_resource type="ShaderMaterial" id="7"]
-shader = ExtResource( "9" )
+shader = ExtResource("9")
 shader_parameter/circle_size = 0.0
 shader_parameter/SCREEN_SIZE = Vector2(640, 480)
-script = null
 
 [node name="root" type="Node"]
-script = ExtResource( "1" )
-target_scene = ExtResource( "2" )
+script = ExtResource("1")
+target_scene = ExtResource("2")
 
 [node name="effect" type="CanvasLayer" parent="."]
 layer = 128
@@ -144,7 +137,7 @@ scale = Vector2(3.2, 2.4)
 copy_mode = 2
 
 [node name="color_rect" type="ColorRect" parent="effect/scaling/dither_buffer"]
-material = SubResource( "1" )
+material = SubResource("1")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -163,7 +156,7 @@ scale = Vector2(3.2, 2.395)
 copy_mode = 2
 
 [node name="color_rect" type="ColorRect" parent="effect/scaling/ntsc_buffer"]
-material = SubResource( "2" )
+material = SubResource("2")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -176,23 +169,21 @@ grow_vertical = 2
 mouse_filter = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="level_manager" type="Node" parent="." groups=[
-"LevelManager",
-]]
+[node name="level_manager" type="Node" parent="." groups=["LevelManager"]]
 unique_name_in_owner = true
 process_mode = 3
-script = ExtResource( "5" )
-scene_player = ExtResource( "6" )
-scene_ui = ExtResource( "7" )
+script = ExtResource("5")
+scene_player = ExtResource("6")
+scene_ui = ExtResource("7")
 
 [node name="fade" type="CanvasLayer" parent="level_manager"]
 process_mode = 3
 layer = 127
-script = ExtResource( "8" )
+script = ExtResource("8")
 
 [node name="anim" type="AnimationPlayer" parent="level_manager/fade"]
 libraries = {
-"": SubResource( "6" )
+"": SubResource("6")
 }
 
 [node name="color_fade" type="Node" parent="level_manager/fade"]
@@ -210,7 +201,7 @@ color = Color(0.0705882, 0.0509804, 0.0784314, 0)
 
 [node name="bg" type="ColorRect" parent="level_manager/fade/circle_fade"]
 visible = false
-material = SubResource( "7" )
+material = SubResource("7")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -221,11 +212,11 @@ color = Color(0, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="circle_in" type="AudioStreamPlayer" parent="level_manager/fade/circle_fade"]
-stream = ExtResource( "10" )
+stream = ExtResource("10")
 pitch_scale = 0.9
 bus = &"SoundIndoors"
 
 [node name="circle_out" type="AudioStreamPlayer" parent="level_manager/fade/circle_fade"]
-stream = ExtResource( "11" )
+stream = ExtResource("11")
 pitch_scale = 0.9
 bus = &"SoundIndoors"

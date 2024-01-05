@@ -8,9 +8,17 @@ path="res://.godot/imported/ricochet_hit1.wav-e661b17d7c2cb9fe047933b6d5a04d1d.s
 [deps]
 
 source_file="res://audio/sfx/ricochet_hit1.wav"
-dest_files=PackedStringArray("res://.godot/imported/ricochet_hit1.wav-e661b17d7c2cb9fe047933b6d5a04d1d.sample")
+dest_files=["res://.godot/imported/ricochet_hit1.wav-e661b17d7c2cb9fe047933b6d5a04d1d.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

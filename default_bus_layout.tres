@@ -1,4 +1,4 @@
-[gd_resource type="AudioBusLayout" load_steps=2 format=3]
+[gd_resource type="AudioBusLayout" load_steps=2 format=3 uid="uid://cd6ri30jtci31"]
 
 [sub_resource type="AudioEffectDelay" id="1"]
 resource_name = "Delay"
@@ -6,7 +6,6 @@ tap1_delay_ms = 100.0
 tap1_level_db = -9.0
 tap2_delay_ms = 200.0
 tap2_level_db = -18.0
-script = null
 
 [resource]
 bus/1/name = &"Ambiance"
@@ -15,7 +14,7 @@ bus/1/mute = false
 bus/1/bypass_fx = false
 bus/1/volume_db = -2.91905
 bus/1/send = &"Master"
-bus/1/effect/0/effect = SubResource( "1" )
+bus/1/effect/0/effect = SubResource("1")
 bus/1/effect/0/enabled = true
 bus/2/name = &"Music"
 bus/2/solo = false
@@ -35,6 +34,5 @@ bus/4/mute = false
 bus/4/bypass_fx = false
 bus/4/volume_db = 0.0
 bus/4/send = &"Sound"
-bus/4/effect/0/effect = SubResource( "1" )
+bus/4/effect/0/effect = SubResource("1")
 bus/4/effect/0/enabled = true
-script = null

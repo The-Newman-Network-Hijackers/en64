@@ -8,9 +8,17 @@ path="res://.godot/imported/jump_2.wav-0823f75b31adbf47c792e7af39bbebe6.sample"
 [deps]
 
 source_file="res://audio/sfx/jump_2.wav"
-dest_files=PackedStringArray("res://.godot/imported/jump_2.wav-0823f75b31adbf47c792e7af39bbebe6.sample")
+dest_files=["res://.godot/imported/jump_2.wav-0823f75b31adbf47c792e7af39bbebe6.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

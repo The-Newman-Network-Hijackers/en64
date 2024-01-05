@@ -3,16 +3,33 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctedxdhagjleu"
-path="res://.godot/imported/b_metal_crate_glove.png-a795762acc4b7b552ee53f8b9e139de0.ctex"
+path.s3tc="res://.godot/imported/b_metal_crate_glove.png-a795762acc4b7b552ee53f8b9e139de0.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://asset/entity/crate/metal/tex/b_metal_crate_glove.png"
-dest_files=PackedStringArray("res://.godot/imported/b_metal_crate_glove.png-a795762acc4b7b552ee53f8b9e139de0.ctex")
+dest_files=["res://.godot/imported/b_metal_crate_glove.png-a795762acc4b7b552ee53f8b9e139de0.s3tc.ctex"]
 
 [params]
 
-dummy_value_ignore_me=0
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://asset/entity/crate/metal/tex/b_metal_crate_glove.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

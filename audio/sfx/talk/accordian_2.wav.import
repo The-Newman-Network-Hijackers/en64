@@ -8,9 +8,17 @@ path="res://.godot/imported/accordian_2.wav-282caae8554e734f8772a89e8f1a0344.sam
 [deps]
 
 source_file="res://audio/sfx/talk/accordian_2.wav"
-dest_files=PackedStringArray("res://.godot/imported/accordian_2.wav-282caae8554e734f8772a89e8f1a0344.sample")
+dest_files=["res://.godot/imported/accordian_2.wav-282caae8554e734f8772a89e8f1a0344.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

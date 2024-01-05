@@ -8,9 +8,17 @@ path="res://.godot/imported/hp_down.wav-abee4b38f91fd8378442871a5da87572.sample"
 [deps]
 
 source_file="res://audio/sfx/hp_down.wav"
-dest_files=PackedStringArray("res://.godot/imported/hp_down.wav-abee4b38f91fd8378442871a5da87572.sample")
+dest_files=["res://.godot/imported/hp_down.wav-abee4b38f91fd8378442871a5da87572.sample"]
 
 [params]
 
-dummy_value_ignore_me=0
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0
