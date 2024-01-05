@@ -1270,8 +1270,6 @@ toggle_preview = true
 curve = SubResource("19")
 
 [node name="path_follower" type="PathFollow3D" parent="0/entities/moving_geo/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.25265)
-progress = 9.2527
 rotation_mode = 0
 loop = false
 
@@ -1281,7 +1279,6 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="0/entities/moving_geo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.25266)
 
 [node name="vis" type="MeshInstance3D" parent="0/entities/moving_geo/geometry"]
 mesh = SubResource("20")
@@ -1290,7 +1287,7 @@ mesh = SubResource("20")
 shape = SubResource("21")
 
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="0/entities/moving_geo"]
-volume_db = -13.0
+volume_db = -4.0
 bus = &"Sound"
 
 [node name="sfx_stop" type="AudioStreamPlayer3D" parent="0/entities/moving_geo"]
@@ -1347,7 +1344,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.94
 dialog = ExtResource("42")
 title = "fortress_fluff_1"
 
-[node name="gate_buttons" type="Node3D" parent="0/entities"]
+[node name="gate_buttons" type="Node3D" parent="0/entities" node_paths=PackedStringArray("event_tree")]
 script = ExtResource("43")
 event_tree = NodePath("../../events/open_gate")
 
@@ -1453,7 +1450,7 @@ lock_properties = 3
 transform = Transform3D(0.806521, -0.122459, 0.578383, 0, 0.978313, 0.207134, -0.591205, -0.167058, 0.78903, -163.087, 15.459, -239.16)
 fov = 55.0
 
-[node name="open_door" type="Node" parent="0/events/open_gate"]
+[node name="open_door" type="Node" parent="0/events/open_gate" node_paths=PackedStringArray("node")]
 script = ExtResource("57")
 node = NodePath("../../../entities/big_door")
 packets = Array[ExtResource("58")]([SubResource("24")])
