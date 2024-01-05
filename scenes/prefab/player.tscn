@@ -1,19 +1,19 @@
-[gd_scene load_steps=324 format=3]
+[gd_scene load_steps=324 format=3 uid="uid://brv8n0s4d8but"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1"]
 [ext_resource type="PackedScene" path="res://asset/newman/newman.blend.scn" id="2"]
-[ext_resource type="Skin" uid="uid://dslbv4q040ldt" path="res://asset/accessory/body/body_skin.tres" id="3"]
-[ext_resource type="Material" uid="uid://desf0vpnwhj38" path="res://asset/newman/mat/face.tres" id="4"]
-[ext_resource type="Material" uid="uid://dqxlmfumcv2wa" path="res://asset/newman/mat/vtx_body.tres" id="5"]
+[ext_resource type="Skin" path="res://asset/accessory/body/body_skin.tres" id="3"]
+[ext_resource type="Material" path="res://asset/newman/mat/face.tres" id="4"]
+[ext_resource type="Material" path="res://asset/newman/mat/vtx_body.tres" id="5"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="6"]
 [ext_resource type="Script" path="res://scripts/hitbox.gd" id="7"]
 [ext_resource type="AudioStream" uid="uid://bfuohqqjklk26" path="res://audio/sfx/orchit.wav" id="8"]
 [ext_resource type="Script" path="res://scripts/player_visual_managergd.gd" id="9"]
 [ext_resource type="Script" path="res://scripts/player_equipment_manager.gd" id="10"]
 [ext_resource type="FontFile" uid="uid://dk3bac3jmalne" path="res://asset/ui/Basic Comical Regular NC.ttf" id="11"]
-[ext_resource type="Material" uid="uid://b0rkcabokstao" path="res://asset/effect/dust/mat/vtx_dust.tres" id="12"]
+[ext_resource type="Material" path="res://asset/effect/dust/mat/vtx_dust.tres" id="12"]
 [ext_resource type="ArrayMesh" uid="uid://dcq2thefra8eb" path="res://asset/effect/star/mesh/star.res" id="13"]
-[ext_resource type="PackedScene" uid="uid://de38sako8btav" path="res://scenes/particle/splash.tscn" id="14"]
+[ext_resource type="PackedScene" path="res://scenes/particle/splash.tscn" id="14"]
 [ext_resource type="Texture2D" uid="uid://c2tnh2d3jrudw" path="res://asset/effect/splash/bubble_pop.png" id="15"]
 [ext_resource type="Script" path="res://scripts/trail.gd" id="16"]
 [ext_resource type="AudioStream" uid="uid://bx8dooldhfpqm" path="res://audio/sfx/s_generic_1.wav" id="17"]
@@ -60,7 +60,7 @@
 [ext_resource type="Animation" uid="uid://cnuume4y20wmm" path="res://asset/newman/anim/mallet_slam.res" id="58"]
 [ext_resource type="Animation" uid="uid://ll406vh4k5kh" path="res://asset/newman/anim/mallet_twirl.res" id="59"]
 [ext_resource type="Animation" uid="uid://bb5jbf2jb0cjj" path="res://asset/newman/anim/twirl.res" id="60"]
-[ext_resource type="PackedScene" uid="uid://c17xanmdmf77x" path="res://scenes/prefab/player_cam.tscn" id="61"]
+[ext_resource type="PackedScene" uid="uid://do4qv6qwbqbw1" path="res://scenes/prefab/player_cam.tscn" id="61"]
 [ext_resource type="Script" path="res://scripts/shadow.gd" id="62"]
 
 [sub_resource type="GDScript" id="1"]
@@ -1144,7 +1144,6 @@ func _on_airtime_timeout():
 
 [sub_resource type="SeparationRayShape3D" id="14"]
 length = 2.39458
-script = null
 
 [sub_resource type="GDScript" id="15"]
 resource_name = "player_roll"
@@ -2415,16 +2414,13 @@ properties/0/replication_mode = 1
 properties/1/path = NodePath(".:position")
 properties/1/spawn = true
 properties/1/replication_mode = 1
-script = null
 
 [sub_resource type="Curve" id="29"]
 _data = [Vector2(0, 0), 0.0, 24.3667, 0, 0, Vector2(0.130031, 1), 0.0, 0.0, 0, 0, Vector2(0.349845, 1), 0.0, 0.0441558, 1, 0, Vector2(0.857585, 0), -4.79091, 0.0, 0, 0]
 point_count = 4
-script = null
 
 [sub_resource type="CurveTexture" id="30"]
-curve = SubResource( "29" )
-script = null
+curve = SubResource("29")
 
 [sub_resource type="ParticleProcessMaterial" id="31"]
 particle_flag_rotate_y = true
@@ -2434,25 +2430,21 @@ initial_velocity_min = 5.0
 initial_velocity_max = 5.0
 scale_min = 0.65
 scale_max = 0.8
-scale_curve = SubResource( "30" )
+scale_curve = SubResource("30")
 anim_speed_min = 0.5
 anim_speed_max = 0.6
 anim_offset_max = 0.2347
-script = null
 
 [sub_resource type="QuadMesh" id="32"]
-material = ExtResource( "12" )
+material = ExtResource("12")
 size = Vector2(2, 2)
-script = null
 
 [sub_resource type="Curve" id="33"]
 _data = [Vector2(0, 0), 0.0, 24.3667, 0, 0, Vector2(0.117647, 1), 0.0, 0.0, 0, 0, Vector2(0.210526, 1), 0.0, 0.0441558, 1, 0, Vector2(0.848297, 0), -4.79091, 0.0, 0, 0]
 point_count = 4
-script = null
 
 [sub_resource type="CurveTexture" id="34"]
-curve = SubResource( "33" )
-script = null
+curve = SubResource("33")
 
 [sub_resource type="ParticleProcessMaterial" id="35"]
 angle_min = -180.0
@@ -2464,25 +2456,21 @@ initial_velocity_min = 8.0
 initial_velocity_max = 12.0
 scale_min = 0.8
 scale_max = 1.2
-scale_curve = SubResource( "34" )
+scale_curve = SubResource("34")
 anim_speed_min = 0.5
 anim_speed_max = 0.6
 anim_offset_max = 0.2
-script = null
 
 [sub_resource type="QuadMesh" id="36"]
-material = ExtResource( "12" )
+material = ExtResource("12")
 size = Vector2(2.5, 2.5)
-script = null
 
 [sub_resource type="Curve" id="37"]
 _data = [Vector2(0, 0), 0.0, 24.3667, 0, 0, Vector2(0.117647, 1), 0.0, 0.0, 0, 0, Vector2(0.210526, 1), 0.0, 0.0441558, 1, 0, Vector2(0.848297, 0), -4.79091, 0.0, 0, 0]
 point_count = 4
-script = null
 
 [sub_resource type="CurveTexture" id="38"]
-curve = SubResource( "37" )
-script = null
+curve = SubResource("37")
 
 [sub_resource type="ParticleProcessMaterial" id="39"]
 particle_flag_align_y = true
@@ -2493,24 +2481,20 @@ initial_velocity_min = 8.0
 initial_velocity_max = 12.0
 scale_min = 0.6
 scale_max = 0.8
-scale_curve = SubResource( "38" )
+scale_curve = SubResource("38")
 anim_speed_min = 0.5
 anim_speed_max = 0.6
-script = null
 
 [sub_resource type="QuadMesh" id="40"]
-material = ExtResource( "12" )
+material = ExtResource("12")
 size = Vector2(2.5, 2.5)
-script = null
 
 [sub_resource type="Curve" id="41"]
 _data = [Vector2(0, 0), 0.0, 24.3667, 0, 0, Vector2(0.117647, 1), 0.0, 0.0, 0, 0, Vector2(0.210526, 1), 0.0, 0.0441558, 1, 0, Vector2(0.848297, 0), -4.79091, 0.0, 0, 0]
 point_count = 4
-script = null
 
 [sub_resource type="CurveTexture" id="42"]
-curve = SubResource( "41" )
-script = null
+curve = SubResource("41")
 
 [sub_resource type="ParticleProcessMaterial" id="43"]
 direction = Vector3(0, 1, 1)
@@ -2520,24 +2504,20 @@ initial_velocity_min = 15.0
 initial_velocity_max = 18.0
 scale_min = 0.8
 scale_max = 1.2
-scale_curve = SubResource( "42" )
+scale_curve = SubResource("42")
 anim_speed_min = 0.7
 anim_speed_max = 0.8
-script = null
 
 [sub_resource type="QuadMesh" id="44"]
-material = ExtResource( "12" )
+material = ExtResource("12")
 size = Vector2(2, 2)
-script = null
 
 [sub_resource type="Curve" id="45"]
 _data = [Vector2(0, 0), 0.0, 3.75581, 0, 1, Vector2(0.266254, 1), 0.0, 0.0, 0, 0, Vector2(0.498452, 1), 0.0, 0.0409638, 1, 0, Vector2(0.724458, 0), 0.0, 0.0, 0, 0]
 point_count = 4
-script = null
 
 [sub_resource type="CurveTexture" id="46"]
-curve = SubResource( "45" )
-script = null
+curve = SubResource("45")
 
 [sub_resource type="ParticleProcessMaterial" id="47"]
 direction = Vector3(0, 1, 1)
@@ -2545,8 +2525,11 @@ spread = 25.0
 initial_velocity_min = 8.0
 initial_velocity_max = 20.0
 scale_max = 1.2
-scale_curve = SubResource( "46" )
-script = null
+scale_curve = SubResource("46")
+
+[sub_resource type="Curve" id="49"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.154519, 0.621053), -2.45243, -0.734555, 1, 1, Vector2(1, 0), -0.555466, 0.0, 0, 0]
+point_count = 3
 
 [sub_resource type="StandardMaterial3D" id="48"]
 transparency = 1
@@ -2559,29 +2542,20 @@ emission = Color(1, 0.85098, 0, 1)
 backlight = Color(1, 0.85, 0, 1)
 texture_filter = 0
 use_particle_trails = true
-script = null
-
-[sub_resource type="Curve" id="49"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.154519, 0.621053), -2.45243, -0.734555, 1, 1, Vector2(1, 0), -0.555466, 0.0, 0, 0]
-point_count = 3
-script = null
 
 [sub_resource type="TubeTrailMesh" id="50"]
-material = SubResource( "48" )
+material = SubResource("48")
 radius = 0.1
 radial_steps = 3
 section_length = 0.1
-curve = SubResource( "49" )
-script = null
+curve = SubResource("49")
 
 [sub_resource type="Curve" id="51"]
 _data = [Vector2(0, 0), 0.0, 24.3667, 0, 0, Vector2(0.130031, 1), 0.0, 0.0, 0, 0, Vector2(0.349845, 1), 0.0, 0.0441558, 1, 0, Vector2(0.857585, 0), -4.79091, 0.0, 0, 0]
 point_count = 4
-script = null
 
 [sub_resource type="CurveTexture" id="52"]
-curve = SubResource( "51" )
-script = null
+curve = SubResource("51")
 
 [sub_resource type="ParticleProcessMaterial" id="53"]
 lifetime_randomness = 0.5
@@ -2596,25 +2570,21 @@ initial_velocity_max = 15.0
 gravity = Vector3(0, 9.8, 0)
 damping_min = 5.0
 damping_max = 5.0
-scale_curve = SubResource( "52" )
+scale_curve = SubResource("52")
 anim_speed_min = 0.8
 anim_speed_max = 0.8
 collision_use_scale = true
-script = null
 
 [sub_resource type="QuadMesh" id="54"]
-material = ExtResource( "12" )
+material = ExtResource("12")
 size = Vector2(2.5, 2.5)
-script = null
 
 [sub_resource type="Curve" id="55"]
 _data = [Vector2(0, 0), 0.0, 24.3667, 0, 0, Vector2(0.130031, 1), 0.0, 0.0, 0, 0, Vector2(0.349845, 1), 0.0, 0.0441558, 1, 0, Vector2(0.900929, 0), 0.0, 0.0, 0, 0]
 point_count = 4
-script = null
 
 [sub_resource type="CurveTexture" id="56"]
-curve = SubResource( "55" )
-script = null
+curve = SubResource("55")
 
 [sub_resource type="ParticleProcessMaterial" id="57"]
 lifetime_randomness = 0.5
@@ -2624,11 +2594,10 @@ initial_velocity_min = 7.2
 initial_velocity_max = 12.98
 gravity = Vector3(0, -18.8, 0)
 scale_min = 0.8
-scale_curve = SubResource( "56" )
+scale_curve = SubResource("56")
 collision_use_scale = true
 sub_emitter_mode = 2
 sub_emitter_amount_at_end = 1
-script = null
 
 [sub_resource type="GDScript" id="58"]
 resource_name = "shallow_water"
@@ -2655,11 +2624,9 @@ func _ready() -> void:
 max_value = 10.0
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.52835, 0), 0.0, 0.0, 0, 0, Vector2(0.92268, 10), 0.0, 0.0, 0, 0]
 point_count = 3
-script = null
 
 [sub_resource type="CurveTexture" id="60"]
-curve = SubResource( "59" )
-script = null
+curve = SubResource("59")
 
 [sub_resource type="ParticleProcessMaterial" id="61"]
 direction = Vector3(0, 0, 1)
@@ -2668,224 +2635,197 @@ initial_velocity_max = 1.0
 gravity = Vector3(0, 2.9, 0)
 damping_min = 1.0
 damping_max = 1.0
-damping_curve = SubResource( "60" )
+damping_curve = SubResource("60")
 scale_min = 0.8
 scale_max = 1.5
 sub_emitter_mode = 2
 sub_emitter_amount_at_end = 1
 sub_emitter_keep_velocity = true
-script = null
 
 [sub_resource type="CompressedTexture2D" id="62"]
 load_path = "res://.godot/imported/bubble_hollow.png-327fce0cb180286bfbe39b749b75e1ba.s3tc.ctex"
-script = null
 
 [sub_resource type="StandardMaterial3D" id="63"]
 transparency = 1
 blend_mode = 1
 shading_mode = 0
-albedo_texture = SubResource( "62" )
+albedo_texture = SubResource("62")
 billboard_mode = 3
 billboard_keep_scale = true
 particles_anim_h_frames = 1
 particles_anim_v_frames = 1
 particles_anim_loop = false
-script = null
 
 [sub_resource type="PlaneMesh" id="64"]
-material = SubResource( "63" )
+material = SubResource("63")
 size = Vector2(0.5, 0.5)
 orientation = 2
-script = null
 
 [sub_resource type="Curve" id="65"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.0721649, 0), 0.0, 0.0, 0, 0, Vector2(0.688144, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 4
-script = null
 
 [sub_resource type="CurveTexture" id="66"]
-curve = SubResource( "65" )
-script = null
+curve = SubResource("65")
 
 [sub_resource type="ParticleProcessMaterial" id="67"]
 direction = Vector3(0, 0, 1)
 gravity = Vector3(0, 0, 0)
-damping_curve = SubResource( "60" )
+damping_curve = SubResource("60")
 scale_min = 1.25
 scale_max = 1.25
-scale_curve = SubResource( "66" )
+scale_curve = SubResource("66")
 collision_mode = 2
-script = null
 
 [sub_resource type="StandardMaterial3D" id="68"]
 transparency = 1
 blend_mode = 1
 shading_mode = 0
-albedo_texture = ExtResource( "15" )
+albedo_texture = ExtResource("15")
 billboard_mode = 3
 billboard_keep_scale = true
 particles_anim_h_frames = 1
 particles_anim_v_frames = 1
 particles_anim_loop = false
-script = null
 
 [sub_resource type="PlaneMesh" id="69"]
-material = SubResource( "68" )
+material = SubResource("68")
 size = Vector2(0.5, 0.5)
 orientation = 2
-script = null
 
 [sub_resource type="StandardMaterial3D" id="70"]
 transparency = 1
 blend_mode = 1
 cull_mode = 2
 vertex_color_use_as_albedo = true
-script = null
 
 [sub_resource type="ImmediateMesh" id="71"]
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="72"]
 random_pitch = 1.15
 streams_count = 3
-stream_0/stream = ExtResource( "17" )
+stream_0/stream = ExtResource("17")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "18" )
+stream_1/stream = ExtResource("18")
 stream_1/weight = 1.0
-stream_2/stream = ExtResource( "19" )
+stream_2/stream = ExtResource("19")
 stream_2/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="73"]
 random_pitch = 1.15
 streams_count = 3
-stream_0/stream = ExtResource( "20" )
+stream_0/stream = ExtResource("20")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "21" )
+stream_1/stream = ExtResource("21")
 stream_1/weight = 1.0
-stream_2/stream = ExtResource( "22" )
+stream_2/stream = ExtResource("22")
 stream_2/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="74"]
 random_pitch = 1.15
 streams_count = 3
-stream_0/stream = ExtResource( "23" )
+stream_0/stream = ExtResource("23")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "24" )
+stream_1/stream = ExtResource("24")
 stream_1/weight = 1.0
-stream_2/stream = ExtResource( "25" )
+stream_2/stream = ExtResource("25")
 stream_2/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="75"]
 random_pitch = 1.15
 streams_count = 3
-stream_0/stream = ExtResource( "26" )
+stream_0/stream = ExtResource("26")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "27" )
+stream_1/stream = ExtResource("27")
 stream_1/weight = 1.0
-stream_2/stream = ExtResource( "28" )
+stream_2/stream = ExtResource("28")
 stream_2/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="76"]
 random_pitch = 1.15
 streams_count = 2
-stream_0/stream = ExtResource( "31" )
+stream_0/stream = ExtResource("31")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "32" )
+stream_1/stream = ExtResource("32")
 stream_1/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="77"]
 random_pitch = 1.15
 streams_count = 2
-stream_0/stream = ExtResource( "33" )
+stream_0/stream = ExtResource("33")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "34" )
+stream_1/stream = ExtResource("34")
 stream_1/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="78"]
 random_pitch = 1.15
 streams_count = 2
-stream_0/stream = ExtResource( "35" )
+stream_0/stream = ExtResource("35")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "36" )
+stream_1/stream = ExtResource("36")
 stream_1/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="79"]
 random_pitch = 1.15
 streams_count = 1
-stream_0/stream = ExtResource( "37" )
+stream_0/stream = ExtResource("37")
 stream_0/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="80"]
 random_pitch = 1.02
 streams_count = 1
-stream_0/stream = ExtResource( "38" )
+stream_0/stream = ExtResource("38")
 stream_0/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="81"]
 streams_count = 3
-stream_0/stream = ExtResource( "43" )
+stream_0/stream = ExtResource("43")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "44" )
+stream_1/stream = ExtResource("44")
 stream_1/weight = 1.0
-stream_2/stream = ExtResource( "45" )
+stream_2/stream = ExtResource("45")
 stream_2/weight = 1.5
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="82"]
 random_pitch = 1.05
 streams_count = 3
-stream_0/stream = ExtResource( "46" )
+stream_0/stream = ExtResource("46")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "47" )
+stream_1/stream = ExtResource("47")
 stream_1/weight = 1.0
-stream_2/stream = ExtResource( "48" )
+stream_2/stream = ExtResource("48")
 stream_2/weight = 1.0
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="83"]
 random_pitch = 1.15
 streams_count = 4
-stream_0/stream = ExtResource( "49" )
+stream_0/stream = ExtResource("49")
 stream_0/weight = 1.5
-stream_1/stream = ExtResource( "50" )
+stream_1/stream = ExtResource("50")
 stream_1/weight = 1.0
-stream_2/stream = ExtResource( "51" )
+stream_2/stream = ExtResource("51")
 stream_2/weight = 1.0
-stream_3/stream = ExtResource( "52" )
+stream_3/stream = ExtResource("52")
 stream_3/weight = 1.0
-script = null
 
 [sub_resource type="CylinderShape3D" id="84"]
 height = 3.13623
 radius = 1.61798
-script = null
 
 [sub_resource type="CapsuleShape3D" id="85"]
 margin = 0.1
 radius = 1.2
 height = 5.4
-script = null
 
 [sub_resource type="CylinderShape3D" id="86"]
 height = 3.0
 radius = 3.847
-script = null
 
 [sub_resource type="CylinderShape3D" id="87"]
 height = 5.04216
 radius = 2.31547
-script = null
 
-[sub_resource type="Animation" id="88"]
+[sub_resource type="Animation" id="Animation_v5obl"]
 resource_name = "airborne"
 length = 0.433333
 loop_mode = 1
@@ -3064,9 +3004,8 @@ tracks/24/path = NodePath("%skeleton:foot.l")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="89"]
+[sub_resource type="Animation" id="Animation_hiq8y"]
 resource_name = "bonk"
 length = 0.5
 tracks/0/type = "position_3d"
@@ -3244,9 +3183,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="90"]
+[sub_resource type="Animation" id="Animation_p366p"]
 resource_name = "bonk_end"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -3424,9 +3362,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="91"]
+[sub_resource type="Animation" id="Animation_u2fya"]
 resource_name = "cam_transition"
 length = 0.5
 tracks/0/type = "position_3d"
@@ -3604,9 +3541,8 @@ tracks/24/path = NodePath("%skeleton:foot.l")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="92"]
+[sub_resource type="Animation" id="Animation_kbm12"]
 resource_name = "crouch"
 length = 0.366667
 tracks/0/type = "position_3d"
@@ -3784,9 +3720,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="93"]
+[sub_resource type="Animation" id="Animation_ep802"]
 resource_name = "crouch_idle"
 loop_mode = 1
 tracks/0/type = "position_3d"
@@ -3964,9 +3899,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="94"]
+[sub_resource type="Animation" id="Animation_ku8b3"]
 resource_name = "crouch_walk"
 length = 0.666667
 loop_mode = 1
@@ -4145,9 +4079,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="95"]
+[sub_resource type="Animation" id="Animation_qjqy5"]
 resource_name = "dive"
 length = 0.666667
 loop_mode = 1
@@ -4326,9 +4259,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="96"]
+[sub_resource type="Animation" id="Animation_arujb"]
 resource_name = "dive_begin"
 length = 0.333333
 tracks/0/type = "position_3d"
@@ -4506,9 +4438,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="97"]
+[sub_resource type="Animation" id="Animation_gf4k6"]
 resource_name = "get_prop"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -4686,9 +4617,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="98"]
+[sub_resource type="Animation" id="Animation_oq0dx"]
 resource_name = "hit_back"
 length = 0.001
 tracks/0/type = "position_3d"
@@ -4866,9 +4796,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="99"]
+[sub_resource type="Animation" id="Animation_2dfdx"]
 resource_name = "hit_forward"
 length = 0.001
 tracks/0/type = "position_3d"
@@ -5046,9 +4975,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="100"]
+[sub_resource type="Animation" id="Animation_tv3yo"]
 resource_name = "hit_slam_forward"
 length = 0.4
 tracks/0/type = "position_3d"
@@ -5226,9 +5154,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="101"]
+[sub_resource type="Animation" id="Animation_4oahm"]
 resource_name = "hold_big"
 length = 0.001
 tracks/0/type = "position_3d"
@@ -5406,9 +5333,8 @@ tracks/24/path = NodePath("%skeleton:torso")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 0, 1.19209e-07, 0, 1)
-script = null
 
-[sub_resource type="Animation" id="102"]
+[sub_resource type="Animation" id="Animation_08kv2"]
 resource_name = "hold_small"
 length = 0.001
 tracks/0/type = "position_3d"
@@ -5586,9 +5512,8 @@ tracks/24/path = NodePath("%skeleton:torso")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 0, 1.19209e-07, 0, 1)
-script = null
 
-[sub_resource type="Animation" id="103"]
+[sub_resource type="Animation" id="Animation_61hvs"]
 resource_name = "idle"
 length = 1.03333
 loop_mode = 1
@@ -5767,9 +5692,8 @@ tracks/24/path = NodePath("%skeleton:foot.l")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="104"]
+[sub_resource type="Animation" id="Animation_xem27"]
 resource_name = "jump"
 length = 0.333333
 tracks/0/type = "position_3d"
@@ -5792,7 +5716,7 @@ tracks/2/enabled = true
 tracks/2/path = NodePath("%skeleton:root")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/keys = PackedFloat32Array(0, 1, 1.2, 0.8, 1.2, 0.0333333, 1, 0.709554, 1.29045, 0.709554, 0.0666667, 1, 0.547382, 1.45262, 0.547382, 0.1, 1, 0.561518, 1.43848, 0.561518, 0.133333, 1, 0.6, 1.4, 0.6, 0.166667, 1, 0.789062, 1.21094, 0.789062, 0.2, 1, 0.90625, 1.09375, 0.90625, 0.233333, 1, 0.989062, 1.01094, 0.989062, 0.266667, 1, 1, 1, 1, 0.333333, 1, 1, 1, 1)
+tracks/2/keys = PackedFloat32Array(0, 1, 1.2, 0.8, 1.2, 0.0333333, 1, 0.709554, 1.29045, 0.709554, 0.0666667, 1, 0.547382, 1.45262, 0.547382, 0.1, 1, 0.561518, 1.43848, 0.561518, 0.133333, 1, 0.6, 1.4, 0.6, 0.166667, 1, 0.789063, 1.21094, 0.789063, 0.2, 1, 0.90625, 1.09375, 0.90625, 0.233333, 1, 0.989062, 1.01094, 0.989062, 0.266667, 1, 1, 1, 1, 0.333333, 1, 1, 1, 1)
 tracks/3/type = "position_3d"
 tracks/3/imported = true
 tracks/3/enabled = true
@@ -5947,9 +5871,8 @@ tracks/24/path = NodePath("%skeleton:torso")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 0, 1.19209e-07, 0, 1)
-script = null
 
-[sub_resource type="Animation" id="105"]
+[sub_resource type="Animation" id="Animation_d5f6g"]
 resource_name = "land"
 length = 0.466667
 tracks/0/type = "position_3d"
@@ -6127,9 +6050,8 @@ tracks/24/path = NodePath("%skeleton:torso")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 0, 1.19209e-07, 0, 1)
-script = null
 
-[sub_resource type="Animation" id="106"]
+[sub_resource type="Animation" id="Animation_2fq5k"]
 resource_name = "ledge_grab"
 length = 0.733333
 tracks/0/type = "position_3d"
@@ -6229,7 +6151,7 @@ tracks/13/enabled = true
 tracks/13/path = NodePath("%skeleton:l.hand")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
-tracks/13/keys = PackedFloat32Array(0, 1, 1.48798, -1.12443, -2.55804, 0.0333333, 1, 1.48854, -0.98185, -2.54242, 0.0666667, 1, 1.49006, -0.594844, -2.50001, 0.1, 1, 1.4923, -0.0245196, -2.43751, 0.133333, 1, 1.49503, 0.668017, -2.36161, 0.2, 1, 1.50095, 2.1753, -2.19643, 0.233333, 1, 1.50368, 2.86784, -2.12054, 0.266667, 1, 1.50592, 3.43817, -2.05804, 0.3, 1, 1.50744, 3.82517, -2.01562, 0.333333, 1, 1.508, 3.96775, -2, 0.733333, 1, 1.508, 3.96775, -2)
+tracks/13/keys = PackedFloat32Array(0, 1, 1.48798, -1.12443, -2.55804, 0.0333333, 1, 1.48854, -0.98185, -2.54242, 0.0666667, 1, 1.49006, -0.594844, -2.50001, 0.1, 1, 1.4923, -0.0245196, -2.43751, 0.133333, 1, 1.49503, 0.668017, -2.36161, 0.2, 1, 1.50095, 2.1753, -2.19643, 0.233333, 1, 1.50368, 2.86784, -2.12054, 0.266667, 1, 1.50592, 3.43817, -2.05804, 0.3, 1, 1.50744, 3.82517, -2.01563, 0.333333, 1, 1.508, 3.96775, -2, 0.733333, 1, 1.508, 3.96775, -2)
 tracks/14/type = "rotation_3d"
 tracks/14/imported = true
 tracks/14/enabled = true
@@ -6307,9 +6229,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="107"]
+[sub_resource type="Animation" id="Animation_thhir"]
 resource_name = "ledge_move"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -6487,9 +6408,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="108"]
+[sub_resource type="Animation" id="Animation_wbumh"]
 resource_name = "none"
 length = 0.001
 tracks/0/type = "position_3d"
@@ -6667,9 +6587,8 @@ tracks/24/path = NodePath("%skeleton:torso")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 0, 1.19209e-07, 0, 1)
-script = null
 
-[sub_resource type="Animation" id="109"]
+[sub_resource type="Animation" id="Animation_bgbmy"]
 resource_name = "punch"
 length = 0.666667
 tracks/0/type = "rotation_3d"
@@ -6699,7 +6618,7 @@ tracks/3/enabled = true
 tracks/3/path = NodePath("%skeleton:r.hand")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
-tracks/3/keys = PackedFloat32Array(0, 1, 1, 1, 1, 0.133333, 1, 1, 1, 1, 0.166667, 1, 1.07812, 1.07813, 1.07812, 0.233333, 1, 1.42188, 1.42188, 1.42188, 0.266667, 1, 1.5, 1.5, 1.5, 0.5, 1, 1.5, 1.5, 1.5, 0.533333, 1, 1.448, 1.448, 1.448, 0.566667, 1, 1.324, 1.324, 1.324, 0.6, 1, 1.176, 1.176, 1.176, 0.633333, 1, 1.052, 1.052, 1.052, 0.666667, 1, 1, 1, 1)
+tracks/3/keys = PackedFloat32Array(0, 1, 1, 1, 1, 0.133333, 1, 1, 1, 1, 0.166667, 1, 1.07813, 1.07813, 1.07813, 0.233333, 1, 1.42188, 1.42188, 1.42188, 0.266667, 1, 1.5, 1.5, 1.5, 0.5, 1, 1.5, 1.5, 1.5, 0.533333, 1, 1.448, 1.448, 1.448, 0.566667, 1, 1.324, 1.324, 1.324, 0.6, 1, 1.176, 1.176, 1.176, 0.633333, 1, 1.052, 1.052, 1.052, 0.666667, 1, 1, 1, 1)
 tracks/4/type = "position_3d"
 tracks/4/imported = true
 tracks/4/enabled = true
@@ -6847,9 +6766,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="110"]
+[sub_resource type="Animation" id="Animation_72fyf"]
 resource_name = "push"
 length = 0.8
 loop_mode = 1
@@ -7028,9 +6946,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="111"]
+[sub_resource type="Animation" id="Animation_yylw1"]
 resource_name = "roll"
 length = 0.366667
 loop_mode = 1
@@ -7209,9 +7126,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="112"]
+[sub_resource type="Animation" id="Animation_wrr12"]
 resource_name = "run"
 length = 0.466667
 loop_mode = 1
@@ -7221,7 +7137,7 @@ tracks/0/enabled = true
 tracks/0/path = NodePath("%skeleton:root")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.0333333, 1, 0, 0.117188, 0, 0.1, 1, 0, 0.632813, 0, 0.133333, 1, 0, 0.75, 0, 0.166667, 1, 0, 0.649519, 0, 0.2, 1, 0, 0.375, 0, 0.233333, 1, 0, 0, 0, 0.266667, 1, 0, 0.117188, 0, 0.333333, 1, 0, 0.632812, 0, 0.366667, 1, 0, 0.75, 0, 0.4, 1, 0, 0.649519, 0, 0.433333, 1, 0, 0.375, 0, 0.466667, 1, 0, 0, 0)
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.0333333, 1, 0, 0.117188, 0, 0.1, 1, 0, 0.632813, 0, 0.133333, 1, 0, 0.75, 0, 0.166667, 1, 0, 0.649519, 0, 0.2, 1, 0, 0.375, 0, 0.233333, 1, 0, 0, 0, 0.266667, 1, 0, 0.117188, 0, 0.333333, 1, 0, 0.632813, 0, 0.366667, 1, 0, 0.75, 0, 0.4, 1, 0, 0.649519, 0, 0.433333, 1, 0, 0.375, 0, 0.466667, 1, 0, 0, 0)
 tracks/1/type = "rotation_3d"
 tracks/1/imported = true
 tracks/1/enabled = true
@@ -7256,7 +7172,7 @@ tracks/5/enabled = true
 tracks/5/path = NodePath("%skeleton:waist")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
-tracks/5/keys = PackedFloat32Array(0, 1, 1.1, 0.9, 1.1, 0.0333333, 1, 1.08438, 0.915625, 1.08438, 0.1, 1, 1.01562, 0.984375, 1.01562, 0.133333, 1, 1, 1, 1, 0.166667, 1, 1.02593, 0.974074, 1.02593, 0.2, 1, 1.07407, 0.925926, 1.07407, 0.233333, 1, 1.1, 0.9, 1.1, 0.266667, 1, 1.08438, 0.915625, 1.08438, 0.333333, 1, 1.01562, 0.984375, 1.01562, 0.366667, 1, 1, 1, 1, 0.4, 1, 1.02593, 0.974074, 1.02593, 0.433333, 1, 1.07407, 0.925926, 1.07407, 0.466667, 1, 1.1, 0.9, 1.1)
+tracks/5/keys = PackedFloat32Array(0, 1, 1.1, 0.9, 1.1, 0.0333333, 1, 1.08438, 0.915625, 1.08438, 0.1, 1, 1.01563, 0.984375, 1.01563, 0.133333, 1, 1, 1, 1, 0.166667, 1, 1.02593, 0.974074, 1.02593, 0.2, 1, 1.07407, 0.925926, 1.07407, 0.233333, 1, 1.1, 0.9, 1.1, 0.266667, 1, 1.08438, 0.915625, 1.08438, 0.333333, 1, 1.01563, 0.984375, 1.01563, 0.366667, 1, 1, 1, 1, 0.4, 1, 1.02593, 0.974074, 1.02593, 0.433333, 1, 1.07407, 0.925926, 1.07407, 0.466667, 1, 1.1, 0.9, 1.1)
 tracks/6/type = "rotation_3d"
 tracks/6/imported = true
 tracks/6/enabled = true
@@ -7390,9 +7306,8 @@ tracks/24/path = NodePath("%skeleton:foot.l")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1, 0.0333333, 1, 1, 1.4, 1, 0.0666667, 1, 1, 1.2963, 1, 0.1, 1, 1, 1.1037, 1, 0.133333, 1, 1, 1, 1, 0.233333, 1, 1, 1, 1, 0.266667, 1, 1, 1.4, 1, 0.3, 1, 1, 1.17778, 1, 0.333333, 1, 1, 1.04444, 1, 0.366667, 1, 1, 1, 1, 0.466667, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="113"]
+[sub_resource type="Animation" id="Animation_i4tl6"]
 resource_name = "skid"
 length = 0.001
 tracks/0/type = "position_3d"
@@ -7570,9 +7485,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="114"]
+[sub_resource type="Animation" id="Animation_ycagt"]
 resource_name = "skid_001"
 length = 0.001
 tracks/0/type = "position_3d"
@@ -7750,9 +7664,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="115"]
+[sub_resource type="Animation" id="Animation_aelc3"]
 resource_name = "skid_002"
 length = 0.001
 tracks/0/type = "position_3d"
@@ -7930,9 +7843,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="116"]
+[sub_resource type="Animation" id="Animation_0wy1x"]
 resource_name = "skid_stop"
 length = 0.333333
 tracks/0/type = "position_3d"
@@ -8110,9 +8022,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="117"]
+[sub_resource type="Animation" id="Animation_ak2kl"]
 resource_name = "slide"
 length = 0.333333
 loop_mode = 1
@@ -8291,9 +8202,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="118"]
+[sub_resource type="Animation" id="Animation_483f2"]
 resource_name = "swim_idle"
 length = 0.8
 loop_mode = 1
@@ -8472,9 +8382,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="119"]
+[sub_resource type="Animation" id="Animation_jhm78"]
 resource_name = "swim_move"
 length = 0.4
 tracks/0/type = "position_3d"
@@ -8652,9 +8561,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="120"]
+[sub_resource type="Animation" id="Animation_ejoal"]
 resource_name = "swim_subidle"
 length = 0.8
 loop_mode = 1
@@ -8833,9 +8741,8 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="121"]
+[sub_resource type="Animation" id="Animation_0h006"]
 resource_name = "throw_big"
 length = 0.466667
 tracks/0/type = "position_3d"
@@ -9013,9 +8920,8 @@ tracks/24/path = NodePath("%skeleton:foot.l")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="122"]
+[sub_resource type="Animation" id="Animation_eno0o"]
 resource_name = "throw_small"
 length = 0.333333
 tracks/0/type = "position_3d"
@@ -9193,9 +9099,8 @@ tracks/24/path = NodePath("%skeleton:foot.l")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="123"]
+[sub_resource type="Animation" id="Animation_ngu2k"]
 resource_name = "walk"
 length = 0.566667
 loop_mode = 1
@@ -9374,9 +9279,8 @@ tracks/24/path = NodePath("%skeleton:foot.l")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="Animation" id="124"]
+[sub_resource type="Animation" id="Animation_g00pr"]
 resource_name = "wallslide"
 length = 0.001
 tracks/0/type = "position_3d"
@@ -9554,836 +9458,694 @@ tracks/24/path = NodePath("%skeleton:r.handitem")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = PackedFloat32Array(0, 1, 1, 1, 1)
-script = null
 
-[sub_resource type="AnimationLibrary" id="125"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_loggq"]
 _data = {
-"airborne": SubResource( "88" ),
-"bonk": SubResource( "89" ),
-"bonk_end": SubResource( "90" ),
-"cam_transition": SubResource( "91" ),
-"crouch": SubResource( "92" ),
-"crouch_idle": SubResource( "93" ),
-"crouch_walk": SubResource( "94" ),
-"dive": SubResource( "95" ),
-"dive_begin": SubResource( "96" ),
-"get_prop": SubResource( "97" ),
-"hit_back": SubResource( "98" ),
-"hit_forward": SubResource( "99" ),
-"hit_slam_back": ExtResource( "57" ),
-"hit_slam_forward": SubResource( "100" ),
-"hold_big": SubResource( "101" ),
-"hold_small": SubResource( "102" ),
-"idle": SubResource( "103" ),
-"jump": SubResource( "104" ),
-"land": SubResource( "105" ),
-"ledge_grab": SubResource( "106" ),
-"ledge_move": SubResource( "107" ),
-"mallet_slam": ExtResource( "58" ),
-"mallet_twirl": ExtResource( "59" ),
-"none": SubResource( "108" ),
-"punch": SubResource( "109" ),
-"push": SubResource( "110" ),
-"roll": SubResource( "111" ),
-"run": SubResource( "112" ),
-"skid": SubResource( "113" ),
-"skid_001": SubResource( "114" ),
-"skid_002": SubResource( "115" ),
-"skid_stop": SubResource( "116" ),
-"slide": SubResource( "117" ),
-"swim_idle": SubResource( "118" ),
-"swim_move": SubResource( "119" ),
-"swim_subidle": SubResource( "120" ),
-"throw_big": SubResource( "121" ),
-"throw_small": SubResource( "122" ),
-"twirl": ExtResource( "60" ),
-"walk": SubResource( "123" ),
-"wallslide": SubResource( "124" )
+"airborne": SubResource("Animation_v5obl"),
+"bonk": SubResource("Animation_hiq8y"),
+"bonk_end": SubResource("Animation_p366p"),
+"cam_transition": SubResource("Animation_u2fya"),
+"crouch": SubResource("Animation_kbm12"),
+"crouch_idle": SubResource("Animation_ep802"),
+"crouch_walk": SubResource("Animation_ku8b3"),
+"dive": SubResource("Animation_qjqy5"),
+"dive_begin": SubResource("Animation_arujb"),
+"get_prop": SubResource("Animation_gf4k6"),
+"hit_back": SubResource("Animation_oq0dx"),
+"hit_forward": SubResource("Animation_2dfdx"),
+"hit_slam_back": ExtResource("57"),
+"hit_slam_forward": SubResource("Animation_tv3yo"),
+"hold_big": SubResource("Animation_4oahm"),
+"hold_small": SubResource("Animation_08kv2"),
+"idle": SubResource("Animation_61hvs"),
+"jump": SubResource("Animation_xem27"),
+"land": SubResource("Animation_d5f6g"),
+"ledge_grab": SubResource("Animation_2fq5k"),
+"ledge_move": SubResource("Animation_thhir"),
+"mallet_slam": ExtResource("58"),
+"mallet_twirl": ExtResource("59"),
+"none": SubResource("Animation_wbumh"),
+"punch": SubResource("Animation_bgbmy"),
+"push": SubResource("Animation_72fyf"),
+"roll": SubResource("Animation_yylw1"),
+"run": SubResource("Animation_wrr12"),
+"skid": SubResource("Animation_i4tl6"),
+"skid_001": SubResource("Animation_ycagt"),
+"skid_002": SubResource("Animation_aelc3"),
+"skid_stop": SubResource("Animation_0wy1x"),
+"slide": SubResource("Animation_ak2kl"),
+"swim_idle": SubResource("Animation_483f2"),
+"swim_move": SubResource("Animation_jhm78"),
+"swim_subidle": SubResource("Animation_ejoal"),
+"throw_big": SubResource("Animation_0h006"),
+"throw_small": SubResource("Animation_eno0o"),
+"twirl": ExtResource("60"),
+"walk": SubResource("Animation_ngu2k"),
+"wallslide": SubResource("Animation_g00pr")
 }
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="126"]
 animation = &"airborne"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="127"]
 animation = &"bonk"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="128"]
 animation = &"cam_transition"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="129"]
 animation = &"crouch"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="130"]
 animation = &"crouch_idle"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="131"]
 animation = &"crouch_walk"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="132"]
 animation = &"idle"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="133"]
 animation = &"run"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="134"]
 animation = &"walk"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="135"]
 animation = &"get_prop"
-script = null
-
-[sub_resource type="AnimationNodeAnimation" id="136"]
-animation = &"hold_big"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="137"]
 animation = &"skid"
-script = null
+
+[sub_resource type="AnimationNodeAnimation" id="136"]
+animation = &"hold_big"
 
 [sub_resource type="AnimationNodeBlend2" id="138"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="139"]
 graph_offset = Vector2(-441.096, -140.482)
-nodes/Animation/node = SubResource( "136" )
+nodes/Animation/node = SubResource("136")
 nodes/Animation/position = Vector2(-140, 100)
-"nodes/Animation 2/node" = SubResource( "137" )
+"nodes/Animation 2/node" = SubResource("137")
 "nodes/Animation 2/position" = Vector2(-140, -20)
-nodes/Blend2/node = SubResource( "138" )
+nodes/Blend2/node = SubResource("138")
 nodes/Blend2/position = Vector2(80, 60)
 node_connections = [&"Blend2", 0, &"Animation 2", &"Blend2", 1, &"Animation", &"output", 0, &"Blend2"]
-script = null
+
+[sub_resource type="AnimationNodeBlend2" id="141"]
 
 [sub_resource type="AnimationNodeBlend2" id="140"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem"]
-script = null
-
-[sub_resource type="AnimationNodeBlend2" id="141"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="142"]
 animation = &"hold_big"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="143"]
 animation = &"idle"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="144"]
 animation = &"none"
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="145"]
 graph_offset = Vector2(-486.9, -64.1)
-nodes/Blend2/node = SubResource( "140" )
+nodes/Blend2/node = SubResource("140")
 nodes/Blend2/position = Vector2(60, 120)
-"nodes/Blend2 2/node" = SubResource( "141" )
+"nodes/Blend2 2/node" = SubResource("141")
 "nodes/Blend2 2/position" = Vector2(-160, -20)
-nodes/anim_glove_big/node = SubResource( "142" )
+nodes/anim_glove_big/node = SubResource("142")
 nodes/anim_glove_big/position = Vector2(-200, 240)
-nodes/anim_idle/node = SubResource( "143" )
+nodes/anim_idle/node = SubResource("143")
 nodes/anim_idle/position = Vector2(-400, -100)
-nodes/none/node = SubResource( "144" )
+nodes/none/node = SubResource("144")
 nodes/none/position = Vector2(-380, 40)
 node_connections = [&"Blend2", 0, &"Blend2 2", &"Blend2", 1, &"anim_glove_big", &"Blend2 2", 0, &"anim_idle", &"Blend2 2", 1, &"none", &"output", 0, &"Blend2"]
-script = null
-
-[sub_resource type="AnimationNodeAnimation" id="146"]
-animation = &"jump"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="147"]
 animation = &"hold_big"
-script = null
+
+[sub_resource type="AnimationNodeAnimation" id="146"]
+animation = &"jump"
 
 [sub_resource type="AnimationNodeBlend2" id="148"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem"]
-script = null
 
 [sub_resource type="AnimationNodeTimeScale" id="149"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="150"]
 graph_offset = Vector2(-273.847, -38.213)
-nodes/Animation/node = SubResource( "146" )
+nodes/Animation/node = SubResource("146")
 nodes/Animation/position = Vector2(-200, 40)
-"nodes/Animation 2/node" = SubResource( "147" )
+"nodes/Animation 2/node" = SubResource("147")
 "nodes/Animation 2/position" = Vector2(-200, 220)
-nodes/Blend2/node = SubResource( "148" )
+nodes/Blend2/node = SubResource("148")
 nodes/Blend2/position = Vector2(120, 80)
-nodes/TimeScale/node = SubResource( "149" )
+nodes/TimeScale/node = SubResource("149")
 nodes/TimeScale/position = Vector2(-20, 40)
 node_connections = [&"Blend2", 0, &"TimeScale", &"Blend2", 1, &"Animation 2", &"TimeScale", 0, &"Animation", &"output", 0, &"Blend2"]
-script = null
 
 [sub_resource type="AnimationNodeBlend2" id="151"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem", "%skeleton:torso", "%skeleton:waist"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="152"]
 animation = &"hold_big"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="153"]
 animation = &"walk"
-script = null
 
 [sub_resource type="AnimationNodeTimeScale" id="154"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="155"]
 graph_offset = Vector2(-446.445, -18.4218)
-nodes/Blend2/node = SubResource( "151" )
+nodes/Blend2/node = SubResource("151")
 nodes/Blend2/position = Vector2(20, 20)
-nodes/anim_hold_big/node = SubResource( "152" )
+nodes/anim_hold_big/node = SubResource("152")
 nodes/anim_hold_big/position = Vector2(-200, 140)
-nodes/anim_walk/node = SubResource( "153" )
+nodes/anim_walk/node = SubResource("153")
 nodes/anim_walk/position = Vector2(-320, 0)
-nodes/speed/node = SubResource( "154" )
+nodes/speed/node = SubResource("154")
 nodes/speed/position = Vector2(-180, 0)
 node_connections = [&"Blend2", 0, &"speed", &"Blend2", 1, &"anim_hold_big", &"output", 0, &"Blend2", &"speed", 0, &"anim_walk"]
-script = null
-
-[sub_resource type="AnimationNodeAnimation" id="156"]
-animation = &"slide"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="157"]
 animation = &"hold_big"
-script = null
+
+[sub_resource type="AnimationNodeAnimation" id="156"]
+animation = &"slide"
 
 [sub_resource type="AnimationNodeBlend2" id="158"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="159"]
 graph_offset = Vector2(-318.554, -21.7247)
-nodes/Animation/node = SubResource( "156" )
+nodes/Animation/node = SubResource("156")
 nodes/Animation/position = Vector2(-140, 20)
-"nodes/Animation 2/node" = SubResource( "157" )
+"nodes/Animation 2/node" = SubResource("157")
 "nodes/Animation 2/position" = Vector2(-140, 180)
-nodes/Blend2/node = SubResource( "158" )
+nodes/Blend2/node = SubResource("158")
 nodes/Blend2/position = Vector2(80, 60)
 node_connections = [&"Blend2", 0, &"Animation", &"Blend2", 1, &"Animation 2", &"output", 0, &"Blend2"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="160"]
 animation = &"throw_big"
-script = null
-
-[sub_resource type="AnimationNodeAnimation" id="161"]
-animation = &"skid"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="162"]
 animation = &"hold_small"
-script = null
+
+[sub_resource type="AnimationNodeAnimation" id="161"]
+animation = &"skid"
 
 [sub_resource type="AnimationNodeBlend2" id="163"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="164"]
 graph_offset = Vector2(-344.117, -78.7469)
-nodes/Animation/node = SubResource( "161" )
+nodes/Animation/node = SubResource("161")
 nodes/Animation/position = Vector2(-160, 20)
-"nodes/Animation 2/node" = SubResource( "162" )
+"nodes/Animation 2/node" = SubResource("162")
 "nodes/Animation 2/position" = Vector2(-160, 140)
-nodes/Blend2/node = SubResource( "163" )
+nodes/Blend2/node = SubResource("163")
 nodes/Blend2/position = Vector2(60, 40)
 node_connections = [&"Blend2", 0, &"Animation", &"Blend2", 1, &"Animation 2", &"output", 0, &"Blend2"]
-script = null
-
-[sub_resource type="AnimationNodeAnimation" id="165"]
-animation = &"idle"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="166"]
 animation = &"hold_small"
-script = null
+
+[sub_resource type="AnimationNodeAnimation" id="165"]
+animation = &"idle"
 
 [sub_resource type="AnimationNodeBlend2" id="167"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="168"]
 graph_offset = Vector2(-452.024, 76.4315)
-nodes/Animation/node = SubResource( "165" )
+nodes/Animation/node = SubResource("165")
 nodes/Animation/position = Vector2(-232.566, 83.9647)
-"nodes/Animation 2/node" = SubResource( "166" )
+"nodes/Animation 2/node" = SubResource("166")
 "nodes/Animation 2/position" = Vector2(-240, 240)
-nodes/Blend2/node = SubResource( "167" )
+nodes/Blend2/node = SubResource("167")
 nodes/Blend2/position = Vector2(60, 140)
 node_connections = [&"Blend2", 0, &"Animation", &"Blend2", 1, &"Animation 2", &"output", 0, &"Blend2"]
-script = null
-
-[sub_resource type="AnimationNodeAnimation" id="169"]
-animation = &"jump"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="170"]
 animation = &"hold_small"
-script = null
+
+[sub_resource type="AnimationNodeAnimation" id="169"]
+animation = &"jump"
 
 [sub_resource type="AnimationNodeBlend2" id="171"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem", "../sfx/whirl:playing"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="172"]
 graph_offset = Vector2(-349.101, -61.8044)
-nodes/Animation/node = SubResource( "169" )
+nodes/Animation/node = SubResource("169")
 nodes/Animation/position = Vector2(-120, 40)
-"nodes/Animation 2/node" = SubResource( "170" )
+"nodes/Animation 2/node" = SubResource("170")
 "nodes/Animation 2/position" = Vector2(-120, 200)
-nodes/Blend2/node = SubResource( "171" )
+nodes/Blend2/node = SubResource("171")
 nodes/Blend2/position = Vector2(121.818, 87.2727)
 node_connections = [&"Blend2", 0, &"Animation", &"Blend2", 1, &"Animation 2", &"output", 0, &"Blend2"]
-script = null
 
 [sub_resource type="AnimationNodeBlend2" id="173"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem", "%skeleton:torso", "%skeleton:waist"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="174"]
 animation = &"hold_small"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="175"]
 animation = &"run"
-script = null
 
 [sub_resource type="AnimationNodeTimeScale" id="176"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="177"]
 graph_offset = Vector2(-539.909, 17.5455)
-nodes/Blend2/node = SubResource( "173" )
+nodes/Blend2/node = SubResource("173")
 nodes/Blend2/position = Vector2(40, 100)
-nodes/anim_hold_small/node = SubResource( "174" )
+nodes/anim_hold_small/node = SubResource("174")
 nodes/anim_hold_small/position = Vector2(-200, 340)
-nodes/anim_walk/node = SubResource( "175" )
+nodes/anim_walk/node = SubResource("175")
 nodes/anim_walk/position = Vector2(-300, 120)
 nodes/output/position = Vector2(260, 100)
-nodes/speed/node = SubResource( "176" )
+nodes/speed/node = SubResource("176")
 nodes/speed/position = Vector2(-140, 120)
 node_connections = [&"Blend2", 0, &"speed", &"Blend2", 1, &"anim_hold_small", &"output", 0, &"Blend2", &"speed", 0, &"anim_walk"]
-script = null
-
-[sub_resource type="AnimationNodeAnimation" id="178"]
-animation = &"hold_small"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="179"]
 animation = &"slide"
-script = null
+
+[sub_resource type="AnimationNodeAnimation" id="178"]
+animation = &"hold_small"
 
 [sub_resource type="AnimationNodeBlend2" id="180"]
 filter_enabled = true
 filters = ["%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:r.handitem"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="181"]
 graph_offset = Vector2(-335, -46)
-nodes/Animation/node = SubResource( "178" )
+nodes/Animation/node = SubResource("178")
 nodes/Animation/position = Vector2(-120, 220)
-"nodes/Animation 2/node" = SubResource( "179" )
+"nodes/Animation 2/node" = SubResource("179")
 "nodes/Animation 2/position" = Vector2(-120, 80)
-nodes/Blend2/node = SubResource( "180" )
+nodes/Blend2/node = SubResource("180")
 nodes/Blend2/position = Vector2(80, 100)
 node_connections = [&"Blend2", 0, &"Animation 2", &"Blend2", 1, &"Animation", &"output", 0, &"Blend2"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="182"]
 animation = &"throw_small"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="183"]
 animation = &"hit_back"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="184"]
 animation = &"hit_forward"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="185"]
 animation = &"hit_slam_back"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="186"]
 animation = &"hit_slam_forward"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="187"]
 animation = &"idle"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="188"]
 animation = &"jump"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="189"]
 animation = &"land"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="190"]
 animation = &"ledge_grab"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="191"]
 animation = &"ledge_move"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="192"]
 animation = &"mallet_twirl"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="193"]
 animation = &"idle"
-script = null
 
 [sub_resource type="AnimationNodeBlend2" id="194"]
 filters = ["%skeleton:foot.l", "%skeleton:foot.r", "%skeleton:l.hand", "%skeleton:r.hand", "%skeleton:root", "%skeleton:torso", "%skeleton:waist"]
 sync = true
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="195"]
 animation = &"run"
-script = null
 
 [sub_resource type="AnimationNodeBlend2" id="196"]
 sync = true
-script = null
 
 [sub_resource type="AnimationNodeTimeScale" id="197"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="198"]
 animation = &"walk"
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="199"]
 graph_offset = Vector2(-510.322, 40.8198)
-"nodes/Animation 2/node" = SubResource( "193" )
+"nodes/Animation 2/node" = SubResource("193")
 "nodes/Animation 2/position" = Vector2(-540, 20)
-nodes/input_length/node = SubResource( "194" )
+nodes/input_length/node = SubResource("194")
 nodes/input_length/position = Vector2(-160, 120)
 nodes/output/position = Vector2(220, 160)
-nodes/run/node = SubResource( "195" )
+nodes/run/node = SubResource("195")
 nodes/run/position = Vector2(-520, 360)
-nodes/run_threshold/node = SubResource( "196" )
+nodes/run_threshold/node = SubResource("196")
 nodes/run_threshold/position = Vector2(-360, 260)
-nodes/speed/node = SubResource( "197" )
+nodes/speed/node = SubResource("197")
 nodes/speed/position = Vector2(40, 140)
-nodes/walk/node = SubResource( "198" )
+nodes/walk/node = SubResource("198")
 nodes/walk/position = Vector2(-520, 220)
 node_connections = [&"input_length", 0, &"Animation 2", &"input_length", 1, &"run_threshold", &"output", 0, &"speed", &"run_threshold", 0, &"walk", &"run_threshold", 1, &"run", &"speed", 0, &"input_length"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="200"]
 animation = &"none"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="201"]
 animation = &"roll"
-script = null
 
 [sub_resource type="AnimationNodeTimeScale" id="202"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="203"]
-nodes/Animation/node = SubResource( "201" )
+nodes/Animation/node = SubResource("201")
 nodes/Animation/position = Vector2(60, 100)
 nodes/output/position = Vector2(400, 120)
-nodes/roll_speed/node = SubResource( "202" )
+nodes/roll_speed/node = SubResource("202")
 nodes/roll_speed/position = Vector2(240, 100)
 node_connections = [&"output", 0, &"roll_speed", &"roll_speed", 0, &"Animation"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="204"]
 animation = &"slide"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="205"]
 animation = &"skid_stop"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="206"]
 animation = &"slide"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="207"]
 animation = &"swim_idle"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="208"]
 animation = &"swim_move"
-script = null
 
 [sub_resource type="AnimationNodeTimeScale" id="209"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="210"]
-nodes/Animation/node = SubResource( "208" )
+nodes/Animation/node = SubResource("208")
 nodes/Animation/position = Vector2(160, 60)
 nodes/output/position = Vector2(560, 100)
-nodes/swim_move_speed/node = SubResource( "209" )
+nodes/swim_move_speed/node = SubResource("209")
 nodes/swim_move_speed/position = Vector2(340, 100)
 node_connections = [&"output", 0, &"swim_move_speed", &"swim_move_speed", 0, &"Animation"]
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="211"]
 animation = &"twirl"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="212"]
 animation = &"wallslide"
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="213"]
 advance_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="214"]
 priority = 2
-script = null
 
 [sub_resource type="Curve" id="215"]
 _data = [Vector2(0.497642, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="216"]
 xfade_time = 0.6
-xfade_curve = SubResource( "215" )
+xfade_curve = SubResource("215")
 reset = false
 switch_mode = 1
 advance_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="217"]
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="218"]
 xfade_time = 0.05
 advance_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="219"]
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="220"]
 xfade_time = 0.1
 advance_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="221"]
 xfade_time = 0.05
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="222"]
 xfade_time = 0.5
 priority = 2
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="223"]
 xfade_time = 0.1
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="224"]
 priority = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="225"]
 xfade_time = 0.25
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="226"]
 xfade_time = 0.25
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="227"]
 xfade_time = 0.1
 advance_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="228"]
 xfade_time = 0.05
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="229"]
 xfade_time = 0.1
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="230"]
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="231"]
 switch_mode = 2
 advance_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="232"]
 xfade_time = 0.2
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="233"]
 xfade_time = 0.2
 switch_mode = 1
-script = null
 
 [sub_resource type="Curve" id="234"]
 _data = [Vector2(0, 0), 0.0, 3.36159, 0, 0, Vector2(0.798578, 1), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="235"]
 xfade_time = 0.3
-xfade_curve = SubResource( "234" )
+xfade_curve = SubResource("234")
 switch_mode = 1
-script = null
 
 [sub_resource type="Curve" id="236"]
 _data = [Vector2(0.249406, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="237"]
 xfade_time = 0.65
-xfade_curve = SubResource( "236" )
+xfade_curve = SubResource("236")
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="238"]
 xfade_time = 0.08
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="239"]
 xfade_time = 0.2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="240"]
 xfade_time = 0.1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="241"]
 xfade_time = 0.1
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="242"]
 xfade_time = 0.1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="243"]
 xfade_time = 0.2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="244"]
 xfade_time = 0.2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="245"]
 xfade_time = 0.1
 priority = 3
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="246"]
 xfade_time = 0.1
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="247"]
 xfade_time = 0.1
 switch_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="248"]
 xfade_time = 0.1
 switch_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="249"]
 xfade_time = 0.2
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="250"]
 xfade_time = 0.3
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="251"]
 xfade_time = 0.2
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="252"]
 xfade_time = 0.2
 switch_mode = 1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="253"]
 xfade_time = 0.1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="254"]
 xfade_time = 0.1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="255"]
 xfade_time = 0.1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="256"]
 xfade_time = 0.1
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="257"]
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="258"]
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="259"]
 xfade_time = 0.2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="260"]
 xfade_time = 0.2
-script = null
 
 [sub_resource type="AnimationNodeStateMachine" id="261"]
-states/End/node = null
 states/End/position = Vector2(1133, -108)
-states/Start/node = null
 states/Start/position = Vector2(-57, -57)
-states/airborne/node = SubResource( "126" )
+states/airborne/node = SubResource("126")
 states/airborne/position = Vector2(98, 268)
-states/bonk/node = SubResource( "127" )
+states/bonk/node = SubResource("127")
 states/bonk/position = Vector2(374, -57)
-states/cam_transition/node = SubResource( "128" )
+states/cam_transition/node = SubResource("128")
 states/cam_transition/position = Vector2(477, 374)
-states/crouch/node = SubResource( "129" )
+states/crouch/node = SubResource("129")
 states/crouch/position = Vector2(930, -260)
-states/crouch_idle/node = SubResource( "130" )
+states/crouch_idle/node = SubResource("130")
 states/crouch_idle/position = Vector2(782, -260)
-states/crouch_walk/node = SubResource( "131" )
+states/crouch_walk/node = SubResource("131")
 states/crouch_walk/position = Vector2(782, -165)
-states/cutscene_idle/node = SubResource( "132" )
+states/cutscene_idle/node = SubResource("132")
 states/cutscene_idle/position = Vector2(-373, 643)
-states/cutscene_run/node = SubResource( "133" )
+states/cutscene_run/node = SubResource("133")
 states/cutscene_run/position = Vector2(-166, 702)
-states/cutscene_walk/node = SubResource( "134" )
+states/cutscene_walk/node = SubResource("134")
 states/cutscene_walk/position = Vector2(-166, 584)
-states/get_prop/node = SubResource( "135" )
+states/get_prop/node = SubResource("135")
 states/get_prop/position = Vector2(98, 458)
-states/glove_big_airborne/node = SubResource( "139" )
+states/glove_big_airborne/node = SubResource("139")
 states/glove_big_airborne/position = Vector2(1322, 855)
-states/glove_big_idle/node = SubResource( "145" )
+states/glove_big_idle/node = SubResource("145")
 states/glove_big_idle/position = Vector2(1091, 689)
-states/glove_big_jump/node = SubResource( "150" )
+states/glove_big_jump/node = SubResource("150")
 states/glove_big_jump/position = Vector2(1322, 772)
-states/glove_big_move/node = SubResource( "155" )
+states/glove_big_move/node = SubResource("155")
 states/glove_big_move/position = Vector2(1322, 689)
-states/glove_big_slide/node = SubResource( "159" )
+states/glove_big_slide/node = SubResource("159")
 states/glove_big_slide/position = Vector2(1515, 689)
-states/glove_big_throw/node = SubResource( "160" )
+states/glove_big_throw/node = SubResource("160")
 states/glove_big_throw/position = Vector2(1091, 772)
-states/glove_small_airborne/node = SubResource( "164" )
+states/glove_small_airborne/node = SubResource("164")
 states/glove_small_airborne/position = Vector2(658, 855)
-states/glove_small_idle/node = SubResource( "168" )
+states/glove_small_idle/node = SubResource("168")
 states/glove_small_idle/position = Vector2(413, 689)
-states/glove_small_jump/node = SubResource( "172" )
+states/glove_small_jump/node = SubResource("172")
 states/glove_small_jump/position = Vector2(658, 772)
-states/glove_small_move/node = SubResource( "177" )
+states/glove_small_move/node = SubResource("177")
 states/glove_small_move/position = Vector2(658, 689)
-states/glove_small_slide/node = SubResource( "181" )
+states/glove_small_slide/node = SubResource("181")
 states/glove_small_slide/position = Vector2(887, 689)
-states/glove_small_throw/node = SubResource( "182" )
+states/glove_small_throw/node = SubResource("182")
 states/glove_small_throw/position = Vector2(413, 772)
-states/hit_back/node = SubResource( "183" )
+states/hit_back/node = SubResource("183")
 states/hit_back/position = Vector2(-349, 383)
-states/hit_forward/node = SubResource( "184" )
+states/hit_forward/node = SubResource("184")
 states/hit_forward/position = Vector2(-349, 470)
-states/hit_slam_back/node = SubResource( "185" )
+states/hit_slam_back/node = SubResource("185")
 states/hit_slam_back/position = Vector2(-172, 383)
-states/hit_slam_forward/node = SubResource( "186" )
+states/hit_slam_forward/node = SubResource("186")
 states/hit_slam_forward/position = Vector2(-165, 470)
-states/idle/node = SubResource( "187" )
+states/idle/node = SubResource("187")
 states/idle/position = Vector2(257, -57)
-states/jump/node = SubResource( "188" )
+states/jump/node = SubResource("188")
 states/jump/position = Vector2(98, 160)
-states/land/node = SubResource( "189" )
+states/land/node = SubResource("189")
 states/land/position = Vector2(691, 268)
-states/ledge_grab/node = SubResource( "190" )
+states/ledge_grab/node = SubResource("190")
 states/ledge_grab/position = Vector2(98, 383)
-states/ledge_move/node = SubResource( "191" )
+states/ledge_move/node = SubResource("191")
 states/ledge_move/position = Vector2(276, 383)
-states/mallet_twirl/node = SubResource( "192" )
+states/mallet_twirl/node = SubResource("192")
 states/mallet_twirl/position = Vector2(-154, 211)
-states/move/node = SubResource( "199" )
+states/move/node = SubResource("199")
 states/move/position = Vector2(257, 160)
-states/none/node = SubResource( "200" )
+states/none/node = SubResource("200")
 states/none/position = Vector2(257, -180)
-states/roll/node = SubResource( "203" )
+states/roll/node = SubResource("203")
 states/roll/position = Vector2(691, 383)
-states/skid/node = SubResource( "204" )
+states/skid/node = SubResource("204")
 states/skid/position = Vector2(537, 160)
-states/skid_stop/node = SubResource( "205" )
+states/skid_stop/node = SubResource("205")
 states/skid_stop/position = Vector2(691, 160)
-states/slide/node = SubResource( "206" )
+states/slide/node = SubResource("206")
 states/slide/position = Vector2(859, 160)
-states/swim_idle/node = SubResource( "207" )
+states/swim_idle/node = SubResource("207")
 states/swim_idle/position = Vector2(922, 268)
-states/swim_move/node = SubResource( "210" )
+states/swim_move/node = SubResource("210")
 states/swim_move/position = Vector2(922, 383)
-states/twirl/node = SubResource( "211" )
+states/twirl/node = SubResource("211")
 states/twirl/position = Vector2(-57, 43)
-states/wallslide/node = SubResource( "212" )
+states/wallslide/node = SubResource("212")
 states/wallslide/position = Vector2(268, 458)
-transitions = ["Start", "idle", SubResource( "213" ), "idle", "jump", SubResource( "214" ), "jump", "airborne", SubResource( "216" ), "airborne", "land", SubResource( "217" ), "land", "idle", SubResource( "218" ), "skid", "skid_stop", SubResource( "219" ), "skid_stop", "idle", SubResource( "220" ), "idle", "move", SubResource( "221" ), "move", "idle", SubResource( "222" ), "move", "skid", SubResource( "223" ), "move", "jump", SubResource( "224" ), "idle", "airborne", SubResource( "225" ), "move", "airborne", SubResource( "226" ), "land", "move", SubResource( "227" ), "slide", "skid_stop", SubResource( "228" ), "roll", "land", SubResource( "229" ), "ledge_grab", "ledge_move", SubResource( "230" ), "crouch", "crouch_idle", SubResource( "231" ), "crouch_idle", "crouch_walk", SubResource( "232" ), "crouch_walk", "crouch_idle", SubResource( "233" ), "crouch_idle", "idle", SubResource( "235" ), "swim_move", "swim_idle", SubResource( "237" ), "swim_idle", "swim_move", SubResource( "238" ), "swim_move", "roll", SubResource( "239" ), "idle", "twirl", SubResource( "240" ), "twirl", "idle", SubResource( "241" ), "move", "twirl", SubResource( "242" ), "jump", "mallet_twirl", SubResource( "243" ), "airborne", "mallet_twirl", SubResource( "244" ), "twirl", "move", SubResource( "245" ), "twirl", "airborne", SubResource( "246" ), "bonk", "idle", SubResource( "247" ), "bonk", "move", SubResource( "248" ), "glove_small_idle", "glove_small_move", SubResource( "249" ), "glove_small_move", "glove_small_idle", SubResource( "250" ), "glove_big_idle", "glove_big_move", SubResource( "251" ), "glove_big_move", "glove_big_idle", SubResource( "252" ), "glove_big_jump", "glove_big_airborne", SubResource( "253" ), "glove_small_jump", "glove_small_airborne", SubResource( "254" ), "hit_back", "hit_slam_back", SubResource( "255" ), "hit_forward", "hit_slam_forward", SubResource( "256" ), "cutscene_idle", "cutscene_run", SubResource( "257" ), "cutscene_idle", "cutscene_walk", SubResource( "258" ), "cutscene_run", "cutscene_idle", SubResource( "259" ), "cutscene_walk", "cutscene_idle", SubResource( "260" )]
+transitions = ["Start", "idle", SubResource("213"), "idle", "jump", SubResource("214"), "jump", "airborne", SubResource("216"), "airborne", "land", SubResource("217"), "land", "idle", SubResource("218"), "skid", "skid_stop", SubResource("219"), "skid_stop", "idle", SubResource("220"), "idle", "move", SubResource("221"), "move", "idle", SubResource("222"), "move", "skid", SubResource("223"), "move", "jump", SubResource("224"), "idle", "airborne", SubResource("225"), "move", "airborne", SubResource("226"), "land", "move", SubResource("227"), "slide", "skid_stop", SubResource("228"), "roll", "land", SubResource("229"), "ledge_grab", "ledge_move", SubResource("230"), "crouch", "crouch_idle", SubResource("231"), "crouch_idle", "crouch_walk", SubResource("232"), "crouch_walk", "crouch_idle", SubResource("233"), "crouch_idle", "idle", SubResource("235"), "swim_move", "swim_idle", SubResource("237"), "swim_idle", "swim_move", SubResource("238"), "swim_move", "roll", SubResource("239"), "idle", "twirl", SubResource("240"), "twirl", "idle", SubResource("241"), "move", "twirl", SubResource("242"), "jump", "mallet_twirl", SubResource("243"), "airborne", "mallet_twirl", SubResource("244"), "twirl", "move", SubResource("245"), "twirl", "airborne", SubResource("246"), "bonk", "idle", SubResource("247"), "bonk", "move", SubResource("248"), "glove_small_idle", "glove_small_move", SubResource("249"), "glove_small_move", "glove_small_idle", SubResource("250"), "glove_big_idle", "glove_big_move", SubResource("251"), "glove_big_move", "glove_big_idle", SubResource("252"), "glove_big_jump", "glove_big_airborne", SubResource("253"), "glove_small_jump", "glove_small_airborne", SubResource("254"), "hit_back", "hit_slam_back", SubResource("255"), "hit_forward", "hit_slam_forward", SubResource("256"), "cutscene_idle", "cutscene_run", SubResource("257"), "cutscene_idle", "cutscene_walk", SubResource("258"), "cutscene_run", "cutscene_idle", SubResource("259"), "cutscene_walk", "cutscene_idle", SubResource("260")]
 graph_offset = Vector2(-586, 417)
-script = null
 
-[node name="player" type="CharacterBody3D" groups=[
-"Player",
-]]
+[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("hurtbox_node", "visual_node", "floor_raycast", "anim_tree") groups=["Player"]]
 collision_layer = 2
 collision_priority = 5.0
 wall_min_slide_angle = 0.610865
 floor_max_angle = 1.13446
 floor_snap_length = 1.0
-script = ExtResource( "1" )
+script = ExtResource("1")
 e_name = "Player"
 hurtbox_node = NodePath("hurtbox")
 visual_node = NodePath("visual/newman")
@@ -10394,7 +10156,7 @@ jump_height = 15.0
 jtt_peak = 0.45
 jtt_descent = 0.35
 
-[node name="visual" parent="." instance=ExtResource( "2" )]
+[node name="visual" parent="." instance=ExtResource("2")]
 transform = Transform3D(-1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 0, 0, 0)
 
 [node name="newman" parent="visual" index="0"]
@@ -10404,25 +10166,25 @@ transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 
 transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.0624833, 1.37293, 1.73276)
 
 [node name="skeleton" parent="visual/newman" index="1"]
-bones/2/rotation = Quaternion(-0.0393901, 1.19117e-07, 4.69566e-09, 0.999224)
-bones/3/position = Vector3(0.500107, -0.175341, 1.40148)
+bones/2/rotation = Quaternion(0.0369739, 1.19128e-07, -4.40763e-09, 0.999316)
+bones/3/position = Vector3(-0.50515, -0.225183, 1.73772)
 bones/4/scale = Vector3(0, 0, 0)
-bones/5/position = Vector3(2.18519e-10, 2.67916, -0.000916564)
-bones/5/rotation = Quaternion(0.00339295, -1.19209e-07, 4.04471e-10, 0.999994)
-bones/6/position = Vector3(-0.527339, -0.172677, -1.60568)
+bones/5/position = Vector3(2.13959e-10, 2.67959, -0.000897405)
+bones/5/rotation = Quaternion(0.00332225, -1.19209e-07, 3.96042e-10, 0.999995)
+bones/6/position = Vector3(0.568958, -0.145784, -1.55788)
 
 [node name="head_accessory" type="BoneAttachment3D" parent="visual/newman/skeleton" index="0"]
-transform = Transform3D(1, -1.87727e-08, -6.12488e-10, 1.87681e-08, 0.997408, 0.0719524, -7.39831e-10, -0.0719524, 0.997408, -5.02819e-08, 4.37077, -0.211814)
+transform = Transform3D(1, 1.76137e-08, -7.68992e-10, -1.76185e-08, 0.996753, -0.0805219, -6.51809e-10, 0.0805219, 0.996753, 4.72109e-08, 4.37233, 0.197119)
 bone_name = "head"
 bone_idx = 5
 
 [node name="face_accessory" type="BoneAttachment3D" parent="visual/newman/skeleton" index="1"]
-transform = Transform3D(1, -1.87727e-08, -6.12488e-10, 1.87681e-08, 0.997408, 0.0719524, -7.39831e-10, -0.0719524, 0.997408, -5.02819e-08, 4.37077, -0.211814)
+transform = Transform3D(1, 1.76137e-08, -7.68992e-10, -1.76185e-08, 0.996753, -0.0805219, -6.51809e-10, 0.0805219, 0.996753, 4.72109e-08, 4.37233, 0.197119)
 bone_name = "head"
 bone_idx = 5
 
 [node name="item_follow" type="BoneAttachment3D" parent="visual/newman/skeleton" index="2"]
-transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.888778, 1.6257, 1.41171)
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.11648, 1.33719, 1.7156)
 bone_name = "r.handitem"
 bone_idx = 4
 
@@ -10438,14 +10200,14 @@ visible = false
 visible = false
 
 [node name="body" parent="visual/newman/skeleton" index="6"]
-skin = ExtResource( "3" )
+skin = ExtResource("3")
 
 [node name="face" parent="visual/newman/skeleton" index="7"]
 cast_shadow = 0
-surface_material_override/0 = ExtResource( "4" )
+surface_material_override/0 = ExtResource("4")
 
 [node name="skin" parent="visual/newman/skeleton" index="8"]
-surface_material_override/0 = ExtResource( "5" )
+surface_material_override/0 = ExtResource("5")
 
 [node name="camera" parent="visual/newman/skeleton" index="9"]
 visible = false
@@ -10453,21 +10215,21 @@ visible = false
 [node name="AnimationPlayer" parent="visual" index="1"]
 reset_on_save = false
 
-[node name="state_machine" type="Node" parent="."]
-script = ExtResource( "6" )
+[node name="state_machine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("6")
 initial_state = NodePath("idle")
 
 [node name="none" type="Node" parent="state_machine"]
-script = SubResource( "1" )
+script = SubResource("1")
 
 [node name="debug_noclip" type="Node" parent="state_machine"]
-script = SubResource( "2" )
+script = SubResource("2")
 
 [node name="idle" type="Node" parent="state_machine"]
-script = SubResource( "3" )
+script = SubResource("3")
 
 [node name="move" type="Node" parent="state_machine"]
-script = SubResource( "4" )
+script = SubResource("4")
 
 [node name="step" type="Timer" parent="state_machine/move"]
 wait_time = 0.15
@@ -10478,22 +10240,22 @@ wait_time = 0.1
 one_shot = true
 
 [node name="mallet_slam" type="Node" parent="state_machine"]
-script = SubResource( "5" )
+script = SubResource("5")
 
 [node name="airborne" type="Node" parent="state_machine"]
-script = SubResource( "6" )
+script = SubResource("6")
 
 [node name="jump" type="Node" parent="state_machine"]
-script = SubResource( "7" )
+script = SubResource("7")
 
 [node name="hit" type="Node" parent="state_machine"]
-script = SubResource( "8" )
+script = SubResource("8")
 
 [node name="death" type="Node" parent="state_machine"]
-script = SubResource( "9" )
+script = SubResource("9")
 
 [node name="twirl" type="Node" parent="state_machine"]
-script = SubResource( "10" )
+script = SubResource("10")
 
 [node name="cooldown" type="Timer" parent="state_machine/twirl"]
 wait_time = 3.0
@@ -10504,17 +10266,17 @@ wait_time = 0.3
 one_shot = true
 
 [node name="mallet_twirl" type="Node" parent="state_machine"]
-script = SubResource( "11" )
+script = SubResource("11")
 
 [node name="ledge_grab" type="Node" parent="state_machine"]
-script = SubResource( "12" )
+script = SubResource("12")
 
 [node name="anim_cooldown" type="Timer" parent="state_machine/ledge_grab"]
 wait_time = 0.44
 one_shot = true
 
 [node name="ground_pound" type="Node" parent="state_machine"]
-script = SubResource( "13" )
+script = SubResource("13")
 
 [node name="interactor" type="Area3D" parent="state_machine/ground_pound"]
 collision_layer = 5
@@ -10523,12 +10285,12 @@ collision_priority = 10.0
 input_ray_pickable = false
 monitorable = false
 priority = 10
-script = ExtResource( "7" )
+script = ExtResource("7")
 scope = 5
 
 [node name="col" type="CollisionShape3D" parent="state_machine/ground_pound/interactor"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.737191, 0)
-shape = SubResource( "14" )
+shape = SubResource("14")
 disabled = true
 
 [node name="airtime" type="Timer" parent="state_machine/ground_pound"]
@@ -10536,19 +10298,19 @@ wait_time = 0.15
 one_shot = true
 
 [node name="roll" type="Node" parent="state_machine"]
-script = SubResource( "15" )
+script = SubResource("15")
 
 [node name="bonk" type="Node" parent="state_machine"]
-script = SubResource( "16" )
+script = SubResource("16")
 
 [node name="prop_get" type="Node" parent="state_machine"]
-script = SubResource( "17" )
+script = SubResource("17")
 
 [node name="cutscene_cam" type="Camera3D" parent="state_machine/prop_get"]
 fov = 55.0
 
 [node name="hit" type="AudioStreamPlayer" parent="state_machine/prop_get"]
-stream = ExtResource( "8" )
+stream = ExtResource("8")
 volume_db = -4.0
 pitch_scale = 0.9
 bus = &"SoundIndoors"
@@ -10558,76 +10320,76 @@ wait_time = 3.0
 one_shot = true
 
 [node name="slide" type="Node" parent="state_machine"]
-script = SubResource( "18" )
+script = SubResource("18")
 
 [node name="skid" type="Node" parent="state_machine"]
-script = SubResource( "19" )
+script = SubResource("19")
 
 [node name="crouch" type="Node" parent="state_machine"]
-script = SubResource( "20" )
+script = SubResource("20")
 
 [node name="cooldown" type="Timer" parent="state_machine/crouch"]
 wait_time = 0.3
 one_shot = true
 
 [node name="crouch_move" type="Node" parent="state_machine"]
-script = SubResource( "21" )
+script = SubResource("21")
 
 [node name="step" type="Timer" parent="state_machine/crouch_move"]
 process_callback = 0
 wait_time = 0.42
 
 [node name="wallslide" type="Node" parent="state_machine"]
-script = SubResource( "22" )
+script = SubResource("22")
 
 [node name="delay" type="Timer" parent="state_machine/wallslide"]
 wait_time = 0.1
 one_shot = true
 
 [node name="fps_cam" type="Node" parent="state_machine"]
-script = SubResource( "23" )
+script = SubResource("23")
 
 [node name="swim_idle" type="Node" parent="state_machine"]
-script = SubResource( "24" )
+script = SubResource("24")
 
 [node name="swim_move" type="Node" parent="state_machine"]
-script = SubResource( "25" )
+script = SubResource("25")
 
 [node name="anim_delay" type="Timer" parent="state_machine/swim_move"]
 wait_time = 0.6
 
 [node name="warp_bounce" type="Node" parent="state_machine"]
-script = SubResource( "26" )
+script = SubResource("26")
 
 [node name="sfx" type="Timer" parent="state_machine/warp_bounce"]
 process_callback = 0
 wait_time = 0.3
 
 [node name="warp_move" type="Node" parent="state_machine"]
-script = SubResource( "27" )
+script = SubResource("27")
 
 [node name="step" type="Timer" parent="state_machine/warp_move"]
 wait_time = 0.15
 
-[node name="visual_manager" type="Node" parent="."]
-script = ExtResource( "9" )
+[node name="visual_manager" type="Node" parent="." node_paths=PackedStringArray("bone_head", "bone_face", "skeleton", "mesh_skin", "mesh_body", "mesh_face")]
+script = ExtResource("9")
 bone_head = NodePath("../visual/newman/skeleton/head_accessory")
 bone_face = NodePath("../visual/newman/skeleton/face_accessory")
 skeleton = NodePath("../visual/newman/skeleton")
 mesh_skin = NodePath("../visual/newman/skeleton/skin")
 mesh_body = NodePath("../visual/newman/skeleton/body")
 mesh_face = NodePath("../visual/newman/skeleton/face")
-material_body = ExtResource( "5" )
+material_body = ExtResource("5")
 
 [node name="equipment_manager" type="Node" parent="."]
-script = ExtResource( "10" )
+script = ExtResource("10")
 
 [node name="multiplayer" type="Node3D" parent="."]
 visible = false
 
 [node name="sync" type="MultiplayerSynchronizer" parent="multiplayer"]
 root_path = NodePath("../..")
-replication_config = SubResource( "28" )
+replication_config = SubResource("28")
 
 [node name="name" type="Label3D" parent="multiplayer"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.61089, 0)
@@ -10641,7 +10403,7 @@ no_depth_test = true
 fixed_size = true
 texture_filter = 2
 text = "guest-1256"
-font = ExtResource( "11" )
+font = ExtResource("11")
 
 [node name="particle" type="Node3D" parent="."]
 
@@ -10652,8 +10414,8 @@ emitting = false
 amount = 3
 lifetime = 0.4
 visibility_aabb = AABB(-1.99748, -1.73604, -1.9885, 3.82534, 4.72445, 3.93281)
-process_material = SubResource( "31" )
-draw_pass_1 = SubResource( "32" )
+process_material = SubResource("31")
+draw_pass_1 = SubResource("32")
 
 [node name="roll" type="GPUParticles3D" parent="particle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.6)
@@ -10663,8 +10425,8 @@ amount = 12
 lifetime = 0.5
 visibility_aabb = AABB(-4.52582, -1.73604, -1.73604, 8.28042, 6.58462, 8.51089)
 draw_order = 1
-process_material = SubResource( "35" )
-draw_pass_1 = SubResource( "36" )
+process_material = SubResource("35")
+draw_pass_1 = SubResource("36")
 
 [node name="wall_slide" type="GPUParticles3D" parent="particle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3, 4.2, -1.33471)
@@ -10674,8 +10436,8 @@ amount = 4
 lifetime = 0.5
 visibility_aabb = AABB(-2.89772, -1.73604, -3.23529, 5.69522, 6.1377, 6.4654)
 draw_order = 1
-process_material = SubResource( "39" )
-draw_pass_1 = SubResource( "40" )
+process_material = SubResource("39")
+draw_pass_1 = SubResource("40")
 
 [node name="skid" type="GPUParticles3D" parent="particle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.1)
@@ -10685,8 +10447,8 @@ amount = 9
 lifetime = 0.4
 visibility_aabb = AABB(-6.15244, -1.73604, -1.73604, 12.344, 12.2682, 12.6559)
 draw_order = 1
-process_material = SubResource( "43" )
-draw_pass_1 = SubResource( "44" )
+process_material = SubResource("43")
+draw_pass_1 = SubResource("44")
 
 [node name="roll2" type="GPUParticles3D" parent="particle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.6)
@@ -10699,8 +10461,8 @@ visibility_aabb = AABB(-4.12207, -0.50001, -0.50001, 7.98629, 7.11876, 9.34918)
 transform_align = 2
 trail_enabled = true
 trail_lifetime = 0.1
-process_material = SubResource( "47" )
-draw_pass_1 = SubResource( "50" )
+process_material = SubResource("47")
+draw_pass_1 = SubResource("50")
 
 [node name="land" type="GPUParticles3D" parent="particle"]
 top_level = true
@@ -10712,8 +10474,8 @@ one_shot = true
 explosiveness = 1.0
 visibility_aabb = AABB(-6.93829, -1.73604, -8.5753, 12.2936, 4.69474, 15.5887)
 local_coords = true
-process_material = SubResource( "53" )
-draw_pass_1 = SubResource( "54" )
+process_material = SubResource("53")
+draw_pass_1 = SubResource("54")
 
 [node name="bonk" type="GPUParticles3D" parent="particle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9, -2.1)
@@ -10724,8 +10486,8 @@ one_shot = true
 explosiveness = 1.0
 visibility_aabb = AABB(-6.00306, -3.66289, -2.72744, 12.9045, 9.14223, 8.64348)
 transform_align = 3
-process_material = SubResource( "57" )
-draw_pass_1 = ExtResource( "13" )
+process_material = SubResource("57")
+draw_pass_1 = ExtResource("13")
 
 [node name="shallow_water" type="Decal" parent="particle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00213405, 2.34315, -0.183138)
@@ -10733,9 +10495,9 @@ layers = 8
 size = Vector3(6, 4, 6)
 lower_fade = 0.1
 cull_mask = 8
-script = SubResource( "58" )
+script = SubResource("58")
 
-[node name="splash" parent="particle" instance=ExtResource( "14" )]
+[node name="splash" parent="particle" instance=ExtResource("14")]
 
 [node name="bubbles" type="GPUParticles3D" parent="particle"]
 transform = Transform3D(-1, 0, -9.68575e-08, 0, 1, 0, 9.68575e-08, 0, -1, 0, 4.06949, -1.69091)
@@ -10745,24 +10507,24 @@ amount = 5
 sub_emitter = NodePath("bubble_pop")
 lifetime = 3.0
 explosiveness = 0.25
-process_material = SubResource( "61" )
-draw_pass_1 = SubResource( "64" )
+process_material = SubResource("61")
+draw_pass_1 = SubResource("64")
 
 [node name="bubble_pop" type="GPUParticles3D" parent="particle/bubbles"]
 cast_shadow = 0
 emitting = false
 amount = 5
 lifetime = 0.3
-process_material = SubResource( "67" )
-draw_pass_1 = SubResource( "69" )
+process_material = SubResource("67")
+draw_pass_1 = SubResource("69")
 
 [node name="mallet_trail" type="MeshInstance3D" parent="particle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.281961, 4.92283, -1.18867)
 layers = 2
-material_override = SubResource( "70" )
+material_override = SubResource("70")
 cast_shadow = 0
-mesh = SubResource( "71" )
-script = ExtResource( "16" )
+mesh = SubResource("71")
+script = ExtResource("16")
 emit = false
 lifespan = 0.25
 fromWidth = 1.0
@@ -10810,7 +10572,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 [node name="step" type="Node3D" parent="sfx"]
 
 [node name="generic" type="AudioStreamPlayer3D" parent="sfx/step"]
-stream = SubResource( "72" )
+stream = SubResource("72")
 attenuation_model = 3
 volume_db = -8.0
 unit_size = 40.0
@@ -10819,7 +10581,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="wet" type="AudioStreamPlayer3D" parent="sfx/step"]
-stream = SubResource( "73" )
+stream = SubResource("73")
 attenuation_model = 3
 volume_db = -2.0
 unit_size = 40.0
@@ -10828,7 +10590,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="soft" type="AudioStreamPlayer3D" parent="sfx/step"]
-stream = SubResource( "74" )
+stream = SubResource("74")
 attenuation_model = 3
 volume_db = -4.0
 unit_size = 40.0
@@ -10837,7 +10599,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="crunchy" type="AudioStreamPlayer3D" parent="sfx/step"]
-stream = SubResource( "75" )
+stream = SubResource("75")
 attenuation_model = 3
 volume_db = -4.0
 unit_size = 40.0
@@ -10848,7 +10610,7 @@ bus = &"Sound"
 [node name="slide" type="Node3D" parent="sfx"]
 
 [node name="slide_loop" type="AudioStreamPlayer3D" parent="sfx/slide"]
-stream = ExtResource( "29" )
+stream = ExtResource("29")
 attenuation_model = 3
 volume_db = -2.0
 unit_size = 40.0
@@ -10857,7 +10619,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="slide_end" type="AudioStreamPlayer3D" parent="sfx/slide"]
-stream = ExtResource( "30" )
+stream = ExtResource("30")
 attenuation_model = 3
 volume_db = -2.0
 unit_size = 40.0
@@ -10868,7 +10630,7 @@ bus = &"Sound"
 [node name="water" type="Node3D" parent="sfx"]
 
 [node name="thump_shallow" type="AudioStreamPlayer3D" parent="sfx/water"]
-stream = SubResource( "76" )
+stream = SubResource("76")
 attenuation_model = 3
 unit_size = 40.0
 max_db = 0.0
@@ -10876,7 +10638,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="thump_deep" type="AudioStreamPlayer3D" parent="sfx/water"]
-stream = SubResource( "77" )
+stream = SubResource("77")
 attenuation_model = 3
 unit_size = 40.0
 max_db = 0.0
@@ -10884,7 +10646,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="emerge" type="AudioStreamPlayer3D" parent="sfx/water"]
-stream = SubResource( "78" )
+stream = SubResource("78")
 attenuation_model = 3
 unit_size = 40.0
 max_db = 0.0
@@ -10892,7 +10654,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="swim" type="AudioStreamPlayer3D" parent="sfx/water"]
-stream = SubResource( "79" )
+stream = SubResource("79")
 attenuation_model = 3
 unit_size = 40.0
 max_db = 0.0
@@ -10900,7 +10662,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="whirl" type="AudioStreamPlayer3D" parent="sfx"]
-stream = SubResource( "80" )
+stream = SubResource("80")
 attenuation_model = 3
 unit_size = 50.0
 max_db = 0.0
@@ -10908,7 +10670,7 @@ max_distance = 110.0
 bus = &"Sound"
 
 [node name="roll_zoom" type="AudioStreamPlayer3D" parent="sfx"]
-stream = ExtResource( "39" )
+stream = ExtResource("39")
 attenuation_model = 3
 volume_db = -6.0
 unit_size = 50.0
@@ -10917,7 +10679,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="skid" type="AudioStreamPlayer3D" parent="sfx"]
-stream = ExtResource( "40" )
+stream = ExtResource("40")
 attenuation_model = 3
 volume_db = -6.0
 unit_size = 60.0
@@ -10926,7 +10688,7 @@ max_distance = 60.0
 bus = &"Sound"
 
 [node name="rummage" type="AudioStreamPlayer3D" parent="sfx"]
-stream = ExtResource( "41" )
+stream = ExtResource("41")
 attenuation_model = 3
 unit_size = 50.0
 max_db = 0.0
@@ -10934,7 +10696,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="scrape" type="AudioStreamPlayer3D" parent="sfx"]
-stream = ExtResource( "42" )
+stream = ExtResource("42")
 attenuation_model = 3
 volume_db = -4.0
 unit_size = 50.0
@@ -10943,7 +10705,7 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="jump" type="AudioStreamPlayer3D" parent="sfx"]
-stream = SubResource( "81" )
+stream = SubResource("81")
 attenuation_model = 3
 volume_db = -2.0
 unit_size = 100.0
@@ -10953,7 +10715,7 @@ max_polyphony = 2
 bus = &"Sound"
 
 [node name="hit" type="AudioStreamPlayer3D" parent="sfx"]
-stream = SubResource( "82" )
+stream = SubResource("82")
 attenuation_model = 3
 volume_db = -2.0
 unit_size = 100.0
@@ -10963,7 +10725,7 @@ max_polyphony = 2
 bus = &"Sound"
 
 [node name="land" type="AudioStreamPlayer3D" parent="sfx"]
-stream = SubResource( "83" )
+stream = SubResource("83")
 attenuation_model = 3
 volume_db = -2.0
 unit_size = 40.0
@@ -10972,64 +10734,64 @@ max_distance = 50.0
 bus = &"Sound"
 
 [node name="bonk" type="AudioStreamPlayer3D" parent="sfx"]
-stream = ExtResource( "53" )
+stream = ExtResource("53")
 attenuation_model = 3
 volume_db = -4.0
 max_db = 0.0
 max_distance = 50.0
 bus = &"Sound"
 
-[node name="player_interaction_radius" type="Area3D" parent="."]
+[node name="player_interaction_radius" type="Area3D" parent="." node_paths=PackedStringArray("player_fsm")]
 collision_mask = 5
 monitorable = false
-script = ExtResource( "54" )
+script = ExtResource("54")
 player_fsm = NodePath("../state_machine")
 
 [node name="collision_shape_3d" type="CollisionShape3D" parent="player_interaction_radius"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
-shape = SubResource( "84" )
+shape = SubResource("84")
 
 [node name="hurtbox" type="Area3D" parent="."]
-script = ExtResource( "55" )
+script = ExtResource("55")
 max_health = 6
 inv_time = 1.5
 flash_when_invulnerable = true
 
 [node name="col" type="CollisionShape3D" parent="hurtbox"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.72881, 0)
-shape = SubResource( "85" )
+shape = SubResource("85")
 
 [node name="hitbox" type="Area3D" parent="."]
 collision_layer = 4
 collision_mask = 4
-script = ExtResource( "7" )
+script = ExtResource("7")
 scope = 4
 
 [node name="col" type="CollisionShape3D" parent="hitbox"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
-shape = SubResource( "86" )
+shape = SubResource("86")
 disabled = true
 
 [node name="enabler_sender" type="Area3D" parent="."]
 monitorable = false
-script = ExtResource( "56" )
+script = ExtResource("56")
 
 [node name="col" type="CollisionShape3D" parent="enabler_sender"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.55384, 0)
-shape = SubResource( "87" )
+shape = SubResource("87")
 
 [node name="col" type="CollisionShape3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.72881, 0)
-shape = SubResource( "85" )
+shape = SubResource("85")
 
 [node name="anim_tree" type="AnimationTree" parent="."]
 reset_on_save = false
 root_node = NodePath("../visual")
 callback_mode_process = 0
 libraries = {
-"": SubResource( "125" )
+"": SubResource("AnimationLibrary_loggq")
 }
-tree_root = SubResource( "261" )
+tree_root = SubResource("261")
 anim_player = NodePath("../visual/AnimationPlayer")
 parameters/glove_big_airborne/Blend2/blend_amount = 1.0
 parameters/glove_big_idle/Blend2/blend_amount = 1.0
@@ -11051,7 +10813,7 @@ parameters/move/speed/scale = 1.0
 parameters/roll/roll_speed/scale = 1.0
 parameters/swim_move/swim_move_speed/scale = 1.0
 
-[node name="spring_arm" parent="." instance=ExtResource( "61" )]
+[node name="spring_arm" parent="." instance=ExtResource("61")]
 
 [node name="floor" type="RayCast3D" parent="."]
 process_priority = 5
@@ -11067,7 +10829,7 @@ debug_shape_thickness = 5
 [node name="shadow" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.615907, 0)
 collision_mask = 5
-script = ExtResource( "62" )
+script = ExtResource("62")
 scope = 5
 size = 4.0
 

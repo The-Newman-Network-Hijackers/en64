@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3]
+[gd_scene load_steps=25 format=3 uid="uid://bq1adsykkp4jq"]
 
 [ext_resource type="Script" path="res://scripts/equipment_state_machine.gd" id="1"]
 [ext_resource type="AudioStream" uid="uid://bp7qj4mcupx8u" path="res://audio/sfx/pickup_small.wav" id="2"]
@@ -612,11 +612,10 @@ func _state_physics_process(delta : float) -> void:
 
 [sub_resource type="AudioStreamRandomizer" id="9"]
 streams_count = 2
-stream_0/stream = ExtResource( "5" )
+stream_0/stream = ExtResource("5")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "6" )
+stream_1/stream = ExtResource("6")
 stream_1/weight = 1.0
-script = null
 
 [sub_resource type="GDScript" id="10"]
 resource_name = "glove_idle_big"
@@ -1087,25 +1086,24 @@ func _state_physics_process(delta : float) -> void:
 
 [sub_resource type="AudioStreamRandomizer" id="16"]
 streams_count = 2
-stream_0/stream = ExtResource( "7" )
+stream_0/stream = ExtResource("7")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "8" )
+stream_1/stream = ExtResource("8")
 stream_1/weight = 1.0
-script = null
 
-[node name="glove" type="Node"]
-script = ExtResource( "1" )
+[node name="glove" type="Node" node_paths=PackedStringArray("initial_state")]
+script = ExtResource("1")
 whitelist = 0
 initial_state = NodePath("none")
 
 [node name="none" type="Node" parent="."]
-script = SubResource( "1" )
+script = SubResource("1")
 
 [node name="interact_router" type="Node" parent="."]
-script = SubResource( "2" )
+script = SubResource("2")
 
 [node name="pickup_small" type="AudioStreamPlayer3D" parent="interact_router"]
-stream = ExtResource( "2" )
+stream = ExtResource("2")
 attenuation_model = 3
 unit_size = 60.0
 max_db = -1.0
@@ -1113,7 +1111,7 @@ max_distance = 60.0
 bus = &"Sound"
 
 [node name="pickup_big" type="AudioStreamPlayer3D" parent="interact_router"]
-stream = ExtResource( "3" )
+stream = ExtResource("3")
 attenuation_model = 3
 unit_size = 60.0
 max_db = -1.0
@@ -1121,13 +1119,13 @@ max_distance = 60.0
 bus = &"Sound"
 
 [node name="pickup_small" type="Node" parent="."]
-script = ExtResource( "4" )
+script = ExtResource("4")
 
 [node name="idle_small" type="Node" parent="."]
-script = SubResource( "3" )
+script = SubResource("3")
 
 [node name="move_small" type="Node" parent="."]
-script = SubResource( "4" )
+script = SubResource("4")
 
 [node name="step" type="Timer" parent="move_small"]
 wait_time = 0.24
@@ -1138,16 +1136,16 @@ wait_time = 0.1
 one_shot = true
 
 [node name="slide_small" type="Node" parent="."]
-script = SubResource( "5" )
+script = SubResource("5")
 
 [node name="jump_small" type="Node" parent="."]
-script = SubResource( "6" )
+script = SubResource("6")
 
 [node name="airborne_small" type="Node" parent="."]
-script = SubResource( "7" )
+script = SubResource("7")
 
 [node name="throw_small" type="Node" parent="."]
-script = SubResource( "8" )
+script = SubResource("8")
 
 [node name="throw_timer" type="Timer" parent="throw_small"]
 process_callback = 0
@@ -1155,7 +1153,7 @@ wait_time = 0.075
 one_shot = true
 
 [node name="throw_small" type="AudioStreamPlayer3D" parent="throw_small"]
-stream = SubResource( "9" )
+stream = SubResource("9")
 attenuation_model = 3
 unit_size = 60.0
 max_db = -1.0
@@ -1163,13 +1161,13 @@ max_distance = 60.0
 bus = &"Sound"
 
 [node name="pickup_big" type="Node" parent="."]
-script = ExtResource( "4" )
+script = ExtResource("4")
 
 [node name="idle_big" type="Node" parent="."]
-script = SubResource( "10" )
+script = SubResource("10")
 
 [node name="move_big" type="Node" parent="."]
-script = SubResource( "11" )
+script = SubResource("11")
 
 [node name="step" type="Timer" parent="move_big"]
 wait_time = 0.4
@@ -1180,16 +1178,16 @@ wait_time = 0.1
 one_shot = true
 
 [node name="slide_big" type="Node" parent="."]
-script = SubResource( "12" )
+script = SubResource("12")
 
 [node name="jump_big" type="Node" parent="."]
-script = SubResource( "13" )
+script = SubResource("13")
 
 [node name="airborne_big" type="Node" parent="."]
-script = SubResource( "14" )
+script = SubResource("14")
 
 [node name="throw_big" type="Node" parent="."]
-script = SubResource( "15" )
+script = SubResource("15")
 
 [node name="throw_timer" type="Timer" parent="throw_big"]
 process_callback = 0
@@ -1197,7 +1195,7 @@ wait_time = 0.15
 one_shot = true
 
 [node name="throw_big" type="AudioStreamPlayer3D" parent="throw_big"]
-stream = SubResource( "16" )
+stream = SubResource("16")
 attenuation_model = 3
 unit_size = 60.0
 max_db = -1.0

@@ -1,31 +1,31 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=7 format=3 uid="uid://dn0r8m8ee8eqn"]
 
 [ext_resource type="Script" path="res://scripts/event_tree.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/event_sfx.gd" id="2"]
 [ext_resource type="AudioStream" uid="uid://dj4mfp0dntp01" path="res://audio/sfx/positive_chime.wav" id="3"]
 [ext_resource type="Script" path="res://scripts/event_wait.gd" id="4"]
 [ext_resource type="Script" path="res://scripts/event_shard.gd" id="5"]
-[ext_resource type="PackedScene" uid="uid://b488og5dpnbxn" path="res://scenes/prefab/shard.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/shard.tscn" id="6"]
 
 [node name="shard_sequence" type="Node"]
-script = ExtResource( "1" )
+script = ExtResource("1")
 
 [node name="sfx" type="Node" parent="."]
-script = ExtResource( "2" )
-stream = ExtResource( "3" )
+script = ExtResource("2")
+stream = ExtResource("3")
 volume = 1.0
 
 [node name="wait" type="Node" parent="."]
-script = ExtResource( "4" )
+script = ExtResource("4")
 
-[node name="spawn_shard" type="Node" parent="."]
-script = ExtResource( "5" )
+[node name="spawn_shard" type="Node" parent="." node_paths=PackedStringArray("shard", "origin", "target", "follow_cam")]
+script = ExtResource("5")
 shard = NodePath("shard")
 origin = NodePath("origin")
 target = NodePath("end")
 follow_cam = NodePath("follow")
 
-[node name="shard" parent="spawn_shard" instance=ExtResource( "6" )]
+[node name="shard" parent="spawn_shard" instance=ExtResource("6")]
 
 [node name="origin" type="Marker3D" parent="spawn_shard"]
 

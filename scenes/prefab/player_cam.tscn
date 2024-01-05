@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3]
+[gd_scene load_steps=12 format=3 uid="uid://do4qv6qwbqbw1"]
 
 [ext_resource type="Script" path="res://scripts/pcam_springarm.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="2"]
@@ -7,7 +7,6 @@
 [ext_resource type="AudioStream" uid="uid://crqecaqdpjb7d" path="res://audio/sfx/cam_fps_snapshot.wav" id="5"]
 
 [sub_resource type="BoxShape3D" id="1"]
-script = null
 
 [sub_resource type="GDScript" id="2"]
 resource_name = "camera_none"
@@ -379,7 +378,7 @@ func _exit() -> void:
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 spring_length = 24.0
 margin = 0.5
-script = ExtResource( "1" )
+script = ExtResource("1")
 
 [node name="hit_pos" type="Marker3D" parent="."]
 
@@ -400,34 +399,34 @@ monitorable = false
 
 [node name="col" type="CollisionShape3D" parent="f_cam/player_cam/cam_body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.360001)
-shape = SubResource( "1" )
+shape = SubResource("1")
 
-[node name="state_machine" type="Node" parent="."]
-script = ExtResource( "2" )
+[node name="state_machine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("2")
 initial_state = NodePath("manual_analog")
 
 [node name="none" type="Node" parent="state_machine"]
-script = SubResource( "2" )
+script = SubResource("2")
 
 [node name="follow" type="Node" parent="state_machine"]
-script = ExtResource( "3" )
+script = ExtResource("3")
 
 [node name="fixed" type="Node" parent="state_machine"]
-script = SubResource( "3" )
+script = SubResource("3")
 
 [node name="look_at_node" type="Node3D" parent="state_machine/fixed"]
 
 [node name="manual_analog" type="Node" parent="state_machine"]
-script = SubResource( "4" )
+script = SubResource("4")
 
 [node name="manual_8dir" type="Node" parent="state_machine"]
-script = ExtResource( "3" )
+script = ExtResource("3")
 
 [node name="manual_fps" type="Node" parent="state_machine"]
-script = SubResource( "5" )
+script = SubResource("5")
 
 [node name="debug" type="Node" parent="state_machine"]
-script = SubResource( "6" )
+script = SubResource("6")
 
 [node name="debug_cam" type="Camera3D" parent="state_machine/debug"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.6, 18)
@@ -439,9 +438,9 @@ fov = 65.0
 [node name="sfx" type="Node" parent="."]
 
 [node name="zoom" type="AudioStreamPlayer" parent="sfx"]
-stream = ExtResource( "4" )
+stream = ExtResource("4")
 bus = &"Sound"
 
 [node name="snapshot" type="AudioStreamPlayer" parent="sfx"]
-stream = ExtResource( "5" )
+stream = ExtResource("5")
 bus = &"Sound"
