@@ -140,14 +140,14 @@ message = "to Interact"
 height = 10.0
 radius = 5.0
 
-[node name="seed" type="CharacterBody3D"]
+[node name="seed" type="CharacterBody3D" node_paths=PackedStringArray("visual_node")]
 collision_layer = 4
 script = SubResource("1")
 e_name = "Seed"
 respawn = true
 visual_node = NodePath("vis")
 
-[node name="fsm" type="Node" parent="."]
+[node name="fsm" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("1")
 initial_state = NodePath("idle")
 
@@ -176,8 +176,9 @@ visibility_aabb = AABB(-4.48035, -3.10728, -4.58884, 8.40027, 8.06036, 9.69584)
 process_material = SubResource("10")
 draw_pass_1 = SubResource("11")
 
-[node name="grabbable" type="Area3D" parent="."]
+[node name="grabbable" type="Area3D" parent="." node_paths=PackedStringArray("entity")]
 script = ExtResource("4")
+entity = NodePath("..")
 input_prompt = SubResource("12")
 
 [node name="col" type="CollisionShape3D" parent="grabbable"]

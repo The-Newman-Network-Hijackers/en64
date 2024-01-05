@@ -377,23 +377,23 @@ spacing = 10.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23886" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49861" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.3905, -20)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23887" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49862" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90735e-06, -12.8692, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23888" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49863" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.34783, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23889" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49864" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.82647, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23890" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49865" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.30512, 20)
 metadata/_edit_lock_ = true
 
@@ -405,23 +405,23 @@ spacing = 10.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23895" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49870" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -26.5822, -20)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23896" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49871" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52588e-05, -21.3355, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23897" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49872" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.0889, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23898" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49873" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.8422, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23899" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49874" parent="0/map/Area 1/1 Coin Trail_001/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.59548, 20)
 metadata/_edit_lock_ = true
 
@@ -436,27 +436,27 @@ spacing = 10.0
 count = 6
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23911" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49886" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66025, 0, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23912" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49887" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66025, 0, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23913" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49888" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.74228e-07, 0, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23914" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49889" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, 0, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23915" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49890" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, 0, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23916" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49891" parent="0/map/Area 1/1 Coin Trail_002/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74846e-06, 0, -10)
 metadata/_edit_lock_ = true
 
@@ -471,23 +471,23 @@ spacing = 10.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23921" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49896" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.76837e-07, -13.9784, -20)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23922" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49897" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.5348, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23923" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49898" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.09125, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23924" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49899" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.64765, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23925" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49900" parent="0/map/Area 1/1 Coin Trail_003/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.73285, 20)
 metadata/_edit_lock_ = true
 
@@ -625,31 +625,31 @@ count = 7
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23939" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49914" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98573, -23.8459, -21)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23940" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49915" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98573, -23.8459, -14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23941" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49916" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98573, -23.8459, -7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23942" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49917" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98573, -23.8459, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23943" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49918" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98572, -23.8459, 7)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23944" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49919" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98572, -23.8459, 14)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23945" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49920" parent="0/entities/jack_spawner" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98572, -23.8459, 21)
 metadata/_edit_lock_ = true
 
@@ -661,23 +661,23 @@ spacing = 9.32
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23950" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49925" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.5436, -18.64)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23951" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49926" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.5436, -9.32)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23952" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49927" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.5436, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23953" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49928" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.5436, 9.32)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23954" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49929" parent="0/entities/jack_spawner_3" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.5436, 18.64)
 metadata/_edit_lock_ = true
 
@@ -689,23 +689,23 @@ spacing = 9.32
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23959" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49934" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.68718, -18.64)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23960" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49935" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.68718, -9.32001)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23961" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49936" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.68718, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23962" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49937" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.68718, 9.32001)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23963" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49938" parent="0/entities/jack_spawner_4" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.68718, 18.64)
 metadata/_edit_lock_ = true
 
@@ -719,27 +719,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23981" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49956" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66025, -11.2486, -4.99997)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23982" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49957" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66025, -11.2637, 5.00003)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23983" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49958" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.2637, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23984" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49959" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, -11.2637, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23985" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49960" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, -11.2637, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23986" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49961" parent="0/entities/jack_spawner_5" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.2637, -10)
 metadata/_edit_lock_ = true
 
@@ -752,27 +752,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23998" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49973" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.1552, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23999" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49974" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.2436, -10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24000" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49975" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.332, -3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24001" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49976" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.3935, 3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24002" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49977" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.3935, 10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24003" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49978" parent="0/entities/jack_spawner_12" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.3935, 17.5)
 metadata/_edit_lock_ = true
 
@@ -785,27 +785,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@24015" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49990" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.1785, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24016" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49991" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.2669, -10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24017" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49992" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.3553, -3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24018" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49993" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.4168, 3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24019" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49994" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.4168, 10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24020" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@49995" parent="0/entities/jack_spawner_13" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.4168, 17.5)
 metadata/_edit_lock_ = true
 
@@ -818,27 +818,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@24032" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50007" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.132, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24033" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50008" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.2204, -10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24034" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50009" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.3088, -3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24035" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50010" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.3703, 3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24036" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50011" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.3703, 10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24037" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50012" parent="0/entities/jack_spawner_14" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, -5.14557e-25, 0, -5.14557e-25, 1, 0, -18.3703, 17.5)
 metadata/_edit_lock_ = true
 
@@ -852,27 +852,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@24055" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50030" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66025, -11.3164, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24056" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50031" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66025, -11.3164, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24057" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50032" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.3164, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24058" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50033" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, -11.3164, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24059" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50034" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, -11.3164, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24060" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50035" parent="0/entities/jack_spawner_10" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.3162, -10)
 metadata/_edit_lock_ = true
 
@@ -886,27 +886,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@24078" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50053" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66028, -42.7486, -4.99999)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24079" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50054" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66028, -42.7486, 5.00002)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24080" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50055" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -42.7486, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24081" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50056" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, -42.7486, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24082" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50057" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, -42.7486, -4.99999)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24083" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50058" parent="0/entities/jack_spawner_6" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -42.7486, -9.99999)
 metadata/_edit_lock_ = true
 
@@ -919,27 +919,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@24095" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50070" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, -25)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24096" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50071" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24097" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50072" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24098" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50073" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24099" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50074" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, 15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24100" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50075" parent="0/entities/jack_spawner_7" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, 25)
 metadata/_edit_lock_ = true
 
@@ -952,27 +952,27 @@ count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@24112" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50087" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, -25)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24113" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50088" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24114" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50089" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24115" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50090" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24116" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50091" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, 15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24117" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50092" parent="0/entities/jack_spawner_8" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.1979, 25)
 metadata/_edit_lock_ = true
 
@@ -985,23 +985,23 @@ spacing = 10.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@24127" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50102" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.51056, -10.8618, -3.09016)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24128" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50103" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.87785, -10.8618, 8.09016)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24129" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50104" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.87785, -10.8618, 8.09016)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24130" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50105" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.51056, -10.8618, -3.09016)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24131" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50106" parent="0/entities/jack_spawner_9" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.8618, -10)
 metadata/_edit_lock_ = true
 
@@ -1015,35 +1015,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@24155" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50130" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, -20.8571, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24156" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50131" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, -20.8571, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24157" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50132" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, -20.8571, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24158" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50133" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -20.8571, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24159" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50134" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, -20.8571, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24160" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50135" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -20.8571, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24161" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50136" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, -20.8571, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24162" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50137" parent="0/entities/jack_spawner_2" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -20.8571, -10)
 metadata/_edit_lock_ = true
 
@@ -1057,35 +1057,35 @@ count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@24186" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50161" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, -49.7744, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24187" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50162" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, -49.7744, 4.32134e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24188" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50163" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, -49.7744, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24189" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50164" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.53674e-07, -49.7744, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24190" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50165" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, -49.7744, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24191" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50166" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -49.7744, -1.19209e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24192" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50167" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, -49.7744, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@24193" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
+[node name="@Area3D@50168" parent="0/entities/jack_spawner_11" instance=ExtResource("19_qnso2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.66893e-06, -49.7744, -10)
 metadata/_edit_lock_ = true
 

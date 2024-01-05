@@ -1,9 +1,9 @@
-[gd_scene load_steps=30 format=3]
+[gd_scene load_steps=30 format=3 uid="uid://cc1ijx00jdupe"]
 
 [ext_resource type="Texture2D" uid="uid://dx0x8xw0uto1t" path="res://asset/effect/splash/splash_1.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://dttjviyw3ag5f" path="res://asset/effect/splash/splash_2.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://dksjvhmbrlamb" path="res://asset/effect/splash/splash_3.png" id="3"]
-[ext_resource type="Material" uid="uid://cifn8hrjv0ffg" path="res://scenes/particle/ vtx_bubble.tres" id="4"]
+[ext_resource type="Material" path="res://scenes/particle/ vtx_bubble.tres" id="4"]
 [ext_resource type="Texture2D" uid="uid://cf2eouyg1ax7x" path="res://asset/effect/splash/small_splash_1.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://u7oy3x87k1cd" path="res://asset/effect/splash/small_splash_2.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://b50dnw15n6rrk" path="res://asset/effect/splash/small_splash_3.png" id="7"]
@@ -29,13 +29,13 @@ func evoke() -> void:
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource( "1" )
+"texture": ExtResource("1")
 }, {
 "duration": 0.7,
-"texture": ExtResource( "2" )
+"texture": ExtResource("2")
 }, {
 "duration": 0.7,
-"texture": ExtResource( "3" )
+"texture": ExtResource("3")
 }, {
 "duration": 1.0,
 "texture": null
@@ -44,40 +44,33 @@ animations = [{
 "name": &"splash",
 "speed": 0.0
 }]
-script = null
+
+[sub_resource type="Gradient" id="7"]
+offsets = PackedFloat32Array(0.616247, 0.915966)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="8"]
+gradient = SubResource("7")
 
 [sub_resource type="Curve" id="3"]
 max_value = 3.0
 _data = [Vector2(0, 3), 0.0, 0.0, 0, 0, Vector2(1, 1.09459), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="Curve" id="4"]
 max_value = 3.0
 _data = [Vector2(0, 0.243243), 0.0, 0.0, 0, 0, Vector2(1, 1.72297), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="Curve" id="5"]
 max_value = 3.0
 _data = [Vector2(0, 1.01351), 0.0, 0.0, 0, 0, Vector2(1, 1.68243), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="CurveXYZTexture" id="6"]
-curve_x = SubResource( "3" )
-curve_y = SubResource( "4" )
-curve_z = SubResource( "5" )
-script = null
-
-[sub_resource type="Gradient" id="7"]
-offsets = PackedFloat32Array(0.616247, 0.915966)
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
-script = null
-
-[sub_resource type="GradientTexture1D" id="8"]
-gradient = SubResource( "7" )
-script = null
+curve_x = SubResource("3")
+curve_y = SubResource("4")
+curve_z = SubResource("5")
 
 [sub_resource type="ParticleProcessMaterial" id="9"]
 direction = Vector3(0, 1, 0)
@@ -88,9 +81,8 @@ scale_min = 0.5
 scale_max = 0.65
 scale_over_velocity_min = 0.05
 scale_over_velocity_max = 18.2
-scale_over_velocity_curve = SubResource( "6" )
-color_ramp = SubResource( "8" )
-script = null
+scale_over_velocity_curve = SubResource("6")
+color_ramp = SubResource("8")
 
 [sub_resource type="RibbonTrailMesh" id="10"]
 shape = 0
@@ -98,7 +90,6 @@ size = 0.5
 sections = 8
 section_length = 0.261
 section_segments = 1
-script = null
 
 [sub_resource type="Animation" id="11"]
 length = 0.001
@@ -114,13 +105,10 @@ tracks/0/keys = {
 "update": 1,
 "values": [3]
 }
-script = null
 
 [sub_resource type="PlaceholderTexture3D" id="12"]
-script = null
 
 [sub_resource type="PlaceholderTexture3D" id="13"]
-script = null
 
 [sub_resource type="Animation" id="14"]
 resource_name = "splash"
@@ -175,7 +163,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.3, 0.5, 0.7, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource( "5" ), ExtResource( "6" ), ExtResource( "7" ), ExtResource( "8" ), ExtResource( "9" ), SubResource( "12" )]
+"values": [ExtResource("5"), ExtResource("6"), ExtResource("7"), ExtResource("8"), ExtResource("9"), SubResource("12")]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -187,19 +175,17 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.3, 0.5, 0.7, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource( "10" ), ExtResource( "11" ), ExtResource( "12" ), ExtResource( "13" ), ExtResource( "14" ), SubResource( "13" )]
+"values": [ExtResource("10"), ExtResource("11"), ExtResource("12"), ExtResource("13"), ExtResource("14"), SubResource("13")]
 }
-script = null
 
 [sub_resource type="AnimationLibrary" id="15"]
 _data = {
-"RESET": SubResource( "11" ),
-"splash": SubResource( "14" )
+"RESET": SubResource("11"),
+"splash": SubResource("14")
 }
-script = null
 
 [node name="splash" type="Node3D"]
-script = SubResource( "1" )
+script = SubResource("1")
 
 [node name="sprite" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1.494, 0, 0, 0, 1, 0, 1, 0)
@@ -207,21 +193,21 @@ offset = Vector2(0, 32)
 pixel_size = 0.1
 billboard = 2
 texture_filter = 5
-sprite_frames = SubResource( "2" )
+sprite_frames = SubResource("2")
 animation = &"splash"
 frame = 3
 
 [node name="bubbles" type="GPUParticles3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-material_override = ExtResource( "4" )
+material_override = ExtResource("4")
 emitting = false
 lifetime = 1.5
 one_shot = true
 speed_scale = 1.25
 explosiveness = 1.0
 transform_align = 3
-process_material = SubResource( "9" )
-draw_pass_1 = SubResource( "10" )
+process_material = SubResource("9")
+draw_pass_1 = SubResource("10")
 
 [node name="ripple" type="Decal" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -232,5 +218,5 @@ cull_mask = 8
 
 [node name="anim" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource( "15" )
+"": SubResource("15")
 }
