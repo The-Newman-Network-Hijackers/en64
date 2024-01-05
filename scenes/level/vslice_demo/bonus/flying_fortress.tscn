@@ -42,7 +42,7 @@
 [ext_resource type="PackedScene" uid="uid://daikxntnhoinx" path="res://scenes/prefab/gj_ball.tscn" id="39"]
 [ext_resource type="PackedScene" uid="uid://bxyp51q2f0ytv" path="res://scenes/prefab/golden_jack.tscn" id="40"]
 [ext_resource type="PackedScene" uid="uid://bpaie5176rj8h" path="res://scenes/prefab/npc_sign.tscn" id="41"]
-[ext_resource type="Resource" uid="uid://bpkewmnbdmbxq" path="res://data/dialogue/fortress_fluff.dialogue" id="42"]
+[ext_resource type="Resource" path="res://data/dialogue/fortress_fluff.dialogue.tscn" id="42"]
 [ext_resource type="Script" path="res://scripts/activation_group.gd" id="43"]
 [ext_resource type="Script" path="res://scripts/button.gd" id="44"]
 [ext_resource type="Script" path="res://scripts/activator_zone.gd" id="45"]

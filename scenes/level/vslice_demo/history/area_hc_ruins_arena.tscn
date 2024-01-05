@@ -50,7 +50,7 @@
 [ext_resource type="AudioStream" uid="uid://d0t71emgqiim3" path="res://audio/floral_regal.mp3" id="47"]
 [ext_resource type="AudioStream" uid="uid://bvsq7h4c72lw" path="res://audio/stem/ruin/ruins_drum.mp3" id="48"]
 [ext_resource type="Script" path="res://scripts/event_talk.gd" id="49"]
-[ext_resource type="Resource" uid="uid://ucqmu5je64cr" path="res://data/dialogue/flower_prince_intro.dialogue" id="50"]
+[ext_resource type="Resource" path="res://data/dialogue/flower_prince_intro.dialogue.tscn" id="50"]
 [ext_resource type="Script" path="res://scripts/event_evoke.gd" id="51"]
 [ext_resource type="Script" path="res://scripts/res_evoke.gd" id="52"]
 [ext_resource type="Script" path="res://scripts/event_wait.gd" id="53"]

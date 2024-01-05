@@ -44,7 +44,7 @@
 [ext_resource type="Material" uid="uid://biqttxc3bn6n6" path="res://asset/effect/grass/vtxe_flower_2.tres" id="42"]
 [ext_resource type="ArrayMesh" path="res://asset/level/history/mesh/castle_moving_plat_02.tres" id="43"]
 [ext_resource type="PackedScene" uid="uid://bpaie5176rj8h" path="res://scenes/prefab/npc_sign.tscn" id="44"]
-[ext_resource type="Resource" uid="uid://b81ngqpj63yga" path="res://data/dialogue/ruins_castle_fluff1.dialogue" id="45"]
+[ext_resource type="Resource" path="res://data/dialogue/ruins_castle_fluff1.dialogue.tscn" id="45"]
 [ext_resource type="PackedScene" uid="uid://b2okm8qw7p657" path="res://scenes/prefab/trampoline.tscn" id="46"]
 [ext_resource type="PackedScene" uid="uid://budaw7hon32vh" path="res://scenes/prefab/boom_crate.tscn" id="47"]
 [ext_resource type="PackedScene" uid="uid://daug435u4jxke" path="res://scenes/prefab/cage.tscn" id="48"]
