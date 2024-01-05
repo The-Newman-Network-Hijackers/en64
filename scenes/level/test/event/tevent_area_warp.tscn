@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://ccjkkc6wvrhra" path="res://asset/level/generic/tile_3.png" id="11"]
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="12"]
 [ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="13"]
-[ext_resource type="PackedScene" path="res://scenes/prefab/teleporter.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://xlitjfpjy3d6" path="res://scenes/prefab/teleporter.tscn" id="14"]
 [ext_resource type="Script" path="res://res_inputprompt.gd" id="15"]
 [ext_resource type="Resource" path="res://data/stem/ruins/ruins_flute.tres" id="16"]
 

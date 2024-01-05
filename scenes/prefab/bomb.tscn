@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://chylkensfsupl"]
+[gd_scene load_steps=57 format=3 uid="uid://ddbiqdohf5jvc"]
 
 [ext_resource type="Script" path="res://scripts/bomb.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/grabbable.gd" id="2"]
@@ -12,7 +12,7 @@
 [ext_resource type="AudioStream" uid="uid://b5ekvensla76" path="res://audio/sfx/explosion_1.wav" id="10"]
 [ext_resource type="AudioStream" uid="uid://yrykx20quxxd" path="res://audio/sfx/explosion_2.wav" id="11"]
 [ext_resource type="PackedScene" path="res://asset/entity/bomb/bomb.blend.scn" id="12"]
-[ext_resource type="Material" uid="uid://c6qgokjj8j2ra" path="res://asset/entity/bomb/mat/vtx_base.tres" id="13"]
+[ext_resource type="Material" uid="uid://dn8ylhluum60s" path="res://asset/entity/bomb/mat/vtx_base.tres" id="13"]
 [ext_resource type="Material" path="res://asset/effect/spark/vtx_spark.tres" id="14"]
 [ext_resource type="Script" path="res://scripts/shadow.gd" id="15"]
 [ext_resource type="Material" path="res://asset/effect/dust/mat/vtx_dust.tres" id="16"]

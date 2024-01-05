@@ -111,7 +111,7 @@ script = ExtResource("6")
 
 [node name="entity" type="Node" parent="0"]
 
-[node name="interactable" type="Area3D" parent="0/entity"]
+[node name="interactable" type="Area3D" parent="0/entity" node_paths=PackedStringArray("event_tree")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 50)
 script = ExtResource("7")
 event_tree = NodePath("../../event/et_sign")
@@ -131,7 +131,10 @@ transform = Transform3D(-0.79635, 0, -0.604835, 0, 1, 0, 0.604835, 0, -0.79635, 
 
 [node name="et_sign" parent="0/event" instance=ExtResource("10")]
 
-[node name="cam_in" parent="0/event/et_sign" index="1"]
+[node name="event_move" parent="0/event/et_sign" index="0" node_paths=PackedStringArray("target")]
+target = NodePath("../../../warp/warp_point")
+
+[node name="cam_in" parent="0/event/et_sign" index="1" node_paths=PackedStringArray("camera")]
 camera = NodePath("../../../entity/interactable/talk_cam")
 
 [node name="dialog" parent="0/event/et_sign" index="2"]

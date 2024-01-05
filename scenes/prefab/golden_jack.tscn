@@ -1,6 +1,6 @@
-[gd_scene load_steps=15 format=3]
+[gd_scene load_steps=15 format=3 uid="uid://cf3p1eergfs2"]
 
-[ext_resource type="PackedScene" uid="uid://c31y51bdp7t8a" path="res://scenes/prefab/jack.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/jack.tscn" id="1"]
 [ext_resource type="Script" path="res://scripts/golden_jack.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://dn70rg7oj8p0o" path="res://asset/effect/sparkle/sparkle.png" id="3"]
 [ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="4"]
@@ -10,46 +10,39 @@ transparency = 1
 shading_mode = 0
 diffuse_mode = 1
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource( "3" )
+albedo_texture = ExtResource("3")
 texture_filter = 2
 billboard_mode = 3
 billboard_keep_scale = true
 particles_anim_h_frames = 2
 particles_anim_v_frames = 3
 particles_anim_loop = false
-script = null
+
+[sub_resource type="Gradient" id="4"]
+colors = PackedColorArray(0.957, 0.811917, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="5"]
+gradient = SubResource("4")
 
 [sub_resource type="Curve" id="2"]
 max_value = 2.0
 _data = [Vector2(0, 1.2973), 0.0, -8.44541, 0, 0, Vector2(0.0752688, 1), 0.0, 0.0, 0, 0, Vector2(0.430108, 0.986486), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 4
-script = null
 
 [sub_resource type="CurveTexture" id="3"]
-curve = SubResource( "2" )
-script = null
-
-[sub_resource type="Gradient" id="4"]
-colors = PackedColorArray(0.957, 0.811917, 0, 1, 1, 1, 1, 1)
-script = null
-
-[sub_resource type="GradientTexture1D" id="5"]
-gradient = SubResource( "4" )
-script = null
+curve = SubResource("2")
 
 [sub_resource type="ParticleProcessMaterial" id="6"]
 emission_shape = 1
 emission_sphere_radius = 3.0
 gravity = Vector3(0, 0, 0)
-scale_curve = SubResource( "3" )
-color_ramp = SubResource( "5" )
+scale_curve = SubResource("3")
+color_ramp = SubResource("5")
 anim_speed_min = 1.25
 anim_speed_max = 1.25
-script = null
 
 [sub_resource type="QuadMesh" id="7"]
 size = Vector2(1.5, 1.5)
-script = null
 
 [sub_resource type="Animation" id="8"]
 length = 0.001
@@ -125,7 +118,6 @@ tracks/5/keys = {
 "update": 1,
 "values": [false]
 }
-script = null
 
 [sub_resource type="Animation" id="9"]
 resource_name = "collected"
@@ -216,29 +208,27 @@ tracks/6/keys = {
 "method": &"queue_free"
 }]
 }
-script = null
 
 [sub_resource type="AnimationLibrary" id="10"]
 _data = {
-"RESET": SubResource( "8" ),
-"collected": SubResource( "9" )
+"RESET": SubResource("8"),
+"collected": SubResource("9")
 }
-script = null
 
-[node name="golden_jack" instance=ExtResource( "1" )]
-script = ExtResource( "2" )
+[node name="golden_jack" instance=ExtResource("1")]
+script = ExtResource("2")
 
 [node name="vis" parent="." index="0"]
 modulate = Color(1, 0.756863, 0, 1)
 
 [node name="shine" type="GPUParticles3D" parent="." index="4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.04, 0)
-material_override = SubResource( "1" )
+material_override = SubResource("1")
 amount = 5
 lifetime = 0.7
 visibility_aabb = AABB(-4.48035, -3.10728, -4.58884, 8.40027, 8.06036, 9.69584)
-process_material = SubResource( "6" )
-draw_pass_1 = SubResource( "7" )
+process_material = SubResource("6")
+draw_pass_1 = SubResource("7")
 metadata/_edit_lock_ = true
 
 [node name="count" type="Label3D" parent="." index="5"]
@@ -248,10 +238,10 @@ pixel_size = 0.075
 billboard = 1
 double_sided = false
 text = "1"
-font = ExtResource( "4" )
+font = ExtResource("4")
 outline_size = 8
 
 [node name="anim" type="AnimationPlayer" parent="." index="6"]
 libraries = {
-"": SubResource( "10" )
+"": SubResource("10")
 }
