@@ -186,14 +186,13 @@ size = Vector2(6, 5)
 [node name="activation" type="Node" parent="0/entity/activation_group_1"]
 script = ExtResource("14")
 
-[node name="event_evoke" type="Node" parent="0/entity/activation_group_1/activation"]
+[node name="event_evoke" type="Node" parent="0/entity/activation_group_1/activation" node_paths=PackedStringArray("node")]
 script = ExtResource("15")
 node = NodePath("../../../big_door")
 packets = Array[ExtResource("16")]([SubResource("8")])
 
 [node name="activation_group_2" type="Node3D" parent="0/entity"]
 script = ExtResource("17")
-event_tree = NodePath("activation")
 
 [node name="interactable_button_4" type="Node3D" parent="0/entity/activation_group_2"]
 transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, -35, 0, 25)
@@ -204,7 +203,7 @@ size = Vector2(6, 4)
 [node name="activation" type="Node" parent="0/entity/activation_group_2"]
 script = ExtResource("14")
 
-[node name="event_evoke" type="Node" parent="0/entity/activation_group_2/activation"]
+[node name="event_evoke" type="Node" parent="0/entity/activation_group_2/activation" node_paths=PackedStringArray("node")]
 script = ExtResource("15")
 node = NodePath("../../../big_door_2")
 packets = Array[ExtResource("16")]([SubResource("8")])

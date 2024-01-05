@@ -1,5 +1,5 @@
 res://asset/environment/env_test.tres
-res://scenes/prefab/crate.tscn
+res://scenes/level/test/event/tevent_golden_jack.tscn
 res://asset/ui/generic_ui_theme.tres
 res://asset/accessory/body/mesh/suit.res
 res://asset/accessory/face/mesh/glasses.res
@@ -21,7 +21,9 @@ res://scenes/root.tscn
 res://scenes/prefab/flower_boss.tscn
 res://scenes/level/vslice_demo/history/area_hc_ruins_main.tscn
 res://scenes/level/vslice_demo/history/area_hc_ruins_arena.tscn
-res://scenes/level/test/event/tevent_golden_jack.tscn
 res://scenes/prefab/bouncing_jack.tscn
+res://scenes/prefab/crate.tscn
 res://scenes/level/vslice_demo/bonus/flying_fortress.tscn
-res://scripts/event_shard.gd
+res://scenes/level/test/test_dynamicobj.tscn
+res://scripts/activation_group.gd
+res://scenes/prefab/player.tscn

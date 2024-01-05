@@ -31,10 +31,10 @@ var update_follow_cam := false
 var player_cam : Camera3D
 
 func _ready() -> void:
+	pass
 	# Disable shard, for now
-	print(shard)
-	shard.visible = false
-	shard.process_mode = Node.PROCESS_MODE_DISABLED
+	#shard.visible = false
+	#shard.process_mode = Node.PROCESS_MODE_DISABLED
 
 func _execute() -> void:
 	# Re-enable shard
