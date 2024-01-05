@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/ruins_flute.mp3-e3ed9ffa3f8384980503ca26647a5
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
