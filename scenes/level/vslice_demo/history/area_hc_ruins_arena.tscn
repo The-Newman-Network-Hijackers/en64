@@ -2487,8 +2487,8 @@ toggle_preview = true
 curve = SubResource("8")
 
 [node name="path_follower" type="PathFollow3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 45, 0)
-progress = 45.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.373541, 0)
+progress = 0.373795
 rotation_mode = 0
 loop = false
 
@@ -2498,7 +2498,7 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 45, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.373543, 0)
 
 [node name="vis" type="MeshInstance3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo/geometry"]
 mesh = ExtResource("14")
@@ -2531,8 +2531,8 @@ toggle_preview = true
 curve = SubResource("9")
 
 [node name="path_follower" type="PathFollow3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 88.0668, 0)
-progress = 88.0668
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 85.9641, 0)
+progress = 85.9641
 rotation_mode = 0
 loop = false
 
@@ -2542,7 +2542,7 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 88.0668, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 85.9641, 0)
 
 [node name="vis" type="MeshInstance3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo/geometry"]
 mesh = ExtResource("14")
@@ -2554,7 +2554,7 @@ shape = SubResource("7")
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 78.5, 0)
 stream = ExtResource("12")
-volume_db = -10.0
+volume_db = -9.0
 unit_size = 30.0
 pitch_scale = 0.6
 bus = &"Sound"
@@ -2643,96 +2643,96 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 
 
 [node name="Skeleton3D" parent="entity/flower_boss/flower_prince/flower_armature" index="2"]
 bones/0/rotation = Quaternion(0, 0.707107, 0, 0.707107)
-bones/0/scale = Vector3(1, 1, 1)
+bones/0/scale = Vector3(1.00086, 0.99892, 1.00086)
 bones/5/rotation = Quaternion(0.788016, -3.51695e-07, -4.07849e-07, 0.615654)
-bones/6/rotation = Quaternion(0.415891, 3.25232e-07, -3.30583e-07, 0.909414)
-bones/6/scale = Vector3(1.106, 0.817499, 1.106)
+bones/6/rotation = Quaternion(0.415534, 3.25253e-07, -3.30233e-07, 0.909577)
+bones/6/scale = Vector3(1.1068, 0.817499, 1.10521)
 bones/7/position = Vector3(6.91291e-06, 5.73121, 5.99816)
 bones/7/rotation = Quaternion(0.384639, -0.547435, -0.437184, 0.601032)
 bones/8/rotation = Quaternion(-7.46192e-08, 1, -3.23195e-14, -4.33126e-07)
-bones/9/rotation = Quaternion(0.00998416, -0.00533183, 0.0852032, 0.996299)
+bones/9/rotation = Quaternion(0.00964669, -0.00592058, 0.144757, 0.989403)
 bones/9/scale = Vector3(1, 1, 1)
-bones/10/rotation = Quaternion(0.106045, -0.112097, 0.13689, 0.978494)
-bones/11/rotation = Quaternion(-0.0382317, -0.0534656, 0.121412, 0.990424)
-bones/12/rotation = Quaternion(0.00337284, 0.0174567, 0.168803, 0.98549)
+bones/10/rotation = Quaternion(0.102879, -0.115008, 0.164108, 0.974298)
+bones/11/rotation = Quaternion(-0.0396433, -0.0524275, 0.147769, 0.986835)
+bones/12/rotation = Quaternion(0.00348348, 0.0174349, 0.175049, 0.984399)
 bones/12/scale = Vector3(1, 1, 1)
-bones/13/rotation = Quaternion(-0.112433, -0.0465973, 0.173603, 0.977266)
+bones/13/rotation = Quaternion(-0.114215, -0.0420418, 0.212733, 0.969501)
 bones/14/rotation = Quaternion(-0.045929, 0.00835799, 0.391196, 0.919123)
-bones/15/rotation = Quaternion(0.148861, -0.0408239, -0.193715, 0.968839)
-bones/16/rotation = Quaternion(0.00933789, 0.0107566, 0.662472, 0.748951)
+bones/15/rotation = Quaternion(0.147704, -0.0448292, -0.16748, 0.973717)
+bones/16/rotation = Quaternion(0.00937345, 0.0107256, 0.664949, 0.746753)
 bones/17/rotation = Quaternion(0.00967977, -0.00438895, 0.503571, 0.863889)
-bones/18/rotation = Quaternion(0.290807, -0.0198253, 0.583908, 0.757687)
+bones/18/rotation = Quaternion(0.292049, -0.0188675, 0.58394, 0.757209)
 bones/18/scale = Vector3(1, 1, 1)
-bones/19/rotation = Quaternion(-0.594129, 0.0241988, 0.0901577, 0.798934)
+bones/19/rotation = Quaternion(-0.603871, 0.0230926, 0.0904474, 0.791597)
 bones/20/rotation = Quaternion(-3.37175e-07, 2.00972e-14, 0.707107, 0.707107)
 bones/21/rotation = Quaternion(4.52079e-07, 0.615654, -0.788016, -3.37308e-07)
-bones/22/rotation = Quaternion(0.415891, -3.39686e-07, 3.37192e-07, 0.909414)
-bones/22/scale = Vector3(1.106, 0.817499, 1.106)
+bones/22/rotation = Quaternion(0.415534, -3.39709e-07, 3.36837e-07, 0.909577)
+bones/22/scale = Vector3(1.1068, 0.817499, 1.10521)
 bones/23/position = Vector3(-7.10358e-06, 5.73121, 5.99816)
 bones/23/rotation = Quaternion(0.384639, 0.547435, 0.437184, 0.601032)
 bones/24/rotation = Quaternion(3.55271e-15, 1, 2.6055e-21, -7.54979e-08)
-bones/25/rotation = Quaternion(0.0135993, -0.0370017, -0.0856326, 0.995547)
-bones/26/rotation = Quaternion(0.106045, 0.112096, -0.13689, 0.978494)
-bones/27/rotation = Quaternion(-0.0382317, 0.0534654, -0.121412, 0.990424)
-bones/28/rotation = Quaternion(-0.0124703, 0.0746011, -0.172424, 0.982115)
+bones/25/rotation = Quaternion(0.0144213, -0.0366891, -0.107821, 0.993388)
+bones/26/rotation = Quaternion(0.104498, 0.11354, -0.150294, 0.976525)
+bones/27/rotation = Quaternion(-0.0387343, 0.0531025, -0.130749, 0.989234)
+bones/28/rotation = Quaternion(-0.0129898, 0.0745124, -0.179263, 0.980889)
 bones/28/scale = Vector3(1, 1, 1)
-bones/29/rotation = Quaternion(-0.112434, 0.0465978, -0.173603, 0.977266)
+bones/29/rotation = Quaternion(-0.113233, 0.044621, -0.190697, 0.974075)
 bones/30/rotation = Quaternion(-0.0459282, -0.00836, -0.391196, 0.919123)
-bones/31/rotation = Quaternion(0.151719, 0.055155, 0.191384, 0.968148)
+bones/31/rotation = Quaternion(0.150175, 0.0592322, 0.165168, 0.972964)
 bones/31/scale = Vector3(1, 1, 1)
-bones/32/rotation = Quaternion(0.00933625, -0.0107562, -0.662472, 0.748951)
+bones/32/rotation = Quaternion(0.00935381, -0.0107409, -0.663696, 0.747867)
 bones/33/rotation = Quaternion(0.00968004, 0.00438855, -0.503571, 0.863889)
-bones/34/rotation = Quaternion(0.291033, 0.0186382, -0.586372, 0.755725)
+bones/34/rotation = Quaternion(0.294392, 0.0160296, -0.586449, 0.754423)
 bones/34/scale = Vector3(1, 1, 1)
-bones/35/rotation = Quaternion(-0.59442, -0.0216976, -0.088299, 0.798998)
+bones/35/rotation = Quaternion(-0.607181, -0.0202761, -0.0886362, 0.789344)
 bones/36/rotation = Quaternion(2.24764e-08, -3.59651e-07, -0.707107, 0.707107)
-bones/37/position = Vector3(2.94419, 14.6655, 3.40798e-08)
-bones/37/rotation = Quaternion(0.620274, 0.341951, -0.610421, 0.354564)
-bones/37/scale = Vector3(1.106, 0.817499, 1.106)
-bones/38/position = Vector3(-2.94419, 14.6655, 3.82701e-08)
-bones/38/rotation = Quaternion(0.620274, -0.341951, 0.61042, 0.354564)
-bones/38/scale = Vector3(1.106, 0.817499, 1.106)
-bones/39/position = Vector3(6.2797, 9.69476, 0.125879)
-bones/39/rotation = Quaternion(0.204617, 0.040985, -0.97667, 0.0506781)
-bones/39/scale = Vector3(1.106, 0.817499, 1.106)
-bones/40/position = Vector3(5.77497, 11.7541, 0.119378)
-bones/40/rotation = Quaternion(0.390286, 0.0457108, -0.912853, 0.110843)
-bones/40/scale = Vector3(1.106, 0.817499, 1.106)
-bones/41/position = Vector3(4.73652, 13.5891, 0.0468138)
-bones/41/rotation = Quaternion(0.545857, 0.129017, -0.798082, 0.220137)
-bones/41/scale = Vector3(1.106, 0.817499, 1.106)
-bones/42/position = Vector3(-6.2797, 9.69475, 0.125879)
-bones/42/rotation = Quaternion(0.204617, -0.0409851, 0.97667, 0.0506782)
-bones/42/scale = Vector3(1.106, 0.817499, 1.106)
-bones/43/position = Vector3(-5.77497, 11.7541, 0.119378)
-bones/43/rotation = Quaternion(0.390286, -0.0457106, 0.912853, 0.110842)
-bones/43/scale = Vector3(1.106, 0.817499, 1.106)
-bones/44/position = Vector3(-4.73652, 13.5891, 0.0468147)
-bones/44/rotation = Quaternion(0.545857, -0.129017, 0.798082, 0.220137)
-bones/44/scale = Vector3(1.106, 0.817499, 1.106)
+bones/37/position = Vector3(2.94673, 14.6496, 3.4109e-08)
+bones/37/rotation = Quaternion(0.620157, 0.342167, -0.610284, 0.354798)
+bones/37/scale = Vector3(1.10775, 0.816941, 1.10573)
+bones/38/position = Vector3(-2.94673, 14.6496, 3.83025e-08)
+bones/38/rotation = Quaternion(0.620157, -0.342166, 0.610284, 0.354798)
+bones/38/scale = Vector3(1.10775, 0.816941, 1.10573)
+bones/39/position = Vector3(6.28456, 9.68503, 0.126043)
+bones/39/rotation = Quaternion(0.204627, 0.0410894, -0.976653, 0.0508848)
+bones/39/scale = Vector3(1.10775, 0.816941, 1.10573)
+bones/40/position = Vector3(5.77839, 11.7426, 0.119521)
+bones/40/rotation = Quaternion(0.39029, 0.0458762, -0.912795, 0.111236)
+bones/40/scale = Vector3(1.10775, 0.81694, 1.10573)
+bones/41/position = Vector3(4.73871, 13.5752, 0.0468627)
+bones/41/rotation = Quaternion(0.545805, 0.129279, -0.797955, 0.220574)
+bones/41/scale = Vector3(1.10775, 0.81694, 1.10573)
+bones/42/position = Vector3(-6.28456, 9.68503, 0.126042)
+bones/42/rotation = Quaternion(0.204627, -0.0410891, 0.976653, 0.0508843)
+bones/42/scale = Vector3(1.10775, 0.816941, 1.10573)
+bones/43/position = Vector3(-5.7784, 11.7426, 0.119521)
+bones/43/rotation = Quaternion(0.39029, -0.0458762, 0.912795, 0.111236)
+bones/43/scale = Vector3(1.10775, 0.81694, 1.10573)
+bones/44/position = Vector3(-4.73871, 13.5752, 0.0468625)
+bones/44/rotation = Quaternion(0.545805, -0.129279, 0.797955, 0.220574)
+bones/44/scale = Vector3(1.10775, 0.81694, 1.10573)
 
 [node name="hand_attach" parent="entity/flower_boss/flower_prince/flower_armature/Skeleton3D" index="2"]
-transform = Transform3D(0.0846158, -0.996368, 0.00952545, -0.99093, -0.0831448, 0.105567, -0.104392, -0.0183717, -0.994367, 5.68737, 5.63597, -0.0825123)
+transform = Transform3D(0.084689, -0.997229, 0.0095336, -0.989859, -0.083055, 0.105453, -0.104482, -0.0183876, -0.995226, 5.69228, 5.62988, -0.0825833)
 
 [node name="head_attach" parent="entity/flower_boss/flower_prince/flower_armature/Skeleton3D" index="3"]
-transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 1.29497e-09, 16.4916, -0.0232756)
+transform = Transform3D(0, 0, 1.00086, 0, 0.99892, 0, -1.00086, 0, 0, 1.29609e-09, 16.4738, -0.0232957)
 
 [node name="anim" parent="entity/flower_boss" index="1"]
 libraries = {
 "": SubResource("AnimationLibrary_gwxy2")
 }
 
-[node name="fsm" parent="entity/flower_boss" index="3"]
+[node name="fsm" parent="entity/flower_boss" index="3" node_paths=PackedStringArray("initial_state")]
 initial_state = NodePath("intro_cutscene")
 
-[node name="outro_cutscene" parent="entity/flower_boss/fsm" index="1"]
+[node name="outro_cutscene" parent="entity/flower_boss/fsm" index="1" node_paths=PackedStringArray("event_tree")]
 event_tree = NodePath("../../../../events/fight_completed")
 
 [node name="shard_target" parent="entity/flower_boss" index="9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 311.5, -109.5)
 gizmo_extents = 4.55
 
-[node name="shard" parent="entity/flower_boss/shard" index="0"]
+[node name="shard" parent="entity/flower_boss/shard" index="0" node_paths=PackedStringArray("event_tree")]
 event_tree = NodePath("../../../../events/roll_credits")
 
 [node name="boom_crate" parent="entity" instance=ExtResource("20")]
@@ -2790,24 +2790,26 @@ size = Vector3(5, 5, 5)
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -49.25, 171.3, -80.523)
 size = Vector3(5, 5, 5)
 
-[node name="warp_exit" type="Area3D" parent="entity"]
+[node name="warp_exit" type="Area3D" parent="entity" node_paths=PackedStringArray("event_tree")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, -20.909)
 collision_layer = 0
 collision_mask = 2
 monitorable = false
 script = ExtResource("23")
+event_tree = NodePath("../../events/warp_exit")
 one_shot = false
 size = Vector3(45, 45, 45)
 
 [node name="@CollisionShape3D@35337" type="CollisionShape3D" parent="entity/warp_exit"]
 shape = SubResource("10")
 
-[node name="flower_cutscene" type="Area3D" parent="entity"]
+[node name="flower_cutscene" type="Area3D" parent="entity" node_paths=PackedStringArray("event_tree")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 299.5, 81.091)
 collision_layer = 0
 collision_mask = 2
 monitorable = false
 script = ExtResource("23")
+event_tree = NodePath("../../events/roll_credits")
 divert_trees = {
 "flower_rematch": NodePath("../../events/flower_rematch")
 }
@@ -2863,23 +2865,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@53544" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@31503" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53545" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@31504" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53546" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@31505" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53547" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@31506" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53548" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@31507" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, 15)
 metadata/_edit_lock_ = true
 
@@ -2891,23 +2893,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@53553" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@31512" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53554" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@31513" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53555" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@31514" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53556" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@31515" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53557" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@31516" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, 15)
 metadata/_edit_lock_ = true
 
@@ -2919,23 +2921,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@53562" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@31521" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53563" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@31522" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53564" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@31523" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53565" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@31524" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53566" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@31525" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, 15)
 metadata/_edit_lock_ = true
 
@@ -2947,23 +2949,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@53571" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@31530" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53572" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@31531" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53573" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@31532" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53574" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@31533" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53575" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@31534" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, 15)
 metadata/_edit_lock_ = true
 
@@ -2975,23 +2977,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@53580" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@31539" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53581" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@31540" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53582" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@31541" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53583" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@31542" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53584" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@31543" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, 15)
 metadata/_edit_lock_ = true
 
@@ -3004,22 +3006,22 @@ spacing = 7.5
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@53594" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@31553" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53595" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@31554" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.5, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53596" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@31555" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53597" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@31556" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53598" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@31557" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 0)
 metadata/_edit_lock_ = true
 
@@ -3032,23 +3034,23 @@ spacing = 10.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@53608" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@31567" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.51057, -14.2874, -3.09017)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53609" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@31568" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.87785, -14.2874, 8.09017)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53610" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@31569" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.87785, -14.2874, 8.09017)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53611" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@31570" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.51057, -14.2874, -3.09017)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@53612" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@31571" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.2874, -10)
 metadata/_edit_lock_ = true
 
@@ -3125,12 +3127,12 @@ script = ExtResource("43")
 dialog = ExtResource("44")
 title = "flower_prince_demo"
 
-[node name="flower_part1" type="Node" parent="events/flower_cutscene"]
+[node name="flower_part1" type="Node" parent="events/flower_cutscene" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("23")])
 
-[node name="zoom_abit" type="Node" parent="events/flower_cutscene"]
+[node name="zoom_abit" type="Node" parent="events/flower_cutscene" node_paths=PackedStringArray("camera")]
 script = ExtResource("36")
 camera = NodePath("cam")
 duration = 2.0
@@ -3143,7 +3145,7 @@ transform = Transform3D(-0.839078, 0.0823287, -0.537745, 0, 0.988483, 0.151337, 
 
 [node name="move" type="Node" parent="events/flower_cutscene" node_paths=PackedStringArray("camera")]
 script = ExtResource("36")
-camera = NodePath("cam")
+camera = NodePath("../../flower_rematch/move/cam")
 duration = 2.0
 do_interpolate = true
 int_length = 2.0
@@ -3153,7 +3155,7 @@ lock_properties = 3
 transform = Transform3D(-0.999901, -0.00642847, 0.0125061, 0, 0.889381, 0.457167, -0.0140616, 0.457121, -0.889293, 0.345463, 330.691, 35.2892)
 fov = 55.0
 
-[node name="flower_part2" type="Node" parent="events/flower_cutscene"]
+[node name="flower_part2" type="Node" parent="events/flower_cutscene" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("24")])
@@ -3161,14 +3163,14 @@ packets = Array[ExtResource("46")]([SubResource("24")])
 [node name="wait" type="Node" parent="events/flower_cutscene"]
 script = ExtResource("47")
 
-[node name="flower_part3" type="Node" parent="events/flower_cutscene"]
+[node name="flower_part3" type="Node" parent="events/flower_cutscene" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("25")])
 
 [node name="tilt_up" type="Node" parent="events/flower_cutscene" node_paths=PackedStringArray("camera")]
 script = ExtResource("36")
-camera = NodePath("cam")
+camera = NodePath("../../flower_rematch/tilt_up/cam")
 duration = 1.25
 cutscene_bars = true
 do_interpolate = true
@@ -3183,7 +3185,7 @@ script = ExtResource("43")
 dialog = ExtResource("44")
 title = "flower_prince_mean_demo"
 
-[node name="flower_part4" type="Node" parent="events/flower_cutscene"]
+[node name="flower_part4" type="Node" parent="events/flower_cutscene" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("26")])
@@ -3196,12 +3198,12 @@ int_length = 2.5
 script = ExtResource("38")
 new_stems = Array[ExtResource("40")]([ExtResource("2"), SubResource("27")])
 
-[node name="set_respawn" type="Node" parent="events/flower_cutscene"]
+[node name="set_respawn" type="Node" parent="events/flower_cutscene" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../..")
 packets = Array[ExtResource("46")]([SubResource("28")])
 
-[node name="enable_barrier" type="Node" parent="events/flower_cutscene"]
+[node name="enable_barrier" type="Node" parent="events/flower_cutscene" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../map/hc_ruins_tower_arena/barrier/StaticBody3D/CollisionShape3D")
 packets = Array[ExtResource("46")]([SubResource("29")])
@@ -3234,7 +3236,7 @@ script = ExtResource("43")
 dialog = ExtResource("44")
 title = "flower_prince_rematch_demo"
 
-[node name="flower_part1" type="Node" parent="events/flower_rematch"]
+[node name="flower_part1" type="Node" parent="events/flower_rematch" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("23")])
@@ -3261,7 +3263,7 @@ lock_properties = 3
 transform = Transform3D(-0.999901, -0.00642847, 0.0125061, 0, 0.889381, 0.457167, -0.0140616, 0.457121, -0.889293, 0.345463, 330.691, 35.2892)
 fov = 55.0
 
-[node name="flower_part2" type="Node" parent="events/flower_rematch"]
+[node name="flower_part2" type="Node" parent="events/flower_rematch" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("24")])
@@ -3269,7 +3271,7 @@ packets = Array[ExtResource("46")]([SubResource("24")])
 [node name="wait" type="Node" parent="events/flower_rematch"]
 script = ExtResource("47")
 
-[node name="flower_part3" type="Node" parent="events/flower_rematch"]
+[node name="flower_part3" type="Node" parent="events/flower_rematch" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("25")])
@@ -3289,7 +3291,7 @@ script = ExtResource("36")
 duration = 0.75
 do_interpolate = true
 
-[node name="flower_part4" type="Node" parent="events/flower_rematch"]
+[node name="flower_part4" type="Node" parent="events/flower_rematch" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("26")])
@@ -3298,7 +3300,7 @@ packets = Array[ExtResource("46")]([SubResource("26")])
 script = ExtResource("38")
 new_stems = Array[ExtResource("40")]([ExtResource("2"), SubResource("27")])
 
-[node name="enable_barrier" type="Node" parent="events/flower_rematch"]
+[node name="enable_barrier" type="Node" parent="events/flower_rematch" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../map/hc_ruins_tower_arena/barrier/StaticBody3D/CollisionShape3D")
 packets = Array[ExtResource("46")]([SubResource("29")])
@@ -3306,7 +3308,7 @@ packets = Array[ExtResource("46")]([SubResource("29")])
 [node name="fight_completed" type="Node" parent="events"]
 script = ExtResource("35")
 
-[node name="camera" type="Node" parent="events/fight_completed"]
+[node name="camera" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("camera")]
 script = ExtResource("36")
 camera = NodePath("../../../entity/flower_boss/flower_prince/flower_armature/static_cam_in")
 duration = 0.75
@@ -3323,7 +3325,7 @@ script = ExtResource("43")
 dialog = ExtResource("44")
 title = "flower_prince_defeat_demo"
 
-[node name="flower_part1" type="Node" parent="events/fight_completed"]
+[node name="flower_part1" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("30")])
@@ -3332,18 +3334,18 @@ packets = Array[ExtResource("46")]([SubResource("30")])
 script = ExtResource("47")
 time = 2.0
 
-[node name="flower_part2" type="Node" parent="events/fight_completed"]
+[node name="flower_part2" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("31")])
 
-[node name="wait_signal" type="Node" parent="events/fight_completed"]
+[node name="wait_signal" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("node")]
 script = ExtResource("47")
 type = 1
 node = NodePath("../../../entity/flower_boss/fsm/throw")
 node_signal = &"shard_thrown"
 
-[node name="shard" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("shard", "target", "follow_cam")]
+[node name="shard" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("shard", "origin", "target", "follow_cam")]
 script = ExtResource("50")
 shard = NodePath("../../../entity/flower_boss/shard/shard")
 origin = NodePath("../../../entity/flower_boss/shard/shard/shard_origin")
@@ -3362,12 +3364,12 @@ gizmo_extents = 11.65
 script = ExtResource("47")
 time = 2.0
 
-[node name="flower_part3" type="Node" parent="events/fight_completed"]
+[node name="flower_part3" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("32")])
 
-[node name="camera_2" type="Node" parent="events/fight_completed"]
+[node name="camera_2" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("camera")]
 script = ExtResource("36")
 camera = NodePath("../../../entity/flower_boss/flower_prince/flower_armature/static_cam_out")
 duration = 2.0
@@ -3381,7 +3383,7 @@ script = ExtResource("43")
 dialog = ExtResource("44")
 title = "flower_prince_defeat_2_demo"
 
-[node name="flower_part4" type="Node" parent="events/fight_completed"]
+[node name="flower_part4" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("33")])
@@ -3395,7 +3397,7 @@ script = ExtResource("43")
 dialog = ExtResource("44")
 title = "flower_prince_defeat_3_demo"
 
-[node name="flower_part5" type="Node" parent="events/fight_completed"]
+[node name="flower_part5" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("34")])
@@ -3405,7 +3407,7 @@ script = ExtResource("36")
 duration = 0.75
 do_interpolate = true
 
-[node name="disable_barrier" type="Node" parent="events/fight_completed"]
+[node name="disable_barrier" type="Node" parent="events/fight_completed" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../map/hc_ruins_tower_arena/barrier/StaticBody3D/CollisionShape3D")
 packets = Array[ExtResource("46")]([SubResource("35")])
@@ -3414,7 +3416,7 @@ packets = Array[ExtResource("46")]([SubResource("35")])
 script = ExtResource("35")
 player_handler = 0
 
-[node name="flower_part4" type="Node" parent="events/flower_debug"]
+[node name="flower_part4" type="Node" parent="events/flower_debug" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../entity/flower_boss/fsm")
 packets = Array[ExtResource("46")]([SubResource("26")])
@@ -3428,7 +3430,7 @@ script = ExtResource("45")
 node = NodePath("../../..")
 packets = Array[ExtResource("46")]([SubResource("28")])
 
-[node name="enable_barrier" type="Node" parent="events/flower_debug"]
+[node name="enable_barrier" type="Node" parent="events/flower_debug" node_paths=PackedStringArray("node")]
 script = ExtResource("45")
 node = NodePath("../../../map/hc_ruins_tower_arena/barrier/StaticBody3D/CollisionShape3D")
 packets = Array[ExtResource("46")]([SubResource("29")])

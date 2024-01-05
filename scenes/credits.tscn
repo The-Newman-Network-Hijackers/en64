@@ -1,9 +1,9 @@
-[gd_scene load_steps=20 format=3]
+[gd_scene load_steps=20 format=3 uid="uid://3a7ptsibll58"]
 
 [ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
 [ext_resource type="Script" path="res://scripts/subarea.gd" id="3"]
-[ext_resource type="Resource" uid="uid://bvclfuu0dv1l7" path="res://data/stem/station_piano.tres" id="4"]
+[ext_resource type="Resource" path="res://data/stem/station_piano.tres" id="4"]
 [ext_resource type="Script" path="res://scripts/credits.gd" id="5"]
 [ext_resource type="Texture2D" uid="uid://c3fgnafa8whu3" path="res://asset/ui/logo.png" id="6"]
 [ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="7"]
@@ -15,7 +15,7 @@
 [ext_resource type="Script" path="res://scripts/event_warp.gd" id="13"]
 
 [sub_resource type="Resource" id="1"]
-script = ExtResource( "2" )
+script = ExtResource("2")
 level_name = "CREDITS"
 level_desc = ""
 is_menu = true
@@ -23,16 +23,14 @@ flags = {}
 
 [sub_resource type="LabelSettings" id="2"]
 line_spacing = 0.0
-font = ExtResource( "7" )
+font = ExtResource("7")
 font_size = 24
 font_color = Color(0.611765, 0.611765, 0.611765, 1)
-script = null
 
 [sub_resource type="LabelSettings" id="3"]
 line_spacing = 0.0
-font = ExtResource( "8" )
+font = ExtResource("8")
 font_size = 20
-script = null
 
 [sub_resource type="Animation" id="4"]
 length = 0.001
@@ -90,7 +88,6 @@ tracks/3/keys = {
 
 "]
 }
-script = null
 
 [sub_resource type="Animation" id="5"]
 resource_name = "credits"
@@ -170,26 +167,24 @@ Have you found all of the Shards?
 
 "]
 }
-script = null
 
 [sub_resource type="AnimationLibrary" id="6"]
 _data = {
-"RESET": SubResource( "4" ),
-"credits": SubResource( "5" )
+"RESET": SubResource("4"),
+"credits": SubResource("5")
 }
-script = null
 
-[node name="credits" type="Node"]
-script = ExtResource( "1" )
-data = SubResource( "1" )
+[node name="credits" type="Node" node_paths=PackedStringArray("subareas")]
+script = ExtResource("1")
+data = SubResource("1")
 subareas = [NodePath("0")]
 
 [node name="0" type="Node3D" parent="."]
-script = ExtResource( "3" )
-music = [ExtResource( "4" )]
+script = ExtResource("3")
+music = Array[Resource("res://scripts/res_music_stem.gd")]([ExtResource("4")])
 
 [node name="ui" type="CanvasLayer" parent="0"]
-script = ExtResource( "5" )
+script = ExtResource("5")
 
 [node name="container" type="PanelContainer" parent="0/ui"]
 anchors_preset = 15
@@ -228,7 +223,7 @@ texture_filter = 4
 custom_minimum_size = Vector2(0, 176)
 layout_mode = 2
 size_flags_vertical = 3
-texture = ExtResource( "6" )
+texture = ExtResource("6")
 expand_mode = 1
 stretch_mode = 5
 
@@ -245,7 +240,7 @@ text = "Development Team
 
 
  "
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="directed" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -253,7 +248,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Director"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="d_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -265,7 +260,7 @@ text = "Jefftastic
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="ass_directed" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -273,7 +268,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Co-Directors"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="ad_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -285,7 +280,7 @@ blamerobots
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="programming" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -293,7 +288,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Programmer"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="p_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -305,7 +300,7 @@ text = "Jefftastic
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="composition" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -313,7 +308,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Composers"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="c_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -326,7 +321,7 @@ rockydan0
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="art" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -334,7 +329,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Artists"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="a_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -347,7 +342,7 @@ Jefftastic
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="modeler" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -355,7 +350,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Modelers"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="m_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -368,7 +363,7 @@ superdave
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="concept_art" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -376,7 +371,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Concept Artists"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="ca_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -390,7 +385,7 @@ AlgoAwesome
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="writer" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -398,7 +393,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Writers"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="w_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -412,7 +407,7 @@ deathlobotomy
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="playtester" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -420,7 +415,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Playtesters"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="pl_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -434,7 +429,7 @@ AbsoluteVendingMachine
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="special" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -442,7 +437,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Special Thanks"
-label_settings = SubResource( "2" )
+label_settings = SubResource("2")
 horizontal_alignment = 1
 
 [node name="s_auth" type="Label" parent="0/ui/container/scroll_container/v_box_container"]
@@ -470,7 +465,7 @@ We are going to Rich's House
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="texture_rect" type="TextureRect" parent="0/ui/container/scroll_container/v_box_container"]
@@ -478,7 +473,7 @@ texture_filter = 4
 custom_minimum_size = Vector2(0, 256)
 layout_mode = 2
 size_flags_vertical = 3
-texture = ExtResource( "9" )
+texture = ExtResource("9")
 expand_mode = 1
 stretch_mode = 5
 
@@ -490,7 +485,7 @@ text = "Created using the Godot Engine
 
 
  "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="texture_rect_2" type="TextureRect" parent="0/ui/container/scroll_container/v_box_container"]
@@ -498,7 +493,7 @@ texture_filter = 4
 custom_minimum_size = Vector2(0, 166)
 layout_mode = 2
 size_flags_vertical = 3
-texture = ExtResource( "10" )
+texture = ExtResource("10")
 expand_mode = 3
 stretch_mode = 5
 
@@ -515,7 +510,7 @@ text = "Powered by gd-cinder framework
 
 
 "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="texture_rect_3" type="TextureRect" parent="0/ui/container/scroll_container/v_box_container"]
@@ -523,7 +518,7 @@ texture_filter = 4
 custom_minimum_size = Vector2(0, 223)
 layout_mode = 2
 size_flags_vertical = 3
-texture = ExtResource( "11" )
+texture = ExtResource("11")
 expand_mode = 3
 stretch_mode = 5
 
@@ -538,7 +533,7 @@ text = "
 
 
 "
-label_settings = SubResource( "3" )
+label_settings = SubResource("3")
 horizontal_alignment = 1
 
 [node name="fade" type="ColorRect" parent="0/ui/container"]
@@ -548,16 +543,16 @@ color = Color(0.0705882, 0.0509804, 0.0784314, 1)
 
 [node name="anim" type="AnimationPlayer" parent="0/ui/container"]
 libraries = {
-"": SubResource( "6" )
+"": SubResource("6")
 }
 autoplay = "credits"
 
 [node name="exit" type="Node" parent="0"]
-script = ExtResource( "12" )
+script = ExtResource("12")
 player_handler = 0
 
 [node name="warp" type="Node" parent="0/exit"]
-script = ExtResource( "13" )
+script = ExtResource("13")
 do_pause = false
 target_scene = "res://scenes/splash.tscn"
 fade_length = 1.0

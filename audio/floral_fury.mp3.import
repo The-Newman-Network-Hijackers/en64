@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/floral_fury.mp3-563f0c27d482aef66f54f039f0326
 [params]
 
 loop=true
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4
