@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3]
+[gd_scene load_steps=13 format=3 uid="uid://vpu8y67slxcr"]
 
 [ext_resource type="Script" path="res://scripts/gj_ball.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="2"]
@@ -58,12 +58,10 @@ func player_detected(body : Node3D) -> void:
 
 [sub_resource type="SphereShape3D" id="2"]
 radius = 2.5
-script = null
 
 [sub_resource type="ShaderMaterial" id="3"]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "3" )
+shader = ExtResource("3")
 shader_parameter/modulate_color = Color(1, 1, 1, 1)
 shader_parameter/uv_scale = Vector2(1, 1)
 shader_parameter/uv_offset = Vector2(0, 0)
@@ -71,24 +69,21 @@ shader_parameter/uv_pan_velocity = Vector2(0, 0)
 shader_parameter/billboard = false
 shader_parameter/y_billboard = true
 shader_parameter/alpha_scissor = 0.385
-shader_parameter/albedoTex = ExtResource( "4" )
-script = null
+shader_parameter/albedoTex = ExtResource("4")
 
 [sub_resource type="SphereShape3D" id="4"]
 radius = 1.175
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="5"]
 random_pitch = 1.1
 streams_count = 2
-stream_0/stream = ExtResource( "6" )
+stream_0/stream = ExtResource("6")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource( "7" )
+stream_1/stream = ExtResource("7")
 stream_1/weight = 1.0
-script = null
 
 [node name="gj_ball" type="CharacterBody3D"]
-script = ExtResource( "1" )
+script = ExtResource("1")
 e_name = "Golden Jack Ball"
 visual_node = NodePath("vis")
 jump_height = 8.0
@@ -96,11 +91,11 @@ jtt_peak = 0.4
 jtt_descent = 0.4
 
 [node name="fsm" type="Node" parent="."]
-script = ExtResource( "2" )
+script = ExtResource("2")
 initial_state = NodePath("bounce")
 
 [node name="bounce" type="Node" parent="fsm"]
-script = SubResource( "1" )
+script = SubResource("1")
 
 [node name="player_detector" type="Area3D" parent="."]
 collision_layer = 0
@@ -109,30 +104,30 @@ monitorable = false
 
 [node name="col" type="CollisionShape3D" parent="player_detector"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16287, 0)
-shape = SubResource( "2" )
+shape = SubResource("2")
 
 [node name="vis" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00189257, 0)
 layers = 4
-material_override = SubResource( "3" )
+material_override = SubResource("3")
 offset = Vector2(0, 16)
 pixel_size = 0.1075
 billboard = 1
 double_sided = false
 alpha_cut = 2
-texture = ExtResource( "4" )
+texture = ExtResource("4")
 
 [node name="col" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1951, 0)
-shape = SubResource( "4" )
+shape = SubResource("4")
 
 [node name="shadow" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-script = ExtResource( "5" )
+script = ExtResource("5")
 size = 4.0
 
 [node name="boing" type="AudioStreamPlayer3D" parent="."]
-stream = SubResource( "5" )
+stream = SubResource("5")
 unit_size = 50.0
 max_db = 0.0
 max_distance = 100.0

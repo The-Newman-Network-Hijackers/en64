@@ -5,7 +5,7 @@
 [ext_resource type="Shader" path="res://asset/shader/dither.gdshader" id="3"]
 [ext_resource type="Shader" path="res://asset/shader/ntsc.gdshader" id="4"]
 [ext_resource type="Script" path="res://scripts/level_manager.gd" id="5"]
-[ext_resource type="PackedScene" path="res://scenes/prefab/player.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://brv8n0s4d8but" path="res://scenes/prefab/player.tscn" id="6"]
 [ext_resource type="PackedScene" path="res://scenes/ui.tscn" id="7"]
 [ext_resource type="Script" path="res://scripts/fade.gd" id="8"]
 [ext_resource type="Shader" path="res://asset/shader/circle_fade.gdshader" id="9"]
