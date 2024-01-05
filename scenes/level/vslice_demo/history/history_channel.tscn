@@ -15,9 +15,10 @@ flags = {
 "flower_rematch": false
 }
 
-[node name="history_channel" type="Node"]
+[node name="history_channel" type="Node" node_paths=PackedStringArray("subareas")]
 script = ExtResource("1")
 data = SubResource("1")
+subareas = [NodePath("hc_ruins_main"), NodePath("hc_ruins_castle"), NodePath("hc_ruins_arena")]
 
 [node name="hc_ruins_main" parent="." instance=ExtResource("3")]
 
