@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3]
+[gd_scene load_steps=29 format=3 uid="uid://c1ff4goiobedn"]
 
 [ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
@@ -18,7 +18,7 @@
 [ext_resource type="Resource" path="res://data/dialogue/dummy.dialogue.tres" id="16"]
 
 [sub_resource type="Resource" id="1"]
-script = ExtResource( "2" )
+script = ExtResource("2")
 level_name = "tevent_cutscene"
 level_desc = "EventCam test"
 is_menu = false
@@ -33,15 +33,13 @@ ground_horizon_color = Color(0.555326, 0.735623, 0.896689, 1)
 ground_curve = 0.259921
 sun_angle_max = 0.0
 use_debanding = false
-script = null
 
 [sub_resource type="Sky" id="3"]
-sky_material = SubResource( "2" )
-script = null
+sky_material = SubResource("2")
 
 [sub_resource type="Environment" id="4"]
 background_mode = 2
-sky = SubResource( "3" )
+sky = SubResource("3")
 ambient_light_source = 3
 ambient_light_sky_contribution = 0.31
 reflected_light_source = 2
@@ -56,37 +54,31 @@ volumetric_fog_albedo = Color(0.933594, 0.601563, 0.667969, 1)
 volumetric_fog_anisotropy = 0.9
 volumetric_fog_ambient_inject = 1.19
 adjustment_saturation = 8.0
-script = null
 
 [sub_resource type="ShaderMaterial" id="5"]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "4" )
+shader = ExtResource("4")
 shader_parameter/modulate_color = Color(1, 1, 1, 1)
 shader_parameter/normal_scale = null
 shader_parameter/uv_scale = Vector2(10, 10)
 shader_parameter/uv_offset = Vector2(0, 0)
 shader_parameter/uv_pan_velocity = Vector2(0, 0)
-shader_parameter/albedoTex = ExtResource( "5" )
-shader_parameter/texture_normal = null
-script = null
+shader_parameter/albedoTex = ExtResource("5")
 
 [sub_resource type="QuadMesh" id="6"]
-material = SubResource( "5" )
+material = SubResource("5")
 size = Vector2(150, 150)
 orientation = 1
-script = null
 
 [sub_resource type="Resource" id="7"]
-script = ExtResource( "8" )
-input = [&"interact"]
+script = ExtResource("8")
+input = Array[StringName]([&"interact"])
 render_as_analog = false
 equip_icon = -1
 message = "to Interact"
 
 [sub_resource type="BoxShape3D" id="8"]
 size = Vector3(7.5, 17.5, 8)
-script = null
 
 [sub_resource type="Animation" id="9"]
 length = 0.001
@@ -126,7 +118,6 @@ tracks/2/keys = {
 "update": 1,
 "values": [false]
 }
-script = null
 
 [sub_resource type="Animation" id="10"]
 resource_name = "box"
@@ -167,19 +158,16 @@ tracks/2/keys = {
 "update": 1,
 "values": [true, false]
 }
-script = null
 
 [sub_resource type="AnimationLibrary" id="11"]
 _data = {
-"RESET": SubResource( "9" ),
-"box": SubResource( "10" )
+"RESET": SubResource("9"),
+"box": SubResource("10")
 }
-script = null
 
 [sub_resource type="ShaderMaterial" id="12"]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "12" )
+shader = ExtResource("12")
 shader_parameter/out_color = Color(0.964706, 0, 0.25098, 1)
 shader_parameter/uv_pan_velocity = Vector2(0, 0)
 shader_parameter/amount = 0.4
@@ -187,16 +175,14 @@ shader_parameter/speed = 0.1
 shader_parameter/metallic = 0.6
 shader_parameter/specular = 0.5
 shader_parameter/roughness = 1.0
-shader_parameter/albedo_texture = null
-script = null
 
-[node name="tevent_cutscene" type="Node"]
-script = ExtResource( "1" )
-data = SubResource( "1" )
+[node name="tevent_cutscene" type="Node" node_paths=PackedStringArray("subareas")]
+script = ExtResource("1")
+data = SubResource("1")
 subareas = [NodePath("0")]
 
 [node name="0" type="Node3D" parent="."]
-script = ExtResource( "3" )
+script = ExtResource("3")
 
 [node name="sun" type="DirectionalLight3D" parent="0"]
 transform = Transform3D(0.890617, 0.214749, 0.400853, -0.210465, -0.58674, 0.781947, 0.403119, -0.780781, -0.477364, 4.7367, 3.0656, -1.46723)
@@ -208,46 +194,44 @@ directional_shadow_blend_splits = true
 directional_shadow_max_distance = 800.0
 
 [node name="environment" type="WorldEnvironment" parent="0"]
-environment = SubResource( "4" )
+environment = SubResource("4")
 
 [node name="level" type="Node" parent="0"]
 
 [node name="csg_box_3d" type="CSGMesh3D" parent="0/level"]
 use_collision = true
 collision_mask = 0
-mesh = SubResource( "6" )
+mesh = SubResource("6")
 
 [node name="warp" type="Node" parent="0"]
 
-[node name="warp_point" type="Marker3D" parent="0/warp" groups=[
-"Warp",
-]]
+[node name="warp_point" type="Marker3D" parent="0/warp" groups=["Warp"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
 gizmo_extents = 2.5
-script = ExtResource( "6" )
+script = ExtResource("6")
 
 [node name="entity" type="Node" parent="0"]
 
 [node name="interactable" type="Area3D" parent="0/entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50)
-script = ExtResource( "7" )
+script = ExtResource("7")
 event_tree = NodePath("../../event/cutscene")
 event_priority = 1
-input_prompt = SubResource( "7" )
+input_prompt = SubResource("7")
 
 [node name="col" type="CollisionShape3D" parent="0/entity/interactable"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, -1.25, -6)
-shape = SubResource( "8" )
+shape = SubResource("8")
 
-[node name="sign" parent="0/entity/interactable" instance=ExtResource( "9" )]
+[node name="sign" parent="0/entity/interactable" instance=ExtResource("9")]
 
 [node name="event" type="Node" parent="0"]
 
 [node name="cutscene" type="Node" parent="0/event"]
-script = ExtResource( "10" )
+script = ExtResource("10")
 
 [node name="box_cam" type="Node" parent="0/event/cutscene"]
-script = ExtResource( "11" )
+script = ExtResource("11")
 camera = NodePath("camera_3d")
 duration = 3.0
 anim = NodePath("anim")
@@ -261,14 +245,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, -25)
 
 [node name="anim" type="AnimationPlayer" parent="0/event/cutscene/box_cam"]
 libraries = {
-"": SubResource( "11" )
+"": SubResource("11")
 }
 
 [node name="box" type="CSGBox3D" parent="0/event/cutscene/box_cam"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, -29)
 visible = false
 size = Vector3(2, 2, 2)
-material = SubResource( "12" )
+material = SubResource("12")
 
 [node name="text" type="Label3D" parent="0/event/cutscene/box_cam"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.6879, -28.0927)
@@ -276,18 +260,18 @@ visible = false
 pixel_size = 0.016
 billboard = 1
 text = "I am cube"
-font = ExtResource( "13" )
+font = ExtResource("13")
 
 [node name="event_wait" type="Node" parent="0/event/cutscene"]
-script = ExtResource( "14" )
+script = ExtResource("14")
 player_state = &"idle"
 
 [node name="event_talk" type="Node" parent="0/event/cutscene"]
-script = ExtResource( "15" )
-dialog = ExtResource( "16" )
+script = ExtResource("15")
+dialog = ExtResource("16")
 title = "dummy"
 
 [node name="player_cam" type="Node" parent="0/event/cutscene"]
-script = ExtResource( "11" )
+script = ExtResource("11")
 duration = 0.5
 do_interpolate = true

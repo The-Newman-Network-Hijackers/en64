@@ -1,46 +1,46 @@
-[gd_scene load_steps=77 format=3]
+[gd_scene load_steps=77 format=3 uid="uid://cywbi4jpfi2pq"]
 
 [ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
 [ext_resource type="Script" path="res://scripts/subarea.gd" id="3"]
-[ext_resource type="Resource" uid="uid://b30yixqes4luh" path="res://data/stem/amb_rain.tres" id="4"]
-[ext_resource type="Resource" uid="uid://dcjj1c18ip5wj" path="res://data/stem/amb_wind.tres" id="5"]
+[ext_resource type="Resource" path="res://data/stem/amb_rain.tres" id="4"]
+[ext_resource type="Resource" path="res://data/stem/amb_wind.tres" id="5"]
 [ext_resource type="Script" path="res://scripts/background.gd" id="6"]
-[ext_resource type="Material" uid="uid://otscl3rhwmk1" path="res://asset/level/skybox/mat/sm_feverish4.tres" id="7"]
-[ext_resource type="Environment" uid="uid://qkqvav71a2j2" path="res://asset/environment/env_bg.tres" id="8"]
-[ext_resource type="CameraAttributesPractical" uid="uid://c6mnym7nlyfh8" path="res://asset/environment/cap_bg.tres" id="9"]
+[ext_resource type="Material" path="res://asset/level/skybox/mat/sm_feverish4.tres" id="7"]
+[ext_resource type="Environment" path="res://asset/environment/env_bg.tres" id="8"]
+[ext_resource type="CameraAttributesPractical" path="res://asset/environment/cap_bg.tres" id="9"]
 [ext_resource type="Script" path="res://scripts/background_cam.gd" id="10"]
 [ext_resource type="Texture2D" uid="uid://ccpmqq7i3566a" path="res://asset/effect/splash/bubble.png" id="11"]
-[ext_resource type="Material" uid="uid://cifn8hrjv0ffg" path="res://scenes/particle/ vtx_bubble.tres" id="12"]
+[ext_resource type="Material" path="res://scenes/particle/ vtx_bubble.tres" id="12"]
 [ext_resource type="Shader" path="res://asset/shader/n64_lit.gdshader" id="13"]
 [ext_resource type="Texture2D" uid="uid://ccjkkc6wvrhra" path="res://asset/level/generic/tile_3.png" id="14"]
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="15"]
 [ext_resource type="Script" path="res://scripts/jack_spawner.gd" id="16"]
-[ext_resource type="PackedScene" uid="uid://c31y51bdp7t8a" path="res://scenes/prefab/jack.tscn" id="17"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/jack.tscn" id="17"]
 [ext_resource type="Script" path="res://scripts/big_door.gd" id="18"]
-[ext_resource type="Material" uid="uid://bfmxhjf0jrxli" path="res://asset/level/test/mat/vtx_bars.tres" id="19"]
-[ext_resource type="AudioStream" uid="uid://cdjeo6jvg6061" path="res://data/r_sfx/rsfx_gate_squeak.tres" id="20"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_bars.tres" id="19"]
+[ext_resource type="AudioStream" path="res://data/r_sfx/rsfx_gate_squeak.tres" id="20"]
 [ext_resource type="AudioStream" uid="uid://msqel4tvwcj6" path="res://audio/sfx/gate_close.wav" id="21"]
-[ext_resource type="PackedScene" uid="uid://b488og5dpnbxn" path="res://scenes/prefab/shard.tscn" id="22"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/shard.tscn" id="22"]
 [ext_resource type="Script" path="res://scripts/res_prop.gd" id="23"]
 [ext_resource type="Script" path="res://scripts/activation_group.gd" id="24"]
 [ext_resource type="Script" path="res://scripts/button.gd" id="25"]
 [ext_resource type="Script" path="res://scripts/moving_geo.gd" id="26"]
 [ext_resource type="PackedScene" path="res://asset/entity/moving_platform/generic/mp_ruins_1.blend.scn" id="27"]
-[ext_resource type="Material" uid="uid://qam2rbojnhud" path="res://asset/level/test/mat/vtx_rock_01.tres" id="28"]
-[ext_resource type="Material" uid="uid://bb04hu73rue0p" path="res://asset/level/test/mat/vtx_rock_02.tres" id="29"]
-[ext_resource type="Material" uid="uid://bvd36femhgdpo" path="res://asset/level/test/mat/vtx_brick_01.tres" id="30"]
-[ext_resource type="PackedScene" uid="uid://dbytemqro4gor" path="res://scenes/prefab/trampoline.tscn" id="31"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_rock_01.tres" id="28"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_rock_02.tres" id="29"]
+[ext_resource type="Material" path="res://asset/level/test/mat/vtx_brick_01.tres" id="30"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/trampoline.tscn" id="31"]
 [ext_resource type="Script" path="res://scripts/event_tree.gd" id="32"]
 [ext_resource type="Script" path="res://scripts/event_sfx.gd" id="33"]
-[ext_resource type="AudioStream" uid="uid://bq5wyjo4yxcts" path="res://audio/sfx/positive_chime.wav" id="34"]
+[ext_resource type="AudioStream" uid="uid://dj4mfp0dntp01" path="res://audio/sfx/positive_chime.wav" id="34"]
 [ext_resource type="Script" path="res://scripts/event_wait.gd" id="35"]
 [ext_resource type="Script" path="res://scripts/event_cam.gd" id="36"]
 [ext_resource type="Script" path="res://scripts/event_evoke.gd" id="37"]
 [ext_resource type="Script" path="res://scripts/res_evoke.gd" id="38"]
 
 [sub_resource type="Resource" id="1"]
-script = ExtResource( "2" )
+script = ExtResource("2")
 level_name = "con_tower1"
 level_desc = "Tower concept"
 is_menu = false
@@ -48,16 +48,13 @@ flags = {}
 
 [sub_resource type="ViewportTexture" id="2"]
 viewport_path = NodePath("canvas_layer/background/@SubViewport@79078")
-script = null
 
 [sub_resource type="PanoramaSkyMaterial" id="3"]
 resource_local_to_scene = true
-panorama = SubResource( "2" )
-script = null
+panorama = SubResource("2")
 
 [sub_resource type="Sky" id="4"]
-sky_material = SubResource( "3" )
-script = null
+sky_material = SubResource("3")
 
 [sub_resource type="Environment" id="5"]
 resource_local_to_scene = true
@@ -65,7 +62,7 @@ background_mode = 3
 background_color = Color(1, 1, 1, 1)
 background_canvas_max_layer = -127
 background_camera_feed_id = 2
-sky = SubResource( "4" )
+sky = SubResource("4")
 ambient_light_source = 2
 ambient_light_color = Color(0.847089, 0.51783, 0.23888, 1)
 ambient_light_sky_contribution = 0.25
@@ -84,7 +81,6 @@ volumetric_fog_albedo = Color(0.933594, 0.601563, 0.667969, 1)
 volumetric_fog_anisotropy = 0.9
 volumetric_fog_ambient_inject = 1.19
 adjustment_saturation = 8.0
-script = null
 
 [sub_resource type="ArrayMesh" id="6"]
 _surfaces = [{
@@ -96,31 +92,26 @@ _surfaces = [{
 "vertex_count": 6,
 "vertex_data": PackedByteArray(0, 0, 0, 192, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 191, 0, 0, 0, 0)
 }]
-script = null
 
 [sub_resource type="Curve" id="7"]
 max_value = 3.0
 _data = [Vector2(0, 2.02703), 0.0, 0.0, 0, 0, Vector2(1, 0.283784), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="Curve" id="8"]
 max_value = 3.0
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 3), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="Curve" id="9"]
 max_value = 3.0
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="CurveXYZTexture" id="10"]
-curve_x = SubResource( "7" )
-curve_y = SubResource( "8" )
-curve_z = SubResource( "9" )
-script = null
+curve_x = SubResource("7")
+curve_y = SubResource("8")
+curve_z = SubResource("9")
 
 [sub_resource type="ParticleProcessMaterial" id="11"]
 emission_shape_offset = Vector3(0, 120, -30)
@@ -135,12 +126,11 @@ linear_accel_min = 100.0
 linear_accel_max = 100.0
 tangential_accel_max = 13.0
 scale_over_velocity_max = 40.0
-scale_over_velocity_curve = SubResource( "10" )
+scale_over_velocity_curve = SubResource("10")
 collision_mode = 2
 collision_use_scale = true
 sub_emitter_mode = 3
 sub_emitter_amount_at_collision = 3
-script = null
 
 [sub_resource type="StandardMaterial3D" id="12"]
 transparency = 1
@@ -148,47 +138,39 @@ blend_mode = 1
 shading_mode = 0
 specular_mode = 2
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource( "11" )
-script = null
+albedo_texture = ExtResource("11")
 
 [sub_resource type="QuadMesh" id="13"]
 lightmap_size_hint = Vector2i(4, 4)
-material = SubResource( "12" )
+material = SubResource("12")
 size = Vector2(0.5, 0.5)
-script = null
+
+[sub_resource type="Gradient" id="18"]
+offsets = PackedFloat32Array(0.616247, 0.915966)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="19"]
+gradient = SubResource("18")
 
 [sub_resource type="Curve" id="14"]
 max_value = 3.0
 _data = [Vector2(0, 3), 0.0, 0.0, 0, 0, Vector2(1, 1.09459), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="Curve" id="15"]
 max_value = 3.0
 _data = [Vector2(0, 0.243243), 0.0, 0.0, 0, 0, Vector2(1, 1.72297), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="Curve" id="16"]
 max_value = 3.0
 _data = [Vector2(0, 1.01351), 0.0, 0.0, 0, 0, Vector2(1, 1.68243), 0.0, 0.0, 0, 0]
 point_count = 2
-script = null
 
 [sub_resource type="CurveXYZTexture" id="17"]
-curve_x = SubResource( "14" )
-curve_y = SubResource( "15" )
-curve_z = SubResource( "16" )
-script = null
-
-[sub_resource type="Gradient" id="18"]
-offsets = PackedFloat32Array(0.616247, 0.915966)
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
-script = null
-
-[sub_resource type="GradientTexture1D" id="19"]
-gradient = SubResource( "18" )
-script = null
+curve_x = SubResource("14")
+curve_y = SubResource("15")
+curve_z = SubResource("16")
 
 [sub_resource type="ParticleProcessMaterial" id="20"]
 direction = Vector3(0, 1, 0)
@@ -199,9 +181,8 @@ scale_min = 0.5
 scale_max = 0.65
 scale_over_velocity_min = 0.05
 scale_over_velocity_max = 18.2
-scale_over_velocity_curve = SubResource( "17" )
-color_ramp = SubResource( "19" )
-script = null
+scale_over_velocity_curve = SubResource("17")
+color_ramp = SubResource("19")
 
 [sub_resource type="RibbonTrailMesh" id="21"]
 shape = 0
@@ -209,50 +190,45 @@ size = 0.27
 sections = 8
 section_length = 0.111
 section_segments = 1
-script = null
 
 [sub_resource type="ShaderMaterial" id="22"]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "13" )
+shader = ExtResource("13")
 shader_parameter/modulate_color = Color(1, 1, 1, 1)
 shader_parameter/normal_scale = null
 shader_parameter/uv_scale = Vector2(10, 10)
 shader_parameter/uv_offset = Vector2(0, 0)
 shader_parameter/uv_pan_velocity = Vector2(0, 0)
-shader_parameter/albedoTex = ExtResource( "14" )
-shader_parameter/texture_normal = null
-script = null
+shader_parameter/albedoTex = ExtResource("14")
 
 [sub_resource type="QuadMesh" id="23"]
-material = SubResource( "22" )
+material = SubResource("22")
 size = Vector2(100, 100)
 orientation = 1
-script = null
 
 [sub_resource type="Resource" id="24"]
-script = ExtResource( "23" )
+script = ExtResource("23")
 shard_name = "Shard"
 shard_location = "World"
 shard_description = ""
 shard_hint = ""
 
 [sub_resource type="Resource" id="25"]
-script = ExtResource( "23" )
+script = ExtResource("23")
 shard_name = "Shard"
 shard_location = "World"
 shard_description = ""
 shard_hint = ""
 
 [sub_resource type="Resource" id="26"]
-script = ExtResource( "23" )
+script = ExtResource("23")
 shard_name = "Shard"
 shard_location = "World"
 shard_description = ""
 shard_hint = ""
 
 [sub_resource type="Resource" id="27"]
-script = ExtResource( "23" )
+script = ExtResource("23")
 shard_name = "Shard"
 shard_location = "World"
 shard_description = ""
@@ -264,11 +240,9 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
-script = null
 
 [sub_resource type="ConvexPolygonShape3D" id="29"]
 points = PackedVector3Array(-14.2692, -0.0649631, -14.1788, -14.2692, 6.50111, -14.1788, 14.2742, -0.0649631, -14.1788, -14.2692, -0.0649631, 14.1284, -14.2692, 6.50111, 14.1284, 14.2742, 6.50111, -14.1788, 14.2742, -0.0649631, 14.1284, 14.2742, 6.50111, 14.1284)
-script = null
 
 [sub_resource type="Curve3D" id="30"]
 _data = {
@@ -276,7 +250,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
-script = null
 
 [sub_resource type="Curve3D" id="31"]
 _data = {
@@ -284,7 +257,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
-script = null
 
 [sub_resource type="Curve3D" id="32"]
 _data = {
@@ -292,7 +264,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
-script = null
 
 [sub_resource type="Curve3D" id="33"]
 _data = {
@@ -300,7 +271,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
-script = null
 
 [sub_resource type="ArrayMesh" id="34"]
 _surfaces = [{
@@ -335,7 +305,6 @@ _surfaces = [{
 "vertex_data": PackedByteArray(254, 255, 0, 0, 0, 0, 0, 0, 254, 255, 255, 255, 0, 0, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 254, 255, 255, 255, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0)
 }]
 blend_shape_mode = 0
-script = null
 
 [sub_resource type="ArrayMesh" id="35"]
 resource_name = "mp_ruins_1-db10ffdc418313b543c323d87e573e1c_Cube_002"
@@ -345,7 +314,7 @@ _surfaces = [{
 "format": 34896613407,
 "index_count": 6,
 "index_data": PackedByteArray(3, 0, 0, 0, 1, 0, 3, 0, 2, 0, 0, 0),
-"material": ExtResource( "28" ),
+"material": ExtResource("28"),
 "name": "vtx_rock_01",
 "primitive": 3,
 "uv_scale": Vector4(3.66117, 3.7625, 0, 0),
@@ -357,7 +326,7 @@ _surfaces = [{
 "format": 34896613407,
 "index_count": 6,
 "index_data": PackedByteArray(1, 0, 2, 0, 3, 0, 1, 0, 0, 0, 2, 0),
-"material": ExtResource( "29" ),
+"material": ExtResource("29"),
 "name": "vtx_rock_02",
 "primitive": 3,
 "uv_scale": Vector4(2.87036, 3.12036, 0, 0),
@@ -369,7 +338,7 @@ _surfaces = [{
 "format": 34896613407,
 "index_count": 24,
 "index_data": PackedByteArray(1, 0, 7, 0, 3, 0, 1, 0, 5, 0, 7, 0, 4, 0, 15, 0, 6, 0, 4, 0, 13, 0, 15, 0, 12, 0, 10, 0, 14, 0, 12, 0, 8, 0, 10, 0, 9, 0, 2, 0, 11, 0, 9, 0, 0, 0, 2, 0),
-"material": ExtResource( "30" ),
+"material": ExtResource("30"),
 "name": "vtx_brick_01",
 "primitive": 3,
 "uv_scale": Vector4(7.36279, 1.99419, 0, 0),
@@ -377,8 +346,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray(254, 255, 0, 0, 0, 0, 255, 255, 254, 255, 0, 0, 0, 0, 255, 191, 254, 255, 255, 255, 0, 0, 255, 255, 254, 255, 255, 255, 0, 0, 255, 191, 254, 255, 0, 0, 255, 255, 255, 127, 254, 255, 0, 0, 255, 255, 255, 191, 254, 255, 255, 255, 255, 255, 255, 127, 254, 255, 255, 255, 255, 255, 255, 191, 0, 0, 0, 0, 0, 0, 255, 191, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 191, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 255, 191, 0, 0, 0, 0, 255, 255, 255, 127, 0, 0, 255, 255, 255, 255, 255, 191, 0, 0, 255, 255, 255, 255, 255, 127, 0, 0, 0, 0, 255, 127, 0, 0, 0, 0, 0, 0, 255, 127, 0, 0, 0, 0, 0, 0, 255, 127, 0, 0, 0, 0, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 0, 0, 0, 0, 255, 127, 255, 255, 0, 0, 0, 0, 255, 127, 255, 255, 0, 0, 0, 0, 255, 127, 255, 255, 0, 0, 0, 0)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource( "34" )
-script = null
+shadow_mesh = SubResource("34")
 
 [sub_resource type="Curve3D" id="36"]
 _data = {
@@ -386,7 +354,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
-script = null
 
 [sub_resource type="Curve3D" id="37"]
 _data = {
@@ -394,22 +361,21 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
-script = null
 
 [sub_resource type="Resource" id="38"]
-script = ExtResource( "38" )
+script = ExtResource("38")
 type = 0
 e_name = "open_door"
 e_args = []
 
-[node name="con_tower1" type="Node"]
-script = ExtResource( "1" )
-data = SubResource( "1" )
+[node name="con_tower1" type="Node" node_paths=PackedStringArray("subareas")]
+script = ExtResource("1")
+data = SubResource("1")
 subareas = [NodePath("0")]
 
 [node name="0" type="Node3D" parent="."]
-script = ExtResource( "3" )
-music = [ExtResource( "4" ), ExtResource( "5" )]
+script = ExtResource("3")
+music = Array[Resource("res://scripts/res_music_stem.gd")]([ExtResource("4"), ExtResource("5")])
 weather_effect = NodePath("rain")
 
 [node name="sun" type="DirectionalLight3D" parent="0"]
@@ -423,13 +389,13 @@ directional_shadow_blend_splits = true
 directional_shadow_max_distance = 800.0
 
 [node name="environment" type="WorldEnvironment" parent="0"]
-environment = SubResource( "5" )
+environment = SubResource("5")
 
 [node name="background" type="CanvasLayer" parent="0"]
 process_mode = 3
-layer = -127
-script = ExtResource( "6" )
-bg_material = ExtResource( "7" )
+layer = -128
+script = ExtResource("6")
+bg_material = ExtResource("7")
 type = 1
 
 [node name="@SubViewportContainer@37657" type="SubViewportContainer" parent="0/background"]
@@ -447,16 +413,16 @@ size = Vector2i(640, 480)
 render_target_update_mode = 4
 
 [node name="@MeshInstance3D@37659" type="MeshInstance3D" parent="0/background/@SubViewportContainer@37657/@SubViewport@37658"]
-material_overlay = ExtResource( "7" )
-mesh = SubResource( "6" )
+material_overlay = ExtResource("7")
+mesh = SubResource("6")
 
 [node name="@Camera3D@37660" type="Camera3D" parent="0/background/@SubViewportContainer@37657/@SubViewport@37658"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
-environment = ExtResource( "8" )
-attributes = ExtResource( "9" )
+environment = ExtResource("8")
+attributes = ExtResource("9")
 projection = 1
 size = 0.7
-script = ExtResource( "10" )
+script = ExtResource("10")
 
 [node name="rain" type="GPUParticles3D" parent="0"]
 amount = 512
@@ -464,20 +430,20 @@ sub_emitter = NodePath("bubbles")
 lifetime = 1.5
 visibility_aabb = AABB(-65, -95.1014, -104.94, 130, 190.203, 209.88)
 transform_align = 3
-process_material = SubResource( "11" )
-draw_pass_1 = SubResource( "13" )
+process_material = SubResource("11")
+draw_pass_1 = SubResource("13")
 
 [node name="bubbles" type="GPUParticles3D" parent="0/rain"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -58.2688, 0)
-material_override = ExtResource( "12" )
+material_override = ExtResource("12")
 emitting = false
 amount = 300
 one_shot = true
 speed_scale = 2.0
 explosiveness = 1.0
 transform_align = 3
-process_material = SubResource( "20" )
-draw_pass_1 = SubResource( "21" )
+process_material = SubResource("20")
+draw_pass_1 = SubResource("21")
 
 [node name="level" type="Node3D" parent="0"]
 
@@ -485,21 +451,21 @@ draw_pass_1 = SubResource( "21" )
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 0, 0)
 use_collision = true
 collision_mask = 0
-mesh = SubResource( "23" )
+mesh = SubResource("23")
 
 [node name="csg_box_3d_14" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.705, 22.7079, 60.6201)
 use_collision = true
 collision_mask = 0
 size = Vector3(60.1362, 46.3933, 70.2411)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_15" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.705, 129.625, 130.12)
 use_collision = true
 collision_mask = 0
 size = Vector3(75, 260.227, 75)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_12" type="CSGBox3D" parent="0/level/csg_box_3d_15"]
 transform = Transform3D(-4.37114e-08, -6.70552e-08, 1, 0, 1, 6.70552e-08, -1, 2.93108e-15, -4.37114e-08, -20.3258, 18.161, -36.1682)
@@ -507,7 +473,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.787, 27.375)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_13" type="CSGBox3D" parent="0/level/csg_box_3d_15"]
 transform = Transform3D(-4.37114e-08, -6.70552e-08, 1, 0, 1, 6.70552e-08, -1, 2.93108e-15, -4.37114e-08, -20.3258, 28.161, -36.1682)
@@ -515,7 +481,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.787, 27.375)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_15" type="CSGBox3D" parent="0/level/csg_box_3d_15"]
 transform = Transform3D(-4.37114e-08, -6.70552e-08, 1, 0, 1, 6.70552e-08, -1, 2.93108e-15, -4.37114e-08, 19.393, 48.161, -36.1682)
@@ -523,7 +489,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.787, 22.9375)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_16" type="CSGBox3D" parent="0/level/csg_box_3d_15"]
 transform = Transform3D(-4.37114e-08, -6.70552e-08, 1, 0, 1, 6.70552e-08, -1, 2.93108e-15, -4.37114e-08, 19.393, 58.161, -36.1682)
@@ -531,7 +497,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.787, 22.9375)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_14" type="CSGBox3D" parent="0/level/csg_box_3d_15"]
 transform = Transform3D(-4.37114e-08, -6.70552e-08, 1, 0, 1, 6.70552e-08, -1, 2.93108e-15, -4.37114e-08, -1.46638, 38.161, -36.1682)
@@ -539,7 +505,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.787, 65.0938)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_17" type="CSGBox3D" parent="0/level/csg_box_3d_15"]
 transform = Transform3D(-4.37114e-08, -6.70552e-08, 1, 0, 1, 6.70552e-08, -1, 2.93108e-15, -4.37114e-08, -1.46638, 68.161, -36.1682)
@@ -547,126 +513,126 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.787, 65.0938)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_19" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -149.506, 22.6847, -3.4011)
 use_collision = true
 collision_mask = 0
 size = Vector3(50, 46.5, 50)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_21" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -184.506, 42.9062, -3.4011)
 use_collision = true
 collision_mask = 0
 size = Vector3(20, 6.057, 20)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_23" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -219.506, 20.833, -3.4011)
 use_collision = true
 collision_mask = 0
 size = Vector3(40, 50.2035, 20)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_24" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -384.506, 29.833, -3.4011)
 use_collision = true
 collision_mask = 0
 size = Vector3(40, 60, 50)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_60" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -344.506, 24.833, -3.4011)
 use_collision = true
 collision_mask = 0
 size = Vector3(20, 50, 30)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_59" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -370.881, 22.8941, 41.8217)
 use_collision = true
 collision_mask = 0
 size = Vector3(50.5, 46.25, 22.75)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_63" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -436.363, 22.8941, 28.5092)
 use_collision = true
 collision_mask = 0
 size = Vector3(78.375, 46.25, 26.5353)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_56" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -368.006, 99.9913, -3.4011)
 use_collision = true
 collision_mask = 0
 size = Vector3(40, 3, 17)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_58" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -423.718, 63.4288, -40.8772)
 use_collision = true
 collision_mask = 0
 size = Vector3(76.4498, 130.125, 57.5)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_67" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -400.692, 138.759, 39.7262)
 use_collision = true
 collision_mask = 0
 size = Vector3(54.0938, 103.686, 84.7311)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_75" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -397.018, 208.266, 0.614643)
 use_collision = true
 collision_mask = 0
 size = Vector3(92, 45.4093, 56.9462)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_77" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -400.659, 199.473, 48.5805)
 use_collision = true
 collision_mask = 0
 size = Vector3(36.1045, 19.3068, 84.2826)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_76" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -394.645, 239.312, 5.98174)
 use_collision = true
 collision_mask = 0
 size = Vector3(30.6573, 91.037, 35.7237)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_72" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -399.611, 248.625, -16.3003)
 use_collision = true
 collision_mask = 0
 size = Vector3(49.3463, 109.282, 38.2296)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_68" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -422.85, 125.099, 31.5521)
 use_collision = true
 collision_mask = 0
 size = Vector3(70.442, 76.3668, 59.3438)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_57" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -392.381, 50.5538, -54.0511)
 use_collision = true
 collision_mask = 0
 size = Vector3(66.75, 101.875, 17.7)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_53" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -400.445, 102.239, -4.38144)
 use_collision = true
 collision_mask = 0
 size = Vector3(82.1701, 204.812, 50.0406)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_8" type="CSGBox3D" parent="0/level/csg_box_3d_53"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.4694, 40.0414, 25.2091)
@@ -674,7 +640,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.78651, 25)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_9" type="CSGBox3D" parent="0/level/csg_box_3d_53"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.4694, 50.0414, 25.2091)
@@ -682,7 +648,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.78651, 25)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_11" type="CSGBox3D" parent="0/level/csg_box_3d_53"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.4694, 60.0414, 25.2091)
@@ -690,7 +656,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.78651, 25)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_10" type="CSGBox3D" parent="0/level/csg_box_3d_53"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.96944, 70.0414, 25.2091)
@@ -698,7 +664,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.78651, 42)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_22" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -149.443, 61.9927, -26.2143)
@@ -706,7 +672,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.08782, 36.8026, 49.875)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_41" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -84.5699, 61.9927, -63.8583)
@@ -714,7 +680,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.08782, 36.8026, 35.6893)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_42" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.0699, 61.9927, -45.5872)
@@ -722,7 +688,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.08782, 36.8026, 39.2316)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_45" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.0178, 61.9927, 62.7946)
@@ -730,7 +696,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.08782, 36.8026, 74.8779)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_46" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.194, 61.9927, 62.7946)
@@ -738,7 +704,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.08782, 36.8026, 74.8779)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_43" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -101.57, 61.9927, -45.5872)
@@ -746,7 +712,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.08782, 36.8026, 39.2316)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_40" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -149.443, 61.9927, 19.7537)
@@ -754,7 +720,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.08782, 36.8026, 49.875)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_25" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.0532, 14.504, -47.1542)
@@ -762,7 +728,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.088, 36.803, 99)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_61" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -404.626, 57.9852, 64.1596)
@@ -770,7 +736,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.088, 60.0517, 87.1094)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_62" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -362.04, 66.03, 40.5893)
@@ -778,7 +744,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.088, 45.4444, 48.3594)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_66" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -447.04, 66.9759, 30.0464)
@@ -786,7 +752,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.088, 47.3361, 70.0547)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_64" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -450.036, 143.807, -38.9963)
@@ -794,7 +760,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.088, 36.803, 77.3485)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_65" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -423.371, 143.807, -76.7507)
@@ -802,7 +768,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.088, 36.803, 55.1699)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_26" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.0532, 14.504, 47.5723)
@@ -810,7 +776,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.088, 36.803, 99)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_27" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.1755, 14.504, 1.07226)
@@ -818,7 +784,7 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.088, 36.803, 99)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_28" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.3245, 14.504, 1.07226)
@@ -826,231 +792,231 @@ transparency = 0.5
 use_collision = true
 collision_mask = 0
 size = Vector3(2.088, 36.803, 99)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_20" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -84.5887, 22.9347, -46.9276)
 use_collision = true
 collision_mask = 0
 size = Vector3(40, 46, 39)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_44" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -84.5887, 104.507, -46.9276)
 use_collision = true
 collision_mask = 0
 size = Vector3(40, 50.9791, 39)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_17" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.43, 44.9674, 84.9863)
 use_collision = true
 collision_mask = 0
 size = Vector3(29.3368, 93.9466, 21.9911)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_29" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.098, 67.7441, 84.9863)
 use_collision = true
 collision_mask = 0
 size = Vector3(18.6737, 48.3933, 21.9911)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_30" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, -65.098, 97.3016, 59.9709)
 use_collision = true
 collision_mask = 0
 size = Vector3(18.6737, 5.44663, 39.8287)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_31" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-1, -4.37114e-08, -7.57103e-08, 0, 0.866025, -0.5, 8.74228e-08, -0.5, -0.866025, -111.598, 115.802, 59.9709)
 use_collision = true
 collision_mask = 0
 size = Vector3(18.6737, 5.44663, 39.8287)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_18" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.627, 106.908, 27.271)
 use_collision = true
 collision_mask = 0
 size = Vector3(18.6274, 5.62061, 34.4911)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_35" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.708, 184.579, 90.1271)
 use_collision = true
 collision_mask = 0
 size = Vector3(53.3313, 2, 23.3649)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_55" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -109.958, 174.63, -2.2018)
 use_collision = true
 collision_mask = 0
 size = Vector3(25.5, 25.25, 24)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_38" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.708, 184.579, 132.161)
 use_collision = true
 collision_mask = 0
 size = Vector3(53.3313, 2, 36.4325)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_69" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -274.036, 267.075, 214.627)
 use_collision = true
 collision_mask = 0
 size = Vector3(53.3313, 17.0071, 67.7331)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_70" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -271.714, 256.439, 211.843)
 use_collision = true
 collision_mask = 0
 size = Vector3(37.2001, 33.4858, 49.2453)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_78" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -266.384, 294.384, 226.245)
 use_collision = true
 collision_mask = 0
 size = Vector3(37.8467, 56.2429, 44.0882)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_71" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -273.444, 213.914, 211.843)
 use_collision = true
 collision_mask = 0
 size = Vector3(28.3229, 83, 25)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_73" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -307.313, 199.875, 202.124)
 use_collision = true
 collision_mask = 0
 size = Vector3(35.1394, 27.326, 44.4376)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_74" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -290.539, 210.056, 210.784)
 use_collision = true
 collision_mask = 0
 size = Vector3(25.8706, 47.6879, 27.1175)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_39" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -130.291, 230.065, 102.44)
 use_collision = true
 collision_mask = 0
 size = Vector3(14.1656, 2, 45.2776)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_48" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.2057, 245.378, 88.4136)
 use_collision = true
 collision_mask = 0
 size = Vector3(28.5828, 2, 17.2246)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_49" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.6113, 265.565, 137.375)
 use_collision = true
 collision_mask = 0
 size = Vector3(74.8941, 14.2337, 60.5411)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_50" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.3633, 267.934, 143.429)
 use_collision = true
 collision_mask = 0
 size = Vector3(59.4478, 18.9715, 48.5608)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_51" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.3372, 290.209, 152.289)
 use_collision = true
 collision_mask = 0
 size = Vector3(49.3957, 25.9045, 31.2804)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_52" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.4121, 292.775, 137.433)
 use_collision = true
 collision_mask = 0
 size = Vector3(44.5152, 68.6544, 60.5701)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_54" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.4536, 337.302, 129.955)
 use_collision = true
 collision_mask = 0
 size = Vector3(31.4948, 19.1011, 34.5624)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_47" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(-2.8005e-08, -0.34202, -0.939693, -1.0193e-08, 0.939693, -0.34202, 1, 0, -2.98023e-08, -102.419, 237.755, 86.8579)
 use_collision = true
 collision_mask = 0
 size = Vector3(14.1656, 2, 45.2776)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_36" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -138.75, 198.579, 154.496)
 use_collision = true
 collision_mask = 0
 size = Vector3(35, 30, 22.07)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_79" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -256.286, 209.13, 95.6517)
 use_collision = true
 collision_mask = 0
 size = Vector3(29.5, 30, 28.285)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_80" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -280.045, 212.465, 105.614)
 use_collision = true
 collision_mask = 0
 size = Vector3(29.5, 8.69318, 28.285)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_81" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -306.801, 211.521, 145.881)
 use_collision = true
 collision_mask = 0
 size = Vector3(24, 3, 23)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_37" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -129.291, 215.579, 121.818)
 use_collision = true
 collision_mask = 0
 size = Vector3(16.1656, 30, 6.71353)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_33" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.1048, 106.808, 26.871)
 use_collision = true
 collision_mask = 0
 size = Vector3(18.672, 5.62061, 34.4911)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_32" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95.0633, 125.295, 93.071)
 use_collision = true
 collision_mask = 0
 size = Vector3(51.7549, 5.62061, 34.4911)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_34" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.3723, 144.334, -2.0948)
 use_collision = true
 collision_mask = 0
 size = Vector3(75, 37.496, 31.757)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_56" type="CSGBox3D" parent="0/level/csg_box_3d_34"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.25369, -0.438698)
@@ -1058,14 +1024,14 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(30, 31.248, 35.662)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_3" type="CSGBox3D" parent="0/level"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.375, 65.0625, 0.404621)
 use_collision = true
 collision_mask = 0
 size = Vector3(74.75, 130, 57.6908)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_7" type="CSGBox3D" parent="0/level/csg_box_3d_3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.0784, -48.6853, 13.8578)
@@ -1073,7 +1039,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.78651, 17)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_8" type="CSGBox3D" parent="0/level/csg_box_3d_3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.0784, -38.6853, 13.8578)
@@ -1081,7 +1047,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.78651, 17)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_10" type="CSGBox3D" parent="0/level/csg_box_3d_3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.120987, -6.60793, -12.2007)
@@ -1089,7 +1055,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(77.961, 25, 20)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_11" type="CSGBox3D" parent="0/level/csg_box_3d_3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.78857, -9.10793, 0.478323)
@@ -1097,7 +1063,7 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(15, 20, 58.7359)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="csg_box_3d_9" type="CSGBox3D" parent="0/level/csg_box_3d_3"]
 transform = Transform3D(1, 0, 0, 0, 1, 6.70552e-08, 0, -6.70552e-08, 1, 37.0784, -27.9054, -0.200857)
@@ -1105,374 +1071,372 @@ operation = 2
 use_collision = true
 collision_mask = 0
 size = Vector3(4.125, 2.787, 44.25)
-material = SubResource( "22" )
+material = SubResource("22")
 
 [node name="warp" type="Node3D" parent="0"]
 
-[node name="warp_point" type="Marker3D" parent="0/warp" groups=[
-"Warp",
-]]
+[node name="warp_point" type="Marker3D" parent="0/warp" groups=["Warp"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
 gizmo_extents = 2.5
-script = ExtResource( "15" )
+script = ExtResource("15")
 
 [node name="jack" type="Node3D" parent="0"]
 
 [node name="jack_spawner" type="Marker3D" parent="0/jack"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -109.988, 197.005, -2.79682)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 formation = 2
 spacing = 7.333
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@22899" parent="0/jack/jack_spawner" instance=ExtResource( "17" )]
+[node name="@Area3D@26029" parent="0/jack/jack_spawner" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.18521, 0, -5.18521)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@22900" parent="0/jack/jack_spawner" instance=ExtResource( "17" )]
+[node name="@Area3D@26030" parent="0/jack/jack_spawner" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.333, 0, 3.20536e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@22901" parent="0/jack/jack_spawner" instance=ExtResource( "17" )]
+[node name="@Area3D@26031" parent="0/jack/jack_spawner" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.18521, 0, 5.18521)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@22902" parent="0/jack/jack_spawner" instance=ExtResource( "17" )]
+[node name="@Area3D@26032" parent="0/jack/jack_spawner" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.41071e-07, 0, 7.333)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@22903" parent="0/jack/jack_spawner" instance=ExtResource( "17" )]
+[node name="@Area3D@26033" parent="0/jack/jack_spawner" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.18521, 0, 5.18521)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@22904" parent="0/jack/jack_spawner" instance=ExtResource( "17" )]
+[node name="@Area3D@26034" parent="0/jack/jack_spawner" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.333, 0, -8.74452e-08)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@22905" parent="0/jack/jack_spawner" instance=ExtResource( "17" )]
+[node name="@Area3D@26035" parent="0/jack/jack_spawner" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.18521, 0, -5.18521)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@22906" parent="0/jack/jack_spawner" instance=ExtResource( "17" )]
+[node name="@Area3D@26036" parent="0/jack/jack_spawner" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28214e-06, 0, -7.333)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_5" type="Marker3D" parent="0/jack"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.2205, 350.909, 129.157)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 formation = 2
 spacing = 7.333
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23050" parent="0/jack/jack_spawner_5" instance=ExtResource( "17" )]
+[node name="@Area3D@26060" parent="0/jack/jack_spawner_5" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.18521, 0, -5.18521)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23051" parent="0/jack/jack_spawner_5" instance=ExtResource( "17" )]
+[node name="@Area3D@26061" parent="0/jack/jack_spawner_5" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.333, 0, 3.20536e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23052" parent="0/jack/jack_spawner_5" instance=ExtResource( "17" )]
+[node name="@Area3D@26062" parent="0/jack/jack_spawner_5" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.18521, 0, 5.18521)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23053" parent="0/jack/jack_spawner_5" instance=ExtResource( "17" )]
+[node name="@Area3D@26063" parent="0/jack/jack_spawner_5" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.41071e-07, 0, 7.333)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23054" parent="0/jack/jack_spawner_5" instance=ExtResource( "17" )]
+[node name="@Area3D@26064" parent="0/jack/jack_spawner_5" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.18521, 0, 5.18521)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23055" parent="0/jack/jack_spawner_5" instance=ExtResource( "17" )]
+[node name="@Area3D@26065" parent="0/jack/jack_spawner_5" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.333, 0, -8.74452e-08)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23056" parent="0/jack/jack_spawner_5" instance=ExtResource( "17" )]
+[node name="@Area3D@26066" parent="0/jack/jack_spawner_5" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.18521, 0, -5.18521)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23057" parent="0/jack/jack_spawner_5" instance=ExtResource( "17" )]
+[node name="@Area3D@26067" parent="0/jack/jack_spawner_5" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28214e-06, 0, -7.333)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_6" type="Marker3D" parent="0/jack"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -65.1374, 350.601, 152.533)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="jack" parent="0/jack/jack_spawner_6" instance=ExtResource( "17" )]
+[node name="@Area3D@26068" parent="0/jack/jack_spawner_6" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23103" parent="0/jack/jack_spawner_6" instance=ExtResource( "17" )]
+[node name="@Area3D@26069" parent="0/jack/jack_spawner_6" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23104" parent="0/jack/jack_spawner_6" instance=ExtResource( "17" )]
+[node name="@Area3D@26070" parent="0/jack/jack_spawner_6" instance=ExtResource("17")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23105" parent="0/jack/jack_spawner_6" instance=ExtResource( "17" )]
+[node name="@Area3D@26071" parent="0/jack/jack_spawner_6" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23106" parent="0/jack/jack_spawner_6" instance=ExtResource( "17" )]
+[node name="@Area3D@26072" parent="0/jack/jack_spawner_6" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_9" type="Marker3D" parent="0/jack"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -289.62, 292.011, 225.979)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 spacing = 7.0
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23164" parent="0/jack/jack_spawner_9" instance=ExtResource( "17" )]
+[node name="@Area3D@26084" parent="0/jack/jack_spawner_9" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23165" parent="0/jack/jack_spawner_9" instance=ExtResource( "17" )]
+[node name="@Area3D@26085" parent="0/jack/jack_spawner_9" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23166" parent="0/jack/jack_spawner_9" instance=ExtResource( "17" )]
+[node name="@Area3D@26086" parent="0/jack/jack_spawner_9" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23167" parent="0/jack/jack_spawner_9" instance=ExtResource( "17" )]
+[node name="@Area3D@26087" parent="0/jack/jack_spawner_9" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23168" parent="0/jack/jack_spawner_9" instance=ExtResource( "17" )]
+[node name="@Area3D@26088" parent="0/jack/jack_spawner_9" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23169" parent="0/jack/jack_spawner_9" instance=ExtResource( "17" )]
+[node name="@Area3D@26089" parent="0/jack/jack_spawner_9" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.5)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_11" type="Marker3D" parent="0/jack"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -435.901, 64.8405, 28.6053)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 spacing = 7.0
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23241" parent="0/jack/jack_spawner_11" instance=ExtResource( "17" )]
+[node name="@Area3D@26101" parent="0/jack/jack_spawner_11" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23242" parent="0/jack/jack_spawner_11" instance=ExtResource( "17" )]
+[node name="@Area3D@26102" parent="0/jack/jack_spawner_11" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23243" parent="0/jack/jack_spawner_11" instance=ExtResource( "17" )]
+[node name="@Area3D@26103" parent="0/jack/jack_spawner_11" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23244" parent="0/jack/jack_spawner_11" instance=ExtResource( "17" )]
+[node name="@Area3D@26104" parent="0/jack/jack_spawner_11" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23245" parent="0/jack/jack_spawner_11" instance=ExtResource( "17" )]
+[node name="@Area3D@26105" parent="0/jack/jack_spawner_11" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23246" parent="0/jack/jack_spawner_11" instance=ExtResource( "17" )]
+[node name="@Area3D@26106" parent="0/jack/jack_spawner_11" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.5)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_10" type="Marker3D" parent="0/jack"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -266.798, 340.945, 232.583)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 formation = 2
 spacing = 10.0
 count = 8
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23374" parent="0/jack/jack_spawner_10" instance=ExtResource( "17" )]
+[node name="@Area3D@26130" parent="0/jack/jack_spawner_10" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23375" parent="0/jack/jack_spawner_10" instance=ExtResource( "17" )]
+[node name="@Area3D@26131" parent="0/jack/jack_spawner_10" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 4.37114e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23376" parent="0/jack/jack_spawner_10" instance=ExtResource( "17" )]
+[node name="@Area3D@26132" parent="0/jack/jack_spawner_10" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07107, 0, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23377" parent="0/jack/jack_spawner_10" instance=ExtResource( "17" )]
+[node name="@Area3D@26133" parent="0/jack/jack_spawner_10" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.74228e-07, 0, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23378" parent="0/jack/jack_spawner_10" instance=ExtResource( "17" )]
+[node name="@Area3D@26134" parent="0/jack/jack_spawner_10" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, 7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23379" parent="0/jack/jack_spawner_10" instance=ExtResource( "17" )]
+[node name="@Area3D@26135" parent="0/jack/jack_spawner_10" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -1.19249e-07)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23380" parent="0/jack/jack_spawner_10" instance=ExtResource( "17" )]
+[node name="@Area3D@26136" parent="0/jack/jack_spawner_10" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.07107, 0, -7.07107)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23381" parent="0/jack/jack_spawner_10" instance=ExtResource( "17" )]
+[node name="@Area3D@26137" parent="0/jack/jack_spawner_10" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74846e-06, 0, -10)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_7" type="Marker3D" parent="0/jack"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -65.1374, 350.601, 157.533)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="jack" parent="0/jack/jack_spawner_7" instance=ExtResource( "17" )]
+[node name="@Area3D@26138" parent="0/jack/jack_spawner_7" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23427" parent="0/jack/jack_spawner_7" instance=ExtResource( "17" )]
+[node name="@Area3D@26139" parent="0/jack/jack_spawner_7" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23428" parent="0/jack/jack_spawner_7" instance=ExtResource( "17" )]
+[node name="@Area3D@26140" parent="0/jack/jack_spawner_7" instance=ExtResource("17")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23429" parent="0/jack/jack_spawner_7" instance=ExtResource( "17" )]
+[node name="@Area3D@26141" parent="0/jack/jack_spawner_7" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23430" parent="0/jack/jack_spawner_7" instance=ExtResource( "17" )]
+[node name="@Area3D@26142" parent="0/jack/jack_spawner_7" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_8" type="Marker3D" parent="0/jack"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -65.1374, 350.601, 162.533)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="jack" parent="0/jack/jack_spawner_8" instance=ExtResource( "17" )]
+[node name="@Area3D@26143" parent="0/jack/jack_spawner_8" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23446" parent="0/jack/jack_spawner_8" instance=ExtResource( "17" )]
+[node name="@Area3D@26144" parent="0/jack/jack_spawner_8" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23447" parent="0/jack/jack_spawner_8" instance=ExtResource( "17" )]
+[node name="@Area3D@26145" parent="0/jack/jack_spawner_8" instance=ExtResource("17")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23448" parent="0/jack/jack_spawner_8" instance=ExtResource( "17" )]
+[node name="@Area3D@26146" parent="0/jack/jack_spawner_8" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23449" parent="0/jack/jack_spawner_8" instance=ExtResource( "17" )]
+[node name="@Area3D@26147" parent="0/jack/jack_spawner_8" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_3" type="Marker3D" parent="0/jack"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.5238, 141.106, -48.0046)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 formation = 2
 spacing = 10.0
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23537" parent="0/jack/jack_spawner_3" instance=ExtResource( "17" )]
+[node name="@Area3D@26165" parent="0/jack/jack_spawner_3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66025, 0, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23538" parent="0/jack/jack_spawner_3" instance=ExtResource( "17" )]
+[node name="@Area3D@26166" parent="0/jack/jack_spawner_3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66025, 0, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23539" parent="0/jack/jack_spawner_3" instance=ExtResource( "17" )]
+[node name="@Area3D@26167" parent="0/jack/jack_spawner_3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.74228e-07, 0, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23540" parent="0/jack/jack_spawner_3" instance=ExtResource( "17" )]
+[node name="@Area3D@26168" parent="0/jack/jack_spawner_3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, 0, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23541" parent="0/jack/jack_spawner_3" instance=ExtResource( "17" )]
+[node name="@Area3D@26169" parent="0/jack/jack_spawner_3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66025, 0, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23542" parent="0/jack/jack_spawner_3" instance=ExtResource( "17" )]
+[node name="@Area3D@26170" parent="0/jack/jack_spawner_3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74846e-06, 0, -10)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_2" type="Marker3D" parent="0/jack"]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -86.1053, 131.002, -0.744713)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 spacing = 10.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23592" parent="0/jack/jack_spawner_2" instance=ExtResource( "17" )]
+[node name="@Area3D@26175" parent="0/jack/jack_spawner_2" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23593" parent="0/jack/jack_spawner_2" instance=ExtResource( "17" )]
+[node name="@Area3D@26176" parent="0/jack/jack_spawner_2" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23594" parent="0/jack/jack_spawner_2" instance=ExtResource( "17" )]
+[node name="@Area3D@26177" parent="0/jack/jack_spawner_2" instance=ExtResource("17")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23595" parent="0/jack/jack_spawner_2" instance=ExtResource( "17" )]
+[node name="@Area3D@26178" parent="0/jack/jack_spawner_2" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23596" parent="0/jack/jack_spawner_2" instance=ExtResource( "17" )]
+[node name="@Area3D@26179" parent="0/jack/jack_spawner_2" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
 metadata/_edit_lock_ = true
 
 [node name="jack_spawner_4" type="Marker3D" parent="0/jack"]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -447.981, 177.341, 40.8004)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 spacing = 10.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@23631" parent="0/jack/jack_spawner_4" instance=ExtResource( "17" )]
+[node name="@Area3D@26184" parent="0/jack/jack_spawner_4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23632" parent="0/jack/jack_spawner_4" instance=ExtResource( "17" )]
+[node name="@Area3D@26185" parent="0/jack/jack_spawner_4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23633" parent="0/jack/jack_spawner_4" instance=ExtResource( "17" )]
+[node name="@Area3D@26186" parent="0/jack/jack_spawner_4" instance=ExtResource("17")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23634" parent="0/jack/jack_spawner_4" instance=ExtResource( "17" )]
+[node name="@Area3D@26187" parent="0/jack/jack_spawner_4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@23635" parent="0/jack/jack_spawner_4" instance=ExtResource( "17" )]
+[node name="@Area3D@26188" parent="0/jack/jack_spawner_4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
 metadata/_edit_lock_ = true
 
@@ -1480,57 +1444,57 @@ metadata/_edit_lock_ = true
 
 [node name="big_door" type="Node3D" parent="0/entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.5488, 46.0329, -22)
-script = ExtResource( "18" )
+script = ExtResource("18")
 size = Vector2(17, 21)
 uv_fac = 5.0
-material = ExtResource( "19" )
-stream_moving = ExtResource( "20" )
-stream_closed = ExtResource( "21" )
+material = ExtResource("19")
+stream_moving = ExtResource("20")
+stream_closed = ExtResource("21")
 close_delay = 0.9
 
-[node name="prop" parent="0/entity" instance=ExtResource( "22" )]
+[node name="prop" parent="0/entity" instance=ExtResource("22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.006, 199.133, -2.72387)
-data = SubResource( "24" )
+data = SubResource("24")
 
-[node name="prop_2" parent="0/entity" instance=ExtResource( "22" )]
+[node name="prop_2" parent="0/entity" instance=ExtResource("22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.6004, 57.2383, -49.2469)
-data = SubResource( "25" )
+data = SubResource("25")
 
-[node name="prop_3" parent="0/entity" instance=ExtResource( "22" )]
+[node name="prop_3" parent="0/entity" instance=ExtResource("22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.1477, 358.498, 128.999)
-data = SubResource( "26" )
+data = SubResource("26")
 
-[node name="prop_4" parent="0/entity" instance=ExtResource( "22" )]
+[node name="prop_4" parent="0/entity" instance=ExtResource("22")]
 transform = Transform3D(-4.37088e-08, -4.77571e-10, 1, -0.0109255, 0.99994, 0, -0.99994, -0.0109255, -4.37114e-08, -266.74, 335.396, 232.601)
-data = SubResource( "27" )
+data = SubResource("27")
 
-[node name="prop_5" parent="0/entity" instance=ExtResource( "22" )]
+[node name="prop_5" parent="0/entity" instance=ExtResource("22")]
 transform = Transform3D(0.99994, 0.0109255, 0, -0.0109255, 0.99994, 0, 0, 0, 1, -435.712, 60.5967, 8.15477)
-data = SubResource( "27" )
+data = SubResource("27")
 
 [node name="prop_secret_group" type="Node3D" parent="0/entity"]
-script = ExtResource( "24" )
+script = ExtResource("24")
 event_tree = NodePath("../../event/open_secret")
 
 [node name="1" type="Node3D" parent="0/entity/prop_secret_group"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.412, 128.178, -48.2564)
-script = ExtResource( "25" )
+script = ExtResource("25")
 sides = 5
 size = Vector2(6, 4)
 
 [node name="platform_1" type="Node3D" parent="0/entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.5263, 123.531, 85.7678)
-script = ExtResource( "26" )
+script = ExtResource("26")
 time_to_end = 3.0
 t_trans = 1
 toggle_preview = true
 
 [node name="path" type="Path3D" parent="0/entity/platform_1"]
-curve = SubResource( "28" )
+curve = SubResource("28")
 
 [node name="path_follower" type="PathFollow3D" parent="0/entity/platform_1/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.7975, -22.6698)
-progress = 26.0326
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 35, -62)
+progress = 71.197
 rotation_mode = 0
 loop = false
 
@@ -1540,17 +1504,17 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="0/entity/platform_1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.7974, -22.6698)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 35, -62)
 
-[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_1/geometry" instance=ExtResource( "27" )]
+[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_1/geometry" instance=ExtResource("27")]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
 
 [node name="col" type="CollisionShape3D" parent="0/entity/platform_1/geometry"]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
-shape = SubResource( "29" )
+shape = SubResource("29")
 
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="0/entity/platform_1"]
-volume_db = -7.0
+volume_db = -4.0
 bus = &"Sound"
 
 [node name="sfx_stop" type="AudioStreamPlayer3D" parent="0/entity/platform_1"]
@@ -1558,18 +1522,16 @@ bus = &"Sound"
 
 [node name="platform_2" type="Node3D" parent="0/entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -259.04, 41.4076, -34.0675)
-script = ExtResource( "26" )
+script = ExtResource("26")
 time_to_end = 3.0
 time_idle = 1.0
 t_trans = 0
 toggle_preview = true
 
 [node name="path" type="Path3D" parent="0/entity/platform_2"]
-curve = SubResource( "30" )
+curve = SubResource("30")
 
 [node name="path_follower" type="PathFollow3D" parent="0/entity/platform_2/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.4949)
-progress = 17.495
 rotation_mode = 0
 loop = false
 
@@ -1579,17 +1541,16 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="0/entity/platform_2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.4949)
 
-[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_2/geometry" instance=ExtResource( "27" )]
+[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_2/geometry" instance=ExtResource("27")]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
 
 [node name="col" type="CollisionShape3D" parent="0/entity/platform_2/geometry"]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
-shape = SubResource( "29" )
+shape = SubResource("29")
 
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="0/entity/platform_2"]
-volume_db = -19.0
+volume_db = -4.0
 bus = &"Sound"
 
 [node name="sfx_stop" type="AudioStreamPlayer3D" parent="0/entity/platform_2"]
@@ -1597,18 +1558,16 @@ bus = &"Sound"
 
 [node name="platform_3" type="Node3D" parent="0/entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -299.04, 41.4076, 25.9325)
-script = ExtResource( "26" )
+script = ExtResource("26")
 time_to_end = 3.0
 time_idle = 1.0
 t_trans = 0
 toggle_preview = true
 
 [node name="path" type="Path3D" parent="0/entity/platform_3"]
-curve = SubResource( "31" )
+curve = SubResource("31")
 
 [node name="path_follower" type="PathFollow3D" parent="0/entity/platform_3/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.4949)
-progress = 17.495
 rotation_mode = 0
 loop = false
 
@@ -1618,17 +1577,16 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="0/entity/platform_3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.4949)
 
-[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_3/geometry" instance=ExtResource( "27" )]
+[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_3/geometry" instance=ExtResource("27")]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
 
 [node name="col" type="CollisionShape3D" parent="0/entity/platform_3/geometry"]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
-shape = SubResource( "29" )
+shape = SubResource("29")
 
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="0/entity/platform_3"]
-volume_db = -19.0
+volume_db = -4.0
 bus = &"Sound"
 
 [node name="sfx_stop" type="AudioStreamPlayer3D" parent="0/entity/platform_3"]
@@ -1636,18 +1594,16 @@ bus = &"Sound"
 
 [node name="platform_4" type="Node3D" parent="0/entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -182.174, 209.266, 153.891)
-script = ExtResource( "26" )
+script = ExtResource("26")
 time_to_end = 3.0
 time_idle = 1.0
 t_trans = 0
 toggle_preview = true
 
 [node name="path" type="Path3D" parent="0/entity/platform_4"]
-curve = SubResource( "32" )
+curve = SubResource("32")
 
 [node name="path_follower" type="PathFollow3D" parent="0/entity/platform_4/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.4949)
-progress = 17.495
 rotation_mode = 0
 loop = false
 
@@ -1657,17 +1613,16 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="0/entity/platform_4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.4949)
 
-[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_4/geometry" instance=ExtResource( "27" )]
+[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_4/geometry" instance=ExtResource("27")]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
 
 [node name="col" type="CollisionShape3D" parent="0/entity/platform_4/geometry"]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
-shape = SubResource( "29" )
+shape = SubResource("29")
 
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="0/entity/platform_4"]
-volume_db = -19.0
+volume_db = -4.0
 bus = &"Sound"
 
 [node name="sfx_stop" type="AudioStreamPlayer3D" parent="0/entity/platform_4"]
@@ -1675,18 +1630,16 @@ bus = &"Sound"
 
 [node name="platform_5" type="Node3D" parent="0/entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -217.587, 209.266, 93.891)
-script = ExtResource( "26" )
+script = ExtResource("26")
 time_to_end = 3.0
 time_idle = 1.0
 t_trans = 0
 toggle_preview = true
 
 [node name="path" type="Path3D" parent="0/entity/platform_5"]
-curve = SubResource( "33" )
+curve = SubResource("33")
 
 [node name="path_follower" type="PathFollow3D" parent="0/entity/platform_5/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.4949)
-progress = 17.495
 rotation_mode = 0
 loop = false
 
@@ -1696,20 +1649,19 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="0/entity/platform_5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.4949)
 
-[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_5/geometry" instance=ExtResource( "27" )]
+[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_5/geometry" instance=ExtResource("27")]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
 
 [node name="moving_platform" parent="0/entity/platform_5/geometry/mp_ruins_1-db10ffdc418313b543c323d87e573e1c" index="0"]
-mesh = SubResource( "35" )
+mesh = SubResource("35")
 
 [node name="col" type="CollisionShape3D" parent="0/entity/platform_5/geometry"]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
-shape = SubResource( "29" )
+shape = SubResource("29")
 
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="0/entity/platform_5"]
-volume_db = -19.0
+volume_db = -4.0
 bus = &"Sound"
 
 [node name="sfx_stop" type="AudioStreamPlayer3D" parent="0/entity/platform_5"]
@@ -1717,7 +1669,7 @@ bus = &"Sound"
 
 [node name="platform_6" type="Node3D" parent="0/entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -279.087, 229.266, 80.391)
-script = ExtResource( "26" )
+script = ExtResource("26")
 time_to_end = 3.0
 time_idle = 2.0
 t_trans = 1
@@ -1725,9 +1677,11 @@ toggle_preview = true
 
 [node name="path" type="Path3D" parent="0/entity/platform_6"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -43.4005, 0, 134.583)
-curve = SubResource( "36" )
+curve = SubResource("36")
 
 [node name="path_follower" type="PathFollow3D" parent="0/entity/platform_6/path"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 37.3632, 0)
+progress = 37.3631
 rotation_mode = 0
 loop = false
 
@@ -1737,21 +1691,21 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="0/entity/platform_6"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.4005, 0, 134.583)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.4005, 37.3632, 134.583)
 
-[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_6/geometry" instance=ExtResource( "27" )]
+[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_6/geometry" instance=ExtResource("27")]
 transform = Transform3D(0.681, 0, 0, 0, 0.681, 0, 0, 0, 0.681, 0, 0, 0)
 
 [node name="moving_platform" parent="0/entity/platform_6/geometry/mp_ruins_1-db10ffdc418313b543c323d87e573e1c" index="0"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
-mesh = SubResource( "35" )
+mesh = SubResource("35")
 
 [node name="col" type="CollisionShape3D" parent="0/entity/platform_6/geometry"]
 transform = Transform3D(-2.97675e-08, 0, 0.681, 0, 0.681, 0, -0.681, 0, -2.97675e-08, 0, 0, 0)
-shape = SubResource( "29" )
+shape = SubResource("29")
 
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="0/entity/platform_6"]
-volume_db = -4.0
+volume_db = -31.0
 bus = &"Sound"
 
 [node name="sfx_stop" type="AudioStreamPlayer3D" parent="0/entity/platform_6"]
@@ -1759,18 +1713,18 @@ bus = &"Sound"
 
 [node name="platform_7" type="Node3D" parent="0/entity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -369.137, 57.2176, -32.8784)
-script = ExtResource( "26" )
+script = ExtResource("26")
 time_to_end = 3.0
 time_idle = 2.0
 t_trans = 1
 toggle_preview = true
 
 [node name="path" type="Path3D" parent="0/entity/platform_7"]
-curve = SubResource( "37" )
+curve = SubResource("37")
 
 [node name="path_follower" type="PathFollow3D" parent="0/entity/platform_7/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.11365, 0)
-progress = 8.11386
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.7643, 0)
+progress = 38.7642
 rotation_mode = 0
 loop = false
 
@@ -1780,47 +1734,47 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="0/entity/platform_7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.11365, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.7643, 0)
 
-[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_7/geometry" instance=ExtResource( "27" )]
+[node name="mp_ruins_1-db10ffdc418313b543c323d87e573e1c" parent="0/entity/platform_7/geometry" instance=ExtResource("27")]
 transform = Transform3D(0.770211, 0, 0, 0, 0.770211, 0, 0, 0, 0.770211, -1.31436, -2.39802, -1.37512)
 
 [node name="moving_platform" parent="0/entity/platform_7/geometry/mp_ruins_1-db10ffdc418313b543c323d87e573e1c" index="0"]
-mesh = SubResource( "35" )
+mesh = SubResource("35")
 
 [node name="col" type="CollisionShape3D" parent="0/entity/platform_7/geometry"]
 transform = Transform3D(0.770211, 0, 0, 0, 0.770211, 0, 0, 0, 0.770211, -1.31436, -2.39802, -1.37512)
-shape = SubResource( "29" )
+shape = SubResource("29")
 
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="0/entity/platform_7"]
-volume_db = -17.0
+volume_db = -31.0
 bus = &"Sound"
 
 [node name="sfx_stop" type="AudioStreamPlayer3D" parent="0/entity/platform_7"]
 bus = &"Sound"
 
-[node name="trampoline" parent="0/entity" instance=ExtResource( "31" )]
+[node name="trampoline" parent="0/entity" instance=ExtResource("31")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -385.691, 229.998, 30.9517)
 
-[node name="trampoline_2" parent="0/entity" instance=ExtResource( "31" )]
+[node name="trampoline_2" parent="0/entity" instance=ExtResource("31")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -259.787, 275.087, 193.764)
 
 [node name="event" type="Node" parent="0"]
 
 [node name="open_secret" type="Node" parent="0/event"]
-script = ExtResource( "32" )
+script = ExtResource("32")
 
 [node name="chime" type="Node" parent="0/event/open_secret"]
-script = ExtResource( "33" )
-stream = ExtResource( "34" )
+script = ExtResource("33")
+stream = ExtResource("34")
 volume = -4.0
 
 [node name="wait" type="Node" parent="0/event/open_secret"]
-script = ExtResource( "35" )
+script = ExtResource("35")
 time = 1.5
 
 [node name="cam_in" type="Node" parent="0/event/open_secret"]
-script = ExtResource( "36" )
+script = ExtResource("36")
 camera = NodePath("cam")
 cutscene_bars = true
 do_interpolate = true
@@ -1832,16 +1786,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.4704, 56.5933, 14.6228)
 fov = 50.0
 
 [node name="open_door" type="Node" parent="0/event/open_secret"]
-script = ExtResource( "37" )
+script = ExtResource("37")
 node = NodePath("../../../entity/big_door")
-packets = [SubResource( "38" )]
+packets = Array[ExtResource("38")]([SubResource("38")])
 
 [node name="wait_2" type="Node" parent="0/event/open_secret"]
-script = ExtResource( "35" )
+script = ExtResource("35")
 time = 3.0
 
 [node name="cam_out" type="Node" parent="0/event/open_secret"]
-script = ExtResource( "36" )
+script = ExtResource("36")
 duration = 0.75
 do_interpolate = true
 int_length = 0.75

@@ -1,32 +1,32 @@
-[gd_scene load_steps=37 format=3]
+[gd_scene load_steps=37 format=3 uid="uid://c2ych2iog6o0h"]
 
 [ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
 [ext_resource type="Script" path="res://scripts/subarea.gd" id="3"]
 [ext_resource type="Script" path="res://scripts/background.gd" id="4"]
-[ext_resource type="Material" uid="uid://chr0rawbcv5ri" path="res://asset/level/skybox/mat/sm_feverish3.tres" id="5"]
-[ext_resource type="Environment" uid="uid://qkqvav71a2j2" path="res://asset/environment/env_bg.tres" id="6"]
-[ext_resource type="CameraAttributesPractical" uid="uid://c6mnym7nlyfh8" path="res://asset/environment/cap_bg.tres" id="7"]
+[ext_resource type="Material" path="res://asset/level/skybox/mat/sm_feverish3.tres" id="5"]
+[ext_resource type="Environment" path="res://asset/environment/env_bg.tres" id="6"]
+[ext_resource type="CameraAttributesPractical" path="res://asset/environment/cap_bg.tres" id="7"]
 [ext_resource type="Script" path="res://scripts/background_cam.gd" id="8"]
 [ext_resource type="AudioStream" uid="uid://dlnbey287rrgn" path="res://audio/bossanova.mp3" id="9"]
 [ext_resource type="PackedScene" path="res://asset/level/test/test_map1.blend.scn" id="10"]
 [ext_resource type="Script" path="res://scripts/terrain.gd" id="11"]
-[ext_resource type="FontVariation" uid="uid://c4vglgxiy8lyb" path="res://asset/ui/schoolwork_modified.tres" id="12"]
+[ext_resource type="FontVariation" path="res://asset/ui/schoolwork_modified.tres" id="12"]
 [ext_resource type="Script" path="res://scripts/moving_platform.gd" id="13"]
-[ext_resource type="Material" uid="uid://dwmnlfdyaueie" path="res://asset/level/test/mat/checkerboard_orange.tres" id="14"]
+[ext_resource type="Material" path="res://asset/level/test/mat/checkerboard_orange.tres" id="14"]
 [ext_resource type="Texture2D" uid="uid://b41tsxkoia8tg" path="res://asset/level/test/daniel.png" id="15"]
 [ext_resource type="Script" path="res://scripts/jack_spawner.gd" id="16"]
-[ext_resource type="PackedScene" uid="uid://c31y51bdp7t8a" path="res://scenes/prefab/jack.tscn" id="17"]
-[ext_resource type="PackedScene" uid="uid://b488og5dpnbxn" path="res://scenes/prefab/shard.tscn" id="18"]
-[ext_resource type="Resource" uid="uid://cfs2rbe67rprp" path="res://data/props/test_level/prop_star.tres" id="19"]
-[ext_resource type="Resource" uid="uid://dowhrjf4a7h3v" path="res://data/props/test_level/prop_star2.tres" id="20"]
-[ext_resource type="Resource" uid="uid://3i8l360acei6" path="res://data/props/test_level/prop_icecream.tres" id="21"]
-[ext_resource type="PackedScene" uid="uid://7q0lqydiaauc" path="res://scenes/prefab/teleporter.tscn" id="22"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/jack.tscn" id="17"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/shard.tscn" id="18"]
+[ext_resource type="Resource" path="res://data/props/test_level/prop_star.tres" id="19"]
+[ext_resource type="Resource" path="res://data/props/test_level/prop_star2.tres" id="20"]
+[ext_resource type="Resource" path="res://data/props/test_level/prop_icecream.tres" id="21"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/teleporter.tscn" id="22"]
 [ext_resource type="Script" path="res://res_inputprompt.gd" id="23"]
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="24"]
 
 [sub_resource type="Resource" id="1"]
-script = ExtResource( "2" )
+script = ExtResource("2")
 level_name = "Test Level"
 level_desc = ""
 is_menu = false
@@ -41,16 +41,14 @@ ground_horizon_color = Color(0.555326, 0.735623, 0.896689, 1)
 ground_curve = 0.259921
 sun_angle_max = 0.0
 use_debanding = false
-script = null
 
 [sub_resource type="Sky" id="3"]
-sky_material = SubResource( "2" )
-script = null
+sky_material = SubResource("2")
 
 [sub_resource type="Environment" id="4"]
 background_mode = 3
 background_canvas_max_layer = -127
-sky = SubResource( "3" )
+sky = SubResource("3")
 ambient_light_source = 3
 ambient_light_sky_contribution = 0.31
 reflected_light_source = 2
@@ -66,7 +64,6 @@ volumetric_fog_albedo = Color(0.933594, 0.601563, 0.667969, 1)
 volumetric_fog_anisotropy = 0.9
 volumetric_fog_ambient_inject = 1.19
 adjustment_saturation = 8.0
-script = null
 
 [sub_resource type="ArrayMesh" id="5"]
 _surfaces = [{
@@ -78,11 +75,9 @@ _surfaces = [{
 "vertex_count": 6,
 "vertex_data": PackedByteArray(0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0)
 }]
-script = null
 
 [sub_resource type="PhysicsMaterial" id="6"]
 friction = 0.2
-script = null
 
 [sub_resource type="Curve3D" id="7"]
 _data = {
@@ -90,7 +85,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
-script = null
 
 [sub_resource type="Animation" id="8"]
 length = 0.001
@@ -106,7 +100,6 @@ tracks/0/keys = {
 "update": 0,
 "values": [0.0]
 }
-script = null
 
 [sub_resource type="Animation" id="9"]
 resource_name = "move"
@@ -124,34 +117,31 @@ tracks/0/keys = {
 "update": 0,
 "values": [1.0, 0.0, 0.0, 1.0, 1.0]
 }
-script = null
 
 [sub_resource type="AnimationLibrary" id="10"]
 _data = {
-"RESET": SubResource( "8" ),
-"move": SubResource( "9" )
+"RESET": SubResource("8"),
+"move": SubResource("9")
 }
-script = null
 
 [sub_resource type="BoxShape3D" id="11"]
 size = Vector3(25, 5, 20)
-script = null
 
 [sub_resource type="Resource" id="12"]
-script = ExtResource( "23" )
-input = [&"interact"]
+script = ExtResource("23")
+input = Array[StringName]([&"interact"])
 render_as_analog = false
 equip_icon = -1
 message = "to Interact"
 
-[node name="test_env" type="Node3D"]
+[node name="test_env" type="Node3D" node_paths=PackedStringArray("subareas")]
 process_mode = 1
-script = ExtResource( "1" )
-data = SubResource( "1" )
+script = ExtResource("1")
+data = SubResource("1")
 subareas = [NodePath("0")]
 
 [node name="0" type="Node3D" parent="."]
-script = ExtResource( "3" )
+script = ExtResource("3")
 
 [node name="sun" type="DirectionalLight3D" parent="0"]
 transform = Transform3D(-0.866024, -0.433015, 0.250001, -0.29586, 0.846859, 0.441923, -0.403075, 0.308751, -0.861512, 0, 0, 0)
@@ -163,12 +153,13 @@ directional_shadow_blend_splits = true
 directional_shadow_max_distance = 200.0
 
 [node name="environment" type="WorldEnvironment" parent="0"]
-environment = SubResource( "4" )
+environment = SubResource("4")
 
 [node name="background" type="CanvasLayer" parent="0"]
-layer = -127
-script = ExtResource( "4" )
-bg_material = ExtResource( "5" )
+process_mode = 3
+layer = -128
+script = ExtResource("4")
+bg_material = ExtResource("5")
 
 [node name="@SubViewportContainer@155185" type="SubViewportContainer" parent="0/background"]
 anchors_preset = 15
@@ -184,30 +175,30 @@ size = Vector2i(640, 480)
 render_target_update_mode = 4
 
 [node name="@MeshInstance3D@155187" type="MeshInstance3D" parent="0/background/@SubViewportContainer@155185/@SubViewport@155186"]
-material_overlay = ExtResource( "5" )
-mesh = SubResource( "5" )
+material_overlay = ExtResource("5")
+mesh = SubResource("5")
 
 [node name="@Camera3D@155188" type="Camera3D" parent="0/background/@SubViewportContainer@155185/@SubViewport@155186"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
-environment = ExtResource( "6" )
-attributes = ExtResource( "7" )
+environment = ExtResource("6")
+attributes = ExtResource("7")
 projection = 1
 size = 0.7
-script = ExtResource( "8" )
+script = ExtResource("8")
 
 [node name="music" type="AudioStreamPlayer" parent="0"]
-stream = ExtResource( "9" )
+stream = ExtResource("9")
 volume_db = -12.0
 bus = &"Music"
 
 [node name="map" type="Node" parent="0"]
 
-[node name="test_map1" parent="0/map" instance=ExtResource( "10" )]
+[node name="test_map1" parent="0/map" instance=ExtResource("10")]
 metadata/_edit_lock_ = true
 
 [node name="StaticBody3D" parent="0/map/test_map1/slopes_slippery" index="0"]
-physics_material_override = SubResource( "6" )
-script = ExtResource( "11" )
+physics_material_override = SubResource("6")
+script = ExtResource("11")
 audio_type = 1
 
 [node name="text" type="Node" parent="0/map"]
@@ -216,14 +207,14 @@ audio_type = 1
 transform = Transform3D(7.45058e-08, 0, 1, 0, 1, 0, -1, 0, 7.45058e-08, -57.1037, 14.0362, 25.0844)
 pixel_size = 0.125
 text = "Riches House"
-font = ExtResource( "12" )
+font = ExtResource("12")
 
 [node name="instruction1" type="Label3D" parent="0/map/text"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 5.96046e-08, 0, 1, 0, 22, -26)
 pixel_size = 0.125
 billboard = 2
 text = "Welcome to The Wandering Newman!"
-font = ExtResource( "12" )
+font = ExtResource("12")
 font_size = 48
 
 [node name="instruction2" type="Label3D" parent="0/map/text"]
@@ -232,19 +223,19 @@ pixel_size = 0.125
 billboard = 2
 text = "The current goal is to just run around
 and have Fun! Enjoy the demo!"
-font = ExtResource( "12" )
+font = ExtResource("12")
 outline_size = 8
 vertical_alignment = 0
 
 [node name="moving_platform" type="Node3D" parent="0/map"]
-script = ExtResource( "13" )
+script = ExtResource("13")
 anim = NodePath("path/follower/anim")
 anim_name = "move"
 
 [node name="path" type="Path3D" parent="0/map/moving_platform"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.5, 22.5, -50)
 top_level = true
-curve = SubResource( "7" )
+curve = SubResource("7")
 
 [node name="follower" type="PathFollow3D" parent="0/map/moving_platform/path"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 45, 0)
@@ -259,7 +250,7 @@ update_scale = false
 [node name="anim" type="AnimationPlayer" parent="0/map/moving_platform/path/follower"]
 callback_mode_process = 0
 libraries = {
-"": SubResource( "10" )
+"": SubResource("10")
 }
 
 [node name="platform" type="AnimatableBody3D" parent="0/map/moving_platform"]
@@ -267,11 +258,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.5, 67.5, -50)
 metadata/_edit_group_ = true
 
 [node name="vis" type="CSGBox3D" parent="0/map/moving_platform/platform"]
-material_override = ExtResource( "14" )
+material_override = ExtResource("14")
 size = Vector3(25, 5, 20)
 
 [node name="col" type="CollisionShape3D" parent="0/map/moving_platform/platform"]
-shape = SubResource( "11" )
+shape = SubResource("11")
 
 [node name="daniel_croft" type="Sprite3D" parent="0/map"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -94.7107, 3.5, -100.252)
@@ -281,178 +272,178 @@ transparent = false
 shaded = true
 double_sided = false
 texture_filter = 2
-texture = ExtResource( "15" )
+texture = ExtResource("15")
 
 [node name="jack_form1" type="Marker3D" parent="0/map"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 6, -64.5)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 formation = 1
 count = 3
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@97474" parent="0/map/jack_form1" instance=ExtResource( "17" )]
+[node name="@Area3D@20455" parent="0/map/jack_form1" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97475" parent="0/map/jack_form1" instance=ExtResource( "17" )]
+[node name="@Area3D@20456" parent="0/map/jack_form1" instance=ExtResource("17")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97476" parent="0/map/jack_form1" instance=ExtResource( "17" )]
+[node name="@Area3D@20457" parent="0/map/jack_form1" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
 metadata/_edit_lock_ = true
 
 [node name="jack_form2" type="Marker3D" parent="0/map"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 6, -64.5)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@97454" parent="0/map/jack_form2" instance=ExtResource( "17" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, -10)
+[node name="jack" parent="0/map/jack_form2" instance=ExtResource("17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, -10)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97455" parent="0/map/jack_form2" instance=ExtResource( "17" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, -5)
+[node name="@Area3D@20458" parent="0/map/jack_form2" instance=ExtResource("17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, -5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97456" parent="0/map/jack_form2" instance=ExtResource( "17" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
+[node name="@Area3D@20459" parent="0/map/jack_form2" instance=ExtResource("17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97457" parent="0/map/jack_form2" instance=ExtResource( "17" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 5)
+[node name="@Area3D@20460" parent="0/map/jack_form2" instance=ExtResource("17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97458" parent="0/map/jack_form2" instance=ExtResource( "17" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 10)
+[node name="@Area3D@20461" parent="0/map/jack_form2" instance=ExtResource("17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.99994, 10)
 metadata/_edit_lock_ = true
 
 [node name="jack_form3" type="Marker3D" parent="0/map"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.190727, -64.5)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 formation = 2
 count = 6
 metadata/_edit_group_ = true
 
-[node name="@Area3D@97448" parent="0/map/jack_form3" instance=ExtResource( "17" )]
+[node name="@Area3D@20467" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33013, 0, -2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97449" parent="0/map/jack_form3" instance=ExtResource( "17" )]
+[node name="@Area3D@20468" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33013, 0, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97450" parent="0/map/jack_form3" instance=ExtResource( "17" )]
+[node name="@Area3D@20469" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.37114e-07, 0, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97451" parent="0/map/jack_form3" instance=ExtResource( "17" )]
+[node name="@Area3D@20470" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, 0, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97452" parent="0/map/jack_form3" instance=ExtResource( "17" )]
+[node name="@Area3D@20471" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, 0, -2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97453" parent="0/map/jack_form3" instance=ExtResource( "17" )]
+[node name="@Area3D@20472" parent="0/map/jack_form3" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.74228e-07, 0, -5)
 metadata/_edit_lock_ = true
 
 [node name="jack_form4" type="Marker3D" parent="0/map"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 7.6907, -80)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 formation = 3
 count = 8
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@97440" parent="0/map/jack_form4" instance=ExtResource( "17" )]
+[node name="@Area3D@20488" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.53553, 3.53553, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97441" parent="0/map/jack_form4" instance=ExtResource( "17" )]
+[node name="@Area3D@20489" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -2.18557e-07, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97442" parent="0/map/jack_form4" instance=ExtResource( "17" )]
+[node name="@Area3D@20490" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.53553, -3.53553, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97443" parent="0/map/jack_form4" instance=ExtResource( "17" )]
+[node name="@Area3D@20491" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37114e-07, -5, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97444" parent="0/map/jack_form4" instance=ExtResource( "17" )]
+[node name="@Area3D@20492" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.53553, -3.53553, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97445" parent="0/map/jack_form4" instance=ExtResource( "17" )]
+[node name="@Area3D@20493" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 5.96244e-08, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97446" parent="0/map/jack_form4" instance=ExtResource( "17" )]
+[node name="@Area3D@20494" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.53553, 3.53553, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97447" parent="0/map/jack_form4" instance=ExtResource( "17" )]
+[node name="@Area3D@20495" parent="0/map/jack_form4" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.74228e-07, 5, 0)
 metadata/_edit_lock_ = true
 
 [node name="jack_form_stf" type="Marker3D" parent="0/map"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 22.1907, -65)
 gizmo_extents = 5.0
-script = ExtResource( "16" )
+script = ExtResource("16")
 formation = 2
 count = 6
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@97416" parent="0/map/jack_form_stf" instance=ExtResource( "17" )]
+[node name="@Area3D@20507" parent="0/map/jack_form_stf" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33013, -6.87483, -2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97417" parent="0/map/jack_form_stf" instance=ExtResource( "17" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33013, -6.93184, 2.5)
+[node name="@Area3D@20508" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33013, -6.93183, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97418" parent="0/map/jack_form_stf" instance=ExtResource( "17" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.64447, 5)
+[node name="@Area3D@20509" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.64446, 5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97419" parent="0/map/jack_form_stf" instance=ExtResource( "17" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, -6.93184, 2.5)
+[node name="@Area3D@20510" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, -6.93183, 2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97420" parent="0/map/jack_form_stf" instance=ExtResource( "17" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, -6.87482, -2.5)
+[node name="@Area3D@20511" parent="0/map/jack_form_stf" instance=ExtResource("17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33013, -6.87483, -2.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@97421" parent="0/map/jack_form_stf" instance=ExtResource( "17" )]
+[node name="@Area3D@20512" parent="0/map/jack_form_stf" instance=ExtResource("17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.58746, -5)
 metadata/_edit_lock_ = true
 
-[node name="prop" parent="0/map" instance=ExtResource( "18" )]
+[node name="prop" parent="0/map" instance=ExtResource("18")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 8.5, 25.5)
-data = ExtResource( "19" )
+data = ExtResource("19")
 
-[node name="prop_2" parent="0/map" instance=ExtResource( "18" )]
+[node name="prop_2" parent="0/map" instance=ExtResource("18")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.5, 83.5, -119.5)
-data = ExtResource( "20" )
+data = ExtResource("20")
 
-[node name="prop_3" parent="0/map" instance=ExtResource( "18" )]
+[node name="prop_3" parent="0/map" instance=ExtResource("18")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 716.5, -248.5, -5)
-data = ExtResource( "21" )
+data = ExtResource("21")
 
-[node name="teleporter" parent="0/map" instance=ExtResource( "22" )]
+[node name="teleporter" parent="0/map" instance=ExtResource("22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 717.5, -256, 27.5)
 collision_layer = 3
 collision_mask = 3
-input_prompt = SubResource( "12" )
+input_prompt = SubResource("12")
 
 [node name="target_position" parent="0/map/teleporter" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -718.245, 276.5, 6)
@@ -464,12 +455,10 @@ target_id = -1
 
 [node name="warp" type="Node" parent="0"]
 
-[node name="spawn" type="Marker3D" parent="0/warp" groups=[
-"Warp",
-]]
+[node name="spawn" type="Marker3D" parent="0/warp" groups=["Warp"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18, 0)
 gizmo_extents = 2.5
-script = ExtResource( "24" )
+script = ExtResource("24")
 
 [editable path="0/map/test_map1"]
 [editable path="0/map/teleporter"]

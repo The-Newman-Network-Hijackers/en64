@@ -21,7 +21,7 @@ boot_splash/image="res://cinder.png"
 boot_splash/fullsize=false
 config/icon="res://icon.png"
 config/windows_native_icon="res://icon_win.ico"
-config/demo_mode=true
+config/demo_mode=false
 
 [autoload]
 

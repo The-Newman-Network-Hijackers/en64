@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://cv7w5nec53ssp"]
 
 [ext_resource type="Script" path="res://scripts/root.gd" id="1"]
-[ext_resource type="PackedScene" path="res://scenes/splash.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://qb72i7aecx3u" path="res://scenes/splash.tscn" id="2"]
 [ext_resource type="Shader" path="res://asset/shader/dither.gdshader" id="3"]
 [ext_resource type="Shader" path="res://asset/shader/ntsc.gdshader" id="4"]
 [ext_resource type="Script" path="res://scripts/level_manager.gd" id="5"]

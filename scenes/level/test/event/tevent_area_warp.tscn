@@ -1,24 +1,24 @@
-[gd_scene load_steps=26 format=3]
+[gd_scene load_steps=26 format=3 uid="uid://bcnhjci8knslt"]
 
 [ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
 [ext_resource type="Script" path="res://scripts/subarea.gd" id="3"]
-[ext_resource type="Resource" uid="uid://dnjaj4ysw6ius" path="res://data/stem/ruins/ruins_bass.tres" id="4"]
+[ext_resource type="Resource" path="res://data/stem/ruins/ruins_bass.tres" id="4"]
 [ext_resource type="Script" path="res://scripts/background.gd" id="5"]
-[ext_resource type="Material" uid="uid://bo7ulwxy02s0p" path="res://asset/level/skybox/mat/sm_blue.tres" id="6"]
-[ext_resource type="Environment" uid="uid://qkqvav71a2j2" path="res://asset/environment/env_bg.tres" id="7"]
-[ext_resource type="CameraAttributesPractical" uid="uid://c6mnym7nlyfh8" path="res://asset/environment/cap_bg.tres" id="8"]
+[ext_resource type="Material" path="res://asset/level/skybox/mat/sm_blue.tres" id="6"]
+[ext_resource type="Environment" path="res://asset/environment/env_bg.tres" id="7"]
+[ext_resource type="CameraAttributesPractical" path="res://asset/environment/cap_bg.tres" id="8"]
 [ext_resource type="Script" path="res://scripts/background_cam.gd" id="9"]
 [ext_resource type="Shader" path="res://asset/shader/n64_lit.gdshader" id="10"]
 [ext_resource type="Texture2D" uid="uid://ccjkkc6wvrhra" path="res://asset/level/generic/tile_3.png" id="11"]
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="12"]
 [ext_resource type="FontFile" uid="uid://ofcarenwa3k0" path="res://asset/ui/Loosey Sans.otf" id="13"]
-[ext_resource type="PackedScene" uid="uid://7q0lqydiaauc" path="res://scenes/prefab/teleporter.tscn" id="14"]
+[ext_resource type="PackedScene" path="res://scenes/prefab/teleporter.tscn" id="14"]
 [ext_resource type="Script" path="res://res_inputprompt.gd" id="15"]
-[ext_resource type="Resource" uid="uid://gb0vnfu35x47" path="res://data/stem/ruins/ruins_flute.tres" id="16"]
+[ext_resource type="Resource" path="res://data/stem/ruins/ruins_flute.tres" id="16"]
 
 [sub_resource type="Resource" id="1"]
-script = ExtResource( "2" )
+script = ExtResource("2")
 level_name = "tevent_area_warp"
 level_desc = "Same level warping test"
 is_menu = false
@@ -33,16 +33,14 @@ ground_horizon_color = Color(0.555326, 0.735623, 0.896689, 1)
 ground_curve = 0.259921
 sun_angle_max = 0.0
 use_debanding = false
-script = null
 
 [sub_resource type="Sky" id="3"]
-sky_material = SubResource( "2" )
-script = null
+sky_material = SubResource("2")
 
 [sub_resource type="Environment" id="4"]
 background_mode = 3
 background_canvas_max_layer = -126
-sky = SubResource( "3" )
+sky = SubResource("3")
 ambient_light_source = 3
 ambient_light_sky_contribution = 0.31
 reflected_light_source = 2
@@ -58,7 +56,6 @@ volumetric_fog_albedo = Color(0.933594, 0.601563, 0.667969, 1)
 volumetric_fog_anisotropy = 0.9
 volumetric_fog_ambient_inject = 1.19
 adjustment_saturation = 8.0
-script = null
 
 [sub_resource type="ArrayMesh" id="5"]
 _surfaces = [{
@@ -70,30 +67,25 @@ _surfaces = [{
 "vertex_count": 6,
 "vertex_data": PackedByteArray(0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0)
 }]
-script = null
 
 [sub_resource type="ShaderMaterial" id="6"]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "10" )
+shader = ExtResource("10")
 shader_parameter/modulate_color = Color(1, 1, 1, 1)
 shader_parameter/normal_scale = null
 shader_parameter/uv_scale = Vector2(10, 10)
 shader_parameter/uv_offset = Vector2(0, 0)
 shader_parameter/uv_pan_velocity = Vector2(0, 0)
-shader_parameter/albedoTex = ExtResource( "11" )
-shader_parameter/texture_normal = null
-script = null
+shader_parameter/albedoTex = ExtResource("11")
 
 [sub_resource type="QuadMesh" id="7"]
-material = SubResource( "6" )
+material = SubResource("6")
 size = Vector2(150, 150)
 orientation = 1
-script = null
 
 [sub_resource type="Resource" id="8"]
-script = ExtResource( "15" )
-input = [&"interact"]
+script = ExtResource("15")
+input = Array[StringName]([&"interact"])
 render_as_analog = false
 equip_icon = -1
 message = "to Interact"
@@ -108,19 +100,18 @@ _surfaces = [{
 "vertex_count": 6,
 "vertex_data": PackedByteArray(0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 128, 191, 0, 0, 0, 0)
 }]
-script = null
 
-[node name="tevent_area_warp" type="Node"]
-script = ExtResource( "1" )
-data = SubResource( "1" )
+[node name="tevent_area_warp" type="Node" node_paths=PackedStringArray("subareas")]
+script = ExtResource("1")
+data = SubResource("1")
 subareas = [NodePath("0"), NodePath("1")]
 
 [node name="environment" type="WorldEnvironment" parent="."]
-environment = SubResource( "4" )
+environment = SubResource("4")
 
 [node name="0" type="Node3D" parent="."]
-script = ExtResource( "3" )
-music = [ExtResource( "4" )]
+script = ExtResource("3")
+music = Array[Resource("res://scripts/res_music_stem.gd")]([ExtResource("4")])
 
 [node name="sun" type="DirectionalLight3D" parent="0"]
 transform = Transform3D(0.0383144, 0.794297, 0.606321, -0.210465, -0.586741, 0.781946, 0.97685, -0.157569, 0.144691, 4.7367, 3.0656, -1.46723)
@@ -133,9 +124,9 @@ directional_shadow_max_distance = 800.0
 
 [node name="background" type="CanvasLayer" parent="0"]
 process_mode = 3
-layer = -127
-script = ExtResource( "5" )
-bg_material = ExtResource( "6" )
+layer = -128
+script = ExtResource("5")
+bg_material = ExtResource("6")
 
 [node name="@SubViewportContainer@143555" type="SubViewportContainer" parent="0/background"]
 anchors_preset = 15
@@ -151,32 +142,30 @@ size = Vector2i(640, 480)
 render_target_update_mode = 4
 
 [node name="@MeshInstance3D@143557" type="MeshInstance3D" parent="0/background/@SubViewportContainer@143555/@SubViewport@143556"]
-material_overlay = ExtResource( "6" )
-mesh = SubResource( "5" )
+material_overlay = ExtResource("6")
+mesh = SubResource("5")
 
 [node name="@Camera3D@143558" type="Camera3D" parent="0/background/@SubViewportContainer@143555/@SubViewport@143556"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
-environment = ExtResource( "7" )
-attributes = ExtResource( "8" )
+environment = ExtResource("7")
+attributes = ExtResource("8")
 projection = 1
 size = 0.7
-script = ExtResource( "9" )
+script = ExtResource("9")
 
 [node name="level" type="Node3D" parent="0"]
 
 [node name="csg_box_3d" type="CSGMesh3D" parent="0/level"]
 use_collision = true
 collision_mask = 0
-mesh = SubResource( "7" )
+mesh = SubResource("7")
 
 [node name="warp" type="Node3D" parent="0"]
 
-[node name="warp_point" type="Marker3D" parent="0/warp" groups=[
-"Warp",
-]]
+[node name="warp_point" type="Marker3D" parent="0/warp" groups=["Warp"]]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 20, 0)
 gizmo_extents = 2.5
-script = ExtResource( "12" )
+script = ExtResource("12")
 transition = 2
 
 [node name="entity" type="Node3D" parent="0"]
@@ -185,12 +174,12 @@ transition = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18, -59.5)
 pixel_size = 0.3975
 text = "Area 0"
-font = ExtResource( "13" )
+font = ExtResource("13")
 font_size = 24
 
-[node name="teleporter" parent="0/entity" instance=ExtResource( "14" )]
+[node name="teleporter" parent="0/entity" instance=ExtResource("14")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -59.5)
-input_prompt = SubResource( "8" )
+input_prompt = SubResource("8")
 
 [node name="teleport_to" parent="0/entity/teleporter/teleporter_event" index="0"]
 type = 1
@@ -200,8 +189,8 @@ target_id = -1
 
 [node name="1" type="Node3D" parent="."]
 visible = false
-script = ExtResource( "3" )
-music = [ExtResource( "16" )]
+script = ExtResource("3")
+music = Array[Resource("res://scripts/res_music_stem.gd")]([ExtResource("16")])
 
 [node name="sun" type="DirectionalLight3D" parent="1"]
 transform = Transform3D(0.0383144, 0.794297, 0.606321, -0.210465, -0.586741, 0.781946, 0.97685, -0.157569, 0.144691, 4.7367, 3.0656, -1.46723)
@@ -214,10 +203,10 @@ directional_shadow_max_distance = 800.0
 
 [node name="background" type="CanvasLayer" parent="1"]
 process_mode = 3
-layer = -127
+layer = -128
 visible = false
-script = ExtResource( "5" )
-bg_material = ExtResource( "6" )
+script = ExtResource("5")
+bg_material = ExtResource("6")
 
 [node name="@SubViewportContainer@154884" type="SubViewportContainer" parent="1/background"]
 anchors_preset = 15
@@ -233,32 +222,30 @@ size = Vector2i(640, 480)
 render_target_update_mode = 0
 
 [node name="@MeshInstance3D@154886" type="MeshInstance3D" parent="1/background/@SubViewportContainer@154884/@SubViewport@154885"]
-material_overlay = ExtResource( "6" )
-mesh = SubResource( "9" )
+material_overlay = ExtResource("6")
+mesh = SubResource("9")
 
 [node name="@Camera3D@154887" type="Camera3D" parent="1/background/@SubViewportContainer@154884/@SubViewport@154885"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
-environment = ExtResource( "7" )
-attributes = ExtResource( "8" )
+environment = ExtResource("7")
+attributes = ExtResource("8")
 projection = 1
 size = 0.7
-script = ExtResource( "9" )
+script = ExtResource("9")
 
 [node name="level" type="Node3D" parent="1"]
 
 [node name="csg_box_3d" type="CSGMesh3D" parent="1/level"]
 use_collision = true
 collision_mask = 0
-mesh = SubResource( "7" )
+mesh = SubResource("7")
 
 [node name="warp" type="Node3D" parent="1"]
 
-[node name="warp_point" type="Marker3D" parent="1/warp" groups=[
-"Warp",
-]]
+[node name="warp_point" type="Marker3D" parent="1/warp" groups=["Warp"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 20, 0)
 gizmo_extents = 2.5
-script = ExtResource( "12" )
+script = ExtResource("12")
 
 [node name="entity" type="Node3D" parent="1"]
 
@@ -266,12 +253,12 @@ script = ExtResource( "12" )
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18, -59.5)
 pixel_size = 0.3975
 text = "Area 1"
-font = ExtResource( "13" )
+font = ExtResource("13")
 font_size = 24
 
-[node name="teleporter" parent="1/entity" instance=ExtResource( "14" )]
+[node name="teleporter" parent="1/entity" instance=ExtResource("14")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -59.5)
-input_prompt = SubResource( "8" )
+input_prompt = SubResource("8")
 
 [node name="teleport_to" parent="1/entity/teleporter/teleporter_event" index="0"]
 type = 1

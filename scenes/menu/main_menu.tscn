@@ -1,19 +1,19 @@
-[gd_scene load_steps=14 format=3]
+[gd_scene load_steps=14 format=3 uid="uid://bf3iuwr3x1uys"]
 
 [ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
 [ext_resource type="Script" path="res://scripts/subarea.gd" id="3"]
-[ext_resource type="Resource" uid="uid://c2fovexrtbxot" path="res://data/stem/title_theme.tres" id="4"]
+[ext_resource type="Resource" path="res://data/stem/title_theme.tres" id="4"]
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="5"]
-[ext_resource type="PackedScene" uid="uid://cqvalxp8q4ley" path="res://scenes/logo.tscn" id="6"]
-[ext_resource type="Theme" uid="uid://botsw3j2gbsx" path="res://asset/ui/generic_ui_theme.tres" id="7"]
+[ext_resource type="PackedScene" path="res://scenes/logo.tscn" id="6"]
+[ext_resource type="Theme" uid="uid://jrc78hva5uah" path="res://asset/ui/generic_ui_theme.tres" id="7"]
 [ext_resource type="FontFile" uid="uid://bp8vxpvktfdkj" path="res://asset/ui/RobotoCondensed-Bold.ttf" id="8"]
-[ext_resource type="PackedScene" uid="uid://dfgsd05wu76fp" path="res://scenes/menu/options_menu.tscn" id="9"]
-[ext_resource type="PackedScene" uid="uid://ceqi4t351xy01" path="res://scenes/menu/level_selector.tscn" id="10"]
+[ext_resource type="PackedScene" path="res://scenes/menu/options_menu.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://scenes/menu/level_selector.tscn" id="10"]
 [ext_resource type="Script" path="res://scripts/input_prompt_container.gd" id="11"]
 
 [sub_resource type="Resource" id="1"]
-script = ExtResource( "2" )
+script = ExtResource("2")
 level_name = "Main Menu"
 level_desc = ""
 is_menu = true
@@ -30,21 +30,20 @@ corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
-script = null
 
-[node name="main_menu" type="Node"]
+[node name="main_menu" type="Node" node_paths=PackedStringArray("subareas")]
 process_mode = 1
-script = ExtResource( "1" )
-data = SubResource( "1" )
+script = ExtResource("1")
+data = SubResource("1")
 subareas = [NodePath("menu")]
 
 [node name="menu" type="Node3D" parent="."]
-script = ExtResource( "3" )
-music = [ExtResource( "4" )]
+script = ExtResource("3")
+music = Array[Resource("res://scripts/res_music_stem.gd")]([ExtResource("4")])
 
 [node name="canvas" type="CanvasLayer" parent="menu"]
 layer = 5
-script = ExtResource( "5" )
+script = ExtResource("5")
 
 [node name="title" type="SubViewportContainer" parent="menu/canvas"]
 process_mode = 3
@@ -65,7 +64,7 @@ gui_snap_controls_to_pixels = false
 size = Vector2i(640, 480)
 render_target_update_mode = 4
 
-[node name="logo" parent="menu/canvas/title/sub_viewport" instance=ExtResource( "6" )]
+[node name="logo" parent="menu/canvas/title/sub_viewport" instance=ExtResource("6")]
 
 [node name="sort" type="VBoxContainer" parent="menu/canvas"]
 top_level = true
@@ -104,7 +103,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(224, 0)
 layout_mode = 2
 size_flags_horizontal = 4
-theme = ExtResource( "7" )
+theme = ExtResource("7")
 theme_override_font_sizes/font_size = 24
 text = "Level Select"
 
@@ -113,15 +112,15 @@ visible = false
 custom_minimum_size = Vector2(224, 0)
 layout_mode = 2
 size_flags_horizontal = 4
-theme = ExtResource( "7" )
-theme_override_fonts/font = ExtResource( "8" )
+theme = ExtResource("7")
+theme_override_fonts/font = ExtResource("8")
 text = "Multiplayer"
 
 [node name="option" type="Button" parent="menu/canvas/sort/menu/root_menu"]
 custom_minimum_size = Vector2(224, 0)
 layout_mode = 2
 size_flags_horizontal = 4
-theme = ExtResource( "7" )
+theme = ExtResource("7")
 theme_override_font_sizes/font_size = 24
 text = "Options"
 
@@ -129,7 +128,7 @@ text = "Options"
 custom_minimum_size = Vector2(224, 0)
 layout_mode = 2
 size_flags_horizontal = 4
-theme = ExtResource( "7" )
+theme = ExtResource("7")
 theme_override_font_sizes/font_size = 24
 text = "Exit"
 
@@ -137,7 +136,7 @@ text = "Exit"
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource( "8" )
+theme_override_fonts/font = ExtResource("8")
 theme_override_font_sizes/font_size = 12
 text = "fpd-lf ©2023 | %s"
 horizontal_alignment = 2
@@ -171,7 +170,7 @@ layout_mode = 2
 tooltip_text = "Your display name in multiplayer sessions."
 mouse_filter = 0
 mouse_default_cursor_shape = 16
-theme_override_fonts/font = ExtResource( "8" )
+theme_override_fonts/font = ExtResource("8")
 text = "Multiplayer"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -185,14 +184,14 @@ size_flags_horizontal = 4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.0
-theme_override_fonts/font = ExtResource( "8" )
+theme_override_fonts/font = ExtResource("8")
 placeholder_text = "IP"
 virtual_keyboard_type = 2
 
 [node name="port" type="LineEdit" parent="menu/canvas/sort/menu/multiplayer_menu/mp_input"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_fonts/font = ExtResource( "8" )
+theme_override_fonts/font = ExtResource("8")
 text = "19642"
 placeholder_text = "Port"
 alignment = 1
@@ -205,20 +204,20 @@ size_flags_horizontal = 4
 [node name="host" type="Button" parent="menu/canvas/sort/menu/multiplayer_menu/mp_buttons"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_fonts/font = ExtResource( "8" )
+theme_override_fonts/font = ExtResource("8")
 text = "Host"
 
 [node name="join" type="Button" parent="menu/canvas/sort/menu/multiplayer_menu/mp_buttons"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_fonts/font = ExtResource( "8" )
+theme_override_fonts/font = ExtResource("8")
 text = "Join"
 
 [node name="back" type="Button" parent="menu/canvas/sort/menu/multiplayer_menu"]
 custom_minimum_size = Vector2(224, 0)
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource( "8" )
+theme_override_fonts/font = ExtResource("8")
 text = "Back"
 
 [node name="spacer_2" type="Control" parent="menu/canvas/sort/menu/multiplayer_menu"]
@@ -235,13 +234,13 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="options_menu" parent="menu/canvas/sort/menu/center_container" instance=ExtResource( "9" )]
+[node name="options_menu" parent="menu/canvas/sort/menu/center_container" instance=ExtResource("9")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 
 [node name="General" parent="menu/canvas/sort/menu/center_container/options_menu/tabs" index="1"]
-visible = false
+visible = true
 
 [node name="_PopupMenu_18186" type="PopupMenu" parent="menu/canvas/sort/menu/center_container/options_menu/tabs/Video/v_sort/resolution_input/resolution" index="1"]
 item_count = 4
@@ -272,43 +271,7 @@ item_2/text = "Gamepad"
 item_2/checkable = 2
 item_2/id = 2
 
-[node name="_Panel_18193" type="Panel" parent="menu/canvas/sort/menu/center_container/options_menu/cpd_subwindow" index="1"]
-theme_override_styles/panel = SubResource( "2" )
-
-[node name="_Label_18194" type="Label" parent="menu/canvas/sort/menu/center_container/options_menu/cpd_subwindow" index="2"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-text = "Are you sure you want to clear player data? This will erase all of your stats and reset your configuration settings to default."
-autowrap_mode = 2
-
-[node name="_HBoxContainer_18195" type="HBoxContainer" parent="menu/canvas/sort/menu/center_container/options_menu/cpd_subwindow" index="3"]
-
-[node name="_Control_18200" type="Control" parent="menu/canvas/sort/menu/center_container/options_menu/cpd_subwindow/_HBoxContainer_18195"]
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 1
-
-[node name="_Button_18199" type="Button" parent="menu/canvas/sort/menu/center_container/options_menu/cpd_subwindow/_HBoxContainer_18195"]
-layout_mode = 2
-text = "  No  "
-metadata/__right_spacer = null
-
-[node name="_Control_18196" type="Control" parent="menu/canvas/sort/menu/center_container/options_menu/cpd_subwindow/_HBoxContainer_18195"]
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 1
-
-[node name="_Button_18197" type="Button" parent="menu/canvas/sort/menu/center_container/options_menu/cpd_subwindow/_HBoxContainer_18195"]
-layout_mode = 2
-text = "  Yes  "
-
-[node name="_Control_18198" type="Control" parent="menu/canvas/sort/menu/center_container/options_menu/cpd_subwindow/_HBoxContainer_18195"]
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 1
-
-[node name="level_selector" parent="menu/canvas/sort/menu/center_container" instance=ExtResource( "10" )]
+[node name="level_selector" parent="menu/canvas/sort/menu/center_container" instance=ExtResource("10")]
 unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(640, 416)
@@ -316,6 +279,7 @@ layout_mode = 2
 mouse_filter = 0
 
 [node name="vp_preview" parent="menu/canvas/sort/menu/center_container/level_selector/panel/margin/horiz_split/detail_sort/preview" index="0"]
+size = Vector2i(2, 2)
 render_target_update_mode = 0
 
 [node name="spacer_2" type="Control" parent="menu/canvas/sort/menu/center_container"]
@@ -345,7 +309,43 @@ metadata/_edit_use_anchors_ = true
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-script = ExtResource( "11" )
+script = ExtResource("11")
+
+[node name="menu_canvas_sort_menu_center_container_options_menu_cpd_subwindow#_Panel_18193" type="Panel" parent="."]
+theme_override_styles/panel = SubResource("2")
+
+[node name="menu_canvas_sort_menu_center_container_options_menu_cpd_subwindow#_Label_18194" type="Label" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Are you sure you want to clear player data? This will erase all of your stats and reset your configuration settings to default."
+autowrap_mode = 2
+
+[node name="menu_canvas_sort_menu_center_container_options_menu_cpd_subwindow#_HBoxContainer_18195" type="HBoxContainer" parent="."]
+
+[node name="menu_canvas_sort_menu_center_container_options_menu_cpd_subwindow__HBoxContainer_18195#_Control_18200" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="menu_canvas_sort_menu_center_container_options_menu_cpd_subwindow__HBoxContainer_18195#_Button_18199" type="Button" parent="."]
+text = "  No  "
+
+[node name="menu_canvas_sort_menu_center_container_options_menu_cpd_subwindow__HBoxContainer_18195#_Control_18196" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="menu_canvas_sort_menu_center_container_options_menu_cpd_subwindow__HBoxContainer_18195#_Button_18197" type="Button" parent="."]
+text = "  Yes  "
+
+[node name="menu_canvas_sort_menu_center_container_options_menu_cpd_subwindow__HBoxContainer_18195#_Control_18198" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 3
+mouse_filter = 1
 
 [connection signal="pressed" from="menu/canvas/sort/menu/root_menu/start_test" to="menu/canvas" method="_start_pressed"]
 [connection signal="pressed" from="menu/canvas/sort/menu/root_menu/multiplayer" to="menu/canvas" method="_multiplayer_pressed"]
