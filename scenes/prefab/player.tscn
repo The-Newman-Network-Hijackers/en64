@@ -10166,25 +10166,25 @@ transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 
 transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.0624833, 1.37293, 1.73276)
 
 [node name="skeleton" parent="visual/newman" index="1"]
-bones/2/rotation = Quaternion(0.0369739, 1.19128e-07, -4.40763e-09, 0.999316)
-bones/3/position = Vector3(-0.50515, -0.225183, 1.73772)
+bones/2/rotation = Quaternion(-0.00864114, 1.19205e-07, 1.0301e-09, 0.999963)
+bones/3/position = Vector3(0.128872, -0.214668, 1.73333)
 bones/4/scale = Vector3(0, 0, 0)
-bones/5/position = Vector3(2.13959e-10, 2.67959, -0.000897405)
-bones/5/rotation = Quaternion(0.00332225, -1.19209e-07, 3.96042e-10, 0.999995)
-bones/6/position = Vector3(0.568958, -0.145784, -1.55788)
+bones/5/position = Vector3(4.36831e-10, 2.65833, -0.00183221)
+bones/5/rotation = Quaternion(0.00678532, -1.20024e-07, 7.40875e-10, 0.999977)
+bones/6/position = Vector3(-0.233922, -0.147337, -1.76887)
 
 [node name="head_accessory" type="BoneAttachment3D" parent="visual/newman/skeleton" index="0"]
-transform = Transform3D(1, 1.76137e-08, -7.68992e-10, -1.76185e-08, 0.996753, -0.0805219, -6.51809e-10, 0.0805219, 0.996753, 4.72109e-08, 4.37233, 0.197119)
+transform = Transform3D(1, -3.99546e-09, -1.61472e-09, 4.00143e-09, 0.999993, 0.00371175, 1.59989e-09, -0.00371174, 0.999993, -1.0953e-08, 4.3579, -0.0477723)
 bone_name = "head"
 bone_idx = 5
 
 [node name="face_accessory" type="BoneAttachment3D" parent="visual/newman/skeleton" index="1"]
-transform = Transform3D(1, 1.76137e-08, -7.68992e-10, -1.76185e-08, 0.996753, -0.0805219, -6.51809e-10, 0.0805219, 0.996753, 4.72109e-08, 4.37233, 0.197119)
+transform = Transform3D(1, -3.99546e-09, -1.61472e-09, 4.00143e-09, 0.999993, 0.00371175, 1.59989e-09, -0.00371174, 0.999993, -1.0953e-08, 4.3579, -0.0477723)
 bone_name = "head"
 bone_idx = 5
 
 [node name="item_follow" type="BoneAttachment3D" parent="visual/newman/skeleton" index="2"]
-transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.11648, 1.33719, 1.7156)
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.517543, 1.50546, 1.73695)
 bone_name = "r.handitem"
 bone_idx = 4
 

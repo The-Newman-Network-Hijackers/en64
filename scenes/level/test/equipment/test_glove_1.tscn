@@ -13,7 +13,7 @@
 [ext_resource type="Script" path="res://scripts/warp_point.gd" id="11"]
 [ext_resource type="PackedScene" uid="uid://blynpjf27hieq" path="res://scenes/prefab/grabbablecrate.tscn" id="12"]
 [ext_resource type="Script" path="res://scripts/respawner.gd" id="13"]
-[ext_resource type="PackedScene" uid="uid://chylkensfsupl" path="res://scenes/prefab/bomb.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://ddbiqdohf5jvc" path="res://scenes/prefab/bomb.tscn" id="14"]
 [ext_resource type="PackedScene" uid="uid://k0lcfcyxhtbi" path="res://scenes/prefab/springboard.tscn" id="15"]
 
 [sub_resource type="Resource" id="1"]

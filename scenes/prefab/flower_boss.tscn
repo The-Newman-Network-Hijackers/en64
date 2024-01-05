@@ -2820,7 +2820,7 @@ surface_material_override/2 = ExtResource("4")
 surface_material_override/3 = ExtResource("5")
 
 [node name="hand_attach" type="BoneAttachment3D" parent="flower_prince/flower_armature/Skeleton3D" index="2"]
-transform = Transform3D(0.0856935, -1.00906, 0.00964676, -0.975151, -0.0818206, 0.103887, -0.105722, -0.0186057, -1.00703, 5.75982, 5.54623, -0.0835634)
+transform = Transform3D(0.0856934, -1.00906, 0.00964692, -0.975151, -0.0818204, 0.103886, -0.105722, -0.0186058, -1.00703, 5.75982, 5.54623, -0.083563)
 bone_name = "r.HAND_ITEM"
 bone_idx = 20
 
