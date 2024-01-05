@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3]
+[gd_scene load_steps=40 format=3 uid="uid://k0lcfcyxhtbi"]
 
 [ext_resource type="Script" path="res://scripts/entity.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="2"]
@@ -147,40 +147,34 @@ func _player_left(body: Node3D) -> void:
 
 [sub_resource type="ShaderMaterial" id="4"]
 render_priority = 0
-next_pass = null
-shader = ExtResource( "4" )
+shader = ExtResource("4")
 shader_parameter/modulate_color = Color(1, 1, 1, 1)
 shader_parameter/uv_scale = Vector2(1, 1)
 shader_parameter/uv_offset = Vector2(0, 0)
 shader_parameter/uv_pan_velocity = Vector2(0, 0)
-shader_parameter/albedoTex = ExtResource( "5" )
-script = null
+shader_parameter/albedoTex = ExtResource("5")
 
 [sub_resource type="BoxShape3D" id="5"]
 size = Vector3(10, 10, 10)
-script = null
 
 [sub_resource type="Resource" id="6"]
-script = ExtResource( "7" )
-input = [&"interact"]
+script = ExtResource("7")
+input = Array[StringName]([&"interact"])
 render_as_analog = false
 equip_icon = 0
 message = "to Interact"
 
 [sub_resource type="BoxShape3D" id="7"]
 size = Vector3(20, 10, 20)
-script = null
 
 [sub_resource type="BoxShape3D" id="8"]
 size = Vector3(3, 3.82324, 3)
-script = null
 
 [sub_resource type="AudioStreamRandomizer" id="9"]
 random_pitch = 1.15
 streams_count = 1
-stream_0/stream = ExtResource( "9" )
+stream_0/stream = ExtResource("9")
 stream_0/weight = 1.0
-script = null
 
 [sub_resource type="Animation" id="10"]
 length = 0.001
@@ -280,7 +274,6 @@ tracks/7/keys = {
 "update": 0,
 "values": [Vector3(0, 1, 0)]
 }
-script = null
 
 [sub_resource type="Animation" id="11"]
 resource_name = "idle"
@@ -368,7 +361,6 @@ tracks/6/keys = {
 "update": 0,
 "values": [Vector3(1.07225e-06, -14.8548, 0), Vector3(1.07225e-06, -14.8548, 0)]
 }
-script = null
 
 [sub_resource type="Animation" id="12"]
 resource_name = "press"
@@ -457,7 +449,6 @@ tracks/6/keys = {
 "update": 1,
 "values": [true]
 }
-script = null
 
 [sub_resource type="Animation" id="13"]
 resource_name = "release"
@@ -546,7 +537,6 @@ tracks/6/keys = {
 "update": 0,
 "values": [Vector3(0, 1, 0), Vector3(0, 1.27249, 0), Vector3(0, 0.799663, 0), Vector3(0, 1.00403, 0)]
 }
-script = null
 
 [sub_resource type="Animation" id="14"]
 resource_name = "unpress"
@@ -623,88 +613,71 @@ tracks/5/keys = {
 "update": 0,
 "values": [Vector3(1.07225e-06, -20.1069, 0), Vector3(0, -14.855, 0)]
 }
-script = null
 
 [sub_resource type="AnimationLibrary" id="15"]
 _data = {
-"RESET": SubResource( "10" ),
-"idle": SubResource( "11" ),
-"press": SubResource( "12" ),
-"release": SubResource( "13" ),
-"unpress": SubResource( "14" )
+"RESET": SubResource("10"),
+"idle": SubResource("11"),
+"press": SubResource("12"),
+"release": SubResource("13"),
+"unpress": SubResource("14")
 }
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="16"]
 animation = &"idle"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="17"]
 animation = &"press"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="18"]
 animation = &"release"
-script = null
 
 [sub_resource type="AnimationNodeAnimation" id="19"]
 animation = &"unpress"
-script = null
 
 [sub_resource type="AnimationNodeTimeScale" id="20"]
-script = null
 
 [sub_resource type="AnimationNodeBlendTree" id="21"]
 graph_offset = Vector2(-269, -12)
-nodes/Animation/node = SubResource( "19" )
+nodes/Animation/node = SubResource("19")
 nodes/Animation/position = Vector2(-146, 114)
-nodes/TimeScale/node = SubResource( "20" )
+nodes/TimeScale/node = SubResource("20")
 nodes/TimeScale/position = Vector2(60, 120)
 node_connections = [&"TimeScale", 0, &"Animation", &"output", 0, &"TimeScale"]
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="22"]
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="23"]
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="24"]
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="25"]
 switch_mode = 2
 advance_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="26"]
 xfade_time = 0.2
 priority = 5
-script = null
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="27"]
 switch_mode = 2
 advance_mode = 2
-script = null
 
 [sub_resource type="AnimationNodeStateMachine" id="28"]
-states/End/node = null
-states/Start/node = null
-states/idle/node = SubResource( "16" )
+states/idle/node = SubResource("16")
 states/idle/position = Vector2(352, 100)
-states/press/node = SubResource( "17" )
+states/press/node = SubResource("17")
 states/press/position = Vector2(532, 100)
-states/release/node = SubResource( "18" )
+states/release/node = SubResource("18")
 states/release/position = Vector2(532, 189)
-states/unpress/node = SubResource( "21" )
+states/unpress/node = SubResource("21")
 states/unpress/position = Vector2(532, 12)
-transitions = ["Start", "idle", SubResource( "22" ), "idle", "press", SubResource( "23" ), "press", "release", SubResource( "24" ), "release", "idle", SubResource( "25" ), "press", "unpress", SubResource( "26" ), "unpress", "idle", SubResource( "27" )]
+transitions = ["Start", "idle", SubResource("22"), "idle", "press", SubResource("23"), "press", "release", SubResource("24"), "release", "idle", SubResource("25"), "press", "unpress", SubResource("26"), "unpress", "idle", SubResource("27")]
 graph_offset = Vector2(29, -42)
-script = null
 
-[node name="springboard" type="CharacterBody3D"]
+[node name="springboard" type="CharacterBody3D" node_paths=PackedStringArray("visual_node", "floor_raycast", "anim_tree")]
 collision_layer = 5
-script = ExtResource( "1" )
+script = ExtResource("1")
 e_name = "Springboard"
 respawn = true
 visual_node = NodePath("vis")
@@ -712,45 +685,45 @@ floor_raycast = NodePath("floor")
 anim_tree = NodePath("tree")
 terminal_velocity = 80.0
 
-[node name="fsm" type="Node" parent="."]
-script = ExtResource( "2" )
+[node name="fsm" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("2")
 initial_state = NodePath("idle")
 
 [node name="idle" type="Node" parent="fsm"]
-script = SubResource( "1" )
+script = SubResource("1")
 
 [node name="grabbed" type="Node" parent="fsm"]
-script = SubResource( "2" )
+script = SubResource("2")
 
 [node name="pressed" type="Node" parent="fsm"]
-script = SubResource( "3" )
+script = SubResource("3")
 
 [node name="press" type="Timer" parent="fsm/pressed"]
 process_callback = 0
 wait_time = 0.5
 one_shot = true
 
-[node name="vis" parent="." instance=ExtResource( "3" )]
+[node name="vis" parent="." instance=ExtResource("3")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 
 [node name="Cube" parent="vis" index="0"]
 layers = 4
-surface_material_override/0 = SubResource( "4" )
+surface_material_override/0 = SubResource("4")
 
 [node name="col" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
-shape = SubResource( "5" )
+shape = SubResource("5")
 
-[node name="grabbable" type="Area3D" parent="."]
-script = ExtResource( "6" )
+[node name="grabbable" type="Area3D" parent="." node_paths=PackedStringArray("entity")]
+script = ExtResource("6")
 type = 1
 entity = NodePath("..")
 event_priority = 1
-input_prompt = SubResource( "6" )
+input_prompt = SubResource("6")
 
 [node name="col" type="CollisionShape3D" parent="grabbable"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
-shape = SubResource( "7" )
+shape = SubResource("7")
 
 [node name="player_detector" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20.2226, 0)
@@ -760,11 +733,11 @@ monitorable = false
 
 [node name="col" type="CollisionShape3D" parent="player_detector"]
 transform = Transform3D(-3, 2.62268e-07, 0, -2.62268e-07, -3, 0, 0, 0, 3, 1.07225e-06, -14.8548, 0)
-shape = SubResource( "8" )
+shape = SubResource("8")
 
 [node name="shadow" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
-script = ExtResource( "8" )
+script = ExtResource("8")
 size = 12.5
 type = 1
 
@@ -773,20 +746,20 @@ target_position = Vector3(0, -2.5, 0)
 hit_from_inside = true
 
 [node name="boing" type="AudioStreamPlayer3D" parent="."]
-stream = SubResource( "9" )
+stream = SubResource("9")
 unit_size = 60.0
 max_db = 0.0
 pitch_scale = 1.5
 bus = &"Sound"
 
 [node name="wobble" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource( "10" )
+stream = ExtResource("10")
 unit_size = 60.0
 max_db = 0.0
 bus = &"Sound"
 
 [node name="stretch" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource( "11" )
+stream = ExtResource("11")
 attenuation_model = 3
 volume_db = -6.0
 unit_size = 60.0
@@ -796,15 +769,15 @@ bus = &"Sound"
 
 [node name="anim" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource( "15" )
+"": SubResource("15")
 }
 
 [node name="tree" type="AnimationTree" parent="."]
 deterministic = false
 libraries = {
-"": SubResource( "15" )
+"": SubResource("15")
 }
-tree_root = SubResource( "28" )
+tree_root = SubResource("28")
 anim_player = NodePath("../anim")
 parameters/unpress/TimeScale/scale = 1.5
 

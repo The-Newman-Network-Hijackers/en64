@@ -1,13 +1,13 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=7 format=3 uid="uid://b6f1e8iu0drw0"]
 
 [ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
-[ext_resource type="PackedScene" uid="uid://cg48gt7l4sgq0" path="res://scenes/level/vslice_demo/history/area_hc_ruins_main.tscn" id="3"]
-[ext_resource type="PackedScene" uid="uid://5063we47wm0q" path="res://scenes/level/vslice_demo/history/area_hc_ruins_castle.tscn" id="4"]
-[ext_resource type="PackedScene" uid="uid://d1w32sdskxclx" path="res://scenes/level/vslice_demo/history/area_hc_ruins_arena.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://3xvnxfip1toc" path="res://scenes/level/vslice_demo/history/area_hc_ruins_main.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/level/vslice_demo/history/area_hc_ruins_castle.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/level/vslice_demo/history/area_hc_ruins_arena.tscn" id="5"]
 
 [sub_resource type="Resource" id="1"]
-script = ExtResource( "2" )
+script = ExtResource("2")
 level_name = "History Channel"
 level_desc = "History Channel - Ruins + Pyramid"
 is_menu = false
@@ -16,16 +16,15 @@ flags = {
 }
 
 [node name="history_channel" type="Node"]
-script = ExtResource( "1" )
-data = SubResource( "1" )
-subareas = [NodePath("hc_ruins_main"), NodePath("hc_ruins_castle"), NodePath("hc_ruins_arena")]
+script = ExtResource("1")
+data = SubResource("1")
 
-[node name="hc_ruins_main" parent="." instance=ExtResource( "3" )]
+[node name="hc_ruins_main" parent="." instance=ExtResource("3")]
 
-[node name="hc_ruins_castle" parent="." instance=ExtResource( "4" )]
+[node name="hc_ruins_castle" parent="." instance=ExtResource("4")]
 process_mode = 4
 visible = false
 
-[node name="hc_ruins_arena" parent="." instance=ExtResource( "5" )]
+[node name="hc_ruins_arena" parent="." instance=ExtResource("5")]
 process_mode = 4
 visible = false
