@@ -1,5 +1,5 @@
 # level_manager.gd
-@icon("res://asset/editor/LevelManager.svg")
+@icon("res://asset/editor/LevelManager.svg.ctex")
 class_name LevelManager extends Node
 
 '''

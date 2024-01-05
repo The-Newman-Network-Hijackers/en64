@@ -7,19 +7,19 @@ Lookup table for Shard data
 
 var shard : Array[ShardData] = [
 	## HISTORY CHANNEL
-	preload("uid://d3uegrkadkmny"),
-	preload("uid://cypnm7io11ahb"),
-	preload("uid://bs88qotqmv5th"),
-	preload("uid://dpb52i5tau54d"),
-	preload("uid://2bv6vxhw21ah"),
-	preload("uid://dm177jrmwo8d1"),
-	preload("uid://cnpb0t4g6h8vy"),
-	preload("uid://dcs3nlrr7rqn3"),
-	preload("uid://driif0qm4spen"),
-	preload("uid://ns4v5f8qvncp"),
-	preload("uid://b6k0u72b6efqy"),
+	preload("res://data/props/history_channel/prop_backroom.tres"),
+	preload("res://data/props/history_channel/prop_bomb1.tres"),
+	preload("res://data/props/history_channel/prop_bomb2.tres"),
+	preload("res://data/props/history_channel/prop_bomb3.tres"),
+	preload("res://data/props/history_channel/prop_caged.tres"),
+	preload("res://data/props/history_channel/prop_fungi.tres"),
+	preload("res://data/props/history_channel/prop_gj_ruins.tres"),
+	preload("res://data/props/history_channel/prop_prison.tres"),
+	preload("res://data/props/history_channel/prop_ruinsfrag2.tres"),
+	preload("res://data/props/history_channel/prop_seed.tres"),
+	preload("res://data/props/history_channel/prop_spring1.tres"),
 	## FLYING FORTRESS
-	preload("uid://bkljcn68ovpt2")
+	preload("res://data/props/flying_fortress/prop_gj_fortress.tres")
 ]
 
 # FUNCTION

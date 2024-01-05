@@ -1,5 +1,5 @@
 # level_script.gd
-@icon("res://asset/editor/LevelScript.svg")
+@icon("res://asset/editor/LevelScript.svg.ctex")
 class_name LevelScript extends Node
 
 '''

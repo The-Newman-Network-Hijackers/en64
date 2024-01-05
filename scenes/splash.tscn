@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3]
+[gd_scene load_steps=20 format=3 uid="uid://qb72i7aecx3u"]
 
 [ext_resource type="Script" path="res://scripts/level_script.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/res_leveldata.gd" id="2"]
@@ -8,20 +8,20 @@
 [ext_resource type="Script" path="res://scripts/splash_manager.gd" id="6"]
 [ext_resource type="PackedScene" path="res://asset/ui/splash/scroll.blend.scn" id="7"]
 [ext_resource type="Texture2D" uid="uid://b4ig8y7v603oe" path="res://asset/ui/credits/fpd.png" id="8"]
-[ext_resource type="Theme" uid="uid://botsw3j2gbsx" path="res://asset/ui/generic_ui_theme.tres" id="9"]
+[ext_resource type="Theme" uid="uid://jrc78hva5uah" path="res://asset/ui/generic_ui_theme.tres" id="9"]
 [ext_resource type="Script" path="res://scripts/event_tree.gd" id="10"]
 [ext_resource type="Script" path="res://scripts/event_warp.gd" id="11"]
 
 [sub_resource type="Resource" id="1"]
-script = ExtResource( "2" )
+script = ExtResource("2")
 level_name = "SPLASH"
 level_desc = "SPLASH SCREEN"
 is_menu = true
 flags = {}
 
 [sub_resource type="Resource" id="2"]
-script = ExtResource( "4" )
-stream = ExtResource( "5" )
+script = ExtResource("4")
+stream = ExtResource("5")
 tag = ""
 category = 0
 always_restart = false
@@ -34,16 +34,13 @@ channel = 1
 background_mode = 1
 ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
-script = null
 
 [sub_resource type="World3D" id="4"]
-environment = SubResource( "3" )
-script = null
+environment = SubResource("3")
 
 [sub_resource type="LabelSettings" id="5"]
 shadow_color = Color(0, 0, 0, 0.501961)
 shadow_offset = Vector2(2, 2)
-script = null
 
 [sub_resource type="Animation" id="6"]
 length = 0.001
@@ -71,7 +68,6 @@ tracks/1/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
 }
-script = null
 
 [sub_resource type="Animation" id="7"]
 resource_name = "splash"
@@ -100,26 +96,24 @@ tracks/1/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
-script = null
 
 [sub_resource type="AnimationLibrary" id="8"]
 _data = {
-"RESET": SubResource( "6" ),
-"splash": SubResource( "7" )
+"RESET": SubResource("6"),
+"splash": SubResource("7")
 }
-script = null
 
-[node name="splash" type="Node"]
-script = ExtResource( "1" )
-data = SubResource( "1" )
+[node name="splash" type="Node" node_paths=PackedStringArray("subareas")]
+script = ExtResource("1")
+data = SubResource("1")
 subareas = [NodePath("0")]
 
 [node name="0" type="Node3D" parent="."]
-script = ExtResource( "3" )
-music = [SubResource( "2" )]
+script = ExtResource("3")
+music = Array[ExtResource("4")]([SubResource("2")])
 
 [node name="splash_manager" type="Node" parent="0"]
-script = ExtResource( "6" )
+script = ExtResource("6")
 
 [node name="color_rect" type="SubViewportContainer" parent="0/splash_manager"]
 anchors_preset = 15
@@ -130,13 +124,13 @@ grow_vertical = 2
 stretch = true
 
 [node name="viewport" type="SubViewport" parent="0/splash_manager/color_rect"]
-world_3d = SubResource( "4" )
+world_3d = SubResource("4")
 handle_input_locally = false
 size = Vector2i(640, 480)
 size_2d_override_stretch = true
 render_target_update_mode = 4
 
-[node name="scroll" parent="0/splash_manager/color_rect/viewport" instance=ExtResource( "7" )]
+[node name="scroll" parent="0/splash_manager/color_rect/viewport" instance=ExtResource("7")]
 
 [node name="Camera" parent="0/splash_manager/color_rect/viewport/scroll" index="0"]
 size = 6.088
@@ -168,7 +162,7 @@ grow_vertical = 2
 pivot_offset = Vector2(307, 166)
 size_flags_horizontal = 4
 size_flags_vertical = 6
-texture = ExtResource( "8" )
+texture = ExtResource("8")
 expand_mode = 5
 stretch_mode = 5
 
@@ -180,7 +174,7 @@ visible = false
 transient = true
 exclusive = true
 unresizable = true
-theme = ExtResource( "9" )
+theme = ExtResource("9")
 theme_override_constants/title_outline_size = 0
 theme_override_constants/title_height = 32
 theme_override_font_sizes/title_font_size = 18
@@ -207,7 +201,7 @@ layout_mode = 2
 text = "The following demo is an excerpt of a largely unfinished alpha build of Newman Network: Channel 64. While we at Future Primitive have made an attempt to make this experience as smooth as possible, please expect bugs and various shortcomings to potentially get in the way of gameplay.
 No content depicted here is finalized. 
 "
-label_settings = SubResource( "5" )
+label_settings = SubResource("5")
 autowrap_mode = 3
 
 [node name="sort" type="HBoxContainer" parent="0/splash_manager/popup/margin_container/sort"]
@@ -218,7 +212,7 @@ size_flags_vertical = 10
 custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 size_flags_vertical = 10
-theme = ExtResource( "9" )
+theme = ExtResource("9")
 theme_override_constants/h_separation = 8
 text = "Dont show this again "
 
@@ -230,24 +224,24 @@ text = " I understand "
 [node name="anim" type="AnimationPlayer" parent="0/splash_manager"]
 root_node = NodePath("../..")
 libraries = {
-"": SubResource( "8" )
+"": SubResource("8")
 }
 autoplay = "splash"
 
 [node name="demo_warp" type="Node" parent="0/splash_manager"]
-script = ExtResource( "10" )
+script = ExtResource("10")
 
 [node name="event_warp" type="Node" parent="0/splash_manager/demo_warp"]
-script = ExtResource( "11" )
+script = ExtResource("11")
 target_scene = "res://scenes/menu/demo_menu.tscn"
 fade_length = 0.8
 fade_delay = 0.5
 
 [node name="default_warp" type="Node" parent="0/splash_manager"]
-script = ExtResource( "10" )
+script = ExtResource("10")
 
 [node name="event_warp" type="Node" parent="0/splash_manager/default_warp"]
-script = ExtResource( "11" )
+script = ExtResource("11")
 target_scene = "res://scenes/menu/main_menu.tscn"
 fade_length = 0.8
 fade_delay = 0.5

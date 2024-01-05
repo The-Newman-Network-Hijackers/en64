@@ -1,5 +1,5 @@
 # event_tree.gd
-@icon("res://asset/editor/EventTree.svg")
+@icon("res://asset/editor/EventTree.svg.ctex")
 class_name EventTree extends Node
 
 '''
