@@ -3,6 +3,8 @@ This is a mostly complete decompilation of the Windows build of [Experiment: NEW
 
 Use Godot 4.2.1 to open this project.
 
+Our discord server: [https://discord.gg/ZKv4jDCZ](https://discord.gg/ZKv4jDCZ).
+
 ## Known issues
 ### real builds
 - the icons for objects that you can pick up with a glove do not show up (this causes the game to crash while loading levels with those objects in RELEASE builds)
