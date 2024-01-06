@@ -2444,8 +2444,8 @@ toggle_preview = true
 curve = SubResource("6")
 
 [node name="path_follower" type="PathFollow3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 47, 0)
-progress = 47.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 34.2848, 0)
+progress = 34.2848
 rotation_mode = 0
 loop = false
 
@@ -2455,7 +2455,7 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 47, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 34.2848, 0)
 
 [node name="vis" type="MeshInstance3D" parent="map/hc_ruins_tower_arena/moving_platform_004/moving_geo/geometry"]
 mesh = ExtResource("14")
@@ -2487,8 +2487,8 @@ toggle_preview = true
 curve = SubResource("8")
 
 [node name="path_follower" type="PathFollow3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.373541, 0)
-progress = 0.373795
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32.8259, 0)
+progress = 32.8259
 rotation_mode = 0
 loop = false
 
@@ -2498,7 +2498,7 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.373543, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32.8259, 0)
 
 [node name="vis" type="MeshInstance3D" parent="map/hc_ruins_tower_arena/moving_platform_005/moving_geo/geometry"]
 mesh = ExtResource("14")
@@ -2531,8 +2531,6 @@ toggle_preview = true
 curve = SubResource("9")
 
 [node name="path_follower" type="PathFollow3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo/path"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 85.9641, 0)
-progress = 85.9641
 rotation_mode = 0
 loop = false
 
@@ -2542,7 +2540,6 @@ update_rotation = false
 update_scale = false
 
 [node name="geometry" type="AnimatableBody3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 85.9641, 0)
 
 [node name="vis" type="MeshInstance3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo/geometry"]
 mesh = ExtResource("14")
@@ -2554,7 +2551,7 @@ shape = SubResource("7")
 [node name="sfx_move" type="AudioStreamPlayer3D" parent="map/hc_ruins_tower_arena/moving_platform_006/moving_geo"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 78.5, 0)
 stream = ExtResource("12")
-volume_db = -9.0
+volume_db = -4.0
 unit_size = 30.0
 pitch_scale = 0.6
 bus = &"Sound"
@@ -2643,79 +2640,79 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 
 
 [node name="Skeleton3D" parent="entity/flower_boss/flower_prince/flower_armature" index="2"]
 bones/0/rotation = Quaternion(0, 0.707107, 0, 0.707107)
-bones/0/scale = Vector3(1.00086, 0.99892, 1.00086)
+bones/0/scale = Vector3(1.00623, 0.992207, 1.00623)
 bones/5/rotation = Quaternion(0.788016, -3.51695e-07, -4.07849e-07, 0.615654)
-bones/6/rotation = Quaternion(0.415534, 3.25253e-07, -3.30233e-07, 0.909577)
-bones/6/scale = Vector3(1.1068, 0.817499, 1.10521)
+bones/6/rotation = Quaternion(0.413292, 3.25391e-07, -3.28063e-07, 0.910599)
+bones/6/scale = Vector3(1.11173, 0.817499, 1.10038)
 bones/7/position = Vector3(6.91291e-06, 5.73121, 5.99816)
 bones/7/rotation = Quaternion(0.384639, -0.547435, -0.437184, 0.601032)
 bones/8/rotation = Quaternion(-7.46192e-08, 1, -3.23195e-14, -4.33126e-07)
-bones/9/rotation = Quaternion(0.00964669, -0.00592058, 0.144757, 0.989403)
+bones/9/rotation = Quaternion(0.00775695, -0.00824268, 0.3991, 0.916837)
 bones/9/scale = Vector3(1, 1, 1)
-bones/10/rotation = Quaternion(0.102879, -0.115008, 0.164108, 0.974298)
-bones/11/rotation = Quaternion(-0.0396433, -0.0524275, 0.147769, 0.986835)
-bones/12/rotation = Quaternion(0.00348348, 0.0174349, 0.175049, 0.984399)
+bones/10/rotation = Quaternion(0.0827166, -0.130265, 0.321015, 0.934419)
+bones/11/rotation = Quaternion(-0.0473325, -0.0456056, 0.29982, 0.951729)
+bones/12/rotation = Quaternion(0.0042314, 0.0172686, 0.217298, 0.975943)
 bones/12/scale = Vector3(1, 1, 1)
-bones/13/rotation = Quaternion(-0.114215, -0.0420418, 0.212733, 0.969501)
+bones/13/rotation = Quaternion(-0.120983, -0.013255, 0.440273, 0.889577)
 bones/14/rotation = Quaternion(-0.045929, 0.00835799, 0.391196, 0.919123)
-bones/15/rotation = Quaternion(0.147704, -0.0448292, -0.16748, 0.973717)
-bones/16/rotation = Quaternion(0.00937345, 0.0107256, 0.664949, 0.746753)
+bones/15/rotation = Quaternion(0.137542, -0.0700593, 0.00603469, 0.987997)
+bones/16/rotation = Quaternion(0.00957584, 0.0105453, 0.679037, 0.733966)
 bones/17/rotation = Quaternion(0.00967977, -0.00438895, 0.503571, 0.863889)
-bones/18/rotation = Quaternion(0.292049, -0.0188675, 0.58394, 0.757209)
+bones/18/rotation = Quaternion(0.300109, -0.0126383, 0.584108, 0.754051)
 bones/18/scale = Vector3(1, 1, 1)
-bones/19/rotation = Quaternion(-0.603871, 0.0230926, 0.0904474, 0.791597)
+bones/19/rotation = Quaternion(-0.663961, 0.0159444, 0.091977, 0.741918)
 bones/20/rotation = Quaternion(-3.37175e-07, 2.00972e-14, 0.707107, 0.707107)
 bones/21/rotation = Quaternion(4.52079e-07, 0.615654, -0.788016, -3.37308e-07)
-bones/22/rotation = Quaternion(0.415534, -3.39709e-07, 3.36837e-07, 0.909577)
-bones/22/scale = Vector3(1.1068, 0.817499, 1.10521)
+bones/22/rotation = Quaternion(0.413292, -3.39861e-07, 3.34625e-07, 0.910599)
+bones/22/scale = Vector3(1.11173, 0.817499, 1.10038)
 bones/23/position = Vector3(-7.10358e-06, 5.73121, 5.99816)
 bones/23/rotation = Quaternion(0.384639, 0.547435, 0.437184, 0.601032)
 bones/24/rotation = Quaternion(3.55271e-15, 1, 2.6055e-21, -7.54979e-08)
-bones/25/rotation = Quaternion(0.0144213, -0.0366891, -0.107821, 0.993388)
-bones/26/rotation = Quaternion(0.104498, 0.11354, -0.150294, 0.976525)
-bones/27/rotation = Quaternion(-0.0387343, 0.0531025, -0.130749, 0.989234)
-bones/28/rotation = Quaternion(-0.0129898, 0.0745124, -0.179263, 0.980889)
+bones/25/rotation = Quaternion(0.0192281, -0.0344144, -0.240538, 0.969839)
+bones/26/rotation = Quaternion(0.093929, 0.122427, -0.236993, 0.959179)
+bones/27/rotation = Quaternion(-0.0420204, 0.050542, -0.193153, 0.978965)
+bones/28/rotation = Quaternion(-0.0164774, 0.0738195, -0.225165, 0.97138)
 bones/28/scale = Vector3(1, 1, 1)
-bones/29/rotation = Quaternion(-0.113233, 0.044621, -0.190697, 0.974075)
+bones/29/rotation = Quaternion(-0.117695, 0.0309931, -0.303941, 0.944885)
 bones/30/rotation = Quaternion(-0.0459282, -0.00836, -0.391196, 0.919123)
-bones/31/rotation = Quaternion(0.150175, 0.0592322, 0.165168, 0.972964)
+bones/31/rotation = Quaternion(0.137446, 0.0846724, -0.00817868, 0.98685)
 bones/31/scale = Vector3(1, 1, 1)
-bones/32/rotation = Quaternion(0.00935381, -0.0107409, -0.663696, 0.747867)
+bones/32/rotation = Quaternion(0.00946603, -0.0106422, -0.671508, 0.74086)
 bones/33/rotation = Quaternion(0.00968004, 0.00438855, -0.503571, 0.863889)
-bones/34/rotation = Quaternion(0.294392, 0.0160296, -0.586449, 0.754423)
+bones/34/rotation = Quaternion(0.312822, 0.00162908, -0.586665, 0.746969)
 bones/34/scale = Vector3(1, 1, 1)
-bones/35/rotation = Quaternion(-0.607181, -0.0202761, -0.0886362, 0.789344)
+bones/35/rotation = Quaternion(-0.68225, -0.0114131, -0.0902066, 0.725443)
 bones/36/rotation = Quaternion(2.24764e-08, -3.59651e-07, -0.707107, 0.707107)
-bones/37/position = Vector3(2.94673, 14.6496, 3.4109e-08)
-bones/37/rotation = Quaternion(0.620157, 0.342167, -0.610284, 0.354798)
-bones/37/scale = Vector3(1.10775, 0.816941, 1.10573)
-bones/38/position = Vector3(-2.94673, 14.6496, 3.83025e-08)
-bones/38/rotation = Quaternion(0.620157, -0.342166, 0.610284, 0.354798)
-bones/38/scale = Vector3(1.10775, 0.816941, 1.10573)
-bones/39/position = Vector3(6.28456, 9.68503, 0.126043)
-bones/39/rotation = Quaternion(0.204627, 0.0410894, -0.976653, 0.0508848)
-bones/39/scale = Vector3(1.10775, 0.816941, 1.10573)
-bones/40/position = Vector3(5.77839, 11.7426, 0.119521)
-bones/40/rotation = Quaternion(0.39029, 0.0458762, -0.912795, 0.111236)
-bones/40/scale = Vector3(1.10775, 0.81694, 1.10573)
-bones/41/position = Vector3(4.73871, 13.5752, 0.0468627)
-bones/41/rotation = Quaternion(0.545805, 0.129279, -0.797955, 0.220574)
-bones/41/scale = Vector3(1.10775, 0.81694, 1.10573)
-bones/42/position = Vector3(-6.28456, 9.68503, 0.126042)
-bones/42/rotation = Quaternion(0.204627, -0.0410891, 0.976653, 0.0508843)
-bones/42/scale = Vector3(1.10775, 0.816941, 1.10573)
-bones/43/position = Vector3(-5.7784, 11.7426, 0.119521)
-bones/43/rotation = Quaternion(0.39029, -0.0458762, 0.912795, 0.111236)
-bones/43/scale = Vector3(1.10775, 0.81694, 1.10573)
-bones/44/position = Vector3(-4.73871, 13.5752, 0.0468625)
-bones/44/rotation = Quaternion(0.545805, -0.129279, 0.797955, 0.220574)
-bones/44/scale = Vector3(1.10775, 0.81694, 1.10573)
+bones/37/position = Vector3(2.96254, 14.5512, 3.4292e-08)
+bones/37/rotation = Quaternion(0.619424, 0.343502, -0.609432, 0.356249)
+bones/37/scale = Vector3(1.11866, 0.813481, 1.10396)
+bones/38/position = Vector3(-2.96254, 14.5512, 3.85079e-08)
+bones/38/rotation = Quaternion(0.619424, -0.343501, 0.609432, 0.356249)
+bones/38/scale = Vector3(1.11866, 0.813481, 1.10396)
+bones/39/position = Vector3(6.31475, 9.62459, 0.127064)
+bones/39/rotation = Quaternion(0.20469, 0.0417413, -0.976544, 0.0521731)
+bones/39/scale = Vector3(1.11866, 0.813481, 1.10396)
+bones/40/position = Vector3(5.79968, 11.6709, 0.120416)
+bones/40/rotation = Quaternion(0.390317, 0.0469106, -0.912428, 0.113697)
+bones/40/scale = Vector3(1.11866, 0.81348, 1.10396)
+bones/41/position = Vector3(4.7523, 13.4891, 0.0471636)
+bones/41/rotation = Quaternion(0.545476, 0.130919, -0.797152, 0.223303)
+bones/41/scale = Vector3(1.11866, 0.813481, 1.10396)
+bones/42/position = Vector3(-6.31475, 9.62459, 0.127063)
+bones/42/rotation = Quaternion(0.20469, -0.0417409, 0.976544, 0.052173)
+bones/42/scale = Vector3(1.11866, 0.813481, 1.10396)
+bones/43/position = Vector3(-5.79968, 11.6709, 0.120415)
+bones/43/rotation = Quaternion(0.390317, -0.0469107, 0.912428, 0.113697)
+bones/43/scale = Vector3(1.11866, 0.81348, 1.10396)
+bones/44/position = Vector3(-4.7523, 13.4891, 0.0471635)
+bones/44/rotation = Quaternion(0.545476, -0.130919, 0.797152, 0.223303)
+bones/44/scale = Vector3(1.11866, 0.813481, 1.10396)
 
 [node name="hand_attach" parent="entity/flower_boss/flower_prince/flower_armature/Skeleton3D" index="2"]
-transform = Transform3D(0.084689, -0.997229, 0.0095336, -0.989859, -0.083055, 0.105453, -0.104482, -0.0183876, -0.995226, 5.69228, 5.62988, -0.0825833)
+transform = Transform3D(0.0851435, -1.00258, 0.00958481, -0.983208, -0.0824969, 0.104745, -0.105043, -0.0184863, -1.00057, 5.72283, 5.59205, -0.0830267)
 
 [node name="head_attach" parent="entity/flower_boss/flower_prince/flower_armature/Skeleton3D" index="3"]
-transform = Transform3D(0, 0, 1.00086, 0, 0.99892, 0, -1.00086, 0, 0, 1.29609e-09, 16.4738, -0.0232957)
+transform = Transform3D(0, 0, 1.00623, 0, 0.992207, 0, -1.00623, 0, 0, 1.30304e-09, 16.3631, -0.0234207)
 
 [node name="anim" parent="entity/flower_boss" index="1"]
 libraries = {
@@ -2809,7 +2806,7 @@ collision_layer = 0
 collision_mask = 2
 monitorable = false
 script = ExtResource("23")
-event_tree = NodePath("../../events/roll_credits")
+event_tree = NodePath("../../events/flower_cutscene")
 divert_trees = {
 "flower_rematch": NodePath("../../events/flower_rematch")
 }
@@ -2865,23 +2862,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@31503" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@18916" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31504" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@18917" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31505" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@18918" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31506" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@18919" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31507" parent="jack/jack_spawner" instance=ExtResource("32")]
+[node name="@Area3D@18920" parent="jack/jack_spawner" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.2876, 15)
 metadata/_edit_lock_ = true
 
@@ -2893,23 +2890,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@31512" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@18925" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31513" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@18926" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31514" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@18927" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31515" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@18928" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31516" parent="jack/jack_spawner_3" instance=ExtResource("32")]
+[node name="@Area3D@18929" parent="jack/jack_spawner_3" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.65921, 15)
 metadata/_edit_lock_ = true
 
@@ -2921,23 +2918,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@31521" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@18934" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31522" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@18935" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31523" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@18936" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31524" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@18937" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31525" parent="jack/jack_spawner_4" instance=ExtResource("32")]
+[node name="@Area3D@18938" parent="jack/jack_spawner_4" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.659, 15)
 metadata/_edit_lock_ = true
 
@@ -2949,23 +2946,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@31530" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@18943" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31531" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@18944" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31532" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@18945" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31533" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@18946" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31534" parent="jack/jack_spawner_6" instance=ExtResource("32")]
+[node name="@Area3D@18947" parent="jack/jack_spawner_6" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16.159, 15)
 metadata/_edit_lock_ = true
 
@@ -2977,23 +2974,23 @@ spacing = 7.5
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@31539" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@18952" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, -15)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31540" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@18953" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, -7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31541" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@18954" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31542" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@18955" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, 7.5)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31543" parent="jack/jack_spawner_7" instance=ExtResource("32")]
+[node name="@Area3D@18956" parent="jack/jack_spawner_7" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32.6344, 15)
 metadata/_edit_lock_ = true
 
@@ -3006,22 +3003,22 @@ spacing = 7.5
 shadows = false
 metadata/_edit_group_ = true
 
-[node name="@Area3D@31553" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@18966" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31554" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@18967" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.5, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31555" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@18968" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31556" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@18969" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, 0)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31557" parent="jack/jack_spawner_5" instance=ExtResource("32")]
+[node name="@Area3D@18970" parent="jack/jack_spawner_5" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 0)
 metadata/_edit_lock_ = true
 
@@ -3034,23 +3031,23 @@ spacing = 10.0
 snap_to_floor = true
 metadata/_edit_group_ = true
 
-[node name="@Area3D@31567" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@18980" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.51057, -14.2874, -3.09017)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31568" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@18981" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.87785, -14.2874, 8.09017)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31569" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@18982" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.87785, -14.2874, 8.09017)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31570" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@18983" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.51057, -14.2874, -3.09017)
 metadata/_edit_lock_ = true
 
-[node name="@Area3D@31571" parent="jack/jack_spawner_2" instance=ExtResource("32")]
+[node name="@Area3D@18984" parent="jack/jack_spawner_2" instance=ExtResource("32")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.2874, -10)
 metadata/_edit_lock_ = true
 
