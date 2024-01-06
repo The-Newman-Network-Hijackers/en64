@@ -3,7 +3,7 @@ This is a mostly complete decompilation of the Windows build of [Experiment: NEW
 
 Use Godot 4.2.1 to open this project.
 
-Our discord server: [https://discord.gg/ZKv4jDCZ](https://discord.gg/ZKv4jDCZ).
+Our discord server: [https://discord.gg/k7uvB7WY](https://discord.gg/k7uvB7WY).
 
 ## Known issues
 ### real builds
